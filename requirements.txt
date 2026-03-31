@@ -1,0 +1,9 @@
+transformers
+torch
+accelerate
+sentencepiece
+bitsandbytes
+scipy
+pandas
+tqdm
+python-dotenv
