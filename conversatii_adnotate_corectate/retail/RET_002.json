@@ -1,0 +1,61 @@
+{
+  "id": "RET_002",
+  "domeniu": "retail",
+  "complexitate": "simpla",
+  "intentie_gold": [
+    "comanda_gresita"
+  ],
+  "satisfactie": "pozitiv",
+  "motiv_satisfactie": "problema_rezolvata_rapid",
+  "rezumat": "Client reclamă primirea unui produs greșit (cană roșie în loc de cană albastră cu model geometric). Operatorul identifică comanda, se scuză și oferă trimiterea produsului corect cu retur gratuit prin curier. Clientul acceptă și exprimă mulțumiri.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Serviciul clienți ShopMax. Eu sunt Mirela. Cu ce pot să vă ajut azi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Am o problemă cu o comandă pe care am făcut-o ieri. Mi-a ajuns produsul greșit și aș vrea să mă ajutați cu asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud asta, haideți să vedem ce putem face. Care este numărul comenzii dumneavoastră, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, e 45829163. Am comandat o cană albastră cu model geometric și mi-a venit una roșie, complet diferită."
+    },
+    {
+      "rol": "operator",
+      "text": "Aha, am găsit comanda. Într-adevăr, ar fi trebuit să primiți cana albastră cu model geometric. Ne cerem scuze pentru această greșeală. Doriți să vă trimitem cana corectă sau preferați o rambursare?"
+    },
+    {
+      "rol": "client",
+      "text": "Aș prefera să-mi trimiteți produsul corect. Nu am nevoie de rambursare."
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur, se rezolvă. Voi aranja să vă trimitem cana corectă cât mai repede. Vă trimit o etichetă de retur pentru cea greșită. Ar fi convenabil prin poștă sau curier?"
+    },
+    {
+      "rol": "client",
+      "text": "Prin curier e mai bine. Când credeți că va ajunge cana corectă?"
+    },
+    {
+      "rol": "operator",
+      "text": "Noua comandă pleacă mâine și ar trebui să ajungă în 2-3 zile lucrătoare. Eticheta de retur o primiți pe e-mail în curând."
+    },
+    {
+      "rol": "client",
+      "text": "Perfect, mulțumesc mult pentru ajutor."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere! Dacă aveți alte întrebări, nu ezitați să ne contactați. O zi frumoasă!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere!"
+    }
+  ]
+}

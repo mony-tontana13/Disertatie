@@ -1,0 +1,65 @@
+{
+  "id": "MED_005",
+  "domeniu": "medicina",
+  "complexitate": "simpla",
+  "intentie_gold": [
+    "consultatie_anulata"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_rezolvata_rapid_cu_reprogramare",
+  "rezumat": "Client solicita clarificari privind anularea unei programari la cardiologie din 18 februarie. Operatorul explica anularea din cauza unei urgente medicale si ofera reprogramare imediata. Client accepta noua programare pentru 26 februarie la 15:00 si conversatia se incheie pozitiv.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, Clinica MedPlus. Cu ce vă pot ajuta azi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună, am o problemă. Mi-a fost anulată o programare și aș vrea să știu de ce."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg, puteți să-mi spuneți pe ce dată aveați programarea și la ce specialist?"
+    },
+    {
+      "rol": "client",
+      "text": "Era pentru cardiologie, 18 februarie la 14:30, pe numele meu Ionescu."
+    },
+    {
+      "rol": "operator",
+      "text": "Stați să verific... Da, văd că programarea a fost anulată pentru că specialistul a avut o urgență. Ați fost informat prin email."
+    },
+    {
+      "rol": "client",
+      "text": "Ei bine, nu am primit niciun email, și asta m-a cam deranjat. Am luat o zi liberă de la serviciu. Cum e posibil?"
+    },
+    {
+      "rol": "operator",
+      "text": "Ne pare rău pentru deranj. Din păcate, uneori apar urgențe. Verificați vă rog și în folderul de spam. Pot să vă reprogramez imediat."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, da. Aș prefera o reprogramare săptămâna viitoare, dacă se poate."
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur. Avem luni la 10:00 sau miercuri la 15:00. Ce preferați?"
+    },
+    {
+      "rol": "client",
+      "text": "Miercuri la 15:00 e ok."
+    },
+    {
+      "rol": "operator",
+      "text": "E în regulă. V-am programat pe 26 februarie la 15:00 cu Dr. Mărcuț la cardiologie. Veți primi o confirmare pe email și un SMS de reamintire."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Sper că de data asta nu se mai anulează. La revedere."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru înțelegere. O zi bună!"
+    }
+  ]
+}

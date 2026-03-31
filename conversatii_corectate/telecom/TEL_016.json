@@ -1,0 +1,109 @@
+{
+  "id": "TEL_016",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua. Ați apelat Vodafone România. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Eu... am o problemă cu semnalul. De vreo trei zile, semnalul mi s-a degradat foarte mult și... nu pot nici măcar să deschid o pagină web decent."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Vă pot ajuta cu asta. Îmi spuneți, vă rog, în care localitate vă găsiți acum?"
+    },
+    {
+      "rol": "client",
+      "text": "Sunt în București, cartierul Cotroceni. Și lucrez de acasă, deci... depind foarte mult de conexiune."
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur, înțeleg. Îmi puteți spune ce tip de conexiune utilizați — 4G, 5G sau rețea fixă?"
+    },
+    {
+      "rol": "client",
+      "text": "Eh, folosesc mobil, deci... 4G, presupun. Nu am selectat special 5G, deci ar trebui să fie 4G."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine. Am înțeles. Ați încercat să reporniți telefonul?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, da, am restartat, am scos și am pus din nou SIM-ul... nimic. Tot la fel. Și asta mă frustrează pentru că... nu știu, nu am schimbat nimic."
+    },
+    {
+      "rol": "operator",
+      "text": "Puteți să vă uitați la ecran și să îmi spuneți câte bare de semnal aveți în acest moment?"
+    },
+    {
+      "rol": "client",
+      "text": "Hmm... o bară. Doar o bară din cinci. E ridicol, zic eu, pentru că în camera alăturată am și un telefon pe Orange, și el are patru."
+    },
+    {
+      "rol": "operator",
+      "text": "Aha. Deci și pe o rețea diferită, în același spațiu, semnalul este mai bun. Puteți să îmi spuneți ce operator este pe celălalt telefon?"
+    },
+    {
+      "rol": "client",
+      "text": "Orange, cum v-am zis. Clar problema e la voi, nu?"
+    },
+    {
+      "rol": "operator",
+      "text": "Ar putea fi o problemă de setări. Îmi cer scuze pentru neplăceri. O să solicităm o verificare a rețelei."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, dar cât durează asta? Am nevoie de conexiune urgent, sunt în mijlocul unor treburi importante."
+    },
+    {
+      "rol": "operator",
+      "text": "Diagnosticul se face de obicei în 24-48 de ore. Între timp, ați putea să resetați setările de rețea pe telefonul dvs.?"
+    },
+    {
+      "rol": "client",
+      "text": "Ah... nu știu, dacă resetez, nu mă împiedic de... conturile stocate? Pentru că am destul de multe conturi memorate."
+    },
+    {
+      "rol": "operator",
+      "text": "Nu, conturile vor rămâne. Se resetează doar setările de conectivitate, 4G, WiFi."
+    },
+    {
+      "rol": "client",
+      "text": "Okay... și dacă eu fac asta, și tot nu merge, atunci ce?"
+    },
+    {
+      "rol": "operator",
+      "text": "Diagnosticul de rețea va continua. Dacă sunt probleme de infrastructură, veți avea prioritate de rezolvare."
+    },
+    {
+      "rol": "client",
+      "text": "Și din câte știu, prioritatea aia durează și ea... săptămâni, nu?"
+    },
+    {
+      "rol": "operator",
+      "text": "Depinde de natura problemei. Dacă e o defecțiune de celulă, poate fi mai rapid. Vă voi notifica când avem rezultat."
+    },
+    {
+      "rol": "client",
+      "text": "Cum mă notificați? Prin SMS? Că nu am semnal, deci SMS-ul s-ar putea să nu ajungă."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă pot notifica prin e-mail, dacă îmi dați adresa, sau vă rugăm să ne contactați după 48 de ore."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, adresa e ionescu.adrian@..., trimiteți voi. Doar... sper să se rezolve în scurt timp. Asta m-a afectat foarte tare."
+    },
+    {
+      "rol": "operator",
+      "text": "Am notat adresa. Vă voi trimite confirmarea pe e-mail în câteva minute. "
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Sper doar că nu va dura prea mult, că m-am saturat să aștept. La revedere."
+    }
+  ]
+}

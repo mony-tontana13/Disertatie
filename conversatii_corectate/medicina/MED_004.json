@@ -1,0 +1,57 @@
+{
+  "id": "MED_004",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la Clinica MedCare. Cum vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună! Aș dori să depun o reclamație cu privire la comportamentul unui membru al personalului vostru."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg, îmi pare rău să aud asta. Puteți să-mi spuneți cine a fost și ce s-a întâmplat?"
+    },
+    {
+      "rol": "client",
+      "text": "Eram programat ieri la ora 14:00 pentru o consultație. Ajuns la recepție, asistenta mi-a spus cu un ton foarte nepoliticos că doctorul este ocupat și să aștept, fără nicio estimare de timp."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru experiența neplăcută. Vă amintiți cumva numele asistentei?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu știu exact numele, doar că era o tânără brunetă, la recepție. Și după ce am așteptat vreo 40 de minute, nici măcar nu mi-a spus că doctorul mă va vedea."
+    },
+    {
+      "rol": "operator",
+      "text": "Am notat. Voi transmite reclamația la resurse umane și vom verifica înregistrările video pentru a identifica persoana. De obicei, răspunsul vine în 5-7 zile lucrătoare."
+    },
+    {
+      "rol": "client",
+      "text": "Bun. Și ce se va întâmpla după? Vor lua măsuri?"
+    },
+    {
+      "rol": "operator",
+      "text": "Cu siguranță. După identificare, va avea loc o discuție cu persoana respectivă și, dacă se confirmă, vor fi luate măsuri conform regulamentului intern. Veți fi informat cu privire la rezultat."
+    },
+    {
+      "rol": "client",
+      "text": "Okay. Sper să se rezolve. Nu sunt deloc mulțumit de cum am fost tratat."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi cer scuze pentru neplăceri și vă asigur că vom investiga serios situația. Am notat toate detaliile și veți fi contactat. E ok pentru dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, da. E perfect."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumim că ne-ați adus asta la cunoștință. O zi bună!"
+    }
+  ]
+}

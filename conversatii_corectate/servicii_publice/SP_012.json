@@ -1,0 +1,93 @@
+{
+  "id": "SP_012",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați contactat Direcția Generală de Înregistrări și Evidență a Populației. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am sunat săptămâna trecută despre o problemă cu actul de naștere. Mi s-a promis că se va rezolva în 48 de ore și nu s-a întâmplat nimic."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Îmi puteți da, vă rog, numele complet și numărul de telefon cu care ați sunat, ca să verific istoricul apelului?"
+    },
+    {
+      "rol": "client",
+      "text": "Mă numesc Andrei Georgescu. Numărul de telefon este 0755 234 891. Am vorbit cu o doamnă și mi-a spus să aștept."
+    },
+    {
+      "rol": "operator",
+      "text": "Stați să văd... Găsesc aici apelul de pe 15 februarie pentru cererea de duplicat al certificatului de naștere. Care a fost problema concretă?"
+    },
+    {
+      "rol": "client",
+      "text": "Am nevoie urgent de acel duplicat pentru o procedură. Mi s-a spus că voi fi contactat, dar nu a revenit nimeni."
+    },
+    {
+      "rol": "operator",
+      "text": "Să știți că cererea dumneavoastră e încă în procesare. Îmi pare rău pentru acest inconvenient."
+    },
+    {
+      "rol": "client",
+      "text": "Și acum ce fac? Am nevoie urgent de documentul acesta, nu pot să mai aștept 15 zile."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg cât de important e. O să pun o notă prioritară pe dosar, să fie procesat mai repede. Totuși, nu pot promite un termen fix."
+    },
+    {
+      "rol": "client",
+      "text": "Asta mi s-a spus și data trecută. Rezultatul e că stau degeaba."
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți dreptate. Voi gestiona personal dosarul dumneavoastră, iar în 3-4 zile vă contactez cu noutăți."
+    },
+    {
+      "rol": "client",
+      "text": "Ați spus de 3-4 zile și la apelul trecut."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația, dar avem proceduri fixe. Vă țin la curent. Numărul de telefon e același?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, e același număr. Dar nu prea mai am încredere în apelurile astea."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă asigur că vom urmări progresul dosarului. Din păcate, cam atât pot să fac acum."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Dacă pot să mai fac ceva, cum ar fi să vin la o filială, aș face-o."
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, asta nu va schimba lucrurile. Toți colegii văd aceleași informații. Vă recomand să așteptați apelul meu."
+    },
+    {
+      "rol": "client",
+      "text": "Deci sunt în aer, cum s-ar spune."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău. Voi face tot posibilul din partea mea."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Aștept 3-4 zile, dar să ne bazăm pe asta... voi mai suna."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru înțelegere."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "SP_017",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua. Ați apelat Agenția pentru Plăți și Inspecție Socială. Sunt Marian Popescu. Cu ce pot să vă ajut?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am primit o decizie prin care mi-a fost respins dosarul pentru alocația de susținere. Vreau să înțeleg de ce, pentru că la ghișeu mi s-a spus ceva cu totul diferit."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Îmi pare rău de situație. Ca să pot verifica dosarul, îmi puteți da, vă rog, numele și seria de identitate?"
+    },
+    {
+      "rol": "client",
+      "text": "Sunt Ștefan Marinescu, seria 18 BCD 456789. Dosarul a fost depus în februarie și am primit răspunsul de respingere acum două săptămâni."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să așteptați un moment... Haideți să vedem... Am găsit dosarul. Văd că a fost respins din cauza unui venit pe membru de familie care depășește plafonul. Puteți clarifica ce v-a spus colega noastră la ghișeu?"
+    },
+    {
+      "rol": "client",
+      "text": "Exact asta e problema. Angajata de la ghișeu mi-a zis că documentele mele sunt în regulă și că trebuie doar să aștept aprobarea. Nu mi-a spus nimic despre depășirea unui plafon. De fapt, mi-a zis că venitul meu ar fi sub limită."
+    },
+    {
+      "rol": "operator",
+      "text": "Pot înțelege frustrarea dvs. Situația e neclară din pricina unor informații contradictorii. Din dosarul pe care îl am în față, se observă că veniturile familiei depășesc pragul stabilit. Pot să vă explic cum se calculează aceste venituri."
+    },
+    {
+      "rol": "client",
+      "text": "Da, vă rog. Vreau să știu clar ce s-a luat în calcul. Are vreo legătură cu pensia tatălui meu pe care o declar?"
+    },
+    {
+      "rol": "operator",
+      "text": "Exact. După reglementări, venitul tuturor membrilor familiei se ia în considerare. Pensia din dosarul dvs. este de 2.400 de lei, la care se adaugă și alte venituri declarate. Plafonul pentru familia dvs. este 3.000 de lei."
+    },
+    {
+      "rol": "client",
+      "text": "Dar eu am o pensie de invaliditate de 1.800 de lei. Tatăl meu are 2.400, și ceilalți membrii nu au venituri. Matematica nu se potrivește. Asta e greșit."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, verific din nou documentele. Îmi puteți spune cine sunt membrii familiei și ce venituri au fiecare?"
+    },
+    {
+      "rol": "client",
+      "text": "Sunt patru: eu, soția - care nu lucrează, tatăl meu și un copil. Eu am 1.800 de lei, tatăl 2.400 și ceilalți nimic. De unde vine 4.200 de lei care e trecut în decizia de respingere?"
+    },
+    {
+      "rol": "operator",
+      "text": "Discrepanța asta e într-adevăr ciudată. Este posibil să existe o greșeală de introducere a datelor în sistem. Problema este că nu pot rezolva din telefon o chestie atât de complexă."
+    },
+    {
+      "rol": "client",
+      "text": "Nu pot rezolva din telefon? Dar pe mine nu m-a putut ajuta nici la ghișeu, nici acum. Ce trebuie să fac atunci?"
+    },
+    {
+      "rol": "operator",
+      "text": "Recomand să depuneți o cerere de reconsiderare la sediul agenției, în scris. Trebuie să includeți dovezile de venituri - declarații de impozit, extras de cont, orice document care demonstrează sumele reale."
+    },
+    {
+      "rol": "client",
+      "text": "O cerere de reconsiderare? Asta nu mi s-a menționat niciodată. De câte ori trebuie să fac asta până se îndreaptă greșeala voastră?"
+    },
+    {
+      "rol": "operator",
+      "text": "Chiar înțeleg frustrarea. Procedura e aceasta, conform legii. Cererea trebuie depusă în termen de 30 de zile de la primirea deciziei. În cazul în care identificăm o eroare, aceasta va fi corectată."
+    },
+    {
+      "rol": "client",
+      "text": "Și pot să depun personal, la birou? Pentru că nu vreau să rămân din nou fără răspuns."
+    },
+    {
+      "rol": "operator",
+      "text": "Da, absolut. Îl contactez pe șeful de serviciu să mă asigur că documentele sunt primite corect. Voi nota și problema cu informațiile contradictorii pe care le-ați primit."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. O să vin mâine cu actele. Doar... sper că de data asta lucrurile să se miște mai repede."
+    },
+    {
+      "rol": "operator",
+      "text": "O să mă ocup personal de cazul dvs. Dacă aveți alte întrebări, cereți de la ghișeu după Marian Popescu. La revedere și succes cu documentele."
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "MED_011",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, sunteți la Clinica MedLife. Mă numesc Anca Popescu. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Vreau să mă programez la o consultație de cardiologie, dar am o problemă cu asigurarea."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Despre ce problemă este vorba cu asigurarea?"
+    },
+    {
+      "rol": "client",
+      "text": "Am o asigurare privată și site-ul vostru spune că acceptați Allianz. Ei mi-au spus că am nevoie de un certificat medical de la medicul de familie, dar nu am medic de familie."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, haideți să vedem. Pot verifica în baza noastră de date asigurările și condițiile. Aveți numărul de poliță, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "Numărul e 7823456AB Allianz. Am vorbit cu ei și au zis că trebuie să am întâi un consult la medicul de familie, dar nu găsesc niciunul disponibil."
+    },
+    {
+      "rol": "operator",
+      "text": "Stați să verific... Da, pentru Allianz și cardiologie e nevoie de recomandare de la medicul de familie. Asta vine din partea asigurătorului."
+    },
+    {
+      "rol": "client",
+      "text": "Știu, dar cum obțin recomandare fără medic de familie? Nu mi se pare normal."
+    },
+    {
+      "rol": "operator",
+      "text": "Puteți folosi serviciul de medicină de familie la clinica noastră. Avem medici disponibili pentru consultații și documentație."
+    },
+    {
+      "rol": "client",
+      "text": "Ah, deci trebuie să plătesc în plus... Cât ar fi?"
+    },
+    {
+      "rol": "operator",
+      "text": "Consultația la medicina de familie e 150 de lei. Recomand să verificați cu asigurătorul dacă e acoperită parțial."
+    },
+    {
+      "rol": "client",
+      "text": "Am verificat deja. Nu e acoperită pentru că nu am medicul de familie în rețea. Deci trebuie să plătesc tot."
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, da, ar fi o consultație privată. Cu recomandarea puteți avea acoperire la cardiologie, depinde de poliță."
+    },
+    {
+      "rol": "client",
+      "text": "Cât costă la cardiologie?"
+    },
+    {
+      "rol": "operator",
+      "text": "Consultația de cardiologie costă 280 de lei privat. Cu recomandarea și polița Allianz, poate fi acoperită o parte, verificând contractul."
+    },
+    {
+      "rol": "client",
+      "text": "Așa deci... trebuie să dau 150 de lei pentru un act și apoi 280 pentru consultația propriu-zisă. Super."
+    },
+    {
+      "rol": "operator",
+      "text": "Știu că suma e mare. Poate ar trebui să întrebați asigurătorul pentru detalii suplimentare sau medici de familie în rețea."
+    },
+    {
+      "rol": "client",
+      "text": "Am sunat la ei de trei ori. Mereu aceleași povesti. Asta chiar e aiurea, nu-mi rezolvă nimic."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg că e frustrant. Regulile sunt ale asigurării și nu se fac excepții. Pot să vă ofer o programare rapidă la medicina de familie, să informez medicul despre urgența dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "Și când pot veni la medicul de familie?"
+    },
+    {
+      "rol": "operator",
+      "text": "Joi la ora 14:30 cu Dr. Ionescu e disponibilitate. Vi se potrivește?"
+    },
+    {
+      "rol": "client",
+      "text": "E prea târziu. Nu pot joi. Vreau la cardiolog, nu să umblu după acte."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Fără medicul de familie, nu putem face programare la cardiologie cu asigurare. Vă pot programa privat pentru 280 de lei."
+    },
+    {
+      "rol": "client",
+      "text": "Nu, nu vreau. Eu am asigurare tocmai ca să nu am bătaie de cap. Voi încerca la ei din nou luni. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "În regulă. Suntem aici dacă aveți nevoie. O zi bună și mult succes!"
+    }
+  ]
+}

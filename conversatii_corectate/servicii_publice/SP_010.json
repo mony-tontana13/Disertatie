@@ -1,0 +1,97 @@
+{
+  "id": "SP_010",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați ajuns la Agenția pentru Plăți și Inspecție Socială, sunt Cristina Ionescu. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Am primit o decizie de respingere a cererii mele de alocație socială și nu sunt de acord cu motivația. Aș vrea să depun o contestație."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Puteți să-mi spuneți în ce format ați primit decizia și motivul exact al respingerii?"
+    },
+    {
+      "rol": "client",
+      "text": "Am primit decizia pe email săptămâna trecută. Spun că venitul gospodăriei depășește pragul, dar eu am declarat corect. Probabil e o greșeală la calcul."
+    },
+    {
+      "rol": "operator",
+      "text": "Deci suspectați o eroare. Hmm, pentru contestații și verificări, trebuie să contactez colegii din departamentul de Evaluare și Verificare. Vă rog să așteptați puțin, vă transfer imediat."
+    },
+    {
+      "rol": "client",
+      "text": "Bine."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment, vă trec pe colegul nostru Mihai de acolo. O zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "Mulțumesc..."
+    },
+    {
+      "rol": "operator",
+      "text": "Bună, sunt Mihai Popescu de la Evaluare și Verificare. Cum vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Mi-au respins cererea de alocație pentru că ar fi depășit pragul de venit. Documentele trimise sunt corecte. Vreau să contest decizia."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Totuși, pentru contestații oficiale, procedura este să depuneți o cerere de reanalizare la Secretariatul Institutiei. Eu evaluez doar documentele depuse, nu pot reverifica bazat pe o plângere telefonică."
+    },
+    {
+      "rol": "client",
+      "text": "Dar la Secretariat mi s-a spus să sun la voi. De asta am sunat."
+    },
+    {
+      "rol": "operator",
+      "text": "Corect, dar pentru a începe o investigație, e necesară o cerere formală. Vă pot oferi numărul de fax al departamentului pentru a depune cererea."
+    },
+    {
+      "rol": "client",
+      "text": "Am nevoie de un răspuns direct, nu de un fax. Pot discuta cu cineva pentru a verifica calculele?"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea. Dar nu pot reface evaluarea prin telefon. Procesul e prin cerere scrisă. Pot să vă transfer la Secretariat pentru detalii despre documentele necesare."
+    },
+    {
+      "rol": "client",
+      "text": "Nu mai e nevoie să fiu transferat. Am discutat deja cu Secretariatul. Ceea ce vreau e să știu cine poate verifica dosarul meu fără să completez iar toate actele."
+    },
+    {
+      "rol": "operator",
+      "text": "Administrativ, orice reanalizare necesită documentare oficială. Trebuie să depuneți cererea pe hârtie, iar evaluarea ajunge din nou la mine. Fără cerere scrisă, nu pot iniția procesul."
+    },
+    {
+      "rol": "client",
+      "text": "Deci...mi spuneți că numai printr-o cerere formală îmi verific dosarul, chiar dacă ajunge la voi."
+    },
+    {
+      "rol": "operator",
+      "text": "Exact, asta e procedura. Îmi pare rău, dar avem nevoie de documentare pentru arhivarea oficială."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, măcar asta am înțeles. Am pierdut timpul degeaba."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău că nu am putut rezolva mai repede. Dacă mai aveți întrebări, nu ezitați să sunați din nou."
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere."
+    }
+  ]
+}

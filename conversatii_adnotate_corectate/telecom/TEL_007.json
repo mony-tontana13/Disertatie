@@ -1,0 +1,107 @@
+{
+  "id": "TEL_007",
+  "domeniu": "telecom",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "activare_esuata",
+    "problema_internet"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "ambele_probleme_rezolvate_rapid_si_clientul_multumit",
+  "rezumat": "Client a contactat Vodafone pentru a activa o extraopțiune de 10 GB, dar primea eroare din cauza cardului expirat. Operatorul a rezolvat problema prin trimiterea unui link securizat pentru actualizarea datelor de plată și activarea extraopțiunii.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la serviciul clienți Vodafone, numele meu este Radu Mircea. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Am încercat să activez o extraopțiune de date de 10 GB de pe telefon, dar primesc un mesaj că solicitarea nu a putut fi procesată. Puteți verifica de ce?"
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur că da. Îmi puteți comunica numărul de telefon despre care este vorba?"
+    },
+    {
+      "rol": "client",
+      "text": "Este 0744 555 123."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Un moment să verific starea contului... Da, văd aici încercările de activare. Eroarea apare deoarece cardul salvat în aplicație pentru plată a expirat luna trecută."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles. Probabil am uitat să actualizez datele noului card în cont. Se poate activa manual de acolo?"
+    },
+    {
+      "rol": "operator",
+      "text": "Pot reiniția procesul, dar va trebui să introduceți datele cardului nou printr-un link securizat pe care vi-l trimit prin SMS chiar acum. Vă rog să-mi confirmați când îl primiți."
+    },
+    {
+      "rol": "client",
+      "text": "Da, a sosit. Stați să introduc datele... Gata, am finalizat plata."
+    },
+    {
+      "rol": "operator",
+      "text": "Confirm și eu. Extraopțiunea de 10 GB este acum activă pe numărul dumneavoastră. Mai aveți și alte solicitări?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, mai am o problemă cu internetul de acasă. Semnalul Wi-Fi este foarte slab în dormitor, deși routerul e în sufragerie. Înainte nu aveam problema asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles. Pentru verificări la echipament va trebui să vă transfer la departamentul tehnic, deoarece ei pot accesa setările routerului de la distanță."
+    },
+    {
+      "rol": "client",
+      "text": "E în regulă, puteți să mă transferați. Sper să se rezolve astăzi."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă pun în legătură cu colegii de la tehnic. Timpul de așteptare este de aproximativ 5 minute. Rămâneți la linie?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, rămân la linie. Mulțumesc."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc și eu. Vă transfer acum. O zi bună."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    },
+    {
+      "rol": "operator_tehnic",
+      "text": "Bună ziua! Sunt de la suport tehnic, am preluat solicitarea dumneavoastră referitoare la semnalul Wi-Fi. Îmi permiteți să accesez routerul pentru o diagnoză rapidă?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Da, vă rog. Vreau doar să înțeleg de ce nu mai am semnal în toată casa ca înainte."
+    },
+    {
+      "rol": "operator_tehnic",
+      "text": "Văd în sistem că sunt multe rețele vecine care interferează pe canalul actual. Am optimizat acum frecvența și am făcut o reconfigurare a canalelor de emisie. Vă rog să verificați dacă se vede o îmbunătățire în dormitor."
+    },
+    {
+      "rol": "client",
+      "text": "Mă duc acum... Da, pare că s-a încărcat pagina imediat. Sper să rămână așa stabil."
+    },
+    {
+      "rol": "operator_tehnic",
+      "text": "Dacă problema reapare, ne puteți contacta pentru o recalibrare. Vă mai pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, e în regulă momentan. Mulțumesc. O zi bună."
+    },
+    {
+      "rol": "operator_tehnic",
+      "text": "Cu plăcere. La revedere!"
+    }
+  ],
+  "tip_complexitate": "multi_intentie"
+}

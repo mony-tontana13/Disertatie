@@ -1,0 +1,114 @@
+{
+  "id": "RET_015",
+  "domeniu": "retail",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "comanda_intarziata"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "timp_asteptare_mare_fara_rezolvare_imediata",
+  "rezumat": "Client contactează pentru o comandă plasată pe 15 martie, intrat în curier pe 18 martie cu DPD, dar fără noutăți de 18 zile. Operator promite contactarea curierului cu răspuns în 3-5 zile și monitorizare personală. Clientul exprimă frustrare vizibilă cu privire la durata așteapterii și la absența unei soluții rapide, încheind conversația cu resemnare și scepticism, deși acceptă tehnic propunerea operatorului.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! eMart.ro, sunt Cristian Popa. Cu ce pot să vă ajut astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o problemă cu o comandă pe care am plasat-o acum ceva timp și nu sunt sigur ce se întâmplă cu ea."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Puteți să-mi spuneți, vă rog, numărul comenzii sau emailul cu care ați plasat comanda?"
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, adrian.mihai@gmail.com. Comanda a fost plasată pe 15 martie. Mi s-a spus că va ajunge în 3-5 zile, dar am primit o notificare că a intrat în curier pe 18 martie și de atunci... nimic. Nici nu mai știu ce să cred."
+    },
+    {
+      "rol": "operator",
+      "text": "Așadar, comanda din 15 martie a intrat în curier pe 18 și nu aveți noutăți de atunci. Cât timp a trecut din momentul acela?"
+    },
+    {
+      "rol": "client",
+      "text": "Deja au trecut două săptămâni și jumătate. Deci cam 18 zile."
+    },
+    {
+      "rol": "operator",
+      "text": "Inteleg. Stați să verific în sistem cu emailul. Un moment, vă rog..."
+    },
+    {
+      "rol": "client",
+      "text": "Da, mulțumesc."
+    },
+    {
+      "rol": "operator",
+      "text": "Am găsit comanda. Numărul este EM-456782. Văd că a intrat într-adevăr în curier pe 18 martie cu DPD. Tracking-ul arată că a fost preluat de curier, dar nu mai avem informații ulterioare. E ciudat, într-adevăr."
+    },
+    {
+      "rol": "client",
+      "text": "Ciudat e puțin spus. Cine ar trebui să fie contactat acum? Curierul, voi, cine?"
+    },
+    {
+      "rol": "operator",
+      "text": "Noi trebuie să contactăm curierul. Din păcate, DPD nu răspunde foarte repede, dar o să fac o reclamație și o să cer informații despre pachet."
+    },
+    {
+      "rol": "client",
+      "text": "Și cât timp credeți că va dura asta?"
+    },
+    {
+      "rol": "operator",
+      "text": "De obicei, curierul răspunde în 3-5 zile lucrătoare. După ce primesc răspunsul, vă voi contacta la emailul dvs. și vă voi spune ce am aflat."
+    },
+    {
+      "rol": "client",
+      "text": "Dar deja am așteptat aproape trei săptămâni. Nu puteți face nimic mai repede?"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru situație. Contactarea directă a curierului se face prin sistemul de reclamații. Dar voi prioritiza cererea în sistem și voi verifica și eu statusul în următoarele zile."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Şi dacă pachetul se dovedește că s-a pierdut? Ce se întâmplă atunci?"
+    },
+    {
+      "rol": "operator",
+      "text": "Dacă pachetul se pierde, îl vom înlocui sau vă vom face o rambursare completă. Dar să vedem ce ne spune curierul mai întâi."
+    },
+    {
+      "rol": "client",
+      "text": "Deci trebuie să aștept încă trei-patru zile pe lângă cele de până acum, fără să ştiu ce se întâmplă."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru disconfort. Voi monitoriza personal cererea și vă asigur că, dacă primesc răspuns mai repede, vă anunț imediat."
+    },
+    {
+      "rol": "client",
+      "text": "Să sper că măcar asta merge."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru înțelegere. Voi nota în fișă că am vorbit cu dvs. astăzi. Emailul este adrian.mihai@gmail.com, așa că acolo veți primi informații. Corect?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, corect. Dar când mă anunțați, spuneți-mi clar dacă s-a pierdut sau nu, fără cuvinte vagi. Vreau răspuns direct."
+    },
+    {
+      "rol": "operator",
+      "text": "Bineînțeles. Vă voi spune exact ce s-a întâmplat și care sunt opțiunile dvs."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere și îmi pare rău pentru inconvenient."
+    }
+  ],
+  "tip_complexitate": "ambigua"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "BNK_003",
+  "domeniu": "banking",
+  "complexitate": "simpla",
+  "intentie_gold": ["card_blocat"],
+  "satisfactie": "pozitiv",
+  "motiv_satisfactie": "problema_rezolvata_rapid",
+  "rezumat": "Client contactează banca cu problemă de card blocat. Operatorul identifică cauza (tranzacție suspectă din Italia), deblochează cardul în 2 minute și oferă opțiuni suplimentare. Client este mulțumit.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, sunt Cristian Popescu, din serviciul clienți BancaRom. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună, ăăă, am o problemă cu cardul meu de credit. S-a blocat și nu pot să-l folosesc nicăieri."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Haideți să vedem cum putem rezolva asta. Pot să vă cer numărul cardului, doar ultimele patru cifre, și data nașterii ca să verific contul?"
+    },
+    {
+      "rol": "client",
+      "text": "Desigur. Cardul se termină în 7389 și data nașterii este 15 martie 1985."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Stați un pic să verific sistemul... Da, văd că este blocat din această dimineață. Ați făcut, poate, vreo tranzacție mai neobișnuită în ultima perioadă?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, acum trei zile am făcut o cumpărătură online din Italia. Probabil asta a părut suspicioasă."
+    },
+    {
+      "rol": "operator",
+      "text": "Exact, sistemul nostru de securitate a blocat cardul ca măsură de protecție. Avem două opțiuni: pot să-l deblochez imediat sau vă pot trimite un card înlocuitor, sau ambele dacă preferați."
+    },
+    {
+      "rol": "client",
+      "text": "Aș prefera să-l deblochezi acum, că am nevoie de el zilele următoare. Apropo, în cât timp ajunge cardul înlocuitor?"
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur, îl deblochez chiar acum. Deblocarea durează maxim 2 minute. Cardul înlocuitor ar trebui să ajungă în 3-5 zile lucrătoare. Gata, acum cardul este deblocat. Îl puteți folosi fără probleme."
+    },
+    {
+      "rol": "client",
+      "text": "Perfect, mulțumesc. Și dacă se mai întâmplă vreodată, ce ar trebui să fac?"
+    },
+    {
+      "rol": "operator",
+      "text": "Dacă mai întâlniți astfel de probleme sau observați ceva suspect, sunați imediat la numărul de pe spate al cardului sau la linia noastră de servicii. Suntem disponibili non-stop pentru a vă asista rapid."
+    },
+    {
+      "rol": "client",
+      "text": "Foarte bine, mulțumesc mult pentru ajutor și promptitudine."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu drag, mă bucur că am putut ajuta. Dacă mai aveți nevoie de noi, nu ezitați să ne contactați. O zi frumoasă vă doresc!"
+    },
+    {
+      "rol": "client",
+      "text": "Mulțumesc, la revedere!"
+    }
+  ]
+}

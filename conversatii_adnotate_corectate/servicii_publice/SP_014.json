@@ -1,0 +1,118 @@
+{
+  "id": "SP_014",
+  "domeniu": "servicii_publice",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "problema_plata_taxa"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "problema_nerezolvata_in_moment_incertitudine_privind_rezolutie",
+  "rezumat": "Client semnalează o problemă cu taxa de circulație plătită pe 15 martie (450 lei, referință 2024031500245) care nu apare confirmată în baza de date, deși deține dovada bancară. Operatorul admite întârzierea și promite investigație în 3-5 zile lucrătoare, dar nu oferă garanții privind soluționarea imediată sau protecție împotriva eventualelor controale. Clientul rămâne frustat de incertitudine și de pierderea monetară temporară, încheiind conversația cu o replică de resemnare.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați ajuns la Serviciul de Relații cu Publicul al Agenției pentru Plăți și Impozite. Cu ce pot să vă ajut?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o problemă cu o taxă pe care trebuia să o plătesc. Am plătit-o deja și nu înțeleg de ce apare că nu s-a înregistrat."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Vă rog, puteți să-mi spuneți mai multe detalii? Ce fel de taxă este și la ce dată ați plătit-o?"
+    },
+    {
+      "rol": "client",
+      "text": "Este taxa de circulație. Am plătit-o pe 15 martie, prin transfer bancar, direct în contul indicat pe site."
+    },
+    {
+      "rol": "operator",
+      "text": "Bun, mulțumesc pentru informație. Pentru a putea verifica, am nevoie de numărul de înmatriculare al vehiculului și de suma exactă pe care ați plătit-o."
+    },
+    {
+      "rol": "client",
+      "text": "SB 25 ANG și suma a fost 450 de lei. E la numele meu, sunt proprietar."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Stați să verific în sistem... Da, aici găsesc înregistrarea vehiculului. Văd că... plata nu apare confirmată în baza noastră de date."
+    },
+    {
+      "rol": "client",
+      "text": "Cum adică nu apare? Am chitanță de la bancă. Am făcut totul cum trebuie."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea dumneavoastră. Este posibil ca plata să fi fost transmisă, dar nu s-a procesat încă în sistemul nostru. Uneori există întârzieri în sincronizare."
+    },
+    {
+      "rol": "client",
+      "text": "Dar au trecut aproape două săptămâni. Asta nu e deloc normal."
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți dreptate, două săptămâni e mult. Dacă îmi dați numărul de referință al transferului bancar, voi trimite cazul către echipa de inspecție internă pentru investigații."
+    },
+    {
+      "rol": "client",
+      "text": "Referința e 2024031500245. Dar cât timp va dura asta? Dacă mă oprește poliția?"
+    },
+    {
+      "rol": "operator",
+      "text": "Referința e notată. În general, verificările durează 3 până la 5 zile lucrătoare. Vă voi contacta cu rezultatul. Legat de poliție, atâta timp cât aveți dovada plății... teoretic ar trebui să fie OK, dar înțeleg preocuparea."
+    },
+    {
+      "rol": "client",
+      "text": "Teoretic... Adică nici nu sunteți sigur."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg îngrijorarea. Dovada de la bancă ar trebui să fie suficientă, dar vă recomand să o aveți la dvs. Problemele se rezolvă, de obicei, destul de repede."
+    },
+    {
+      "rol": "client",
+      "text": "Și în caz că nu se rezolvă?"
+    },
+    {
+      "rol": "operator",
+      "text": "Dacă nu primesc un răspuns în 5 zile lucrătoare, vă anunț și discutăm alte opțiuni, inclusiv o plângere administrativă, dacă e cazul."
+    },
+    {
+      "rol": "client",
+      "text": "Și va trebui să mă întorc la dumneavoastră? Sau e mai bine să sun direct?"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă contactez eu cu rezultatul. Dacă vreți să sunați, aveți nevoie de: numărul de înmatriculare și referința 2024031500245."
+    },
+    {
+      "rol": "client",
+      "text": "Bun, în ordine. Doar că... nu-mi place că-mi lipsesc banii degeaba, chiar dacă ziceți că se va rezolva."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg perfect. Verificarea va fi făcută serios."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Aștept să mă sunați, atunci."
+    },
+    {
+      "rol": "operator",
+      "text": "Perfect. Voi urmări cazul și vă voi contacta în maximum 5 zile lucrătoare. Dacă vreți, puteți lăsa și o adresă de e-mail?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, telefonul e bine. Mai bine prin telefon."
+    },
+    {
+      "rol": "operator",
+      "text": "Notat. Mulțumesc pentru răbdare și îmi pare rău pentru inconvenient. O zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "Aia e...La revedere."
+    }
+  ],
+  "tip_complexitate": "reclamatie_implicita"
+}

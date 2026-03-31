@@ -1,0 +1,57 @@
+{
+  "id": "MED_002",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la clinica MedCare. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună! Apelez pentru că am o problemă cu o rețetă pe care am primit-o la ultima vizită și nu pot s-o folosesc."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Vă rog să-mi spuneți mai detaliat ce se întâmplă cu rețeta. Care este exact problema?"
+    },
+    {
+      "rol": "client",
+      "text": "Am fost la medicul dermatolog săptămâna trecută și mi-a dat o rețetă, dar la farmacie nu au vrut să mi-o elibereze medicamentul. Au zis că e ceva în neregulă cu rețeta."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi puteți spune numele medicului și data consultației, pentru a verifica rețeta în sistem?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, sigur. Medicul a fost doctorul Popescu, iar consultația a fost marți, 14 ianuarie."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment, verific... Am găsit consultația. Rețeta arată că lipsește data expirării și semnătura medicului. Asta e motivul pentru care farmacia nu a putut elibera medicamentul. O voi remedia imediat și voi contacta pe doctorul Popescu să completeze datele lipsă."
+    },
+    {
+      "rol": "client",
+      "text": "Ah, se poate face asta? Perfect. Cât timp va dura să fie gata?"
+    },
+    {
+      "rol": "operator",
+      "text": "Ar trebui să finalizez aceasta în maximum 24 de ore. Medicul va completa datele și rețeta va deveni valabilă. Îmi puteți lăsa un număr de telefon ca să vă anunț când este gata?"
+    },
+    {
+      "rol": "client",
+      "text": "Desigur. E 0722 456 789. Mulțumesc mult pentru ajutor."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere! Am notat numărul. Vă vom contacta mâine până la prânz cu o veste. Rețeta dvs. va fi corectată și gata de folosit."
+    },
+    {
+      "rol": "client",
+      "text": "Excelent! Mersi din nou."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru apel și pentru răbdare. O zi frumoasă și la revedere!"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "TEL_010",
+  "domeniu": "telecom",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "portare_esuata"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "problema_nerezolvata_timp_asteptare_mare_promisiune_nerespectata",
+  "rezumat": "Client solicită portarea numărului de telefon de la alt operator, inițiată pe 5 februarie cu promisiunea de 5 zile, dar după 10 zile serviciul nu este activ. Operator Teodor identifică o eroare de validare în sistem și transferă clientul la departamentul Portări. Mihaela din Portări descoperă că seria de buletin a fost introdusă greșit de către agent, dar corectarea datelor necesită reinițierea întregii proceduri cu alte 5 zile de așteptare. Clientul exprimă frustare majoră, considerând situația o bătaie de joc, refuză compensarea cu credit și deschide reclamație oficială.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Serviciu Clienți Telecom Romania, sunt Teodor Rodescu. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o problemă cu portarea numărului meu de la alt operator. Mi-ați promis la semnarea contractului că se face în 5 zile și au trecut deja 10 zile, iar eu tot nu am semnal pe cartela voastră."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru această situație neplăcută. Mă pot uita în sistem să vedem exact unde s-a blocat fluxul, dar am nevoie de câteva date. Care este numărul de telefon pe care doriți să-l portați?"
+    },
+    {
+      "rol": "client",
+      "text": "0754 123 456. Am contractul în față, e inițiat pe data de 5 februarie. Nu înțeleg de ce durează atât, am mare nevoie de el."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment, vă rog. Caut în sistem... Da, văd contractul aici. Problema este că portarea figurează cu statusul \"Eroare validare date\" în sistemul nostru intern. Se pare că cererea nu a plecat corect către baza de date centrală."
+    },
+    {
+      "rol": "client",
+      "text": "Cum adică eroare de validare? Eu am plătit tot ce era de plătit și am semnat tot. De ce nu mi-a zis nimeni până acum că e blocată cererea?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, a fost o eroare de procesare la noi. Ceea ce pot face eu acum este să solicit o accelerare a cererii. Voi transmite asta departamentului nostru de portări. Pot să vă sun înapoi în maximum 48 de ore cu o actualizare."
+    },
+    {
+      "rol": "client",
+      "text": "48 de ore? Dar ați zis că procesul durează 5 zile în total și noi am depășit deja termenul de două ori. Nu mai am răbdare să mai stau încă două zile doar pentru un apel."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg urgența. Termenul de 5 zile este cel standard, dar în cazul unei erori de sistem, trebuie să reintroducem datele manual. Din păcate, este o etapă tehnică ce nu poate fi sărită."
+    },
+    {
+      "rol": "client",
+      "text": "Ok, dar eu lucrez cu acest număr și nu pot rămâne fără serviciu sau să port două telefoane după mine. Puteți face ceva mai concret chiar acum decât să-mi ziceți iar să aștept?"
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur. Vă voi transfera imediat la departamentul de Portări, care are acces direct la sistemele de tracking și poate face o intervenție manuală pentru a retrimite cererea corect. Un moment, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "Bine... sper să nu mă țineți iar 20 de minute pe muzică."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă voi transfera acum. Aveți răbdare un moment, vă rog."
+    },
+    {
+      "rol": "operator_tehnic",
+      "text": "Bună ziua, sunt Mihaela din departamentul Portări. Am văzut dosarul dumneavoastră și am verificat statusul. Se pare că agentul care v-a preluat contractul a introdus greșit seria de buletin în platformă."
+    },
+    {
+      "rol": "client",
+      "text": "Greșit seria de buletin? Deci am stat 10 zile degeaba pentru că cineva de la voi a fost neatent? Ce situație avem acum, cât mai durează?"
+    },
+    {
+      "rol": "operator_tehnic",
+      "text": "Am corectat datele acum. Din păcate, reinițierea cererii înseamnă din nou un termen de până la 5 zile lucrătoare conform procedurilor de interconectare între operatori. Sistemul centralizat nu permite termene mai scurte."
+    },
+    {
+      "rol": "client",
+      "text": "Încă 5 zile? Deci responsabilitatea este 100% a voastră, dar eu sunt cel care suferă și pierde timp."
+    },
+    {
+      "rol": "operator_tehnic",
+      "text": "Sunt total de acord cu dumneavoastră, nu este o situație corectă. Am cerut prioritate maximă pentru acest tichet, dar procesul tehnic necesită confirmările de rigoare. Aveți posibilitatea să depuneți o reclamație formală, iar noi vă putem oferi o compensare sub formă de credit pe factura viitoare pentru deranj."
+    },
+    {
+      "rol": "client",
+      "text": "Compensare? Nu mă interesează creditul vostru de câțiva lei, eu vreau să-mi pot folosi numărul pentru care plătesc. Asta vreau. Care ar fi mâna de ajutor reală aici, în afară de scuze?"
+    },
+    {
+      "rol": "operator_tehnic",
+      "text": "Înțeleg supărarea. Din perspectivă tehnică, nu pot forța baza de date națională să valideze mai repede. Ceea ce pot face este să verific personal statusul în 24 de ore și să vă sun. De asemenea, vă pot activa o opțiune de internet gratuit pe cartela provizorie dacă vă ajută."
+    },
+    {
+      "rol": "client",
+      "text": "Asta nu mă ajută cu nimic, am nevoie de numărul meu vechi să mă sune clienții. Cui pot face o reclamație oficială? Vreau să escaladez asta, e bătaie de joc."
+    },
+    {
+      "rol": "operator_tehnic",
+      "text": "Bineînțeles, aveți tot dreptul. Voi deschide acum un tichet de reclamație formală ce va fi trimis direct la departamentul de Complaint Management. Vă voi trimite confirmarea pe email și veți fi contactat în termenul legal de 5 zile lucrătoare."
+    },
+    {
+      "rol": "client",
+      "text": "Alte 5 zile... Și îmi trimiteți confirmarea pe email, dar de unde îl aveți? Că la ce erori ați făcut, mă mir că e corect."
+    },
+    {
+      "rol": "operator_tehnic",
+      "text": "Vă rog să-mi confirmați dumneavoastră adresa de email pentru a fi siguri, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "Este andrei.popescu@gmail.com. Sper să fiți capabili să o scrieți măcar pe asta corect."
+    },
+    {
+      "rol": "operator_tehnic",
+      "text": "Am notat corect adresa. Veți primi confirmarea în maximum 2 ore. Mai este ceva cu care vă pot ajuta în acest moment?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, e de ajuns cât m-ați 'ajutat' până acum. Bună ziua."
+    },
+    {
+      "rol": "operator_tehnic",
+      "text": "Îmi cer scuze încă o dată pentru tot inconvenientul creat. O zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ],
+  "tip_complexitate": "pasat_intre_departamente"
+}

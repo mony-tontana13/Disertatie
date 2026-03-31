@@ -1,0 +1,74 @@
+{
+  "id": "MED_013",
+  "domeniu": "medicina",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "consultatie_anulata"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "problema_rezolvata_mecanic_fara_empatie_reala_si_clientul_pleaca_frustrat",
+  "rezumat": "Clientul Andrei Popescu sosește la clinică pentru o programare la ora 14:00 cu dr. Mihai și afla că aceasta a fost anulată fără notificare prealabilă. Operatorul Adriana explică că s-a încercat trimiterea unui SMS automat care a eșuat din cauza unei erori de rețea, și că medicul a intrat în concediu medical. Clientul manifestă frustare deoarece a pierdut timp și bani pe drum, iar consultația era urgentă pentru un dosar medical cu termen poimâine. Operator ofertează doar un discount de 10% și o programare la altă medic pentru ziua următoare.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la Clinica Synergis, numele meu este Adriana. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Sunt în fața clinicii dumneavoastră și recepția îmi spune că programarea mea de la ora 14:00 cu domnul doctor Mihai a fost anulată. Cum este posibil să vin până aici și să aflu asta la ușă?"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi cer scuze pentru situația creată. Vă rog să-mi spuneți numele dumneavoastră pentru a verifica imediat fișa de programări."
+    },
+    {
+      "rol": "client",
+      "text": "Andrei Popescu este numele. Am bătut tot orașul prin aglomerație ca să mi se spună că nu intru."
+    },
+    {
+      "rol": "operator",
+      "text": "Domnule Popescu, verific acum... Într-adevăr, văd că programarea de azi a fost marcată ca anulată ieri dimineață. Domnul doctor Mihai a intrat în concediu medical neprevăzut."
+    },
+    {
+      "rol": "client",
+      "text": "Și de ce nu am fost anunțat? Am telefonul la mine non-stop, nu am primit niciun apel, niciun SMS, nimic!"
+    },
+    {
+      "rol": "operator",
+      "text": "Văd în sistem că s-a încercat trimiterea unui SMS automat, dar apare cu statusul 'eșuat'. Probabil a fost o eroare de rețea. Ne cerem scuze, ar fi trebuit să fim informați de sistem că nu ați primit mesajul."
+    },
+    {
+      "rol": "client",
+      "text": "Eroare de rețea sau nu, eu am pierdut timpul și banii pe drum. Acum ce facem? Am nevoie de această consultație pentru un dosar medical pe care trebuie să-l depun poimâine."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg urgența. Domnul doctor Mihai va reveni abia peste o săptămână. Vă pot oferi o programare mâine dimineață la doamna doctor Constanța Șerban, care are aceeași specializare."
+    },
+    {
+      "rol": "client",
+      "text": "Mâine este prea târziu, aveam nevoie de rezultate azi. Și oricum, eu am venit special pentru dr. Mihai, la recomandare. Nu mi se pare corect să plătesc preț întreg după ce m-ați pus pe drumuri degeaba."
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, tarifele sunt fixe, dar având în vedere eroarea noastră de comunicare, pot să notez în dosar o solicitare pentru un discount de 10% la următoarea vizită, cu aprobarea managerului."
+    },
+    {
+      "rol": "client",
+      "text": "10% pentru o zi pierdută? În fine, programați-mă la doamna doctor Șerban pentru mâine, că nu am de ales, dar o să las și o reclamație scrisă la recepție."
+    },
+    {
+      "rol": "operator",
+      "text": "Este dreptul dumneavoastră. V-am rezervat locul pentru mâine la ora 09:00. Veți primi acum un SMS de confirmare — vă rog să-mi spuneți dacă ajunge, ca să fim siguri."
+    },
+    {
+      "rol": "client",
+      "text": "A ajuns acum. Trebuia să se întâmple asta de ieri. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "Ne cerem scuze încă o dată pentru disconfort. O zi bună."
+    }
+  ],
+  "tip_complexitate": "negata_conditionata"
+}

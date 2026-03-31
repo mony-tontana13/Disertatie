@@ -1,0 +1,102 @@
+{
+  "id": "SP_016",
+  "domeniu": "servicii_publice",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "programare_ghiseu"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "problema_nerezolvata_frustrare_procedura",
+  "rezumat": "Client sună pentru a se programa la ghișeu pentru a clarifica o problemă cu Declarația Unică - documente lipsă raportate în notificare deși au fost încărcate online. Operatorul confirmă programarea pentru ziua următoare la 10:30 la sediul central și precizează documentele necesare. Însă clientul devine frustrat când află că trebuie să valideze programarea prin portal online, exact platforma care i-a creat probleme inițial. Clientul refuză și închide conversația cu tone de resemnare și nemulțumire față de birocrație, fără a avea garanția rezolvării problemei.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la Direcția Generală de Impozite și Taxe. Numele meu este Andrei Marin. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Vă sun pentru că am o problemă cu Declarația Unică și vreau să mă programez la un ghișeu, la cineva care chiar știe să explice, că m-am săturat de erori."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Vă referiți la rectificarea impozitului pe venit pentru anul fiscal anterior?"
+    },
+    {
+      "rol": "client",
+      "text": "Exact. Am depus totul în martie, online, și acum primesc notificare că lipsesc documente, deși eu le-am încărcat. Am fost la sediul local și m-au expediat imediat, spunându-mi că 'nu e de competența lor'. "
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău. Vă pot programa pentru o clarificare la sediul central. Vorbim despre un dosar de persoană fizică?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, persoană fizică. Am o foaie plină de coduri și bifări de la ei, dar nimeni nu a fost capabil să-mi spună clar ce am de făcut. Sper că la dumneavoastră dau peste cineva competent, că deja am pierdut două zile cu asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Suntem aici să clarificăm. În București, sediul central este pe Strada Apolodor, nr. 17. Care ar fi ziua în care ați putea veni?"
+    },
+    {
+      "rol": "client",
+      "text": "Mâine sau poimâine, cât mai repede. Vreau să închid subiectul ăsta odată."
+    },
+    {
+      "rol": "operator",
+      "text": "Să verific disponibilitatea în registrul de programări... Mâine avem liber doar la 10:30 și la 14:00. Care dintre aceste intervale vă convine?"
+    },
+    {
+      "rol": "client",
+      "text": "Rămânem la 10:30. Trebuie să mai aduc și altceva în afară de foaia aia cu erori? Nu vreau să ajung acolo și să-mi spună că mai îmi trebuie nu știu ce adeverință."
+    },
+    {
+      "rol": "operator",
+      "text": "Este obligatoriu să aveți actul de identitate în original, o copie a acestuia și Declarația depusă inițial. Orice dovadă a plăților efectuate este, de asemenea, utilă."
+    },
+    {
+      "rol": "client",
+      "text": "Okee... și dacă vin mâine, am garanția că se rezolvă? Sau mă trezesc că mă puneți să mai fac o programare peste o lună?"
+    },
+    {
+      "rol": "operator",
+      "text": "Specialistul va analiza documentele pe loc. În general se rezolvă, dar depinde de complexitatea rectificării."
+    },
+    {
+      "rol": "client",
+      "text": "Sper să fie așa. Bun, deci m-ați notat pentru mâine la 10:30?"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă pot rezerva locul, însă, conform noilor proceduri, trebuie să intrați acum pe portalul nostru și să validați programarea folosind codul pe care vi-l generez eu acum. Altfel, sistemul o șterge automat în 30 de minute."
+    },
+    {
+      "rol": "client",
+      "text": "Poftim? Păi de asta am sunat, ca să NU mai folosesc portalul ăla care oricum îmi dă erori de o lună! De ce nu mă puteți programa direct, dacă tot am vorbit zece minute la telefon?"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă înțeleg nemulțumirea, dar este o măsură de siguranță pentru a evita programările fictive. Sistemul informatic este separat de centrala telefonică."
+    },
+    {
+      "rol": "client",
+      "text": "Măsură de siguranță pe timpul meu... tipic. Deci practic tot la mâna site-ului vostru prost rămân. Este incredibilă birocrația asta, vă bateți joc de oameni."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău, acestea sunt instrucțiunile pe care trebuie să le respect. Vă pot ghida telefonic prin procesul de validare, dacă doriți."
+    },
+    {
+      "rol": "client",
+      "text": "Nu mai vreau niciun ghidaj. Sper că de data asta chiar funcționează ceva la voi. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "Regretăm situația întâmpinată. Dacă aveți blocaje pe platformă, reveniți cu un apel. O zi bună."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ],
+  "tip_complexitate": "ezitanta"
+}

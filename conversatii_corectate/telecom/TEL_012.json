@@ -1,0 +1,73 @@
+{
+  "id": "TEL_012",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la Vodafone, sunt Ioana Dima. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Ascultă, am o problemă cu roamingul care trebuia rezolvată de o săptămână. Am sunat atunci, mi s-a promis marea cu sarea că se rezolvă în 24 de ore, dar surpriză: nu s-a întâmplat absolut nimic. Cât timp mai aveți de gând să mă purtați cu vorba?"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud asta. Mă pot uita imediat peste istoricul interacțiunilor dumneavoastră, dar am nevoie de numărul de telefon vizat. Care este acesta?"
+    },
+    {
+      "rol": "client",
+      "text": "Este 0721-456-789. Apelul a fost înregistrat, deci ar trebui să fie extrem de ușor de găsit dacă cineva chiar și-a făcut treaba acolo!"
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment, vă rog... Da, am găsit. Ați raportat o problemă legată de dezactivarea roamingului încă din luna august, corect?"
+    },
+    {
+      "rol": "client",
+      "text": "Exact! Din AUGUST! Suntem deja în septembrie și eu încă pot apela și folosi date în străinătate fără să vreau. Mi s-a confirmat clar că s-a trimis o comandă de dezactivare. De ce Dumnezeu e tot activ serviciul?"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg și este într-adevăr neplăcut. Lăsați-mă să verific mai în detaliu ce s-a întâmplat cu acea comandă în sistem."
+    },
+    {
+      "rol": "client",
+      "text": "Nu, nu mă mai pune să aștept ca să-mi citești aceleași fișe inutile. Mă poți pune în legătură cu cineva care chiar are butonul de dezactivare în față? M-am săturat să repet aceeași poveste la fiecare operator și să nu se schimbe nimic!"
+    },
+    {
+      "rol": "operator",
+      "text": "Văd în notele colegilor că s-a încercat deja relansarea comenzii, dar se pare că a dat eroare. Recomand să vă transfer la departamentul Tehnic. Ei au acces direct la serverele de roaming și sunt mult mai bine echipați pentru a forța această setare."
+    },
+    {
+      "rol": "client",
+      "text": "Și cât mai stau și la Tehnic? Îți dai seama că am deja o factură uriașă cu taxe suplimentare din cauza incompetenței voastre de a închide un serviciu? Cine plătește pentru asta?"
+    },
+    {
+      "rol": "operator",
+      "text": "Transferul va dura maxim 2-3 minute, iar specialistul va putea intra direct pe profilul dumneavoastră tehnic. Legat de taxele de pe factură, putem discuta despre o recalculare imediat după ce ne asigurăm că serviciul este oprit."
+    },
+    {
+      "rol": "client",
+      "text": "Adică îmi spui că nici măcar acum nu ești capabil să-mi garantezi că nu voi mai fi taxat? Este absolut incredibil cum vă bateți joc de timpul și de banii clienților!"
+    },
+    {
+      "rol": "operator",
+      "text": "Specialistul de la Tehnic poate cere o reverificare a facturii pentru o eventuală compensare, dar prioritatea zero este să oprim fluxul de date. Vă transfer acum?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, transferă-mă odată!"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă pun în așteptare pentru colegii de la Tehnic. Aveți numărul de referință 2847539 pentru acest caz, vă rog să-l comunicați specialistului."
+    },
+    {
+      "rol": "client",
+      "text": "Da, l-am notat. Sper să fie ultima dată când vă mai aud vocea pentru problema asta. La revedere!"
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere!"
+    }
+  ]
+}

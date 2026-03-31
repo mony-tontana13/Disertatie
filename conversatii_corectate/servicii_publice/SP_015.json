@@ -1,0 +1,101 @@
+{
+  "id": "SP_015",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, sunteți la Agenția de Plăți și Intervenție pentru Agricultură, secția relații cu publicul. Sunt operator Andrei Popescu. Cum vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o problemă cu o cerere pe care am depus-o acum vreo două săptămâni și nu știu ce se întâmplă cu ea. Am nevoie de o clarificare."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi spuneți, vă rog, ce tip de cerere ați depus și dacă aveți un număr de înregistrare?"
+    },
+    {
+      "rol": "client",
+      "text": "E o cerere de plată pentru subvenție agricolă. Am depus mai multe documente. Una dintre ele nu știu dacă e completă. Numărul e 2847/2024."
+    },
+    {
+      "rol": "operator",
+      "text": "Am găsit dosarul. Văd că avem mai multe înregistrări pe acest număr. Care document credeți că ar fi incomplet?"
+    },
+    {
+      "rol": "client",
+      "text": "Am trimis o copie a actului de identitate, o declarație pe propria răspundere și... cred că și o anexă la cerere, dar nu sunt sigur dacă anexa era cerută."
+    },
+    {
+      "rol": "operator",
+      "text": "Să verific ce avem în dosar. Vorbim de subvenția pentru ce activitate agricolă?"
+    },
+    {
+      "rol": "client",
+      "text": "Pentru investiții în echipamente. Am vrut să-mi modernizez dotările la fermă."
+    },
+    {
+      "rol": "operator",
+      "text": "Am găsit dosarul complet. Avem actul de identitate, declarația și o anexă cu lista echipamentelor. Însă, actul de identitate nu e clar lizibil. Ar trebui să aduceți o copie mai clară."
+    },
+    {
+      "rol": "client",
+      "text": "Și din cauza asta s-a blocat cererea? Nimeni nu mi-a spus asta când am depus-o."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău, dar la momentul depunerii, documentele nu au fost verificate detaliat. Acum, în faza de verificare, s-a observat neclaritatea. E o procedură standard."
+    },
+    {
+      "rol": "client",
+      "text": "Deci ce trebuie să fac? Depun din nou totul?"
+    },
+    {
+      "rol": "operator",
+      "text": "Nu. Doar aduceți o nouă copie a actului de identitate, clară, cu ambele pagini lizibile. O puteți aduce personal sau trimite prin poștă."
+    },
+    {
+      "rol": "client",
+      "text": "Și după ce o aduc? Cât timp durează? Am nevoie de un răspuns rapid."
+    },
+    {
+      "rol": "operator",
+      "text": "După ce primim documentul, dosarul va intra din nou în verificare. Estimăm cam 15-20 de zile lucrătoare, în funcție de volumul cererilor."
+    },
+    {
+      "rol": "client",
+      "text": "15-20 de zile? Dar cererea mea e din ianuarie. A trecut mult timp fără să fiu anunțat că lipsește ceva."
+    },
+    {
+      "rol": "operator",
+      "text": "Ar fi trebuit să primiți o notificare. Vă cer scuze pentru inconveniență. Dacă aduceți documentul rapid, voi încerca să prioritizez verificarea."
+    },
+    {
+      "rol": "client",
+      "text": "Cine se ocupă de dosar după ce aduc documentul? O să știți că e pentru dosarul acesta?"
+    },
+    {
+      "rol": "operator",
+      "text": "Voi adăuga un cod de referință pe document. Când depuneți, informați colegii că e pentru dosarul 2847/2024. Va fi marcat ca prioritar."
+    },
+    {
+      "rol": "client",
+      "text": "O să trec săptămâna asta. Sigur nu lipsește altceva?"
+    },
+    {
+      "rol": "operator",
+      "text": "Momentan avem nevoie doar de copia actului de identitate. Totuși, puteți aduce și o copie a declarației, ca măsură de siguranță."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, sper ca macăr de data asta să meargă... Am pierdut deja mult prea mult timp... O zi bună."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru neplăceri. O zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

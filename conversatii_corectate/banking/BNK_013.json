@@ -1,0 +1,77 @@
+{
+  "id": "BNK_013",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, mă numesc Andrei Popescu și sunt aici să vă ajut. Îmi puteți spune cu ce problemă întâmpinați dificultăți?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o problemă cu un transfer pe care l-am făcut ieri. Banii nu au ajuns la destinație și nu înțeleg de ce."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud asta. Ca să vedem unde e problema, am nevoie de câteva detalii... cât de mare a fost suma transferată și către ce bancă ați trimis-o?"
+    },
+    {
+      "rol": "client",
+      "text": "5000 de lei, către o persoană fizică, într-un cont la altă bancă. Am plătit o taxă de transfer intern, dar se pare că nu a fost suficient."
+    },
+    {
+      "rol": "operator",
+      "text": "Ați primit vreun mesaj de eroare sau transferul a fost confirmat fără probleme din aplicația bancară?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, nu a fost nicio eroare. Transferul a fost confirmat în aplicația bancară, chiar am dovada. Beneficiarul spune că nu a primit nimic."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru inconvenient. Transferurile interbancare pot dura uneori între 1 și 2 zile lucrătoare. Și dacă ați făcut transferul după ora 15, e posibil să fi fost procesat abia astăzi."
+    },
+    {
+      "rol": "client",
+      "text": "Înțeleg, dar asta e frustrant. Am făcut transferul ieri la ora 15, și deja e ora 17 azi... tot nu a ajuns."
+    },
+    {
+      "rol": "operator",
+      "text": "Da, în mod normal transferurile în intervalul menționat pot dura, dar să sperăm că banii vor ajunge mâine dimineață. Pot să verific intern pentru a clarifica statusul transferului."
+    },
+    {
+      "rol": "client",
+      "text": "Deci ce pot face acum? Beneficiarul are urgent nevoie de bani... Pot să accelerez cumva transferul?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, odată ce transferul a fost inițiat și confirmat, nu mai putem interveni pentru a-l accelera. Sistemul e automat. Dar voi verifica situația intern, să vedem unde sunt blocați banii."
+    },
+    {
+      "rol": "client",
+      "text": "Și cât timp o să dureze verificarea? Mă așteptam la o soluție mai rapidă... "
+    },
+    {
+      "rol": "operator",
+      "text": "Verificarea internă va dura aproximativ 2-3 ore, dar, sincer, există mari șanse să ajungă mâine dimineață. Vă voi suna cu siguranță cu informații noi."
+    },
+    {
+      "rol": "client",
+      "text": "Deci nu se rezolvă azi. Mă așteptam să fie ceva mai rapid cu transferurile electronice..."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg perfect, dar transferurile instantaneu au costuri suplimentare și trebuie inițiate special. Din păcate, în această fază nu putem face mai mult decât să așteptăm."
+    },
+    {
+      "rol": "client",
+      "text": "Oh, tot nu prea mă ajută, mda...ce să zic. Sper să primesc vești mai bune mâine."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru înțelegere și îmi pare rău pentru neplăceri. Voi face tot posibilul să vă ofer informații complet clarificatoare cât mai repede. O zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

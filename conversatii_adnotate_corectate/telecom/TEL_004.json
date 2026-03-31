@@ -1,0 +1,69 @@
+{
+  "id": "TEL_004",
+  "domeniu": "telecom",
+  "complexitate": "simpla",
+  "intentie_gold": [
+    "problema_roaming"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_rezolvata_rapid",
+  "rezumat": "Client din Italia raportează că internetul mobil nu funcționează deși are semnal. Operatorul identifică problema ca fiind setările APN și ghidează clientul să le corecteze manual pe 'internet.tm'. După ajustare, internetul funcționează. Client mulțumit și satisfăcut de rezolvare.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, Serviciul Clienți Telecom România. Mă numesc Cristian Georgescu. Cu ce pot să vă ajut?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună, da, eu am o problemă cu roamingul. Sunt în Italia de trei zile și nu-mi merge internetul mobil."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Să verific rapid situația dumneavoastră. Care este numărul de telefon din contract, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "0723456789."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Am găsit contul. Văd că ați activat roamingul internațional pe linia dumneavoastră. Care este exact problema - nu aveți semnal deloc sau nu funcționează datele?"
+    },
+    {
+      "rol": "client",
+      "text": "Am semnal de rețea, dar când încerc să deschid ceva pe internet nu merge. Nici Chrome, nici aplicațiile nu se conectează."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, posibil să fie o problemă de setări APN. Așteptați, vă dau instrucțiunile. Intrați în Setări, apoi în Rețea Mobilă, căutați opțiunea APN și asigurați-vă că este setat pe 'internet.tm' pentru Italia."
+    },
+    {
+      "rol": "client",
+      "text": "Stai, verific acum... Ok, am găsit. Ai zis 'internet.tm', corect?"
+    },
+    {
+      "rol": "operator",
+      "text": "Da, exact. Dacă nu este setat așa, schimbați-l manual. Apoi încercați din nou să deschideți ceva pe internet."
+    },
+    {
+      "rol": "client",
+      "text": "Bun, am schimbat. Acum... da, pare că merge! Îți mulțumesc."
+    },
+    {
+      "rol": "operator",
+      "text": "Perfect. Dacă mai aveți vreo problemă cu roamingul în perioada aceasta, ne puteți contacta oricând. Vreau să vă amintesc că aveți inclus 5 GB în zone UE."
+    },
+    {
+      "rol": "client",
+      "text": "Okay, am notat. Mulțumesc pentru ajutor."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere. Vă doresc o zi frumoasă! La revedere!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere!"
+    }
+  ]
+}

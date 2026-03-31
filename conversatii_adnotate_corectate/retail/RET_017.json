@@ -1,0 +1,102 @@
+{
+  "id": "RET_017",
+  "domeniu": "retail",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "produs_lipsa_stoc"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "problema_nerezolvata_clientul_frustrat_fara_solutie_imediata",
+  "rezumat": "Client contactează serviciul clienți pentru o comandă de laptop Dell XPS 13 plasată pe 15 martie, anunțată ca disponibilă la comanda dar ulterior declarată out of stock. Operatorul confiră eroarea și propune rambursare sau reducere de 15%, dar clientul are nevoie urgentă a laptopului pentru o prezentare în trei zile. Fără o dată de reaprovizionare clară și fără o soluție imedată, clientul pleacă frustrat, așteptând un follow-up care nu garantează rezolvarea problemei.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua. Ați sunat la serviciul clienți al magazinului online ShopRo. Mă numesc Gina Ion. Cu ce pot să vă ajut?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Eu am o problemă cu o comandă pe care am plasat-o acum o săptămână. Mi s-a spus că produsul e în stoc, dar apoi mi-a venit un e-mail că nu mai e disponibil."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud asta. Care este numărul comenzii, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "Comanda numărul 2847562. E vorba despre un laptop Dell XPS 13."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment, vă rog... Da, am găsit-o. Comanda este din data de 15 martie. Într-adevăr, apare o notă că stocul nu mai e disponibil."
+    },
+    {
+      "rol": "client",
+      "text": "Exact. Cum se poate așa ceva? Pe site arăta disponibil când am comandat."
+    },
+    {
+      "rol": "operator",
+      "text": "Uneori stocul se epuizează rapid și actualizarea poate întârzia. Îmi pare sincer rău pentru acest inconvenient."
+    },
+    {
+      "rol": "client",
+      "text": "Și ce facem acum? Am schimbat planurile din cauza acestei comenzi și am nevoie de laptop pentru o prezentare în trei zile."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă ofer două opțiuni: o rambursare totală sau o reducere de 15% pentru viitoarele achiziții, plus prioritate de comandă la realimentare."
+    },
+    {
+      "rol": "client",
+      "text": "Asta nu mă ajută prea mult. Eu am nevoie de laptop acum. Când ar putea fi în stoc din nou?"
+    },
+    {
+      "rol": "operator",
+      "text": "Să verific... Din păcate, nu avem o dată exactă de reaprovizionare încă. Furnizorul nu a confirmat nimic."
+    },
+    {
+      "rol": "client",
+      "text": "Deci, n-aveți nicio idee? Și cine mi-a spus că e disponibil dacă nu era?"
+    },
+    {
+      "rol": "operator",
+      "text": "Ne asumăm eroarea și îmi pare rău. V-aș sugera să verificați direct cu furnizorul sau să alegeți un model similar din stoc."
+    },
+    {
+      "rol": "client",
+      "text": "Să contactez eu furnizorul? Deci n-aveți habar dacă revine în stoc și eu să alerg după soluții?"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi cer scuze. Pot să iau legătura cu echipa și să vă sun înapoi când am detalii clare."
+    },
+    {
+      "rol": "client",
+      "text": "De ce nu mă sunați voi când aveți răspuns?"
+    },
+    {
+      "rol": "operator",
+      "text": "Bineînțeles. Lăsați-mi numărul de telefon și adresa de e-mail, și revin cu un update cât mai curând."
+    },
+    {
+      "rol": "client",
+      "text": "E în regulă, dar nu știu cât mai pot aștepta. 0722 445 889, și e-mailul mihnea.ene@gmail.com."
+    },
+    {
+      "rol": "operator",
+      "text": "Am notat. 0722 445 889 și mihnea.ene@gmail.com. Vă voi contacta mâine cu siguranță."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Aștept să aud de la voi. Sper să aveți răspunsuri concrete data viitoare."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru răbdare și îmi pare rău pentru neplăceri. O zi bună."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ],
+  "tip_complexitate": "informatii_contradictorii"
+}

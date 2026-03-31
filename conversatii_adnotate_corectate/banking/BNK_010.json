@@ -1,0 +1,118 @@
+{
+  "id": "BNK_010",
+  "domeniu": "banking",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "tranzactie_gresita"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "problema_nerezolvata, transferuri_intre_departamente, procedura_rigida_fara_rezolvare_imediata, timp_asteptare_mare",
+  "rezumat": "Client apelează pentru a reclama o plată de 500 de lei debatată ieri dar neajunsă la beneficiarul de la Banca Transilvania. După transferuri între trei departamente (servicii generale, operații, compliance), operatorul informează clientul că pentru investigație este obligatorie depunerea unei cereri scrise, cu răspuns în maxim 10 zile lucrătoare. Clientul exprimă frustrare clară referitor la acest proces lung și la lipsa unei soluții imediate, acceptând doar cu resemnare să depună cererea, iar conversația se încheie fără o rezolvare efectivă a problemei.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Serviciul clienți al Băncii Comerciale România. Cu ce pot să vă ajut?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună! Am o problemă cu contul meu. Am făcut o plată ieri și banii au fost debitați, dar nu au ajuns la beneficiar. Vreau să verific ce s-a întâmplat."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Vă rog să-mi spuneți IBAN-ul și suma plății ca să pot verifica în sistem."
+    },
+    {
+      "rol": "client",
+      "text": "Desigur. Contul este RO89BCRL0400000123456789 și suma era de 500 de lei. Plata a fost efectuată ieri la 14:30."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Un moment... să verific... Văd că plata a fost inițiată. Pentru a vă oferi mai multe detalii și pentru a deschide o reclamație, va trebui să vă transfer la departamentul de operații. Vă rog să așteptați puțin."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, aștept."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru răbdare. Vă transfer acum."
+    },
+    {
+      "rol": "operator",
+      "text": "Bună! Departamentul de operații. Eu sunt Cristina Dumitrescu. Cum vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Am o plată de 500 de lei care a fost debitată din cont ieri, dar nu a ajuns la beneficiar. Trebuie să verific ce s-a întâmplat."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles. Pot să verific asta pentru dumneavoastră. Plata a fost făcută prin transfer intern, spre altă bancă sau alt canal?"
+    },
+    {
+      "rol": "client",
+      "text": "A fost un transfer către o altă bancă. Beneficiarul are cont la Banca Transilvania."
+    },
+    {
+      "rol": "operator",
+      "text": "Ah... în cazul transferurilor interbancare, acestea pot dura 1-2 zile lucrătoare. Este posibil ca banii să fi ajuns deja la cealaltă bancă. Ați verificat dacă nu s-au acreditat încă?"
+    },
+    {
+      "rol": "client",
+      "text": "Am vorbit cu beneficiarul astăzi dimineață și spune că nu a primit nimic. Ieri a fost joi, deci banii ar fi trebuit să ajungă azi, vineri."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg preocuparea dumneavoastră. În astfel de situații, trebuie să contactez departamentul de reglementări și compliance. Momentan nu pot rezolva asta aici. Trebuie să vă transfer la ei pentru a deschide o investigație oficială."
+    },
+    {
+      "rol": "client",
+      "text": "Asta înseamnă că iar trebuie să aștept? Am mai vorbit cu altcineva înainte..."
+    },
+    {
+      "rol": "operator",
+      "text": "Da, îmi pare rău. Este procedura standard pentru investigații. Vă transfer acum la colegii de la compliance. Vă rog să așteptați puțin."
+    },
+    {
+      "rol": "operator",
+      "text": "Bună! Ați ajuns la departamentul de compliance. Mă numesc Mihai Stancu. Pot să vă ajut cu problema transferului?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, aceeași problemă. 500 de lei, transfer către Banca Transilvania, debitat ieri și nu a ajuns. Trebuie să găsim unde s-a blocat."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, pentru a deschide o investigație, trebuie să depuneți o cerere scrisă. Aveți opțiunea să o faceți online prin home banking, sau personal la agenție cu o copie a unui document de identitate."
+    },
+    {
+      "rol": "client",
+      "text": "Dar nu pot rezolva asta pe telefon? Voi aveți toate informațiile despre transfer. De ce trebuie să vin la agenție?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din motive de securitate și conformitate, procedura prevede o solicitare scrisă. Asta nu durează mult, iar noi vom verifica și vă vom contacta cu rezultatele în maximum 10 zile lucrătoare."
+    },
+    {
+      "rol": "client",
+      "text": "10 zile? Banii sunt plecați din cont de ieri și nici voi nu știți unde sunt. Nu e acceptabil."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare sincer rău pentru frustrarea pe care o simțiți. Din păcate, aceasta este procedura. Online banking-ul este cel mai rapid - puteți depune cererea de acolo chiar azi."
+    },
+    {
+      "rol": "client",
+      "text": "Bine... să zicem că am mai depus cereri pe home banking, dar nu am avut răspuns. Oricum, mă voi gândesc la asta și vă sun mâine cu un răspuns."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine. Dacă aveți alte întrebări, nu ezitați să ne contactați. Vă doresc o zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "Mulțumesc. La revedere."
+    }
+  ],
+  "tip_complexitate": "pasat_intre_departamente"
+}

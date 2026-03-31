@@ -1,0 +1,98 @@
+{
+  "id": "MED_020",
+  "domeniu": "medicina",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "reclamatie_personal"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "rezolvat_mecanic_fara_empatie_clientul_frustrat_de_situatie",
+  "rezumat": "Clientul Marian Ionescu avea o programare la cardiologie cu Dr. Cristescu, dar aceasta a fost modificată la Dr. Vasilescu din cauza unei urgențe. Clientul refuză să fie consultat de medicul înlocuitor și cere să fie consultat de Dr. Cristescu. Operatorul oferă o reprogramare miercuri la 11:00, renunță la taxa de reprogramare și promite contact de la manager în o zi. Clientul acceptă formal soluția dar tonul este resemnat și ironic, exprimând dezaprobarea față de lipsa de transparență inițială și organizarea clinicii. Pleacă frustrată deși problema e rezolvată tehnic.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunteți la Clinica Medicore, serviciul de programări. Sunt Cristian Popescu. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Eu am sunat mai devreme, acum o oră, și am vorbit cu o colegă de-a voastră... Am fost programat pentru astăzi la ora 14:30 la cardiologie."
+    },
+    {
+      "rol": "operator",
+      "text": "Da, bine. Vă rog spuneți-mi numele dumneavoastră pentru a găsi dosarul."
+    },
+    {
+      "rol": "client",
+      "text": "Marian Ionescu. Și vreau să vorbesc despre medicul care urma să mă consulte. Când am sunat mai devreme, nu s-a mai găsit loc la Dr. Cristescu și mi s-a spus că voi fi consultat de Dr. Vasilescu."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Am găsit dosarul dumneavoastră aici. Da, într-adevăr, programarea a fost modificată din cauza unui apel urgent al doctorului Cristescu. Este o situație neplăcută, sunt conștient."
+    },
+    {
+      "rol": "client",
+      "text": "Nu e vorba doar de neplăcut... adică, e neplăcut, da, dar problema e că eu l-am ales pe Dr. Cristescu pentru recomandările sale. Nu îl cunosc pe Dr. Vasilescu și nu vreau să schimb."
+    },
+    {
+      "rol": "operator",
+      "text": "Înteleg perfect preocuparea dumneavoastră. Din păcate, la această oră, Dr. Cristescu nu se mai poate elibera. Aș putea să vă propun o nouă dată cu el sau să vă explic care sunt competențele Dr. Vasilescu, dacă doriți."
+    },
+    {
+      "rol": "client",
+      "text": "Nu, nu vreau explicații. Vreau să-mi spuneți exact când se poate consulta Dr. Cristescu, fiindcă am venit azi în special pentru ora aceasta. Nu pot să revin altă dată."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg dificultatea. Un moment, vă rog. Verific programul doctorului Cristescu în următoarele zile. Am aici... miercuri de la 11:00, joi la 15:45, și săptămâna viitoare are mai multe locuri libere."
+    },
+    {
+      "rol": "client",
+      "text": "Joi la 15:45... nu merge, am program de lucru. Și nu vreau să mai vin săptămâna viitoare. Azi mi-am luat o zi liberă de la birou special."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru această situație. Din păcate, miercuri este singurul loc disponibil pe care vi-l pot oferi în următoarele zile cu Dr. Cristescu. Alternative ar fi să rămâneți cu Dr. Vasilescu astăzi, dacă sunteți de acord."
+    },
+    {
+      "rol": "client",
+      "text": "Deci n-am de ales, dacă înțeleg bine. Ori accept un medic pe care nu-l cunosc, ori mă întorc miercuri. Foarte frumos... Colegii voștri nu mi-au spus că se poate întâmpla asta când m-am programat cu Cristescu."
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți dreptate. Ar fi trebuit să fiți informat. Vă cer scuze pentru asta. Din păcate, în cazul unei urgențe medicale, trebuie să facem astfel de modificări. Totuși, înțeleg frustrarea dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "Bun. Și care ar fi soluția pe care mi-o propuneți dumneavoastră, oficial, pentru faptul că mi s-a deranjat ziua?"
+    },
+    {
+      "rol": "operator",
+      "text": "Pot să vorbesc cu managerul de cabinet dacă doriți, dar nu pot promite nicio compensație. Ceea ce pot face sigur este să vă programez cu Dr. Cristescu miercuri la 11:00 fără taxa de reprogramare și să notez în dosarul dumneavoastră situația de astăzi."
+    },
+    {
+      "rol": "client",
+      "text": "Taxa de reprogramare... deci inițial era o taxă? Asta nu mi s-a spus. Foarte bine organizat. Și managerul... cât o să aștept să mă contacteze?"
+    },
+    {
+      "rol": "operator",
+      "text": "Managerul se va pune în legătură cu dumneavoastră în decurs de o zi. Legat de taxa de reprogramare, este în regulamentul clinici, dar în situația aceasta de forță majoră, nu aveți de plătit."
+    },
+    {
+      "rol": "client",
+      "text": "Okay, deci miercuri la 11:00 cu Cristescu, fără taxă, și aștept apelul managerului. E totul?"
+    },
+    {
+      "rol": "operator",
+      "text": "Da, perfect. Vă voi trimite și un SMS de confirmare pe telefonul dumneavoastră. Aveți ceva altceva?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, gata. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere, și din nou, îmi pare rău. O zi bună dumneavoastră!"
+    }
+  ],
+  "tip_complexitate": "context_implicit"
+}

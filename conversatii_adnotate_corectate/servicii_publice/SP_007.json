@@ -1,0 +1,79 @@
+{
+  "id": "SP_007",
+  "domeniu": "servicii_publice",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "acte_incomplete",
+    "informatii_program"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_rezolvata_rapid_cu_informatii_complete",
+  "rezumat": "Clientul a contactat agenția pentru a afla ce documente lipsesc din dosarul cererii sale de certificat de atestare. Operatorul a identificat documentele necesare și a furnizat informații complete despre locul depunerii, termenul de procesare și programul de funcționare al instituției.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua. Agenția pentru Administrație și Dezvoltare Locală, sunt Mihai Popescu. Cu ce vă pot ajuta azi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Am depus o cerere pentru certificat de atestare și mi s-a spus că lipsesc niște documente din dosar. Aș vrea să știu ce anume lipsește."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Care este numele dvs. complet și numărul de înregistrare al cererii?"
+    },
+    {
+      "rol": "client",
+      "text": "Popescu Ioan, și numărul de înregistrare este 2847-A din 15 martie."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Un moment să verific în sistem... Aveți dreptate, lipsesc două documente: certificatul de proprietate și o declarație notarială de conformitate."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles. Și unde trebuie să depun aceste documente? La ghișeul unde am fost inițial?"
+    },
+    {
+      "rol": "operator",
+      "text": "Exact, la ghișeul 3, unde ați depus cererea inițial. Puteți merge oricând în programul de funcționare al instituției. Odată depuse, documentele vor fi adăugate dosarului."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Și după ce depun documentele, cât trebuie să aștept pentru certificat?"
+    },
+    {
+      "rol": "operator",
+      "text": "După ce dosarul este complet, termenul de soluționare este de 15 zile lucrătoare, conform legii. Vă sugerez să depuneți documentele cât mai curând, pentru a grăbi procesul."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, deci vreo două săptămâni. Stați puțin, am o altă întrebare. În ce zile și ore sunteți deschiși? Că lucrez în timpul zilei și nu știu dacă pot veni."
+    },
+    {
+      "rol": "operator",
+      "text": "Funcționăm de luni până joi de la 8 la 16, și vineri de la 8 la 14. Suntem închiși în weekend. Dacă nu puteți veni în aceste ore, există și opțiunea de a depune documentele prin poștă, cu recomandată."
+    },
+    {
+      "rol": "client",
+      "text": "Ah, nu, prefer să vin direct. Și programul e fix până la 16?"
+    },
+    {
+      "rol": "operator",
+      "text": "Programul se încheie la ora 16, deci e bine să veniți înainte. La ghișeul 3, de obicei, se poate ajuta și cu puțin înainte de închidere, dar e mai sigur să veniți cu timp suficient."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles. Bine, o să încerc să vin mâine, dacă pot. Mulțumesc pentru informații."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere. Dacă mai aveți întrebări, ne puteți suna la acest număr. O zi bună și mult succes cu actele."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ],
+  "tip_complexitate": "multi_intentie"
+}

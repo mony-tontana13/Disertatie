@@ -1,0 +1,105 @@
+{
+  "id": "SP_018",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la Serviciul de Relații cu Publicul al Agenției Naționale de Administrare Fiscală. Eu sunt Cristina Popescu. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Vreau să depun o contestație. Am primit o decizie de impunere din partea voastră și consider că e complet greșită."
+    },
+    {
+      "rol": "operator",
+      "text": "Înteleg. Mă pot ajuta cu asta. Vă rog să-mi spuneți mai detaliat - din ce an este decizia și care este numărul acesteia?"
+    },
+    {
+      "rol": "client",
+      "text": "E din martie anul ăsta. Numărul... stați să văd. E DI/2024/0456. Se referă la impozitul pe venit și am fost taxat de parcă aș fi avut alte venituri. Pur și simplu nu-i corect."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, am notat. DI/2024/0456. Puteți să-mi spuneți care este suma pe care o contestați sau care sunt motivele principale?"
+    },
+    {
+      "rol": "client",
+      "text": "Motivele? Păi, că mi-au calculat impozitul greșit. Am lucrat doar jumătate din an la firma aia și ei au aplicat o cotă anuală. Eu am dovezi, am și contractul pe care-l am aici."
+    },
+    {
+      "rol": "operator",
+      "text": "Foarte bine. Documentele dumneavoastră sunt importante. Deci, dacă înțeleg corect, discrepanța e între perioada în care ați lucrat efectiv și cum au calculat impozitul inspectorii noștri."
+    },
+    {
+      "rol": "client",
+      "text": "Exact! Și de aia vreau să contest. Nu pot plăti ceva pe care nu l-am datorat. Ce trebuie să fac?"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a depune o contestație, aveți mai multe opțiuni. Puteți veni direct la sediul nostru cu documentele, puteți trimite prin poștă sau puteți utiliza platforma online de pe site-ul ANAF. Care ar fi cea mai convenabilă pentru dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "Online preferabil. Nu am timp să mă duc acolo. Se poate trimite prin platformă și documentele? Tot ceea ce am nevoie?"
+    },
+    {
+      "rol": "operator",
+      "text": "Da, da, sigur. Prin platformă puteți atașa fișiere PDF. Vă recomand să includeți contractul de muncă, dovezile plății impozitelor și o scrisoare în care explicați contestația în detaliu."
+    },
+    {
+      "rol": "client",
+      "text": "Și după ce o trimit, cât timp durează să se ocupe cineva de ea? Pentru că am nevoie să știu când mi se rezolvă, nu pot aștepta la infinit."
+    },
+    {
+      "rol": "operator",
+      "text": "Contestațiile sunt analizate în ordinea primirii. De obicei, termenul este de 45 de zile pentru un răspuns inițial, dar dacă sunt necesare clarificări suplimentare, poate dura mai mult."
+    },
+    {
+      "rol": "client",
+      "text": "45 de zile? E extrem de mult, nu? Și cine anume o să mă contacteze? Cum știu că pe cineva o interesează?"
+    },
+    {
+      "rol": "operator",
+      "text": "După ce o trimiteți, contestația va primi un număr de înregistrare. Puteți urmări statusul pe platformă, iar dacă vor fi întrebări, echipa responsabilă vă va contacta la numărul sau emailul pe care le indicați."
+    },
+    {
+      "rol": "client",
+      "text": "Bun, și dacă nu sunt de acord cu răspunsul? Dacă zic că am dreptate și mie îmi zic că nu?"
+    },
+    {
+      "rol": "operator",
+      "text": "Dacă nu sunteți mulțumit cu decizia, aveți posibilitatea să apelați la instanța de contencios administrativ în termen de 30 de zile de la comunicarea răspunsului."
+    },
+    {
+      "rol": "client",
+      "text": "Să merg în instanță... Asta-i cam rău. Voi la ANAF nu puteți vorbi cu o persoană care să analizeze mai serios lucrurile? Să-mi explic eu direct cuiva, nu prin scrisori?"
+    },
+    {
+      "rol": "operator",
+      "text": "Eu vă înțeleg perfect, dar procesul oficial cere să fie în scris. Desigur, puteți cere o întâlnire cu responsabilul de caz după ce contestația a fost înregistrată, doar trebuie să precizați asta în formular."
+    },
+    {
+      "rol": "client",
+      "text": "Bun, o să fac asta. Și pe platformă cum mă loghez? Pentru că am uitat parola acum ceva timp."
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru login aveți nevoie de CIF sau CNP și de credențialele de la serviciul de autentificare. Dacă ați uitat parola, pe site-ul ANAF este opțiunea de resetare. Dacă aveți probleme tehnice cu platforma, vă recomand să sunați la Serviciul IT."
+    },
+    {
+      "rol": "client",
+      "text": "Serviciul IT... de parcă nu-mi pierd și mai mult vremea. Bun, am înțeles ce trebuie să fac. Îmi trimit contestația și aștept 45 de zile pe care le-o să mi se pară o eternitate."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg că nu-i ușor, dar sunt sigură că dacă aveți documente care susțin contestația, lucrurile se vor clarifica. Dacă mai aveți întrebări, sunați oricând înapoi."
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere și succes cu contestația!"
+    }
+  ]
+}

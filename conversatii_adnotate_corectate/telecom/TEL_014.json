@@ -1,0 +1,114 @@
+{
+  "id": "TEL_014",
+  "domeniu": "telecom",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "reziliere_contract"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "client_frustrat_de_tarife_crescute_si_penalitate_neanuntata_la_inceput",
+  "rezumat": "Client solicită rezilierea contractului din cauza creșterii progresive a tarifelor și ofertelor mai bune de la concurență. Operatorul încearcă retenția prin oferte de reducere, dar clientul refuză persistent. La finalul discuției, operatorul menționează o penalitate de 23 de lei pentru reziliere anticipată, determinând clientul să exprime frustrare că această informație nu a fost comunicată de la început. Clientul acceptă rezilierea cu penalitate din resemnare, dar tonul general rămâne ironic și nemulțumit. Contractul este închis, dar clientul pleacă dezamăgit de experiența și tratamentul companiei.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Serviciul clienți Vodafone, mă numesc Ramona Olaru. Îmi spuneți, vă rog, cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Aș dori să aflu care sunt pașii exacți pentru rezilierea contractului meu. Aș aprecia dacă am fi eficienți, chiar mă grăbesc."
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur, vă ajut imediat. Îmi puteți comunica numărul de telefon sau codul de client pentru identificare?"
+    },
+    {
+      "rol": "client",
+      "text": "Este vorba despre 0745 123 456, pe numele Popescu Ion."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Am găsit contractul dumneavoastră. Observ că sunteți încă într-o perioadă minimă de angajament. Îmi puteți spune ce v-a determinat să luați această decizie?"
+    },
+    {
+      "rol": "client",
+      "text": "Să spunem doar că tariful a crescut progresiv, spre deosebire de entuziasmul meu față de serviciile oferite. La început condițiile erau altele."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare sincer rău să aud asta. Haideți să vedem ce oferte de fidelizare am putea accesa, poate găsim o variantă care să vă convină."
+    },
+    {
+      "rol": "client",
+      "text": "Nu cred că are sens să ne irosim timpul. Am primit deja oferte considerabil mai decente de la concurență."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Totuși, dacă v-aș propune o reducere de 15% pentru facturile din următoarele 6 luni, ar fi o variantă de luat în calcul?"
+    },
+    {
+      "rol": "client",
+      "text": "Și presupun că după aceste 6 luni, prețul va reveni „miraculos” la cel de care încerc să scap acum, nu?"
+    },
+    {
+      "rol": "operator",
+      "text": "Ei bine, da, dar am putea reevalua situația la acel moment..."
+    },
+    {
+      "rol": "client",
+      "text": "Exact ce bănuiam. Nu, mulțumesc, nu mai vreau să aștept nicio reevaluare. Vreau să închidem contractul astăzi."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles. Trebuie să vă informez că rezilierea înainte de luna martie implică o penalitate de 23 de lei pentru încetare anticipată. Doriți să continuăm în aceste condiții?"
+    },
+    {
+      "rol": "client",
+      "text": "O penalitate? Interesant cum detaliile astea apar mereu abia la finalul discuției. De ce nu mi s-a comunicat acest aspect de la bun început?"
+    },
+    {
+      "rol": "operator",
+      "text": "Sistemul generează automat costurile în funcție de data solicitării. Dacă ați aștepta până în martie, această taxă nu ar mai exista. Încerc doar să vă ofer toate informațiile."
+    },
+    {
+      "rol": "client",
+      "text": "Deci, sunt practic „invitat” să rămân blocat aici până în martie. Se pare că nu am de ales..."
+    },
+    {
+      "rol": "operator",
+      "text": "Dacă doriți, pot solicita unui coleg de la departamentul de retenție să verifice dacă putem face o excepție și să eliminăm această taxă."
+    },
+    {
+      "rol": "client",
+      "text": "Nu, chiar nu mai vreau să vorbesc cu încă o persoană și să reiau toată povestea. Am pierdut suficient timp deja."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă înțeleg. Voi vedea totuși ce pot face dacă mai așteptați doar un moment la linie."
+    },
+    {
+      "rol": "client",
+      "text": "Nu e nevoie. Procesați rezilierea cu tot cu acea penalitate. Am decis că este mai ieftin să plec decât să mai rămân."
+    },
+    {
+      "rol": "operator",
+      "text": "În regulă, dacă aceasta este dorința dumneavoastră. Voi înregistra cererea acum, iar contractul va fi închis începând de mâine. Să trimitem confirmarea pe e-mail?"
+    },
+    {
+      "rol": "client",
+      "text": "Da. Este mai mult decât suficient."
+    },
+    {
+      "rol": "operator",
+      "text": "Am trimis documentul. Ne pare rău că ne părăsiți, dacă vă răzgândiți pe viitor, porțile noastre sunt deschise."
+    },
+    {
+      "rol": "client",
+      "text": "Sunt convins de asta... La revedere."
+    },
+    {
+      "rol": "operator",
+      "text": "O zi bună și vă mulțumim că ați fost client Vodafone."
+    }
+  ],
+  "tip_complexitate": "reclamatie_implicita"
+}

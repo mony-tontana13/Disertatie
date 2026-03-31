@@ -1,0 +1,57 @@
+{
+  "id": "BNK_006",
+  "domeniu": "banking",
+  "complexitate": "simpla",
+  "intentie_gold": [
+    "problema_schimb_valutar"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_rezolvata_mecanic_fara_empatie",
+  "rezumat": "Client întreabă despre cursul de schimb valutar aplicat la conversia a 2000 de euro depuși acum o săptămână. Operatorul verifică și informează că schimbul s-a făcut la cursul oficial de 4,97 lei/euro conform BNR. Client exprimă nemulțumire față de curs, iar operatorul explică că sunt aplicate mici marje, oferind procedura de reclamație. Conversația se încheie corect din punct de vedere tehnic, dar fără rezolvarea nemulțumirii clientului.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Bianca Dinu de la serviciul clienți al Băncii Comerciale România. Cum vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o întrebare despre schimbul valutar. Am depus 2000 de euro în cont acum o săptămână și aș vrea să știu la ce curs mi s-a convertit în lei."
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur. Ca să verific detaliile tranzacției, o să am nevoie de numărul de cont sau CNP-ul pentru identificare."
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, CNP-ul meu este 1850315123456. Și, apropo, cursurile de schimb ale băncii sunt conforme cu piața sau e ceva ce ar trebui să știu?"
+    },
+    {
+      "rol": "operator",
+      "text": "Stați puțin... să verific... Gata, am găsit contul. Conversia a fost făcută la un curs de 4,97 lei pentru un euro, conform cursului BNR aplicat în acea zi. Acesta este cursul oficial la care s-a făcut schimbul."
+    },
+    {
+      "rol": "client",
+      "text": "Ah, cursul e un pic cam... cum să zic... mare comparativ cu ce vedeam în piața deschisă. La cine pot să mă plâng dacă nu sunt mulțumit?"
+    },
+    {
+      "rol": "operator",
+      "text": "Da, înțeleg nemulțumirea. Cursurile noastre sunt bazate pe piața interbancară, cu o mică marjă. Însă, dacă doriți să depuneți o reclamație, puteți face asta prin serviciul de relații cu clienții."
+    },
+    {
+      "rol": "client",
+      "text": "Și cum depun o reclamație?"
+    },
+    {
+      "rol": "operator",
+      "text": "Puteți veni la sucursală cu o cerere scrisă sau să trimiteți un email la adresa de contact de pe extrasul de cont. De obicei, termenul de răspuns este de 30 de zile."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, am înțeles. Mulțumesc pentru informații."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere! Vă dorim o zi frumoasă! La revedere!"
+    }
+  ]
+}

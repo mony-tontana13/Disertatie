@@ -1,0 +1,121 @@
+{
+  "id": "TEL_017",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, sunt Cristian Popescu de la serviciul clienți Vodafone. Cu ce pot să vă ajut astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Vă contactez pentru că am analizat ultima factură și observ că promisiunile de săptămâna trecută au rămas doar la stadiul de discuție. Discount-ul agreat pentru pachetul de internet lipsește cu desăvârșire."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Vă rog, care este numărul dumneavoastră de telefon, ca să vă pot găsi în sistem?"
+    },
+    {
+      "rol": "client",
+      "text": "Este cel pe care ar trebui să fie activă reducerea: 0734 456 789."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Stați să verific... Un moment, vă rog. Ah, v-am găsit. Aveți un abonament cu 100 GB internet și pachet de voce. Ați spus că vi s-a promis o reducere?"
+    },
+    {
+      "rol": "client",
+      "text": "Exact. Am alocat destul de mult timp săptămâna trecută unui coleg de-al dumneavoastră care m-a asigurat că de luna aceasta voi plăti cu 10 lei mai puțin. Am notat și numărul de referință al acelei conversații, pentru orice eventualitate."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, care este acel număr?"
+    },
+    {
+      "rol": "client",
+      "text": "Referința este 354782. Am mizat pe faptul că înregistrările dumneavoastră sunt suficiente pentru a evita astfel de omisiuni pe factură."
+    },
+    {
+      "rol": "operator",
+      "text": "Am găsit apelul. E notat aici că s-a oferit o reducere. Dar... aceasta trebuia să înceapă din luna următoare. Suntem în februarie, nu?"
+    },
+    {
+      "rol": "client",
+      "text": "Suntem în februarie, într-adevăr. Solicitarea a fost făcută pe 25 ianuarie. Matematic vorbind, februarie este luna următoare ianuariei, deci ar fi trebuit să regăsesc ajustarea deja."
+    },
+    {
+      "rol": "operator",
+      "text": "Aha. Lăsați-mă să verific când a fost procesată cererea. Văd că e adnotată de către colegul meu, dar nu văd să fi fost confirmată și trimisă la activare."
+    },
+    {
+      "rol": "client",
+      "text": "Interesant. Deci, deși am primit asigurări că totul este în regulă, cererea a rămas într-un folder uitat. Nu mi s-a comunicat că mai există pași intermediari sau departamente care trebuie să aprobe ce s-a stabilit deja."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru confuzie. Notările sunt în sistem, dar cererea pare să nu fi fost trimisă. E o problemă frecventă."
+    },
+    {
+      "rol": "client",
+      "text": "Faptul că este o problemă frecventă nu face situația mai confortabilă pentru mine, ca plătitor de servicii. Înțeleg că discount-ul este din nou sub semnul întrebării?"
+    },
+    {
+      "rol": "operator",
+      "text": "Nu neapărat. Pot să trimit cererea acum. Va fi procesată în 2-3 zile lucrătoare."
+    },
+    {
+      "rol": "client",
+      "text": "Și ce se întâmplă cu sumele deja achitate în plus? Sper că nu vă așteptați să trec cu vederea eroarea de pe luna curentă doar pentru că o veți corecta pe viitor."
+    },
+    {
+      "rol": "operator",
+      "text": "Teoretic, ar trebui să apară din luna următoare, după procesare. Pentru lunile trecute, trebuie să cereți corecție de factură. Dar trebuie să vorbiți cu departamentul de facturare."
+    },
+    {
+      "rol": "client",
+      "text": "„Teoretic” este un cuvânt care îmi creează o stare de nesiguranță în acest context. Pare că mă îndreptați către un alt șir de așteptări și transferuri telefonice."
+    },
+    {
+      "rol": "operator",
+      "text": "Sunt sigur de procesarea cererii noi. Retroactivitatea e complicată și trebuie evaluată. Reducerea va fi activă, dar pentru lunile trecute nu pot garanta."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles. Garanțiile par a fi o resursă limitată astăzi. Să presupunem că trimiteți această cerere acum; care este noul termen de așteptare?"
+    },
+    {
+      "rol": "operator",
+      "text": "O trimit acum. În mod ideal, în 2-3 zile lucrătoare să fie activă. Veți vedea pe factura următoare."
+    },
+    {
+      "rol": "client",
+      "text": "Și în eventualitatea în care istoria se repetă și reducerea tot nu apare, va trebui să reluăm acest dialog de la zero?"
+    },
+    {
+      "rol": "operator",
+      "text": "Dacă nu apare în perioada aceea, da, va trebui să ne contactați. Am notat să nu mai fiți întrebat aceleași detalii."
+    },
+    {
+      "rol": "client",
+      "text": "Ar fi o minimă dovadă de eficiență. Rămâne totuși problema banilor plătiți în plus din cauza neatenției colegilor dumneavoastră."
+    },
+    {
+      "rol": "operator",
+      "text": "Contactați-ne din nou și solicitați departamentul de facturare. Nu e răspunsul ideal, știu asta, dar nu pot lua o decizie în locul lor."
+    },
+    {
+      "rol": "client",
+      "text": "Vă mulțumesc pentru onestitate, chiar dacă soluția este departe de a fi satisfăcătoare. Se pare că va trebui să îmi rezerv din nou timp pentru a vă contacta."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău. E doar o problemă de câteva zile."
+    },
+    {
+      "rol": "client",
+      "text": "Vom vedea dacă zilele nu se transformă în săptămâni. O zi bună."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere."
+    }
+  ]
+}

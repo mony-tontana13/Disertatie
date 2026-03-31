@@ -1,0 +1,73 @@
+{
+  "id": "MED_017",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Clinica MedDental. Numele meu este Maria. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Vă sun pentru că sunt complet nelămurită cu niște analize. Am primit rezultatele pe e-mail și sunt total contradictorii față de ce mi s-a spus în clinică."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru confuzie. Haideți să vedem dosarul dumneavoastră. Îmi puteți spune numele complet și data nașterii?"
+    },
+    {
+      "rol": "client",
+      "text": "Cristina Vasile, 14 martie 1985. Sincer, e frustrant să primești informații diferite de la un departament la altul."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc, un moment... Da, am găsit. Analizele de sânge din data de 18. Ce anume vi se pare neclar în raportul primit?"
+    },
+    {
+      "rol": "client",
+      "text": "La recepție, când am plecat, domnișoara de acolo mi-a zis că valorile par în regulă. Acum, în e-mail, văd un asterisc mare și o notă care spune că glicemia trebuie reconfirmată urgent. Cine a greșit aici?"
+    },
+    {
+      "rol": "operator",
+      "text": "Văd despre ce e vorba. Glicemia are o valoare peste limita superioară și medicul a cerut repetarea testului. Colega de la recepție nu are pregătire medicală și nu ar fi trebuit să vă dea interpretări verbale."
+    },
+    {
+      "rol": "client",
+      "text": "Păi și de ce oferă informații dacă nu știe? Eu am stat liniștită trei zile crezând că sunt bine, când colo am o problemă. Mi se pare o lipsă gravă de profesionalism."
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți dreptate, ne asumăm această comunicare defectuoasă. Totuși, cel mai indicat este să discutați acum cu medicul specialist pentru a vedea pașii următori."
+    },
+    {
+      "rol": "client",
+      "text": "Și presupun că trebuie să plătesc o consultație nouă doar ca să-mi explicați de ce analizele făcute tot la voi au ieșit prost, nu?"
+    },
+    {
+      "rol": "operator",
+      "text": "Interpretarea rezultatelor se face într-o sesiune de consultanță, da. Pot să vă programez joi la ora 14:15 la doamna doctor Radu, cea care a semnat raportul."
+    },
+    {
+      "rol": "client",
+      "text": "E culmea, plătesc și analizele, și interpretarea, și primesc și informații greșite la recepție. Puneți-mă joi la 14:15, dar sper ca de data asta să primesc niște răspunsuri clare, nu doar să-mi mai luați niște bani."
+    },
+    {
+      "rol": "operator",
+      "text": "Am notat programarea. Joi, ora 14:15, la Dr. Elena Radu. Vă rog să veniți cu 10 minute înainte și, foarte important, pe nemâncat, în caz că doamna doctor decide repetarea recoltării pe loc."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles. Trimiteți-mi confirmarea pe e-mail, să fiu sigură că măcar asta funcționează."
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur, o trimitem imediat pe adresa din dosar. Mai aveți vreo altă întrebare?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, e destul. Sper să se rezolve joi. La revedere."
+    },
+    {
+      "rol": "operator",
+      "text": "Ne vedem joi. O zi bună."
+    }
+  ]
+}

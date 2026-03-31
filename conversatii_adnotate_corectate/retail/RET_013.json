@@ -1,0 +1,114 @@
+{
+  "id": "RET_013",
+  "domeniu": "retail",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "reclamatie_produs"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "problema_rezolvata_tehnic_dar_resemnare_clientului",
+  "rezumat": "Client reclama un aparat de cafea defect primit cu 2 zile in urma, care nu se porneste. Operatorul ofera doua optiuni: inlocuire in 3-4 zile sau rambursare in 10 zile totale. Clientul accepta inlocuirea cu rezerve, primeste voucher 10% si promisiunea unei etichete de transport pe email. Problema se rezolva formal, insa clientul pastreaza o atitudine reticenta pe toata durata conversatiei.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, sunteți la serviciul clienți al magazinului online ShopMart. Eu sunt Andra Tudor. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună, da... Am primit o comandă acum două zile și am o problemă cu produsul. Este defect."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud asta. Puteți să-mi spuneți, vă rog, numărul comenzii sau adresa de e-mail cu care ați plasat comanda, ca să pot să caut detaliile?"
+    },
+    {
+      "rol": "client",
+      "text": "Numărul comenzii este 4527893. Am cumpărat un aparat de cafea DeLux și nu funcționează deloc. Nu se pornește."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment, vă rog... Așa, am găsit comanda. Aparatul de cafea DeLux din data de 18 martie. Înțeleg, nu se pornește. Ați încercat să-l verificați la o altă priză?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, logic... Am încercat la mai multe prize. Niciun semn de viață. Nu asta e problema."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles că ați verificat deja. În situația aceasta, avem două opțiuni: vă putem trimite o înlocuire sau vă putem procesa o rambursare."
+    },
+    {
+      "rol": "client",
+      "text": "Ei bine, cât timp durează rambursarea? Am nevoie de aparat și nu vreau să aștept o lună pentru bani."
+    },
+    {
+      "rol": "operator",
+      "text": "Rambursarea durează 5-7 zile lucrătoare după ce primim produsul înapoi la depozit. Înlocuirea ar putea ajunge în 3-4 zile lucrătoare."
+    },
+    {
+      "rol": "client",
+      "text": "Trebuie să trimit produsul înapoi și voi suportați costul transportului, sper, nu?"
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur, pentru produsele defecte din fabrică achităm cheltuielile de transport. Vă vom trimite eticheta de transport pe e-mail."
+    },
+    {
+      "rol": "client",
+      "text": "Și care opțiune ar fi mai rapidă? Deci, pentru rambursare, cât durează până intră banii?"
+    },
+    {
+      "rol": "operator",
+      "text": "Rambursarea durează 5-7 zile după primirea produsului și apoi mai puteți aștepta 2-3 zile să apară în contul dumneavoastră bancar, deci cam 10 zile în total."
+    },
+    {
+      "rol": "client",
+      "text": "Zece zile... Și nu puteți trimite un produs nou fără să mai returnez?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, trebuie să primim produsul defect înainte de a trimite o înlocuire, pentru a verifica și documenta defectul."
+    },
+    {
+      "rol": "client",
+      "text": "Nu prea e convenabil... Dar, trimit aparatul. Măcar să nu fie și ăla defect."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă recomand să testați înlocuirea imediat ce o primiți. Dacă apare o problemă, ne contactați și vă oferim o nouă înlocuire fără să trebuiască să returnați."
+    },
+    {
+      "rol": "client",
+      "text": "Aha... Și când o să-mi trimiteți eticheta de transport?"
+    },
+    {
+      "rol": "operator",
+      "text": "O trimit imediat pe e-mail, veți primi și un cod de urmărire pentru retur. Vă rog să păstrați dovada de livrare."
+    },
+    {
+      "rol": "client",
+      "text": "Bun... Nimic altceva nu pot cere? O reducere pe înlocuire, să zicem?"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru experiența neplăcută. Din păcate, nu pot oferi reduceri pentru înlocuiri, dar vă pot da un voucher de 10% pentru următoarea comandă."
+    },
+    {
+      "rol": "client",
+      "text": "Fie. Sper să funcționeze aparatul nou."
+    },
+    {
+      "rol": "operator",
+      "text": "Sper și eu. Veți primi voucherul și eticheta de transport în următoarea jumătate de oră pe e-mail. Aveți un alt contact în caz că mai apar întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, nu mai am nimic. Mulțumesc. O zi bună."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru răbdare și o zi bună! La revedere!"
+    }
+  ],
+  "tip_complexitate": "negata_conditionata"
+}

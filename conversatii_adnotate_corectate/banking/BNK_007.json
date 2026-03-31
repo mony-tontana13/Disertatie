@@ -1,0 +1,111 @@
+{
+  "id": "BNK_007",
+  "domeniu": "banking",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "problema_sold",
+    "card_blocat"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "ambele_probleme_rezolvate_rapid_si_clientul_multumit",
+  "rezumat": "Client contactează banca pentru discrepanță în sold. Operatorul identifică transfer de 800 de lei către SC Tehnic Service SRL din 15 decembrie, confirmat ca plată pentru reparație frigider. Ulterior, client raportează card blocat la bancomat.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, sunt Cristian de la serviciul clienți al Băncii Comerciale România. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o problemă cu soldul contului meu. Nu înțeleg de ce am o diferență între cât cred că am și cât arată în aplicație."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles. Ne puteți da numărul de cont ca să verificăm, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "Sigur. Este RO45BCRL0019876543210."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Stați să verific... Așa, am găsit contul. Vedeți diferența de astăzi sau de mai mult timp?"
+    },
+    {
+      "rol": "client",
+      "text": "De ieri. Ieri am avut aproximativ 5000 de lei, iar astăzi am doar 4200. Nu-mi amintesc să fi făcut vreo plată sau transfer mare."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Văd că pe 15 decembrie a fost efectuat un transfer de 800 de lei către un cont de la o altă bancă, pe la ora 14:32. Recunoașteți tranzacția?"
+    },
+    {
+      "rol": "client",
+      "text": "Hmm, nu sunt sigur... Cine a fost beneficiarul?"
+    },
+    {
+      "rol": "operator",
+      "text": "Transferul a fost către SC Tehnic Service SRL. Sună cunoscut?"
+    },
+    {
+      "rol": "client",
+      "text": "Ah, da, acum îmi aduc aminte. Am plătit o reparație la frigider. E bine, deci e corect, nu e nicio problemă cu tranzacția?"
+    },
+    {
+      "rol": "operator",
+      "text": "Corect, totul e în regulă cu soldul dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "Mulțumesc. Dar mai am o problemă. Cardul meu de debit nu funcționează. L-am încercat de două ori la bancomat și mi-a dat eroare."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud asta. A apărut vreun mesaj pe ecran?"
+    },
+    {
+      "rol": "client",
+      "text": "Era ceva legat de card blocat sau restricție, dar nu-mi amintesc exact. Nu am depășit nicio limită și nu am avut plăți eșuate."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles. Vă rog să-mi spuneți ultimele cifre de pe card."
+    },
+    {
+      "rol": "client",
+      "text": "4721."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Cardul a fost blocat din motive de securitate. A fost vreo activitate neobișnuită pe cont?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, nu am observat nimic. Dar dacă spuneți că e din motive de securitate, ce pot face?"
+    },
+    {
+      "rol": "operator",
+      "text": "O să deblochez cardul acum. Va dura doar puțin. Gata, puteți încerca din nou la bancomat peste câteva minute."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, sper că acum funcționează. Trebuie să mai fiu atent la ceva?"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă sugerez să schimbați PIN-ul după prima utilizare reușită, pentru siguranță."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, am înțeles. Mulțumesc."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere. O zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere!"
+    }
+  ],
+  "tip_complexitate": "multi_intentie"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "RET_020",
+  "domeniu": "retail",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "problema_garantie"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "promisiune_nerespectata, timp_asteptare_mare, rezolvat_mecanic_fara_empatie",
+  "rezumat": "Client nemulțumit de ignorarea unei reclamații de garanție pentru o ceașcă inteligentă cu defect de etanșare, așteptând degeaba două săptămâni fără progres. Operator-ul recunoaște întârzierile și oferă preluarea produsului pentru diagnosticare în 5-7 zile, urmat de raport în 10 zile. Client acceptă sarcastic solicitarea, dar exprimă lipsă de încredere și frustrare datorită timpilor de așteptare acumulați și lipsei de soluție rapidă, încheindu-și conversația cu o replică rece și pesimistă.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Raluca Manea de la serviciul clienți TechShop. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Vă sun pentru că sunt extrem de nemulțumit de modul în care ignorați o problemă de garanție. Am vorbit cu voi acum două săptămâni și, în ciuda promisiunilor, nu s-a mișcat absolut nimic."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud că ați întâmpinat întârzieri. Îmi puteți explica, vă rog, pe scurt, despre ce defecțiune este vorba?"
+    },
+    {
+      "rol": "client",
+      "text": "Iar trebuie să explic? Am cumpărat o ceașcă inteligentă de la voi în martie și după doar trei luni a început să curgă apă prin capac. Data trecută mi s-a spus absurditatea că e vina mea, deși e clar un defect de etanșare."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația. Produsul este în continuare nefuncțional în acest moment?"
+    },
+    {
+      "rol": "client",
+      "text": "Evident că e nefuncțional, doar nu vă sunam de plăcere. Mi s-a promis o revizuire a cazului acum 14 zile și am așteptat ca un prost un semn de la voi care n-a mai venit."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi cer scuze pentru lipsa de comunicare. Stați să verific în sistem notele colegilor mei din apelul anterior."
+    },
+    {
+      "rol": "client",
+      "text": "Sper să găsiți ceva concret acolo, că m-am săturat de verificări sterile."
+    },
+    {
+      "rol": "operator",
+      "text": "Am găsit fișa. Într-adevăr, a fost menționată o posibilă defecțiune de fabricație, dar văd că solicitarea nu a fost trimisă spre avizare. Din păcate, nu mă pot pronunța final fără o evaluare tehnică în service."
+    },
+    {
+      "rol": "client",
+      "text": "Păi asta mi-ați spus și data trecută! De ce am mai așteptat două săptămâni dacă tot în punctul zero suntem? Este o bătaie de joc."
+    },
+    {
+      "rol": "operator",
+      "text": "Regret că nu am făcut progrese până acum. Vă pot oferi acum două variante: fie preluăm produsul prin curier pentru diagnostic, fie deschidem un tichet de investigație internă."
+    },
+    {
+      "rol": "client",
+      "text": "Și care din ele se întâmplă în realitate, nu doar pe hârtie? Care e mai rapidă?"
+    },
+    {
+      "rol": "operator",
+      "text": "Preluarea pentru diagnostic durează de obicei între 5 și 7 zile lucrătoare. Tichetul de investigație poate dura până la 10 zile."
+    },
+    {
+      "rol": "client",
+      "text": "Deci după ce am pierdut deja două săptămâni, îmi mai cereți încă zece zile? Voi chiar nu puneți niciun preț pe timpul clientului?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, acestea sunt limitele procedurii de service. Vă sugerez să optați pentru preluarea produsului, este calea cea mai sigură."
+    },
+    {
+      "rol": "client",
+      "text": "Și în tot acest timp eu rămân și fără banii dați, și fără produs. Mi se pare o gestiune mizerabilă a unei reclamații simple."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi asum aceste întârzieri în numele companiei, dar nu pot sări peste etapa de diagnosticare fizică."
+    },
+    {
+      "rol": "client",
+      "text": "Fie, faceți diagnosticul ăla odată, deși n-am nicio încredere că se va rezolva ceva corect. Ce date vă mai trebuie?"
+    },
+    {
+      "rol": "operator",
+      "text": "Am nevoie de numărul de comandă și de adresa de unde curierul va ridica produsul."
+    },
+    {
+      "rol": "client",
+      "text": "Comanda este T-458932. Adresa e Strada Florilor nr. 23, București. Sper să vină cineva, nu să mai aștept încă o lună."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înregistrat cererea. Curierul va ajunge în maximum 48 de ore. Veți primi un SMS de confirmare."
+    },
+    {
+      "rol": "client",
+      "text": "Așa ați zis și data trecută."
+    },
+    {
+      "rol": "operator",
+      "text": "Veți primi raportul prin email în cel mult 10 zile după ridicare."
+    },
+    {
+      "rol": "client",
+      "text": "Să sperăm. O zi bună."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere!"
+    }
+  ],
+  "tip_complexitate": "context_implicit"
+}

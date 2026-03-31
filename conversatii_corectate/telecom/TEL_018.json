@@ -1,0 +1,97 @@
+{
+  "id": "TEL_018",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați apelat Telekom România, sunt Otilia George. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Ascultă, Otilia, am o problemă majoră cu portarea numărului meu. Am început demersurile să plec de la voi acum două săptămâni și sunt în continuare blocat. Mi se pare inacceptabil."
+    },
+    {
+      "rol": "operator",
+      "text": "Portarea numărului, da? Vă rog să-mi spuneți numărul de telefon despre care este vorba, să pot verifica imediat în sistem ce se întâmplă."
+    },
+    {
+      "rol": "client",
+      "text": "Numărul este 0723 456 789. Cei de la Vodafone mi-au spus că totul este gata la ei, dar voi refuzați să eliberați numărul. Încă sunt nevoit să folosesc cartela voastră deși nu mai vreau."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment, vă verific profilul... Da, văd cererea de portare în așteptare. Care este codul de autorizare ROU pe care l-ați primit de la operatorul nou?"
+    },
+    {
+      "rol": "client",
+      "text": "Codul este ROU-2024-456-789. L-am primit acum 14 zile, în magazin. De atunci bat drumurile degeaba pentru că cineva de la voi pune frână procesului."
+    },
+    {
+      "rol": "operator",
+      "text": "Verific acum statusul în baza de date centrală... Da, văd aici. Portarea a fost respinsă de sistemul nostru intern. Se pare că există o discrepanță între numele din contract și cel introdus în cerere."
+    },
+    {
+      "rol": "client",
+      "text": "Cum să fie o discrepanță? Sunt clientul vostru de 5 ani! Este imposibil să nu vă cunoașteți propriile date din sistem. Mi-ați luat banii lună de lună fără nicio 'discrepanță' până acum."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg că este o situație frustrantă. Din păcate, văd că în baza noastră de date numele figurează cu o literă greșită, probabil dintr-o eroare de tastare la semnarea contractului inițial, iar asta blochează validarea automată."
+    },
+    {
+      "rol": "client",
+      "text": "Deci vreți să spuneți că eu sunt blocat în rețeaua voastră pentru că un angajat de-ai voștri a tastat greșit acum 5 ani?"
+    },
+    {
+      "rol": "operator",
+      "text": "Ar fi fost mai simplu să modificăm noi, dar regulamentul ANCOM cere ca datele să fie identice. Trebuie să mergeți iar la Vodafone să reinițieze cererea cu numele scris exact cum apare la noi în eroare, sau să facem noi o actualizare de date care durează."
+    },
+    {
+      "rol": "client",
+      "text": "Grozav, minunat! Deci mă puneți pe drumuri pentru incompetența voastră. De ce nu ați actualizat datele când v-am sesizat la ultimul apel? Vreți să mă țineți cu forța în rețea?"
+    },
+    {
+      "rol": "operator",
+      "text": "Sub nicio formă, doar că procesul necesită timp. Sfatul meu este să cereți celor de la Vodafone să trimită cererea din nou, exact cu datele pe care vi le comunic eu acum."
+    },
+    {
+      "rol": "client",
+      "text": "Nu am de gând să fac munca voastră de corectură. Vreau să forțați voi o reevaluare manuală în sistem și să deblocați numărul azi. Nu mai am de gând să aștept nicio zi."
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, sistemul de portabilitate este automatizat la nivel național, nu putem face forțări manuale de aici..."
+    },
+    {
+      "rol": "client",
+      "text": "Asta e replica standard când nu vreți să vă asumați o greșeală. Este pur și simplu o bătaie de joc la adresa mea."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare sincer rău pentru neplăceri. Odată ce cererea este retrimisă corect, voi monitoriza personal dosarul să treacă de validare. Dacă doriți, vă pot face o notă de prioritate."
+    },
+    {
+      "rol": "client",
+      "text": "Prioritate? Am auzit asta și acum o săptămână. Aveți vreun număr de înregistrare pentru această așa-zisă 'prioritate' sau e doar o altă vorbă goală?"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă pot oferi numărul de tichet 77482-B. Puteți face referire la el. Voi nota clar că eroarea ne aparține și că solicităm procesarea urgentă."
+    },
+    {
+      "rol": "client",
+      "text": "Să sperăm că de data asta chiar se întâmplă ceva, deși am mari îndoieli. M-ați făcut să pierd timp și nervi absolut inutil."
+    },
+    {
+      "rol": "operator",
+      "text": "Am adăugat toate notele necesare. Ne cerem scuze pentru eroarea de introducere a datelor. Mai pot face altceva pentru dumneavoastră?"
+    },
+    { 
+      "rol": "client",
+      "text": "Nu mai puteți face nimic acum, oricum ați făcut destule. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere! Încă o dată, scuze pentru experiența neplăcută."
+    }
+  ]
+}

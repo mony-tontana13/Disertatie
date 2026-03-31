@@ -1,0 +1,57 @@
+{
+  "id": "RET_003",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Andrei de la serviciul clienți ShopMart. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua! Am o problemă cu o livrare. Am comandat o pereche de pantofi acum 5 zile, am primit confirmarea că au plecat, dar astăzi era termenul limită și nu a ajuns nimic. Nici măcar un SMS de la curier n-am primit."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru această întârziere. Haideți să verificăm exact unde s-a blocat coletul. Îmi puteți comunica numărul comenzii, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, numărul este 4726543. Sper să nu se fi pierdut, că am mare nevoie de ei pentru un eveniment în weekend."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Un moment să verific în sistemul de tracking... Așa, văd că pachetul a plecat din depozitul nostru ieri seară și a ajuns în hub-ul curierului din orașul dumneavoastră azi-noapte. Totuși, nu a fost încărcat în mașina de livrare azi dimineață."
+    },
+    {
+      "rol": "client",
+      "text": "Păi și de ce? Sunt acasă de dimineață special ca să îi recepționez. E vreo problemă cu adresa?"
+    },
+    {
+      "rol": "operator",
+      "text": "Adresa pare corectă, dar statusul indică o 'eroare de sortare' la curier. Voi deschide chiar acum un incident către firma de curierat pentru a forța livrarea prioritară mâine dimineață. Vă pot lăsa un număr de AWB ca să urmăriți și dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, vă rog, ar fi util. Dar sunteți sigur că ajung mâine?"
+    },
+    {
+      "rol": "operator",
+      "text": "Codul AWB este 55291034. Am trimis deja solicitarea de urgență. Dacă mâine până la ora 12:00 nu primiți mesajul de confirmare de la curier, vă rog să ne sunați direct și vom trimite o altă pereche prin curier rapid 24h, pe cheltuiala noastră."
+    },
+    {
+      "rol": "client",
+      "text": "E în regulă, sună bine. Apreciez tot ce ați făcut. Mulțumesc pentru ajutor!"
+    },
+    {
+      "rol": "operator",
+      "text": "Cu mare plăcere! Ne ocupăm să ajungă la timp. Mai aveți și alte întrebări legate de retur sau garanție?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, e suficient momentan. O zi frumoasă!"
+    },
+    {
+      "rol": "operator",
+      "text": "O zi bună și dumneavoastră! La revedere!"
+    }
+  ]
+}

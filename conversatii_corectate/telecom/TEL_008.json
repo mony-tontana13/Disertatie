@@ -1,0 +1,101 @@
+{
+  "id": "TEL_008",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Mihai Popescu de la Servicii Clienți Telekom. Cu ce pot să vă ajut azi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Deci... am probleme cu semnalul. De vreo săptămână mi se intrerupe des și nu mai pot lucra normal de acasă."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg și ne pare rău pentru neplăceri. Pentru a vă ajuta mai bine, am nevoie de câteva informații. Care este numărul dvs. de telefon asociat abonamentului?"
+    },
+    {
+      "rol": "client",
+      "text": "0742 856 493. Și e așa pe tot parcursul zilei, nu doar la anumite ore."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, am găsit contul dvs. Și spuneți că semnalul se întrerupe. E o problemă constantă la anumite ore sau e aleatorie?"
+    },
+    {
+      "rol": "client",
+      "text": "Mai mult seara, după ora cinci-șase, dar nu doar atunci. Dimineața m-a dezamăgit de câteva ori. E destul de imprevizibil."
+    },
+    {
+      "rol": "operator",
+      "text": "Vorbim despre semnal de date mobile, corect? Și folosiți un telefon Android sau iPhone?"
+    },
+    {
+      "rol": "client",
+      "text": "Android. Un Samsung. Și da, e vorba de date, WiFi nu am acasă."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, am notat. Pe care dintre generațiile de rețea observați că se cade semnalul? Apare undeva indicatorul de 4G, 3G, sau?"
+    },
+    {
+      "rol": "client",
+      "text": "Păi... arată 4G, dar se tot schimbă, se duce la 3G și se întoarce. Cred că asta e problema – nu ține 4G."
+    },
+    {
+      "rol": "operator",
+      "text": "Okay. Și câte bare de semnal arată telefonul dvs. – sunt toate sau doar câteva?"
+    },
+    {
+      "rol": "client",
+      "text": "Sunt cam trei-patru din cinci. Dar chiar și atunci când arată mai bine, aplicațiile se încarcă greu, iar paginile nu se deschid."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Să încercăm ceva. Vă rog să mergeți în Setări telefon, apoi Rețea și Internet, și căutați opțiunea de Operatori disponibili. Vedeți ceva acolo?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, aștept... gata. Văd Telekom de mai multe ori. Ce ar trebui să fac?"
+    },
+    {
+      "rol": "operator",
+      "text": "Selectați Telekom și țineți-o apăsată câteva secunde pentru o reconectare forțată. Apoi așteptați vreo treizeci de secunde și verificați dacă semnalul se stabilizează."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, am făcut asta... Se pare că... acum arată mai bine, sunt cinci bare. Dar asta nu-mi garantează nimic, nu?"
+    },
+    {
+      "rol": "operator",
+      "text": "Corect. Dacă problema persistă, va trebui să verificăm logurile rețelei. Vă propun să creez un tichet tehnic și colegii din echipa de rețea vor verifica situația din zona dvs."
+    },
+    {
+      "rol": "client",
+      "text": "Și cât timp va dura asta? Am nevoie urgent de soluție, pentru că lucrez de acasă și nu pot fi neconectat."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg urgența. Echipa tehnică va prioritiza tichetul și va contacta în maximum 24 de ore. Vă voi da numărul cazului înainte de a închide apelul."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, de acord. Și dacă problema nu se rezolvă? Pot vorbi cu cineva superior?"
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur. Dacă după 48 de ore nu vedeți îmbunătățire, ne contactați cu numărul de caz și o să vă îndrum spre un coleg senior. Ați notat numărul cazului – 2847395?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, am notat. Bine atunci."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru răbdare. Vă rog să testați semnalul în următoarele ore și să vedeți dacă reconexiunea a funcționat. O zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

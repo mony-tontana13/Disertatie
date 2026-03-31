@@ -1,0 +1,101 @@
+{
+  "id": "BNK_012",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Ioana Popescu de la serviciul clienți BCR. Cu ce vă pot ajuta azi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Vreau să discut despre tranzacția pe care am semnalat-o ieri. Mi-ați spus că veți investiga, dar am mai găsit alte mișcări ciudate pe card."
+    },
+    {
+      "rol": "operator",
+      "text": "În regulă, stați să văd... Puteți să-mi spuneți care sunt tranzacțiile suplimentare pe care le-ați observat?"
+    },
+    {
+      "rol": "client",
+      "text": "E vorba de trei retrageri consecutive de câte 500 de lei, toate în aceeași dimineață, din bancomat. Nu le-am făcut eu, sunt sigur de asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles. Și acestea au apărut după ce ați discutat cu colegul nostru, corect?"
+    },
+    {
+      "rol": "client",
+      "text": "Exact. Ieri v-am zis de o tranzacție de 2000 de lei pe un magazin online, iar azi am găsit și retragerile astea."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud asta. Stați puțin, să verific notele... Bun, am găsit. Colegul meu a notat că ați raportat o tranzacție neautorizată. Pentru a putea investiga și aceste retrageri, ar fi necesar să blocăm cardul acum. Sunteți de acord?"
+    },
+    {
+      "rol": "client",
+      "text": "Blocați-l, dar vreau să știu la ce să mă aștept. Cât durează de obicei o investigație?"
+    },
+    {
+      "rol": "operator",
+      "text": "Bun, îl blocăm acum... De regulă, investigația durează până la 30 de zile de la raportarea inițială. Dacă se confirmă că tranzacțiile sunt frauduloase, banii vă vor fi returnați."
+    },
+    {
+      "rol": "client",
+      "text": "30 de zile? Mi se pare o eternitate. Și în timpul ăsta, cum pot să accesez fondurile?"
+    },
+    {
+      "rol": "operator",
+      "text": "Puteți comanda un card de înlocuire care ajunge în 5-7 zile lucrătoare sau puteți retrage bani de la ghișeu folosind buletinul."
+    },
+    {
+      "rol": "client",
+      "text": "Cine lansează investigația? E cumva colegul de ieri? Am impresia că nu a fost tocmai atent."
+    },
+    {
+      "rol": "operator",
+      "text": "Investigația va fi făcută de echipa noastră de fraude. Colegul de ieri a deschis deja cazul, dar orice informație nouă va fi inclusă. Echipa e foarte atentă, vă asigur."
+    },
+    {
+      "rol": "client",
+      "text": "Bun. Aș vrea o confirmare în scris despre tot ce am discutat. Vreau să am dovezi clare."
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur, voi trimite un rezumat al discuției pe e-mailul dumneavoastră, cu detalii despre tranzacții și data blocării cardului."
+    },
+    {
+      "rol": "client",
+      "text": "Și dacă am întrebări, cu cine vorbesc? Cine se ocupă concret de cazul meu?"
+    },
+    {
+      "rol": "operator",
+      "text": "Puteți suna la acest număr și cere direct departamentul de fraude. Veți primi și un număr de referință pentru urmărirea cazului."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Să fie clar, că durează mult. Sper să nu fie nevoie să mă rog de cineva pentru update-uri."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg nemulțumirea și vă asigur că vom ține cazul sub observație. De îndată ce avem noutăți, vă contactăm."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, am înțeles. Oricum, cred că ieri ar fi trebuit să rezolvăm mai rapid. Acum tot aștept și sper să nu fie mai rău."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău.Ne străduim să soluționăm cazul cât mai repede. Aveți și o linie directă pentru urgențe."
+    },
+    {
+      "rol": "client",
+      "text": "Știu de linia aceea, dar nu m-a ajutat prea mult. Aștept rezumatul pe mail și... să vedem ce urmează. Mulțumesc."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru răbdare. Veți primi rezumatul în cel mult o oră. O zi bună și nu ezitați să ne sunați dacă aveți nevoie de ajutor."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

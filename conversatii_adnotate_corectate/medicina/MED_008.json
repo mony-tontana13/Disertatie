@@ -1,0 +1,78 @@
+{
+  "id": "MED_008",
+  "domeniu": "medicina",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "anulare_programare"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_rezolvata_rapid",
+  "rezumat": "Client solicita anularea unei programari stomatologice din 14 martie din cauza unei deplasari. Operatorul identifica rapid programarea si o anuleaza fără taxe, oferind informații suplimentare despre reprogramare.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua. Clinica MedLife. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Ah, bună. Eu... am o programare la dumneavoastră și aș vrea să... să o anulez, de fapt."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeles. Vă ajut cu plăcere. Pot să iau câteva date de la dumneavoastră pentru a găsi programarea?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, da, bineînțeles. Numele meu este... Popescu, Andrei Popescu."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Și cu ce număr de telefon mă pot referi la dumneavoastră, domnule Popescu?"
+    },
+    {
+      "rol": "client",
+      "text": "Este 0721... 0721 445 889."
+    },
+    {
+      "rol": "operator",
+      "text": "Perfect. Un moment, vă rog... Văd o programare pentru o consultație stomatologică pe data de 14 martie la ora 10:30. Este cea pe care doriți să o anulați?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, da, exact aia. Doar că... am avut o problemă cu agenda și nu mai pot veni la acea oră. Plec din oraș."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Nicio problemă. O să anulez programarea acum. Se anulează fără taxe, nu aveți grijă."
+    },
+    {
+      "rol": "client",
+      "text": "Ah, bine, bine. Și... trebuie să fiu atent la ceva? Vreau să spun, o să mă contactați voi sau..."
+    },
+    {
+      "rol": "operator",
+      "text": "Nu, nu este necesar. Am anulat-o în sistem. Dacă doriți, puteți oricând să vă reprogramați la o altă dată, după ce vă reveniți din deplasare."
+    },
+    {
+      "rol": "client",
+      "text": "Da, o să mă gândesc. Poate... mai târziu. Am încă o întrebare mică. Dacă vreau să mă reprogramez, cum procedez?"
+    },
+    {
+      "rol": "operator",
+      "text": "Ușor. Puteți apela din nou la acest număr, să spuneți cu ce specialist doriți să vă întâlniți și care sunt zilele disponibile pentru dumneavoastră. Sau, dacă preferați, avem și o platformă online pe site-ul nostru."
+    },
+    {
+      "rol": "client",
+      "text": "Bun, ok. Cred că e în regulă pentru acum. Merci."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim. Spor și o zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ],
+  "tip_complexitate": "ezitanta"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "TEL_003",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Horia Dinescu de la Serviciul Clienți Orange. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună! Am o problemă cu internetul. Viteza de download e foarte lentă de azi-noapte și nu mai pot lucra de acasă."
+    },
+    {
+      "rol": "operator",
+      "text": "Vom face tot ce putem să rezolvăm. Puteți să-mi spuneți ce viteza primiți în momentul ăsta? Aveți cum să testați?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, tocmai am făcut testul. Îmi arată 3 Mbps în download, dar am contract de 100 Mbps. E inexplicabil."
+    },
+    {
+      "rol": "operator",
+      "text": "Asta e o diferență mare, într-adevăr. Să vedem... care e numărul de telefon asociat contractului?"
+    },
+    {
+      "rol": "client",
+      "text": "0723 456 789."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Verific acum. O să dureze o clipă... Am găsit. Se pare că modemul ar putea fi problema. Când ați resetat ultima dată ruterul?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu l-am resetat recent. Dar de obicei funcționa bine."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Vă propun să facem un reset complet al modemului. Vă pot ghida pas cu pas, dacă sunteți de acord."
+    },
+    {
+      "rol": "client",
+      "text": "Da, da, sunt de acord. Spuneți-mi ce trebuie să fac."
+    },
+    {
+      "rol": "operator",
+      "text": "Excelent. Apăsați butonul de reset pe spatele modemului și țineți-l apăsat timp de 10 secunde. După asta, lăsați-l să se repornească și așteptați 2-3 minute."
+    },
+    {
+      "rol": "client",
+      "text": "Gata, l-am resetat. Cred că au trecut 3 minute... Am făcut din nou testul - acum îmi arată 98 Mbps! E aproape perfect."
+    },
+    {
+      "rol": "operator",
+      "text": "Perfect! Mă bucur să aud asta. Se pare că problema a fost rezolvată. Să știți că suntem aici dacă mai aveți nevoie de ceva."
+    },
+    {
+      "rol": "client",
+      "text": "Mulțumesc mult! M-ați ajutat foarte repede."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere! Vă doresc o zi bună și spor la lucru. La revedere!"
+    }
+  ]
+}

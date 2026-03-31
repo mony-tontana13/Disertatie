@@ -1,0 +1,77 @@
+{
+  "id": "RET_014",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Serviciul clienți ShopEasy. Mă numesc Andrei Popescu. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Vreau să anulez comanda 487392 imediat. Am încercat de trei ori să aplic codul de reducere de bun venit și sistemul vostru mi-a luat prețul întreg."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru această eroare tehnică. Stați să verific... adresa de e-mail asociată este cezar.mihai@email.com?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, aia e. Nu înțeleg de ce trebuie să vă sun eu pentru o problemă de programare a site-ului vostru."
+    },
+    {
+      "rol": "operator",
+      "text": "Văd comanda aici, conține perechea de pantofi și geaca. Într-adevăr, codul nu figurează. Din păcate, odată ce comanda a intrat în procesare, nu mai pot aplica reducerea retroactiv pe ea."
+    },
+    {
+      "rol": "client",
+      "text": "Cum adică nu puteți? E vina site-ului vostru! Vreți să plătesc 200 de lei în plus pentru că nu vă merge codul promovat pe prima pagină?"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea, dar sistemul de facturare este automatizat. Singura soluție este să anulez această comandă și să plasați dumneavoastră una nouă, verificând codul înainte de finalizare."
+    },
+    {
+      "rol": "client",
+      "text": "Ce-mi garantează că de data asta va merge... Bine, anulează-o și sper să-mi primesc banii înapoi pe loc."
+    },
+    {
+      "rol": "operator",
+      "text": "Voi proceda la anulare chiar acum. Referitor la bani, rambursarea se efectuează în termen de 3-5 zile lucrătoare, depinde de banca dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "Voi îmi luați banii în secundă, dar mi-i dați înapoi peste o săptămână? Ridicol."
+    },
+    {
+      "rol": "operator",
+      "text": "Este perioada standard pentru tranzacțiile interbancare, îmi pare rău. Am anulat comanda 487392. Veți primi confirmarea pe e-mail."
+    },
+    {
+      "rol": "client",
+      "text": "Și dacă iar nu merge codul la noua comandă? Iar stau la telefon cu voi jumătate de oră?"
+    },
+    {
+      "rol": "operator",
+      "text": "Dacă întâmpinați probleme, vă rog să nu finalizați plata și să ne contactați înainte. Ne vom asigura că totul este în regulă."
+    },
+    {
+      "rol": "client",
+      "text": "Sincer, nici nu știu dacă mai am răbdare să mai comand ceva de la voi. "
+    },
+    {
+      "rol": "operator",
+      "text": "Regretăm neplăcerile. Mai aveți vreo altă întrebare?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, e destul. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "O zi bună și ne cerem scuze încă o dată. La revedere."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

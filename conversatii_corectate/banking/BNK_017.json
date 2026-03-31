@@ -1,0 +1,97 @@
+{
+  "id": "BNK_017",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! BCR. Eu sunt Andrei. Cu ce vă pot ajuta azi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o problemă cu creditul meu și nu știu cine să mai cred. Am vorbit cu doi operatori diferiți și mi-au spus lucruri contradictorii."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg, sigur. Haideți să încercăm să clarificăm. Puteți să-mi spuneți exact despre ce problemă este vorba?"
+    },
+    {
+      "rol": "client",
+      "text": "Am un credit ipotecar de trei ani cu rata fixă. Săptămâna trecută am primit o notificare că rata mea ar putea să crească din luna viitoare. Când am sunat pentru explicații, un operator mi-a zis că e normal și e conform contractului. Dar azi am discutat cu altcineva care mi-a spus că e imposibil să crească rata fixă."
+    },
+    {
+      "rol": "operator",
+      "text": "Oh, înțeleg. Să verificăm situația. Puteți să-mi furnizați numărul de credit sau codul de client?"
+    },
+    {
+      "rol": "client",
+      "text": "Desigur. 54329876, am codul de client."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Stați un pic să caut informațiile... Am găsit dosarul. Aici văd că aveți un credit cu rata fixă, dar notificarea la care vă referiți pare să fie despre o schimbare în asigurarea obligatorie, nu la rata creditului."
+    },
+    {
+      "rol": "client",
+      "text": "Cum așa? Eu nu m-am asigurat obligatoriu. Credeam că nu era necesar."
+    },
+    {
+      "rol": "operator",
+      "text": "Da, e ușor de confundat. Asigurarea obligatorie pe credit imobiliar este impusă de lege, nu de bancă. Prima acesteia poate varia în funcție de valoarea asigurării pe piață."
+    },
+    {
+      "rol": "client",
+      "text": "Dar asta nu mi-a explicat nimeni. Când am semnat contractul mi s-a spus doar că am o asigurare inclusă. Cred că ar trebui să fie mai clar comunicat."
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți dreptate și înțeleg frustrarea. În ce privește rata creditului propriu-zis, aceasta rămâne fixă. Doar asigurarea poate să se modifice."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, deci rata creditului nu se schimbă. Dar cu cât se schimbă asigurarea? Și de ce nu am fost anunțat dinainte?"
+    },
+    {
+      "rol": "operator",
+      "text": "Notificarea pe care ați primit-o ar trebui să conțină suma exactă. Conform legii, ar trebui să fiți anunțat cu 30 de zile înainte. Pot verifica dacă termenul a fost respectat. Asigurarea se revizuiește anual în funcție de indexare și riscuri."
+    },
+    {
+      "rol": "client",
+      "text": "Deci mi-ați spus că notificarea a fost legală, dar am nevoie să vorbesc cu cineva care să-mi explice asta în detaliu, nu doar să-mi confirme legalitatea. Vreau să înțeleg de ce crește și ce opțiuni am."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg dorința de clarificare. Vă recomand să contactați departamentul de credite ipotecare. Ei pot oferi detalii suplimentare. Pot să vă transfer acum sau să aranjez să fiți contactat mâine?"
+    },
+    {
+      "rol": "client",
+      "text": "O să mă gândesc. Dar spuneți-mi: de ce nu am primit o explicație clară de la primii doi operatori cu care am vorbit? Asta e problema mea, nu doar cifrele, ci comunicarea cu banca."
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți perfectă dreptate și îmi pare sincer rău că ați trecut printr-o astfel de experiență. Este un aspect unde mai putem îmbunătăți. Voi nota aspectele și le voi transmite mai departe."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, apreciez efortul. Nu doresc transfer acum. Cred că trebuie să mă gândesc mai bine și să revin mâine sau mâine-poimâine."
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur, nu-i nicio grabă. Am notat detaliile și dacă sunați mâine, furnizați codul de client și oricine va putea prelua cazul. Dacă doriți să discutați direct cu departamentul de credite ipotecare, solicitați acest lucru."
+    },
+    {
+      "rol": "client",
+      "text": "Bun, am înțeles. Mulțumesc pentru clarificări."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău că nu am avut toate răspunsurile astăzi, dar sper ca mâine să obțineți clarificările necesare. O zi bună și apelați oricând."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere!"
+    }
+  ]
+}

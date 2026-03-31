@@ -1,0 +1,118 @@
+{
+  "id": "MED_018",
+  "domeniu": "medicina",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "problema_reteta"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "problema_nerezolvata_direct_pasat_intre_departamente_frustare",
+  "rezumat": "Client sună cu o problemă privind o rețetă emisă de doctorul Popescu din cardiologie (Atorvastatină 40mg) pe care farmacia o refuză drept expirată, deși sunt doar 24 de zile din 30 posibile. Operatorul confirmă validitatea rețetei și recomandă încercarea la altă farmacie, dar clientul dorește ca operatorul să contacteze direct doctorul pentru reînnoirea rețetei. Operatorul refuză invocând proceduri interne și-l direcționează pe client să sune la recepție. Clientul pleacă frustrat de birocație și de necesitatea de a suna în mai multe locuri din aceeași instituție, fără rezolvare directă.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la Clinica MedPlus, Andrei la telefon. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Eu sun pentru că... am o problemă cu o rețetă pe care mi-a dat-o doctorul la vizita din săptămâna asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, înțeleg. Puteți să-mi spuneți mai detaliat care e problema cu rețeta?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, uite... Mi-a dat medicul rețeta, dar nu e valabilă la farmacia din zona mea. Zic că e prea târziu de când a fost emisă. Cred că-i o problemă cu data, nu știu..."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Știți exact când a fost emisă rețeta? Și care e data scrisă pe ea?"
+    },
+    {
+      "rol": "client",
+      "text": "Hmm, stați... scrie 15 martie. Și astăzi e 8 aprilie, deci sunt exact 24 de zile. Farmacia zice că-i prea veche."
+    },
+    {
+      "rol": "operator",
+      "text": "Am priceput. Într-adevăr, rețetele sunt valabile 30 de zile de la emitere, deci teoretic acestă rețetă ar trebui să mai fie valabilă încă câteva zile. Cine v-a emis rețeta?"
+    },
+    {
+      "rol": "client",
+      "text": "Doctorul Popescu. Cel de la cardiologie, știu eu."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, deci doctorul Popescu de la cardiologie. Care este medicamentul pentru care aveți rețeta?"
+    },
+    {
+      "rol": "client",
+      "text": "Atorvastatină, 40 de miligrame."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, vă mulțumesc pentru informații. Situația este următoarea: dacă farmacia consideră că rețeta nu mai este valabilă, cea mai bună soluție ar fi să contactați direct clinica noastră pentru o nouă rețetă de la doctorul Popescu."
+    },
+    {
+      "rol": "client",
+      "text": "Da, dar nu înțeleg de ce trebuie să mă întorc la doctor dacă medicamentul este același. Nu am timp să vin din nou."
+    },
+    {
+      "rol": "operator",
+      "text": "Sunt de acord că situația e complicată. Totuși din punct de vedere legal, o rețetă care depășește... Stați, mi-ați spus că sunt 24 de zile, nu?"
+    },
+    {
+      "rol": "client",
+      "text": "Exact, 24 de zile. Deci mai sunt 6 zile până la 30."
+    },
+    {
+      "rol": "operator",
+      "text": "Corect. Încercați din nou la o altă farmacie. Poate cea din zona dvs. a fost prea strictă. Rețeta este încă valabilă. Dar dacă asta nu funcționează, va trebui să contactați doctorul pentru o nouă rețetă."
+    },
+    {
+      "rol": "client",
+      "text": "Bun, dar nu puteți să-l contactați pe doctor acum? Să-i spuneți că am nevoie de o nouă rețetă?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, nu pot contacta direct doctorul în locul dvs. Ceea ce vă recomand este să sunați direct la recepție și să cereți o programare urgentă sau o consultație telefonică cu doctorul Popescu pentru reînnoirea rețetei."
+    },
+    {
+      "rol": "client",
+      "text": "Dar voi sunteți la clinică, nu? Nu vorbiți voi cu doctorii?"
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți dreptate că suntem în aceeași instituție, dar serviciul de programări nu are legătură directă cu consultațiile medicale. Am nevoie să sunați direct la recepție și să vorbiți cu secretara doctorului, care poate coordona asta mai rapid."
+    },
+    {
+      "rol": "client",
+      "text": "Bun, bun... Și care este numărul acela?"
+    },
+    {
+      "rol": "operator",
+      "text": "Rețineți: 0211 234 567, extensia 3 pentru cardiologie. Stați o secundă... o să vă dau și email-ul de contact."
+    },
+    {
+      "rol": "client",
+      "text": "Nu-mi trebuie email acum. Doar numărul e bun. Dar sincer, mi se pare o bătaie de joc să sun dintr-o parte în alta a aceleiași clinici."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea dvs., și regret că nu pot rezolva mai direct. Sunt constrâns de procedurile interne."
+    },
+    {
+      "rol": "client",
+      "text": "Procedurile, procedurile... Bun, am notat numărul. Voi vedea ce se poate face."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru înțelegere. Dacă mai aveți nevoie de ceva, nu ezitați să ne sunați din nou. O zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ],
+  "tip_complexitate": "dialect_familiar"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "BNK_004",
+  "domeniu": "banking",
+  "complexitate": "simpla",
+  "intentie_gold": ["tranzactie_suspecta"],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_rezolvata_rapid_cu_masuri_concrete",
+  "rezumat": "Client reclama o tranzacție neautorizată de 450 lei de la o benzinărie. Operatorul confirmă cardul în posesia clientului, înregistrează reclamația, blochează cardul ca măsură de precauție și oferi număr de referință.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Cristian Popescu de la serviciul clienți al Băncii Comerciale România. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună! Am o problemă cu contul meu. Am găsit o tranzacție de 450 de lei pe care nu o recunosc, făcută azi dimineață."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud asta. Puteți să îmi dați numărul contului sau ultimele 4 cifre ale cardului dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, cardul meu de debit se termină în 4782. Tranzacția este de la o benzinărie, dar eu nu am fost acolo."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles. Mai aveți cardul fizic la dumneavoastră? L-ați folosit azi?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, îl am la mine și nu l-am folosit astăzi deloc. Foarte ciudat."
+    },
+    {
+      "rol": "operator",
+      "text": "Este într-adevăr ciudat. Voi înregistra o reclamație pentru această tranzacție neautorizată. Din păcate, va trebui să blocăm cardul ca măsură de precauție."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, blocați-l. Cât va dura investigația? Și când îmi recuperez banii?"
+    },
+    {
+      "rol": "operator",
+      "text": "Investigația poate dura între 10 și 15 zile lucrătoare. Veți fi informat prin telefon sau e-mail odată ce avem un răspuns. Sumele vor fi returnate dacă se confirmă atacul."
+    },
+    {
+      "rol": "client",
+      "text": "În regulă. Îmi puteți oferi un număr de referință pentru reclamație?"
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur, numărul de caz este RCL-2024-087546. Vă voi trimite detalii și prin e-mail. Mai pot ajuta cu altceva?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, asta e tot. Mulțumesc pentru ajutor."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere. Vă asigur că vom rezolva situația. O zi bună!"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "RET_012",
+  "domeniu": "retail",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "problema_garantie"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "timp_asteptare_mare_si_frustrare_fata_de_lipsa_solutiei_rapide",
+  "rezumat": "Client cu mașină de spălat defectă în perioada de garanție contactează operatorul pentru a verifica statusul cazului și pentru a accelera rezolvarea. Operatorul confirmă garanția 24 de luni și explică procedura: trimiterea fotografiilor, evaluare în 48-72 ore, apoi reparație sau înlocuire în maxim 14 zile. Clientul exprimă frustrare față de timpii de așteptare și lipsa de soluție imediată, amenință cu reconsiderarea cumpărăturilor și închide conversația cu o atitudine sceptică, deși operatorul promite urmărire personală.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, sunt Cristian Radu de la Serviciul Clienți TechStore. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună, am sunat ieri cu o problemă la o mașină de spălat și mi s-a spus că se va ocupa cineva de cazul meu. Vreau să verific statusul garanției."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Vă rog, pentru a vă putea ajuta mai bine, care este numărul comenzii dvs.?"
+    },
+    {
+      "rol": "client",
+      "text": "Comanda 847392. Am cumpărat mașina în februarie și acum, după două luni, nu mai funcționează. Cred că e în garanție."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Stați să verific... Da, am găsit comanda. Mașina de spălat LG, garanție 24 de luni. Vă rog să-mi spuneți care este exact problema pe care o întâmpinați."
+    },
+    {
+      "rol": "client",
+      "text": "Nu pornește deloc. Am încercat să o pornesc de mai multe ori, dar nimic. Ieri am vorbit cu cineva care mi-a zis că trebuie să trimit poze și să aștept evaluarea."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația. Defectul apare în perioada de garanție, deci este acoperit. Procedura este să trimiteți imagini cu starea aparatului și o descriere detaliată a problemei."
+    },
+    {
+      "rol": "client",
+      "text": "Dar asta înseamnă că trebuie să mai aștept zile pentru un răspuns? Ieri mi s-a spus același lucru. Cum pot accelera procesul?"
+    },
+    {
+      "rol": "operator",
+      "text": "Mda, înțeleg frustrarea dvs. De regulă, evaluarea fotografiilor durează 48-72 de ore. După aceea, vă vom contacta cu o soluție — fie reparație la domiciliu, fie înlocuire."
+    },
+    {
+      "rol": "client",
+      "text": "Și dacă nu voi fi mulțumit cu reparația? Care sunt exact opțiunile?"
+    },
+    {
+      "rol": "operator",
+      "text": "Dacă reparația nu rezolvă problema, sau dacă aparatul nu mai poate fi reparat, vă vom oferi înlocuirea cu un model echivalent. Asta e garantat în condițiile garanției."
+    },
+    {
+      "rol": "client",
+      "text": "Și cât va dura asta? Pentru că nu am mașină de spălat."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg că e urgent. Din momentul în care am confirmat defectul, termenul de reparație este de maximum 14 zile. Dacă este înlocuire, depinde de disponibilitatea stocului."
+    },
+    {
+      "rol": "client",
+      "text": "Și dacă stocul nu e disponibil azi? Cât aștept?"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă pot spune mai precis după ce evaluez pozele. Dar în general, pentru înlocuiri, livrarea se face în 5-10 zile lucrătoare."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, dar asta înseamnă că din joi până atunci trec două săptămâni fără mașină. O problemă care putea fi evitată dacă aparatul ar fi funcționat cum trebuie."
+    },
+    {
+      "rol": "operator",
+      "text": "Sunt de acord că situația nu e plăcută. Din păcate, nu pot grăbi evaluarea dincolo de ce am spus. Ce pot face e să notez că e caz urgent și să mă gândesc dacă se poate prioriza. Dar nu vă promit."
+    },
+    {
+      "rol": "client",
+      "text": "Bun. Și cine anume o să mă contacteze? Vreun număr, vreun nume? Pentru că ieri am sunat și nu am vorbit cu nimeni care să-și asume ceva."
+    },
+    {
+      "rol": "operator",
+      "text": "V-am notat în sistem că sunteți în contact direct cu mine. Mă voi ocupa personal de cazul dvs. și voi reveni cu răspuns în 48 de ore. Vă voi suna pe numărul cu care ați sunat acum."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Dar dacă nu vă sun mâine și aveți nevoie de poze, cum le trimit?"
+    },
+    {
+      "rol": "operator",
+      "text": "Cred că ați primit un email ieri cu instrucțiunile. Dacă nu, vă pot trimite imediat un link unde trebuie să încărcați pozele. Vă merge pentru dvs.?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, trimite-mi linkul. Și sper că de data asta se mișcă ceva."
+    },
+    {
+      "rol": "operator",
+      "text": "Notez. Vă voi trimite linkul în următoarele 5 minute. Și promit că voi urmări personal. Sunt Cristian Radu. Oricând aveți nevoie, solicitați-mă pe nume."
+    },
+    {
+      "rol": "client",
+      "text": "Cristian, ok. Sper să se rezolve rapid, că dacă nu, o să reconsider cumpărăturile de aici. La revedere."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. O zi bună, și așteptați linkul în scurt timp."
+    }
+  ],
+  "tip_complexitate": "context_implicit"
+}

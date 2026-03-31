@@ -1,0 +1,61 @@
+{
+  "id": "TEL_001",
+  "domeniu": "telecom",
+  "complexitate": "simpla",
+  "intentie_gold": [
+    "problema_modificare_abonament"
+  ],
+  "satisfactie": "pozitiv",
+  "motiv_satisfactie": "problema_rezolvata_rapid_cu_oferta_favorabila",
+  "rezumat": "Clientul solicită upgrade de la abonamentul Smart 10 GB la 20 GB din cauză că datele nu-i mai ajung. Aplicația era blocată și nu putea finaliza schimbarea.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la serviciul clienți Vodafone, numele meu este Andrei. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua, Andrei. Uite, am o problemă... am abonamentul ăsta de 10 GB pe lună și vă spun sincer că nu-mi mai ajunge deloc. Am încercat să-l schimb eu din aplicație, să trec la unul mai mare, dar nu știu ce are, că se tot blochează pagina și nu mă lasă să finalizez."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău, se mai întâmplă uneori să fie în mentenanță. Stați liniștit că rezolvăm imediat de aici. Îmi puteți confirma numărul de telefon, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, este cel de pe care vă sun: 0722 445 663."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Un moment să deschid fișa dumneavoastră... ăăă, da, văd aici. Aveți pachetul Smart cu 10 GB. Căutați o variantă anume sau vreți să vă fac eu o recomandare?"
+    },
+    {
+      "rol": "client",
+      "text": "Păi mă gândeam la cel de 20 de GB, am văzut ceva pe site. Cam cât m-ar costa în plus la factură?"
+    },
+    {
+      "rol": "operator",
+      "text": "Avem o ofertă foarte bună chiar acum. Smart 20 GB este 39,99 lei pe lună. Practic, e o diferență de doar 10 lei față de ce plătiți acum. Mai mult, în primele 3 luni vă pot aplica o reducere de 50% la abonament."
+    },
+    {
+      "rol": "client",
+      "text": "E bine. Și se activează repede? Că am mare nevoie de internet chiar acum, sunt pe drum și s-au terminat datele."
+    },
+    {
+      "rol": "operator",
+      "text": "Imediat ce închid apelul cu dumneavoastră, trimit solicitarea în sistem. De regulă durează cam o oră, maxim 24, dar o să primiți un SMS de confirmare imediat ce e activ. Mai pot să vă ajut și cu altceva?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, e perfect așa. Mulțumesc mult, chiar nu mai aveam răbdare să mă bat cu aplicația aia."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu multă plăcere! Dacă mai apar probleme, suntem aici. O zi frumoasă să aveți!"
+    },
+    {
+      "rol": "client",
+      "text": "Mulțumesc la fel! La revedere."
+    }
+  ]
+}

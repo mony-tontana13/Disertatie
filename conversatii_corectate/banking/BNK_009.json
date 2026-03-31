@@ -1,0 +1,73 @@
+{
+  "id": "BNK_009",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Victor Orban de la CommercePlus. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Vă sun pentru că sunt revoltat de ce am văzut în extrasul de cont. Am un credit de doi ani, rata trebuia să fie 800 de lei, iar acum m-am trezit că mi-ați retras 950 de lei fără niciun preaviz."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru confuzie. Cel mai probabil s-a modificat indicele de referință, ROBOR sau IRCC, în funcție de contractul dumneavoastră. Aveți o dobândă variabilă, corect?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, este variabilă, dar asta nu vă dă dreptul să-mi umblați la bani fără să mă anunțați clar. Este legal să aflu de o mărire de 150 de lei direct când văd soldul scăzut?"
+    },
+    {
+      "rol": "operator",
+      "text": "Banca transmite notificări automate. Ați verificat secțiunea de mesaje din aplicația mobilă sau adresa de e-mail?"
+    },
+    {
+      "rol": "client",
+      "text": "Am primit o notificare vagă în aplicație care nu spunea nimic concret despre sumă. Vreau să trec acum la o rată fixă, m-am săturat de 'surprizele' voastre lunare. Se poate face prin telefon?"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă înțeleg dorința de stabilitate, însă trecerea la dobândă fixă nu se poate procesa telefonic. Este obligatoriu să mergeți la una dintre sucursalele noastre pentru a semna un act adițional."
+    },
+    {
+      "rol": "client",
+      "text": "Poftim? Suntem în 2026, sunt clientul vostru de ani de zile și mă puneți pe drumuri pentru o semnătură? De ce mai aveți call-center dacă nu puteți rezolva nimic concret?"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi cer scuze, dar este o procedură ce ține de siguranță și conformitate legală. Modificarea structurii creditului necesită o nouă evaluare a capacității de plată și prezența fizică."
+    },
+    {
+      "rol": "client",
+      "text": "Este pură birocrație. Vreau să vorbesc cu un supervizor, cineva care are autoritatea să deblocheze situația asta online. Nu am timp de pierdut la cozi în bănci."
+    },
+    {
+      "rol": "operator",
+      "text": "Niciun supervizor nu poate eluda această procedură, normele BNR sunt stricte în acest sens. Dacă sunteți din Voluntari, avem o filială pe Strada Gheorghe Ionescu Sisești unde puteți merge."
+    },
+    {
+      "rol": "client",
+      "text": "Și dacă merg acolo, măcar puteți să-mi spuneți acum ce rată fixă aș avea? Să nu bat drumul degeaba dacă oferta voastră e la fel de proastă."
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, eu nu am acces la simulatorul de credite din call-center. Consultantul din filială va face calculul personalizat în funcție de noul profil de risc."
+    },
+    {
+      "rol": "client",
+      "text": "Deci mă trimiteți la plimbare fără nicio informație utilă. Serviciile voastre sunt de-a dreptul deplorabile. O să vin la filială doar ca să semnez actele și probabil să văd cum îmi mut creditul la altă bancă."
+    },
+    {
+      "rol": "operator",
+      "text": "Regretăm că aveți această percepție. Colegii din sucursală vor face tot posibilul să vă ofere cea mai bună variantă disponibilă."
+    },
+    {
+      "rol": "client",
+      "text": "Să sperăm, deși mă îndoiesc profund. O zi bună."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim pentru apel. La revedere."
+    }
+  ]
+}

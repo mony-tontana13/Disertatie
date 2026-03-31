@@ -1,0 +1,119 @@
+{
+  "id": "BNK_019",
+  "domeniu": "banking",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "card_blocat",
+    "tranzactie_suspecta"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "protocol_birocratic_ineficient, timp_asteptare_mare, bani_furati_nerecuperati_imediat, lipsa_notificare_proactiva",
+  "rezumat": "Clientul Vasile Ionel sună deoarece cardul i-a fost blocat automat din motive de securitate. Descoperă că i-au fost furati 500 de lei prin transfer neautorizat. Operatorul Mihai Popescu informează că deblocarea durează 24 de ore și cere parcurgerea unui protocol SMS suplimentar, iar recuperarea banilor furati va dura 10-30 de zile prin proces de dispută. Clientul, frustrat de incompetență și procedurile birocratice, pleacă furios, anunțând o plângere la BNR și numindu-i pe angajați \"mizerabili\". Deși problema a fost identificată, nu a fost rezolvată satisfăcător.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Mihai Popescu de la BCR. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua! Sunt într-o situație incredibilă. Cardul meu e blocat, nu pot plăti nimic și sunt lăsat pur și simplu fără acces la propriile resurse. Vreau să știu imediat de ce!"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru situația creată. Haideți să verificăm imediat ce s-a întâmplat. Îmi puteți spune ultimele patru cifre ale cardului?"
+    },
+    {
+      "rol": "client",
+      "text": "Sunt 4527. Și vă rog să vă mișcați repede, că stau la rând la casă ca un paria."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Numele complet și data nașterii, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "Vasile Ionel, 15 martie 1985. Haideți, se poate debloca acum?"
+    },
+    {
+      "rol": "operator",
+      "text": "Văd în sistem că a fost blocat automat din motive de securitate. Sistemul a detectat o activitate suspectă ieri seară."
+    },
+    {
+      "rol": "client",
+      "text": "Activitate suspectă? Eu n-am primit nicio notificare, niciun apel, nimic! M-ați lăsat să aflu singur la magazin că nu am bani?"
+    },
+    {
+      "rol": "operator",
+      "text": "Procedura noastră presupune blocarea imediată pentru a preveni pagubele. Pentru deblocare, trebuie să parcurgeți un proces de verificare."
+    },
+    {
+      "rol": "client",
+      "text": "Alt proces? Sunt deja la telefon cu dumneavoastră! Nu este suficient pentru identificare?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, trebuie să primiți un cod prin SMS, după care va trebui să reapelați și să solicitați transferul la departamentul de Securitate."
+    },
+    {
+      "rol": "client",
+      "text": "Deci mă puneți să închid, să aștept un cod și să sun iar, să stau iar la coadă în call-center? Este o bătaie de joc la adresa clientului!"
+    },
+    {
+      "rol": "operator",
+      "text": "Acesta este protocolul de siguranță. Deblocarea propriu-zisă poate dura de la câteva ore până la 24 de ore după apel."
+    },
+    {
+      "rol": "client",
+      "text": "Până mâine? Incredibil. Și stați așa, că m-am uitat acum în aplicație și soldul e mult mai mic decât știam. Ce s-a întâmplat cu banii mei?"
+    },
+    {
+      "rol": "operator",
+      "text": "Verific acum... Văd un transfer de 500 de lei procesat ieri către un cont necunoscut. Îl recunoașteți?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu recunosc nimic! Voi mi-ați blocat cardul azi, dar ați lăsat hoții să-mi ia 500 de lei ieri? Ce fel de protecție e asta?"
+    },
+    {
+      "rol": "operator",
+      "text": "Sistemul a reacționat ulterior. Trebuie să înregistrăm o cerere de dispută, iar analiza poate dura între 10 și 30 de zile lucrătoare."
+    },
+    {
+      "rol": "client",
+      "text": "O lună de zile ca să-mi recuperați banii furați sub nasul vostru? Sunt absolut șocat de incompetența sistemului dumneavoastră de siguranță."
+    },
+    {
+      "rol": "operator",
+      "text": "Vom face tot posibilul, dar acestea sunt termenele legale de investigație. Vă voi genera un număr de dosar pe care să-l urmăriți."
+    },
+    {
+      "rol": "client",
+      "text": "Numărul de dosar nu-mi ține de foame. Vreau să știu clar: de ce nu am fost sunat în secunda în care s-a făcut acel transfer?"
+    },
+    {
+      "rol": "operator",
+      "text": "Sistemul trimite notificări automate, îmi pare rău dacă nu ați vizualizat-o în timp util."
+    },
+    {
+      "rol": "client",
+      "text": "Vreți să spuneți că e vina mea? Trimiteți codul ăla odată și închideți, că mi-ați consumat destulă energie și timp degeaba."
+    },
+    {
+      "rol": "operator",
+      "text": "Am trimis codul. Vă rog să sunați imediat ce îl aveți. Îmi cer scuze pentru disconfortul major."
+    },
+    {
+      "rol": "client",
+      "text": "Sunteți mizerabili. O să fac și o plângere oficială la BNR după ce termin circul ăsta. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "Regretăm experiența. O zi cât mai bună în circumstanțele date."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere!"
+    }
+  ],
+  "tip_complexitate": "multi_intentie"
+}

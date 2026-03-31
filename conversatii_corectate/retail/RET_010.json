@@ -1,0 +1,121 @@
+{
+  "id": "RET_010",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Mihnea Ene de la serviciul clienți al ShopMax. Cum pot să vă ajut azi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună! Am o problemă cu o comandă. Am primit ieri o pereche de pantofi care și sunt cei pe care i-am comandat. Am cerut pantofi negri, dar am primit albi și nici măcar mărimea nu e bună."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud asta. Să vedem cum putem rezolva. Îmi puteți spune, vă rog, numărul comenzii pentru verificare?"
+    },
+    {
+      "rol": "client",
+      "text": "Sigur. Numărul este 7842561."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Un moment... Am verificat și confirma că ați comandat pantofi negri, mărimea 41. E clar o eroare. Vom încerca să rezolvăm situația cât mai repede. Vă pot transfera la departamentul de logistică sau doriți să returnați direct produsul greșit?"
+    },
+    {
+      "rol": "client",
+      "text": "Ar fi mai simplu să primesc direct pantofii corecți. Pot să returnez perechea greșită simplu?"
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur, puteți returna. Doar că trebuie să treacă printr-un proces de aprobare la departamentul de control al calității. Transfer și vă vor explica ei detaliile."
+    },
+    {
+      "rol": "client",
+      "text": "Stai așa... De ce trebuie aprobat un retur de controlul calității? E o greșeală clară."
+    },
+    {
+      "rol": "operator",
+      "text": "Da, înțeleg cum pare. E o procedură standard, dar am să verific dacă putem face o excepție în cazul dvs. Rămâneți pe fir, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "Da, aștept."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru răbdare. Din păcate, e nevoie să mergem prin procedura obișnuită. Vă transfer acum la colegii mei din control calitate."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, dar să știți că am plătit pentru ceva ce nu am primit și nu-i deloc în regulă."
+    },
+    {
+      "rol": "operator",
+      "text": "Este corect ce spuneți și îmi pare rău pentru neplăceri. Imediat vă transfer."
+    },
+    {
+      "rol": "client",
+      "text": "Okay..."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment... Acum va răspunde Miruna de la control calitate. O zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "Aștept..."
+    },
+    {
+      "rol": "operator",
+      "text": "Bună ziua, sunt Miruna. Am văzut nota în sistem. Deci, pantofii primiți nu corespund comenzii plasate, da?"
+    },
+    {
+      "rol": "client",
+      "text": "Da. Am comandat negri, mărimea 41 și am primit albi, mărimea 42. E clar o greșeală de depozit."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles. Va trebui să returnați pantofii, iar după verificare, vom aproba fie rambursarea, fie trimiterea noii perechi."
+    },
+    {
+      "rol": "client",
+      "text": "Trebuie să fac eu asta deși nu e greșeala mea? Nu ar fi mai bine să-mi trimiteți voi un colet de schimb?"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg nemulțumirea, dar aceasta e procedura curentă. Clientul inițiază returul. Vă ofer un cod de retur. Ne ocupăm noi de costuri."
+    },
+    {
+      "rol": "client",
+      "text": "Bine... dați-mi codul de retur, vă rog."
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur, codul e: RET-7842561-MR. Veți primi un email cu instrucțiuni. Asigurați-vă că trimiteți totul în termen de 14 zile."
+    },
+    {
+      "rol": "client",
+      "text": "După retur, cât durează până se rezolvă tot? Am nevoie urgentă de pantofi."
+    },
+    {
+      "rol": "operator",
+      "text": "După recepția produsului returnat, în 3-5 zile lucrătoare procesăm totul. Apoi putem expedia rapid, dar e contra cost."
+    },
+    {
+      "rol": "client",
+      "text": "Deci o să aștept cam o săptămână și jumătate pentru problema voastră, plus plata unui transport urgent. Minunat."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi dau seama că nu vă convine și îmi pare rău pentru neplăceri. Dacă mai aveți întrebări, vă stau la dispoziție."
+    },
+    {
+      "rol": "client",
+      "text": "Nu, nu mai am întrebări. Voi returna. La revedere."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere! Din nou, îmi pare rău. Să aveți o zi bună."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "BNK_020",
+  "domeniu": "banking",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "tranzactie_suspecta"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "promisiune_nerespectata, informatii_contradictorii, problema_nerezolvata, rezolvat_mecanic_fara_empatie",
+  "rezumat": "Client reclamă fraudă de 450 lei pe card către o aplicație de jocuri unde nu are cont. Operator informează că termenul de soluționare este 30 de zile lucrătoare, contraziicând promisiunea din ziua anterioară de 24 de ore. Client exprimă frustrare legată de securitatea bancii, timp de așteptare mare și taxa de reemitere card. Operatorul se apără cu regulamentele bancare fără a oferi soluții alternative. Client anunță plângeri la ANPC și BNR, încheiind conversația frustrat și nemulțumit, cu doar confirmarea dosarului prin email ca singură acțiune.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Andrei Popescu de la BCR. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Vă sun pentru că sunt plimbat cu vorba de ieri. Mi s-a spus că investigați o fraudă de 450 de lei pe cardul meu și că primesc un răspuns azi. Evident, nu m-a sunat nimeni."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud asta. Haideți să verificăm statusul dosarului. Îmi puteți da ultimele patru cifre ale cardului?"
+    },
+    {
+      "rol": "client",
+      "text": "Cardul terminat în 4827. Tranzacția este către o aplicație de jocuri unde eu nu am nici măcar cont. Mi s-a promis ieri că banii se întorc rapid în cont."
+    },
+    {
+      "rol": "operator",
+      "text": "Văd aici solicitarea deschisă de colegul meu, dar termenul de soluționare pentru dispute de plată este de minimum 30 de zile lucrătoare, nu o zi."
+    },
+    {
+      "rol": "client",
+      "text": "Poftim? Ieri mi s-a spus 24 de ore, acum îmi spuneți o lună? Voi vă bateți joc de clienți? Sunt banii mei furați și voi îi țineți blocați cu săptămânile!"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi cer scuze pentru informația eronată oferită anterior. Procedura depinde de răspunsul procesatorului de plăți extern. Nu avem cum să forțăm returnarea banilor mai devreme."
+    },
+    {
+      "rol": "client",
+      "text": "Este incredibil. Adică securitatea voastră e zero, lăsați tranzacții suspecte să treacă, iar acum eu trebuie să suport lipsa banilor pentru că angajații voștri nu cunosc procedurile?"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea, dar acestea sunt regulamentele bancare. Putem emite un card nou dacă cel actual e compromis, dar taxa de reemitere va fi suportată de dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "Vreți să mă taxați și pentru card acum? Super! Mi se fură banii din cauza voastră și tot eu trebuie să plătesc taxe și să aștept luni de zile. Vreau să vorbesc cu un supervizor chiar acum."
+    },
+    {
+      "rol": "operator",
+      "text": "Supervizorul vă va comunica aceleași termene. Putem nota o reclamație suplimentară pentru informațiile greșite primite ieri, dar asta nu va grăbi returnarea sumei."
+    },
+    {
+      "rol": "client",
+      "text": "Nu mai notați nimic, că oricum notele voastre nu valorează nimic. O să fac o plângere direct la ANPC și la BNR, poate acolo găsesc pe cineva competent să analizeze cum gestionați fraudele."
+    },
+    {
+      "rol": "operator",
+      "text": "Este dreptul dumneavoastră legal. Eu am actualizat dosarul cu mențiunea că respingeți termenul de 30 de zile. Altceva mai pot face?"
+    },
+    {
+      "rol": "client",
+      "text": "Să-mi dați banii înapoi ați putea, dar văd că e prea mult de cerut de la o bancă 'de top'. Trimiteți-mi confirmarea mizeriei ăsteia de dosar pe e-mail."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă trimit imediat email-ul cu numărul de înregistrare. Îmi pare rău pentru situație."
+    },
+    {
+      "rol": "client",
+      "text": "O zi bună."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere."
+    }
+  ],
+  "tip_complexitate": "context_implicit"
+}

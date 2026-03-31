@@ -1,0 +1,103 @@
+{
+  "id": "RET_007",
+  "domeniu": "retail",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "comanda_intarziata",
+    "reclamatie_produs"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_nerezolvata_doar_promisiune_investigare",
+  "rezumat": "Client raportează comandă întârziată de 3 zile și menționează problemă anterioară cu produs deteriorat la livrare. Operator promite investigare la curier în maximum 2 ore și ofertă compensare cu ambalare premium la următoarea comandă. Client acceptă investigarea și preferă rambursare dacă nu se poate livra azi. Conversația se încheie cu promisiune de reapelare, fără rezolvare efectivă a problemei curente.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați apelat serviciul de clienți al magazinului online MegaShop. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună, am o problemă cu o comandă pe care am făcut-o acum o săptămână. Era să sosească marți, dar nu a venit nimic."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Vă rog să-mi spuneți numărul comenzii ca să verific."
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, este 7842561. Nu am primit nicio notificare de la curier."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment... mă uit acum. Văd comanda din 15 noiembrie. Livrarea era programată pentru 20 noiembrie, corect?"
+    },
+    {
+      "rol": "client",
+      "text": "Exact, și suntem deja pe 23. Ce se întâmplă?"
+    },
+    {
+      "rol": "operator",
+      "text": "Se pare că pachetul e blocat în depozitul curierului de pe 19 noiembrie, niciun update. Voi contacta curierul și voi reveni cu detalii în maximum 2 ore."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, dar chiar nu puteți face nimic acum? Am nevoie urgent de comandă."
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, nu am cum să intervin direct o dată ce e la curier. Dar promit să investighez rapid. Pot nota numărul dumneavoastră să vă contactez?"
+    },
+    {
+      "rol": "client",
+      "text": "0724 555 888. Dar asta se întâmplă des? Nu e prima oară când am probleme cu livrările."
+    },
+    {
+      "rol": "operator",
+      "text": "Dacă puteți să-mi dați mai multe detalii despre acele probleme anterioare, pot vedea cum să ajut."
+    },
+    {
+      "rol": "client",
+      "text": "Comanda precedentă a sosit cu pachetul deteriorat și produsul zgâriat. Nici nu m-au întrebat dacă îl accept."
+    },
+    {
+      "rol": "operator",
+      "text": "Regret să aud asta. Pentru comanda deteriorată, se poate face o reclamație dacă doriți. Am nevoie de numărul acelei comenzi."
+    },
+    {
+      "rol": "client",
+      "text": "E târziu, am primit-o acum 3 săptămâni și deja am folosit produsul. Ce se întâmplă cu standardele de ambalare și livrare?"
+    },
+    {
+      "rol": "operator",
+      "text": "Complet de acord cu nemulțumirea dumneavoastră. Colaborăm cu parteneri de curierat, dar promit să îmbunătățim procesul. La următoarea comandă, vă oferim ambalare premium gratuit, ca un mic gest de compensare."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, dar vreau rezultate clare. Vreau să știu că această comandă întârziată se va rezolva imediat."
+    },
+    {
+      "rol": "operator",
+      "text": "Voi contacta curierul. Dacă poate fi livrat azi, vă informez. Dacă nu, discutăm despre rambursare sau retrimitere, după cum preferați."
+    },
+    {
+      "rol": "client",
+      "text": "Prefer rambursare, nu vreau alte surprize."
+    },
+    {
+      "rol": "operator",
+      "text": "Notez. Revin cu răspuns pe numărul de telefon pe care l-am notat. Dacă nu puteți răspunde, las un mesaj."
+    },
+    {
+      "rol": "client",
+      "text": "OK, înțeles. Aștept apelul."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru răbdare. Voi contacta curierul acum și revin cât mai curând. O zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ],
+  "tip_complexitate": "multi_intentie"
+}

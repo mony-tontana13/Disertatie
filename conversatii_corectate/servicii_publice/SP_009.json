@@ -1,0 +1,109 @@
+{
+  "id": "SP_009",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la Agenția pentru Plăți și Inspecție Socială, serviciul Relații cu Publicul. Numele meu este Cristina Popescu. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Am primit o decizie prin care mi se comunică faptul că dosarul pentru indemnizație a fost respins. Sincer, nu prea înțeleg de ce, pentru că am trimis absolut toate documentele care mi s-au cerut la ghișeu."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru această situație. Ăăă, haideți să verificăm exact despre ce este vorba. Am nevoie de codul numeric personal, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, este 1850723456789."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Un moment să interoghez baza de date... Da, am identificat dosarul dumneavoastră. Într-adevăr, apare o decizie de respingere pe motiv de documentație incompletă."
+    },
+    {
+      "rol": "client",
+      "text": "Incompletă? Păi am trimis certificatul de naștere, declarația pe propria răspundere, chitanțele... tot ce mi s-a bifat pe listă. Ce ar mai fi putut să lipsească?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din notele inspectorului de caz, reiese că lipsește dovada de domiciliu actualizată. Mai exact, copia după actul de identitate nu era lizibilă sau nu era atașată în formatul cerut pentru a confirma adresa de reședință."
+    },
+    {
+      "rol": "client",
+      "text": "Dar asta nu era menționată clar în lista pe care am primit-o inițial. Mi s-a dat o notă scrisă de mână la ghișeu și nu scria nimic de o a doua copie după buletin."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg neplăcerea. Din păcate, uneori apar modificări în normele de aplicare. Regulamentul prevede că solicitantul trebuie să verifice lista actualizată pe site-ul instituției noastre înainte de depunere."
+    },
+    {
+      "rol": "client",
+      "text": "Și acum ce ar trebui să fac? Trebuie să refac tot dosarul și să stau iar la cozi?"
+    },
+    {
+      "rol": "operator",
+      "text": "Nu este necesar un dosar nou. Aveți dreptul să depuneți o contestație în termen de 30 de zile, la care să anexați documentele lipsă. Aceasta va fi revizuită separat de o comisie de apel."
+    },
+    {
+      "rol": "client",
+      "text": "Și cam cât durează până primesc un răspuns la contestația asta?"
+    },
+    {
+      "rol": "operator",
+      "text": "Termenul standard este de 30 de zile de la data înregistrării, însă depinde foarte mult și de volumul de cereri din această lună. Vă pot oferi un număr de înregistrare pentru a urmări stadiul online."
+    },
+    {
+      "rol": "client",
+      "text": "30 de zile? Vorbiți serios? Eu chiar depindeam de banii aceștia luna asta. Nu există nicio modalitate de a urgenta procesul, având în vedere că eroarea de informare a fost la dumneavoastră?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, termenele administrative sunt fixe și nu pot interveni peste ordinea cronologică a comisiei."
+    },
+    {
+      "rol": "client",
+      "text": "E de-a dreptul revoltător. Am pierdut atâta timp și acum tot eu trebuie să aștept din cauza unei liste incomplete primite chiar de la voi."
+    },
+    {
+      "rol": "operator",
+      "text": "Regret nespus neclaritățile întâmpinate. Vă pot trimite acum, prin e-mail, pașii detaliați pentru redactarea contestației, ca să ne asigurăm că de data aceasta totul este în regulă. Aveți o adresă validă?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, adresa este cristian.moraru@email.com. Trimiteți-le acolo."
+    },
+    {
+      "rol": "operator",
+      "text": "Am notat. Vă trimit documentația imediat. Puteți depune contestația fie direct la ghișeu, de luni până vineri, între 08:00 și 16:00, fie prin poștă cu confirmare de primire."
+    },
+    {
+      "rol": "client",
+      "text": "Și dacă depun actele astea, am vreo certitudine că de data asta va fi acceptat dosarul?"
+    },
+    {
+      "rol": "operator",
+      "text": "Nu am autoritatea să vă garantez succesul contestației. Comisia va reevalua criteriile de eligibilitate și documentele noi depuse conform legislației în vigoare."
+    },
+    {
+      "rol": "client",
+      "text": "Deci practic tot în aer rămân... E groaznic cum funcționează sistemul ăsta."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă înțeleg pe deplin nemulțumirea. Recomandarea mea este să depuneți contestația cât mai repede. Dacă considerați că drepturile v-au fost încălcate, puteți solicita și consultanță juridică gratuită de la centrele de asistență socială."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, ok. O să văd cum procedez."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere. Sper să se soluționeze favorabil de data aceasta. O zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

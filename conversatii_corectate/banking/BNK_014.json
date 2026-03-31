@@ -1,0 +1,109 @@
+{
+  "id": "BNK_014",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunteți în legătură cu serviciul clienți BCR. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o problemă cu o conversie de valută pe care am făcut-o acum trei zile și cursul care mi s-a aplicat nu-mi pare corect."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Puteți să-mi dați mai multe detalii? La ce valute vă referiți?"
+    },
+    {
+      "rol": "client",
+      "text": "Am schimbat EUR în RON. Am transferat 5000 de euro și mi s-a creditat o sumă care e mai mică decât așteptam. Am calculat după cursul de acel moment și diferența e destul de mare."
+    },
+    {
+      "rol": "operator",
+      "text": "Stați să verific... O să am nevoie de IBAN-ul contului și data exactă a operațiunii."
+    },
+    {
+      "rol": "client",
+      "text": "IBAN-ul e RO89BCRL0400100123456789. Operațiunea a fost pe 15 martie, dimineața."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Un moment, vă rog, să verific în sistem."
+    },
+    {
+      "rol": "client",
+      "text": "Desigur."
+    },
+    {
+      "rol": "operator",
+      "text": "Am găsit tranzacția. Ați convertit 5000 EUR la cursul de 4.87 RON per EUR, rezultând 24.850 RON. Ce curs aveați în vedere?"
+    },
+    {
+      "rol": "client",
+      "text": "Pe BNR, în acea zi, era 4.98. Chiar și pe alte platforme era mai sus. Am văzut 4.985 pe mai multe locuri."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea. Totuși, cursul nostru include o anumită marjă față de cel BNR. Diferența se datorează acestei marje."
+    },
+    {
+      "rol": "client",
+      "text": "Marja e cam mare, zic eu. De la 4.98 la 4.87... E o diferență sesizabilă pe suma asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți dreptate, diferența se simte. Cursurile noastre țin cont de mai mulți factori de piață. Dacă doriți, vă pot trimite documentația noastră despre schimb valutar."
+    },
+    {
+      "rol": "client",
+      "text": "Nu mă interesează documentația. Mă interesează să se fi aplicat un curs corect. Pot să fiu compensat pentru diferență?"
+    },
+    {
+      "rol": "operator",
+      "text": "Compensațiile sunt acordate doar dacă există o eroare din partea noastră. Dar puteți depune o reclamație formală, care va fi analizată."
+    },
+    {
+      "rol": "client",
+      "text": "Deci... practic, azi nu se rezolvă nimic."
+    },
+    {
+      "rol": "operator",
+      "text": "Nu astăzi, dar procesul de reclamație este transparent, și veți primi un răspuns în max 30 de zile. Vreți să depuneți reclamația?"
+    },
+    {
+      "rol": "client",
+      "text": "Și ce sens are dacă același răspuns va fi? Că e corect, că e politica băncii..."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg scepticismul. Reclamația va fi analizată de o echipă independentă. Dacă sunt nereguli, se vor corecta."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Fac reclamația. Dar vreau clar în scris ce cursuri aplică banca pentru schimburi valutare. Ca să știu pe viitor."
+    },
+    {
+      "rol": "operator",
+      "text": "Perfect. Vă voi trimite prin email documentația cu rata de schimb și metodologia de calcul. Veți primi și confirmarea reclamației."
+    },
+    {
+      "rol": "client",
+      "text": "Adresa e cea din sistem. Georgescu.ioan@email.com."
+    },
+    {
+      "rol": "operator",
+      "text": "Notat. Veți primi documentele în maxim 24 de ore. Referința reclamației este 2024-15-03-EUR-RON-5000. Rețineți această notă."
+    },
+    {
+      "rol": "client",
+      "text": "Am notat. Sper sa nu mai fie probleme data viitoare."
+    },
+    {
+      "rol": "operator",
+      "text": "Ne cerem scuze pentru neplăceri. Vă mulțumim că ați contactat serviciul clienți BCR. O zi frumoasă!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

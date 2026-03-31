@@ -1,0 +1,143 @@
+{
+  "model": "rogemma",
+  "versiune": "V1",
+  "set_date": "subset_2_per_domeniu",
+  "metrici": {
+    "model": "rogemma",
+    "versiune": "V1",
+    "accuracy": 0.0,
+    "f1": 0.0,
+    "latenta": 18.74,
+    "nr_conversatii": 10,
+    "per_domeniu": {
+      "banking": 0.0,
+      "medicina": 0.0,
+      "retail": 0.0,
+      "telecom": 0.0,
+      "servicii_publice": 0.0
+    },
+    "raport_text": "\n=== rogemma | Prompt V1 | 10 conversatii ===\n  Accuracy:      0.00%\n  F1 Macro:      0.000\n  Latenta medie: 18.7s\n  Erori (10/10):\n    BNK_006 [simpla]: gold=problema_schimb_valutar pred=alta_solicitare\n    BNK_008 [complexa]: gold=card_pierdut pred=alta_solicitare\n    MED_001 [simpla]: gold=rezultate_analize pred=alta_solicitare\n    MED_018 [complexa]: gold=problema_reteta pred=alta_solicitare\n    RET_003 [simpla]: gold=problema_livrare pred=alta_solicitare\n    RET_010 [complexa]: gold=comanda_gresita pred=alta_solicitare\n    TEL_002 [simpla]: gold=portare_esuata pred=alta_solicitare\n    TEL_009 [complexa]: gold=problema_modificare_abonament pred=alta_solicitare\n    SP_006 [simpla]: gold=problema_plata_taxa pred=alta_solicitare\n    SP_008 [complexa]: gold=programare_ghiseu pred=alta_solicitare\n  Per domeniu:\n    banking               : 0% (0/2)\n    medicina              : 0% (0/2)\n    retail                : 0% (0/2)\n    telecom               : 0% (0/2)\n    servicii_publice      : 0% (0/2)"
+  },
+  "rezultate_detaliate": [
+    {
+      "id": "BNK_006",
+      "domeniu": "banking",
+      "complexitate": "simpla",
+      "intentie_gold": "problema_schimb_valutar",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Intenția clientului este de a întreba despre cursul de schimb pentru depozitul său recent de euro și de a-și exprima nemulțumirea față de curs. De asemenea",
+      "latenta": 49.42,
+      "versiune_prompt": "V1",
+      "model": "rogemma"
+    },
+    {
+      "id": "BNK_008",
+      "domeniu": "banking",
+      "complexitate": "complexa",
+      "intentie_gold": "card_pierdut",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Intenția clientului este de a raporta un card de debit pierdut și de a primi asistență în blocarea acestuia și obținerea unui card de înlocuire. Clientul",
+      "latenta": 25.87,
+      "versiune_prompt": "V1",
+      "model": "rogemma"
+    },
+    {
+      "id": "MED_001",
+      "domeniu": "medicina",
+      "complexitate": "simpla",
+      "intentie_gold": "rezultate_analize",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Intenția clientului este de a obține rezultatele testelor și de a programa o programare cu medicul internist.\n\nCu toate acestea, clientul a cerut, de asemenea",
+      "latenta": 11.78,
+      "versiune_prompt": "V1",
+      "model": "rogemma"
+    },
+    {
+      "id": "MED_018",
+      "domeniu": "medicina",
+      "complexitate": "complexa",
+      "intentie_gold": "problema_reteta",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Intenția clientului este de a obține o rețetă valabilă pentru medicația lor.\n\nCu toate acestea, clientul este frustrat de procesul de a obține",
+      "latenta": 19.09,
+      "versiune_prompt": "V1",
+      "model": "rogemma"
+    },
+    {
+      "id": "RET_003",
+      "domeniu": "retail",
+      "complexitate": "simpla",
+      "intentie_gold": "problema_livrare",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Intenția clientului este de a urmări o livrare întârziată și de a asigura livrarea la timp pentru un eveniment viitor.\n\nCu toate acestea, client",
+      "latenta": 14.0,
+      "versiune_prompt": "V1",
+      "model": "rogemma"
+    },
+    {
+      "id": "RET_010",
+      "domeniu": "retail",
+      "complexitate": "complexa",
+      "intentie_gold": "comanda_gresita",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Intenția clientului este de a rezolva o problemă cu o comandă incorectă și de a primi pantofii corecți cât mai curând posibil. Clientul este",
+      "latenta": 14.96,
+      "versiune_prompt": "V1",
+      "model": "rogemma"
+    },
+    {
+      "id": "TEL_002",
+      "domeniu": "telecom",
+      "complexitate": "simpla",
+      "intentie_gold": "portare_esuata",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Intenția clientului este de a rezolva o problemă cu portarea numărului său din cauza unei erori de sistem care a cauzat o factură restantă. Clientul",
+      "latenta": 12.26,
+      "versiune_prompt": "V1",
+      "model": "rogemma"
+    },
+    {
+      "id": "TEL_009",
+      "domeniu": "telecom",
+      "complexitate": "complexa",
+      "intentie_gold": "problema_modificare_abonament",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Intenția clientului este de a-și schimba pachetul de abonament de la Essentials la SuperNet, dar se confruntă cu dificultăți din cauza unei restricții a",
+      "latenta": 13.65,
+      "versiune_prompt": "V1",
+      "model": "rogemma"
+    },
+    {
+      "id": "SP_006",
+      "domeniu": "servicii_publice",
+      "complexitate": "simpla",
+      "intentie_gold": "problema_plata_taxa",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Intenția clientului este de a rezolva o problemă cu o plată a taxei care nu a fost procesată.\n\nClientul a sunat la Agenția pentru Plăți",
+      "latenta": 11.31,
+      "versiune_prompt": "V1",
+      "model": "rogemma"
+    },
+    {
+      "id": "SP_008",
+      "domeniu": "servicii_publice",
+      "complexitate": "complexa",
+      "intentie_gold": "programare_ghiseu",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Intenția clientului este de a programa o programare la ghișeu pentru a clarifica o problemă cu dosarul său de subvenții. Clientul și-a pierdut doc",
+      "latenta": 15.11,
+      "versiune_prompt": "V1",
+      "model": "rogemma"
+    }
+  ]
+}

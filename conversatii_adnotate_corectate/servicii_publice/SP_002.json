@@ -1,0 +1,65 @@
+{
+  "id": "SP_002",
+  "domeniu": "servicii_publice",
+  "complexitate": "simpla",
+  "intentie_gold": [
+    "contestatie_decizie"
+  ],
+  "satisfactie": "pozitiv",
+  "motiv_satisfactie": "problema_rezolvata_rapid_cu_actiuni_concrete",
+  "rezumat": "Client contestează decizia de respingere a dosarului de subvenție 2024-APPIA-156789 pentru anul agricol 2023, considerând că terenul îndeplinește cerințele de eligibilitate.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, sunteți la Agenția pentru Plăți și Intervenție în Agricultură. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Am primit o decizie de respingere a dosarului de subvenție și consider că nu este corectă. Aș dori să contest această decizie."
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a vă putea ajuta, am nevoie de numărul dosarului și de anul pentru care ați depus cererea."
+    },
+    {
+      "rol": "client",
+      "text": "Sigur. Numărul dosarului este 2024-APPIA-156789, iar cererea era pentru anul agricol 2023."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Și care este motivul principal al respingerii pe care îl considerați incorect?"
+    },
+    {
+      "rol": "client",
+      "text": "Motivul spus este că terenul nu îndeplinește cerințele de eligibilitate, dar eu am toate documentele care dovedesc contrariul. Cred că a fost o eroare în evaluare."
+    },
+    {
+      "rol": "operator",
+      "text": "Asta se poate întâmpla. E bine că aveți documentele. Voi deschide o fișă de contestație pentru dosar și o voi transmite echipei de evaluare pentru o reevaluare."
+    },
+    {
+      "rol": "client",
+      "text": "Cât timp va dura reevaluarea? Și cum voi fi notificat de rezultat?"
+    },
+    {
+      "rol": "operator",
+      "text": "Conform reglementărilor, reevaluarea durează maxim 30 de zile de la înregistrarea contestației. Veți fi notificat prin scrisoare recomandată la adresa din dosarul dvs. și, dacă doriți, îmi puteți oferi adresa de email pentru o comunicare mai rapidă."
+    },
+    {
+      "rol": "client",
+      "text": "Da, fiindcă am schimbat adresa. Email-ul este ionescu.alexandru@gmail.com și noul domiciliu este Strada Principală 45, comuna Vidra, județul Giurgiu."
+    },
+    {
+      "rol": "operator",
+      "text": "Am notat. Voi actualiza datele în sistem și veți primi o confirmare a contestației pe email în următoarele 24 de ore, inclusiv numărul de înregistrare al contestației."
+    },
+    {
+      "rol": "client",
+      "text": "Excelent. Mulțumesc tare mult de lămurire"
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere. Suntem aici pentru orice întrebare. O zi bună!"
+    }
+  ]
+}

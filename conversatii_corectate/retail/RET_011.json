@@ -1,0 +1,93 @@
+{
+  "id": "RET_011",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Andrei Cuza de la serviciul clienți eMag. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Salut, am o problemă cu o comandă. Trebuia să-mi ajungă azi, dar nu am primit niciun mesaj de la curier. Pe aplicație scrie că livrarea e programată, dar ceva nu-i în regulă."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Stați că verific imediat situația comenzii. Îmi puteți da, vă rog, numărul de comandă sau adresa de email cu care ați plasat comanda?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, bineînțeles. Email-ul e ion.popescu@gmail.com, și numărul de comandă e 4521847. Am comandat o imprimantă pe 15 martie."
+    },
+    {
+      "rol": "operator",
+      "text": "Perfect, am găsit comanda. Văd că a fost plasată pe 15 martie și era programată pentru livrare azi, între orele 14 și 18. Ați primit vreo notificare de la curier pe telefon?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, nimic. Am stat acasă toată ziua și... nimic. M-am și uitat pe site-ul curierului, dar spune că pachetul e «în tranzit». E ciudat, ora e 17 și jumătate și niciun semn."
+    },
+    {
+      "rol": "operator",
+      "text": "Uneori, furnizorii de curierat au întârzieri în sincronizarea informațiilor. Este posibil ca pachetul să fie pe drum și să ajungă spre sfârșitul intervalului. Puteți aștepta puțin mai mult?"
+    },
+    {
+      "rol": "client",
+      "text": "Nici nu are rost să aștept dacă nu vine... Am mai comandat de la voi, și mereu eram anunțat cu 30 de minute înainte. Asta nu-i normal."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea dvs. Lăsați-mă să contactez direct curierul pentru a verifica statusul exact al pachetului. O să dureze circa 5 minute. Puteți aștepta?"
+    },
+    {
+      "rol": "client",
+      "text": "Fie, aștept."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Am vorbit cu centrul de distribuție al curierului. Se pare că pachetul dvs. a fost omis din ruta de azi din cauza unei probleme tehnice la sortare. A fost reprogramat pentru mâine, între 10 și 14."
+    },
+    {
+      "rol": "client",
+      "text": "Mâine? Dar am plătit pentru livrare astăzi! Nu vreau să stau iar acasă o zi întreagă."
+    },
+    {
+      "rol": "operator",
+      "text": "Sunt de acord, nu e o situație plăcută. Din păcate, problema nu e sub controlul nostru direct. Ce pot face este să vă ofer un voucher de 20 de lei la următoarea comandă, ca o scuză pentru inconvenient."
+    },
+    {
+      "rol": "client",
+      "text": "Asta nu-mi rezolvă problema. Eu am nevoie de imprimanta azi. Nu mâine, nu poimâine. Mi-am făcut ziua praf din cauza asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg și regret sincer situația. Din păcate, nu pot refac livrarea pentru azi. Pot să escaladez cazul la departamentul de reclamații pentru o soluție mai rapidă."
+    },
+    {
+      "rol": "client",
+      "text": "Escaladează, dar asta cum mă ajută? Peste 24 de ore va fi prea târziu."
+    },
+    {
+      "rol": "operator",
+      "text": "Știu că nu-i ideal. Voi face cazul prioritar și solicitarea urgentă. Colegii mei vor verifica dacă există vreo opțiune suplimentară."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, bine. Și cât crezi că o să dureze asta? Am nevoie de un răspuns până mâine dimineață."
+    },
+    {
+      "rol": "operator",
+      "text": "Voi face tot posibilul să vă contacteze până mâine la 10 dimineață. Vă vor suna pe telefonul asociat comenzii. Aveți un număr suplimentar?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, e bine numărul de telefon care-i deja la voi. Sper că măcar asta merge."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău din nou pentru situație. Vă doresc o seară bună și sper ca mâine să fie ok."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

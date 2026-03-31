@@ -1,0 +1,93 @@
+{
+  "id": "SP_013",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua. Sunt Mirela Popescu de la Serviciul de Relații cu Publicul al Direcției Generale de Impozite și Taxe. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am primit o somație de plată pentru o taxă pe care cred că am plătit-o deja. Aș dori să verific situația asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur. Îmi puteți spune numărul dumneavoastră de contribuabil și perioada fiscală la care se referă somația?"
+    },
+    {
+      "rol": "client",
+      "text": "Sigur. Numărul contribuabilului este 1 2 3 4 5 6 7 8 9 0 și se referă la taxa pe publicitate din semestrul doi, 2023."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Un moment, vă rog, verific... Da, taxa apare ca neplătită. Ați făcut plata prin bancă?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, am plătit la Banca Transilvania în februarie. Am și chitanța de la ghișeu."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Este posibil ca plata să nu fi fost procesată încă din cauza unei întârzieri. Vă sugerez să aduceți chitanța la ghișeul nostru sau să o trimiteți prin corespondență."
+    },
+    {
+      "rol": "client",
+      "text": "Nu puteți verifica direct la bancă? Au trecut cinci zile lucrătoare. Nu ar trebui să fie deja în sistem?"
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți dreptate. Totuși, procedura ne cere să avem documentul original pentru reconciliere. Nu avem acces direct la sistemele bancare."
+    },
+    {
+      "rol": "client",
+      "text": "Și cât durează procesarea după ce trimit documentul?"
+    },
+    {
+      "rol": "operator",
+      "text": "După primirea chitanței, avem nevoie de 10 până la 15 zile lucrătoare pentru verificare și anularea somației."
+    },
+    {
+      "rol": "client",
+      "text": "Zece până la cincisprezece zile? Dar somația zice că trebuie să plătesc până mâine. Deci sunt deja în întârziere."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea. Poate ar fi util să contactați banca pentru o confirmare scrisă a tranzacției. De asemenea, putem suspenda temporar procedura de recuperare până la soluționare."
+    },
+    {
+      "rol": "client",
+      "text": "O referință de suspendare... asta nu e un document oficial, nu?"
+    },
+    {
+      "rol": "operator",
+      "text": "E o notă internă care evită acțiunile de recuperare, dar nu înlătură somația oficial."
+    },
+    {
+      "rol": "client",
+      "text": "Deci, practic, nu mă ajută legal. Înțeleg cum merg lucrurile astea."
+    },
+    {
+      "rol": "operator",
+      "text": "E o situație complicată. Dacă doriți, pot să vă conectez cu un alt departament, dar procedura rămâne aceeași."
+    },
+    {
+      "rol": "client",
+      "text": "Nu are rost. E clar că sunt între ciocan și nicovală. Nu mai vreau să pierd timpul cu asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Documentele rămân valabile, vă sugerăm să actualizați situația cât mai curând. Doriți să adaug ceva în dosar?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, lăsați așa. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău că nu am rezolvat mai repede. O zi bună."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

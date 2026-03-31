@@ -1,0 +1,65 @@
+{
+  "id": "RET_006",
+  "domeniu": "retail",
+  "complexitate": "simpla",
+  "intentie_gold": [
+    "anulare_comanda"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_nerezolvata_directa_dar_alternativa_oferita",
+  "rezumat": "Client solicită anularea unei comenzi din 15 martie în valoare de 289 de lei cu trei articole. Operatorul informează că comenzile în curs de expediere nu pot fi anulate din sistem, dar oferă alternative: refuzarea livrării sau returnarea în termen de 14 zile cu rambursare integrală și transport gratuit. Client acceptă explicațiile și încheie conversația fără entuzjasm explicit.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Mihai de la serviciul clienți ShopXpress. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o comandă pe care nu mai vreau, aș vrea să o anulez."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Sigur că vă pot ajuta. Îmi puteți spune care este numărul comenzii?"
+    },
+    {
+      "rol": "client",
+      "text": "Desigur, este 4829561."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Un moment, vă rog... Am găsit comanda. Este din 15 martie, trei articole, total 289 de lei. Starea comenzii este în proces de expediere. Din ce motiv doriți să o anulați?"
+    },
+    {
+      "rol": "client",
+      "text": "Pur și simplu, nu mai am nevoie de produse."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine. Din păcate, deoarece comanda este deja în proces de expediere, nu o pot anula din sistem. Totuși, odată ce o primiți, o puteți returna în termen de 14 zile și veți fi rambursată integral."
+    },
+    {
+      "rol": "client",
+      "text": "Deci nu puteți să o opriți înainte să ajungă la mine?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, nu. Comanda a fost deja preluată de curier. Cel mai bine ar fi să refuzați livrarea sau să o returnați după ce o primiți. Voi nota solicitarea dumneavoastră, dar nu pot garanta oprirea livrării."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, și cum fac returnarea?"
+    },
+    {
+      "rol": "operator",
+      "text": "Când primiți pachetul, puteți refuza livrarea. Dacă l-ați acceptat deja, intrați în contul dumneavoastră, selectați comanda și inițiați o cerere de retur. Vă vom trimite o etichetă de transport. Costul returului este suportat de noi."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles. E bine, mersi. La revedere."
+    },
+    {
+      "rol": "operator",
+      "text": "O zi bună!"
+    }
+  ]
+}

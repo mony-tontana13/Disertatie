@@ -1,0 +1,89 @@
+{
+  "id": "SP_020",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați apelat Direcția de Relații cu Publicul a Agenției pentru Protecția Mediului. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună, am o problemă cu o cerere de mediu pe care am depus-o acum trei săptămâni. Mi-au spus că nu poate fi evaluată din cauza unor documente, dar nu am fost contactat pentru detalii. Aș vrea să știu de ce."
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a vă ajuta, îmi puteți spune, vă rog, numele și data depunerii cererii?"
+    },
+    {
+      "rol": "client",
+      "text": "Gheorghe Marin, depusă pe 15 februarie. Nu am dosarul la îndemână, dar ar trebui să aveți informațiile în sistem."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, stați să caut în sistem după numele și data menționate. Un moment, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "Da, ok."
+    },
+    {
+      "rol": "operator",
+      "text": "Am găsit cererea. A fost emisă o notificare pentru documente incomplete pe 28 februarie. Se menționează că lipseau semnăturile pe formularul F4. Ați primit această notificare?"
+    },
+    {
+      "rol": "client",
+      "text": "Semnăturile? Nu mi s-a spus nimic specific, doar că dosarul ar fi incomplet. Nimeni nu m-a contactat direct să-mi explice."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea dumneavoastră. De obicei trimitem notificările în scris, dar comunicarea directă ar fi ajutat. Trebuie să verific cu colegii pentru detalii despre semnături. Ați redepus documentele?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, n-am știut ce lipseste. Am crezut că e o eroare din partea voastră. De asta am și sunat acum."
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, nu pot rezolva direct acum. Pot să iau datele de contact și să trimit o solicitare pentru clarificări. Voi reveni cu detalii."
+    },
+    {
+      "rol": "client",
+      "text": "Și cât durează asta? Sunt deja trei săptămâni de așteptare fără răspunsuri clare."
+    },
+    {
+      "rol": "operator",
+      "text": "Sper să primesc un răspuns în 2-3 zile lucrătoare. După ce aflu, vă voi contacta. Îmi puteți da un număr de telefon pentru a reveni cu informații?"
+    },
+    {
+      "rol": "client",
+      "text": "Stați puțin... deci nu rezolvați nimic acum? Doar notați și sper să mă sunați ulterior? Și dacă nu contactați, ce fac?"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău că nu pot oferi o soluție imediată. Vă promit că în cazul în care nu aveți vești în 5 zile lucrătoare, sunați-ne și voi verifica personal. Pot nota numărul de telefon?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, e 0723 445 821. Dar sper să fie mai rapede de data asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Am notat și voi transmite urgent solicitarea. Ținem legătura pentru a vă informa."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Sper să nu fie și asta doar vorbe de dragul conversației."
+    },
+    {
+      "rol": "operator",
+      "text": "Voi face tot posibilul să rezolvăm. Dacă mai aveți nevoie de alte informații, sunt aici. Dacă nu, vă mulțumesc pentru apel."
+    },
+    {
+      "rol": "client",
+      "text": "Asta e tot. O zi bună."
+    },
+    {
+      "rol": "operator",
+      "text": "Dumneavoastră la fel. La revedere!"
+    }
+  ]
+}

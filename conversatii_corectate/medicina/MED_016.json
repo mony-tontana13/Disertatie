@@ -1,0 +1,57 @@
+{
+  "id": "MED_016",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, sunt Ioana Bircea de la Clinica Medix. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Trebuie să anulez o programare pe care o am joi, pe 19 martie, la domnul doctor Antonescu. A intervenit ceva la muncă și nu am cum să ajung."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment să verific... Da, Popescu Mihai, joi la 10:30. Vă informez că, prin anularea acestei vizite, veți pierde prioritatea la controlul de cardiologie."
+    },
+    {
+      "rol": "client",
+      "text": "Cum adică pierd prioritatea? Am stat două luni ca să prind locul ăsta. Vreau doar să o mutăm cu câteva zile, nu să o ștergem de tot."
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, domnul doctor Antonescu este ocupat complet pe următoarele trei luni. Dacă anulăm acum, prima dată disponibilă pentru o reprogramare este abia în iulie."
+    },
+    {
+      "rol": "client",
+      "text": "În iulie? Vorbiți serios? Eu am probleme cu tensiunea acum, nu în iulie. Nu mă puteți pune pe o listă de așteptare, în caz că anulează altcineva mai devreme?"
+    },
+    {
+      "rol": "operator",
+      "text": "Clinica Medix nu gestionează liste de așteptare. Politica noastră este 'primul venit, primul servit' prin sistemul de rezervări online."
+    },
+    {
+      "rol": "client",
+      "text": "Deci îmi spuneți că eu, ca pacient vechi, trebuie să stau în fiecare zi să dau refresh la site-ul vostru doar pentru că am avut o urgență azi? Mi se pare o bătaie de joc."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău, dar acestea sunt procedurile. Dacă doriți anularea pentru data de 19, o pot efectua acum, dar locul se va ocupa instant de altcineva."
+    },
+    {
+      "rol": "client",
+      "text": "Este incredibil cât de rigizi sunteți. Plătesc o grămadă de bani la abonament și când am nevoie de flexibilitate, primesc ușa în nas. Anulați-o, că oricum n-am de ales, dar o să caut altă clinică."
+    },
+    {
+      "rol": "operator",
+      "text": "Am anulat programarea. Codul de confirmare este CL-2026-0847. Altceva mai doriți?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu mai doresc nimic. O zi bună."
+    },
+    {
+      "rol": "operator",
+      "text": "O zi bună. La revedere."
+    }
+  ]
+}

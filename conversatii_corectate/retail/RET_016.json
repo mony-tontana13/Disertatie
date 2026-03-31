@@ -1,0 +1,101 @@
+{
+  "id": "RET_016",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Andreea Popa de la serviciul clienți eMag.ro. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Tocmai am desfăcut coletul de la dvs. și ați trimis cu totul altceva decât ce am plătit."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud asta. Îmi puteți spune numărul comenzii?"
+    },
+    {
+      "rol": "client",
+      "text": "5847293"
+    },
+    {
+      "rol": "operator",
+      "text": "Ok... Îmi puteți spune exact ce produs ați primit în locul celui comandat?"
+    },
+    {
+      "rol": "client",
+      "text": "Am comandat o bluză albă, mărimea M, și am primit una gri, mărimea L. Nici măcar codul de pe etichetă nu corespunde."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să-mi citiți codul de bare de pe eticheta produsului primit, ca să raportez eroarea la depozit."
+    },
+    {
+      "rol": "client",
+      "text": "Este 59422001. Dar nu înțeleg cu ce mă ajută pe mine că raportați voi eroarea, eu am nevoie de bluza corectă acum."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă înțeleg urgența. Din păcate, în sistemul nostru trebuie mai întâi să inițiem procedura de retur pentru piesa greșită."
+    },
+    {
+      "rol": "client",
+      "text": "Adică vreți să spun că eu trebuie să fac drumuri la curier pentru o greșeală care nu e a mea? Trimiteți pe cineva să facă schimbul."
+    },
+    {
+      "rol": "operator",
+      "text": "Din motive logistice, nu putem efectua schimburi directe prin curier. Procedura standard este retur, urmat de o nouă comandă."
+    },
+    {
+      "rol": "client",
+      "text": "E a doua oară când încurcați mărimile luna asta. Chiar nu aveți nicio metodă de a trimite produsul corect?"
+    },
+    {
+      "rol": "operator",
+      "text": "Aș putea să vă ofer un voucher de 10% ca scuză, dar trimiterea bluzei corecte se poate face doar după ce înregistrați noua comandă."
+    },
+    {
+      "rol": "client",
+      "text": "Nu am de gând să blochez alți bani în sistem până mi-i returnați pe ceilalți. E inacceptabil."
+    },
+    {
+      "rol": "operator",
+      "text": "Regret, dar sistemul de facturare este automatizat și nu permite expedierea fără plată sau fără retur confirmat."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Și dacă returnez bluza asta, trebuie să plătesc eu transportul?"
+    },
+    {
+      "rol": "operator",
+      "text": "Nu, returul este gratuit. Vă generez acum eticheta. Adresa laura.popescu@gmail.com e ok?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, aia e adresa. Sper că măcar ambalajul original nu trebuie să fie perfect, că a trebuit să rup punga ca să văd ce e înăuntru."
+    },
+    {
+      "rol": "operator",
+      "text": "Este important ca produsul să fie nefolosit. Dacă punga a fost tăiată, vă rog să folosiți o altă protecție pentru transport."
+    },
+    {
+      "rol": "client",
+      "text": "Deci acum trebuie să caut și ambalaje prin casă. Incredibil cum complicați viața clienților."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi cer scuze pentru tot acest disconfort. Am trimis deja codul de retur pe e-mailul dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "M-am lămurit. O să fac returul, dar va fi ultima comandă de haine de la voi. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "Ne pare rău pentru experiență. O zi bună în continuare."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

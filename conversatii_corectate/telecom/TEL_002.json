@@ -1,0 +1,61 @@
+{
+  "id": "TEL_002",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la Telekom România, numele meu este Lucian. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Uite, am o problemă destul de stresantă cu portarea numărului meu. Am încercat să plec la alt operator acum o săptămână și cererea a fost respinsă. Mi s-a spus că e ceva legat de datoriile de aici."
+    },
+    {
+      "rol": "operator",
+      "text": "Haideți să verificăm imediat care este cauza respingerii. Îmi puteți comunica numărul de telefon, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, este 0722 456 789. Cei de la Orange mi-au zis că apare un refuz din cauza unor restanțe, deși eu știu că sunt cu plățile la zi."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc, un moment să accesez baza de date... În sistemul de portabilitate a fost transmis un cod de eroare pentru factură restantă din ianuarie în valoare de 45 de lei."
+    },
+    {
+      "rol": "client",
+      "text": "Dar stați puțin, că eu chiar am plătit factura aia. Am și chitanța aici, pe e-mail. Cum e posibil să figurez cu datorii?"
+    },
+    {
+      "rol": "operator",
+      "text": "Am găsit problema. Văd că au fost emise două facturi cu sume identice din greșeală, dintr-o eroare de sistem, iar plata dumneavoastră a acoperit-o doar pe prima. Cea de-a doua a rămas activă și a blocat procesul."
+    },
+    {
+      "rol": "client",
+      "text": "Deci e o greșeală de la voi... Și acum ce fac? Chiar am nevoie să mut numărul cât mai repede."
+    },
+    {
+      "rol": "operator",
+      "text": "Stați liniștit, e clar o eroare de sincronizare la noi. Am eliminat acum factura și am actualizat manual fișa de client. În sistemul central de portabilitate va apărea ca fiind 'liber de contract' în maximum două ore."
+    },
+    {
+      "rol": "client",
+      "text": "O, e mult mai bine așa. Chiar mă speriasem că trebuie să plătesc din nou ceva ce deja am achitat. Deci după două ore pot să-i sun pe cei de la Orange?"
+    },
+    {
+      "rol": "operator",
+      "text": "Exact. Vă recomand să îi contactați după ora 14:00 și să le cereți să relanseze solicitarea de portare. Acum totul este verde în sistem. Îmi cer scuze pentru confuzie!"
+    },
+    {
+      "rol": "client",
+      "text": "Perfect, mulțumesc mult pentru ajutor, Lucian. Chiar ai rezolvat-o repede. O zi bună!"
+    },
+    {
+      "rol": "operator",
+      "text": "Cu mare plăcere! Ne pare rău pentru inconvenient. O zi frumoasă în continuare!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere!"
+    }
+  ]
+}

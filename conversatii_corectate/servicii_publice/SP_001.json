@@ -1,0 +1,61 @@
+{
+  "id": "SP_001",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la Direcția Generală de Impozite și Taxe. Numele meu este Ioana Popescu. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Vă deranjez pentru că am o nelămurire... mi-a fost respins dosarul pentru deducerea TVA-ului și, sincer, nu prea înțeleg unde am greșit."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles. Pentru a putea verifica în baza de date, vă rog să-mi comunicați numărul de înregistrare al dosarului sau codul CIF al companiei."
+    },
+    {
+      "rol": "client",
+      "text": "CIF-ul este RO 28456921. Dosarul l-am depus acum vreo trei săptămâni și chiar ieri mi-a venit notificarea de respingere, dar motivul menționat e destul de vag."
+    },
+    {
+      "rol": "operator",
+      "text": "Stați un moment să accesez sistemul... Așa, am găsit. Da, văd aici că respingerea s-a făcut pe motiv de documentație incompletă. Mai exact, lipsesc dovezile de plată pentru serviciile de transport pe care le-ați declarat în decont."
+    },
+    {
+      "rol": "client",
+      "text": "Păi... stați puțin, că am atașat absolut toate facturile. De ce ar mai fi nevoie și de chitanță separat?"
+    },
+    {
+      "rol": "operator",
+      "text": "Conform regulamentului, facturile sunt necesare, dar pentru acordarea deducerii avem nevoie și de dovada plății efective. Adică, pe lângă documentul fiscal, trebuie să depuneți și extrasul de cont sau chitanța care să confirme că suma a fost achitată către furnizor."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles acum... am crezut că factura e suficientă. Dacă adun acum toate extrasele de cont, pot să redepun dosarul?"
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur că da. Puteți depune o cerere de reexaminare în termen de 30 de zile de la primirea notificării. Trebuie doar să atașați documentele lipsă la dosarul inițial și să le încărcați prin portal sau, dacă vă este mai ușor, să veniți direct la ghișeul nostru."
+    },
+    {
+      "rol": "client",
+      "text": "E perfect, mă ocup chiar azi de ele. Și... îmi puteți spune cam care ar fi termenul de soluționare după ce le depun?"
+    },
+    {
+      "rol": "operator",
+      "text": "După depunerea completărilor, termenul legal este de 30 de zile lucrătoare pentru evaluare. Veți primi hotărârea prin poștă, dar o să apară și pe portalul online, deci puteți verifica acolo."
+    },
+    {
+      "rol": "client",
+      "text": "Vă mulțumesc mult de tot! Chiar ați fost foarte amabilă. Acum măcar știu clar ce am de făcut."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu multă plăcere! Dacă mai întâmpinați dificultăți când încărcați documentele, nu ezitați să ne sunați. O zi bună și succes cu dosarul!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere, numai bine!"
+    }
+  ]
+}

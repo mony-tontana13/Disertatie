@@ -1,0 +1,98 @@
+{
+  "id": "TEL_020",
+  "domeniu": "telecom",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "problema_roaming"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "promisiune_nerespectata, problema_nerezolvata, falta_comunicare_prealabila",
+  "rezumat": "Client contactează pentru a treia oară cu privire la o problemă de roaming nerezolvată din 15 martie, când a fost în Spania și a înregistrat o factură suplimentară de 200 lei pentru date neutilizate. Operatorul constată că dosarul a rămas blocat la departamentul tehnic fără informare prealabilă a clientului. Deși operatorul redeschide dosarul cu prioritate și promite rezolvare în 3-5 zile plus compensație, clientul rămâne frustrat și dezamăgit din cauza întârzierilor repetate și a lipsei de comunicare, încheind conversația cu sarcasm și resemnare.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la Vodafone, serviciul clienți. Mă numesc Andrei Alexe. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Vă contactez pentru a treia oară și ultima,sper eu, în legătură cu acea problemă nerezolvată de roaming de săptămâna trecută."
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur. Îmi puteți da mai multe detalii despre problema întâmpinată?"
+    },
+    {
+      "rol": "client",
+      "text": "Am fost în Spania și rețeaua a fost practic inexistentă. Am discutat deja pe larg despre asta pe 15 martie. Ar fi trebuit să aveți toate detaliile notate undeva, nu să o luăm de la capăt."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Stați să verific... să mă asigur că am deschis dosarul corect. Puteți confirma ultimele patru cifre ale numărului dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "Cifrele sunt 7834. Și aș vrea să verificați și acea factură suplimentară de 200 de lei pentru date pe care, în mod ironic, nu am reușit să le folosesc deloc."
+    },
+    {
+      "rol": "operator",
+      "text": "Văd. Ați discutat pe 15 martie cu colega mea Mihaela, dacă nu mă înșel?"
+    },
+    {
+      "rol": "client",
+      "text": "Exact. Mihaela m-a asigurat cu multă încredere că va investiga și că mă va contacta în maximum o săptămână. Se pare că noțiunea voastră de 'maximum o săptămână' diferă de calendarul meu."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru această situație. Verific acum statusul investigației în sistemul intern. Puteți aștepta un moment?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, aștept. Oricum am devenit expert în a aștepta soluții de la dumneavoastră."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru răbdare. Văd că investigația a fost deschisă, dar a rămas blocată la departamentul tehnic."
+    },
+    {
+      "rol": "client",
+      "text": "Blocată? Interesant. Și presupun că strategia a fost să mă lăsați să ghicesc singur de ce nu sună nimeni, în loc să primesc un simplu mesaj de informare?"
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți dreptate. Situația trebuia gestionată mai bine. Dosarul este pe lista de așteptare, dar nu ați fost informat, din păcate, despre această întârziere."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles. Deci, traducând din limbaj corporatist, astăzi plec din acest apel tot fără nicio rezolvare concretă?"
+    },
+    {
+      "rol": "operator",
+      "text": "Voi redeschide dosarul chiar acum și îl voi marca cu prioritate ridicată, dar va mai dura 3-5 zile lucrătoare. Voi discuta și de o compensație pentru deranjul creat."
+    },
+    {
+      "rol": "client",
+      "text": "O compensație... Să sperăm că va fi la fel de generoasă ca timpul pe care l-am pierdut până acum. Și presupun că această promisiune va fi confirmată și în scris de data asta?"
+    },
+    {
+      "rol": "operator",
+      "text": "Da, veți primi un email cu toate detaliile, numărul de tichet și noul termen estimat de rezolvare."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Să sperăm că de data asta termenul chiar înseamnă ceva. Este o experiență destul de dezamăgitoare pentru un operator cu pretențiile dumneavoastră."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg și îmi asum în numele echipei. Dosarul va fi monitorizat acum cu prioritate. Ar trebui să primiți un semn de la noi în câteva zile."
+    },
+    {
+      "rol": "client",
+      "text": "Aștept. Deși, sincer, entuziasmul meu este minim. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău din nou pentru întârziere. O zi bună în continuare!"
+    }
+  ],
+  "tip_complexitate": "context_implicit"
+}

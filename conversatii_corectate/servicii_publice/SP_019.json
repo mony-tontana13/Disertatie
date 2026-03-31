@@ -1,0 +1,113 @@
+{
+  "id": "SP_019",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, Serviciul de Relații cu Publicul al Agenției pentru Plăți și Înmatriculări. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Aș dori să aflu care sunt orele de funcționare ale sediului din strada Gheorghe Șincai."
+    },
+    {
+      "rol": "operator",
+      "text": "Stați să verific... Ah, da, sediul din strada Gheorghe Șincai e deschis de luni până vineri, între orele 8 și 17. Sâmbăta și duminica suntem închiși."
+    },
+    {
+      "rol": "client",
+      "text": "Bun, și aș mai vrea să știu dacă putem depune cererile de înmatriculare și duminica sau doar în zilele de lucru."
+    },
+    {
+      "rol": "operator",
+      "text": "Cererile pot fi depuse doar de luni până vineri, în intervalul ăsta orar. Duminica, din păcate, nu avem program."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles. O altă întrebare — am depus o cerere săptămâna trecută și nu mi-a apărut status-ul în sistem. E normal să dureze așa mult?"
+    },
+    {
+      "rol": "operator",
+      "text": "Se poate să dureze între 3 și 5 zile lucrătoare. Când ați depus cererea?"
+    },
+    {
+      "rol": "client",
+      "text": "Marți, 18 februarie. Azi suntem în 24. Deci ar fi 9 zile."
+    },
+    {
+      "rol": "operator",
+      "text": "Da, văd că a trecut termenul. Vă rog numărul de înregistrare al cererii sau CNP-ul pentru a verifica."
+    },
+    {
+      "rol": "client",
+      "text": "Numărul este 2402-0847-INC, iar numele Daria Alexandru."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment, să verific... Da, cererea e în curs de evaluare. Observ și o notă aici legată de plata taxei de prelucrare."
+    },
+    {
+      "rol": "client",
+      "text": "Cum adică, problemă cu plata? Am plătit taxa când am depus documentele."
+    },
+    {
+      "rol": "operator",
+      "text": "Se pare că nu avem confirmarea plății. Poate a fost o problemă cu transmiterea chitanței. Aveți data și ora plății la îndemână?"
+    },
+    {
+      "rol": "client",
+      "text": "Am plătit direct la ghișeu, în numerar. Am chitanța aici."
+    },
+    {
+      "rol": "operator",
+      "text": "Verificați, vă rog, seria și numărul de pe chitanță. Poate reușim să clarificăm situația."
+    },
+    {
+      "rol": "client",
+      "text": "Seria 2024-156-CH, numărul 47. E pentru taxa de înmatriculare, 580 de lei."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc, din păcate nu văd chitanța în baza de date. Posibil să fie o problemă tehnică. Va trebui să mergeți cu chitanța la sediu pentru regularizare."
+    },
+    {
+      "rol": "client",
+      "text": "Adică trebuie să merg din nou la ghișeu? Nu se poate... Ce trebuie să fac concret?"
+    },
+    {
+      "rol": "operator",
+      "text": "Nu trebuie să depuneți iar. Luați doar chitanța și mergeți la ghișeul financiar să rezolvăm problema. Ei o pot introduce manual. Ar trebui să se rezolve în 1-2 zile."
+    },
+    {
+      "rol": "client",
+      "text": "Doamne, stau pe drumuri iar... Dar nu e vina mea, nu?"
+    },
+    {
+      "rol": "operator",
+      "text": "Corect, nu e de partea dvs. Cer scuze pentru neplăceri. Se va rezolva rapid."
+    },
+    {
+      "rol": "client",
+      "text": "Okay, dar după ce fac asta, cât trebuie să aștept ca să fie gata cererea?"
+    },
+    {
+      "rol": "operator",
+      "text": "Va intra în procesare finală și ar trebui să fie gata în 5-7 zile lucrătoare."
+    },
+    {
+      "rol": "client",
+      "text": "Foarte mult, mai ales că am plătit de la început. Nu se poate mai repede?"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău, dar timpul de procesare e standard. Singura opțiune ar fi serviciul expediat, dar implică o taxă suplimentară și redepunere."
+    },
+    {
+      "rol": "client",
+      "text": "Serviciu expediat? Am mai pierdut destul timp pe subiectul ăsta. Multumesc! La revedere."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă înțeleg. Dacă mai e nevoie de ajutor, suntem aici. Zi bună!"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "MED_006",
+  "domeniu": "medicina",
+  "complexitate": "simpla",
+  "intentie_gold": [
+    "problema_facturare"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_nerezolvata_imediata_asteptare_decizie_manager",
+  "rezumat": "Client sesizează o diferență de 35 de lei pe factura de consultație de cardiologie din 15 februarie (FC-2024-0847). Operatorul identifică taxa de urgență aplicată, care nu a fost comunicată la recepție. Operator promite escaladare către manager și contactare în 24 de ore. Client acceptă rezolvarea ulterioară, dar frustrarea inițială rămâne.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Clinica Medicală Dinescu. Cu ce pot să vă ajut astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună! Am primit o factură pentru o consultație de luna trecută și mi se pare că suma nu corespunde cu ce am discutat la recepție."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Ați putea să-mi dați, vă rog, numărul facturii sau data consultației, ca să verific detaliile?"
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, factura e din 15 februarie, numărul de factură este FC-2024-0847."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Stați un pic să caut în baza de date... Am găsit. Este vorba de o consultație de cardiologie, nu?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, exact. Mi s-a spus că va fi 150 de lei, dar pe factură apare 185."
+    },
+    {
+      "rol": "operator",
+      "text": "Ah, văd. Diferența de 35 de lei e de la taxa de urgență, aplicată pentru că ați fost programat fără preaviz. Vi s-a menționat această taxă la recepție?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, nu mi-au spus nimic de taxă de urgență. Doar de prețul de 150."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea. Taxa de urgență e în tarifele noastre, ar fi trebuit menționată. Voi semnala problema. Conform regulamentului, taxa e aplicată corect. Vrei să încerc să vorbesc cu managerul?"
+    },
+    {
+      "rol": "client",
+      "text": "Deci nu se poate face nimic? Trebuie să plătesc o taxă despre care n-a spus nimeni nimic?"
+    },
+    {
+      "rol": "operator",
+      "text": "Aș putea cere managerului să revizuiască situația. Poate fi o excepție dacă a fost o comunicare slabă. Îmi lăsați un număr de telefon ca să vă contactăm în 24 de ore?"
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Numărul meu e 0723 456 789."
+    },
+    {
+      "rol": "operator",
+      "text": "Am notat. Factură FC-2024-0847, taxa de urgență 35 lei. Vă vom contacta mâine cu răspunsul."
+    },
+    {
+      "rol": "client",
+      "text": "Okay, mulțumesc. Aștept să aud de la voi."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere. O zi bună și ne pare rău pentru disconfort!"
+    }
+  ]
+}

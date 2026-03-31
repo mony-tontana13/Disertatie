@@ -1,0 +1,57 @@
+{
+  "id": "SP_006",
+  "domeniu": "servicii_publice",
+  "complexitate": "simpla",
+  "intentie_gold": [
+    "problema_plata_taxa"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_identificata_si_escaladare_departamente_dar_fara_rezolvare_imediata",
+  "rezumat": "Client semnalează că o taxă plătită pe 15 noiembrie nu a fost procesată în sistem. Operator identifică plata și stabilește că problema este o întârziere tehnică în sincronizarea bazei de date. Cazul este escaladatat la IT și contabilitate cu timeframe de 3-5 zile lucrătoare și cod de referință pentru follow-up. Client acceptă soluția fără manifestări de satisfacție sau insatisfacție aparente.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la Agenția pentru Plăți și Impozite. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o problemă cu o taxă pe care am plătit-o luna trecută, dar se pare că nu a fost procesată. Vreau să verific dacă banii au ajuns la voi."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Pentru a vă ajuta, am nevoie de câteva informații. Vă rog să-mi comunicați CNP-ul și suma pe care ați plătit-o."
+    },
+    {
+      "rol": "client",
+      "text": "CNP-ul meu este 1851225123456. Am plătit 450 de lei pe 15 noiembrie."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Stați un moment să verific în sistem... Am găsit plata dumneavoastră. Se pare că suma a intrat în conturi pe 16 noiembrie, dar taxa nu a fost actualizată din cauza unei întârzieri în sincronizarea bazei de date."
+    },
+    {
+      "rol": "client",
+      "text": "Deci este o problemă de la voi? Cum se rezolvă asta?"
+    },
+    {
+      "rol": "operator",
+      "text": "Da, este o problemă tehnică din partea noastră. Am trimis dosarul la departamentul IT și la contabilitate. În mod normal, se rezolvă în 3-5 zile lucrătoare. Veți primi o notificare prin email când taxa va fi actualizată."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, și dacă nu se rezolvă? Cum mă pot contacta cu voi din nou?"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă recomand să rețineți numărul de referință al cazului: APT-2024-087543. Dacă după cinci zile nu observați actualizarea, sunați din nou la acest număr și menționați codul respectiv. Vă vor pune imediat la coadă pentru urgență."
+    },
+    {
+      "rol": "client",
+      "text": "Am notat. Bine, să vedem ce se întâmplă. La revedere."
+    },
+    {
+      "rol": "operator",
+      "text": "O zi bună și scuzați-ne pentru inconvenient!"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "MED_019",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Mă numesc Fiona Crăciunescu din partea Clinicii MedPlus. Cum vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Am o asigurare de sănătate privată și deja am probleme cu acceptarea ei în alte locuri. Aș dori să știu dacă măcar clinica voastră o acceptă, să nu mai pierd timpul."
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur, îmi spuneți vă rog numele asigurării și verific imediat în sistemul nostru."
+    },
+    {
+      "rol": "client",
+      "text": "Sunt asigurat la Allianz Premium Plus. Cei de la Allianz mi-au garantat că acoperă consulturi de cardiologie și investigații la parteneri."
+    },
+    {
+      "rol": "operator",
+      "text": "Să vedem... Mă puteți ajuta cu data nașterii ca să verific baza noastră de date?"
+    },
+    {
+      "rol": "client",
+      "text": "15 martie 1978. Sper să nu fie probleme, că plătesc o avere pe polița asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Verific acum... Hmm, văd că Allianz Premium Plus nu este printre parteneriatele active la noi în acest moment. Avem un acord cu Allianz, dar acesta nu acoperă toate tipurile de polițe, inclusiv pe a dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "Cum vine asta? Adică aveți sigla lor pe ușă, dar când e vorba de polița mea 'Premium', nu e bună? Zice clar aici 'Partner clinici selectate'. E absurd."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru această situație. Deși avem un parteneriat general cu Allianz, pentru varianta Premium Plus ei lucrează cu o rețea mult mai restrânsă de clinici. Vă recomand să contactați direct asigurătorul pentru a vedea exact unde sunteți decontat."
+    },
+    {
+      "rol": "client",
+      "text": "Deci practic nu mă puteți ajuta cu nimic pe asigurare. Dacă vin la voi și plătesc cash, că n-am de ales, care sunt tarifele voastre 'de lux'?"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă pot comunica tarifele noastre standard: consultația de cardiologie este 250 de lei, un EKG este 100 de lei, iar o ecocardiografie este 400 de lei."
+    },
+    {
+      "rol": "client",
+      "text": "Prețuri destul de mari pentru un serviciu care ar fi trebuit să fie gratuit. În fine, programați-mă la un cardiolog, dar am nevoie de un interval anume."
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur, verific disponibilitatea. Ce perioadă ați prefera?"
+    },
+    {
+      "rol": "client",
+      "text": "În următoarele două săptămâni, obligatoriu după ora 16:00, că nu pot pleca de la birou."
+    },
+    {
+      "rol": "operator",
+      "text": "Să vedem... Din păcate, cardiologul nostru principal este ocupat complet după ora 16:00 în perioada menționată. Avem liber doar miercuri la 14:30 sau marți săptămâna viitoare la 15:15."
+    },
+    {
+      "rol": "client",
+      "text": "V-am spus clar că după ora 16:00 pot ajunge. Chiar nu se poate face nimic după patru? Nu e o clinică privată care se mulează pe nevoile pacienților?"
+    },
+    {
+      "rol": "operator",
+      "text": "Regret, dar programul medicilor este fix. Pot să vă trec pe o listă de așteptare și să vă contactez doar dacă apare o anulare după ora 16:00, sau putem căuta la un alt medic colaborator."
+    },
+    {
+      "rol": "client",
+      "text": "Mda, 'lista de așteptare', soluția universală când nu aveți locuri. Și cât naiba durează să primesc un telefon?"
+    },
+    {
+      "rol": "operator",
+      "text": "Nu vă pot garanta un timp exact, depinde de ceilalți pacienți. Poate dura câteva zile sau deloc. Îmi pare rău."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, puneți-mă pe lista aia. Dar dacă se eliberează ceva, am pretenția să am prioritate, având în vedere că deja sunt nemulțumit."
+    },
+    {
+      "rol": "operator",
+      "text": "Voi nota solicitarea dumneavoastră cu prioritate. Îmi dați un număr de telefon valid?"
+    },
+    {
+      "rol": "client",
+      "text": "0722 445 667."
+    },
+    {
+      "rol": "operator",
+      "text": "Dacă se găsește un loc, vă rog să aveți la dumneavoastră actul de identitate pentru înregistrare."
+    },
+    {
+      "rol": "client",
+      "text": "Deci rezumatul este așa: cu asigurarea zero ajutor, iar pentru o programare plătită trebuie să stau la mâna norocului pentru o oră decentă. Excelent serviciu, ce să zic..."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare sincer rău pentru nemulțumire. Vom face tot posibilul să găsim un loc. O zi bună."
+    },
+    {
+      "rol": "client",
+      "text": "Sper. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere."
+    }
+  ]}

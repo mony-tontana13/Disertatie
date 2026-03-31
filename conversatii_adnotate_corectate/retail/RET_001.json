@@ -1,0 +1,77 @@
+{
+  "id": "RET_001",
+  "domeniu": "retail",
+  "complexitate": "simpla",
+  "intentie_gold": [
+    "produs_lipsa_stoc"
+  ],
+  "satisfactie": "pozitiv",
+  "motiv_satisfactie": "problema_rezolvata_rapid_cu_compensatie",
+  "rezumat": "Client solicită clarificări privind o comandă de căști Sony WH-1000XM4 plasată aseara, pentru care a primit un e-mail despre indisponibilitate.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la TechShop România, numele meu este Andrei. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua, Andrei. Uite, am o nelămurire legată de o comandă plasată aseară. Am luat o pereche de căști Sony WH-1000XM4, dar azi dimineață am primit un e-mail automat că stocul este limitat sau indisponibil. Nu prea înțeleg, le mai primesc sau nu?"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru incertitudine, haideți să verificăm imediat statusul real în depozit. Îmi puteți comunica numărul comenzii, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, este comanda 2847931. Chiar îmi doream modelul acesta și speram să ajungă repede."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc, un moment să interoghez sistemul... da, văd ce s-a întâmplat. Modelul WH-1000XM4 pe negru s-a epuizat din stocul nostru local chiar înainte de procesarea comenzii dumneavoastră. Totuși, avem confirmarea că furnizorul ne livrează un lot nou în 3 zile."
+    },
+    {
+      "rol": "client",
+      "text": "Asta înseamnă că se anulează comanda? Eu chiar aveam nevoie de ele până în weekend, că plec din localitate."
+    },
+    {
+      "rol": "operator",
+      "text": "Nu se anulează deloc, stați liniștit. Dacă sunteți de acord să așteptați aproximativ 5-7 zile lucrătoare până la livrarea finală, vă păstrez rezervarea. Mai mult, pentru a ne cere scuze pentru acest inconvenient de stoc, am aplicat deja o reducere de 15% direct pe factura dumneavoastră pentru aceste căști Sony."
+    },
+    {
+      "rol": "client",
+      "text": "Serios? Aplicați reducerea chiar dacă aștept modelul original? Asta e o surpriză plăcută, mă gândeam că reducerea e doar dacă iau ceva mai ieftin."
+    },
+    {
+      "rol": "operator",
+      "text": "Absolut. Vrem să compensăm timpul de așteptare. Alternativa mai ieftină rămâne valabilă dacă e urgență maximă, dar recomandarea mea este să rămâneți la XM4, mai ales cu acest nou preț."
+    },
+    {
+      "rol": "client",
+      "text": "Înțeleg... deci dacă aleg să aștept, sunt sigur că le primesc? Nu mă trezesc peste o săptămână că nici furnizorul nu le mai are?"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă garantez rezervarea pe noul lot. Am blocat deja produsul în sistem pentru dumneavoastră și am actualizat valoarea de plată. Imediat ce intră în depozit, pleacă direct către curier. O să primiți AWB-ul pe e-mail automat."
+    },
+    {
+      "rol": "client",
+      "text": "Perfect, atunci prefer să aștept modelul original. Cu reducerea asta chiar merită efortul de a folosi căștile vechi încă câteva zile. Mulțumesc mult, Andrei!"
+    },
+    {
+      "rol": "operator",
+      "text": "Cu mare plăcere! Ne bucurăm că am găsit o soluție. Am salvat preferința; comanda rămâne activă cu livrare prioritară. Mai aveți vreo altă întrebare?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, e totul clar acum. Mulțumesc încă o dată pentru amabilitate și pentru reducerea."
+    },
+    {
+      "rol": "operator",
+      "text": "Nicio problemă, suntem aici să ajutăm. O zi frumoasă în continuare și audiție plăcută când ajung căștile!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere!"
+    }
+  ]
+}

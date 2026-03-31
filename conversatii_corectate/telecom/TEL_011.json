@@ -1,0 +1,97 @@
+{
+  "id": "TEL_011",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, sunt Cristina Oprea de la serviciul clienți Vodafone. Cu ce pot să vă ajut azi?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, bună ziua. Ascultă, Cristina, internetul meu cade constant de vreo trei zile și deja a ajuns să fie bătaie de joc. Nu mai pot să lucrez, pierd ore întregi din cauza asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg perfect și îmi pare rău pentru situație. Vă rog să mă ajutați să vă localizez corect în sistem. Care este numărul de telefon asociat contractului?"
+    },
+    {
+      "rol": "client",
+      "text": "Este 0752... stați așa... 456 782, cred."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru confirmare. Mă conectez acum la profilul dumneavoastră. Stați să verific statusul liniei... un moment, vă rog frumos, se încarcă datele."
+    },
+    {
+      "rol": "client",
+      "text": "Stau pe datele mobile de pe telefon ca să pot vorbi cu voi și chiar e destul de urgent să primesc un răspuns concret..."
+    },
+    {
+      "rol": "operator",
+      "text": "Da, desigur. Bun, văd aici că aveți o conexiune de fibră optică, pe raza orașului. Îmi puteți preciza, vă rog, când anume a început să cadă semnalul?"
+    },
+    {
+      "rol": "client",
+      "text": "Cum am mai zis, de joi tot face figuri. La început era intermitent, dar azi e mort complet, nu mai merge absolut nimic. Am încercat deja să resetez ruterul de zece ori și tot degeaba."
+    },
+    {
+      "rol": "operator",
+      "text": "E foarte bine că ați încercat resetarea, ne ajută să eliminăm o cauză. Vă rog să vă uitați puțin la aparat — ruterul arată vreo luminiță roșie sau vreun alt semn de avarie?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, nu are nicio luminiță roșie. Toate ledurile sunt verzi și par normale. E frustrant, că semnalul pe ruter pare ok, dar la mine pe dispozitive scrie 'No Internet'. De asta vă zic că e ceva de la voi."
+    },
+    {
+      "rol": "operator",
+      "text": "Interesant. Dacă ledurile sunt verzi, ar putea fi o problemă de configurare a portului sau poate o întrerupere pe segmentul de fibră. Voi verifica imediat dacă avem vreo avarie raportată în zona dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "Păi ar fi bine să-mi spui că e ceva general, pentru că eu am plătit factura integral și la timp, dar serviciul e inexistent de trei zile. Cine mă despăgubește pentru zilele astea?"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea dumneavoastră și vă cer scuze pentru acest inconvenient. Verific acum harta avariilor... Sunt în sistem și văd că în zona dumneavoastră nu avem nicio problemă semnalată acum. Totuși, se pare că avem un semnal instabil pe linia dumneavoastră. Pot trimite un tehnician?"
+    },
+    {
+      "rol": "client",
+      "text": "Evident că trebuie să trimiți pe cineva, că de vorbit am tot vorbit. Dar cât durează până ajunge? Eu mâine am ședințe de dimineață și am nevoie de net."
+    },
+    {
+      "rol": "operator",
+      "text": "Cel mai rapid interval liber pe care îl avem în sistem este poimâine, după ora 10:00. Vă convine acest interval?"
+    },
+    {
+      "rol": "client",
+      "text": "Poimâine după ora 10:00? Vă bateți joc? Asta înseamnă încă o zi întreagă de muncă pierdută. Chiar nu se poate trimite nimeni astăzi, în regim de urgență?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, la ora azi și mâine toți tehnicienii de pe teren sunt deja la intervenții programate. Îmi pare rău. Dar poimâine am toată încrederea că vin între 14:00 și 17:00 și rezolvă, ok?"
+    },
+    {
+      "rol": "client",
+      "text": "Aha, deci „aveți încredere” — minunat, dar încrederea dumneavoastră nu-mi ține loc de conexiune la internet. Bun, spune-mi ora exactă, să nu stau iar blocat în casă cu orele."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă înțeleg perfect. Intervalul este 10:00 - 14:00. Tehnicienii vă vor contacta cu aproximativ 30 de minute înainte să ajungă. Am notat în sistem că este un caz prioritar."
+    },
+    {
+      "rol": "client",
+      "text": "Prioritar pe hârtie, că în realitate văd cum merge... o să aștept, deși e inacceptabil. Altceva mai puteți face sau asta e tot?"
+    },
+    {
+      "rol": "operator",
+      "text": "În acest moment, am făcut tot ce îmi permite procedura pentru a grăbi intervenția. Vă rog să fiți acasă în intervalul menționat. Am salvat toate observațiile dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "Sper să fie așa. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "O zi bună în continuare și ne cerem scuze. La revedere."
+    }
+  ]
+}

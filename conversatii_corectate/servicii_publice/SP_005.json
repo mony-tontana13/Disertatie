@@ -1,0 +1,57 @@
+{
+  "id": "SP_005",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, sunt Cristina Popescu de la Agenția pentru Protecția Consumatorului. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o problemă cu o factură emisă greșit de furnizorul de apă. Am fost taxat de două ori pentru aceeași perioadă și vreau să depun o sesizare."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Aveți nevoie de câteva informații pentru a putea procesa sesizarea. Care este furnizorul de apă?"
+    },
+    {
+      "rol": "client",
+      "text": "Este Apavital, compania din Constanța. Factura e din luna martie, seria 45782."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Cum ați observat această eroare? Aveți factura la îndemână?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, am verificat și sunt două intrări pentru aceeași perioadă, martie 2024. Suma totală e de 340 de lei, ar trebui să fie doar 170."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles. Voi înregistra o reclamație oficială. Vreau să vă informez că termenul de investigare este de 10-15 zile. Ați contactat furnizorul direct?"
+    },
+    {
+      "rol": "client",
+      "text": "Am încercat, dar mi-au zis să depun sesizarea la dumneavoastră, apoi vor răspunde. Deci sunt în locul potrivit, da?"
+    },
+    {
+      "rol": "operator",
+      "text": "Da, ați procedat corect. Voi avea nevoie și de numărul dumneavoastră de telefon și de adresa de domiciliu pentru a finaliza dosarul."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Sunt Mihăiță Nicolae, telefon 0723 445 892, domiciliat pe strada Delfinarului, nr. 12, Constanța."
+    },
+    {
+      "rol": "operator",
+      "text": "Perfect, am înregistrat sesizarea cu numărul de referință SR-032847. Vă vom comunica răspunsul în scris la adresa furnizată, în termenul legal."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, sper să se rezolve repede. Mulțumesc..."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere. O zi bună să aveți!"
+    }
+  ]
+}

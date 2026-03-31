@@ -1,0 +1,114 @@
+{
+  "id": "MED_014",
+  "domeniu": "medicina",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "problema_facturare"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "pasat_intre_departamente_fara_rezolvare_imediata",
+  "rezumat": "Clientul Andrei Stoian semnalează o taxare incorectă pentru o consultație de cardiologie pe care nu a efectuat-o, din factura F-2024-03-1547 din martie. Operatorul Cristian Popescu confirmă eroarea în sistem dar declară că nu are acces la departamentul de facturare și transmite doar plângerea cu prioritate, promițând răspuns în 2-3 zile de lucru. Clientul exprimă frustrare față de procesul lent și imposibilitatea de rezolvare imediată, plecând resemnat dar nemulțumit de situație.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați apelat Clinica MedServ. Sunt Cristian Popescu, operator servicii de programări. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o problemă cu o factură pe care am primit-o luna trecută. Nu sunt sigur cum am fost taxat pentru unele servicii."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Vă rog să îmi furnizați numărul de factură sau data serviciului, ca să pot verifica în sistem."
+    },
+    {
+      "rol": "client",
+      "text": "Okay, factură din 15 martie. Codul este... F-2024-03-1547. Problema este că am fost taxat pentru o consultație de cardiologie pe care nu am avut-o."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog puțin să verific. Ați putea să-mi dați și numele dvs. complet?"
+    },
+    {
+      "rol": "client",
+      "text": "Andrei Stoian."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Un moment, caut în sistemul nostru... Bine, am găsit factura. Într-adevăr, văd o consultație de cardiologie. Ați fi putut să anulați o programare înainte de termen?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, nu am anulat-o. Am verificat și cu secretara și mi-a spus că nu apare nimic în istorie. Nu am fost niciodată la acea consultație."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea dvs. Problema este că eu lucrez doar cu programările și nu am acces direct la departamentul de facturare. Ar trebui să vorbiți cu cineva de acolo ca să investigheze."
+    },
+    {
+      "rol": "client",
+      "text": "Deci... ce înseamnă asta? Că trebuie să sun din nou?"
+    },
+    {
+      "rol": "operator",
+      "text": "Nu neapărat. Pot nota plângerea dvs. și o pot trimite direct colegilor din financiar. Ei vor reveni la dvs. în 2-3 zile de lucru cu o explicație și o soluție."
+    },
+    {
+      "rol": "client",
+      "text": "2-3 zile? Am nevoie de clarificare mai repede. Am încercat să sun pentru facturarea ieri și linia era ocupată."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă înțeleg. Știu că este frustrant. Din păcate, în acest moment nu pot face mai mult decât să transmit dosarul. Nu am autoritate asupra facturilor."
+    },
+    {
+      "rol": "client",
+      "text": "Bine... și care este de fapt procedura? Pentru că mi se pare anormal să nu primesc răspuns mai ușor."
+    },
+    {
+      "rol": "operator",
+      "text": "Procedura este ca departamentul de facturare să analizeze fiecare caz individual. Ei vor verifica jurnalul consultațiilor, sistemul de anulări și, dacă este cazul, vor autoriza o stornare. Sunt singurii care pot face asta."
+    },
+    {
+      "rol": "client",
+      "text": "Okay. Și dacă nu îi sun eu? Se vor ocupa de asta sau..."
+    },
+    {
+      "rol": "operator",
+      "text": "Da, se vor ocupa. Eu personal voi nota în sistem plângerea și o voi asigna unui manager. Dar dacă doriți să accelerați, puteți încerca din nou linia de facturare: 021-123-4567, extensia 205. Sunt mai disponibili dimineață, între 9 și 11."
+    },
+    {
+      "rol": "client",
+      "text": "Hmm, nu am timp dimineață. Sper să mă contacteze ei atunci. Care este termenul din nou?"
+    },
+    {
+      "rol": "operator",
+      "text": "2-3 zile de lucru de la acum. Vor avea și notă de prioritate din partea mea."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, sper că se întâmplă ceva..."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru situație. Cu siguranță vor clarifica. Voi nota și numărul de telefon din care ați apelat, ca să vă contacteze direct."
+    },
+    {
+      "rol": "client",
+      "text": "Da, bun. Asta e tot ce puteți face?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din această poziție, da. Sunt limitările departamentului de programări. Dar garantez că transmit cu prioritate."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, sper că se rezolvă deoarece e o problemă care mi-a consumat deja timp. La revedere."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău că nu am putut rezolva instant. O zi bună!"
+    }
+  ],
+  "tip_complexitate": "reclamatie_implicita"
+}

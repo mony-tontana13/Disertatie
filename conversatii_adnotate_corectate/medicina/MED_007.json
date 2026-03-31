@@ -1,0 +1,103 @@
+{
+  "id": "MED_007",
+  "domeniu": "medicina",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "problema_programare",
+    "problema_asigurare"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_rezolvata_rapid_si_clientul_multumit",
+  "rezumat": "Client solicită reprogramarea unei vizite la cardiolog din 15 februarie pentru 19 februarie, cerere aprobată imediat. Ulterior, clientul întreabă despre acceptarea unei asigurări private Generali și operator-ul îl redirectează către departamentul financiar pentru detalii complete.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Serviciul de programări al Clinicii Medicum. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună, am o problemă cu o programare făcută săptămâna trecută. Mă puteți ajuta?"
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur, sunt aici să vă ajut. Care este problema?"
+    },
+    {
+      "rol": "client",
+      "text": "Am o programare la cardiolog pe 15 februarie la ora 10, dar nu pot ajunge atunci. Vreau să o reprogramez."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles. Pe ce nume este făcută programarea?"
+    },
+    {
+      "rol": "client",
+      "text": "Pe numele meu, Popescu Andrei. Numărul de telefon este 0723456789."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Stați o clipă să verific... Da, programarea cu dr. Pătrescu este pe 15 februarie la ora 10. Când doriți să o reprogramăm?"
+    },
+    {
+      "rol": "client",
+      "text": "Aș dori pe 18 februarie, dacă se poate. Nu contează ora foarte mult."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment, verific disponibilitatea... Din păcate, pe 18 februarie dr. Pătrescu nu este disponibil. Avem liber pe 19 februarie la ora 14, sau pe 22 februarie la ora 9. Ce vi s-ar potrivi mai bine?"
+    },
+    {
+      "rol": "client",
+      "text": "Pe 19 februarie la ora 14 este bine. Puteți confirma?"
+    },
+    {
+      "rol": "operator",
+      "text": "Perfect, am actualizat. Programarea cu dr. Pătrescu este acum pentru 19 februarie la ora 14. Primiți confirmarea prin SMS și un reminder cu 24 de ore înainte."
+    },
+    {
+      "rol": "client",
+      "text": "Ok, mulțumesc. Mai am o întrebare. Cu ce asigurări lucrați? Am o asigurare privată și vreau să știu dacă o acceptați."
+    },
+    {
+      "rol": "operator",
+      "text": "Ce asigurare aveți, dacă îmi permiteți să întreb?"
+    },
+    {
+      "rol": "client",
+      "text": "Am CNAS și la Generali privată. Vreau să folosesc asigurarea privată, nu CNAS."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles. Detaliile despre parteneriatele cu asigurările private nu le am aici. Vă recomand să luați legătura cu departamentul financiar pentru informații complete. Numărul lor este 021-3456789. Sau lăsați un mesaj și ei vă vor contacta."
+    },
+    {
+      "rol": "client",
+      "text": "Pot nota numărul. 021-3456789?"
+    },
+    {
+      "rol": "operator",
+      "text": "Exact: 021-3456789. Programul lor este de luni până vineri, între orele 8 și 17."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, o să-i sun mâine. Deci, pentru moment, rămâne programarea pe 19 februarie?"
+    },
+    {
+      "rol": "operator",
+      "text": "Da, confirmăm. Sunteți programat pe 19 februarie la ora 14 cu dr. Pătrescu. În privința asigurării private, contactați departamentul financiar pentru detalii."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, mulțumesc pentru ajutor."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere. Dacă mai aveți întrebări, nu ezitați să ne contactați. O zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere!"
+    }
+  ],
+  "tip_complexitate": "multi_intentie"
+}

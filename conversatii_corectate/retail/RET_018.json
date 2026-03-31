@@ -1,0 +1,73 @@
+{
+  "id": "RET_018",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la serviciul de clienți ElectroShop. Numele meu este Bogdan. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Am o problemă destul de gravă cu comanda 7453821. Am primit pachetul acum o oră și, spre surpriza mea, înăuntru este un monitor Samsung de 24 de inchi, deși eu am plătit pentru un LG de 27. Cum s-a putut încurca așa ceva?"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi cer scuze pentru această eroare de expediție. Într-adevăr, în sistem apare monitorul LG de 27 de inchi. Probabil a fost o etichetare greșită în depozit. Îmi puteți citi codul SKU de pe cutia primită?"
+    },
+    {
+      "rol": "client",
+      "text": "Codul este SAM-24-FHD-02. Ascultă, Bogdan, am mare nevoie de monitorul corect până vineri dimineață, am o prezentare importantă și am investit special în ecranul ăsta mai mare."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg urgența. Procedura standard este să ridicăm produsul greșit prin curier, să ajungă în depozit pentru verificare și apoi să trimitem produsul corect. Acest flux durează cam 5-7 zile lucrătoare."
+    },
+    {
+      "rol": "client",
+      "text": "Ce...? Greșeala este a voastră, scrie clar pe factură ce am comandat și ce am primit e vizibil diferit. Trimiteți un curier mâine cu monitorul bun și să îl ia la schimb pe celălalt."
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, politica firmei nu permite schimbul direct la curier din motive de inventar. Trebuie să verificăm integritatea produsului returnat înainte de a elibera un alt echipament din stoc."
+    },
+    {
+      "rol": "client",
+      "text": "Deci mă pedepsiți pe mine pentru că angajații voștri nu știu să citească o etichetă? Nu există nicio metodă de expediere rapidă, 24h, pe cheltuiala voastră?"
+    },
+    {
+      "rol": "operator",
+      "text": "Aș putea solicita o expediere prioritară, dar sistemul o va taxa automat cu 25 de lei, fiind un colet voluminos. Pot încerca să cer o derogare de la managerul de zonă, dacă doriți să așteptați un moment."
+    },
+    {
+      "rol": "client",
+      "text": "Aștept, dar mi se pare incredibil că discutăm despre taxe suplimentare când voi mi-ați blocat banii pe un produs greșit."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru răbdare. Am discutat, însă managerul nu poate anula taxa de transport rapid, dar vă pot oferi un voucher de 15 lei pentru următoarea comandă ca semn de bunăvoință."
+    },
+    {
+      "rol": "client",
+      "text": "Voucher de 15 lei? Serios? Monitorul a costat 1500 de lei și tu îmi oferi 15 lei după ce m-ați lăsat cu ochii în soare înainte de un proiect important?"
+    },
+    {
+      "rol": "operator",
+      "text": "Regret, este limita maximă a autorității mele în acest moment. Dacă soluția nu vă mulțumește, pot înregistra o reclamație oficială către departamentul de conciliere, dar răspunsul vine în câteva zile."
+    },
+    {
+      "rol": "client",
+      "text": "E clar, sunteți complet rigizi. Înregistrează reclamația, dar să știi că e ultima dată când mai cumpăr de la voi. O să las și un review pe măsură, că e bătaie de joc."
+    },
+    {
+      "rol": "operator",
+      "text": "Am deschis tichetul de reclamație cu numărul 99283. Veți primi detaliile pe e-mail. Ne pare rău că nu am putut ajunge la o înțelegere mai rapidă."
+    },
+    {
+      "rol": "client",
+      "text": "Da, și mie îmi pare rău. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "O zi bună în continuare. La revedere."
+    }
+  ]
+}

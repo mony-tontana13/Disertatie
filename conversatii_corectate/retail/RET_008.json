@@ -1,0 +1,77 @@
+{
+  "id": "RET_008",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la serviciul clienți ShopOnline. Numele meu este Andrei, cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Am cumpărat o jachetă acum o săptămână și... sincer, nu arată deloc ca în pozele de pe site. Aș vrea să demarez procedura de retur."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg, îmi pare rău că produsul nu s-a ridicat la așteptări. Pentru început, am nevoie de numărul comenzii dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "Stați să-l caut în mail... este 854932-RO."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Verific acum... Da, apare aici o jachetă neagră, mărimea M, livrată recent. Îmi puteți spune ce anume nu corespunde, pentru raportul de calitate?"
+    },
+    {
+      "rol": "client",
+      "text": "Materialul e mult mai subțire decât părea în descriere, iar negrul acela e mai mult un gri închis, e o diferență vizibilă față de poze."
+    },
+    {
+      "rol": "operator",
+      "text": "Am notat aceste observații. Jacheta este în starea originală, cu etichetele atașate, corect?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, am probat-o o singură dată în casă și am pus-o direct înapoi în ambalaj. E intactă."
+    },
+    {
+      "rol": "operator",
+      "text": "E perfect atunci. Voi genera acum cererea de retur. Cum preferați să trimiteți coletul înapoi? Putem trimite un curier sau puteți merge la un oficiu poștal partener."
+    },
+    {
+      "rol": "client",
+      "text": "Cred că la poștă îmi este mai la îndemână, că am unul chiar lângă bloc."
+    },
+    {
+      "rol": "operator",
+      "text": "În regulă. Vă trimit acum pe e-mail eticheta de transport și instrucțiunile de ambalare. Trebuie să ajungă la depozitul nostru în termen de 14 zile."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles. Și legat de bani, când ar trebui să-i primesc înapoi în cont?"
+    },
+    {
+      "rol": "operator",
+      "text": "Imediat ce jacheta ajunge la noi și este verificată de colegii de la recepție, procesăm plata. Ar trebui să vedeți banii în cont în 5-7 zile lucrătoare, depinde și de banca dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "Cam mult durează toată procedura asta, dar dacă așa e regula... Eticheta o primesc acum?"
+    },
+    {
+      "rol": "operator",
+      "text": "Da, se generează automat și ajunge pe adresa de e-mail din cont în maximum 5 minute. Mai pot să vă ajut cu alte informații?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, e în regulă. Merci."
+    },
+    {
+      "rol": "operator",
+      "text": "O zi bună în continuare!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

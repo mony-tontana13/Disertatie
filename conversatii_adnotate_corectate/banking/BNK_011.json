@@ -1,0 +1,88 @@
+{
+  "id": "BNK_011",
+  "domeniu": "banking",
+  "complexitate": "complexa",
+  "intentie_gold": ["card_blocat"],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "problema_nerezolvata_timp_asteptare_mare_lipsa_empatie",
+  "rezumat": "Client sună la bancă deoarece cardul i-a fost blocat la restaurant din motive de securitate, fiind detectate tranzacții suspecte din străinătate. Clientul contestă, susținând că nu a ieșit din București și nu a făcut plăți externe. Operatorul explică că deblocarea necesită validare de către departamentul de Securitate, cu timp de așteptare de 2-4 ore. Clientul, frustrat de situația în care a fost blocat la restaurant și de lipsa notificării prealabile, refuză să mai colaboreze și anunță că va depune reclamație oficială la sucursală. Conversația se încheie negativ, cu clientul nemulțumit și fără rezolvarea efectivă a problemei sale imediate.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la serviciul clienți al Băncii Comerciale, numele meu este Andrei Popescu. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Sunt în oraș, am vrut să plătesc la un restaurant și cardul mi-a fost respins. Am încercat și la bancomat și îmi spune că e blocat. Ce se întâmplă? Am bani în cont, am verificat în aplicație."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru situația neplăcută. Pentru a verifica starea cardului, am nevoie de primele și ultimele patru cifre ale acestuia."
+    },
+    {
+      "rol": "client",
+      "text": "Cifrele sunt 4532 și 7821. Vă rog să verificați rapid, sunt la masă și trebuie să achit nota, este extrem de jenant."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment, vă rog, interoghez baza de date... Da, văd aici. Cardul dumneavoastră a fost blocat automat din motive de securitate, din cauza unor încercări de tranzacționare suspecte din afara țării."
+    },
+    {
+      "rol": "client",
+      "text": "Poftim? Eu n-am ieșit din București de trei luni! Cum să fie tranzacții în străinătate? De ce nu m-a sunat nimeni înainte să-mi tăiați accesul la bani?"
+    },
+    {
+      "rol": "operator",
+      "text": "Sistemul antifraudă acționează instantaneu pentru a proteja soldul. Blocarea s-a produs azi la 14:30. În acest moment, cazul este în analiza departamentului de Securitate."
+    },
+    {
+      "rol": "client",
+      "text": "Și eu ce fac acum? Sunt blocat aici! Deblocați-l pe loc, vă confirm eu acum că n-am făcut nicio plată externă."
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, eu nu am autoritatea de a debloca un card marcat pentru fraudă. Procedura impune ca echipa de Securitate să vă contacteze telefonic pentru validarea identității și a tranzacțiilor."
+    },
+    {
+      "rol": "client",
+      "text": "Și cât durează asta? Trebuie să plec de aici în 10 minute!"
+    },
+    {
+      "rol": "operator",
+      "text": "Intervalul standard de contact este de 2 până la 4 ore, în funcție de volumul de solicitări de astăzi."
+    },
+    {
+      "rol": "client",
+      "text": "Adică banca îmi blochează banii din greșeală și tot eu trebuie să stau sechestrat în restaurant până are cineva timp de mine? Este absolut ridicol!"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea, dar sunt protocoale de siguranță obligatorii. Alternativa este să mergeți personal la sucursala noastră de pe Calea Victoriei, unde un coleg poate încerca o identificare prioritară."
+    },
+    {
+      "rol": "client",
+      "text": "Deci soluția voastră la problema pe care VOI ați creat-o este să mă puneți pe drumuri sau să aștept ore întregi? N-am primit nici măcar un SMS de avertizare."
+    },
+    {
+      "rol": "operator",
+      "text": "Sistemul arată că s-a emis o notificare, dar dacă nu ați primit-o, probabil este o eroare tehnică de livrare a mesajului. Ne cerem scuze pentru disconfort."
+    },
+    {
+      "rol": "client",
+      "text": "Scuzele nu-mi plătesc nota la restaurant. O să vin la sucursală, dar doar ca să depun o reclamație oficială."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă pot înregistra eu sesizarea acum, dacă doriți. Îmi pare rău că nu vă pot oferi deblocarea imediată, dar trebuie să respectăm pașii de verificare."
+    },
+    {
+      "rol": "client",
+      "text": "Lăsați 'pașii'. Văd că n-are niciun sens să mai discut cu dumneavoastră dacă n-aveți nicio putere de decizie. O zi bună."
+    },
+    {
+      "rol": "operator",
+      "text": "Regretăm experiența. Sperăm să se rezolve rapid la sucursală. La revedere."
+    }
+  ],
+  "tip_complexitate": "dialect_familiar"
+}

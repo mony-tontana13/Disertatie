@@ -1,0 +1,65 @@
+{
+  "id": "SP_004",
+  "domeniu": "servicii_publice",
+  "complexitate": "simpla",
+  "intentie_gold": [
+    "reclamatie_serviciu"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_pasat_intre_departamente_fara_garantii",
+  "rezumat": "Clientul a depus o cerere pentru alocația de susținere a familiei acum trei săptămâni și nu a primit răspuns oficial, depășind termenul de 15 zile prevăzut. Operatorul a confirmat că dosarul se află în verificare administrativă, a recunoscut depășirea termenului și a înregistrat formal o reclamație cu notă de urgență.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la Agenția pentru Plăți și Inspecție Socială. Numele meu este Cristina Popescu. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Aș dori să fac o sesizare în legătură cu un dosar depus. Am solicitat alocația de susținere a familiei acum trei săptămâni și, până în momentul de față, nu am primit niciun răspuns oficial."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Vă rog să-mi comunicați numărul de înregistrare al cererii sau codul numeric personal, pentru a putea verifica stadiul în sistem."
+    },
+    {
+      "rol": "client",
+      "text": "Numărul este REG-2024-156789. Menționez că m-am prezentat și personal la ghișeu în data de 15 ianuarie pentru depunere."
+    },
+    {
+      "rol": "operator",
+      "text": "Stați puțin să interoghez baza de date... Da, am identificat cererea dumneavoastră. În sistem apare că dosarul se află încă în etapa de verificare administrativă. Documentele sunt în evaluare la compartimentul de specialitate."
+    },
+    {
+      "rol": "client",
+      "text": "Trei săptămâni pentru o verificare? Din câte știam, termenul prevăzut în normele metodologice este de 15 zile. De ce s-a depășit acest termen?"
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți dreptate, termenul standard de soluționare este de 15 zile calendaristice. Este posibil să fi apărut un volum mare de cereri în această perioadă. Pot transmite o solicitare către serviciul respectiv pentru a vedea cauza exactă a întârzierii."
+    },
+    {
+      "rol": "client",
+      "text": "În regulă, dar cât timp ar mai presupune această verificare? Am nevoie de confirmarea acestor bani pentru a acoperi cheltuielile cu chiria copiilor la cămin."
+    },
+    {
+      "rol": "operator",
+      "text": "Voi înregistra formal această reclamație și voi atașa o notă de revenire către compartimentul competent. În mod normal, soluționarea sesizării durează între 3 și 5 zile lucrătoare."
+    },
+    {
+      "rol": "client",
+      "text": "3-5 zile lucrătoare... se poate urgenta cumva? Deja s-a depășit mult termenul inițial."
+    },
+    {
+      "rol": "operator",
+      "text": "Voi bifa solicitarea ca fiind urgentă, însă nu vă pot garanta un răspuns mai rapid de acest interval, deoarece depinde de fluxul intern de aprobare. Veți fi contactat pe numărul de telefon lăsat în dosar imediat ce avem un răspuns."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles. Sper să se rezolve măcar în acest nou termen. O să aștept atunci confirmarea dumneavoastră. La revedere."
+    },
+    {
+      "rol": "operator",
+      "text": "Sesizarea dumneavoastră a fost înregistrată cu numărul REC-2024-84521. Vă mulțumim pentru apel. O zi bună!"
+    }
+  ]
+}

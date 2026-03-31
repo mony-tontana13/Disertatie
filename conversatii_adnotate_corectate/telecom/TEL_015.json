@@ -1,0 +1,110 @@
+{
+  "id": "TEL_015",
+  "domeniu": "telecom",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "activare_esuata"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "problema_nerezolvata_si_frustrare_clientului",
+  "rezumat": "Client a sunat pentru a raporta o eroare la activarea unei oferte cu date și minute internaționale din aplicație. Operatorul a identificat că motivul eșecului a fost soldul insuficient (2 lei disponibili vs 5,99 lei necesari). Deși cauza a fost explicată, clientul a exprimat frustrare față de mesajul de eroare ambiguu și lipsa detaliilor inițiale, refuzând să adauge credit și închizând conversația cu resemnare, fără a rezolva problema.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua. Ați sunat la serviciul clienți Vodafone, mă numesc Alexia Stroe. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Eu am o problemă cu o ofertă pe care am încercat s-o activez în aplicație ieri."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, înțeleg. Puteți să-mi spuneți mai în detaliu ce s-a întâmplat și ce ofertă ați încercat să activați?"
+    },
+    {
+      "rol": "client",
+      "text": "Era un pachet cu date suplimentare și minute internaționale. M-am uitat în aplicație, am găsit oferta și am dat pe activare, dar apoi a apărut un mesaj de eroare."
+    },
+    {
+      "rol": "operator",
+      "text": "Hmm, pare a fi o activare eșuată. Îmi puteți spune exact ce mesaj a apărut pe ecran, dacă mai țineți minte?"
+    },
+    {
+      "rol": "client",
+      "text": "Ceva de genul «operațiune incompletă» sau «vă rugăm să reîncercați mai târziu». Nu am reținut exact."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Și după ce ați văzut acel mesaj, ați mai încercat să activați oferta?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, am încercat încă de două ori, dar același rezultat. De aceea v-am sunat."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi puteți da numărul de telefon cu care ați încercat să activați oferta?"
+    },
+    {
+      "rol": "client",
+      "text": "Este 0721 445 823."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Un moment, vă rog, accesez contul dvs. în sistem... Bun, am găsit. Văd că ați avut o încercare de activare din ieri, dar contul nu are fonduri suficiente pentru acea ofertă."
+    },
+    {
+      "rol": "client",
+      "text": "Cum nu am fonduri? Am pus credit pe telefon acum trei zile."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg, dar oferta aleasă are și o taxă de activare. Posibil să fi folosit creditul pentru alte taxe sau servicii. Voi verifica mai detaliat... un moment, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "Da, sigur, dar e ciudat. Nu am observat să scadă nimic."
+    },
+    {
+      "rol": "operator",
+      "text": "Bun, verific acum... Văd că soldul actual este de 2 lei, iar oferta pe care ați vrut s-o activați costă 4,99 lei plus o taxă de activare de 1 leu, deci nu a fost suficient."
+    },
+    {
+      "rol": "client",
+      "text": "4,99 lei? Credeam că e mai ieftină. Nu am fost atent."
+    },
+    {
+      "rol": "operator",
+      "text": "Se poate întâmpla. Oferta avea descrierea tarifului. Vreți să adăugați acum credit și să activați oferta, sau altceva?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, e doar frustrantă toată treaba asta. Aș fi vrut mai multe detalii de la început, nu o eroare ambiguă și nimic altceva."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru experiență și vă înțeleg. Aplicația are limite la afișarea detaliilor, dar lucrăm la îmbunătățiri. Vom transmite mai departe."
+    },
+    {
+      "rol": "client",
+      "text": "Oricum... nu mai am timp pentru asta acum. Mi-am pierdut prea mult timp deja cu încercările."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă înțeleg. Vă puteți întoarce la noi oricând doriți să activați oferta după ce adăugați credit."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, voi vedea data viitoare."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru că ați apelat la Vodafone. O zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ],
+  "tip_complexitate": "ambigua"
+}

@@ -1,0 +1,102 @@
+{
+  "id": "SP_008",
+  "domeniu": "servicii_publice",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "programare_ghiseu"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_rezolvata_rapid",
+  "rezumat": "Client solicită programare la ghișeu pentru verificarea unui dosar de subvenții din 2022. Operatorul Cristina Popescu identifică corect necesitatea și stabilește o programare pentru luni la 10:30 la Centrul Județean. Sunt clarificări privind documentele necesare și durata estimată (15-20 minute).",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la Agenția pentru Plăți și Intervenție în Agricultură. Sunt Cristina Popescu. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua... ăăă, aș vrea să fac o programare la ghișeu. Am o problemă cu dosarul meu pentru subvenții și cred că trebuie să vin personal să lămurim lucrurile."
+    },
+    {
+      "rol": "operator",
+      "text": "În regulă. Pentru a vă programa la serviciul corect, îmi puteți spune, în mare, despre ce este vorba? Este o problemă legată de Cererea Unică de Plată sau de controlul pe teren?"
+    },
+    {
+      "rol": "client",
+      "text": "Uh... e mai veche treaba. Mi-am pierdut documentele de înregistrare pentru subvențiile din 2022 și mi s-a cerut de la primărie să verific dacă mai figurez în baza de date cu cererea de atunci."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles. Deci aveți nevoie de o programare la serviciul Relații cu Publicul pentru eliberarea unei adeverințe sau verificarea bazei de date pe 2022. Aveți codul de fermier sau CNP-ul la îndemână pentru o scurtă verificare?"
+    },
+    {
+      "rol": "client",
+      "text": "Codul de fermier nu-l mai știu... dar pot să vă dau CNP-ul dacă ajută."
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur, CNP-ul este suficient pentru identificare în sistemul nostru. Oricum, la ghișeu va trebui să prezentați actul de identitate în original. Când ați dori să veniți?"
+    },
+    {
+      "rol": "client",
+      "text": "Mă gândeam săptămâna viitoare, luni sau marți dacă se poate. Ce intervale aveți libere?"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru luni mai avem locuri disponibile între orele 09:00 și 12:00, iar pentru marți între 10:00 și 14:00. Care variantă vă avantajează?"
+    },
+    {
+      "rol": "client",
+      "text": "Luni la 10:30 ar fi perfect. E mai bine pentru mine, că ajung mai ușor de la gară."
+    },
+    {
+      "rol": "operator",
+      "text": "V-am notat. Luni, ora 10:30, la Centrul Județean. Vă rog să aveți la dumneavoastră actul de identitate și orice alte înscrisuri mai aveți de la depunerea inițială, dacă le găsiți."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles, luni la 10:30. Actul de identitate și restul actelor. O să le caut prin sertare."
+    },
+    {
+      "rol": "operator",
+      "text": "Perfect. Vă pot trimite confirmarea programării și pe e-mail, dacă doriți. Ce adresă folosiți?"
+    },
+    {
+      "rol": "client",
+      "text": "Este popescu.ioan87@yahoo.com. Sper că am pronunțat-o destul de clar."
+    },
+    {
+      "rol": "operator",
+      "text": "Da, e în regulă, am notat. Trimit confirmarea acum; ar trebui să ajungă în câteva minute."
+    },
+    {
+      "rol": "client",
+      "text": "Și... ăăă, cam cât credeți că o să dureze? Mai am și alte drumuri de făcut în ziua aia și n-aș vrea să mă prindă prânzul pe la cozi."
+    },
+    {
+      "rol": "operator",
+      "text": "Dacă aveți programare, timpul de așteptare este minim. Discuția la ghișeu durează, de regulă, 15-20 de minute pentru verificarea arhivei digitale."
+    },
+    {
+      "rol": "client",
+      "text": "Bun, e bine așa. Mai trebuie să aduc vreo confirmare printată sau e suficient că vin acolo?"
+    },
+    {
+      "rol": "operator",
+      "text": "E suficient să spuneți numele și ora la recepție. E-mailul e mai mult pentru evidența dumneavoastră, dar colegii vă vor găsi în sistemul de programări."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles. Mulțumesc frumos pentru ajutor, domnișoară. Sper să îi dau de cap dosarului ăstuia."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu multă plăcere! Vă dorim succes. Dacă mai aveți nelămuriri, puteți reveni oricând. O zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere, numai bine!"
+    }
+  ],
+  "tip_complexitate": "ezitanta"
+}

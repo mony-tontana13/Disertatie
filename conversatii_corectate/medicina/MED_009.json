@@ -1,0 +1,97 @@
+{
+  "id": "MED_009",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Mulțumim că ați ales Clinica MedPlus. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună! Vreau să verific dacă sunt gata rezultatele analizelor mele. Le-am făcut săptămâna trecută."
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur, stați să văd... Vă rog spuneți-mi numele și seria CNP-ului pentru a accesa dosarul."
+    },
+    {
+      "rol": "client",
+      "text": "Udrea Andrei. CNP-ul este 1850614123456."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Revenim imediat... Așteptați puțin, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "Sigur."
+    },
+    {
+      "rol": "operator",
+      "text": "Rezultatele sunt marcate ca fiind gata. Le-am găsit în dosarul dvs."
+    },
+    {
+      "rol": "client",
+      "text": "Perfect. Și pot să le aflu acum?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, regulile de protecție a datelor nu ne permit să comunicăm rezultatele prin telefon. Puteți veni la recepție să le ridicați sau putem programa o consultație."
+    },
+    {
+      "rol": "client",
+      "text": "Dar... e cam nepractic. Nu le puteți trimite prin email?"
+    },
+    {
+      "rol": "operator",
+      "text": "Ne pare rău, dar politicile noastre nu permit acest lucru pentru păstrarea confidențialității. Vă recomand să veniți la recepție sau să faceți o programare."
+    },
+    {
+      "rol": "client",
+      "text": "Și sunteți sigură că sunt gata? Dacă merg degeaba sunt tare nemulțumit."
+    },
+    {
+      "rol": "operator",
+      "text": "Da, ele sunt gata în sistem. Dar poate ar fi bine să sunați mâine dimineață recepția înainte de sosire, în caz de întârzieri neașteptate."
+    },
+    {
+      "rol": "client",
+      "text": "Deci trebuie să sun din nou? Suuuper..."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru inconvenient. E bine să confirmați înainte de a veni."
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, și curier nu se poate folosi?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, această opțiune nu este disponibilă pentru analizele de rutină."
+    },
+    {
+      "rol": "client",
+      "text": "Așa..."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă pot programa o consultație pentru a discuta rezultatele, sau puteți veni direct la recepție."
+    },
+    {
+      "rol": "client",
+      "text": "N-are rost. Trec mâine pe la voi, de parcă aveam altceva de făcut..."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă așteptăm. Sunați dacă mai aveți nevoie de ajutor."
+    },
+    {
+      "rol": "client",
+      "text": "Da, bine. La revedere."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere."
+    }
+  ]
+}

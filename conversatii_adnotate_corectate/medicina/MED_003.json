@@ -1,0 +1,57 @@
+{
+  "id": "MED_003",
+  "domeniu": "medicina",
+  "complexitate": "simpla",
+  "intentie_gold": [
+    "problema_asigurare"
+  ],
+  "satisfactie": "pozitiv",
+  "motiv_satisfactie": "problema_rezolvata_rapid",
+  "rezumat": "Client contactează clinica pentru a verifica dacă consultația de cardiologie de mâine este acoperită de polița Allianz. Operatorul verifică datele și confirmă că consultația este integral acoperită. Client primește instrucțiuni privind documentele necesare și se declară mulțumit.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Clinica MedLife. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună! Am o problemă cu asigurarea mea. Am programare mâine la cardiolog, dar nu știu dacă consultația e acoperită de poliță."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Cu plăcere vă ajut să clarificăm asta. Care este furnizorul asigurării dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "Am asigurare la Allianz. Polița e de tip medical complet."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine. Pentru a verifica dacă consultația de cardiologie este acoperită, am nevoie de numărul dumneavoastră de poliță. O aveți la îndemână?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, imediat. E 12847659ALZ."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Stați un moment să verific în sistemul nostru de parteneriate... Perfect, am găsit. Polița dumneavoastră acoperă integral consultația de cardiologie la clinica noastră, fără cost suplimentar din partea dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "Excelent! Și nu trebuie să duc nimic special cu mine mâine?"
+    },
+    {
+      "rol": "operator",
+      "text": "Nu, este suficient să aduceți cartea de identitate și cardul de sănătate. Medicul va verifica datele în sistem. Totul este deja înregistrat."
+    },
+    {
+      "rol": "client",
+      "text": "Perfect. Mulțumesc mult pentru ajutor!"
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere! Sperăm să aveți o consultație benefică mâine. O zi frumoasă și la revedere!"
+    }
+  ]
+}

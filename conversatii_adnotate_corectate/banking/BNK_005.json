@@ -1,0 +1,67 @@
+{
+  "id": "BNK_005",
+  "domeniu": "banking",
+  "complexitate": "simpla",
+  "intentie_gold": ["problema_transfer"],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_explicata_si_clarificata",
+  "rezumat": "Client contactează banca cu o problemă privind un transfer de 5000 de lei către Banca Transilvania, inițiat ieri seara și încă nefinalizat.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua. Sunt Andrei Popescu, de la serviciul clienți al Băncii Comerciale România. Cu ce pot să vă ajut?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o problemă cu un transfer pe care l-am făcut ieri și nu văd banii în cont. Puteți să verificați ce s-a întâmplat?"
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur, haideți să vedem. Pentru a localiza transferul, îmi puteți spune numărul contului și data exactă a tranzacției?"
+    },
+    {
+      "rol": "client",
+      "text": "Numărul contului e RO89BCRL0012345678901234. Transferul a fost făcut ieri, 14 martie, spre seară. Suma era 5000 de lei."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Ăăă, o clipă să verific în sistem... Am găsit tranzacția. Transferul a fost inițiat ieri la ora 19:30 și este încă în procesare. A fost către o altă bancă, nu?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, exact. E către Banca Transilvania. Dar nu ar trebui să ajungă mai repede? E cam ciudat că nu s-a finalizat."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Transferurile între bănci diferite necesită de obicei 1-2 zile lucrătoare. Deci, de vreme ce a fost ieri seara, ar trebui să fie finalizat luni sau marți."
+    },
+    {
+      "rol": "client",
+      "text": "Okay, deci e normal așa. Doar că mă așteptam să fie mai rapid. Puteți totuși să vă asigurați că totul e în regulă?"
+    },
+    {
+      "rol": "operator",
+      "text": "Da, desigur. Din ce văd aici, transferul este valid și a fost procesat corect la noi. Datele beneficiarului sunt corecte și nu există nicio eroare. Totul se desfășoară conform SWIFT."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, mulțumesc. Atunci aștept să ajungă la destinație."
+    },
+    {
+      "rol": "operator",
+      "text": "Exact. Dacă nu vedeți transferul finalizat în curând, ne puteți contacta și vom investiga mai detaliat. Este în regulă așa?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, e bine. Vă mulțumesc."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere. Vă doresc o zi frumoasă și nu ezitați să ne contactați dacă mai aveți nevoie de ajutor. La revedere!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

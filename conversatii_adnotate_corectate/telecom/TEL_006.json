@@ -1,0 +1,69 @@
+{
+  "id": "TEL_006",
+  "domeniu": "telecom",
+  "complexitate": "simpla",
+  "intentie_gold": [
+    "reziliere_contract"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_rezolvata_rapid",
+  "rezumat": "Client solicita rezilierea contractului de telefonie din cauza unei oferte mai avantajoase la alt operator. Operatorul informeaza despre taxa de reziliere anticipata de 12 lei si perioada contractuala ramasa pana in aprilie.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la Serviciul Clienți Vodafone. Numele meu este Filip Limanu. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Uite, vă sun pentru că vreau să-mi reziliez contractul de telefonie. Am încercat să fac asta direct din aplicație, dar nu am reușit, îmi dă o eroare că cererea nu poate fi procesată online."
+    },
+    {
+      "rol": "operator",
+      "text": "Rezilierile necesită, într-adevăr, o validare telefonică sau în magazin. Putem verifica aici. Îmi puteți comunica numărul de telefon, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, este 0721 234 567."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Un moment... am accesat datele. Văd că sunteți clientul nostru de ceva timp. Îmi puteți spune, ce v-a determinat să luați această decizie? Poate găsim o ofertă mai bună."
+    },
+    {
+      "rol": "client",
+      "text": "Sincer, am găsit o ofertă mult mai avantajoasă la alt operator, la un preț mai mic. M-am tot uitat și în aplicația voastră după oferte, dar nu am găsit nimic care să mă convingă să rămân."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Trebuie totuși să vă informez că mai aveți o perioadă minimă contractuală până în aprilie. Dacă închidem contractul astăzi, se va genera automat o taxă de reziliere anticipată de 12 de lei. Este în regulă pentru dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, sunt conștient de asta. Chiar și cu taxa aia, tot ies mai ieftin în altă parte pe termen lung. Vreau să mergem înainte cu închiderea, vă rog."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles. Înregistrez acum cererea dumneavoastră. Contractul va înceta efectiv la sfârșitul perioadei de facturare curente, adică peste aproximativ 48 de ore. Veți primi confirmarea pe e-mail."
+    },
+    {
+      "rol": "client",
+      "text": "Super, mersi."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă confirm că totul este în regulă. Ne pare rău că plecați. Mai aveți vreo altă întrebare?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, e clar. Multumesc mult, o zi bună."
+    },
+    {
+      "rol": "operator",
+      "text": "O zi frumoasă în continuare! La revedere."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

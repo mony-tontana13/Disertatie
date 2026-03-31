@@ -1,0 +1,67 @@
+{
+  "id": "BNK_002",
+  "domeniu": "banking",
+  "complexitate": "simpla",
+  "intentie_gold": ["tranzactie_gresita"],
+  "satisfactie": "pozitiv",
+  "motiv_satisfactie": "problema_rezolvata_rapid",
+  "rezumat": "Client anunță o viraj eronat de 5.000 lei în loc de 500 lei. Operatorul identifică tranzacția și o anulează imediat cu acordul clientului, confirmând revenirea fondurilor în 24 de ore. Clientul exprimă recunoștință și satisfacție.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Andrei Popescu de la Banca Comercială România. Cu ce vă pot ajuta azi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o problemă, am făcut o tranzacție azi și cred că am greșit suma. În loc de 500 de lei, am virat 5.000 de lei."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Îmi puteți oferi câteva informații pentru a găsi tranzacția? Care este numărul contului din care ați inițiat viramentul?"
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, RO89BCRL0047000123456789. Tranzacția a fost făcută astăzi, pe la ora 14."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc! Și IBAN-ul beneficiarului, dacă se poate?"
+    },
+    {
+      "rol": "client",
+      "text": "RO23OTHR0014567890123456. Stați... da, acesta este IBAN-ul unde am virat suma greșit."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Am găsit tranzacția, sunt 5.000 de lei virați către acel IBAN. Ați intenționat să trimiteți doar 500 de lei, corect?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, asta a fost intenția. Există vreo șansă să recuperez banii sau să anulez tranzacția?"
+    },
+    {
+      "rol": "operator",
+      "text": "Stați puțin... verfic acum... Văd că tranzacția a fost efectuată recent și fondurile nu au fost debitate complet de banca beneficiarului. Pot să o anulez imediat. Îmi dați acordul?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, vă rog, anulați-o. Vă sunt foarte recunoscător."
+    },
+    {
+      "rol": "operator",
+      "text": "Gata, am anulat tranzacția. Banii de 5.000 de lei vor fi înapoi în contul dumneavoastră în cel mult 24 de ore, iar veți primi o confirmare și prin email. Este totul bine acum?"
+    },
+    {
+      "rol": "client",
+      "text": "Perfect, mulțumesc mult. Ați fost foarte de ajutor."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere! Dacă mai aveți întrebări, nu ezitați să ne contactați. O zi frumoasă!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere și mulțumesc încă o dată!"
+    }
+  ]
+}

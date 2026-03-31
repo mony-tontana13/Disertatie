@@ -1,0 +1,89 @@
+{
+  "id": "MED_012",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, cum vă pot ajuta? Sunt Miruna Iliescu de la serviciul de programări al Clinicii MediCare."
+    },
+    {
+      "rol": "client",
+      "text": "Bună, sun să mă plâng de o întâmplare cu medicul Kovács de săptămâna trecută."
+    },
+    {
+      "rol": "operator",
+      "text": "Ah, înțeleg... spuneți-mi, vă rog, despre ce este vorba? Vreau să mă asigur că pot să vă ajut cât mai bine."
+    },
+    {
+      "rol": "client",
+      "text": "Am avut o programare la control cardiac la ora 14 și am așteptat 45 de minute. Medicul nici nu s-a uitat la mine cum trebuie, doar mi-a spus că totul e bine și asta a fost."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud experiența asta. Întârzierile și lipsa de atenție nu sunt acceptabile. Ați discutat cu cineva după?"
+    },
+    {
+      "rol": "client",
+      "text": "Am vorbit cu o fată de la recepție care a promis că mă va suna medicul, dar n-am primit niciun apel."
+    },
+    {
+      "rol": "operator",
+      "text": "Regret profund că nu s-a întâmplat asta. Voi verifica detaliile acum."
+    },
+    {
+      "rol": "client",
+      "text": "Îți mulțumesc. E important să știu dacă ceva e în neregulă cu inima mea."
+    },
+    {
+      "rol": "operator",
+      "text": "Bineînțeles, să vedem... văd că s-a notat o întârziere de 30 de minute cauzată de un apel urgent, dar fără menționarea unui follow-up de la noi."
+    },
+    {
+      "rol": "client",
+      "text": "Da, exact. Și eu am plătit 150 de lei pentru o consultație necorespunzătoare. Cum se justifică asta?"
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți dreptate, este inacceptabil. Ce preferați să facem acum? Doriți o nouă programare sau o clarificare de la dr. Kovács?"
+    },
+    {
+      "rol": "client",
+      "text": "Vreau un răspuns de la dr. Kovács și să fiu rambursat pentru partea pe care nu mi-au oferit-o."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg, voi transmite plângerea spre șeful departamentului. Voi solicita și o rambursare."
+    },
+    {
+      "rol": "client",
+      "text": "Și când voi auzi ceva? Sau mai trebuie să stau pe telefon iar?"
+    },
+    {
+      "rol": "operator",
+      "text": "Voi solicita să fiți contactat în maxim 3 zile lucrătoare. Vă rog un număr de telefon pentru follow-up."
+    },
+    {
+      "rol": "client",
+      "text": "0745 234 567. Vreau să fiu contactat de cineva din conducere."
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur, voi aranja asta. Plângerea ajunge la șeful de calitate."
+    },
+    {
+      "rol": "client",
+      "text": "Sper să fie diferit față de data trecută."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru răbdare, voi urmări situația. Așteptați un apel."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere, domnule Popescu."
+    }
+  ]
+}

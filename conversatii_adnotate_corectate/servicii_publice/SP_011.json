@@ -1,0 +1,98 @@
+{
+  "id": "SP_011",
+  "domeniu": "servicii_publice",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "informatii_program"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "informatii_vagi_si_incomplete_operator_pasat_intre_departamente_client_frustat_de_birocratie",
+  "rezumat": "Client sunaș la DEP pentru a afla programul de acces și documentele necesare pentru duplicatul certificatului de naștere. Operatorul a oferit informații generale despre program (luni-joi 08:30-16:30, vineri până la 14:00) și condiții de acces incerte (fără sistem de programare, aglomerație imprevizibilă). Pentru documentele cerute, operatorul a dat doar informații parțiale (buletin + cerere tip), menționând că situații speciale se evaluează la ghișeu. Clientul a exprimat frustare față de răspunsurile vagi și de necesitatea prezentării fizice, iar la final a acceptat resemnat situația.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la Direcția de Evidență a Populației. Numele meu este Andrei Florea. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Vreau și eu să mă lămuresc odată cu programul ăsta al vostru, că pe site e o varză totală. Când sunteți, de fapt, deschiși pentru public?"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău dacă informațiile de pe site v-au creat confuzie. Vă referiți la programul pentru depunerea documentelor de identitate, corect?"
+    },
+    {
+      "rol": "client",
+      "text": "Exact. Trebuie să vin să-mi rezolv actele și n-am de gând să bat drumul degeaba până în centru."
+    },
+    {
+      "rol": "operator",
+      "text": "Programul nostru este standard: luni, marți, miercuri și joi, de la 08:30 până la 16:30. Vinerea avem program scurt, până la 14:00. Sâmbăta și duminica este închis."
+    },
+    {
+      "rol": "client",
+      "text": "Așa... și dacă eu termin munca la 16:00 și fac jumătate de oră pe drum, mă mai primește cineva sau găsesc ușa încuiată?"
+    },
+    {
+      "rol": "operator",
+      "text": "Accesul în instituție se face până la ora afișată, însă dacă este aglomerat, paza s-ar putea să nu mai permită intrarea cu 15 minute înainte de închidere. Nu avem sistem de programare, deci se intră în ordinea sosirii."
+    },
+    {
+      "rol": "client",
+      "text": "Deci e la noroc. Altă chestie: vreau o copie după certificatul de naștere, că am pierdut copia. Ce trebuie să aduc la mine?"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru eliberarea unui duplicat, trebuie să prezentați actul de identitate original și să completați o cerere tip. Taxele se achită direct la casieria noastră."
+    },
+    {
+      "rol": "client",
+      "text": "Doar atât? Nu-mi mai trebuie nicio adeverință de la primărie sau vreo dovadă de la Monitorul Oficial că l-am pierdut? Fiți explicit, vă rog, să nu stau la coadă degeaba."
+    },
+    {
+      "rol": "operator",
+      "text": "Informațiile generale spun că buletinul e suficient. Totuși, dacă aveți o situație specială, cum ar fi schimbarea numelui sau acte emise în străinătate, colegii de la ghișeu vă vor comunica la fața locului ce mai trebuie."
+    },
+    {
+      "rol": "client",
+      "text": "Păi și dumneata de ce mai ești la telefon dacă tot 'la fața locului' aflu tot? Nu poți să-mi spui acum, să fiu pregătit?"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă înțeleg nemulțumirea, dar eu ofer doar informații de ordin general. Evaluarea dosarelor se face exclusiv de către inspectorii de specialitate, în momentul prezentării la ghișeu."
+    },
+    {
+      "rol": "client",
+      "text": "Bun. Mâine cât de mult se stă la coadă? Că n-am toată ziua la dispoziție pentru birocrația voastră."
+    },
+    {
+      "rol": "operator",
+      "text": "Miercurea este o zi cu flux moderat. Dacă veniți la prima oră, timpul de așteptare este cam de 20-30 de minute. Totuși, se poate aglomera imprevizibil."
+    },
+    {
+      "rol": "client",
+      "text": "Aha, 'imprevizibil'. Adică pot să stau și două ore. Sincer, e incredibil cum în 2026 tot la cozi am rămas. Nu se poate rezolva nimic online?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, pentru actele de stare civilă, prezența fizică este obligatorie pentru identificare. Nu se pot trimite prin e-mail sau poștă."
+    },
+    {
+      "rol": "client",
+      "text": "Mda, m-am lămurit. O să vin acolo."
+    },
+    {
+      "rol": "operator",
+      "text": "Regret că nu vă pot oferi o soluție mai simplă. Dacă doriți să încercați la departamentul de stare civilă, au numărul 021 123 4567, poate ei vă pot da detalii mai punctuale."
+    },
+    {
+      "rol": "client",
+      "text": "Nu mă mai chinui... Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "Ne cerem scuze pentru inconvenient. O zi bună."
+    }
+  ],
+  "tip_complexitate": "dialect_familiar"
+}

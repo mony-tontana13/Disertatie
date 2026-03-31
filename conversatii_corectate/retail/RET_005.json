@@ -1,0 +1,53 @@
+{
+  "id": "RET_005",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, serviciul clienți ShopMart aici. Cu ce vă pot ajuta azi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Ieri am primit o comandă și am o problemă cu produsul. Nu corespunde descrierii din anunț."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud asta. Puteți să-mi spuneți ce problemă aveți mai exact cu produsul și care este numărul comenzii?"
+    },
+    {
+      "rol": "client",
+      "text": "Comanda 782954. Am comandat o bluză de culoarea albastru închis, dar am primit una albastră deschis, aproape cyan. Nu e deloc ce așteptam."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Deci culoarea nu corespunde cu imaginea de pe site. Aveți fotografii cu produsul primit?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, am făcut și poze cu produsul primit. Pe site era clar albastru închis și, sincer, am mai comandat de la voi și știu cum arată pozele."
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a rezolva reclamația, am nevoie de acele fotografii și de dovada comenzii. Puteți trimite totul la reclamații@shopmart.ro, specificând numărul comenzii în subiect."
+    },
+    {
+      "rol": "client",
+      "text": "Și ce urmează după? Cât va dura să primesc banii înapoi sau produsul corect?"
+    },
+    {
+      "rol": "operator",
+      "text": "După ce primim fotografiile, durează între 3 și 5 zile lucrătoare pentru verificare. Dacă se confirmă greșeala noastră, puteți alege între schimbarea produsului sau rambursare. O să vă furnizăm și eticheta pentru returnare."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, voi trimite pozele. Îmi doresc să se rezolve rapid, că n-am ce să fac cu culoarea asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă înțeleg. Vă rog să ne trimiteți fotografiile cât mai repede pentru a grăbi procesul. Dacă aveți alte întrebări, nu ezitați să ne contactați din nou. Zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

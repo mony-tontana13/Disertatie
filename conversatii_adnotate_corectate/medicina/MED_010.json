@@ -1,0 +1,134 @@
+{
+  "id": "MED_010",
+  "domeniu": "medicina",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "problema_reteta"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "problema_nerezolvata_imediat_asteptare_lunga_frustrare_exprimata",
+  "rezumat": "Client contactează clinica pentru a clarifica o rețetă primită de la Dr. Șerban, cu dozaj neinteligibil. După transferuri între mai multe departamente (farmacie, secretariat), se constată că doctorul este în concediu două săptămâni. Operatorul oferă alternative (consultație cu alt specialist sau recontactare la întoarcere), dar clientul refuză. Se notează datele contactului pentru ca Dr. Șerban să sune după revenire. Clientul acceptă rezolvarea, dar cu resemnare și expresie de frustrare evident vizibilă.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua. Sunt Cristina Popescu de la Clinica Medicală DentalCare. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună, am o problemă cu o rețetă pe care mi-a dat-o doctorul. Nu mi-o înțeleg și nu știu cum să o folosesc."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Vă rog, spuneți-mi mai detaliat care este problema. V-a dat rețeta doctorul la o consultație la noi?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, am fost săptămâna trecută la un control al dinților. Doctorul mi-a dat o rețetă cu niște medicamente, dar pe hârtie scrisul e puțin ciudat și nu mă descurc cu dozajul."
+    },
+    {
+      "rol": "operator",
+      "text": "Perfect, înțeleg situația. Vă pot direcționa la departamentul de Farmacie, care are specialiști în interpretarea rețetelor. Un moment, vă trec la colegul nostru."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, haideți."
+    },
+    {
+      "rol": "operator",
+      "text": "Rămâneți în linie, vă rog."
+    },
+    {
+      "rol": "operator",
+      "text": "Bună, sunt Ionel Mărchiș de la Departamentul de Farmacie. Care este problema?"
+    },
+    {
+      "rol": "client",
+      "text": "Am o rețetă pe care nu o înțeleg. Scrisul medicului e greu de citit și am nevoie de ajutor cu dozajul medicamentelor."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, înțeleg. Păcat că nu aveți rețeta digitalizată. Pentru a putea vă ajuta corespunzător, ar trebui să-mi spuneți exact ce medicamente sunt prescrise. Îmi puteți citi ce vedeți pe hârtie?"
+    },
+    {
+      "rol": "client",
+      "text": "Ei, tocmai, problema e că nu se citește clar. Se vede ceva gen amoxicilină, dar nu sunt sigur. De aceea v-am sunat."
+    },
+    {
+      "rol": "operator",
+      "text": "Aha, da. Pentru a putea clarifica, va trebui să vorbesc cu doctorul care v-a prescris rețeta. Din nefericire, sunt în ture diferite. Vă voi transfera la secretariat ca să programeze o consultație de clarificare cu doctorul, dacă doriți."
+    },
+    {
+      "rol": "client",
+      "text": "Nu vreau neapărat o consultație. Vreau pur și simplu să-mi spună doctorul pe telefon care e dozajul."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg, dar din politica clinicii nu pot transmite informații medicale prin telefon fără verificare prealabilă. Trebuie ca doctorul să vorbească direct cu dvs. Vă redirecționez la secretariat."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, să mă treceți, atunci."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment, vă rog."
+    },
+    {
+      "rol": "operator",
+      "text": "Bună, Monica de la Secretariat. Cum putem să vă ajutăm?"
+    },
+    {
+      "rol": "client",
+      "text": "Salut. Am o rețetă pe care nu o înțeleg și vreau să sun doctorul care mi-a dat-o. Poate mă puteți conecta cu el?"
+    },
+    {
+      "rol": "operator",
+      "text": "Dumneavoastră ați fost la care doctor? Cum se numește?"
+    },
+    {
+      "rol": "client",
+      "text": "Dr. Șerban, din secția de Stomatologie."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, din păcate Dr. Șerban nu mai lucrează la clinică din această săptămână. El revine abia peste două săptămâni. Puteți să lăsați telefonul pentru a vă suna, sau veniți personal cu rețeta?"
+    },
+    {
+      "rol": "client",
+      "text": "Cum adică nu mai lucrează? Am fost la el săptămâna trecută! Și nu-mi pot permite să vin din nou la clinică pentru o simplă clarificare."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea dvs., sincer. Dr. Șerban este în concediu până săptămâna viitoare. Ar putea să vorbească cu alt medic de la Stomatologie care să clarifice rețeta?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, pentru că eu am nevoie de clarificări despre rețeta tocmai a lui Șerban. Nu vreau să-mi bat capul alt medic. Este frustrant. Am apelat la voi sperând că se va rezolva rapid."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare într-adevăr rău. O alternativă ar fi să-mi lăsați contact și va suna Dr. Șerban la întoarcere. Sau dacă urgența este mare, veniți cu rețeta și facem o consultație acum cu alt specialist."
+    },
+    {
+      "rol": "client",
+      "text": "Nu e urgent neapărat, dar nici nu vreau să aștept două săptămâni. Bine, lăsați-i la întoarcere lui Șerban numărul. Dar promiteți-mi că va suna?"
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur, îi voi lăsa notă. Doar dacă-mi dați numărul de telefon și confirmați că preferați contact la această oră?"
+    },
+    {
+      "rol": "client",
+      "text": "Numărul e 0723 456 789, de preferat după ora 18. Sper că se va rezolva."
+    },
+    {
+      "rol": "operator",
+      "text": "Nimerit, l-am notat. Vi-l notez pe fișă și-i voi transmite cu siguranță. Îmi pare rău pentru inconvenient. O zi bună!"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua."
+    }
+  ],
+  "tip_complexitate": "pasat_intre_departamente"
+}

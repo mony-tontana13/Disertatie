@@ -1,0 +1,105 @@
+{
+  "id": "TEL_013",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați ajuns la Vodafone, serviciul clienți, sunt Elena Dinescu. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Voiam să vă felicit pentru creativitatea de pe factura de luna asta. Cred că departamentul de matematică de la voi are o imaginație debordantă."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să-mi spuneți care este problema exactă și voi verifica în sistem imediat."
+    },
+    {
+      "rol": "client",
+      "text": "Păi, luna trecută am plătit 89 de lei, ca orice muritor de rând. Acum văd că am fost promovat la categoria VIP, cu 156 de lei. N-am schimbat nimic, n-am sunat pe nimeni, dar văd că prețurile voastre cresc singure, ca aluatul la dospit."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. S-ar putea să fi apărut o taxă suplimentară. Îmi puteți da numărul de telefon asociat?"
+    },
+    {
+      "rol": "client",
+      "text": "Desigur, notați numărul de aur: 0734 123 456."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Un moment, vă rog... Ah, da, văd aici. Apare o taxă de 67 de lei pentru serviciul de roaming internațional utilizat."
+    },
+    {
+      "rol": "client",
+      "text": "Roaming? Senzațional! Deci eu stau în sufragerie în București, dar cartela mea a decis să plece în vacanță prin străinătate? Spuneți-mi și mie unde a fost, măcar să mă bucur și eu de pozele ei."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru această eroare, probabil e o problemă de localizare a antenei. Trebuie să facem o reclamație formală, care durează între 3 și 5 zile lucrătoare."
+    },
+    {
+      "rol": "client",
+      "text": "3 până la 5 zile? Ce viteză uluitoare! Probabil trimiteți reclamația cu porumbelul voiajor ca să fiți siguri că ajunge cu bine, nu?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, acestea sunt procedurile interne. Vă pot deschide reclamația acum, dacă doriți."
+    },
+    {
+      "rol": "client",
+      "text": "Deschideți-o, vă rog. Sunt curios dacă până se rezolvă, cartela mea nu decide să facă și un tur al Asiei pe banii mei."
+    },
+    {
+      "rol": "operator",
+      "text": "Veți primi un e-mail de confirmare. Dacă echipa de verificare are nevoie de detalii, vă vor suna."
+    },
+    {
+      "rol": "client",
+      "text": "Abia aștept să mai conversăm. Între timp, dezactivați-mi roaming-ul ăsta 'fantomă'. Nu de alta, dar n-aș vrea să plătesc și drumul de întoarcere al semnalului din Maldive."
+    },
+    {
+      "rol": "operator",
+      "text": "Gata, am dezactivat roaming-ul imediat. Nu veți mai putea utiliza date în afara României."
+    },
+    {
+      "rol": "client",
+      "text": "Minunat, acum pot sta liniștit că telefonul meu nu mai părăsește țara fără viză. Și cu factura asta 'umflată' de 156 de lei ce facem? O plătesc și stau la mila voastră să-mi dați restul?"
+    },
+    {
+      "rol": "operator",
+      "text": "Tehnic, factura rămâne datorată. După ce se confirmă eroarea, suma plătită în plus va apărea ca avans pentru luna viitoare."
+    },
+    {
+      "rol": "client",
+      "text": "Ce afacere profitabilă faceți!"
+    },
+    {
+      "rol": "operator",
+      "text": "Regret, dar așa e sistemul. Vă pot oferi însă un termen de grație de 10 zile pentru plată."
+    },
+    {
+      "rol": "client",
+      "text": "10 zile de grație... câtă generozitate! Aproape că am lăcrimat. Dar de ce să nu facem taxa să dispară pur și simplu, ca prin magie, la fel cum a apărut?"
+    },
+    {
+      "rol": "operator",
+      "text": "Nu am autoritate să fac asta direct, reclamația este singura cale. Vă asigur că se va verifica."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles. Bine, lăsați reclamația deschisă și sper ca data viitoare să nu mă trezesc cu taxe pentru apeluri de pe Lună."
+    },
+    {
+      "rol": "operator",
+      "text": "Sper să se rezolve rapid. Aveți numărul de reclamație pe e-mail. Mai aveți și alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, mi-a ajuns doza de eficiență pe ziua de azi. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere! O zi bună!"
+    }
+  ]
+}

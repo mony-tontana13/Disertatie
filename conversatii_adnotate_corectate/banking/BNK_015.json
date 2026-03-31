@@ -1,0 +1,82 @@
+{
+  "id": "BNK_015",
+  "domeniu": "banking",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "problema_sold"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "problema_nerezolvata_dezamagire_procesual_demotivare_client",
+  "rezumat": "Client sună la BCR după notificare de sold negativ (-450 lei). Operatorul identifică trei retrageri consecutive de 300 lei de la bancomat, pe care clientul le neagă vehement, acuzând o posibilă fraudă. Banca blochează cardul și informează despre procedura de dispută care durează 30-45 de zile. Clientul exprimă frustrare cu privire la securitate, la activarea automată a facilității de overdraft și la birocrația procesului. Conversația se încheie cu client extrem dezamăgit, care anunță că-și va muta contul după rezolvare.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la BCR. Numele meu este Irina. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Am primit o notificare că am depășit limita de cheltuieli și că am sold negativ, ceea ce e imposibil. Știam că mai am cel puțin 500 de lei în cont."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Pentru a verifica tranzacțiile, vă rog să-mi comunicați ultimele 4 cifre ale cardului și numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "Cifrele sunt 4492, numele e Ion Vasile. Verificați vă rog repede, că nu înțeleg cum am ajuns pe minus."
+    },
+    {
+      "rol": "operator",
+      "text": "Domnule Vasile, văd în sistem că soldul este într-adevăr negativ, -450 de lei. S-au înregistrat trei retrageri consecutive de la bancomat, a câte 300 de lei fiecare, în ultima oră."
+    },
+    {
+      "rol": "client",
+      "text": "Poftim? Sunt la serviciu, cardul e în portofel la mine! Cum să se retragă bani acum o oră? Este clar o fraudă, de ce nu ați oprit tranzacțiile?"
+    },
+    {
+      "rol": "operator",
+      "text": "Sistemul a emis notificarea de limită depășită imediat ce s-a intrat pe descoperitul de cont. Voi bloca definitiv cardul pentru a preveni alte extrageri. Cardul este la dumneavoastră, da?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, e la mine! Dar faptul că l-ați blocat acum nu mă ajută cu banii deja furați. Și de ce m-ați lăsat să intru pe minus? Eu n-am cerut credit pe cardul ăsta!"
+    },
+    {
+      "rol": "operator",
+      "text": "Contul are atașată o facilitate de overdraft care s-a activat automat. Pentru sumele retrase, trebuie să depuneți o cerere de refuz la plată. Procesul de investigație durează între 30 și 45 de zile."
+    },
+    {
+      "rol": "client",
+      "text": "Pardon? Adică banca voastră are o breșă de securitate, mă lasă fără bani, mă bagă pe datorie cu forța și acum trebuie să aștept o lună și jumătate ca să-mi recuperez banii mei?"
+    },
+    {
+      "rol": "operator",
+      "text": "Acesta este termenul legal pentru tranzacțiile interbancare și verificarea înregistrărilor video de la bancomate. Până la soluționare, suma de 450 de lei figurează ca datorie activă."
+    },
+    {
+      "rol": "client",
+      "text": "Este absolut scandalos. Nu doar că mi s-au furat banii, dar acum datorez băncii bani pe care nu i-am retras eu. Vreau să vorbesc cu un manager!"
+    },
+    {
+      "rol": "operator",
+      "text": "Managerul vă va comunica aceleași proceduri. Vă pot ajuta cu înregistrarea disputei online ca să câștigăm timp, dar vizita la o sucursală pentru plângere la poliție este obligatorie."
+    },
+    {
+      "rol": "client",
+      "text": "Birocrație peste birocrație. Sunt extrem de dezamăgit de 'protecția' pe care o oferiți. O să fac plângerea, dar o să-mi mut și contul imediat ce se termină circul ăsta."
+    },
+    {
+      "rol": "operator",
+      "text": "Regretăm situația. Cardul a fost blocat. Veți primi instrucțiunile pentru dispută pe e-mail."
+    },
+    {
+      "rol": "client",
+      "text": "Sper să se rezolve mai repede, deși m-am lămurit cum stați la capitolul siguranță. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "O zi bună. La revedere."
+    }
+  ],
+  "tip_complexitate": "ambigua"
+}

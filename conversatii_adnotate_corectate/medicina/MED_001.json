@@ -1,0 +1,77 @@
+{
+  "id": "MED_001",
+  "domeniu": "medicina",
+  "complexitate": "simpla",
+  "intentie_gold": [
+    "rezultate_analize"
+  ],
+  "satisfactie": "pozitiv",
+  "motiv_satisfactie": "problema_rezolvata_rapid_si_complet",
+  "rezumat": "Clienta Popescu Maria s-a informat despre rezultatele analizelor de sânge și biochimie efectuate pe 15 februarie. Operatorul a confirmat finalizarea rezultatelor, a oferit trimiterea pe email și a programat o consultație cu medicul internist pentru joi la ora 10:00.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați ajuns la Clinica MedCare. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună! Am făcut niște analize la dumneavoastră în urmă cu o săptămână și aș vrea să știu dacă sunt gata rezultatele."
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur, vă pot ajuta cu asta. Vă rog să-mi spuneți numele și data când ați efectuat analizele."
+    },
+    {
+      "rol": "client",
+      "text": "Sunt Popescu Maria. Am fost la analize pe 15 februarie."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment, vă rog. Mă uit în sistem... Am găsit dosarul dumneavoastră. Ați făcut analize de sânge și biochimie, este corect?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, exact. Sunt gata?"
+    },
+    {
+      "rol": "operator",
+      "text": "Bun, bun. Rezultatele sunt finalizate și sunt disponibile. Vă pot trimite pe email sau puteți veni să le ridicați la recepție. Care variantă vă convine mai bine?"
+    },
+    {
+      "rol": "client",
+      "text": "Pe email este mai bine. Pot să mă duc și la doctor pentru interpretare, sau trebuie să mă programez separat?"
+    },
+    {
+      "rol": "operator",
+      "text": "Puteți să vă programați și pentru o consultație cu medicul specialist. Cu cine ați dori să vorbiți — cu medicul internist sau cu alt specialist?"
+    },
+    {
+      "rol": "client",
+      "text": "Cu medicul internist. Cât de repede pot să am o programare?"
+    },
+    {
+      "rol": "operator",
+      "text": "Doctorul internist are disponibilități marți și joi. Puteți veni mâine, joi la ora 10:00 sau preferați o altă zi?"
+    },
+    {
+      "rol": "client",
+      "text": "Joi la 10:00 este perfect. Mi se trimit și rezultatele pe email?"
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur! Voi trimite rezultatele pe email-ul din dosarul dumneavoastră și vă notez și programarea pentru joi la ora 10:00. Mai doriți ceva?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, mulțumesc mult. Ați fost foarte amabil."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere! Vă așteptăm joi la ora 10:00. O zi frumoasă vă doresc!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere!"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "TEL_009",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la serviciul de suport clienți, numele meu este Cristian Ion. Cu ce vă pot fi de folos?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Am o problemă destul de mare cu abonamentul meu. Încerc de două zile să modific pachetul din aplicație și nu reușesc, îmi tot dă o eroare că nu am acces la secțiunea asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Haideți să verificăm ce se întâmplă. Îmi puteți comunica numărul de telefon, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "E 0723 445 678. Vreau să trec de la Essentials la SuperNet. Adică vreau să vă dau mai mulți bani pe lună și sistemul vostru nu mă lasă, e absurd."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg... un moment, vă rog, să deschid fișa de client... da, am găsit contul. Să vedem de unde vine restricția."
+    },
+    {
+      "rol": "client",
+      "text": "Sper să o rezolvăm acum, că am pierdut destul timp și cu aplicația aia care nu explică nimic."
+    },
+    {
+      "rol": "operator",
+      "text": "Văd aici că abonamentul dumneavoastră este într-o perioadă de angajament. Ați făcut o modificare de pachet acum trei luni, iar regulamentul intern nu permite schimbări succesive în primele șase luni de la ultima activare."
+    },
+    {
+      "rol": "client",
+      "text": "Poftim? Deci eu am nevoie de internet pentru muncă, am rămas fără cei 10 GB din abonamentul actual, și voi mă țineți blocat pentru că așa vrea un regulament? E incredibil."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă înțeleg nevoia de date, însă este o setare automată a sistemului pe care eu, din păcate, nu o pot suprascrie manual de aici."
+    },
+    {
+      "rol": "client",
+      "text": "Păi și ce fac, stau pe bară încă trei luni? Sunt client la voi de șapte ani și nu puteți face o excepție pentru o amărâtă de activare?"
+    },
+    {
+      "rol": "operator",
+      "text": "Singura variantă prin care putem forța sistemul este să trimit o solicitare către departamentul de Excepții și Reclamații. Ei pot analiza istoricul dumneavoastră și pot debloca manual oferta în 2-3 zile lucrătoare."
+    },
+    {
+      "rol": "client",
+      "text": "Două-trei zile? Eu am nevoie de internet acum, nu săptămâna viitoare. Sunt client fidel, nu se poate face ceva?"
+    },
+    {
+      "rol": "operator",
+      "text": "Regret, dar este singura procedură disponibilă. Dacă doriți, preiau acum detaliile și pun cererea cu prioritate. Îmi confirmați adresa de e-mail?"
+    },
+    {
+      "rol": "client",
+      "text": "E andrei.popescu@email.com. Dar sincer, nu mă așteptam la atâta birocrație pentru un serviciu pe care oricum îl plătesc."
+    },
+    {
+      "rol": "operator",
+      "text": "Am notat. Și un număr de contact alternativ, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "0745 223 445. Dar să știți că dacă nu se rezolvă până luni, mă mut direct la concurență..."
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles nemulțumirea dumneavoastră și am menționat-o în tichet. În cazul în care excepția este respinsă, pachetul va putea fi modificat standard abia pe 15 martie."
+    },
+    {
+      "rol": "client",
+      "text": "Până în martie? E clar... M-ați lămurit. O zi bună."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi cer scuze încă o dată. Vom face tot posibilul să grăbim procesul. La revedere."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

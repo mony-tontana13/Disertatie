@@ -1,0 +1,109 @@
+{
+  "id": "BNK_016",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la serviciul de urgență BCR. Numele meu este Andrei. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua! Mi-am pierdut cardul de credit acum o oră. Vreau să-l blocăm imediat, vă rog!"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg, ne ocupăm imediat. Îmi puteți spune ultimele patru cifre ale cardului?"
+    },
+    {
+      "rol": "client",
+      "text": "Sunt 4782. Vă rog, să nu apuce cineva să facă cumpărături pe banii mei."
+    },
+    {
+      "rol": "operator",
+      "text": "Am nevoie și de numele complet și data nașterii pentru validare."
+    },
+    {
+      "rol": "client",
+      "text": "Popescu Adrian Mihai, 15 martie 1987. Putem să ne mișcăm mai repede?"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Gata, cardul a fost blocat definitiv. Nu se mai pot face tranzacții."
+    },
+    {
+      "rol": "client",
+      "text": "Acum, când pot intra în posesia unui card nou? Am plăți de făcut."
+    },
+    {
+      "rol": "operator",
+      "text": "Emiterea standard durează între 7 și 10 zile lucrătoare."
+    },
+    {
+      "rol": "client",
+      "text": "Poftim? Două săptămâni fără acces la banii mei? Este inacceptabil."
+    },
+    {
+      "rol": "operator",
+      "text": "Aceasta este procedura de livrare prin poștă. Avem și varianta de curierat rapid."
+    },
+    {
+      "rol": "client",
+      "text": "Perfect. În cât timp ajunge prin curier?"
+    },
+    {
+      "rol": "operator",
+      "text": "În maximum 48 de ore, dar există o taxă de urgență de 45 de lei."
+    },
+    {
+      "rol": "client",
+      "text": "Deci vreți să mă taxați pentru că am pierdut cardul? Sunt client premium, mi se pare absurd."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău, dar sistemul generează automat taxa pentru orice reemitere prioritară."
+    },
+    {
+      "rol": "client",
+      "text": "Andrei, nu accept taxa asta. Vreau să vorbesc cu un supervizor, cineva care poate anula comisionul."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă pot transfera, dar s-ar putea să așteptați câteva minute pe linie. Doriți?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, aștept. Nu închideți."
+    },
+    {
+      "rol": "operator",
+      "text": "Bună ziua, sunt Ștefan, supervizorul de serviciu. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Ștefan, refuz să plătesc 45 de lei pentru o eroare umană minoră. Vreau cardul în 48 de ore, gratuit."
+    },
+    {
+      "rol": "supervizor",
+      "text": "Am verificat contul dumneavoastră. Politica băncii nu permite anularea taxei de logistică pentru carduri pierdute."
+    },
+    {
+      "rol": "client",
+      "text": "Deci preferați să pierdeți un client cu rulaj mare pentru 45 de lei? Chiar așa de rigizi sunteți?"
+    },
+    {
+      "rol": "supervizor",
+      "text": "Îmi pare rău că vedeți așa situația, dar procedurile sunt egale pentru toți clienții noștri."
+    },
+    {
+      "rol": "client",
+      "text": "Incredibil. O să accept livrarea de 10 zile atunci, dar să știți că îmi voi muta contul la concurență."
+    },
+    {
+      "rol": "supervizor",
+      "text": "Am înregistrat cererea standard. Veți primi SMS când cardul pleacă spre dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "Nici nu mai contează. Bună ziua."
+    }
+  ]
+}

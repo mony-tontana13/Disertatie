@@ -1,0 +1,65 @@
+{
+  "id": "TEL_005",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la Vodafone, eu sunt Alexandra Florescu. Cu ce pot să vă ajut?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună, bine. Am primit factura din această lună și cred că nu este corect calculată. E ceva anormal acolo."
+    },
+    {
+      "rol": "operator",
+      "text": "Să vedem... Vă rog, spuneți-mi numărul dumneavoastră de telefon pentru a accesa contul."
+    },
+    {
+      "rol": "client",
+      "text": "Da, sigur: 0723-456-789."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Factura din care lună vă creează probleme?"
+    },
+    {
+      "rol": "client",
+      "text": "Din decembrie. Am abonament de 49 de lei pe lună, dar a apărut suma de 87 de lei. Eu nu am apelat nicăieri în afara țării, nu-nțeleg de unde diferența."
+    },
+    {
+      "rol": "operator",
+      "text": "O să verific. O clipă... Aici arată că sunt patru apeluri internaționale pe 15 decembrie, către o rețea în Franța, cu o durată totală de 38 de minute. Asta ar explica cei 38 de lei în plus."
+    },
+    {
+      "rol": "client",
+      "text": "Nu, asta e imposibil. Eu nu am sunat în Franța. Telefonul a fost la mine tot timpul. E clar o greșeală în sistemul dumneavoastră."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea dumneavoastră. Voi deschide o reclamație internă pentru a verifica mai atent aceste apeluri. Procesul durează între 5 și 10 zile lucrătoare, iar după aceea veți fi contactat cu rezultatele."
+    },
+    {
+      "rol": "client",
+      "text": "Și ce fac cu cei 38 de lei până atunci? Trebuia să mă întrebe cineva înainte de a-mi debita."
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți dreptate. După investigație, dacă se confirmă apelurile frauduloase, veți primi banii înapoi integral. Am notat prioritizarea cererii pe cont."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, am înțeles. Dar cum rămâne cu plata facturii?"
+    },
+    {
+      "rol": "operator",
+      "text": "Recomand să plătiți cei 49 de lei pentru abonament, iar pentru restul de 38 de lei așteptați rezultatele investigației. Am notat pe cont astfel încât să nu primiți notificare pentru întârziere la această sumă."
+    },
+    {
+      "rol": "client",
+      "text": "Okay, am notat. Mulțumesc pentru explicație, deși nu e prea clar cum s-a întâmplat asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere. Ne pare rău pentru neplăceri. Veți primi un e-mail de confirmare a reclamației în curând. Zi bună!"
+    }
+  ]
+}

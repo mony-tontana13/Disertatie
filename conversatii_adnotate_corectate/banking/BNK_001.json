@@ -1,0 +1,67 @@
+{
+  "id": "BNK_001",
+  "domeniu": "banking",
+  "complexitate": "simpla",
+  "intentie_gold": ["problema_credit"],
+  "satisfactie": "pozitiv",
+  "motiv_satisfactie": "problema_rezolvata_rapid_cu_empatie_si_solutii_proactive",
+  "rezumat": "Client contactează banca pentru a se plânge de creșterea bruscă a ratei creditului ipotecar fără notificare prealabilă. Operatorul identifică rapid cauza: ajustarea automată a IRCC la 1 martie.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Irina Popescu, operator la BCR. Cu ce vă pot fi de ajutor astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua, Irina. Vă sun pentru că am observat o modificare la rata creditului meu ipotecar și sunt puțin îngrijorat. Suma a crescut brusc și nu înțeleg exact de ce."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg perfect îngrijorarea dumneavoastră, modificările de rată pot fi stresante. Haideți să verificăm împreună ce s-a întâmplat. Îmi puteți oferi ultimele 4 cifre ale cardului asociat creditului?"
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, ultimele cifre sunt 7834. Sper să fie o eroare, pentru că n-am primit niciun anunț oficial despre vreo creștere."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc, verific imediat... Da, am identificat situația. Rata s-a ajustat automat la 1 martie deoarece indicele IRCC a crescut, conform graficului de rambursare. Îmi cer scuze dacă notificarea prin aplicație nu a fost vizibilă, ar fi trebuit să fiți informat din timp."
+    },
+    {
+      "rol": "client",
+      "text": "Chiar n-am văzut nimic. Cu cât a crescut mai exact și cât va rămâne așa? E o sumă destul de mare pentru bugetul meu."
+    },
+    {
+      "rol": "operator",
+      "text": "Este o creștere de 180 de lei. Vestea bună este că acest nivel este plafonat pentru următoarele 6 luni. Ca să vă simțiți mai liniștit, vă trimit chiar acum pe e-mail noul grafic detaliat și o notificare oficială, să aveți totul scris."
+    },
+    {
+      "rol": "client",
+      "text": "Aș aprecia mult asta. Dar există vreo variantă să nu mai am surprize de genul ăsta pe viitor? Poate o dobândă care să nu se mai miște?"
+    },
+    {
+      "rol": "operator",
+      "text": "Absolut! Putem discuta despre trecerea la o dobândă fixă pe 5 ani, ceea ce v-ar oferi predictibilitate totală. De asemenea, dacă aveți economii, puteți face o rambursare anticipată cu scăderea ratei. Dacă doriți, vă pot programa chiar mâine la un consilier în sucursala cea mai apropiată de dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "Chiar vă rog, ar fi ideal să vorbesc cu cineva față în față despre dobânda fixă. Mulțumesc mult pentru răbdare, m-am mai liniștit acum că am înțeles mecanismul."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu cel mai mare drag! Am trimis deja e-mailul, vă rog să verificați dacă a ajuns. Vă programez la sucursala de la Piața Victoriei pentru mâine la ora 11:00. Mai pot face ceva pentru dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "A ajuns e-mailul, e totul în regulă. Ora 11:00 e perfectă. Vă mulțumesc mult pentru promptitudine și pentru soluții!"
+    },
+    {
+      "rol": "operator",
+      "text": "Mă bucur că am putut ajuta! Vă doresc o zi cât mai frumoasă și succes cu planificarea financiară. La revedere!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere!"
+    }
+  ]
+}

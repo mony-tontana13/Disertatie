@@ -1,0 +1,115 @@
+{
+  "id": "TEL_019",
+  "domeniu": "telecom",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "problema_internet",
+    "activare_esuata"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "timp_asteptare_mare_si_rezolvare_necerta",
+  "rezumat": "Client sunã pentru problemã de internet fãrã conexiune din ziua anterioarã. Operatorul diagnosticheazã cã upgrade-ul vitezei nu s-a activat corect, deºi cliente-ul confirmã cã a verificat manualele echipamentelor. Operatorul reinitializeazã procesul de activare, care va dura aproximativ 3 ore, cu recomandarea de a reporni routerul dupã o orã. Client acceptã soluþia, dar pãrãseºte conversaþia cu tonul resemnat ºi skeptic, neîncrezãtor în rezolvare.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la serviciul clienți Telekom România. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună. Am o problemă cu internetul. De ieri dimineață nu mai am conexiune. E complet mort."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg, este deranjant. Vă rog, care este numărul dumneavoastră de contract sau numărul de telefon asociat abonamentului?"
+    },
+    {
+      "rol": "client",
+      "text": "Este 0745-123-456. Și am nevoie de rezolvare cât mai repede posibil."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment, vă rog. Verific datele dumneavoastră în sistem... Am găsit abonamentul. Deci spuneți că nu aveți conexiune de ieri dimineață. Ați încercat să resetați routerul?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, evident că l-am resetat. De două ori, de fapt. Nu se schimbă nimic. Nici o lumină pe router nu se aprinde."
+    },
+    {
+      "rol": "operator",
+      "text": "Bun, înțeleg. Asta ne spune că poate fi o problemă cu alimentarea sau cu linia în sine. Vă rog să verificați dacă cablul de alimentare al routerului este bine conectat la priză."
+    },
+    {
+      "rol": "client",
+      "text": "Tocmai am verificat. Cablul e conectat corect. Privesc cum vorbim, internetul e mort, dar folosesc datele mobilului."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, deci alimentarea nu pare a fi problema. Vă rog, verificați și cablul de rețea — cel care intră în router din perete. E conectat?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, da, este...cablul e conectat. Uite, am verificat tot ce se poate verifica. Mă gândesc că e o problemă de la voi, de la rețea."
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți dreptate, este posibil. Lăsați-mă să verific infrastructura din zona dumneavoastră. Vă rog să mă așteptați un moment."
+    },
+    {
+      "rol": "client",
+      "text": "Bine."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru răbdare. Deci, analizând sistemele, văd că în zona dumneavoastră nu sunt raportate defecțiuni majore în rețea. Însă, am observat ceva interesant în cont."
+    },
+    {
+      "rol": "client",
+      "text": "Ce anume?"
+    },
+    {
+      "rol": "operator",
+      "text": "Văd că în urmă cu trei zile ați solicitat un upgrade al vitezei de internet. Această modificare ar fi trebuit activată ieri, dar pare că procesul nu s-a finalizat corect. Posibil că routerul dumneavoastră nu s-a sincronizat cu noile setări."
+    },
+    {
+      "rol": "client",
+      "text": "Ah, ce bine, fix ce mai lipsea. De ce nu mi-ați spus de la început că sunt probleme cu activarea?"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare sincer rău pentru inconvenient. Acum voi relua procesul de activare manual. Ar trebui să dureze cateva ore."
+    },
+    {
+      "rol": "client",
+      "text": "ORE? Am nevoie de internet acum. Pot să mă conectez în timp ce faceți voi asta?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, în perioada activării, e posibil să aveți întreruperi. Dar este singura cale să rezolvăm problema. Pot să reiau acum procesul, dacă sunteți de acord."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, hai faceți-o."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Am inițiat reactivarea. Voi putea verifica din nou peste aproximativ trei ore. Dumneavoastră puteți încerca să porniți din nou routerul peste o ora și vedeți dacă conexiunea se restabilește."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles. Și dacă nu se întâmplă nimic?"
+    },
+    {
+      "rol": "operator",
+      "text": "Dacă nu se schimbă nimic, vă rog să mă sunați din nou și vom escalada cererea la echipa tehnică. Dar sunt optimist că acum va merge."
+    },
+    {
+      "rol": "client",
+      "text": "Pff, da ce să zic, mai sun dacă altfel chiar nu se poate face treabă. La revedere."
+    },
+    {
+      "rol": "operator",
+      "text": "O zi bună! La revedere."
+    }
+  ],
+  "tip_complexitate": "multi_intentie"
+}

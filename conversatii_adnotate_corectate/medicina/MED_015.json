@@ -1,0 +1,118 @@
+{
+  "id": "MED_015",
+  "domeniu": "medicina",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "problema_programare"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "problema_nerezolvata_si_timp_asteptare_mare",
+  "rezumat": "Client contactează serviciul de programări cu o problemă la o programare de ecografie abdominală prevăzută pentru 15 martie cu doctorul Stoian. Operatorul confirmă găsirea programării în sistem, dar statusul este în așteptare și neconfirmat. Clientul este dezamăgit că programarea pe care a plătit-o parțial nu este confirmată și nu poate fi rezolvată pe loc. Operatorul promite verificarea cu secția de imagistică și revenire până la ora 17:00, dar nu garantează confirmarea. Clientul acceptă cu resemnare soluția, exprimând frustrare față de dezorganizarea serviciului, chiar dacă nu pune vina direct pe operator.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, sunt Tatiana George de la serviciul de programări al Clinicii Medicore. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună, da... am o problemă cu o programare pe care am făcut-o acum vreo două săptămâni."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Îmi puteți detalia ce nu este în regulă cu programarea dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "Păi... am programare pentru o ecografie, dar nu sunt sigur dacă e confirmată. Am primit un mesaj pe telefon, dar textul era ciudat și nu am înțeles nimic."
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a vă putea ajuta, am nevoie de câteva informații. Îmi puteți spune numele și data programării dacă le știți?"
+    },
+    {
+      "rol": "client",
+      "text": "Sunt Popescu Mihai. Programa cred că e pentru 15 martie, dar aș vrea să fiu sigur. Nu mai am SMS-ul."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, mă uit în sistem. Popescu Mihai... Ce tip de ecografie aveați programată?"
+    },
+    {
+      "rol": "client",
+      "text": "Ecografie abdominală. L-am contactat pe doctorul Stoian prin recepție și mi s-a spus să sun aici."
+    },
+    {
+      "rol": "operator",
+      "text": "Perfect. Un moment... Ah, am găsit programarea: 15 martie la ora 10:30. Corect?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, asta e. Vreau să știu dacă este confirmată. La ce doctor merg?"
+    },
+    {
+      "rol": "operator",
+      "text": "Ecografie abdominală cu doctorul Stoian în secția de imagistică. Statusul arată 'în așteptare', nu e confirmată. Probabil de aceea mesajul era confuz."
+    },
+    {
+      "rol": "client",
+      "text": "Cum vine în așteptare? Am plătit o parte din costuri. Nu mi s-a spus că nu e confirmată."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru neplăceri. Programările 'în așteptare' cer o confirmare suplimentară din partea clinicii. Trebuie să verific disponibilitatea doctorului Stoian."
+    },
+    {
+      "rol": "client",
+      "text": "Și cât va dura asta? Am luat liber de la muncă."
+    },
+    {
+      "rol": "operator",
+      "text": "Verific imediat cu secția de imagistică. Confirmările se fac de obicei în 24 de ore și veți fi anunțat prin mesaj sau apel."
+    },
+    {
+      "rol": "client",
+      "text": "Dacă doctorul Stoian nu e disponibil, ce se întâmplă?"
+    },
+    {
+      "rol": "operator",
+      "text": "Veți primi alte opțiuni de dată și oră cu alți specialiști. Vă anunțăm în orice caz."
+    },
+    {
+      "rol": "client",
+      "text": "Adică nu-mi puteți spune acum dacă e confirmat? Trebuie să aștept iar?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, doctorul Stoian nu e disponibil acum și nu am acces la agenda lui. Vă promit că verific și vă sun personal până la sfârșitul zilei."
+    },
+    {
+      "rol": "client",
+      "text": "E cam ciudat să nu se rezolve acum... Care e ora limită pe care pot conta?"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă sun până la 17:00 azi. Dacă nu reușesc, o colegă va prelua. Care e cel mai bun număr de telefon?"
+    },
+    {
+      "rol": "client",
+      "text": "0742 456 789. Foarte dezordonat totul..."
+    },
+    {
+      "rol": "operator",
+      "text": "Notez numărul. Îmi pare rău pentru inconveniente. Vă asigur că voi reveni cu răspunsul cât de repede."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, nu e vina dumneavoastră direct. Aștept apelul deci."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru înțelegere. Dacă mai aveți întrebări, nu ezitați să sunați. O zi bună și la revedere!"
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ],
+  "tip_complexitate": "ambigua"
+}

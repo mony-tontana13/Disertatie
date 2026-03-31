@@ -1,0 +1,114 @@
+{
+  "id": "RET_009",
+  "domeniu": "retail",
+  "complexitate": "complexa",
+  "intentie_gold": [
+    "produs_lipsa_stoc"
+  ],
+  "satisfactie": "negativ",
+  "motiv_satisfactie": "problema_nerezolvata_satisfactor_timp_asteptare_mare_lipsa_empatie",
+  "rezumat": "Client contactează pentru o comandă plasată cu monitor Samsung care era în stoc la moment. După trei zile, sistemul arată lipsa de stoc. Operatorul confirmă esgotarea stocului și inițiază anulare cu rambursare în 5-7 zile. Clientul exprimă frustrare față de durata așteptării și lipsa de soluții alternative. Deși comanda a fost anulată și reclamația înregistrată, clientul pleacă nemulțumit din cauza timpului lung de așteptare pentru banii săi și a lipsei de empatie operatorului.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Sunt Andrei Popa de la serviciul clienți TechStore. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună! Am o problemă cu o comandă plasată acum trei zile. Am comandat un monitor Samsung 27 inch, modelul LU2415M, și acum îmi apare ca produsul nu mai e în stoc."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg, îmi pare rău pentru situație. Pot să verific statusul comenzii dumneavoastră. Care este numărul comenzii?"
+    },
+    {
+      "rol": "client",
+      "text": "Este 4521847. Am plătit integral și mi s-a spus că urma să plece din depozit mâine."
+    },
+    {
+      "rol": "operator",
+      "text": "Un moment, verific... Din păcate, da, produsul era în stoc când ați plasat comanda, dar acum a apărut această problemă."
+    },
+    {
+      "rol": "client",
+      "text": "Cum adică \"acum\"? Eu am comandat convins că îl veți trimite..."
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți dreptate, îmi pare sincer rău. Sistemul nu a actualizat stocul la timp. Vă pot verifica imediat cu depozitul."
+    },
+    {
+      "rol": "client",
+      "text": "Și cât va dura? Dacă nu-l pot avea, prefer să anulați comanda și să-mi returnați banii."
+    },
+    {
+      "rol": "operator",
+      "text": "Verific acum... Un moment. Într-adevăr, monitorul nu mai este disponibil. Stocul s-a epuizat."
+    },
+    {
+      "rol": "client",
+      "text": "Perfect. Anulați comanda și returnați-mi banii."
+    },
+    {
+      "rol": "operator",
+      "text": "Bineînțeles. Voi începe imediat procesul de anulare. Banii vor fi returnați în 5-7 zile lucrătoare."
+    },
+    {
+      "rol": "client",
+      "text": "Cinci până la șapte zile? Am plătit prin card, nu trebuia să fie așa."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea. Timpul depinde de banca emitentă. Noi facem rambursarea imediat, dar procesarea e la bancă."
+    },
+    {
+      "rol": "client",
+      "text": "Și eu ce fac până atunci? Am pierdut timp și acum aștept pentru banii mei."
+    },
+    {
+      "rol": "operator",
+      "text": "Avem un alt model similar, dacă vă interesează. Pot să îl expediem imediat."
+    },
+    {
+      "rol": "client",
+      "text": "Eu am comandat modelul specific. Nu accept înlocuiri, doar banii înapoi cât mai repede."
+    },
+    {
+      "rol": "operator",
+      "text": "Voi vedea dacă pot accelera rambursarea. Un moment..."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, aștept."
+    },
+    {
+      "rol": "operator",
+      "text": "Am verificat, dar nu putem accelera procesul. 5-7 zile e standardul, din păcate."
+    },
+    {
+      "rol": "client",
+      "text": "Am pierdut timpul și acum aștept banii care sunt ai mei."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare foarte rău. Pot doar să prioritizez rambursarea și să notez reclamația."
+    },
+    {
+      "rol": "client",
+      "text": "Prioritizare care durează tot 5-7 zile? Lăsați așa. Anulați comanda și notați reclamația."
+    },
+    {
+      "rol": "operator",
+      "text": "Da, am confirmat anularea. Veți primi un email în 30 de minute. Am generat și un tichet intern. Sperăm ca următoarea experiență să fie mai bună."
+    },
+    {
+      "rol": "client",
+      "text": "Sper și eu. O zi bună."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere!"
+    }
+  ],
+  "tip_complexitate": "problema_nerezolvata"
+}

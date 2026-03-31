@@ -1,0 +1,57 @@
+{
+  "id": "SP_003",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la Direcția pentru Servicii Publice Locale. Sunt Cristina Popescu. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Am o întrebare legată de programul de audienţe al dumneavoastră. Vreau să știu cum funcționează și care sunt orele."
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur. Audiențele se desfășoară conform unui program prestabilit. Puteți să-mi spuneți pentru ce localitate sau pe ce tip de serviciu doriți informații?"
+    },
+    {
+      "rol": "client",
+      "text": "Am nevoie de detalii pentru sediul din centru. Și vreau să știu dacă trebuie programare prealabilă sau pot veni direct."
+    },
+    {
+      "rol": "operator",
+      "text": "Foarte bine. Sediul central funcționează de luni până vineri, între orele 09:00 și 17:00. Pentru unele servicii este necesară programarea prealabilă, care se face online pe site-ul nostru sau sunând la departamentul respectiv. Pentru alte servicii admitem acces direct, în ordinea sosirii. Pe care dintre serviciile noastre doriți să accesați?"
+    },
+    {
+      "rol": "client",
+      "text": "Mă interesează serviciul de certificări. Trebuie să programez ceva?"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru serviciul de certificări nu este obligatorie programarea prealabilă. Puteți să veniți direct. Vă recomand să ajungeți dimineața, pentru a evita aglomerația. Luați cu dumneavoastră documentele necesare și actul de identitate."
+    },
+    {
+      "rol": "client",
+      "text": "Bun, am înțeles. Și ce documente trebuie să aduc, dacă pot ști?"
+    },
+    {
+      "rol": "operator",
+      "text": "Documentele depind de tipul de certificare pe care îl solicitați. Pentru certificări generale sunt necesare actul de identitate și formularul de solicitare, pe care îl puteți completa și la sediu. Dacă doriți o listă completă, o găsiți pe portalul nostru oficial, sau vă pot da numărul de telefon al departamentului de certificări pentru clarificări suplimentare."
+    },
+    {
+      "rol": "client",
+      "text": "Nu, nu este nevoie, am informațiile de care aveam nevoie."
+    },
+    {
+      "rol": "operator",
+      "text": "Mă bucur că am putut să vă ajut. Vă doresc o vizită plăcută la sediul nostru. Dacă mai aveți întrebări în viitor, nu ezitați să ne sunați."
+    },
+    {
+      "rol": "client",
+      "text": "Mulțumesc! O zi bună!"
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere! O zi bună și dvs.!"
+    }
+  ]
+}

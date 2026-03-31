@@ -1,0 +1,73 @@
+{
+  "id": "RET_004",
+  "domeniu": "retail",
+  "complexitate": "simpla",
+  "intentie_gold": [
+    "problema_garantie"
+  ],
+  "satisfactie": "neutru",
+  "motiv_satisfactie": "problema_rezolvata_rapid_cu_solutie_gratuita",
+  "rezumat": "Client raportează defecțiune la imprimanta cumpărată acum trei luni. Operator confirmă garanția valabilă până februarie 2026 și oferă două opțiuni: aducere la service sau ridicare prin curier gratuit.",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, serviciul clienți al magazinului TechStore. Sunt Cristian. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună, am cumpărat de la voi o imprimantă acum trei luni și acum nu mai funcționează. Aș vrea să știu cum stă treaba cu garanția."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Garanția pentru produsele electronice este de doi ani de la data achiziției. Puteți să-mi furnizați, vă rog, numărul comenzii sau seria produsului?"
+    },
+    {
+      "rol": "client",
+      "text": "Comanda era numărul 487923. E o Epson, cumva știți voi ce s-a întâmplat?"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc, am găsit comanda. Garanția este valabilă până în februarie 2026. Pentru a procesa mai departe, am nevoie să știu exact care este defecțiunea."
+    },
+    {
+      "rol": "client",
+      "text": "Nu se mai aprinde deloc. Am încercat să o conectez din nou, dar nimic. Se face un zgomot ciudat când încerc să o pornesc și asta e tot."
+    },
+    {
+      "rol": "operator",
+      "text": "Am notat. Aveți două opțiuni: fie o aduceți personal la service-ul nostru autorizat pentru diagnosticare, fie ne ocupăm noi de transport prin curier. Întrucât este sub garanție, transportul este gratuit."
+    },
+    {
+      "rol": "client",
+      "text": "Și cât durează reparația? Cât timp o să fiu fără imprimantă?"
+    },
+    {
+      "rol": "operator",
+      "text": "De regulă, diagnosticarea durează între trei și cinci zile lucrătoare, iar durata reparației depinde de piesele necesare. Service-ul vă va informa direct cu privire la detalii."
+    },
+    {
+      "rol": "client",
+      "text": "Bine. Deci mă trimiteți curierul acasă și voi o reparați?"
+    },
+    {
+      "rol": "operator",
+      "text": "Exact. Voi genera un bon de livrare, iar curierul va veni la adresa dumneavoastră în următoarele 48 de ore. Vă rog să împachetați bine imprimanta. La ce adresă putem să o ridicăm?"
+    },
+    {
+      "rol": "client",
+      "text": "Strada Mihail Kogălniceanu, numărul 15, apartamentul 42, sector 1, București."
+    },
+    {
+      "rol": "operator",
+      "text": "Perfect, am reținut adresa. Vă vom trimite un email cu numărul de urmărire și instrucțiunile pentru preluare. Mai aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu, cred că e bine. Mulțumesc."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc și eu. O zi bună!"
+    }
+  ]
+}

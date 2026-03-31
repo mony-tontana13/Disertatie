@@ -1,0 +1,105 @@
+{
+  "id": "BNK_018",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, sunt Andrei Popescu de la Banca Comercială. Cum vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună, am o problemă cu un transfer pe care l-am făcut ieri și... nu trebuia să se întâmple, aș vrea să-l anulați."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Pentru a verifica tranzacția, îmi puteți da numărul de client sau CNP-ul?"
+    },
+    {
+      "rol": "client",
+      "text": "Sigur, e 1850432987654. Am făcut transferul ieri, 15 martie, pe la 10 și ceva, dar am greșit contul destinatar."
+    },
+    {
+      "rol": "operator",
+      "text": "Stați să văd... O clipă, mă uit în sistem."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, ăăă, am copiat contul greșit dintr-un mesaj, era cineva care cerea bani."
+    },
+    {
+      "rol": "operator",
+      "text": "Da, am găsit tranzacția. Este un transfer de 2.500 de lei."
+    },
+    {
+      "rol": "client",
+      "text": "Exact, acela e. Și banii nu trebuiau să ajungă acolo. Pot recupera suma?"
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, trebuie să vă spun că transferul a fost deja procesat. După 24 de ore, nu putem anula direct. Banii au ajuns la banca beneficiarului."
+    },
+    {
+      "rol": "client",
+      "text": "Serios? Minunat. Deci nu pot face nimic? Sistemul vostru nu permite corectarea greșelilor."
+    },
+    {
+      "rol": "operator",
+      "text": "Știu că e frustrant. Odată ce transferul e compensat, revocarea devine greoaie, dar nu imposibilă. Puteți contacta beneficiarul pentru a returna suma sau să deschideți o reclamație formală."
+    },
+    {
+      "rol": "client",
+      "text": "Reclamație? Cât durează asta? Și cum pot contacta beneficiarul dacă nu-l cunosc?"
+    },
+    {
+      "rol": "operator",
+      "text": "Reclamația durează între 10 și 15 zile lucrătoare, maxim 20. Pot deschide eu o reclamație pentru dvs., dar va trebui să ne adresăm băncii beneficiare pentru recuperare."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, deschideți-o. Ce trebuie să fac eu?"
+    },
+    {
+      "rol": "operator",
+      "text": "Voi iniția reclamația, iar dumneavoastră va trebui să completați un formular pe care vi-l trimit pe email în următoarele două ore."
+    },
+    {
+      "rol": "client",
+      "text": "Și dacă beneficiarul nu vrea să returneze banii?"
+    },
+    {
+      "rol": "operator",
+      "text": "Atunci se deschide o anchetă între bănci. E mai dificil, dar nu imposibil. Aveți dovada erorii, ca de exemplu mesajul cu IBAN-ul greșit?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, am mesajul. dar cred că beneficiarii care primesc bani pe nepusă masă nu vor să-i returneze."
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, aveți dreptate. Sunt cazuri când recuperarea e dificilă legal, fără a dovedi frauda. Reclamația rămâne cea mai bună opțiune momentan."
+    },
+    {
+      "rol": "client",
+      "text": "Am înțeles. Deci deschideți reclamația și aștept formularul pe email?"
+    },
+    {
+      "rol": "operator",
+      "text": "Exact, voi trimite formularul azi. Îl puteți completa și semna digital sau la o sucursală, cum preferați."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, dar nu am așteptări mari. În viitor, poate implementați un sistem cu confirmări mai stricte pentru transferuri."
+    },
+    {
+      "rol": "operator",
+      "text": "Sugestia dvs. e valoroasă, și vă mulțumim. Vă voi contacta cu actualizări despre reclamație. Sper să se rezolve cu bine."
+    },
+    {
+      "rol": "client",
+      "text": "Mulțumesc. O seară bună."
+    },
+    {
+      "rol": "operator",
+      "text": "La revedere, îmi pare rău pentru neplăceri. Suntem aici dacă mai aveți nevoie de ajutor!"
+    }
+  ]
+}

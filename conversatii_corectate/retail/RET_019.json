@@ -1,0 +1,77 @@
+{
+  "id": "RET_019",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Ați sunat la serviciul clienți MegaShop, numele meu este Andrei Popa. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună ziua. Sunt extrem de iritat. Am primit ieri comanda 784521, după o așteptare de două săptămâni, și pachetul arată de parcă a fost călcat de mașină. Ceasul din interior este zgâriat vizibil."
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare nespus de rău să aud acest lucru. Permiteți-mi să verific istoricul expediției... Un moment, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "Verificați, vă rog, că deja am pierdut destul timp. Cutia nu avea niciun strat de protecție, era pur și simplu ceasul aruncat într-un carton subțire."
+    },
+    {
+      "rol": "operator",
+      "text": "Văd aici comanda: un ceas de mână și un portofel de piele. Într-adevăr, livrarea a durat 14 zile deoarece coletul a rămas blocat într-un depozit intermediar din cauza unei erori de sortare."
+    },
+    {
+      "rol": "client",
+      "text": "Deci a stat 10 zile degeaba într-un depozit și, colac peste pupăză, a ajuns și distrus. Cine răspunde pentru bătaia asta de joc? Eu am plătit un produs nou, nu unul la mâna a doua."
+    },
+    {
+      "rol": "operator",
+      "text": "Aveți perfectă dreptate, situația este inacceptabilă. Pentru a iniția procedura de daună, am nevoie să trimiteți fotografii cu ambalajul deteriorat și cu zgârieturile de pe ceas la adresa suport@megashop.ro."
+    },
+    {
+      "rol": "client",
+      "text": "Le am deja pregătite, dar nu înțeleg de ce trebuie să mai aștept și după e-mailuri. Nu puteți să îmi trimiteți un alt ceas prin curier rapid acum? Am o nuntă peste câteva zile și aveam nevoie de el."
+    },
+    {
+      "rol": "operator",
+      "text": "Din păcate, trebuie să urmăm pașii de validare a daunei cu firma de curierat. Analiza fotografiilor durează cam 48 de ore, iar investigația cu transportatorul poate dura între 5 și 10 zile lucrătoare."
+    },
+    {
+      "rol": "client",
+      "text": "Glumiți? Adică eu plătesc pentru greșelile voastre de ambalare și pentru incompetența curierului cu timp de așteptare? Este a treia oară când am probleme cu livrările de la voi."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg frustrarea, însă acestea sunt termenele logistice pe care nu le pot scurta manual. Tot ce pot face este să notez în sistem că doriți înlocuirea urgentă a produsului, nu rambursarea banilor."
+    },
+    {
+      "rol": "client",
+      "text": "Data trecută mi-ați promis un voucher de reducere pentru o întârziere și nici pe acela nu l-am primit."
+    },
+    {
+      "rol": "operator",
+      "text": "Văd că a existat o solicitare, dar a fost respinsă deoarece comanda de atunci fusese livrată cu o întârziere de doar 48 de ore față de termen."
+    },
+    {
+      "rol": "client",
+      "text": "Incredibil... deci căutați orice scuză să nu vă asumați răspunderea. O să trimit e-mailul acum, dar să știți că este ultima dată când mai comand ceva. O să fac și o reclamație la ANPC dacă nu primesc ceasul săptămâna asta."
+    },
+    {
+      "rol": "operator",
+      "text": "Este dreptul dumneavoastră. Voi monitoriza personal e-mailul de la adresa cristian.moraru@email.com pentru a urgenta verificarea fotografiilor. Mai aveți și alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "Nu mai am nicio întrebare, m-am lămurit cât de mult vă pasă de clienți. Bună ziua."
+    },
+    {
+      "rol": "operator",
+      "text": "Ne cerem scuze încă o dată. O zi bună."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BNK_008",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, vă salut! Sunt Alexandra Popescu de la Banca Comercială România. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "Bună, da... am o problemă, ăăă, am pierdut cardul de debit și nu sunt sigur ce trebuie să fac acum."
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg. Haideți să rezolvăm asta. O să blocăm imediat cardul. Mă puteți confirma ultimele patru cifre ale cardului?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, desigur. E... 4827."
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc. Și, dacă aveți seria cardului la îndemână, primele patru cifre, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "Stai să văd... nu-mi amintesc exact. Hmmm, cred că e 5632."
+    },
+    {
+      "rol": "operator",
+      "text": "Bine, să verificăm. Un moment, vă rog. Am găsit cardul în sistem. Îl voi bloca imediat ca să prevenim orice utilizare neautorizată."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, mulțumesc. Și, ăăă, cât timp o să dureze până primesc un card nou?"
+    },
+    {
+      "rol": "operator",
+      "text": "Cardul nou va fi emis astăzi și ar trebui să-l primiți în 3-5 zile lucrătoare la adresa de corespondență. Dacă preferați, îl puteți ridica mai repede de la o sucursală."
+    },
+    {
+      "rol": "client",
+      "text": "Okay... și până atunci, ăăă, cum fac dacă am nevoie de bani, retrageri de la bancomat sau plăți?"
+    },
+    {
+      "rol": "operator",
+      "text": "Puteți folosi portofelul mobil — BankaApp sau Apple Pay, dacă le aveți deja setate. Sau, putem activa cardul de credit asociat, dacă aveți. În caz contrar, se pot face viramente online."
+    },
+    {
+      "rol": "client",
+      "text": "Am aplicația pe telefon, da. Dar, cum adaug cardul la portofelul mobil?"
+    },
+    {
+      "rol": "operator",
+      "text": "Este foarte simplu. Deschideți BankaApp, mergeți la secțiunea Carduri, selectați cardul și găsiți opțiunea Adaugă la portofel. Urmați instrucțiunile de acolo, este ca o plată contactless."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, o să încerc. Și, stați... există vreo taxă pentru cardul nou sau pentru blocare?"
+    },
+    {
+      "rol": "operator",
+      "text": "Blocarea cardului nu implică nicio taxă. Reemiterea cardului de debit în caz de pierdere este un serviciu standard și nu costă nimic."
+    },
+    {
+      "rol": "client",
+      "text": "Bine, mulțumesc. Trebuie să fac altceva sau e totul rezolvat?"
+    },
+    {
+      "rol": "operator",
+      "text": "Cardul este deja blocat. Veți primi confirmare prin SMS și email. Asta a fost tot. Dacă mai aveți întrebări despre noul card când ajunge, nu ezitați să ne sunați."
+    },
+    {
+      "rol": "client",
+      "text": "Okay. Mulțumesc. Sper că nimeni nu va folosi cardul."
+    },
+    {
+      "rol": "operator",
+      "text": "Cardul este complet blocat acum, deci nicio tranzacție nu va fi posibilă. Dacă observați orice operațiune suspectă, anunțați-ne imediat și vom investiga. Este important."
+    },
+    {
+      "rol": "client",
+      "text": "Da, înțeleg. Mulțumesc din nou."
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere. Vi s-au clarificat toți pașii următori?"
+    },
+    {
+      "rol": "client",
+      "text": "Da, cred că da. Mulțumesc."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă doresc o zi bună! Și nu ezitați să ne contactați dacă aveți alte întrebări."
+    },
+    {
+      "rol": "client",
+      "text": "La revedere."
+    }
+  ]
+}
