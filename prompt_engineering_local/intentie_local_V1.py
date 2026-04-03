@@ -77,7 +77,8 @@ def main():
     )
     metrici = calculeaza_si_afiseaza(rezultate, VERSIUNE, args.model)
 
-    output_file = os.path.join(RESULTS_DIR, f"intentie_local_{args.model}_V1_{descriere_set}_2.json")
+    # Denumirea fisierului final este schimbata atunci cand sunt rulate versiuni de prompt-uri sau subseturi de date
+    output_file = os.path.join(RESULTS_DIR, f"intentie_local_{args.model}_V1_{descriere_set}_tot.json")
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump({"model": args.model, "versiune": VERSIUNE, "set_date": descriere_set,
                     "metrici": metrici, "rezultate_detaliate": rezultate},
