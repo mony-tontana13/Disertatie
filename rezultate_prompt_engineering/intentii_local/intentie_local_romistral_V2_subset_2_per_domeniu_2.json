@@ -1,0 +1,143 @@
+{
+  "model": "romistral",
+  "versiune": "V2",
+  "set_date": "subset_2_per_domeniu",
+  "metrici": {
+    "model": "romistral",
+    "versiune": "V2",
+    "accuracy": 0.0,
+    "f1": 0.0,
+    "latenta": 11.2,
+    "nr_conversatii": 10,
+    "per_domeniu": {
+      "banking": 0.0,
+      "medicina": 0.0,
+      "retail": 0.0,
+      "telecom": 0.0,
+      "servicii_publice": 0.0
+    },
+    "raport_text": "\n=== romistral | Prompt V2 | 10 conversatii ===\n  Accuracy:      0.00%\n  F1 Macro:      0.000\n  Latenta medie: 11.2s\n  Erori (10/10):\n    BNK_006 [simpla]: gold=problema_schimb_valutar pred=alta_solicitare\n    BNK_008 [complexa]: gold=card_pierdut pred=alta_solicitare\n    MED_001 [simpla]: gold=rezultate_analize pred=alta_solicitare\n    MED_018 [complexa]: gold=problema_reteta pred=alta_solicitare\n    RET_003 [simpla]: gold=problema_livrare pred=alta_solicitare\n    RET_010 [complexa]: gold=comanda_gresita pred=alta_solicitare\n    TEL_002 [simpla]: gold=portare_esuata pred=alta_solicitare\n    TEL_009 [complexa]: gold=problema_modificare_abonament pred=alta_solicitare\n    SP_006 [simpla]: gold=problema_plata_taxa pred=alta_solicitare\n    SP_008 [complexa]: gold=programare_ghiseu pred=alta_solicitare\n  Per domeniu:\n    banking               : 0% (0/2)\n    medicina              : 0% (0/2)\n    retail                : 0% (0/2)\n    telecom               : 0% (0/2)\n    servicii_publice      : 0% (0/2)"
+  },
+  "rezultate_detaliate": [
+    {
+      "id": "BNK_006",
+      "domeniu": "banking",
+      "complexitate": "simpla",
+      "intentie_gold": "problema_schimb_valutar",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Clientul a sunat pentru a întreba despre cursul de schimb valutar.",
+      "latenta": 10.53,
+      "versiune_prompt": "V2",
+      "model": "romistral"
+    },
+    {
+      "id": "BNK_008",
+      "domeniu": "banking",
+      "complexitate": "complexa",
+      "intentie_gold": "card_pierdut",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Clientul a sunat pentru că a pierdut cardul de debit.",
+      "latenta": 11.76,
+      "versiune_prompt": "V2",
+      "model": "romistral"
+    },
+    {
+      "id": "MED_001",
+      "domeniu": "medicina",
+      "complexitate": "simpla",
+      "intentie_gold": "rezultate_analize",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Clientul a sunat pentru a întreba despre rezultatele analizelor.",
+      "latenta": 8.92,
+      "versiune_prompt": "V2",
+      "model": "romistral"
+    },
+    {
+      "id": "MED_018",
+      "domeniu": "medicina",
+      "complexitate": "complexa",
+      "intentie_gold": "problema_reteta",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Clientul a sunat pentru că avea o problemă cu o rețetă.",
+      "latenta": 12.89,
+      "versiune_prompt": "V2",
+      "model": "romistral"
+    },
+    {
+      "id": "RET_003",
+      "domeniu": "retail",
+      "complexitate": "simpla",
+      "intentie_gold": "problema_livrare",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Clientul a sunat pentru că a avut o problemă cu o livrare.",
+      "latenta": 9.08,
+      "versiune_prompt": "V2",
+      "model": "romistral"
+    },
+    {
+      "id": "RET_010",
+      "domeniu": "retail",
+      "complexitate": "complexa",
+      "intentie_gold": "comanda_gresita",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Clientul a sunat pentru a raporta o eroare de comandă.",
+      "latenta": 12.9,
+      "versiune_prompt": "V2",
+      "model": "romistral"
+    },
+    {
+      "id": "TEL_002",
+      "domeniu": "telecom",
+      "complexitate": "simpla",
+      "intentie_gold": "portare_esuata",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Clientul a sunat pentru a rezolva o problemă de portabilitate a numărului.",
+      "latenta": 10.19,
+      "versiune_prompt": "V2",
+      "model": "romistral"
+    },
+    {
+      "id": "TEL_009",
+      "domeniu": "telecom",
+      "complexitate": "complexa",
+      "intentie_gold": "problema_modificare_abonament",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Clientul a sunat pentru a modifica pachetul de abonament.",
+      "latenta": 11.96,
+      "versiune_prompt": "V2",
+      "model": "romistral"
+    },
+    {
+      "id": "SP_006",
+      "domeniu": "servicii_publice",
+      "complexitate": "simpla",
+      "intentie_gold": "problema_plata_taxa",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Clientul a sunat pentru a verifica starea unei taxe plătite.",
+      "latenta": 8.11,
+      "versiune_prompt": "V2",
+      "model": "romistral"
+    },
+    {
+      "id": "SP_008",
+      "domeniu": "servicii_publice",
+      "complexitate": "complexa",
+      "intentie_gold": "programare_ghiseu",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "Clientul a sunat pentru a programa o programare la ghișeu pentru a verifica dosarul de subvenții din 2022.",
+      "latenta": 15.62,
+      "versiune_prompt": "V2",
+      "model": "romistral"
+    }
+  ]
+}

@@ -1,59 +1,57 @@
 """
-Prompt V4 - Detectare Intentie - Modele Locale
-Utilizeaza utils_intentie_local.py
+Prompt V4 - Detectare Intentie - Modele API
+GPT-4.1-mini, Gemini-2.5-flash, Aya-Expanse-8b
 
 Utilizare:
-    # Subset mic (implicit 2 per domeniu = 10 total)
-    python3 intentie_local_V4.py --model romistral
+    # Subset mic (10 conversatii)
+    python3 intentie_api_V4.py
 
     # Subset personalizat
-    python3 intentie_local_V4.py --model romistral --n_per_domeniu 4
+    python3 intentie_api_V4.py --n_per_domeniu 4
 
-    # Tot setul de date
-    python3 intentie_local_V4.py --model romistral --tot_setul
+    # Tot setul
+    python3 intentie_api_V4.py --tot_setul
 """
 import json
 import os
 import sys
-import argparse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from utils_intentie_local import (
-    INTENTII_DOMENII, EXEMPLE_FEWSHOT,
+from utils_intentie_api import (
+    INTENTII_DOMENII, EXEMPLE_FEWSHOT_LUNGI,
     selecteaza_subset, incarca_toate_conversatiile,
-    incarca_model, ruleaza_evaluare, calculeaza_si_afiseaza
+    ruleaza_evaluare_api, calculeaza_si_afiseaza_api
 )
 
 VERSIUNE = "V4"
 RESULTS_DIR = "./rezultate_prompt_engineering"
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
-
 def get_prompt(dialog, domeniu):
-    """V4: Zero-shot + Role + Constrained + Structured + Few-shot."""
+    """V4: Role + Structured + Constrained + Few-shot (Varianta B - dialoguri complete)."""
     intentii = INTENTII_DOMENII.get(domeniu, [])
     intentii_str = ", ".join(intentii)
-    exemple = EXEMPLE_FEWSHOT.get(domeniu, [])
+    exemple = EXEMPLE_FEWSHOT_LUNGI.get(domeniu, [])
 
     exemple_text = ""
     for dialog_ex, intentie_ex in exemple:
         exemple_text += (
-            "CONVERSATIE: " + dialog_ex + "\n"
+            "CONVERSATIE:\n" + dialog_ex + "\n"
             "INTENTIE IDENTIFICATA: " + intentie_ex + "\n\n"
         )
 
     return (
-        "Esti un agent specializat in analiza conversatiilor telefonice din call-center-uri "
-        "din domeniul " + domeniu + ". Rolul tau este sa identifici intentia clientului.\n\n"
-        "SARCINA: Identifica intentia sau intentiile clientului din conversatia de mai jos.\n\n"
+        "Esti un expert in clasificarea intentiilor pentru call-center-uri "
+        "din domeniul " + domeniu + ".\n\n"
+        "CONVERSATIE:\n" + dialog + "\n\n"
+        "SARCINA: Pe baza conversatiei de mai sus, identifica intentia clientului.\n\n"
         "REGULI:\n"
         "1. Include DOAR ce a cerut sau intrebat clientul — ignora actiunile operatorului\n"
-        "2. Alege EXCLUSIV din lista de intentii furnizata\n"
+        "2. Alege EXCLUSIV din lista de intentii furnizata — nu inventa etichete noi\n"
         "3. Returneaza MAXIM doua intentii, separate prin virgula\n"
         "4. Prima intentie trebuie sa fie cea principala, cu care a sunat clientul\n\n"
         "INTENTII DISPONIBILE: " + intentii_str + "\n\n"
         "EXEMPLE:\n" + exemple_text +
-        "CONVERSATIE DE ANALIZAT:\n" + dialog + "\n\n"
         "INTENTIE IDENTIFICATA:"
     )
 
@@ -111,16 +109,15 @@ def get_prompt2(dialog, domeniu):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Prompt V4 - Detectare Intentie - Modele Locale")
-    parser.add_argument("--model", required=True, choices=["romistral", "rogemma"])
+    import argparse
+    parser = argparse.ArgumentParser(description="Prompt V4 - Detectare Intentie - Modele API")
     parser.add_argument("--n_per_domeniu", type=int, default=2,
                         help="Conversatii per domeniu pentru subset (default: 2 = 10 total)")
     parser.add_argument("--tot_setul", action="store_true",
                         help="Ruleaza pe toate cele 100 de conversatii")
     args = parser.parse_args()
 
-    print(f"\n=== PROMPT V4 — DETECTARE INTENTIE — MODELE LOCALE ===")
-    print(f"Model: {args.model}")
+    print(f"\n=== PROMPT V4 — DETECTARE INTENTIE — MODELE API ===")
 
     FOLDER_ADNOTAT = "./conversatii_adnotate_corectate"
 
@@ -135,22 +132,40 @@ def main():
 
     print(f"Total: {len(conversatii)} conversatii")
 
-    tokenizer, model, device = incarca_model(args.model)
+    toate_rezultatele = ruleaza_evaluare_api(conversatii, get_prompt2, VERSIUNE, RESULTS_DIR)
+    toate_metrici = calculeaza_si_afiseaza_api(toate_rezultatele, VERSIUNE)
 
-    rezultate = ruleaza_evaluare(
-        conversatii, tokenizer, model, device,
-        get_prompt, VERSIUNE, args.model, RESULTS_DIR
-    )
-    metrici = calculeaza_si_afiseaza(rezultate, VERSIUNE, args.model)
+    # Tabel comparativ final
+    print(f"\n{'='*75}")
+    print("TABEL COMPARATIV MODELE API")
+    print(f"{'='*75}")
+    print(f"  {'Model':<22} {'Accuracy':>10} {'F1':>8} {'TTFT':>10} {'Latenta':>10}")
+    print(f"  {'-'*65}")
+    for m in toate_metrici:
+        print(f"  {m['model']:<22} {m['accuracy']:>10.2%} {m['f1']:>8.3f} {m['ttft_medie']:>9.3f}s {m['latenta_medie']:>9.3f}s")
 
-    output_file = os.path.join(RESULTS_DIR, f"intentie_local_{args.model}_V4_{descriere_set}.json")
+    # Salveaza rezultatele
+    output_file = os.path.join(RESULTS_DIR, f"intentie_api_V4_{descriere_set}.json")
+    raport_file = os.path.join(RESULTS_DIR, f"intentie_api_V4_{descriere_set}_raport.txt")
+
+    toate_rez_flat = []
+    for rez_list in toate_rezultatele.values():
+        toate_rez_flat.extend(rez_list)
+
     with open(output_file, "w", encoding="utf-8") as f:
-        json.dump({"model": args.model, "versiune": VERSIUNE, "set_date": descriere_set,
-                    "metrici": metrici, "rezultate_detaliate": rezultate},
-                  f, ensure_ascii=False, indent=2)
+        json.dump({
+            "versiune": VERSIUNE, "set_date": descriere_set,
+            "metrici": toate_metrici,
+            "rezultate_detaliate": toate_rez_flat
+        }, f, ensure_ascii=False, indent=2)
+
+    raport_complet = "\n".join(m.get("raport_text", "") for m in toate_metrici)
+    with open(raport_file, "w", encoding="utf-8") as f:
+        f.write(raport_complet)
+
     print(f"\nRezultate salvate in: {output_file}")
+    print(f"Raport text salvat in: {raport_file}")
 
 
 if __name__ == "__main__":
-    import argparse
     main()
