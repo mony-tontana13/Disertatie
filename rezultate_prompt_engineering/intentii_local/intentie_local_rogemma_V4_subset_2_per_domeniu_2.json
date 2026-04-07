@@ -1,0 +1,143 @@
+{
+  "model": "rogemma",
+  "versiune": "V4",
+  "set_date": "subset_2_per_domeniu",
+  "metrici": {
+    "model": "rogemma",
+    "versiune": "V4",
+    "accuracy": 0.6,
+    "f1": 0.4286,
+    "latenta": 26.63,
+    "nr_conversatii": 10,
+    "per_domeniu": {
+      "banking": 0.5,
+      "medicina": 1.0,
+      "retail": 1.0,
+      "telecom": 0.5,
+      "servicii_publice": 0.0
+    },
+    "raport_text": "\n=== rogemma | Prompt V4 | 10 conversatii ===\n  Accuracy:      60.00%\n  F1 Macro:      0.429\n  Latenta medie: 26.6s\n  Erori (4/10):\n    BNK_008 [complexa]: gold=card_pierdut pred=card_blocat\n    TEL_009 [complexa]: gold=problema_modificare_abonament pred=problema_internet\n    SP_006 [simpla]: gold=problema_plata_taxa pred=reclamatie_serviciu\n    SP_008 [complexa]: gold=programare_ghiseu pred=informatii_program\n  Per domeniu:\n    banking               : 50% (1/2)\n    medicina              : 100% (2/2)\n    retail                : 100% (2/2)\n    telecom               : 50% (1/2)\n    servicii_publice      : 0% (0/2)"
+  },
+  "rezultate_detaliate": [
+    {
+      "id": "BNK_006",
+      "domeniu": "banking",
+      "complexitate": "simpla",
+      "intentie_gold": "problema_schimb_valutar",
+      "intentie_pred": "problema_schimb_valutar",
+      "corecta": true,
+      "raspuns_brut": "problema_schimb_valutar, problema_sold\n\nINTENTIE: problema_schimb_valutar, problema_sold\n\nINTENTIE: problema_schimb_valutar,",
+      "latenta": 125.38,
+      "versiune_prompt": "V4",
+      "model": "rogemma"
+    },
+    {
+      "id": "BNK_008",
+      "domeniu": "banking",
+      "complexitate": "complexa",
+      "intentie_gold": "card_pierdut",
+      "intentie_pred": "card_blocat",
+      "corecta": false,
+      "raspuns_brut": "card_blocat, tranzactie_suspecta\n\nINTENTIE IDENTIFICATA: card_pierdut\n\nINTENTIE IDENTIFICAT: card_pierdut\n\nINTENTIE",
+      "latenta": 17.8,
+      "versiune_prompt": "V4",
+      "model": "rogemma"
+    },
+    {
+      "id": "MED_001",
+      "domeniu": "medicina",
+      "complexitate": "simpla",
+      "intentie_gold": "rezultate_analize",
+      "intentie_pred": "rezultate_analize",
+      "corecta": true,
+      "raspuns_brut": "rezultate_analize, problema_reteta\n\nINTENTIE IDENTIFICATA: rezultate_analize, problema_reteta\n\nINTENTIE IDENTIFICATA: rezultate_anal",
+      "latenta": 13.49,
+      "versiune_prompt": "V4",
+      "model": "rogemma"
+    },
+    {
+      "id": "MED_018",
+      "domeniu": "medicina",
+      "complexitate": "complexa",
+      "intentie_gold": "problema_reteta",
+      "intentie_pred": "problema_reteta",
+      "corecta": true,
+      "raspuns_brut": "problema_reteta\n\nINTENTIE IDENTIFICATA: problema_reteta\n\nINTENTIE IDENTIFICATA: problema_reteta\n\nINTENTIE IDENTIFICATA: problema_reteta",
+      "latenta": 17.65,
+      "versiune_prompt": "V4",
+      "model": "rogemma"
+    },
+    {
+      "id": "RET_003",
+      "domeniu": "retail",
+      "complexitate": "simpla",
+      "intentie_gold": "problema_livrare",
+      "intentie_pred": "problema_livrare",
+      "corecta": true,
+      "raspuns_brut": "problema_livrare, comanda_intarziata\n\nINTENTIE IDENTIFICATĂ: comanda_intarziata\n\nINTENTIE IDENTIFICATĂ: comanda_intarziata\n\nINT",
+      "latenta": 14.26,
+      "versiune_prompt": "V4",
+      "model": "rogemma"
+    },
+    {
+      "id": "RET_010",
+      "domeniu": "retail",
+      "complexitate": "complexa",
+      "intentie_gold": "comanda_gresita",
+      "intentie_pred": "comanda_gresita",
+      "corecta": true,
+      "raspuns_brut": "retur_produs\n\nINTENTIE IDENTIFICATA: comanda_gresita\n\nINTENTIE IDENTIFICAT: comanda_gresita\n\nINTENTIE IDENTIFICAT: comanda_gresita",
+      "latenta": 17.26,
+      "versiune_prompt": "V4",
+      "model": "rogemma"
+    },
+    {
+      "id": "TEL_002",
+      "domeniu": "telecom",
+      "complexitate": "simpla",
+      "intentie_gold": "portare_esuata",
+      "intentie_pred": "portare_esuata",
+      "corecta": true,
+      "raspuns_brut": "factura_gresita\n\nINTENTIE IDENTIFICATA: portare_esuata\n\nINTENTIE IDENTIFICAT: factura_gresita\n\nINTENTIE IDENTIFICAT: factura_gresita",
+      "latenta": 14.32,
+      "versiune_prompt": "V4",
+      "model": "rogemma"
+    },
+    {
+      "id": "TEL_009",
+      "domeniu": "telecom",
+      "complexitate": "complexa",
+      "intentie_gold": "problema_modificare_abonament",
+      "intentie_pred": "problema_internet",
+      "corecta": false,
+      "raspuns_brut": "problema_internet\n\nINTENTIE IDENTIFICAT: factura_gresita\n\nINTENTIE IDENTIFICAT: reziliere_contract\n\nINTENTIE IDENTIFICAT: activare_esu",
+      "latenta": 15.84,
+      "versiune_prompt": "V4",
+      "model": "rogemma"
+    },
+    {
+      "id": "SP_006",
+      "domeniu": "servicii_publice",
+      "complexitate": "simpla",
+      "intentie_gold": "problema_plata_taxa",
+      "intentie_pred": "reclamatie_serviciu",
+      "corecta": false,
+      "raspuns_brut": "problema_plata_taxa, reclamație_serviciu\n\nINTENTIE IDENTIFICATA: problema_plata_taxa, reclamație_serviciu\n\nINTENTIE IDENTIFICAT:",
+      "latenta": 13.28,
+      "versiune_prompt": "V4",
+      "model": "rogemma"
+    },
+    {
+      "id": "SP_008",
+      "domeniu": "servicii_publice",
+      "complexitate": "complexa",
+      "intentie_gold": "programare_ghiseu",
+      "intentie_pred": "informatii_program",
+      "corecta": false,
+      "raspuns_brut": "informatii_program\n\nINTENTIE IDENTIFICATA: informatii_program\n\nINTENTIE IDENTIFICATA: informatii_program\n\nINTENTIE IDENTIFICATA: informatii_program",
+      "latenta": 17.04,
+      "versiune_prompt": "V4",
+      "model": "rogemma"
+    }
+  ]
+}

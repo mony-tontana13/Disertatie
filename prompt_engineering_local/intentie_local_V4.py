@@ -139,7 +139,7 @@ def main():
 
     rezultate = ruleaza_evaluare(
         conversatii, tokenizer, model, device,
-        get_prompt, VERSIUNE, args.model, RESULTS_DIR
+        get_prompt2, VERSIUNE, args.model, RESULTS_DIR
     )
     metrici = calculeaza_si_afiseaza(rezultate, VERSIUNE, args.model)
 
