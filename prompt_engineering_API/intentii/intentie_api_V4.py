@@ -17,7 +17,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from utils_intentie_api import (
+from prompt_engineering_API.intentii.utils_intentie_api import (
     INTENTII_DOMENII, EXEMPLE_FEWSHOT_LUNGI,
     selecteaza_subset, incarca_toate_conversatiile,
     ruleaza_evaluare_api, calculeaza_si_afiseaza_api

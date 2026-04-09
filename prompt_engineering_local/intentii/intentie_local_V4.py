@@ -18,7 +18,7 @@ import sys
 import argparse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from utils_intentie_local import (
+from prompt_engineering_local.intentii.utils_intentie_local import (
     INTENTII_DOMENII, EXEMPLE_FEWSHOT,
     selecteaza_subset, incarca_toate_conversatiile,
     incarca_model, ruleaza_evaluare, calculeaza_si_afiseaza

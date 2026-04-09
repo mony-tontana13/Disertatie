@@ -1,60 +1,56 @@
 """
-Prompt V2 - Detectare Intentie - Modele API
+Prompt V1 - Detectare Intentie - Modele API
 GPT-4.1-mini, Gemini-2.5-flash, Aya-Expanse-8b
 
 Utilizare:
     # Subset mic (10 conversatii)
-    python3 intentie_api_V2.py
+    python3 intentie_api_V1.py
 
     # Subset personalizat
-    python3 intentie_api_V2.py --n_per_domeniu 4
+    python3 intentie_api_V1.py --n_per_domeniu 4
 
     # Tot setul
-    python3 intentie_api_V2.py --tot_setul
+    python3 intentie_api_V1.py --tot_setul
 """
 import json
 import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from utils_intentie_api import (
+from prompt_engineering_API.intentii.utils_intentie_api import (
     INTENTII_DOMENII, EXEMPLE_FEWSHOT_LUNGI,
     selecteaza_subset, incarca_toate_conversatiile,
     ruleaza_evaluare_api, calculeaza_si_afiseaza_api
 )
 
-VERSIUNE = "V2"
+VERSIUNE = "V1"
 RESULTS_DIR = "./rezultate_prompt_engineering"
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 def get_prompt(dialog, domeniu):
-    """V2: Zero-shot + Role prompting (Varianta B - analist de date)."""
+    """V1: Zero-shot simplu, fara structurare sau lista de intentii."""
     return (
-        "Esti un agent specializat in analiza conversatiilor telefonice din call-center-uri "
-        "din domeniul " + domeniu + ". Rolul tau este sa identifici intentia clientului.\n\n"
+        "Analizeaza urmatoarea conversatie telefonica si identifica intentia clientului.\n\n"
         "Conversatie:\n" + dialog + "\n\n"
         "Care este intentia clientului? Raspunde cu un singur cuvant sau expresie scurta:"
     )
 
 def get_prompt2(dialog, domeniu):
     return (
-        "Lucrezi ca analist de date intr-un call-center din domeniul " + domeniu + ". "
-        "Sarcina ta zilnica este sa identifici motivul pentru care clientii suna, "
-        "pe baza transcripturilor conversatiilor cu operatorii.\n\n"
-        "Conversatie:\n" + dialog + "\n\n"
-        "De ce a sunat clientul? Raspunde scurt, in 2-3 cuvinte:"
+        "Conversatie:\\n" + dialog + "\\n\\n"
+        "Rezuma in 2-3 cuvinte ce a cerut clientul:"
     )
 
 def main():
     import argparse
-    parser = argparse.ArgumentParser(description="Prompt V2 - Detectare Intentie - Modele API")
+    parser = argparse.ArgumentParser(description="Prompt V1 - Detectare Intentie - Modele API")
     parser.add_argument("--n_per_domeniu", type=int, default=2,
                         help="Conversatii per domeniu pentru subset (default: 2 = 10 total)")
     parser.add_argument("--tot_setul", action="store_true",
                         help="Ruleaza pe toate cele 100 de conversatii")
     args = parser.parse_args()
 
-    print(f"\n=== PROMPT V2 — DETECTARE INTENTIE — MODELE API ===")
+    print(f"\n=== PROMPT V1 — DETECTARE INTENTIE — MODELE API ===")
 
     FOLDER_ADNOTAT = "./conversatii_adnotate_corectate"
 
@@ -82,8 +78,8 @@ def main():
         print(f"  {m['model']:<22} {m['accuracy']:>10.2%} {m['f1']:>8.3f} {m['ttft_medie']:>9.3f}s {m['latenta_medie']:>9.3f}s")
 
     # Salveaza rezultatele
-    output_file = os.path.join(RESULTS_DIR, f"intentie_api_V2_{descriere_set}_2.json")
-    raport_file = os.path.join(RESULTS_DIR, f"intentie_api_V2_{descriere_set}_raport_2.txt")
+    output_file = os.path.join(RESULTS_DIR, f"intentie_api_V1_{descriere_set}.json")
+    raport_file = os.path.join(RESULTS_DIR, f"intentie_api_V1_{descriere_set}_raport.txt")
 
     toate_rez_flat = []
     for rez_list in toate_rezultatele.values():
