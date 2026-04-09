@@ -1,9 +1,9 @@
 
-=== GPT-4.1-mini | Prompt V2 | 100 conversatii ===
+=== GPT-4.1-mini | Prompt V1 | 100 conversatii ===
   Accuracy:      0.00%
   F1 Macro:      0.000
-  TTFT medie:    0.482s
-  Latenta medie: 0.542s
+  TTFT medie:    0.717s
+  Latenta medie: 0.769s
   Erori (100/100):
     BNK_001 [simpla]: gold=problema_credit pred=alta_solicitare
     BNK_002 [simpla]: gold=tranzactie_gresita pred=alta_solicitare
@@ -112,11 +112,11 @@
     telecom               : 0% (0/20)
     servicii_publice      : 0% (0/20)
 
-=== Gemini-2.5-flash | Prompt V2 | 100 conversatii ===
+=== Gemini-2.5-flash | Prompt V1 | 100 conversatii ===
   Accuracy:      0.00%
   F1 Macro:      0.000
-  TTFT medie:    0.715s
-  Latenta medie: 0.715s
+  TTFT medie:    0.781s
+  Latenta medie: 0.781s
   Erori (100/100):
     BNK_001 [simpla]: gold=problema_credit pred=alta_solicitare
     BNK_002 [simpla]: gold=tranzactie_gresita pred=alta_solicitare
@@ -225,11 +225,11 @@
     telecom               : 0% (0/20)
     servicii_publice      : 0% (0/20)
 
-=== Aya-Expanse-8b | Prompt V2 | 100 conversatii ===
+=== command-r7b-12-2024 | Prompt V1 | 100 conversatii ===
   Accuracy:      0.00%
   F1 Macro:      0.000
-  TTFT medie:    0.525s
-  Latenta medie: 0.525s
+  TTFT medie:    0.709s
+  Latenta medie: 0.709s
   Erori (100/100):
     BNK_001 [simpla]: gold=problema_credit pred=alta_solicitare
     BNK_002 [simpla]: gold=tranzactie_gresita pred=alta_solicitare

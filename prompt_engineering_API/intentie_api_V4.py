@@ -132,7 +132,7 @@ def main():
 
     print(f"Total: {len(conversatii)} conversatii")
 
-    toate_rezultatele = ruleaza_evaluare_api(conversatii, get_prompt2, VERSIUNE, RESULTS_DIR)
+    toate_rezultatele = ruleaza_evaluare_api(conversatii, get_prompt, VERSIUNE, RESULTS_DIR)
     toate_metrici = calculeaza_si_afiseaza_api(toate_rezultatele, VERSIUNE)
 
     # Tabel comparativ final

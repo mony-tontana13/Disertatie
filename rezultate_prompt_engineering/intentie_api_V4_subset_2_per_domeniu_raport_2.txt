@@ -1,0 +1,54 @@
+
+=== GPT-4.1-mini | Prompt V4 | 10 conversatii ===
+  Accuracy:      70.00%
+  F1 Macro:      0.583
+  TTFT medie:    0.690s
+  Latenta medie: 0.830s
+  Erori (3/10):
+    BNK_008 [complexa]: gold=card_pierdut pred=card_blocat
+    SP_006 [simpla]: gold=problema_plata_taxa pred=sesizare_problema
+    SP_008 [complexa]: gold=programare_ghiseu pred=sesizare_problema
+  Per domeniu:
+    banking               : 50% (1/2)
+    medicina              : 100% (2/2)
+    retail                : 100% (2/2)
+    telecom               : 100% (2/2)
+    servicii_publice      : 0% (0/2)
+
+=== Gemini-2.5-flash | Prompt V4 | 10 conversatii ===
+  Accuracy:      0.00%
+  F1 Macro:      0.000
+  TTFT medie:    0.712s
+  Latenta medie: 0.712s
+  Erori (10/10):
+    BNK_006 [simpla]: gold=problema_schimb_valutar pred=alta_solicitare
+    BNK_008 [complexa]: gold=card_pierdut pred=alta_solicitare
+    MED_001 [simpla]: gold=rezultate_analize pred=alta_solicitare
+    MED_018 [complexa]: gold=problema_reteta pred=alta_solicitare
+    RET_003 [simpla]: gold=problema_livrare pred=alta_solicitare
+    RET_010 [complexa]: gold=comanda_gresita pred=alta_solicitare
+    TEL_002 [simpla]: gold=portare_esuata pred=alta_solicitare
+    TEL_009 [complexa]: gold=problema_modificare_abonament pred=alta_solicitare
+    SP_006 [simpla]: gold=problema_plata_taxa pred=alta_solicitare
+    SP_008 [complexa]: gold=programare_ghiseu pred=alta_solicitare
+  Per domeniu:
+    banking               : 0% (0/2)
+    medicina              : 0% (0/2)
+    retail                : 0% (0/2)
+    telecom               : 0% (0/2)
+    servicii_publice      : 0% (0/2)
+
+=== command-r7b-12-2024 | Prompt V4 | 10 conversatii ===
+  Accuracy:      80.00%
+  F1 Macro:      0.667
+  TTFT medie:    0.650s
+  Latenta medie: 0.650s
+  Erori (2/10):
+    BNK_008 [complexa]: gold=card_pierdut pred=card_blocat
+    SP_008 [complexa]: gold=programare_ghiseu pred=acte_incomplete
+  Per domeniu:
+    banking               : 50% (1/2)
+    medicina              : 100% (2/2)
+    retail                : 100% (2/2)
+    telecom               : 100% (2/2)
+    servicii_publice      : 50% (1/2)

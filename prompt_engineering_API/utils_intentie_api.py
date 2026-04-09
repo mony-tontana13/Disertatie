@@ -160,7 +160,7 @@ def call_aya(prompt):
     co = cohere.ClientV2(api_key=COHERE_API_KEY)
     start_total = time.time()
     response = co.chat(
-        model="c4ai-aya-expanse-8b",
+        model="command-r7b-12-2024",
         messages=[{"role": "user", "content": prompt}],
         max_tokens=50
     )
@@ -172,7 +172,7 @@ def call_aya(prompt):
 MODELE_API = {
     "GPT-4.1-mini": call_gpt,
     "Gemini-2.5-flash": call_gemini,
-    "Aya-Expanse-8b": call_aya
+    "command-r7b-12-2024": call_aya
 }
 
 
@@ -181,7 +181,7 @@ def ruleaza_evaluare_api(conversatii, get_prompt_fn, versiune, results_dir):
     disponibile = []
     if OPENAI_API_KEY: disponibile.append("GPT-4.1-mini")
     if GEMINI_API_KEY: disponibile.append("Gemini-2.5-flash")
-    if COHERE_API_KEY: disponibile.append("Aya-Expanse-8b")
+    if COHERE_API_KEY: disponibile.append("command-r7b-12-2024")
 
     if not disponibile:
         print("Nicio cheie API setata.")

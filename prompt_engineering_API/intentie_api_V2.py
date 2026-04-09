@@ -82,8 +82,8 @@ def main():
         print(f"  {m['model']:<22} {m['accuracy']:>10.2%} {m['f1']:>8.3f} {m['ttft_medie']:>9.3f}s {m['latenta_medie']:>9.3f}s")
 
     # Salveaza rezultatele
-    output_file = os.path.join(RESULTS_DIR, f"intentie_api_V2_{descriere_set}.json")
-    raport_file = os.path.join(RESULTS_DIR, f"intentie_api_V2_{descriere_set}_raport.txt")
+    output_file = os.path.join(RESULTS_DIR, f"intentie_api_V2_{descriere_set}_2.json")
+    raport_file = os.path.join(RESULTS_DIR, f"intentie_api_V2_{descriere_set}_raport_2.txt")
 
     toate_rez_flat = []
     for rez_list in toate_rezultatele.values():
