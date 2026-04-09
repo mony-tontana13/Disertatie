@@ -2,8 +2,8 @@
 === GPT-4.1-mini | Prompt V3 | 10 conversatii ===
   Accuracy:      70.00%
   F1 Macro:      0.538
-  TTFT medie:    0.994s
-  Latenta medie: 1.079s
+  TTFT medie:    0.530s
+  Latenta medie: 0.621s
   Erori (3/10):
     RET_003 [simpla]: gold=problema_livrare pred=comanda_intarziata
     SP_006 [simpla]: gold=problema_plata_taxa pred=sesizare_problema
@@ -18,8 +18,8 @@
 === Gemini-2.5-flash | Prompt V3 | 10 conversatii ===
   Accuracy:      0.00%
   F1 Macro:      0.000
-  TTFT medie:    0.837s
-  Latenta medie: 0.837s
+  TTFT medie:    0.947s
+  Latenta medie: 0.948s
   Erori (10/10):
     BNK_006 [simpla]: gold=problema_schimb_valutar pred=alta_solicitare
     BNK_008 [complexa]: gold=card_pierdut pred=alta_solicitare
@@ -38,18 +38,19 @@
     telecom               : 0% (0/2)
     servicii_publice      : 0% (0/2)
 
-=== Aya-Expanse-8b | Prompt V3 | 10 conversatii ===
-  Accuracy:      70.00%
-  F1 Macro:      0.576
-  TTFT medie:    1.236s
-  Latenta medie: 1.236s
-  Erori (3/10):
-    BNK_008 [complexa]: gold=card_pierdut pred=problema_schimb_valutar
-    RET_010 [complexa]: gold=comanda_gresita pred=problema_livrare
-    SP_008 [complexa]: gold=programare_ghiseu pred=reclamatie_serviciu
+=== command-r7b-12-2024 | Prompt V3 | 10 conversatii ===
+  Accuracy:      60.00%
+  F1 Macro:      0.436
+  TTFT medie:    0.723s
+  Latenta medie: 0.723s
+  Erori (4/10):
+    BNK_008 [complexa]: gold=card_pierdut pred=problema_transfer
+    TEL_002 [simpla]: gold=portare_esuata pred=problema_modificare_abonament
+    SP_006 [simpla]: gold=problema_plata_taxa pred=sesizare_problema
+    SP_008 [complexa]: gold=programare_ghiseu pred=contestatie_decizie
   Per domeniu:
     banking               : 50% (1/2)
     medicina              : 100% (2/2)
-    retail                : 50% (1/2)
-    telecom               : 100% (2/2)
-    servicii_publice      : 50% (1/2)
+    retail                : 100% (2/2)
+    telecom               : 50% (1/2)
+    servicii_publice      : 0% (0/2)

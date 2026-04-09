@@ -1,15 +1,14 @@
 
 === GPT-4.1-mini | Prompt V4 | 10 conversatii ===
-  Accuracy:      70.00%
-  F1 Macro:      0.583
-  TTFT medie:    0.519s
-  Latenta medie: 0.603s
-  Erori (3/10):
-    BNK_008 [complexa]: gold=card_pierdut pred=card_blocat
+  Accuracy:      80.00%
+  F1 Macro:      0.727
+  TTFT medie:    1.252s
+  Latenta medie: 1.377s
+  Erori (2/10):
     SP_006 [simpla]: gold=problema_plata_taxa pred=sesizare_problema
     SP_008 [complexa]: gold=programare_ghiseu pred=sesizare_problema
   Per domeniu:
-    banking               : 50% (1/2)
+    banking               : 100% (2/2)
     medicina              : 100% (2/2)
     retail                : 100% (2/2)
     telecom               : 100% (2/2)
@@ -18,8 +17,8 @@
 === Gemini-2.5-flash | Prompt V4 | 10 conversatii ===
   Accuracy:      0.00%
   F1 Macro:      0.000
-  TTFT medie:    0.787s
-  Latenta medie: 0.788s
+  TTFT medie:    0.908s
+  Latenta medie: 0.908s
   Erori (10/10):
     BNK_006 [simpla]: gold=problema_schimb_valutar pred=alta_solicitare
     BNK_008 [complexa]: gold=card_pierdut pred=alta_solicitare
@@ -38,14 +37,16 @@
     telecom               : 0% (0/2)
     servicii_publice      : 0% (0/2)
 
-=== Aya-Expanse-8b | Prompt V4 | 10 conversatii ===
-  Accuracy:      100.00%
-  F1 Macro:      1.000
-  TTFT medie:    1.081s
-  Latenta medie: 1.081s
+=== command-r7b-12-2024 | Prompt V4 | 10 conversatii ===
+  Accuracy:      90.00%
+  F1 Macro:      0.818
+  TTFT medie:    0.832s
+  Latenta medie: 0.832s
+  Erori (1/10):
+    SP_008 [complexa]: gold=programare_ghiseu pred=acte_incomplete
   Per domeniu:
     banking               : 100% (2/2)
     medicina              : 100% (2/2)
     retail                : 100% (2/2)
     telecom               : 100% (2/2)
-    servicii_publice      : 100% (2/2)
+    servicii_publice      : 50% (1/2)
