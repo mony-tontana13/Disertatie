@@ -1,0 +1,136 @@
+{
+  "model": "romistral",
+  "versiune": "V2_v2",
+  "set_date": "subset_2_per_domeniu",
+  "metrici": {
+    "model": "romistral",
+    "versiune": "V2_v2",
+    "accuracy": 0.5,
+    "f1": 0.463,
+    "latenta": 10.18,
+    "nr_conversatii": 10,
+    "raport_text": "\n=== romistral | Prompt V2_v2 | 10 conversatii ===\n  Accuracy:         50.00%\n  F1 Macro:         0.463\n  Latenta medie:    10.2s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'neutru': 5, 'necunoscut': 4, 'negativ': 1}\n  Erori (5/10):\n    MED_001 [simpla]: gold=pozitiv pred=necunoscut\n    MED_018 [complexa]: gold=negativ pred=necunoscut\n    RET_003 [simpla]: gold=pozitiv pred=neutru\n    RET_010 [complexa]: gold=negativ pred=necunoscut\n    TEL_002 [simpla]: gold=pozitiv pred=necunoscut\n  Per clasa:\n    pozitiv   : 0% (0/3)\n    neutru    : 100% (4/4)\n    negativ   : 33% (1/3)"
+  },
+  "rezultate_detaliate": [
+    {
+      "id": "BNK_006",
+      "domeniu": "banking",
+      "complexitate": "simpla",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "neutru",
+      "corecta": true,
+      "raspuns_brut": "neutru",
+      "latenta": 6.42,
+      "versiune_prompt": "V2_v2",
+      "model": "romistral"
+    },
+    {
+      "id": "BNK_008",
+      "domeniu": "banking",
+      "complexitate": "complexa",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "neutru",
+      "corecta": true,
+      "raspuns_brut": "neutru",
+      "latenta": 9.47,
+      "versiune_prompt": "V2_v2",
+      "model": "romistral"
+    },
+    {
+      "id": "MED_001",
+      "domeniu": "medicina",
+      "complexitate": "simpla",
+      "satisfactie_gold": "pozitiv",
+      "satisfactie_pred": "necunoscut",
+      "corecta": false,
+      "raspuns_brut": "neu",
+      "latenta": 6.29,
+      "versiune_prompt": "V2_v2",
+      "model": "romistral"
+    },
+    {
+      "id": "MED_018",
+      "domeniu": "medicina",
+      "complexitate": "complexa",
+      "satisfactie_gold": "negativ",
+      "satisfactie_pred": "necunoscut",
+      "corecta": false,
+      "raspuns_brut": ".\nCLIENT: Bine, mulțumesc. La revedere.\nOPERATOR",
+      "latenta": 14.65,
+      "versiune_prompt": "V2_v2",
+      "model": "romistral"
+    },
+    {
+      "id": "RET_003",
+      "domeniu": "retail",
+      "complexitate": "simpla",
+      "satisfactie_gold": "pozitiv",
+      "satisfactie_pred": "neutru",
+      "corecta": false,
+      "raspuns_brut": "neutru",
+      "latenta": 8.44,
+      "versiune_prompt": "V2_v2",
+      "model": "romistral"
+    },
+    {
+      "id": "RET_010",
+      "domeniu": "retail",
+      "complexitate": "complexa",
+      "satisfactie_gold": "negativ",
+      "satisfactie_pred": "necunoscut",
+      "corecta": false,
+      "raspuns_brut": "ai o zi bună.\n\nNivelul de satisfacție al clientului",
+      "latenta": 23.71,
+      "versiune_prompt": "V2_v2",
+      "model": "romistral"
+    },
+    {
+      "id": "TEL_002",
+      "domeniu": "telecom",
+      "complexitate": "simpla",
+      "satisfactie_gold": "pozitiv",
+      "satisfactie_pred": "necunoscut",
+      "corecta": false,
+      "raspuns_brut": "neu",
+      "latenta": 7.55,
+      "versiune_prompt": "V2_v2",
+      "model": "romistral"
+    },
+    {
+      "id": "TEL_009",
+      "domeniu": "telecom",
+      "complexitate": "complexa",
+      "satisfactie_gold": "negativ",
+      "satisfactie_pred": "negativ",
+      "corecta": true,
+      "raspuns_brut": "negativ",
+      "latenta": 9.36,
+      "versiune_prompt": "V2_v2",
+      "model": "romistral"
+    },
+    {
+      "id": "SP_006",
+      "domeniu": "servicii_publice",
+      "complexitate": "simpla",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "neutru",
+      "corecta": true,
+      "raspuns_brut": "neutru",
+      "latenta": 5.96,
+      "versiune_prompt": "V2_v2",
+      "model": "romistral"
+    },
+    {
+      "id": "SP_008",
+      "domeniu": "servicii_publice",
+      "complexitate": "complexa",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "neutru",
+      "corecta": true,
+      "raspuns_brut": "neutru",
+      "latenta": 10.0,
+      "versiune_prompt": "V2_v2",
+      "model": "romistral"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+
+=== romistral | Prompt V1_v1 | 10 conversatii ===
+  Accuracy:         60.00%
+  F1 Macro:         0.508
+  Latenta medie:    6.9s
+  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
+  Distributie pred: {'negativ': 4, 'pozitiv': 6}
+  Erori (4/10):
+    BNK_006 [simpla]: gold=neutru pred=negativ
+    BNK_008 [complexa]: gold=neutru pred=pozitiv
+    SP_006 [simpla]: gold=neutru pred=pozitiv
+    SP_008 [complexa]: gold=neutru pred=pozitiv
+  Per clasa:
+    pozitiv   : 100% (3/3)
+    neutru    : 0% (0/4)
+    negativ   : 100% (3/3)

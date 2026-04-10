@@ -203,7 +203,7 @@ def ruleaza_evaluare_api(conversatii, get_prompt_fn, versiune, results_dir):
         print("Nicio cheie API setata.")
         return {}
 
-    print(f"Modele disponibile: {\', \'.join(disponibile)}")
+    print(f"Modele disponibile: {', '.join(disponibile)}")
     toate_rezultatele = {}
 
     for nume_model in disponibile:
@@ -265,7 +265,7 @@ def calculeaza_si_afiseaza_api(toate_rezultatele, versiune):
         if erori:
             linii.append(f"  Erori ({len(erori)}/{len(rezultate)}):")
             for e in erori:
-                linii.append(f"    {e[\'id\']} [{e[\'complexitate\']}]: gold={e[\'satisfactie_gold\']} pred={e[\'satisfactie_pred\']}")
+                linii.append(f"    {e['id']} [{e['complexitate']}]: gold={e['satisfactie_gold']} pred={e['satisfactie_pred']}")
 
         linii.append(f"  Per clasa:")
         per_clasa = {}
@@ -274,7 +274,7 @@ def calculeaza_si_afiseaza_api(toate_rezultatele, versiune):
             if rez_c:
                 acc_c = sum(1 for r in rez_c if r["corecta"]) / len(rez_c)
                 per_clasa[clasa] = round(acc_c, 4)
-                linii.append(f"    {clasa:<10}: {acc_c:.0%} ({sum(1 for r in rez_c if r[\'corecta\'])}/{len(rez_c)})")
+                linii.append(f"    {clasa:<22}: {acc_c:.0%} ({sum(1 for r in rez_c if r['corecta'])}/{len(rez_c)})")
 
         raport_text = "\n".join(linii)
         print(raport_text)

@@ -1,0 +1,136 @@
+{
+  "model": "rogemma",
+  "versiune": "V1_v1",
+  "set_date": "subset_2_per_domeniu",
+  "metrici": {
+    "model": "rogemma",
+    "versiune": "V1_v1",
+    "accuracy": 0.6,
+    "f1": 0.5,
+    "latenta": 385.34,
+    "nr_conversatii": 10,
+    "raport_text": "\n=== rogemma | Prompt V1_v1 | 10 conversatii ===\n  Accuracy:         60.00%\n  F1 Macro:         0.500\n  Latenta medie:    385.3s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'negativ': 5, 'pozitiv': 5}\n  Erori (4/10):\n    BNK_006 [simpla]: gold=neutru pred=negativ\n    BNK_008 [complexa]: gold=neutru pred=pozitiv\n    SP_006 [simpla]: gold=neutru pred=negativ\n    SP_008 [complexa]: gold=neutru pred=pozitiv\n  Per clasa:\n    pozitiv   : 100% (3/3)\n    neutru    : 0% (0/4)\n    negativ   : 100% (3/3)"
+  },
+  "rezultate_detaliate": [
+    {
+      "id": "BNK_006",
+      "domeniu": "banking",
+      "complexitate": "simpla",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "negativ",
+      "corecta": false,
+      "raspuns_brut": "Negativ.\n\nClientul este nemulțumit de cursul de schimb și dorește",
+      "latenta": 54.97,
+      "versiune_prompt": "V1_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "BNK_008",
+      "domeniu": "banking",
+      "complexitate": "complexa",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "pozitiv",
+      "corecta": false,
+      "raspuns_brut": "Clientul este pozitiv.\n\nExplicaClientul este mulțumit de serviciul",
+      "latenta": 1062.5,
+      "versiune_prompt": "V1_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "MED_001",
+      "domeniu": "medicina",
+      "complexitate": "simpla",
+      "satisfactie_gold": "pozitiv",
+      "satisfactie_pred": "pozitiv",
+      "corecta": true,
+      "raspuns_brut": "Pozitiv\n\nClientul a fost mulțumit de răspunsul rapid al operatorului",
+      "latenta": 87.23,
+      "versiune_prompt": "V1_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "MED_018",
+      "domeniu": "medicina",
+      "complexitate": "complexa",
+      "satisfactie_gold": "negativ",
+      "satisfactie_pred": "negativ",
+      "corecta": true,
+      "raspuns_brut": "Negativ. Clientul este frustrat de procesul de a obține o rețetă",
+      "latenta": 1366.65,
+      "versiune_prompt": "V1_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "RET_003",
+      "domeniu": "retail",
+      "complexitate": "simpla",
+      "satisfactie_gold": "pozitiv",
+      "satisfactie_pred": "pozitiv",
+      "corecta": true,
+      "raspuns_brut": "Clientul este pozitiv la sfârșitul conversației.\n\nExplicație:",
+      "latenta": 122.25,
+      "versiune_prompt": "V1_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "RET_010",
+      "domeniu": "retail",
+      "complexitate": "complexa",
+      "satisfactie_gold": "negativ",
+      "satisfactie_pred": "negativ",
+      "corecta": true,
+      "raspuns_brut": "Negativ. Clientul este nemulțumit de procesul de returnare și de timpul",
+      "latenta": 905.38,
+      "versiune_prompt": "V1_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "TEL_002",
+      "domeniu": "telecom",
+      "complexitate": "simpla",
+      "satisfactie_gold": "pozitiv",
+      "satisfactie_pred": "pozitiv",
+      "corecta": true,
+      "raspuns_brut": "Clientul este pozitiv.\nClientul este neutru.Clientul este negativ.",
+      "latenta": 226.35,
+      "versiune_prompt": "V1_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "TEL_009",
+      "domeniu": "telecom",
+      "complexitate": "complexa",
+      "satisfactie_gold": "negativ",
+      "satisfactie_pred": "negativ",
+      "corecta": true,
+      "raspuns_brut": "Negativ. Clientul este nemulțumit de procesul birocratic și de faptul",
+      "latenta": 10.1,
+      "versiune_prompt": "V1_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "SP_006",
+      "domeniu": "servicii_publice",
+      "complexitate": "simpla",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "negativ",
+      "corecta": false,
+      "raspuns_brut": "Negativ\n\nClientul este nemulțumit de situația actuală și de solu",
+      "latenta": 7.75,
+      "versiune_prompt": "V1_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "SP_008",
+      "domeniu": "servicii_publice",
+      "complexitate": "complexa",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "pozitiv",
+      "corecta": false,
+      "raspuns_brut": "Clientul este pozitiv.\nClientul este neutru.Clientul este negativ.",
+      "latenta": 10.24,
+      "versiune_prompt": "V1_v1",
+      "model": "rogemma"
+    }
+  ]
+}

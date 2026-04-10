@@ -1,0 +1,136 @@
+{
+  "model": "romistral",
+  "versiune": "V2_v1",
+  "set_date": "subset_2_per_domeniu",
+  "metrici": {
+    "model": "romistral",
+    "versiune": "V2_v1",
+    "accuracy": 0.8,
+    "f1": 0.8056,
+    "latenta": 8.23,
+    "nr_conversatii": 10,
+    "raport_text": "\n=== romistral | Prompt V2_v1 | 10 conversatii ===\n  Accuracy:         80.00%\n  F1 Macro:         0.806\n  Latenta medie:    8.2s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'negativ': 5, 'pozitiv': 3, 'neutru': 2}\n  Erori (2/10):\n    BNK_006 [simpla]: gold=neutru pred=negativ\n    BNK_008 [complexa]: gold=neutru pred=negativ\n  Per clasa:\n    pozitiv   : 100% (3/3)\n    neutru    : 50% (2/4)\n    negativ   : 100% (3/3)"
+  },
+  "rezultate_detaliate": [
+    {
+      "id": "BNK_006",
+      "domeniu": "banking",
+      "complexitate": "simpla",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "negativ",
+      "corecta": false,
+      "raspuns_brut": "negativ",
+      "latenta": 6.46,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "BNK_008",
+      "domeniu": "banking",
+      "complexitate": "complexa",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "negativ",
+      "corecta": false,
+      "raspuns_brut": "negativ",
+      "latenta": 9.0,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "MED_001",
+      "domeniu": "medicina",
+      "complexitate": "simpla",
+      "satisfactie_gold": "pozitiv",
+      "satisfactie_pred": "pozitiv",
+      "corecta": true,
+      "raspuns_brut": "pozitiv",
+      "latenta": 6.3,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "MED_018",
+      "domeniu": "medicina",
+      "complexitate": "complexa",
+      "satisfactie_gold": "negativ",
+      "satisfactie_pred": "negativ",
+      "corecta": true,
+      "raspuns_brut": "negativ",
+      "latenta": 10.28,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "RET_003",
+      "domeniu": "retail",
+      "complexitate": "simpla",
+      "satisfactie_gold": "pozitiv",
+      "satisfactie_pred": "pozitiv",
+      "corecta": true,
+      "raspuns_brut": "pozitiv",
+      "latenta": 7.15,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "RET_010",
+      "domeniu": "retail",
+      "complexitate": "complexa",
+      "satisfactie_gold": "negativ",
+      "satisfactie_pred": "negativ",
+      "corecta": true,
+      "raspuns_brut": "negativ",
+      "latenta": 11.89,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "TEL_002",
+      "domeniu": "telecom",
+      "complexitate": "simpla",
+      "satisfactie_gold": "pozitiv",
+      "satisfactie_pred": "pozitiv",
+      "corecta": true,
+      "raspuns_brut": "pozitiv",
+      "latenta": 7.32,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "TEL_009",
+      "domeniu": "telecom",
+      "complexitate": "complexa",
+      "satisfactie_gold": "negativ",
+      "satisfactie_pred": "negativ",
+      "corecta": true,
+      "raspuns_brut": "negativ",
+      "latenta": 8.85,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "SP_006",
+      "domeniu": "servicii_publice",
+      "complexitate": "simpla",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "neutru",
+      "corecta": true,
+      "raspuns_brut": "neutru",
+      "latenta": 5.6,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "SP_008",
+      "domeniu": "servicii_publice",
+      "complexitate": "complexa",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "neutru",
+      "corecta": true,
+      "raspuns_brut": "neutru",
+      "latenta": 9.48,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    }
+  ]
+}

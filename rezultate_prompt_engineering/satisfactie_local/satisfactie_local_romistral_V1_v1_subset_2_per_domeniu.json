@@ -1,0 +1,136 @@
+{
+  "model": "romistral",
+  "versiune": "V1_v1",
+  "set_date": "subset_2_per_domeniu",
+  "metrici": {
+    "model": "romistral",
+    "versiune": "V1_v1",
+    "accuracy": 0.6,
+    "f1": 0.5079,
+    "latenta": 6.94,
+    "nr_conversatii": 10,
+    "raport_text": "\n=== romistral | Prompt V1_v1 | 10 conversatii ===\n  Accuracy:         60.00%\n  F1 Macro:         0.508\n  Latenta medie:    6.9s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'negativ': 4, 'pozitiv': 6}\n  Erori (4/10):\n    BNK_006 [simpla]: gold=neutru pred=negativ\n    BNK_008 [complexa]: gold=neutru pred=pozitiv\n    SP_006 [simpla]: gold=neutru pred=pozitiv\n    SP_008 [complexa]: gold=neutru pred=pozitiv\n  Per clasa:\n    pozitiv   : 100% (3/3)\n    neutru    : 0% (0/4)\n    negativ   : 100% (3/3)"
+  },
+  "rezultate_detaliate": [
+    {
+      "id": "BNK_006",
+      "domeniu": "banking",
+      "complexitate": "simpla",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "negativ",
+      "corecta": false,
+      "raspuns_brut": "Negativ",
+      "latenta": 5.15,
+      "versiune_prompt": "V1_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "BNK_008",
+      "domeniu": "banking",
+      "complexitate": "complexa",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "pozitiv",
+      "corecta": false,
+      "raspuns_brut": "Pozitiv",
+      "latenta": 7.71,
+      "versiune_prompt": "V1_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "MED_001",
+      "domeniu": "medicina",
+      "complexitate": "simpla",
+      "satisfactie_gold": "pozitiv",
+      "satisfactie_pred": "pozitiv",
+      "corecta": true,
+      "raspuns_brut": "Pozitiv",
+      "latenta": 5.03,
+      "versiune_prompt": "V1_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "MED_018",
+      "domeniu": "medicina",
+      "complexitate": "complexa",
+      "satisfactie_gold": "negativ",
+      "satisfactie_pred": "negativ",
+      "corecta": true,
+      "raspuns_brut": "Negativ",
+      "latenta": 8.95,
+      "versiune_prompt": "V1_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "RET_003",
+      "domeniu": "retail",
+      "complexitate": "simpla",
+      "satisfactie_gold": "pozitiv",
+      "satisfactie_pred": "pozitiv",
+      "corecta": true,
+      "raspuns_brut": "Pozitiv",
+      "latenta": 5.94,
+      "versiune_prompt": "V1_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "RET_010",
+      "domeniu": "retail",
+      "complexitate": "complexa",
+      "satisfactie_gold": "negativ",
+      "satisfactie_pred": "negativ",
+      "corecta": true,
+      "raspuns_brut": "Negativ",
+      "latenta": 8.56,
+      "versiune_prompt": "V1_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "TEL_002",
+      "domeniu": "telecom",
+      "complexitate": "simpla",
+      "satisfactie_gold": "pozitiv",
+      "satisfactie_pred": "pozitiv",
+      "corecta": true,
+      "raspuns_brut": "Pozitiv",
+      "latenta": 7.4,
+      "versiune_prompt": "V1_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "TEL_009",
+      "domeniu": "telecom",
+      "complexitate": "complexa",
+      "satisfactie_gold": "negativ",
+      "satisfactie_pred": "negativ",
+      "corecta": true,
+      "raspuns_brut": "Negativ",
+      "latenta": 7.25,
+      "versiune_prompt": "V1_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "SP_006",
+      "domeniu": "servicii_publice",
+      "complexitate": "simpla",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "pozitiv",
+      "corecta": false,
+      "raspuns_brut": "Pozitiv",
+      "latenta": 4.83,
+      "versiune_prompt": "V1_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "SP_008",
+      "domeniu": "servicii_publice",
+      "complexitate": "complexa",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "pozitiv",
+      "corecta": false,
+      "raspuns_brut": "Pozitiv",
+      "latenta": 8.61,
+      "versiune_prompt": "V1_v1",
+      "model": "romistral"
+    }
+  ]
+}

@@ -88,13 +88,15 @@ def main():
 
     toate_rezultatele = ruleaza_evaluare_api(conversatii, func_prompt, versiune_completa, RESULTS_DIR)
     toate_metrici = calculeaza_si_afiseaza_api(toate_rezultatele, versiune_completa)
-
-    print(f"\n{\'=\'*65}")
-    print("TABEL COMPARATIV")
-    print(f"  {'Model':<22} {'Accuracy':>10} {'F1':>8} {'TTFT':>10}")
-    print(f"  {'—'*52}")
+    
+    # Tabel comparativ final
+    print(f"\n{'='*75}")
+    print("TABEL COMPARATIV MODELE API")
+    print(f"{'='*75}")
+    print(f"  {'Model':<22} {'Accuracy':>10} {'F1':>8} {'TTFT':>10} {'Latenta':>10}")
+    print(f"  {'-'*65}")
     for m in toate_metrici:
-        print(f"  {m[\'model\']:<22} {m[\'accuracy\']:>10.2%} {m[\'f1\']:>8.3f} {m[\'ttft_medie\']:>9.3f}s")
+        print(f"  {m['model']:<22} {m['accuracy']:>10.2%} {m['f1']:>8.3f} {m['ttft_medie']:>9.3f}s {m['latenta_medie']:>9.3f}s")
 
     output_file = os.path.join(RESULTS_DIR, f"satisfactie_api_V2{sufix_varianta}_{descriere_set}.json")
     raport_file = os.path.join(RESULTS_DIR, f"satisfactie_api_V2{sufix_varianta}_{descriere_set}_raport.txt")
