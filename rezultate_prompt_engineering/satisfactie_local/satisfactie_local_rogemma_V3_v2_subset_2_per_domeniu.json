@@ -1,0 +1,136 @@
+{
+  "model": "rogemma",
+  "versiune": "V3_v2",
+  "set_date": "subset_2_per_domeniu",
+  "metrici": {
+    "model": "rogemma",
+    "versiune": "V3_v2",
+    "accuracy": 0.5,
+    "f1": 0.4889,
+    "latenta": 12.55,
+    "nr_conversatii": 10,
+    "raport_text": "\n=== rogemma | Prompt V3_v2 | 10 conversatii ===\n  Accuracy:         50.00%\n  F1 Macro:         0.489\n  Latenta medie:    12.5s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'necunoscut': 1, 'pozitiv': 6, 'neutru': 1, 'negativ': 2}\n  Erori (5/10):\n    BNK_006 [simpla]: gold=neutru pred=necunoscut\n    BNK_008 [complexa]: gold=neutru pred=pozitiv\n    MED_018 [complexa]: gold=negativ pred=neutru\n    SP_006 [simpla]: gold=neutru pred=pozitiv\n    SP_008 [complexa]: gold=neutru pred=pozitiv\n  Per clasa:\n    pozitiv   : 100% (3/3)\n    neutru    : 0% (0/4)\n    negativ   : 67% (2/3)"
+  },
+  "rezultate_detaliate": [
+    {
+      "id": "BNK_006",
+      "domeniu": "banking",
+      "complexitate": "simpla",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "necunoscut",
+      "corecta": false,
+      "raspuns_brut": "CLIENT: Ah, cursul e un pic cam... cum să zic... mare comparativ",
+      "latenta": 11.03,
+      "versiune_prompt": "V3_v2",
+      "model": "rogemma"
+    },
+    {
+      "id": "BNK_008",
+      "domeniu": "banking",
+      "complexitate": "complexa",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "pozitiv",
+      "corecta": false,
+      "raspuns_brut": "pozitiv\n\nClientul a fost mulțumit de rezolvarea problemei sale și",
+      "latenta": 17.65,
+      "versiune_prompt": "V3_v2",
+      "model": "rogemma"
+    },
+    {
+      "id": "MED_001",
+      "domeniu": "medicina",
+      "complexitate": "simpla",
+      "satisfactie_gold": "pozitiv",
+      "satisfactie_pred": "pozitiv",
+      "corecta": true,
+      "raspuns_brut": "pozitiv\n\nClientul a fost mulțumit de rezolvarea problemei sale și",
+      "latenta": 10.27,
+      "versiune_prompt": "V3_v2",
+      "model": "rogemma"
+    },
+    {
+      "id": "MED_018",
+      "domeniu": "medicina",
+      "complexitate": "complexa",
+      "satisfactie_gold": "negativ",
+      "satisfactie_pred": "neutru",
+      "corecta": false,
+      "raspuns_brut": "neutru\n\nEXPLICATIE:\nClientul a fost nemulțumit de situa",
+      "latenta": 13.98,
+      "versiune_prompt": "V3_v2",
+      "model": "rogemma"
+    },
+    {
+      "id": "RET_003",
+      "domeniu": "retail",
+      "complexitate": "simpla",
+      "satisfactie_gold": "pozitiv",
+      "satisfactie_pred": "pozitiv",
+      "corecta": true,
+      "raspuns_brut": "pozitiv\n\nClientul a fost mulțumit de rezoluție și a apreciat ajutor",
+      "latenta": 11.04,
+      "versiune_prompt": "V3_v2",
+      "model": "rogemma"
+    },
+    {
+      "id": "RET_010",
+      "domeniu": "retail",
+      "complexitate": "complexa",
+      "satisfactie_gold": "negativ",
+      "satisfactie_pred": "negativ",
+      "corecta": true,
+      "raspuns_brut": "negativ\nNivelul de satisfacție al clientului este negativ, deoarece clientul a plecat",
+      "latenta": 13.58,
+      "versiune_prompt": "V3_v2",
+      "model": "rogemma"
+    },
+    {
+      "id": "TEL_002",
+      "domeniu": "telecom",
+      "complexitate": "simpla",
+      "satisfactie_gold": "pozitiv",
+      "satisfactie_pred": "pozitiv",
+      "corecta": true,
+      "raspuns_brut": "pozitiv\n\nClientul a fost mulțumit de rezoluție și a apreciat ajutor",
+      "latenta": 11.15,
+      "versiune_prompt": "V3_v2",
+      "model": "rogemma"
+    },
+    {
+      "id": "TEL_009",
+      "domeniu": "telecom",
+      "complexitate": "complexa",
+      "satisfactie_gold": "negativ",
+      "satisfactie_pred": "negativ",
+      "corecta": true,
+      "raspuns_brut": "negativ\nNivelul de satisfacție al clientului este negativ, deoarece clientul a rămas",
+      "latenta": 12.46,
+      "versiune_prompt": "V3_v2",
+      "model": "rogemma"
+    },
+    {
+      "id": "SP_006",
+      "domeniu": "servicii_publice",
+      "complexitate": "simpla",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "pozitiv",
+      "corecta": false,
+      "raspuns_brut": "neutru\n\nSATISFACTIE IDENTIFICATA: pozitiv\n\nSATISFACTIE IDENTIFIC",
+      "latenta": 10.1,
+      "versiune_prompt": "V3_v2",
+      "model": "rogemma"
+    },
+    {
+      "id": "SP_008",
+      "domeniu": "servicii_publice",
+      "complexitate": "complexa",
+      "satisfactie_gold": "neutru",
+      "satisfactie_pred": "pozitiv",
+      "corecta": false,
+      "raspuns_brut": "neutru\n\nSATISFACTIE IDENTIFICATA: pozitiv\n\nSATISFACTIE IDENTIFIC",
+      "latenta": 14.21,
+      "versiune_prompt": "V3_v2",
+      "model": "rogemma"
+    }
+  ]
+}

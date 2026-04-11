@@ -2,8 +2,8 @@
 === GPT-4.1-mini | Prompt V2_v2 | 10 conversatii ===
   Accuracy:         80.00%
   F1 Macro:         0.806
-  TTFT medie:       0.647s
-  Latenta medie:    0.655s
+  TTFT medie:       0.930s
+  Latenta medie:    0.943s
   Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
   Distributie pred: {'neutru': 2, 'pozitiv': 5, 'negativ': 3}
   Erori (2/10):
@@ -17,8 +17,8 @@
 === Gemini-2.5-flash | Prompt V2_v2 | 10 conversatii ===
   Accuracy:         0.00%
   F1 Macro:         0.000
-  TTFT medie:       0.797s
-  Latenta medie:    0.797s
+  TTFT medie:       0.673s
+  Latenta medie:    0.673s
   Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
   Distributie pred: {'necunoscut': 10}
   Erori (10/10):
@@ -40,8 +40,8 @@
 === command-r7b-12-2024 | Prompt V2_v2 | 10 conversatii ===
   Accuracy:         70.00%
   F1 Macro:         0.676
-  TTFT medie:       0.580s
-  Latenta medie:    0.580s
+  TTFT medie:       0.477s
+  Latenta medie:    0.477s
   Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
   Distributie pred: {'neutru': 7, 'negativ': 2, 'pozitiv': 1}
   Erori (3/10):

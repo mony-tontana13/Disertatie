@@ -1,15 +1,15 @@
 {
   "model": "romistral",
-  "versiune": "V2_v1",
+  "versiune": "V3_v2",
   "set_date": "subset_2_per_domeniu",
   "metrici": {
     "model": "romistral",
-    "versiune": "V2_v1",
+    "versiune": "V3_v2",
     "accuracy": 0.3,
-    "f1": 0.1538,
-    "latenta": 7.64,
+    "f1": 0.3238,
+    "latenta": 12.24,
     "nr_conversatii": 10,
-    "raport_text": "\n=== romistral | Prompt V2_v1 | 10 conversatii ===\n  Accuracy:         30.00%\n  F1 Macro:         0.154\n  Latenta medie:    7.6s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'pozitiv': 10}\n  Erori (7/10):\n    BNK_006 [simpla]: gold=neutru pred=pozitiv\n    BNK_008 [complexa]: gold=neutru pred=pozitiv\n    MED_018 [complexa]: gold=negativ pred=pozitiv\n    RET_010 [complexa]: gold=negativ pred=pozitiv\n    TEL_009 [complexa]: gold=negativ pred=pozitiv\n    SP_006 [simpla]: gold=neutru pred=pozitiv\n    SP_008 [complexa]: gold=neutru pred=pozitiv\n  Per clasa:\n    pozitiv   : 100% (3/3)\n    neutru    : 0% (0/4)\n    negativ   : 0% (0/3)"
+    "raport_text": "\n=== romistral | Prompt V3_v2 | 10 conversatii ===\n  Accuracy:         30.00%\n  F1 Macro:         0.324\n  Latenta medie:    12.2s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'necunoscut': 5, 'neutru': 1, 'pozitiv': 4}\n  Erori (7/10):\n    BNK_006 [simpla]: gold=neutru pred=necunoscut\n    MED_001 [simpla]: gold=pozitiv pred=necunoscut\n    MED_018 [complexa]: gold=negativ pred=pozitiv\n    RET_010 [complexa]: gold=negativ pred=necunoscut\n    TEL_009 [complexa]: gold=negativ pred=necunoscut\n    SP_006 [simpla]: gold=neutru pred=necunoscut\n    SP_008 [complexa]: gold=neutru pred=pozitiv\n  Per clasa:\n    pozitiv   : 67% (2/3)\n    neutru    : 25% (1/4)\n    negativ   : 0% (0/3)"
   },
   "rezultate_detaliate": [
     {
@@ -17,11 +17,11 @@
       "domeniu": "banking",
       "complexitate": "simpla",
       "satisfactie_gold": "neutru",
-      "satisfactie_pred": "pozitiv",
+      "satisfactie_pred": "necunoscut",
       "corecta": false,
-      "raspuns_brut": "pozitiv",
-      "latenta": 5.85,
-      "versiune_prompt": "V2_v1",
+      "raspuns_brut": "",
+      "latenta": 11.96,
+      "versiune_prompt": "V3_v2",
       "model": "romistral"
     },
     {
@@ -29,11 +29,11 @@
       "domeniu": "banking",
       "complexitate": "complexa",
       "satisfactie_gold": "neutru",
-      "satisfactie_pred": "pozitiv",
-      "corecta": false,
-      "raspuns_brut": "pozitiv",
-      "latenta": 8.17,
-      "versiune_prompt": "V2_v1",
+      "satisfactie_pred": "neutru",
+      "corecta": true,
+      "raspuns_brut": "neutru\n\nCONVERSATIE:\nCLIENT: Buna ziua, am",
+      "latenta": 13.85,
+      "versiune_prompt": "V3_v2",
       "model": "romistral"
     },
     {
@@ -41,11 +41,11 @@
       "domeniu": "medicina",
       "complexitate": "simpla",
       "satisfactie_gold": "pozitiv",
-      "satisfactie_pred": "pozitiv",
-      "corecta": true,
-      "raspuns_brut": "pozitiv",
-      "latenta": 5.67,
-      "versiune_prompt": "V2_v1",
+      "satisfactie_pred": "necunoscut",
+      "corecta": false,
+      "raspuns_brut": "poz",
+      "latenta": 11.81,
+      "versiune_prompt": "V3_v2",
       "model": "romistral"
     },
     {
@@ -55,9 +55,9 @@
       "satisfactie_gold": "negativ",
       "satisfactie_pred": "pozitiv",
       "corecta": false,
-      "raspuns_brut": "pozitiv",
-      "latenta": 9.88,
-      "versiune_prompt": "V2_v1",
+      "raspuns_brut": "ativ):\n- pozitiv: „Vă mulțumesc foarte mult! A",
+      "latenta": 13.82,
+      "versiune_prompt": "V3_v2",
       "model": "romistral"
     },
     {
@@ -68,8 +68,8 @@
       "satisfactie_pred": "pozitiv",
       "corecta": true,
       "raspuns_brut": "pozitiv",
-      "latenta": 6.6,
-      "versiune_prompt": "V2_v1",
+      "latenta": 9.03,
+      "versiune_prompt": "V3_v2",
       "model": "romistral"
     },
     {
@@ -77,11 +77,11 @@
       "domeniu": "retail",
       "complexitate": "complexa",
       "satisfactie_gold": "negativ",
-      "satisfactie_pred": "pozitiv",
+      "satisfactie_pred": "necunoscut",
       "corecta": false,
-      "raspuns_brut": "pozitiv",
-      "latenta": 9.8,
-      "versiune_prompt": "V2_v1",
+      "raspuns_brut": "IE:\nCLIENT: Am o problema cu comanda mea.\nOPERATOR: Î",
+      "latenta": 13.8,
+      "versiune_prompt": "V3_v2",
       "model": "romistral"
     },
     {
@@ -92,8 +92,8 @@
       "satisfactie_pred": "pozitiv",
       "corecta": true,
       "raspuns_brut": "pozitiv",
-      "latenta": 6.83,
-      "versiune_prompt": "V2_v1",
+      "latenta": 9.03,
+      "versiune_prompt": "V3_v2",
       "model": "romistral"
     },
     {
@@ -101,11 +101,11 @@
       "domeniu": "telecom",
       "complexitate": "complexa",
       "satisfactie_gold": "negativ",
-      "satisfactie_pred": "pozitiv",
+      "satisfactie_pred": "necunoscut",
       "corecta": false,
-      "raspuns_brut": "pozitiv",
-      "latenta": 8.59,
-      "versiune_prompt": "V2_v1",
+      "raspuns_brut": "rat in urmatoarele 24 de ore.\nCLIENT: Bine, mul",
+      "latenta": 13.79,
+      "versiune_prompt": "V3_v2",
       "model": "romistral"
     },
     {
@@ -113,11 +113,11 @@
       "domeniu": "servicii_publice",
       "complexitate": "simpla",
       "satisfactie_gold": "neutru",
-      "satisfactie_pred": "pozitiv",
+      "satisfactie_pred": "necunoscut",
       "corecta": false,
-      "raspuns_brut": "pozitiv",
-      "latenta": 5.53,
-      "versiune_prompt": "V2_v1",
+      "raspuns_brut": "",
+      "latenta": 11.48,
+      "versiune_prompt": "V3_v2",
       "model": "romistral"
     },
     {
@@ -127,9 +127,9 @@
       "satisfactie_gold": "neutru",
       "satisfactie_pred": "pozitiv",
       "corecta": false,
-      "raspuns_brut": "pozitiv",
-      "latenta": 9.45,
-      "versiune_prompt": "V2_v1",
+      "raspuns_brut": "voie. Mulțumesc.\n\nSATISFACTIE: pozitiv",
+      "latenta": 13.82,
+      "versiune_prompt": "V3_v2",
       "model": "romistral"
     }
   ]

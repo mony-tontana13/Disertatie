@@ -7,9 +7,9 @@
     "versiune": "V1_v2",
     "accuracy": 0.0,
     "f1": 0.0,
-    "latenta": 10.34,
+    "latenta": 9.32,
     "nr_conversatii": 10,
-    "raport_text": "\n=== romistral | Prompt V1_v2 | 10 conversatii ===\n  Accuracy:         0.00%\n  F1 Macro:         0.000\n  Latenta medie:    10.3s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'necunoscut': 8, 'neutru': 2}\n  Erori (10/10):\n    BNK_006 [simpla]: gold=neutru pred=necunoscut\n    BNK_008 [complexa]: gold=neutru pred=necunoscut\n    MED_001 [simpla]: gold=pozitiv pred=necunoscut\n    MED_018 [complexa]: gold=negativ pred=neutru\n    RET_003 [simpla]: gold=pozitiv pred=necunoscut\n    RET_010 [complexa]: gold=negativ pred=necunoscut\n    TEL_002 [simpla]: gold=pozitiv pred=neutru\n    TEL_009 [complexa]: gold=negativ pred=necunoscut\n    SP_006 [simpla]: gold=neutru pred=necunoscut\n    SP_008 [complexa]: gold=neutru pred=necunoscut\n  Per clasa:\n    pozitiv   : 0% (0/3)\n    neutru    : 0% (0/4)\n    negativ   : 0% (0/3)"
+    "raport_text": "\n=== romistral | Prompt V1_v2 | 10 conversatii ===\n  Accuracy:         0.00%\n  F1 Macro:         0.000\n  Latenta medie:    9.3s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'necunoscut': 8, 'neutru': 2}\n  Erori (10/10):\n    BNK_006 [simpla]: gold=neutru pred=necunoscut\n    BNK_008 [complexa]: gold=neutru pred=necunoscut\n    MED_001 [simpla]: gold=pozitiv pred=necunoscut\n    MED_018 [complexa]: gold=negativ pred=neutru\n    RET_003 [simpla]: gold=pozitiv pred=necunoscut\n    RET_010 [complexa]: gold=negativ pred=necunoscut\n    TEL_002 [simpla]: gold=pozitiv pred=neutru\n    TEL_009 [complexa]: gold=negativ pred=necunoscut\n    SP_006 [simpla]: gold=neutru pred=necunoscut\n    SP_008 [complexa]: gold=neutru pred=necunoscut\n  Per clasa:\n    pozitiv   : 0% (0/3)\n    neutru    : 0% (0/4)\n    negativ   : 0% (0/3)"
   },
   "rezultate_detaliate": [
     {
@@ -20,7 +20,7 @@
       "satisfactie_pred": "necunoscut",
       "corecta": false,
       "raspuns_brut": "A) Foarte Satisfacut\nB) Satisfacut\nC)",
-      "latenta": 10.56,
+      "latenta": 7.5,
       "versiune_prompt": "V1_v2",
       "model": "romistral"
     },
@@ -32,7 +32,7 @@
       "satisfactie_pred": "necunoscut",
       "corecta": false,
       "raspuns_brut": "Nivelul de satisfactie al clientului la finalul acestei conversat",
-      "latenta": 10.23,
+      "latenta": 9.98,
       "versiune_prompt": "V1_v2",
       "model": "romistral"
     },
@@ -44,7 +44,7 @@
       "satisfactie_pred": "necunoscut",
       "corecta": false,
       "raspuns_brut": "Nivelul de satisfactie al clientului la finalul acestei conversat",
-      "latenta": 7.67,
+      "latenta": 7.19,
       "versiune_prompt": "V1_v2",
       "model": "romistral"
     },
@@ -56,7 +56,7 @@
       "satisfactie_pred": "neutru",
       "corecta": false,
       "raspuns_brut": "* Satisfăcut: 2/10\n* Neutru:",
-      "latenta": 14.63,
+      "latenta": 11.78,
       "versiune_prompt": "V1_v2",
       "model": "romistral"
     },
@@ -68,7 +68,7 @@
       "satisfactie_pred": "necunoscut",
       "corecta": false,
       "raspuns_brut": "Nivelul de satisfactie al clientului la finalul acestei conversat",
-      "latenta": 8.37,
+      "latenta": 8.11,
       "versiune_prompt": "V1_v2",
       "model": "romistral"
     },
@@ -80,7 +80,7 @@
       "satisfactie_pred": "necunoscut",
       "corecta": false,
       "raspuns_brut": "Nivel scăzut de satisfacție. Clientul este nemulțum",
-      "latenta": 14.09,
+      "latenta": 11.69,
       "versiune_prompt": "V1_v2",
       "model": "romistral"
     },
@@ -92,7 +92,7 @@
       "satisfactie_pred": "neutru",
       "corecta": false,
       "raspuns_brut": "* Foarte mulțumit\n* Mulțumit\n* Neutru",
-      "latenta": 8.62,
+      "latenta": 8.41,
       "versiune_prompt": "V1_v2",
       "model": "romistral"
     },
@@ -104,7 +104,7 @@
       "satisfactie_pred": "necunoscut",
       "corecta": false,
       "raspuns_brut": "Nivel scăzut de satisfacție. Clientul este nemulțum",
-      "latenta": 10.67,
+      "latenta": 10.41,
       "versiune_prompt": "V1_v2",
       "model": "romistral"
     },
@@ -116,7 +116,7 @@
       "satisfactie_pred": "necunoscut",
       "corecta": false,
       "raspuns_brut": "A) Foarte Satisfacție\nB) Satisfacție\nC)",
-      "latenta": 7.21,
+      "latenta": 7.05,
       "versiune_prompt": "V1_v2",
       "model": "romistral"
     },
@@ -128,7 +128,7 @@
       "satisfactie_pred": "necunoscut",
       "corecta": false,
       "raspuns_brut": "* 4/5\n\nClientul a reușit să programe",
-      "latenta": 11.34,
+      "latenta": 11.04,
       "versiune_prompt": "V1_v2",
       "model": "romistral"
     }

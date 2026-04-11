@@ -1,15 +1,15 @@
 {
   "model": "romistral",
-  "versiune": "V2_v2",
+  "versiune": "V3_v1",
   "set_date": "subset_2_per_domeniu",
   "metrici": {
     "model": "romistral",
-    "versiune": "V2_v2",
-    "accuracy": 0.4,
-    "f1": 0.3667,
-    "latenta": 8.79,
+    "versiune": "V3_v1",
+    "accuracy": 0.3,
+    "f1": 0.3889,
+    "latenta": 11.46,
     "nr_conversatii": 10,
-    "raport_text": "\n=== romistral | Prompt V2_v2 | 10 conversatii ===\n  Accuracy:         40.00%\n  F1 Macro:         0.367\n  Latenta medie:    8.8s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'pozitiv': 7, 'necunoscut': 2, 'negativ': 1}\n  Erori (6/10):\n    BNK_006 [simpla]: gold=neutru pred=pozitiv\n    BNK_008 [complexa]: gold=neutru pred=pozitiv\n    MED_018 [complexa]: gold=negativ pred=necunoscut\n    RET_010 [complexa]: gold=negativ pred=necunoscut\n    SP_006 [simpla]: gold=neutru pred=pozitiv\n    SP_008 [complexa]: gold=neutru pred=pozitiv\n  Per clasa:\n    pozitiv   : 100% (3/3)\n    neutru    : 0% (0/4)\n    negativ   : 33% (1/3)"
+    "raport_text": "\n=== romistral | Prompt V3_v1 | 10 conversatii ===\n  Accuracy:         30.00%\n  F1 Macro:         0.389\n  Latenta medie:    11.5s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'necunoscut': 6, 'pozitiv': 3, 'negativ': 1}\n  Erori (7/10):\n    BNK_006 [simpla]: gold=neutru pred=necunoscut\n    BNK_008 [complexa]: gold=neutru pred=pozitiv\n    MED_001 [simpla]: gold=pozitiv pred=necunoscut\n    MED_018 [complexa]: gold=negativ pred=necunoscut\n    RET_010 [complexa]: gold=negativ pred=necunoscut\n    SP_006 [simpla]: gold=neutru pred=necunoscut\n    SP_008 [complexa]: gold=neutru pred=necunoscut\n  Per clasa:\n    pozitiv   : 67% (2/3)\n    neutru    : 0% (0/4)\n    negativ   : 33% (1/3)"
   },
   "rezultate_detaliate": [
     {
@@ -17,11 +17,11 @@
       "domeniu": "banking",
       "complexitate": "simpla",
       "satisfactie_gold": "neutru",
-      "satisfactie_pred": "pozitiv",
+      "satisfactie_pred": "necunoscut",
       "corecta": false,
-      "raspuns_brut": "pozitiv",
-      "latenta": 6.3,
-      "versiune_prompt": "V2_v2",
+      "raspuns_brut": "",
+      "latenta": 10.84,
+      "versiune_prompt": "V3_v1",
       "model": "romistral"
     },
     {
@@ -32,8 +32,8 @@
       "satisfactie_pred": "pozitiv",
       "corecta": false,
       "raspuns_brut": "pozitiv",
-      "latenta": 8.69,
-      "versiune_prompt": "V2_v2",
+      "latenta": 9.82,
+      "versiune_prompt": "V3_v1",
       "model": "romistral"
     },
     {
@@ -41,11 +41,11 @@
       "domeniu": "medicina",
       "complexitate": "simpla",
       "satisfactie_gold": "pozitiv",
-      "satisfactie_pred": "pozitiv",
-      "corecta": true,
-      "raspuns_brut": "pozitiv",
-      "latenta": 6.07,
-      "versiune_prompt": "V2_v2",
+      "satisfactie_pred": "necunoscut",
+      "corecta": false,
+      "raspuns_brut": "poz",
+      "latenta": 10.72,
+      "versiune_prompt": "V3_v1",
       "model": "romistral"
     },
     {
@@ -55,9 +55,9 @@
       "satisfactie_gold": "negativ",
       "satisfactie_pred": "necunoscut",
       "corecta": false,
-      "raspuns_brut": "ți întrebări sau nelămuriri, vă rugăm să nu",
-      "latenta": 14.14,
-      "versiune_prompt": "V2_v2",
+      "raspuns_brut": ", am o problema cu contul meu.\nOPERATOR: Sigur, ce pot",
+      "latenta": 13.89,
+      "versiune_prompt": "V3_v1",
       "model": "romistral"
     },
     {
@@ -68,8 +68,8 @@
       "satisfactie_pred": "pozitiv",
       "corecta": true,
       "raspuns_brut": "pozitiv",
-      "latenta": 6.97,
-      "versiune_prompt": "V2_v2",
+      "latenta": 8.17,
+      "versiune_prompt": "V3_v1",
       "model": "romistral"
     },
     {
@@ -79,9 +79,9 @@
       "satisfactie_gold": "negativ",
       "satisfactie_pred": "necunoscut",
       "corecta": false,
-      "raspuns_brut": "OPERATOR: La revedere. O zi bună!\n\nRĂSP",
-      "latenta": 13.84,
-      "versiune_prompt": "V2_v2",
+      "raspuns_brut": "ul meu de credit.\nOPERATOR: Îmi pare rău să aud asta",
+      "latenta": 13.82,
+      "versiune_prompt": "V3_v1",
       "model": "romistral"
     },
     {
@@ -92,8 +92,8 @@
       "satisfactie_pred": "pozitiv",
       "corecta": true,
       "raspuns_brut": "pozitiv",
-      "latenta": 7.25,
-      "versiune_prompt": "V2_v2",
+      "latenta": 8.21,
+      "versiune_prompt": "V3_v1",
       "model": "romistral"
     },
     {
@@ -103,9 +103,9 @@
       "satisfactie_gold": "negativ",
       "satisfactie_pred": "negativ",
       "corecta": true,
-      "raspuns_brut": "negativ",
-      "latenta": 8.83,
-      "versiune_prompt": "V2_v2",
+      "raspuns_brut": ", mulțumesc.\nSATISFACTIE: negativ\n\nRĂ",
+      "latenta": 14.62,
+      "versiune_prompt": "V3_v1",
       "model": "romistral"
     },
     {
@@ -113,11 +113,11 @@
       "domeniu": "servicii_publice",
       "complexitate": "simpla",
       "satisfactie_gold": "neutru",
-      "satisfactie_pred": "pozitiv",
+      "satisfactie_pred": "necunoscut",
       "corecta": false,
-      "raspuns_brut": "pozitiv",
-      "latenta": 6.02,
-      "versiune_prompt": "V2_v2",
+      "raspuns_brut": "",
+      "latenta": 10.5,
+      "versiune_prompt": "V3_v1",
       "model": "romistral"
     },
     {
@@ -125,11 +125,11 @@
       "domeniu": "servicii_publice",
       "complexitate": "complexa",
       "satisfactie_gold": "neutru",
-      "satisfactie_pred": "pozitiv",
+      "satisfactie_pred": "necunoscut",
       "corecta": false,
-      "raspuns_brut": "pozitiv",
-      "latenta": 9.79,
-      "versiune_prompt": "V2_v2",
+      "raspuns_brut": ", am o problema cu cardul meu blocat.\nOPERATOR: Va de",
+      "latenta": 13.97,
+      "versiune_prompt": "V3_v1",
       "model": "romistral"
     }
   ]

@@ -2,7 +2,7 @@
 === romistral | Prompt V1_v1 | 10 conversatii ===
   Accuracy:         60.00%
   F1 Macro:         0.508
-  Latenta medie:    6.9s
+  Latenta medie:    6.7s
   Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
   Distributie pred: {'negativ': 4, 'pozitiv': 6}
   Erori (4/10):

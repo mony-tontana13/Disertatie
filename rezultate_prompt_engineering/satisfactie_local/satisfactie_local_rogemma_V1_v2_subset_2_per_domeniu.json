@@ -7,9 +7,9 @@
     "versiune": "V1_v2",
     "accuracy": 0.2,
     "f1": 0.1212,
-    "latenta": 451.99,
+    "latenta": 12.21,
     "nr_conversatii": 10,
-    "raport_text": "\n=== rogemma | Prompt V1_v2 | 10 conversatii ===\n  Accuracy:         20.00%\n  F1 Macro:         0.121\n  Latenta medie:    452.0s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'neutru': 7, 'necunoscut': 3}\n  Erori (8/10):\n    BNK_008 [complexa]: gold=neutru pred=necunoscut\n    MED_001 [simpla]: gold=pozitiv pred=necunoscut\n    MED_018 [complexa]: gold=negativ pred=neutru\n    RET_003 [simpla]: gold=pozitiv pred=neutru\n    RET_010 [complexa]: gold=negativ pred=neutru\n    TEL_002 [simpla]: gold=pozitiv pred=neutru\n    TEL_009 [complexa]: gold=negativ pred=neutru\n    SP_008 [complexa]: gold=neutru pred=necunoscut\n  Per clasa:\n    pozitiv   : 0% (0/3)\n    neutru    : 50% (2/4)\n    negativ   : 0% (0/3)"
+    "raport_text": "\n=== rogemma | Prompt V1_v2 | 10 conversatii ===\n  Accuracy:         20.00%\n  F1 Macro:         0.121\n  Latenta medie:    12.2s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'neutru': 7, 'necunoscut': 3}\n  Erori (8/10):\n    BNK_008 [complexa]: gold=neutru pred=necunoscut\n    MED_001 [simpla]: gold=pozitiv pred=necunoscut\n    MED_018 [complexa]: gold=negativ pred=neutru\n    RET_003 [simpla]: gold=pozitiv pred=neutru\n    RET_010 [complexa]: gold=negativ pred=neutru\n    TEL_002 [simpla]: gold=pozitiv pred=neutru\n    TEL_009 [complexa]: gold=negativ pred=neutru\n    SP_008 [complexa]: gold=neutru pred=necunoscut\n  Per clasa:\n    pozitiv   : 0% (0/3)\n    neutru    : 50% (2/4)\n    negativ   : 0% (0/3)"
   },
   "rezultate_detaliate": [
     {
@@ -20,7 +20,7 @@
       "satisfactie_pred": "neutru",
       "corecta": true,
       "raspuns_brut": "A. Foarte satisfăcut\nB. Satisfăcut\nC. Neutru",
-      "latenta": 19.24,
+      "latenta": 9.72,
       "versiune_prompt": "V1_v2",
       "model": "rogemma"
     },
@@ -32,7 +32,7 @@
       "satisfactie_pred": "necunoscut",
       "corecta": false,
       "raspuns_brut": "Clientul este mulțumit de serviciul oferit de operator. Operatorul a ofer",
-      "latenta": 256.24,
+      "latenta": 34.12,
       "versiune_prompt": "V1_v2",
       "model": "rogemma"
     },
@@ -44,7 +44,7 @@
       "satisfactie_pred": "necunoscut",
       "corecta": false,
       "raspuns_brut": "A. Foarte satisfăcut\nB. Satisfăcut\nC. Nesatisfă",
-      "latenta": 1776.37,
+      "latenta": 10.51,
       "versiune_prompt": "V1_v2",
       "model": "rogemma"
     },
@@ -56,7 +56,7 @@
       "satisfactie_pred": "neutru",
       "corecta": false,
       "raspuns_brut": "- Foarte nemulțumit\n- Nemulțumit\n- Neutru",
-      "latenta": 815.54,
+      "latenta": 12.63,
       "versiune_prompt": "V1_v2",
       "model": "rogemma"
     },
@@ -68,7 +68,7 @@
       "satisfactie_pred": "neutru",
       "corecta": false,
       "raspuns_brut": "A. Foarte satisfăcut\nB. Satisfăcut\nC. Neutru",
-      "latenta": 679.21,
+      "latenta": 7.82,
       "versiune_prompt": "V1_v2",
       "model": "rogemma"
     },
@@ -80,7 +80,7 @@
       "satisfactie_pred": "neutru",
       "corecta": false,
       "raspuns_brut": "- Foarte nemulțumit\n- Nemulțumit\n- Neutru",
-      "latenta": 937.17,
+      "latenta": 11.39,
       "versiune_prompt": "V1_v2",
       "model": "rogemma"
     },
@@ -92,7 +92,7 @@
       "satisfactie_pred": "neutru",
       "corecta": false,
       "raspuns_brut": "A. Foarte satisfăcut\nB. Satisfăcut\nC. Neutru",
-      "latenta": 9.49,
+      "latenta": 9.25,
       "versiune_prompt": "V1_v2",
       "model": "rogemma"
     },
@@ -104,7 +104,7 @@
       "satisfactie_pred": "neutru",
       "corecta": false,
       "raspuns_brut": "- Foarte nemulțumit\n- Nemulțumit\n- Neutru",
-      "latenta": 9.21,
+      "latenta": 9.13,
       "versiune_prompt": "V1_v2",
       "model": "rogemma"
     },
@@ -116,7 +116,7 @@
       "satisfactie_pred": "neutru",
       "corecta": true,
       "raspuns_brut": "A. Foarte satisfăcut\nB. Satisfăcut\nC. Neutru",
-      "latenta": 6.99,
+      "latenta": 7.41,
       "versiune_prompt": "V1_v2",
       "model": "rogemma"
     },
@@ -128,7 +128,7 @@
       "satisfactie_pred": "necunoscut",
       "corecta": false,
       "raspuns_brut": "A. Foarte mulțumit\nB.Mulțumit\nC.Neu",
-      "latenta": 10.41,
+      "latenta": 10.15,
       "versiune_prompt": "V1_v2",
       "model": "rogemma"
     }

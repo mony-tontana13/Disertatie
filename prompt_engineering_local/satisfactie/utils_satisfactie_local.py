@@ -77,9 +77,6 @@ def normalizeaza(text):
 def extrage_satisfactie(raspuns):
     raspuns_norm = normalizeaza(raspuns)
     for clasa in CLASE:
-        if clasa in raspuns_norm[:50]:
-            return clasa
-    for clasa in CLASE:
         if clasa in raspuns_norm:
             return clasa
     return "necunoscut"

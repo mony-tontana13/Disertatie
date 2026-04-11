@@ -2,7 +2,7 @@
 === rogemma | Prompt V1_v1 | 10 conversatii ===
   Accuracy:         60.00%
   F1 Macro:         0.500
-  Latenta medie:    385.3s
+  Latenta medie:    12.0s
   Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
   Distributie pred: {'negativ': 5, 'pozitiv': 5}
   Erori (4/10):

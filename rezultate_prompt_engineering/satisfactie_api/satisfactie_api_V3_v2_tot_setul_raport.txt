@@ -1,50 +1,39 @@
 
-=== GPT-4.1-mini | Prompt V1_v1 | 100 conversatii ===
-  Accuracy:         72.00%
-  F1 Macro:         0.716
-  TTFT medie:       0.564s
-  Latenta medie:    0.575s
+=== GPT-4.1-mini | Prompt V3_v2 | 100 conversatii ===
+  Accuracy:         83.00%
+  F1 Macro:         0.816
+  TTFT medie:       0.592s
+  Latenta medie:    0.810s
   Distributie gold: {'pozitiv': 15, 'neutru': 25, 'negativ': 60}
-  Distributie pred: {'pozitiv': 23, 'neutru': 36, 'negativ': 40, 'necunoscut': 1}
-  Erori (28/100):
+  Distributie pred: {'pozitiv': 20, 'neutru': 32, 'negativ': 48}
+  Erori (17/100):
     BNK_007 [complexa]: gold=neutru pred=pozitiv
     BNK_008 [complexa]: gold=neutru pred=pozitiv
     BNK_012 [complexa]: gold=negativ pred=neutru
-    BNK_013 [complexa]: gold=negativ pred=neutru
     BNK_014 [complexa]: gold=negativ pred=neutru
     BNK_017 [complexa]: gold=negativ pred=neutru
     BNK_018 [complexa]: gold=negativ pred=neutru
-    MED_008 [complexa]: gold=neutru pred=pozitiv
-    MED_010 [complexa]: gold=negativ pred=neutru
     MED_012 [complexa]: gold=negativ pred=neutru
-    MED_014 [complexa]: gold=negativ pred=neutru
     MED_015 [complexa]: gold=negativ pred=neutru
-    RET_004 [simpla]: gold=neutru pred=pozitiv
-    RET_012 [complexa]: gold=negativ pred=neutru
     RET_013 [complexa]: gold=negativ pred=neutru
     RET_015 [complexa]: gold=negativ pred=neutru
-    RET_017 [complexa]: gold=negativ pred=neutru
     TEL_004 [simpla]: gold=neutru pred=pozitiv
     TEL_007 [complexa]: gold=neutru pred=pozitiv
-    TEL_016 [complexa]: gold=negativ pred=neutru
-    TEL_019 [complexa]: gold=negativ pred=neutru
     SP_007 [complexa]: gold=neutru pred=pozitiv
-    SP_008 [complexa]: gold=neutru pred=pozitiv
     SP_014 [complexa]: gold=negativ pred=neutru
     SP_015 [complexa]: gold=negativ pred=neutru
     SP_017 [complexa]: gold=negativ pred=neutru
-    SP_018 [complexa]: gold=negativ pred=necunoscut
-    SP_020 [complexa]: gold=negativ pred=neutru
+    SP_018 [complexa]: gold=negativ pred=neutru
   Per clasa:
     pozitiv               : 100% (15/15)
-    neutru                : 68% (17/25)
-    negativ               : 67% (40/60)
+    neutru                : 80% (20/25)
+    negativ               : 80% (48/60)
 
-=== Gemini-2.5-flash | Prompt V1_v1 | 100 conversatii ===
+=== Gemini-2.5-flash | Prompt V3_v2 | 100 conversatii ===
   Accuracy:         0.00%
   F1 Macro:         0.000
-  TTFT medie:       0.732s
-  Latenta medie:    0.732s
+  TTFT medie:       0.655s
+  Latenta medie:    0.655s
   Distributie gold: {'pozitiv': 15, 'neutru': 25, 'negativ': 60}
   Distributie pred: {'necunoscut': 100}
   Erori (100/100):
@@ -153,43 +142,95 @@
     neutru                : 0% (0/25)
     negativ               : 0% (0/60)
 
-=== command-r7b-12-2024 | Prompt V1_v1 | 100 conversatii ===
-  Accuracy:         72.00%
-  F1 Macro:         0.605
-  TTFT medie:       0.513s
-  Latenta medie:    0.513s
+=== command-r7b-12-2024 | Prompt V3_v2 | 100 conversatii ===
+  Accuracy:         20.00%
+  F1 Macro:         0.202
+  TTFT medie:       0.744s
+  Latenta medie:    0.744s
   Distributie gold: {'pozitiv': 15, 'neutru': 25, 'negativ': 60}
-  Distributie pred: {'necunoscut': 7, 'pozitiv': 9, 'negativ': 81, 'neutru': 3}
-  Erori (28/100):
+  Distributie pred: {'necunoscut': 80, 'pozitiv': 1, 'negativ': 19}
+  Erori (80/100):
     BNK_001 [simpla]: gold=pozitiv pred=necunoscut
-    BNK_004 [simpla]: gold=neutru pred=negativ
-    BNK_006 [simpla]: gold=neutru pred=negativ
-    BNK_007 [complexa]: gold=neutru pred=negativ
-    BNK_008 [complexa]: gold=neutru pred=negativ
+    BNK_003 [simpla]: gold=pozitiv pred=necunoscut
+    BNK_004 [simpla]: gold=neutru pred=necunoscut
+    BNK_005 [simpla]: gold=neutru pred=necunoscut
+    BNK_006 [simpla]: gold=neutru pred=necunoscut
+    BNK_007 [complexa]: gold=neutru pred=necunoscut
+    BNK_008 [complexa]: gold=neutru pred=necunoscut
+    BNK_009 [complexa]: gold=negativ pred=necunoscut
+    BNK_011 [complexa]: gold=negativ pred=necunoscut
+    BNK_012 [complexa]: gold=negativ pred=necunoscut
+    BNK_016 [complexa]: gold=negativ pred=necunoscut
+    BNK_017 [complexa]: gold=negativ pred=necunoscut
+    BNK_018 [complexa]: gold=negativ pred=necunoscut
+    BNK_019 [complexa]: gold=negativ pred=necunoscut
     MED_001 [simpla]: gold=pozitiv pred=necunoscut
-    MED_004 [simpla]: gold=neutru pred=negativ
-    MED_005 [simpla]: gold=neutru pred=negativ
-    MED_006 [simpla]: gold=neutru pred=negativ
+    MED_002 [simpla]: gold=pozitiv pred=necunoscut
+    MED_003 [simpla]: gold=pozitiv pred=necunoscut
+    MED_004 [simpla]: gold=neutru pred=necunoscut
+    MED_005 [simpla]: gold=neutru pred=necunoscut
+    MED_006 [simpla]: gold=neutru pred=necunoscut
     MED_007 [complexa]: gold=neutru pred=necunoscut
-    RET_003 [simpla]: gold=pozitiv pred=negativ
-    RET_004 [simpla]: gold=neutru pred=negativ
-    RET_005 [simpla]: gold=neutru pred=negativ
-    RET_006 [simpla]: gold=neutru pred=negativ
-    RET_007 [complexa]: gold=neutru pred=negativ
-    RET_008 [complexa]: gold=neutru pred=negativ
+    MED_008 [complexa]: gold=neutru pred=necunoscut
+    MED_009 [complexa]: gold=negativ pred=necunoscut
+    MED_010 [complexa]: gold=negativ pred=necunoscut
+    MED_011 [complexa]: gold=negativ pred=necunoscut
+    MED_012 [complexa]: gold=negativ pred=necunoscut
+    MED_013 [complexa]: gold=negativ pred=necunoscut
+    MED_015 [complexa]: gold=negativ pred=necunoscut
+    MED_016 [complexa]: gold=negativ pred=necunoscut
+    MED_017 [complexa]: gold=negativ pred=necunoscut
+    MED_018 [complexa]: gold=negativ pred=necunoscut
+    MED_019 [complexa]: gold=negativ pred=necunoscut
+    MED_020 [complexa]: gold=negativ pred=necunoscut
+    RET_001 [simpla]: gold=pozitiv pred=necunoscut
+    RET_002 [simpla]: gold=pozitiv pred=necunoscut
+    RET_003 [simpla]: gold=pozitiv pred=necunoscut
+    RET_004 [simpla]: gold=neutru pred=necunoscut
+    RET_005 [simpla]: gold=neutru pred=necunoscut
+    RET_006 [simpla]: gold=neutru pred=necunoscut
+    RET_007 [complexa]: gold=neutru pred=necunoscut
+    RET_008 [complexa]: gold=neutru pred=necunoscut
+    RET_009 [complexa]: gold=negativ pred=necunoscut
+    RET_010 [complexa]: gold=negativ pred=necunoscut
+    RET_011 [complexa]: gold=negativ pred=necunoscut
+    RET_012 [complexa]: gold=negativ pred=necunoscut
+    RET_013 [complexa]: gold=negativ pred=necunoscut
+    RET_015 [complexa]: gold=negativ pred=necunoscut
+    RET_017 [complexa]: gold=negativ pred=necunoscut
+    RET_018 [complexa]: gold=negativ pred=necunoscut
+    TEL_001 [simpla]: gold=pozitiv pred=necunoscut
     TEL_002 [simpla]: gold=pozitiv pred=necunoscut
+    TEL_003 [simpla]: gold=pozitiv pred=necunoscut
     TEL_004 [simpla]: gold=neutru pred=necunoscut
-    TEL_005 [simpla]: gold=neutru pred=negativ
-    TEL_006 [simpla]: gold=neutru pred=negativ
-    TEL_007 [complexa]: gold=neutru pred=negativ
-    TEL_008 [complexa]: gold=neutru pred=negativ
+    TEL_005 [simpla]: gold=neutru pred=necunoscut
+    TEL_006 [simpla]: gold=neutru pred=necunoscut
+    TEL_007 [complexa]: gold=neutru pred=necunoscut
+    TEL_008 [complexa]: gold=neutru pred=necunoscut
+    TEL_009 [complexa]: gold=negativ pred=necunoscut
+    TEL_012 [complexa]: gold=negativ pred=necunoscut
+    TEL_015 [complexa]: gold=negativ pred=necunoscut
+    TEL_016 [complexa]: gold=negativ pred=necunoscut
+    TEL_017 [complexa]: gold=negativ pred=necunoscut
+    TEL_019 [complexa]: gold=negativ pred=necunoscut
+    TEL_020 [complexa]: gold=negativ pred=necunoscut
     SP_001 [simpla]: gold=pozitiv pred=necunoscut
+    SP_002 [simpla]: gold=pozitiv pred=necunoscut
     SP_003 [simpla]: gold=pozitiv pred=necunoscut
-    SP_004 [simpla]: gold=neutru pred=negativ
-    SP_005 [simpla]: gold=neutru pred=negativ
-    SP_007 [complexa]: gold=neutru pred=negativ
-    SP_008 [complexa]: gold=neutru pred=negativ
+    SP_004 [simpla]: gold=neutru pred=necunoscut
+    SP_005 [simpla]: gold=neutru pred=necunoscut
+    SP_006 [simpla]: gold=neutru pred=necunoscut
+    SP_007 [complexa]: gold=neutru pred=necunoscut
+    SP_008 [complexa]: gold=neutru pred=necunoscut
+    SP_011 [complexa]: gold=negativ pred=necunoscut
+    SP_012 [complexa]: gold=negativ pred=necunoscut
+    SP_013 [complexa]: gold=negativ pred=necunoscut
+    SP_015 [complexa]: gold=negativ pred=necunoscut
+    SP_016 [complexa]: gold=negativ pred=necunoscut
+    SP_017 [complexa]: gold=negativ pred=necunoscut
+    SP_019 [complexa]: gold=negativ pred=necunoscut
+    SP_020 [complexa]: gold=negativ pred=necunoscut
   Per clasa:
-    pozitiv               : 60% (9/15)
-    neutru                : 12% (3/25)
-    negativ               : 100% (60/60)
+    pozitiv               : 7% (1/15)
+    neutru                : 0% (0/25)
+    negativ               : 32% (19/60)

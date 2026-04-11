@@ -7,9 +7,9 @@
     "versiune": "V1_v1",
     "accuracy": 0.6,
     "f1": 0.5079,
-    "latenta": 6.94,
+    "latenta": 6.68,
     "nr_conversatii": 10,
-    "raport_text": "\n=== romistral | Prompt V1_v1 | 10 conversatii ===\n  Accuracy:         60.00%\n  F1 Macro:         0.508\n  Latenta medie:    6.9s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'negativ': 4, 'pozitiv': 6}\n  Erori (4/10):\n    BNK_006 [simpla]: gold=neutru pred=negativ\n    BNK_008 [complexa]: gold=neutru pred=pozitiv\n    SP_006 [simpla]: gold=neutru pred=pozitiv\n    SP_008 [complexa]: gold=neutru pred=pozitiv\n  Per clasa:\n    pozitiv   : 100% (3/3)\n    neutru    : 0% (0/4)\n    negativ   : 100% (3/3)"
+    "raport_text": "\n=== romistral | Prompt V1_v1 | 10 conversatii ===\n  Accuracy:         60.00%\n  F1 Macro:         0.508\n  Latenta medie:    6.7s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'negativ': 4, 'pozitiv': 6}\n  Erori (4/10):\n    BNK_006 [simpla]: gold=neutru pred=negativ\n    BNK_008 [complexa]: gold=neutru pred=pozitiv\n    SP_006 [simpla]: gold=neutru pred=pozitiv\n    SP_008 [complexa]: gold=neutru pred=pozitiv\n  Per clasa:\n    pozitiv   : 100% (3/3)\n    neutru    : 0% (0/4)\n    negativ   : 100% (3/3)"
   },
   "rezultate_detaliate": [
     {
@@ -20,7 +20,7 @@
       "satisfactie_pred": "negativ",
       "corecta": false,
       "raspuns_brut": "Negativ",
-      "latenta": 5.15,
+      "latenta": 4.86,
       "versiune_prompt": "V1_v1",
       "model": "romistral"
     },
@@ -32,7 +32,7 @@
       "satisfactie_pred": "pozitiv",
       "corecta": false,
       "raspuns_brut": "Pozitiv",
-      "latenta": 7.71,
+      "latenta": 7.57,
       "versiune_prompt": "V1_v1",
       "model": "romistral"
     },
@@ -44,7 +44,7 @@
       "satisfactie_pred": "pozitiv",
       "corecta": true,
       "raspuns_brut": "Pozitiv",
-      "latenta": 5.03,
+      "latenta": 4.93,
       "versiune_prompt": "V1_v1",
       "model": "romistral"
     },
@@ -56,7 +56,7 @@
       "satisfactie_pred": "negativ",
       "corecta": true,
       "raspuns_brut": "Negativ",
-      "latenta": 8.95,
+      "latenta": 8.7,
       "versiune_prompt": "V1_v1",
       "model": "romistral"
     },
@@ -68,7 +68,7 @@
       "satisfactie_pred": "pozitiv",
       "corecta": true,
       "raspuns_brut": "Pozitiv",
-      "latenta": 5.94,
+      "latenta": 5.88,
       "versiune_prompt": "V1_v1",
       "model": "romistral"
     },
@@ -80,7 +80,7 @@
       "satisfactie_pred": "negativ",
       "corecta": true,
       "raspuns_brut": "Negativ",
-      "latenta": 8.56,
+      "latenta": 8.47,
       "versiune_prompt": "V1_v1",
       "model": "romistral"
     },
@@ -92,7 +92,7 @@
       "satisfactie_pred": "pozitiv",
       "corecta": true,
       "raspuns_brut": "Pozitiv",
-      "latenta": 7.4,
+      "latenta": 5.98,
       "versiune_prompt": "V1_v1",
       "model": "romistral"
     },
@@ -104,7 +104,7 @@
       "satisfactie_pred": "negativ",
       "corecta": true,
       "raspuns_brut": "Negativ",
-      "latenta": 7.25,
+      "latenta": 7.18,
       "versiune_prompt": "V1_v1",
       "model": "romistral"
     },
@@ -116,7 +116,7 @@
       "satisfactie_pred": "pozitiv",
       "corecta": false,
       "raspuns_brut": "Pozitiv",
-      "latenta": 4.83,
+      "latenta": 4.75,
       "versiune_prompt": "V1_v1",
       "model": "romistral"
     },
@@ -128,7 +128,7 @@
       "satisfactie_pred": "pozitiv",
       "corecta": false,
       "raspuns_brut": "Pozitiv",
-      "latenta": 8.61,
+      "latenta": 8.47,
       "versiune_prompt": "V1_v1",
       "model": "romistral"
     }

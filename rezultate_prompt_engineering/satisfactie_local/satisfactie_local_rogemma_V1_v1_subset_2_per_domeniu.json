@@ -7,9 +7,9 @@
     "versiune": "V1_v1",
     "accuracy": 0.6,
     "f1": 0.5,
-    "latenta": 385.34,
+    "latenta": 12.0,
     "nr_conversatii": 10,
-    "raport_text": "\n=== rogemma | Prompt V1_v1 | 10 conversatii ===\n  Accuracy:         60.00%\n  F1 Macro:         0.500\n  Latenta medie:    385.3s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'negativ': 5, 'pozitiv': 5}\n  Erori (4/10):\n    BNK_006 [simpla]: gold=neutru pred=negativ\n    BNK_008 [complexa]: gold=neutru pred=pozitiv\n    SP_006 [simpla]: gold=neutru pred=negativ\n    SP_008 [complexa]: gold=neutru pred=pozitiv\n  Per clasa:\n    pozitiv   : 100% (3/3)\n    neutru    : 0% (0/4)\n    negativ   : 100% (3/3)"
+    "raport_text": "\n=== rogemma | Prompt V1_v1 | 10 conversatii ===\n  Accuracy:         60.00%\n  F1 Macro:         0.500\n  Latenta medie:    12.0s\n  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}\n  Distributie pred: {'negativ': 5, 'pozitiv': 5}\n  Erori (4/10):\n    BNK_006 [simpla]: gold=neutru pred=negativ\n    BNK_008 [complexa]: gold=neutru pred=pozitiv\n    SP_006 [simpla]: gold=neutru pred=negativ\n    SP_008 [complexa]: gold=neutru pred=pozitiv\n  Per clasa:\n    pozitiv   : 100% (3/3)\n    neutru    : 0% (0/4)\n    negativ   : 100% (3/3)"
   },
   "rezultate_detaliate": [
     {
@@ -20,7 +20,7 @@
       "satisfactie_pred": "negativ",
       "corecta": false,
       "raspuns_brut": "Negativ.\n\nClientul este nemulțumit de cursul de schimb și dorește",
-      "latenta": 54.97,
+      "latenta": 7.47,
       "versiune_prompt": "V1_v1",
       "model": "rogemma"
     },
@@ -32,7 +32,7 @@
       "satisfactie_pred": "pozitiv",
       "corecta": false,
       "raspuns_brut": "Clientul este pozitiv.\n\nExplicaClientul este mulțumit de serviciul",
-      "latenta": 1062.5,
+      "latenta": 38.6,
       "versiune_prompt": "V1_v1",
       "model": "rogemma"
     },
@@ -44,7 +44,7 @@
       "satisfactie_pred": "pozitiv",
       "corecta": true,
       "raspuns_brut": "Pozitiv\n\nClientul a fost mulțumit de răspunsul rapid al operatorului",
-      "latenta": 87.23,
+      "latenta": 7.42,
       "versiune_prompt": "V1_v1",
       "model": "rogemma"
     },
@@ -56,7 +56,7 @@
       "satisfactie_pred": "negativ",
       "corecta": true,
       "raspuns_brut": "Negativ. Clientul este frustrat de procesul de a obține o rețetă",
-      "latenta": 1366.65,
+      "latenta": 12.19,
       "versiune_prompt": "V1_v1",
       "model": "rogemma"
     },
@@ -68,7 +68,7 @@
       "satisfactie_pred": "pozitiv",
       "corecta": true,
       "raspuns_brut": "Clientul este pozitiv la sfârșitul conversației.\n\nExplicație:",
-      "latenta": 122.25,
+      "latenta": 8.06,
       "versiune_prompt": "V1_v1",
       "model": "rogemma"
     },
@@ -80,7 +80,7 @@
       "satisfactie_pred": "negativ",
       "corecta": true,
       "raspuns_brut": "Negativ. Clientul este nemulțumit de procesul de returnare și de timpul",
-      "latenta": 905.38,
+      "latenta": 11.66,
       "versiune_prompt": "V1_v1",
       "model": "rogemma"
     },
@@ -92,7 +92,7 @@
       "satisfactie_pred": "pozitiv",
       "corecta": true,
       "raspuns_brut": "Clientul este pozitiv.\nClientul este neutru.Clientul este negativ.",
-      "latenta": 226.35,
+      "latenta": 8.13,
       "versiune_prompt": "V1_v1",
       "model": "rogemma"
     },
@@ -104,7 +104,7 @@
       "satisfactie_pred": "negativ",
       "corecta": true,
       "raspuns_brut": "Negativ. Clientul este nemulțumit de procesul birocratic și de faptul",
-      "latenta": 10.1,
+      "latenta": 9.38,
       "versiune_prompt": "V1_v1",
       "model": "rogemma"
     },
@@ -116,7 +116,7 @@
       "satisfactie_pred": "negativ",
       "corecta": false,
       "raspuns_brut": "Negativ\n\nClientul este nemulțumit de situația actuală și de solu",
-      "latenta": 7.75,
+      "latenta": 7.05,
       "versiune_prompt": "V1_v1",
       "model": "rogemma"
     },
@@ -128,7 +128,7 @@
       "satisfactie_pred": "pozitiv",
       "corecta": false,
       "raspuns_brut": "Clientul este pozitiv.\nClientul este neutru.Clientul este negativ.",
-      "latenta": 10.24,
+      "latenta": 10.07,
       "versiune_prompt": "V1_v1",
       "model": "rogemma"
     }

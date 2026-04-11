@@ -2,8 +2,8 @@
 === GPT-4.1-mini | Prompt V1_v1 | 10 conversatii ===
   Accuracy:         80.00%
   F1 Macro:         0.806
-  TTFT medie:       1.076s
-  Latenta medie:    1.090s
+  TTFT medie:       1.121s
+  Latenta medie:    1.127s
   Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
   Distributie pred: {'neutru': 2, 'pozitiv': 5, 'negativ': 3}
   Erori (2/10):
@@ -17,8 +17,8 @@
 === Gemini-2.5-flash | Prompt V1_v1 | 10 conversatii ===
   Accuracy:         0.00%
   F1 Macro:         0.000
-  TTFT medie:       0.845s
-  Latenta medie:    0.845s
+  TTFT medie:       0.665s
+  Latenta medie:    0.665s
   Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
   Distributie pred: {'necunoscut': 10}
   Erori (10/10):
@@ -39,15 +39,15 @@
 
 === command-r7b-12-2024 | Prompt V1_v1 | 10 conversatii ===
   Accuracy:         40.00%
-  F1 Macro:         0.348
-  TTFT medie:       0.500s
-  Latenta medie:    0.500s
+  F1 Macro:         0.367
+  TTFT medie:       0.575s
+  Latenta medie:    0.575s
   Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
-  Distributie pred: {'negativ': 8, 'pozitiv': 1, 'necunoscut': 1}
+  Distributie pred: {'negativ': 7, 'pozitiv': 1, 'necunoscut': 2}
   Erori (6/10):
     BNK_006 [simpla]: gold=neutru pred=negativ
     BNK_008 [complexa]: gold=neutru pred=negativ
-    RET_003 [simpla]: gold=pozitiv pred=negativ
+    RET_003 [simpla]: gold=pozitiv pred=necunoscut
     TEL_002 [simpla]: gold=pozitiv pred=necunoscut
     SP_006 [simpla]: gold=neutru pred=negativ
     SP_008 [complexa]: gold=neutru pred=negativ

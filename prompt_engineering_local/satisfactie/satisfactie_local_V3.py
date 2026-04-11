@@ -36,6 +36,7 @@ def get_prompt(dialog):
         "Esti un expert in analiza satisfactiei clientilor in conversatii de call-center.\n\n"
         "CONVERSATIE:\n" + dialog + "\n\n"
         "SARCINA: Pe baza conversatiei de mai sus, determina nivelul de satisfactie al clientului.\n\n"
+        "Raspunde cu un singur cuvant: pozitiv, neutru sau negativ."
         "DEFINITII:\n"
         "- pozitiv: problema rezolvata complet, clientul multumit si o exprima clar\n"
         "- neutru: problema rezolvata tehnic dar clientul nu prezinta nicio emotie\n"
@@ -61,6 +62,7 @@ def get_prompt2(dialog):
         "Esti un expert in analiza satisfactiei clientilor in conversatii de call-center.\n\n"
         "CONVERSATIE:\n" + dialog + "\n\n"
         "SARCINA: Pe baza conversatiei de mai sus, determina nivelul de satisfactie al clientului.\n\n"
+        "Raspunde cu un singur cuvant: pozitiv, neutru sau negativ"
         "DEFINITII:\n"
         "- pozitiv: problema rezolvata complet, clientul multumit si o exprima clar\n"
         "- neutru: problema rezolvata tehnic dar clientul nu prezinta nicio emotie\n"
@@ -80,7 +82,7 @@ def main():
     parser.add_argument("--model", required=True, choices=["romistral", "rogemma"])
     parser.add_argument("--varianta", type=int, default=1, choices=[1, 2],
                         help="Varianta de prompt: 1 sau 2 (default: 1)")
-    parser.add_argument("--n_per_domeniu", type=int, default=2)
+    parser.add_argument("--n_per_domeniu", type=int, default=10)
     parser.add_argument("--tot_setul", action="store_true")
     args = parser.parse_args()
 

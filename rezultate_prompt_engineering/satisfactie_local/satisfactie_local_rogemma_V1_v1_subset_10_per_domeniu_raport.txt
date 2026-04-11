@@ -1,0 +1,27 @@
+
+=== rogemma | Prompt V1_v1 | 50 conversatii ===
+  Accuracy:         70.00%
+  F1 Macro:         0.589
+  Latenta medie:    9.7s
+  Distributie gold: {'neutru': 16, 'pozitiv': 14, 'negativ': 20}
+  Distributie pred: {'negativ': 30, 'pozitiv': 19, 'neutru': 1}
+  Erori (15/50):
+    BNK_006 [simpla]: gold=neutru pred=negativ
+    BNK_005 [simpla]: gold=neutru pred=pozitiv
+    BNK_008 [complexa]: gold=neutru pred=pozitiv
+    MED_005 [simpla]: gold=neutru pred=negativ
+    MED_004 [simpla]: gold=neutru pred=negativ
+    MED_006 [simpla]: gold=neutru pred=negativ
+    MED_008 [complexa]: gold=neutru pred=pozitiv
+    RET_005 [simpla]: gold=neutru pred=negativ
+    RET_004 [simpla]: gold=neutru pred=pozitiv
+    RET_007 [complexa]: gold=neutru pred=negativ
+    TEL_004 [simpla]: gold=neutru pred=pozitiv
+    TEL_006 [simpla]: gold=neutru pred=negativ
+    TEL_008 [complexa]: gold=neutru pred=negativ
+    SP_004 [simpla]: gold=neutru pred=negativ
+    SP_006 [simpla]: gold=neutru pred=negativ
+  Per clasa:
+    pozitiv   : 100% (14/14)
+    neutru    : 6% (1/16)
+    negativ   : 100% (20/20)
