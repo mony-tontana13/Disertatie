@@ -1,82 +1,25 @@
 """
-Utilitare comune pentru toate versiunile de prompt - satisfactie modele API.
-GPT-4.1-mini, Gemini-2.5-flash, command-r7b-12-2024
+Utilitare comune pentru toate versiunile de prompt - rezumat modele API.
 """
 import json
 import os
 import random
 import time
 import unicodedata
-from sklearn.metrics import accuracy_score, f1_score
-from collections import Counter
 
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 COHERE_API_KEY = os.environ.get("COHERE_API_KEY", "")
 
-CLASE = ["pozitiv", "neutru", "negativ"]
-
-EXEMPLE_SCURTE = {
-    "pozitiv": (
-        "CLIENT: Buna ziua, am o problema cu cardul meu blocat.\n"
-        "OPERATOR: Va deblochez imediat. Gata, cardul este activ.\n"
-        "CLIENT: Minunat, multumesc mult, chiar ma ajutati!",
-        "pozitiv"
-    ),
-    "neutru": (
-        "CLIENT: Buna ziua, vreau sa stiu statusul comenzii mele.\n"
-        "OPERATOR: Comanda va ajunge maine intre 10 si 14.\n"
-        "CLIENT: Ok, am inteles. Pa.",
-        "neutru"
-    ),
-    "negativ": (
-        "CLIENT: Sunt la a treia tentativa sa rezolv aceasta problema.\n"
-        "OPERATOR: Inteleg, va transferam la un specialist.\n"
-        "CLIENT: Bine, ce sa fac... transferati.",
-        "negativ"
-    ),
-}
-
-EXEMPLE_LUNGI = {
-    "pozitiv": (
-        "CLIENT: Buna ziua, am observat o taxa dubla pe factura mea.\n"
-        "OPERATOR: Va verific factura. Da, aveti dreptate, a fost o eroare. Va restitui suma in 24 de ore.\n"
-        "CLIENT: Perfect, exact asta aveam nevoie. Multumesc foarte mult, sunteti promti!\n"
-        "OPERATOR: Cu placere, o zi buna!\n"
-        "CLIENT: Si dumneavoastra, la revedere!",
-        "pozitiv"
-    ),
-    "neutru": (
-        "CLIENT: Buna ziua, comanda mea nu a ajuns la timp.\n"
-        "OPERATOR: Imi pare rau, am verificat si va fi livrata maine.\n"
-        "CLIENT: Bine, maine merge si asa.\n"
-        "OPERATOR: Va multumim pentru intelegere.\n"
-        "CLIENT: Da, la revedere.",
-        "neutru"
-    ),
-    "negativ": (
-        "CLIENT: Buna ziua, am sunat a doua oara pentru aceeasi problema cu internetul.\n"
-        "OPERATOR: Imi pare rau, va pot programa un tehnician pentru joi.\n"
-        "CLIENT: Joi... bine, ce sa fac, nu am de ales.\n"
-        "OPERATOR: Va multumim pentru rabdare.\n"
-        "CLIENT: Da... la revedere.",
-        "negativ"
-    ),
+TIP_REZUMAT = {
+    "pozitiv": {"tip": "SCURT",  "min_cuv": 20, "max_cuv": 40,  "propozitii": "1-2 propozitii"},
+    "neutru":  {"tip": "MEDIU",  "min_cuv": 40, "max_cuv": 70,  "propozitii": "3-4 propozitii"},
+    "negativ": {"tip": "LUNG",   "min_cuv": 60, "max_cuv": 100, "propozitii": "5-7 propozitii"},
 }
 
 
-def normalizeaza(text):
-    text = unicodedata.normalize("NFD", text)
-    text = "".join(c for c in text if unicodedata.category(c) != "Mn")
-    return text.lower().strip()
-
-
-def extrage_satisfactie(raspuns):
-    raspuns_norm = normalizeaza(raspuns)
-    for clasa in CLASE:
-        if clasa in raspuns_norm:
-            return clasa
-    return "necunoscut"
+def get_tip_rezumat(satisfactie):
+    return TIP_REZUMAT.get(satisfactie, TIP_REZUMAT["neutru"])
 
 
 def selecteaza_subset(folder, n_per_domeniu=2):
@@ -86,7 +29,6 @@ def selecteaza_subset(folder, n_per_domeniu=2):
     for domeniu in domenii:
         domeniu_path = os.path.join(folder, domeniu)
         if not os.path.isdir(domeniu_path):
-            print(f"  ATENTIE: folder lipsa pentru {domeniu}")
             continue
         fisiere = sorted([f for f in os.listdir(domeniu_path) if f.endswith(".json")])
         simple, complexe = [], []
@@ -124,7 +66,7 @@ def incarca_toate_conversatiile(folder):
 
 def call_gpt(prompt):
     if not OPENAI_API_KEY:
-        return "necunoscut", 0.0, 0.0
+        return "", 0.0, 0.0
     from openai import OpenAI
     client = OpenAI(api_key=OPENAI_API_KEY)
     start_total = time.time()
@@ -133,7 +75,7 @@ def call_gpt(prompt):
     stream = client.chat.completions.create(
         model="gpt-4.1-mini",
         messages=[{"role": "user", "content": prompt}],
-        max_tokens=20,
+        max_tokens=150,
         stream=True
     )
     for chunk in stream:
@@ -147,7 +89,7 @@ def call_gpt(prompt):
 
 def call_gemini(prompt):
     if not GEMINI_API_KEY:
-        return "necunoscut", 0.0, 0.0
+        return "", 0.0, 0.0
     from google import genai
     from google.genai import types
     client = genai.Client(api_key=GEMINI_API_KEY)
@@ -168,18 +110,17 @@ def call_gemini(prompt):
 
 def call_cohere(prompt):
     if not COHERE_API_KEY:
-        return "necunoscut", 0.0, 0.0
+        return "", 0.0, 0.0
     import cohere
     co = cohere.ClientV2(api_key=COHERE_API_KEY)
     start_total = time.time()
     response = co.chat(
         model="command-r7b-12-2024",
         messages=[{"role": "user", "content": prompt}],
-        max_tokens=20
+        max_tokens=150
     )
     ttft = time.time() - start_total
-    raspuns_complet = response.message.content[0].text.strip()
-    return raspuns_complet, round(ttft, 3), round(ttft, 3)
+    return response.message.content[0].text.strip(), round(ttft, 3), round(ttft, 3)
 
 
 MODELE_API = {
@@ -187,6 +128,38 @@ MODELE_API = {
     "Gemini-2.5-flash": call_gemini,
     "command-r7b-12-2024": call_cohere
 }
+
+
+def calculeaza_rouge(predictii, referinte):
+    try:
+        from rouge_score import rouge_scorer
+        scorer = rouge_scorer.RougeScorer(["rouge1", "rouge2", "rougeL"], use_stemmer=False)
+        r1, r2, rl = [], [], []
+        for pred, ref in zip(predictii, referinte):
+            if pred and ref:
+                s = scorer.score(ref, pred)
+                r1.append(s["rouge1"].fmeasure)
+                r2.append(s["rouge2"].fmeasure)
+                rl.append(s["rougeL"].fmeasure)
+        if not r1:
+            return {"rouge1": 0.0, "rouge2": 0.0, "rougeL": 0.0}
+        return {"rouge1": round(sum(r1)/len(r1), 4), "rouge2": round(sum(r2)/len(r2), 4), "rougeL": round(sum(rl)/len(rl), 4)}
+    except ImportError:
+        return {"rouge1": 0.0, "rouge2": 0.0, "rougeL": 0.0}
+
+
+def calculeaza_bertscore(predictii, referinte):
+    try:
+        from bert_score import score as bert_score
+        perechi = [(p, r) for p, r in zip(predictii, referinte) if p and r]
+        if not perechi:
+            return {"f1": 0.0}
+        pred_list, ref_list = zip(*perechi)
+        print("    Calculez BERTScore...")
+        P, R, F1 = bert_score(list(pred_list), list(ref_list), lang="ro", verbose=False)
+        return {"precision": round(P.mean().item(), 4), "recall": round(R.mean().item(), 4), "f1": round(F1.mean().item(), 4)}
+    except ImportError:
+        return {"f1": 0.0}
 
 
 def ruleaza_evaluare_api(conversatii, get_prompt_fn, versiune, results_dir):
@@ -211,23 +184,27 @@ def ruleaza_evaluare_api(conversatii, get_prompt_fn, versiune, results_dir):
             conv_id = conv["id"]
             domeniu = conv.get("domeniu", "banking")
             complexitate = conv.get("complexitate", "?")
-            satisfactie_gold = conv.get("satisfactie", "necunoscut")
+            satisfactie = conv.get("satisfactie", "neutru")
+            rezumat_gold = conv.get("rezumat", "")
             dialog = "\n".join([r["rol"].upper() + ": " + r["text"] for r in conv["conversatie"]])
 
-            prompt = get_prompt_fn(dialog)
+            tip_info = get_tip_rezumat(satisfactie)
+            prompt = get_prompt_fn(dialog, satisfactie)
             raspuns_brut, ttft, latenta_totala = func_model(prompt)
-            satisfactie_pred = extrage_satisfactie(raspuns_brut)
-            corecta = satisfactie_pred == satisfactie_gold
-            status = "OK" if corecta else "GRESIT"
 
-            print(f"  [{i+1:03d}] {conv_id} [{complexitate}] | gold: {satisfactie_gold} | pred: {satisfactie_pred} | {status} | TTFT: {ttft:.2f}s")
-            if not corecta:
-                print(f"    brut: {raspuns_brut[:80]}")
+            nr_cuvinte = len(raspuns_brut.split())
+            in_limite = tip_info["min_cuv"] <= nr_cuvinte <= tip_info["max_cuv"]
+            status = "OK" if in_limite else f"LUNGIME ({nr_cuvinte} cuv)"
+
+            print(f"  [{i+1:03d}] {conv_id} [{complexitate}/{satisfactie}] | {tip_info['tip']} | {nr_cuvinte} cuv | {status} | TTFT: {ttft:.2f}s")
 
             rezultate.append({
                 "id": conv_id, "domeniu": domeniu, "complexitate": complexitate,
-                "satisfactie_gold": satisfactie_gold, "satisfactie_pred": satisfactie_pred,
-                "corecta": corecta, "raspuns_brut": raspuns_brut,
+                "satisfactie": satisfactie, "tip_rezumat": tip_info["tip"],
+                "rezumat_gold": rezumat_gold, "rezumat_pred": raspuns_brut,
+                "nr_cuvinte_gold": len(rezumat_gold.split()),
+                "nr_cuvinte_pred": nr_cuvinte,
+                "in_limite_lungime": in_limite,
                 "ttft": ttft, "latenta_totala": latenta_totala,
                 "versiune_prompt": versiune, "model": nume_model
             })
@@ -241,47 +218,39 @@ def calculeaza_si_afiseaza_api(toate_rezultatele, versiune):
     toate_metrici = []
 
     for nume_model, rezultate in toate_rezultatele.items():
-        gold = [r["satisfactie_gold"] for r in rezultate]
-        pred = [r["satisfactie_pred"] for r in rezultate]
-        acc = accuracy_score(gold, pred)
-        f1 = f1_score(gold, pred, average="macro", zero_division=0, labels=CLASE)
+        predictii = [r["rezumat_pred"] for r in rezultate]
+        referinte = [r["rezumat_gold"] for r in rezultate]
+
+        rouge = calculeaza_rouge(predictii, referinte)
+        bertscore = calculeaza_bertscore(predictii, referinte)
         ttft_medie = sum(r["ttft"] for r in rezultate) / len(rezultate)
         latenta_medie = sum(r["latenta_totala"] for r in rezultate) / len(rezultate)
+        nr_cuv_medie = sum(r["nr_cuvinte_pred"] for r in rezultate) / len(rezultate)
+        in_limite = sum(1 for r in rezultate if r["in_limite_lungime"])
 
         linii = []
         linii.append(f"\n=== {nume_model} | Prompt {versiune} | {len(rezultate)} conversatii ===")
-        linii.append(f"  Accuracy:         {acc:.2%}")
-        linii.append(f"  F1 Macro:         {f1:.3f}")
+        linii.append(f"  ROUGE-1:          {rouge['rouge1']:.4f}")
+        linii.append(f"  ROUGE-2:          {rouge['rouge2']:.4f}")
+        linii.append(f"  ROUGE-L:          {rouge['rougeL']:.4f}")
+        linii.append(f"  BERTScore F1:     {bertscore['f1']:.4f}")
         linii.append(f"  TTFT medie:       {ttft_medie:.3f}s")
         linii.append(f"  Latenta medie:    {latenta_medie:.3f}s")
-        linii.append(f"  Distributie gold: {dict(Counter(gold))}")
-        linii.append(f"  Distributie pred: {dict(Counter(pred))}")
-
-        erori = [r for r in rezultate if not r["corecta"]]
-        if erori:
-            linii.append(f"  Erori ({len(erori)}/{len(rezultate)}):")
-            for e in erori:
-                linii.append(f"    {e['id']} [{e['complexitate']}]: gold={e['satisfactie_gold']} pred={e['satisfactie_pred']}")
-
-        linii.append(f"  Per clasa:")
-        per_clasa = {}
-        for clasa in CLASE:
-            rez_c = [r for r in rezultate if r["satisfactie_gold"] == clasa]
-            if rez_c:
-                acc_c = sum(1 for r in rez_c if r["corecta"]) / len(rez_c)
-                per_clasa[clasa] = round(acc_c, 4)
-                linii.append(f"    {clasa:<22}: {acc_c:.0%} ({sum(1 for r in rez_c if r['corecta'])}/{len(rez_c)})")
+        linii.append(f"  Cuvinte medii:    {nr_cuv_medie:.1f}")
+        linii.append(f"  In limite:        {in_limite}/{len(rezultate)}")
 
         raport_text = "\n".join(linii)
         print(raport_text)
 
         toate_metrici.append({
             "model": nume_model, "versiune": versiune,
-            "accuracy": round(acc, 4), "f1": round(f1, 4),
+            "rouge1": rouge["rouge1"], "rouge2": rouge["rouge2"], "rougeL": rouge["rougeL"],
+            "bertscore_f1": bertscore["f1"],
             "ttft_medie": round(ttft_medie, 3),
             "latenta_medie": round(latenta_medie, 3),
+            "nr_cuvinte_medii": round(nr_cuv_medie, 1),
+            "in_limite": in_limite,
             "nr_conversatii": len(rezultate),
-            "per_clasa": per_clasa,
             "raport_text": raport_text
         })
 

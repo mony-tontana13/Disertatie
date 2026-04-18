@@ -1,0 +1,30 @@
+
+=== GPT-4.1-mini | Prompt V1_v2 | 10 conversatii ===
+  ROUGE-1:          0.4024
+  ROUGE-2:          0.1702
+  ROUGE-L:          0.2856
+  BERTScore F1:     0.7539
+  TTFT medie:       0.611s
+  Latenta medie:    1.696s
+  Cuvinte medii:    71.7
+  In limite:        5/10
+
+=== Gemini-2.5-flash | Prompt V1_v2 | 10 conversatii ===
+  ROUGE-1:          0.4192
+  ROUGE-2:          0.1667
+  ROUGE-L:          0.2877
+  BERTScore F1:     0.7524
+  TTFT medie:       5.658s
+  Latenta medie:    6.137s
+  Cuvinte medii:    92.9
+  In limite:        2/10
+
+=== command-r7b-12-2024 | Prompt V1_v2 | 10 conversatii ===
+  ROUGE-1:          0.4131
+  ROUGE-2:          0.1648
+  ROUGE-L:          0.3089
+  BERTScore F1:     0.7594
+  TTFT medie:       1.804s
+  Latenta medie:    1.804s
+  Cuvinte medii:    78.1
+  In limite:        3/10

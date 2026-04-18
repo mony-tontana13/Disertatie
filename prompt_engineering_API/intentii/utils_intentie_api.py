@@ -142,8 +142,7 @@ def call_gemini(prompt):
     raspuns_complet = ""
     for chunk in client.models.generate_content_stream(
         model="gemini-2.5-flash",
-        contents=prompt,
-        config=types.GenerateContentConfig(max_output_tokens=50)
+        contents=prompt
     ):
         if ttft is None and chunk.text:
             ttft = time.time() - start_total

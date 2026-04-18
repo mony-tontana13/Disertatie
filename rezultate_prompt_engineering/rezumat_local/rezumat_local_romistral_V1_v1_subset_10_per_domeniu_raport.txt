@@ -1,0 +1,13 @@
+
+=== romistral | Prompt V1_v1 | 50 conversatii ===
+  ROUGE-1:          0.3290
+  ROUGE-2:          0.1125
+  ROUGE-L:          0.2341
+  BERTScore F1:     0.7301
+  Latenta medie:    35.4s
+  Cuvinte medii:    67.9
+  In limite:        27/50
+  Per tip rezumat:
+    SCURT   : ROUGE-1=0.318 | ROUGE-L=0.251 | 69 cuv medii | n=14
+    MEDIU   : ROUGE-1=0.312 | ROUGE-L=0.240 | 66 cuv medii | n=16
+    LUNG    : ROUGE-1=0.350 | ROUGE-L=0.217 | 69 cuv medii | n=20

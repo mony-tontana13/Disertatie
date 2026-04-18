@@ -1,0 +1,31 @@
+=== COMPARATOR SATISFACTIE — MODELE LOCALE ===
+Set de date: subset_2_per_domeniu
+===========================================================================
+
+Model: ROGEMMA
+  Versiune       Accuracy   F1 Macro    Latenta    Erori     N
+  -------------------------------------------------------
+  V1_v1            60.00%      0.500      12.0s       4/10 
+  V1_v2            20.00%      0.121      12.2s       8/10 
+  V2_v1            60.00%      0.508      14.8s       4/10 
+  V2_v2            80.00%      0.802      15.4s       2/10 
+  V3_v1            70.00%      0.707      12.4s       3/10 
+  V3_v2            50.00%      0.489      12.5s       5/10 
+
+  Cel mai bun F1:       V2_v2 (0.802)
+  Cel mai buna Accuracy: V2_v2 (80.00%)
+
+  Accuracy per clasa:
+  Clasa           V1_v1    V1_v2    V2_v1    V2_v2    V3_v1    V3_v2
+  -----------------------------------------------------------------
+  pozitiv          100%       0%     100%      67%     100%     100%
+  neutru             0%      50%       0%      75%      50%       0%
+  negativ          100%       0%     100%     100%      67%      67%
+
+  Distributie predictii:
+    V1_v1: {'negativ': 5, 'pozitiv': 5}
+    V1_v2: {'neutru': 7, 'necunoscut': 3}
+    V2_v1: {'negativ': 4, 'pozitiv': 6}
+    V2_v2: {'neutru': 4, 'negativ': 4, 'pozitiv': 2}
+    V3_v1: {'neutru': 3, 'pozitiv': 5, 'negativ': 2}
+    V3_v2: {'necunoscut': 1, 'pozitiv': 6, 'neutru': 1, 'negativ': 2}

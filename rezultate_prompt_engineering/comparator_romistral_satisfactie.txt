@@ -1,0 +1,31 @@
+=== COMPARATOR SATISFACTIE — MODELE LOCALE ===
+Set de date: subset_2_per_domeniu
+===========================================================================
+
+Model: ROMISTRAL
+  Versiune       Accuracy   F1 Macro    Latenta    Erori     N
+  -------------------------------------------------------
+  V1_v1            60.00%      0.508       6.7s       4/10 
+  V1_v2             0.00%      0.000       9.3s      10/10 
+  V2_v1            30.00%      0.154       7.6s       7/10 
+  V2_v2            40.00%      0.367       8.8s       6/10 
+  V3_v1            30.00%      0.389      11.5s       7/10 
+  V3_v2            30.00%      0.324      12.2s       7/10 
+
+  Cel mai bun F1:       V1_v1 (0.508)
+  Cel mai buna Accuracy: V1_v1 (60.00%)
+
+  Accuracy per clasa:
+  Clasa           V1_v1    V1_v2    V2_v1    V2_v2    V3_v1    V3_v2
+  -----------------------------------------------------------------
+  pozitiv          100%       0%     100%     100%      67%      67%
+  neutru             0%       0%       0%       0%       0%      25%
+  negativ          100%       0%       0%      33%      33%       0%
+
+  Distributie predictii:
+    V1_v1: {'negativ': 4, 'pozitiv': 6}
+    V1_v2: {'necunoscut': 8, 'neutru': 2}
+    V2_v1: {'pozitiv': 10}
+    V2_v2: {'pozitiv': 7, 'necunoscut': 2, 'negativ': 1}
+    V3_v1: {'necunoscut': 6, 'pozitiv': 3, 'negativ': 1}
+    V3_v2: {'necunoscut': 5, 'neutru': 1, 'pozitiv': 4}

@@ -1,0 +1,13 @@
+
+=== rogemma | Prompt V1_v1 | 10 conversatii ===
+  ROUGE-1:          0.3323
+  ROUGE-2:          0.1208
+  ROUGE-L:          0.2227
+  BERTScore F1:     0.7269
+  Latenta medie:    39.6s
+  Cuvinte medii:    90.1
+  In limite:        3/10
+  Per tip rezumat:
+    SCURT   : ROUGE-1=0.257 | ROUGE-L=0.187 | 84 cuv medii | n=3
+    MEDIU   : ROUGE-1=0.359 | ROUGE-L=0.267 | 94 cuv medii | n=4
+    LUNG    : ROUGE-1=0.372 | ROUGE-L=0.199 | 90 cuv medii | n=3
