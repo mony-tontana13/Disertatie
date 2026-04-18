@@ -1,0 +1,143 @@
+{
+  "model": "romistral",
+  "versiune": "V2_v1",
+  "set_date": "subset_2_per_domeniu",
+  "metrici": {
+    "model": "romistral",
+    "versiune": "V2_v1",
+    "accuracy": 0.5,
+    "f1": 0.3333,
+    "latenta": 12.4,
+    "nr_conversatii": 10,
+    "per_domeniu": {
+      "banking": 0.0,
+      "medicina": 1.0,
+      "retail": 1.0,
+      "telecom": 0.5,
+      "servicii_publice": 0.0
+    },
+    "raport_text": "\n=== romistral | Prompt V2_v1 | 10 conversatii ===\n  Accuracy:      50.00%\n  F1 Macro:      0.333\n  Latenta medie: 12.4s\n  Erori (5/10):\n    BNK_006 [simpla]: gold=problema_schimb_valutar pred=problema_credit\n    BNK_008 [complexa]: gold=card_pierdut pred=card_blocat\n    TEL_002 [simpla]: gold=portare_esuata pred=problema_modificare_abonament\n    SP_006 [simpla]: gold=problema_plata_taxa pred=sesizare_problema\n    SP_008 [complexa]: gold=programare_ghiseu pred=acte_incomplete\n  Per domeniu:\n    banking               : 0% (0/2)\n    medicina              : 100% (2/2)\n    retail                : 100% (2/2)\n    telecom               : 50% (1/2)\n    servicii_publice      : 0% (0/2)"
+  },
+  "rezultate_detaliate": [
+    {
+      "id": "BNK_006",
+      "domeniu": "banking",
+      "complexitate": "simpla",
+      "intentie_gold": "problema_schimb_valutar",
+      "intentie_pred": "problema_credit",
+      "corecta": false,
+      "raspuns_brut": "problema_credit, tranzactie_gresita, card_blocat, tranzactie_suspecta, problema_transfer, problema",
+      "latenta": 14.02,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "BNK_008",
+      "domeniu": "banking",
+      "complexitate": "complexa",
+      "intentie_gold": "card_pierdut",
+      "intentie_pred": "card_blocat",
+      "corecta": false,
+      "raspuns_brut": "card_blocat",
+      "latenta": 9.38,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "MED_001",
+      "domeniu": "medicina",
+      "complexitate": "simpla",
+      "intentie_gold": "rezultate_analize",
+      "intentie_pred": "rezultate_analize",
+      "corecta": true,
+      "raspuns_brut": "rezultate_analize, problema_reteta, problema_asigurare, reclamatie_personal, consultatie_anulata, problema_factur",
+      "latenta": 12.58,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "MED_018",
+      "domeniu": "medicina",
+      "complexitate": "complexa",
+      "intentie_gold": "problema_reteta",
+      "intentie_pred": "problema_reteta",
+      "corecta": true,
+      "raspuns_brut": "problema_reteta",
+      "latenta": 10.48,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "RET_003",
+      "domeniu": "retail",
+      "complexitate": "simpla",
+      "intentie_gold": "problema_livrare",
+      "intentie_pred": "problema_livrare",
+      "corecta": true,
+      "raspuns_brut": "problema_livrare, comanda_intarziata",
+      "latenta": 9.02,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "RET_010",
+      "domeniu": "retail",
+      "complexitate": "complexa",
+      "intentie_gold": "comanda_gresita",
+      "intentie_pred": "comanda_gresita",
+      "corecta": true,
+      "raspuns_brut": "comanda_gresita, problema_livrare, problema_garantie, reclamatie_produs",
+      "latenta": 15.26,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "TEL_002",
+      "domeniu": "telecom",
+      "complexitate": "simpla",
+      "intentie_gold": "portare_esuata",
+      "intentie_pred": "problema_modificare_abonament",
+      "corecta": false,
+      "raspuns_brut": "problema_modificare_abonament, portare_esuata, problema_internet, problema_roaming, factura_gresita, re",
+      "latenta": 13.94,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "TEL_009",
+      "domeniu": "telecom",
+      "complexitate": "complexa",
+      "intentie_gold": "problema_modificare_abonament",
+      "intentie_pred": "problema_modificare_abonament",
+      "corecta": true,
+      "raspuns_brut": "problema_modificare_abonament, portare_esuata, problema_internet, problema_roaming, factura_gresita, re",
+      "latenta": 16.21,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "SP_006",
+      "domeniu": "servicii_publice",
+      "complexitate": "simpla",
+      "intentie_gold": "problema_plata_taxa",
+      "intentie_pred": "sesizare_problema",
+      "corecta": false,
+      "raspuns_brut": "problema_plata_taxei, sesizare_problema",
+      "latenta": 8.2,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    },
+    {
+      "id": "SP_008",
+      "domeniu": "servicii_publice",
+      "complexitate": "complexa",
+      "intentie_gold": "programare_ghiseu",
+      "intentie_pred": "acte_incomplete",
+      "corecta": false,
+      "raspuns_brut": "problema_plata_taxei, acte_incomplete, programare_ghiseu",
+      "latenta": 14.9,
+      "versiune_prompt": "V2_v1",
+      "model": "romistral"
+    }
+  ]
+}

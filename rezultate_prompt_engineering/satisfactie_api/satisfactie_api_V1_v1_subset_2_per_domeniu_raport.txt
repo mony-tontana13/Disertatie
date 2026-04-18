@@ -2,8 +2,8 @@
 === GPT-4.1-mini | Prompt V1_v1 | 10 conversatii ===
   Accuracy:         80.00%
   F1 Macro:         0.806
-  TTFT medie:       1.121s
-  Latenta medie:    1.127s
+  TTFT medie:       0.623s
+  Latenta medie:    0.631s
   Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
   Distributie pred: {'neutru': 2, 'pozitiv': 5, 'negativ': 3}
   Erori (2/10):
@@ -15,43 +15,35 @@
     negativ               : 100% (3/3)
 
 === Gemini-2.5-flash | Prompt V1_v1 | 10 conversatii ===
-  Accuracy:         0.00%
-  F1 Macro:         0.000
-  TTFT medie:       0.665s
-  Latenta medie:    0.665s
+  Accuracy:         70.00%
+  F1 Macro:         0.669
+  TTFT medie:       5.743s
+  Latenta medie:    5.743s
   Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
-  Distributie pred: {'necunoscut': 10}
-  Erori (10/10):
-    BNK_006 [simpla]: gold=neutru pred=necunoscut
-    BNK_008 [complexa]: gold=neutru pred=necunoscut
-    MED_001 [simpla]: gold=pozitiv pred=necunoscut
-    MED_018 [complexa]: gold=negativ pred=necunoscut
-    RET_003 [simpla]: gold=pozitiv pred=necunoscut
-    RET_010 [complexa]: gold=negativ pred=necunoscut
-    TEL_002 [simpla]: gold=pozitiv pred=necunoscut
-    TEL_009 [complexa]: gold=negativ pred=necunoscut
-    SP_006 [simpla]: gold=neutru pred=necunoscut
-    SP_008 [complexa]: gold=neutru pred=necunoscut
+  Distributie pred: {'negativ': 4, 'pozitiv': 5, 'neutru': 1}
+  Erori (3/10):
+    BNK_006 [simpla]: gold=neutru pred=negativ
+    BNK_008 [complexa]: gold=neutru pred=pozitiv
+    SP_008 [complexa]: gold=neutru pred=pozitiv
   Per clasa:
-    pozitiv               : 0% (0/3)
-    neutru                : 0% (0/4)
-    negativ               : 0% (0/3)
+    pozitiv               : 100% (3/3)
+    neutru                : 25% (1/4)
+    negativ               : 100% (3/3)
 
 === command-r7b-12-2024 | Prompt V1_v1 | 10 conversatii ===
-  Accuracy:         40.00%
-  F1 Macro:         0.367
-  TTFT medie:       0.575s
-  Latenta medie:    0.575s
+  Accuracy:         50.00%
+  F1 Macro:         0.448
+  TTFT medie:       0.471s
+  Latenta medie:    0.471s
   Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
-  Distributie pred: {'negativ': 7, 'pozitiv': 1, 'necunoscut': 2}
-  Erori (6/10):
+  Distributie pred: {'negativ': 8, 'pozitiv': 2}
+  Erori (5/10):
     BNK_006 [simpla]: gold=neutru pred=negativ
     BNK_008 [complexa]: gold=neutru pred=negativ
-    RET_003 [simpla]: gold=pozitiv pred=necunoscut
-    TEL_002 [simpla]: gold=pozitiv pred=necunoscut
+    RET_003 [simpla]: gold=pozitiv pred=negativ
     SP_006 [simpla]: gold=neutru pred=negativ
     SP_008 [complexa]: gold=neutru pred=negativ
   Per clasa:
-    pozitiv               : 33% (1/3)
+    pozitiv               : 67% (2/3)
     neutru                : 0% (0/4)
     negativ               : 100% (3/3)

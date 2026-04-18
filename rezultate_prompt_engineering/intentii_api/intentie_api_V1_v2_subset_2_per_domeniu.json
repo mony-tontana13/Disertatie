@@ -1,14 +1,14 @@
 {
-  "versiune": "V1",
+  "versiune": "V1_v2",
   "set_date": "subset_2_per_domeniu",
   "metrici": [
     {
       "model": "GPT-4.1-mini",
-      "versiune": "V1",
+      "versiune": "V1_v2",
       "accuracy": 0.0,
       "f1": 0.0,
-      "ttft_medie": 0.861,
-      "latenta_medie": 0.894,
+      "ttft_medie": 0.867,
+      "latenta_medie": 0.905,
       "nr_conversatii": 10,
       "per_domeniu": {
         "banking": 0.0,
@@ -17,15 +17,15 @@
         "telecom": 0.0,
         "servicii_publice": 0.0
       },
-      "raport_text": "\n=== GPT-4.1-mini | Prompt V1 | 10 conversatii ===\n  Accuracy:      0.00%\n  F1 Macro:      0.000\n  TTFT medie:    0.861s\n  Latenta medie: 0.894s\n  Erori (10/10):\n    BNK_006 [simpla]: gold=problema_schimb_valutar pred=alta_solicitare\n    BNK_008 [complexa]: gold=card_pierdut pred=alta_solicitare\n    MED_001 [simpla]: gold=rezultate_analize pred=alta_solicitare\n    MED_018 [complexa]: gold=problema_reteta pred=alta_solicitare\n    RET_003 [simpla]: gold=problema_livrare pred=alta_solicitare\n    RET_010 [complexa]: gold=comanda_gresita pred=alta_solicitare\n    TEL_002 [simpla]: gold=portare_esuata pred=alta_solicitare\n    TEL_009 [complexa]: gold=problema_modificare_abonament pred=alta_solicitare\n    SP_006 [simpla]: gold=problema_plata_taxa pred=alta_solicitare\n    SP_008 [complexa]: gold=programare_ghiseu pred=alta_solicitare\n  Per domeniu:\n    banking               : 0% (0/2)\n    medicina              : 0% (0/2)\n    retail                : 0% (0/2)\n    telecom               : 0% (0/2)\n    servicii_publice      : 0% (0/2)"
+      "raport_text": "\n=== GPT-4.1-mini | Prompt V1_v2 | 10 conversatii ===\n  Accuracy:      0.00%\n  F1 Macro:      0.000\n  TTFT medie:    0.867s\n  Latenta medie: 0.905s\n  Erori (10/10):\n    BNK_006 [simpla]: gold=problema_schimb_valutar pred=alta_solicitare\n    BNK_008 [complexa]: gold=card_pierdut pred=alta_solicitare\n    MED_001 [simpla]: gold=rezultate_analize pred=alta_solicitare\n    MED_018 [complexa]: gold=problema_reteta pred=alta_solicitare\n    RET_003 [simpla]: gold=problema_livrare pred=alta_solicitare\n    RET_010 [complexa]: gold=comanda_gresita pred=alta_solicitare\n    TEL_002 [simpla]: gold=portare_esuata pred=alta_solicitare\n    TEL_009 [complexa]: gold=problema_modificare_abonament pred=alta_solicitare\n    SP_006 [simpla]: gold=problema_plata_taxa pred=alta_solicitare\n    SP_008 [complexa]: gold=programare_ghiseu pred=alta_solicitare\n  Per domeniu:\n    banking               : 0% (0/2)\n    medicina              : 0% (0/2)\n    retail                : 0% (0/2)\n    telecom               : 0% (0/2)\n    servicii_publice      : 0% (0/2)"
     },
     {
       "model": "Gemini-2.5-flash",
-      "versiune": "V1",
+      "versiune": "V1_v2",
       "accuracy": 0.0,
       "f1": 0.0,
-      "ttft_medie": 0.777,
-      "latenta_medie": 0.777,
+      "ttft_medie": 4.022,
+      "latenta_medie": 4.023,
       "nr_conversatii": 10,
       "per_domeniu": {
         "banking": 0.0,
@@ -34,15 +34,15 @@
         "telecom": 0.0,
         "servicii_publice": 0.0
       },
-      "raport_text": "\n=== Gemini-2.5-flash | Prompt V1 | 10 conversatii ===\n  Accuracy:      0.00%\n  F1 Macro:      0.000\n  TTFT medie:    0.777s\n  Latenta medie: 0.777s\n  Erori (10/10):\n    BNK_006 [simpla]: gold=problema_schimb_valutar pred=alta_solicitare\n    BNK_008 [complexa]: gold=card_pierdut pred=alta_solicitare\n    MED_001 [simpla]: gold=rezultate_analize pred=alta_solicitare\n    MED_018 [complexa]: gold=problema_reteta pred=alta_solicitare\n    RET_003 [simpla]: gold=problema_livrare pred=alta_solicitare\n    RET_010 [complexa]: gold=comanda_gresita pred=alta_solicitare\n    TEL_002 [simpla]: gold=portare_esuata pred=alta_solicitare\n    TEL_009 [complexa]: gold=problema_modificare_abonament pred=alta_solicitare\n    SP_006 [simpla]: gold=problema_plata_taxa pred=alta_solicitare\n    SP_008 [complexa]: gold=programare_ghiseu pred=alta_solicitare\n  Per domeniu:\n    banking               : 0% (0/2)\n    medicina              : 0% (0/2)\n    retail                : 0% (0/2)\n    telecom               : 0% (0/2)\n    servicii_publice      : 0% (0/2)"
+      "raport_text": "\n=== Gemini-2.5-flash | Prompt V1_v2 | 10 conversatii ===\n  Accuracy:      0.00%\n  F1 Macro:      0.000\n  TTFT medie:    4.022s\n  Latenta medie: 4.023s\n  Erori (10/10):\n    BNK_006 [simpla]: gold=problema_schimb_valutar pred=alta_solicitare\n    BNK_008 [complexa]: gold=card_pierdut pred=alta_solicitare\n    MED_001 [simpla]: gold=rezultate_analize pred=alta_solicitare\n    MED_018 [complexa]: gold=problema_reteta pred=alta_solicitare\n    RET_003 [simpla]: gold=problema_livrare pred=alta_solicitare\n    RET_010 [complexa]: gold=comanda_gresita pred=alta_solicitare\n    TEL_002 [simpla]: gold=portare_esuata pred=alta_solicitare\n    TEL_009 [complexa]: gold=problema_modificare_abonament pred=alta_solicitare\n    SP_006 [simpla]: gold=problema_plata_taxa pred=alta_solicitare\n    SP_008 [complexa]: gold=programare_ghiseu pred=alta_solicitare\n  Per domeniu:\n    banking               : 0% (0/2)\n    medicina              : 0% (0/2)\n    retail                : 0% (0/2)\n    telecom               : 0% (0/2)\n    servicii_publice      : 0% (0/2)"
     },
     {
       "model": "command-r7b-12-2024",
-      "versiune": "V1",
+      "versiune": "V1_v2",
       "accuracy": 0.0,
       "f1": 0.0,
-      "ttft_medie": 0.752,
-      "latenta_medie": 0.752,
+      "ttft_medie": 0.536,
+      "latenta_medie": 0.536,
       "nr_conversatii": 10,
       "per_domeniu": {
         "banking": 0.0,
@@ -51,7 +51,7 @@
         "telecom": 0.0,
         "servicii_publice": 0.0
       },
-      "raport_text": "\n=== command-r7b-12-2024 | Prompt V1 | 10 conversatii ===\n  Accuracy:      0.00%\n  F1 Macro:      0.000\n  TTFT medie:    0.752s\n  Latenta medie: 0.752s\n  Erori (10/10):\n    BNK_006 [simpla]: gold=problema_schimb_valutar pred=alta_solicitare\n    BNK_008 [complexa]: gold=card_pierdut pred=alta_solicitare\n    MED_001 [simpla]: gold=rezultate_analize pred=alta_solicitare\n    MED_018 [complexa]: gold=problema_reteta pred=alta_solicitare\n    RET_003 [simpla]: gold=problema_livrare pred=alta_solicitare\n    RET_010 [complexa]: gold=comanda_gresita pred=alta_solicitare\n    TEL_002 [simpla]: gold=portare_esuata pred=alta_solicitare\n    TEL_009 [complexa]: gold=problema_modificare_abonament pred=alta_solicitare\n    SP_006 [simpla]: gold=problema_plata_taxa pred=alta_solicitare\n    SP_008 [complexa]: gold=programare_ghiseu pred=alta_solicitare\n  Per domeniu:\n    banking               : 0% (0/2)\n    medicina              : 0% (0/2)\n    retail                : 0% (0/2)\n    telecom               : 0% (0/2)\n    servicii_publice      : 0% (0/2)"
+      "raport_text": "\n=== command-r7b-12-2024 | Prompt V1_v2 | 10 conversatii ===\n  Accuracy:      0.00%\n  F1 Macro:      0.000\n  TTFT medie:    0.536s\n  Latenta medie: 0.536s\n  Erori (10/10):\n    BNK_006 [simpla]: gold=problema_schimb_valutar pred=alta_solicitare\n    BNK_008 [complexa]: gold=card_pierdut pred=alta_solicitare\n    MED_001 [simpla]: gold=rezultate_analize pred=alta_solicitare\n    MED_018 [complexa]: gold=problema_reteta pred=alta_solicitare\n    RET_003 [simpla]: gold=problema_livrare pred=alta_solicitare\n    RET_010 [complexa]: gold=comanda_gresita pred=alta_solicitare\n    TEL_002 [simpla]: gold=portare_esuata pred=alta_solicitare\n    TEL_009 [complexa]: gold=problema_modificare_abonament pred=alta_solicitare\n    SP_006 [simpla]: gold=problema_plata_taxa pred=alta_solicitare\n    SP_008 [complexa]: gold=programare_ghiseu pred=alta_solicitare\n  Per domeniu:\n    banking               : 0% (0/2)\n    medicina              : 0% (0/2)\n    retail                : 0% (0/2)\n    telecom               : 0% (0/2)\n    servicii_publice      : 0% (0/2)"
     }
   ],
   "rezultate_detaliate": [
@@ -62,10 +62,10 @@
       "intentie_gold": "problema_schimb_valutar",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Informații curs valutar",
-      "ttft": 0.804,
-      "latenta_totala": 0.856,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Informații conversie valutară",
+      "ttft": 1.43,
+      "latenta_totala": 1.55,
+      "versiune_prompt": "V1_v2",
       "model": "GPT-4.1-mini"
     },
     {
@@ -76,9 +76,9 @@
       "intentie_pred": "alta_solicitare",
       "corecta": false,
       "raspuns_brut": "Blocare card pierdut",
-      "ttft": 0.715,
-      "latenta_totala": 0.746,
-      "versiune_prompt": "V1",
+      "ttft": 0.482,
+      "latenta_totala": 0.494,
+      "versiune_prompt": "V1_v2",
       "model": "GPT-4.1-mini"
     },
     {
@@ -88,10 +88,10 @@
       "intentie_gold": "rezultate_analize",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Rezultate analize",
-      "ttft": 0.67,
-      "latenta_totala": 0.671,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Rezultate analize, programare",
+      "ttft": 0.567,
+      "latenta_totala": 0.568,
+      "versiune_prompt": "V1_v2",
       "model": "GPT-4.1-mini"
     },
     {
@@ -101,10 +101,10 @@
       "intentie_gold": "problema_reteta",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Rețetă reînnoire",
-      "ttft": 0.582,
-      "latenta_totala": 0.645,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Rețetă valabilă",
+      "ttft": 0.899,
+      "latenta_totala": 0.902,
+      "versiune_prompt": "V1_v2",
       "model": "GPT-4.1-mini"
     },
     {
@@ -114,10 +114,10 @@
       "intentie_gold": "problema_livrare",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Probleme livrare",
-      "ttft": 0.824,
-      "latenta_totala": 0.887,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Problema livrare",
+      "ttft": 1.616,
+      "latenta_totala": 1.647,
+      "versiune_prompt": "V1_v2",
       "model": "GPT-4.1-mini"
     },
     {
@@ -127,10 +127,10 @@
       "intentie_gold": "comanda_gresita",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Înlocuire pantofi.",
-      "ttft": 1.178,
-      "latenta_totala": 1.238,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Schimbare produs greșit",
+      "ttft": 0.557,
+      "latenta_totala": 0.558,
+      "versiune_prompt": "V1_v2",
       "model": "GPT-4.1-mini"
     },
     {
@@ -140,10 +140,10 @@
       "intentie_gold": "portare_esuata",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Portare număr",
-      "ttft": 0.512,
-      "latenta_totala": 0.552,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Portarea numărului",
+      "ttft": 0.802,
+      "latenta_totala": 0.839,
+      "versiune_prompt": "V1_v2",
       "model": "GPT-4.1-mini"
     },
     {
@@ -153,10 +153,10 @@
       "intentie_gold": "problema_modificare_abonament",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Modificare abonament",
-      "ttft": 1.434,
-      "latenta_totala": 1.446,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Modificare abonament SuperNet",
+      "ttft": 0.752,
+      "latenta_totala": 0.805,
+      "versiune_prompt": "V1_v2",
       "model": "GPT-4.1-mini"
     },
     {
@@ -167,9 +167,9 @@
       "intentie_pred": "alta_solicitare",
       "corecta": false,
       "raspuns_brut": "Verificare plată taxă",
-      "ttft": 1.289,
-      "latenta_totala": 1.291,
-      "versiune_prompt": "V1",
+      "ttft": 1.058,
+      "latenta_totala": 1.095,
+      "versiune_prompt": "V1_v2",
       "model": "GPT-4.1-mini"
     },
     {
@@ -179,10 +179,10 @@
       "intentie_gold": "programare_ghiseu",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Programare verificare dosar",
-      "ttft": 0.603,
-      "latenta_totala": 0.605,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Programare ghișeu subvenții",
+      "ttft": 0.507,
+      "latenta_totala": 0.592,
+      "versiune_prompt": "V1_v2",
       "model": "GPT-4.1-mini"
     },
     {
@@ -192,10 +192,10 @@
       "intentie_gold": "problema_schimb_valutar",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Curs",
-      "ttft": 1.19,
-      "latenta_totala": 1.191,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Curs valutar / Curs conversie",
+      "ttft": 7.265,
+      "latenta_totala": 7.265,
+      "versiune_prompt": "V1_v2",
       "model": "Gemini-2.5-flash"
     },
     {
@@ -205,10 +205,10 @@
       "intentie_gold": "card_pierdut",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Bloc",
-      "ttft": 0.7,
-      "latenta_totala": 0.7,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Card pierdut.",
+      "ttft": 1.526,
+      "latenta_totala": 1.526,
+      "versiune_prompt": "V1_v2",
       "model": "Gemini-2.5-flash"
     },
     {
@@ -218,10 +218,10 @@
       "intentie_gold": "rezultate_analize",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "",
-      "ttft": 0.709,
-      "latenta_totala": 0.709,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Rezultate și programare.",
+      "ttft": 2.254,
+      "latenta_totala": 2.254,
+      "versiune_prompt": "V1_v2",
       "model": "Gemini-2.5-flash"
     },
     {
@@ -231,10 +231,10 @@
       "intentie_gold": "problema_reteta",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "",
-      "ttft": 0.577,
-      "latenta_totala": 0.577,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Rețetă nouă / Reînnoire rețetă",
+      "ttft": 3.597,
+      "latenta_totala": 3.597,
+      "versiune_prompt": "V1_v2",
       "model": "Gemini-2.5-flash"
     },
     {
@@ -244,10 +244,10 @@
       "intentie_gold": "problema_livrare",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "",
-      "ttft": 0.647,
-      "latenta_totala": 0.647,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Rezolvare livrare.",
+      "ttft": 3.527,
+      "latenta_totala": 3.528,
+      "versiune_prompt": "V1_v2",
       "model": "Gemini-2.5-flash"
     },
     {
@@ -257,10 +257,10 @@
       "intentie_gold": "comanda_gresita",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "",
-      "ttft": 0.591,
-      "latenta_totala": 0.591,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Comandă corectă.",
+      "ttft": 7.248,
+      "latenta_totala": 7.248,
+      "versiune_prompt": "V1_v2",
       "model": "Gemini-2.5-flash"
     },
     {
@@ -270,10 +270,10 @@
       "intentie_gold": "portare_esuata",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Portare",
-      "ttft": 0.702,
-      "latenta_totala": 0.703,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Rezolvare portare număr",
+      "ttft": 2.782,
+      "latenta_totala": 2.782,
+      "versiune_prompt": "V1_v2",
       "model": "Gemini-2.5-flash"
     },
     {
@@ -283,10 +283,10 @@
       "intentie_gold": "problema_modificare_abonament",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "",
-      "ttft": 0.945,
-      "latenta_totala": 0.945,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Upgrade abonament.",
+      "ttft": 4.312,
+      "latenta_totala": 4.313,
+      "versiune_prompt": "V1_v2",
       "model": "Gemini-2.5-flash"
     },
     {
@@ -296,10 +296,10 @@
       "intentie_gold": "problema_plata_taxa",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Ver",
-      "ttft": 0.738,
-      "latenta_totala": 0.739,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Verificare plată taxă.\n(Sau: Statut plată taxă.)",
+      "ttft": 3.768,
+      "latenta_totala": 3.769,
+      "versiune_prompt": "V1_v2",
       "model": "Gemini-2.5-flash"
     },
     {
@@ -309,10 +309,10 @@
       "intentie_gold": "programare_ghiseu",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "",
-      "ttft": 0.969,
-      "latenta_totala": 0.969,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Programare verificare dosar.",
+      "ttft": 3.944,
+      "latenta_totala": 3.945,
+      "versiune_prompt": "V1_v2",
       "model": "Gemini-2.5-flash"
     },
     {
@@ -322,10 +322,10 @@
       "intentie_gold": "problema_schimb_valutar",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Clientul a cerut cursul valutar la care a fost convertit euro-le în lei.",
-      "ttft": 0.6,
-      "latenta_totala": 0.6,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Schimb valutar, curs, reclamație.",
+      "ttft": 0.505,
+      "latenta_totala": 0.505,
+      "versiune_prompt": "V1_v2",
       "model": "command-r7b-12-2024"
     },
     {
@@ -335,10 +335,10 @@
       "intentie_gold": "card_pierdut",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Clientul a cerut:\n1. Blocarea cardului de debit pierdut.\n2. Informații despre cardul nou.\n3. Alternative de plată temporară.\n4. Detalii despre costuri.",
-      "ttft": 0.92,
-      "latenta_totala": 0.92,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Card nou, blocare.",
+      "ttft": 0.439,
+      "latenta_totala": 0.439,
+      "versiune_prompt": "V1_v2",
       "model": "command-r7b-12-2024"
     },
     {
@@ -349,9 +349,9 @@
       "intentie_pred": "alta_solicitare",
       "corecta": false,
       "raspuns_brut": "Clientul a cerut:\n1. Rezultatele analizei.\n2. Programare cu medicul internist.\n3. Trimiterea rezultatelor pe email.",
-      "ttft": 0.889,
-      "latenta_totala": 0.889,
-      "versiune_prompt": "V1",
+      "ttft": 0.787,
+      "latenta_totala": 0.787,
+      "versiune_prompt": "V1_v2",
       "model": "command-r7b-12-2024"
     },
     {
@@ -361,10 +361,10 @@
       "intentie_gold": "problema_reteta",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Clientul a cerut o nouă rețetă.",
-      "ttft": 0.583,
-      "latenta_totala": 0.583,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Rețetă valabilă, medicament.",
+      "ttft": 0.512,
+      "latenta_totala": 0.512,
+      "versiune_prompt": "V1_v2",
       "model": "command-r7b-12-2024"
     },
     {
@@ -374,10 +374,10 @@
       "intentie_gold": "problema_livrare",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Clientul a cerut livrarea urgentă a pantofilor.",
-      "ttft": 0.591,
-      "latenta_totala": 0.591,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Livrare urgentă, confirmare AWB.",
+      "ttft": 0.632,
+      "latenta_totala": 0.632,
+      "versiune_prompt": "V1_v2",
       "model": "command-r7b-12-2024"
     },
     {
@@ -388,9 +388,9 @@
       "intentie_pred": "alta_solicitare",
       "corecta": false,
       "raspuns_brut": "Pantofi negri, mărimea 41.",
-      "ttft": 0.508,
-      "latenta_totala": 0.508,
-      "versiune_prompt": "V1",
+      "ttft": 0.487,
+      "latenta_totala": 0.487,
+      "versiune_prompt": "V1_v2",
       "model": "command-r7b-12-2024"
     },
     {
@@ -401,9 +401,9 @@
       "intentie_pred": "alta_solicitare",
       "corecta": false,
       "raspuns_brut": "Portarea numărului.",
-      "ttft": 1.269,
-      "latenta_totala": 1.269,
-      "versiune_prompt": "V1",
+      "ttft": 0.425,
+      "latenta_totala": 0.425,
+      "versiune_prompt": "V1_v2",
       "model": "command-r7b-12-2024"
     },
     {
@@ -413,10 +413,10 @@
       "intentie_gold": "problema_modificare_abonament",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Clientul a cerut:\n\n1. Modificare pachet internet\n2. Deblocare restricție din aplicație\n3. Excepție de la regulament (angajament)\n4. Rezolvare urgentă (în",
-      "ttft": 0.929,
-      "latenta_totala": 0.929,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Modificare pachet, internet, prioritate.",
+      "ttft": 0.435,
+      "latenta_totala": 0.435,
+      "versiune_prompt": "V1_v2",
       "model": "command-r7b-12-2024"
     },
     {
@@ -426,10 +426,10 @@
       "intentie_gold": "problema_plata_taxa",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Verificare plată, rezolvare întârziere.",
-      "ttft": 0.517,
-      "latenta_totala": 0.517,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Clientul a cerut:\n1. Verificare plata taxă\n2. Informații despre întârziere\n3. Soluție urgentă",
+      "ttft": 0.674,
+      "latenta_totala": 0.674,
+      "versiune_prompt": "V1_v2",
       "model": "command-r7b-12-2024"
     },
     {
@@ -439,10 +439,10 @@
       "intentie_gold": "programare_ghiseu",
       "intentie_pred": "alta_solicitare",
       "corecta": false,
-      "raspuns_brut": "Clientul a cerut o programare la ghișeu pentru verificarea dosarului de subvenții din 2022.",
-      "ttft": 0.716,
-      "latenta_totala": 0.716,
-      "versiune_prompt": "V1",
+      "raspuns_brut": "Programare, adeverință, verificare.",
+      "ttft": 0.462,
+      "latenta_totala": 0.462,
+      "versiune_prompt": "V1_v2",
       "model": "command-r7b-12-2024"
     }
   ]

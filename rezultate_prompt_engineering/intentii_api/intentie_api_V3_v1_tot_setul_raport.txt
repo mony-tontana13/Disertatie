@@ -1,0 +1,149 @@
+
+=== GPT-4.1-mini | Prompt V3_v1 | 100 conversatii ===
+  Accuracy:      69.00%
+  F1 Macro:      0.599
+  TTFT medie:    0.655s
+  Latenta medie: 0.753s
+  Erori (31/100):
+    BNK_003 [simpla]: gold=card_blocat pred=problema_credit
+    BNK_004 [simpla]: gold=tranzactie_suspecta pred=card_blocat
+    BNK_007 [complexa]: gold=problema_sold pred=card_blocat
+    BNK_010 [complexa]: gold=tranzactie_gresita pred=problema_transfer
+    BNK_012 [complexa]: gold=tranzactie_suspecta pred=card_blocat
+    BNK_014 [complexa]: gold=problema_schimb_valutar pred=problema_transfer
+    BNK_015 [complexa]: gold=problema_sold pred=tranzactie_suspecta
+    BNK_016 [complexa]: gold=card_pierdut pred=card_blocat
+    MED_006 [simpla]: gold=problema_facturare pred=reclamatie_personal
+    MED_007 [complexa]: gold=problema_programare pred=problema_asigurare
+    MED_008 [complexa]: gold=anulare_programare pred=problema_programare
+    MED_013 [complexa]: gold=consultatie_anulata pred=reclamatie_personal
+    MED_014 [complexa]: gold=problema_facturare pred=consultatie_anulata
+    MED_016 [complexa]: gold=anulare_programare pred=problema_programare
+    RET_007 [complexa]: gold=comanda_intarziata pred=reclamatie_produs
+    RET_008 [complexa]: gold=retur_produs pred=reclamatie_produs
+    RET_014 [complexa]: gold=anulare_comanda pred=reclamatie_produs
+    RET_015 [complexa]: gold=comanda_intarziata pred=problema_livrare
+    RET_016 [complexa]: gold=retur_produs pred=comanda_gresita
+    TEL_004 [simpla]: gold=problema_roaming pred=problema_internet
+    TEL_007 [complexa]: gold=activare_esuata pred=problema_internet
+    TEL_008 [complexa]: gold=problema_semnal pred=problema_internet
+    TEL_013 [complexa]: gold=factura_gresita pred=problema_roaming
+    TEL_016 [complexa]: gold=problema_semnal pred=problema_internet
+    SP_006 [simpla]: gold=problema_plata_taxa pred=sesizare_problema
+    SP_007 [complexa]: gold=acte_incomplete pred=informatii_program
+    SP_008 [complexa]: gold=programare_ghiseu pred=sesizare_problema
+    SP_013 [complexa]: gold=sesizare_problema pred=problema_plata_taxa
+    SP_015 [complexa]: gold=acte_incomplete pred=sesizare_problema
+    SP_016 [complexa]: gold=programare_ghiseu pred=sesizare_problema
+    SP_020 [complexa]: gold=reclamatie_serviciu pred=sesizare_problema
+  Per domeniu:
+    banking               : 60% (12/20)
+    medicina              : 70% (14/20)
+    retail                : 75% (15/20)
+    telecom               : 75% (15/20)
+    servicii_publice      : 65% (13/20)
+
+=== Gemini-2.5-flash | Prompt V3_v1 | 100 conversatii ===
+  Accuracy:      65.00%
+  F1 Macro:      0.532
+  TTFT medie:    8.126s
+  Latenta medie: 8.128s
+  Erori (35/100):
+    BNK_007 [complexa]: gold=problema_sold pred=card_blocat
+    BNK_008 [complexa]: gold=card_pierdut pred=card_blocat
+    BNK_010 [complexa]: gold=tranzactie_gresita pred=problema_transfer
+    BNK_012 [complexa]: gold=tranzactie_suspecta pred=card_blocat
+    BNK_014 [complexa]: gold=problema_schimb_valutar pred=tranzactie_gresita
+    BNK_015 [complexa]: gold=problema_sold pred=problema_credit
+    BNK_016 [complexa]: gold=card_pierdut pred=card_blocat
+    MED_006 [simpla]: gold=problema_facturare pred=reclamatie_personal
+    MED_007 [complexa]: gold=problema_programare pred=problema_asigurare
+    MED_008 [complexa]: gold=anulare_programare pred=problema_programare
+    MED_015 [complexa]: gold=problema_programare pred=reclamatie_personal
+    MED_016 [complexa]: gold=anulare_programare pred=problema_programare
+    RET_005 [simpla]: gold=reclamatie_produs pred=comanda_gresita
+    RET_007 [complexa]: gold=comanda_intarziata pred=problema_livrare
+    RET_008 [complexa]: gold=retur_produs pred=reclamatie_produs
+    RET_014 [complexa]: gold=anulare_comanda pred=comanda_gresita
+    RET_015 [complexa]: gold=comanda_intarziata pred=problema_livrare
+    RET_016 [complexa]: gold=retur_produs pred=comanda_gresita
+    TEL_004 [simpla]: gold=problema_roaming pred=problema_internet
+    TEL_005 [simpla]: gold=factura_gresita pred=problema_roaming
+    TEL_006 [simpla]: gold=reziliere_contract pred=problema_modificare_abonament
+    TEL_007 [complexa]: gold=activare_esuata pred=problema_internet
+    TEL_013 [complexa]: gold=factura_gresita pred=problema_roaming
+    TEL_014 [complexa]: gold=reziliere_contract pred=problema_modificare_abonament
+    TEL_016 [complexa]: gold=problema_semnal pred=problema_internet
+    SP_002 [simpla]: gold=contestatie_decizie pred=dosar_respins
+    SP_005 [simpla]: gold=sesizare_problema pred=reclamatie_serviciu
+    SP_006 [simpla]: gold=problema_plata_taxa pred=sesizare_problema
+    SP_007 [complexa]: gold=acte_incomplete pred=informatii_program
+    SP_008 [complexa]: gold=programare_ghiseu pred=acte_incomplete
+    SP_010 [complexa]: gold=contestatie_decizie pred=dosar_respins
+    SP_013 [complexa]: gold=sesizare_problema pred=reclamatie_serviciu
+    SP_014 [complexa]: gold=problema_plata_taxa pred=reclamatie_serviciu
+    SP_015 [complexa]: gold=acte_incomplete pred=reclamatie_serviciu
+    SP_016 [complexa]: gold=programare_ghiseu pred=acte_incomplete
+  Per domeniu:
+    banking               : 65% (13/20)
+    medicina              : 75% (15/20)
+    retail                : 70% (14/20)
+    telecom               : 65% (13/20)
+    servicii_publice      : 50% (10/20)
+
+=== command-r7b-12-2024 | Prompt V3_v1 | 100 conversatii ===
+  Accuracy:      56.00%
+  F1 Macro:      0.455
+  TTFT medie:    0.527s
+  Latenta medie: 0.527s
+  Erori (44/100):
+    BNK_004 [simpla]: gold=tranzactie_suspecta pred=tranzactie_gresita
+    BNK_007 [complexa]: gold=problema_sold pred=card_blocat
+    BNK_008 [complexa]: gold=card_pierdut pred=card_blocat
+    BNK_010 [complexa]: gold=tranzactie_gresita pred=problema_transfer
+    BNK_011 [complexa]: gold=card_blocat pred=tranzactie_gresita
+    BNK_012 [complexa]: gold=tranzactie_suspecta pred=card_blocat
+    BNK_014 [complexa]: gold=problema_schimb_valutar pred=problema_transfer
+    BNK_015 [complexa]: gold=problema_sold pred=card_blocat
+    BNK_020 [complexa]: gold=tranzactie_suspecta pred=tranzactie_gresita
+    MED_005 [simpla]: gold=consultatie_anulata pred=problema_programare
+    MED_006 [simpla]: gold=problema_facturare pred=reclamatie_personal
+    MED_007 [complexa]: gold=problema_programare pred=problema_asigurare
+    MED_008 [complexa]: gold=anulare_programare pred=problema_facturare
+    MED_014 [complexa]: gold=problema_facturare pred=consultatie_anulata
+    MED_016 [complexa]: gold=anulare_programare pred=problema_facturare
+    MED_020 [complexa]: gold=reclamatie_personal pred=consultatie_anulata
+    RET_002 [simpla]: gold=comanda_gresita pred=retur_produs
+    RET_007 [complexa]: gold=comanda_intarziata pred=problema_livrare
+    RET_008 [complexa]: gold=retur_produs pred=problema_livrare
+    RET_015 [complexa]: gold=comanda_intarziata pred=problema_livrare
+    RET_016 [complexa]: gold=retur_produs pred=comanda_gresita
+    TEL_003 [simpla]: gold=problema_internet pred=problema_modificare_abonament
+    TEL_004 [simpla]: gold=problema_roaming pred=problema_internet
+    TEL_005 [simpla]: gold=factura_gresita pred=problema_roaming
+    TEL_006 [simpla]: gold=reziliere_contract pred=portare_esuata
+    TEL_007 [complexa]: gold=activare_esuata pred=problema_internet
+    TEL_008 [complexa]: gold=problema_semnal pred=problema_internet
+    TEL_010 [complexa]: gold=portare_esuata pred=problema_modificare_abonament
+    TEL_013 [complexa]: gold=factura_gresita pred=problema_roaming
+    TEL_014 [complexa]: gold=reziliere_contract pred=problema_modificare_abonament
+    TEL_015 [complexa]: gold=activare_esuata pred=problema_modificare_abonament
+    TEL_016 [complexa]: gold=problema_semnal pred=problema_internet
+    TEL_018 [complexa]: gold=portare_esuata pred=problema_modificare_abonament
+    SP_004 [simpla]: gold=reclamatie_serviciu pred=sesizare_problema
+    SP_006 [simpla]: gold=problema_plata_taxa pred=sesizare_problema
+    SP_007 [complexa]: gold=acte_incomplete pred=informatii_program
+    SP_008 [complexa]: gold=programare_ghiseu pred=informatii_program
+    SP_011 [complexa]: gold=informatii_program pred=contestatie_decizie
+    SP_012 [complexa]: gold=reclamatie_serviciu pred=sesizare_problema
+    SP_013 [complexa]: gold=sesizare_problema pred=contestatie_decizie
+    SP_014 [complexa]: gold=problema_plata_taxa pred=sesizare_problema
+    SP_015 [complexa]: gold=acte_incomplete pred=problema_plata_taxa
+    SP_016 [complexa]: gold=programare_ghiseu pred=problema_plata_taxa
+    SP_020 [complexa]: gold=reclamatie_serviciu pred=contestatie_decizie
+  Per domeniu:
+    banking               : 55% (11/20)
+    medicina              : 65% (13/20)
+    retail                : 75% (15/20)
+    telecom               : 40% (8/20)
+    servicii_publice      : 45% (9/20)

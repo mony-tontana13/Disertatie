@@ -1,9 +1,9 @@
 
-=== GPT-4.1-mini | Prompt V2 | 10 conversatii ===
+=== GPT-4.1-mini | Prompt V1_v2 | 10 conversatii ===
   Accuracy:      0.00%
   F1 Macro:      0.000
-  TTFT medie:    0.946s
-  Latenta medie: 1.023s
+  TTFT medie:    0.867s
+  Latenta medie: 0.905s
   Erori (10/10):
     BNK_006 [simpla]: gold=problema_schimb_valutar pred=alta_solicitare
     BNK_008 [complexa]: gold=card_pierdut pred=alta_solicitare
@@ -22,11 +22,11 @@
     telecom               : 0% (0/2)
     servicii_publice      : 0% (0/2)
 
-=== Gemini-2.5-flash | Prompt V2 | 10 conversatii ===
+=== Gemini-2.5-flash | Prompt V1_v2 | 10 conversatii ===
   Accuracy:      0.00%
   F1 Macro:      0.000
-  TTFT medie:    0.767s
-  Latenta medie: 0.767s
+  TTFT medie:    4.022s
+  Latenta medie: 4.023s
   Erori (10/10):
     BNK_006 [simpla]: gold=problema_schimb_valutar pred=alta_solicitare
     BNK_008 [complexa]: gold=card_pierdut pred=alta_solicitare
@@ -45,11 +45,11 @@
     telecom               : 0% (0/2)
     servicii_publice      : 0% (0/2)
 
-=== command-r7b-12-2024 | Prompt V2 | 10 conversatii ===
+=== command-r7b-12-2024 | Prompt V1_v2 | 10 conversatii ===
   Accuracy:      0.00%
   F1 Macro:      0.000
-  TTFT medie:    0.557s
-  Latenta medie: 0.557s
+  TTFT medie:    0.536s
+  Latenta medie: 0.536s
   Erori (10/10):
     BNK_006 [simpla]: gold=problema_schimb_valutar pred=alta_solicitare
     BNK_008 [complexa]: gold=card_pierdut pred=alta_solicitare

@@ -59,7 +59,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", required=True, choices=["romistral", "rogemma"])
     parser.add_argument("--varianta", type=int, default=1, choices=[1, 2])
-    parser.add_argument("--n_per_domeniu", type=int, default=2)
+    parser.add_argument("--n_per_domeniu", type=int, default=10)
     parser.add_argument("--tot_setul", action="store_true")
     args = parser.parse_args()
 

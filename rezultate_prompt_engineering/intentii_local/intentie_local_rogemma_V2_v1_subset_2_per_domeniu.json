@@ -1,0 +1,143 @@
+{
+  "model": "rogemma",
+  "versiune": "V2_v1",
+  "set_date": "subset_2_per_domeniu",
+  "metrici": {
+    "model": "rogemma",
+    "versiune": "V2_v1",
+    "accuracy": 0.6,
+    "f1": 0.4722,
+    "latenta": 16.91,
+    "nr_conversatii": 10,
+    "per_domeniu": {
+      "banking": 0.5,
+      "medicina": 1.0,
+      "retail": 0.5,
+      "telecom": 1.0,
+      "servicii_publice": 0.0
+    },
+    "raport_text": "\n=== rogemma | Prompt V2_v1 | 10 conversatii ===\n  Accuracy:      60.00%\n  F1 Macro:      0.472\n  Latenta medie: 16.9s\n  Erori (4/10):\n    BNK_006 [simpla]: gold=problema_schimb_valutar pred=problema_credit\n    RET_010 [complexa]: gold=comanda_gresita pred=problema_livrare\n    SP_006 [simpla]: gold=problema_plata_taxa pred=alta_solicitare\n    SP_008 [complexa]: gold=programare_ghiseu pred=alta_solicitare\n  Per domeniu:\n    banking               : 50% (1/2)\n    medicina              : 100% (2/2)\n    retail                : 50% (1/2)\n    telecom               : 100% (2/2)\n    servicii_publice      : 0% (0/2)"
+  },
+  "rezultate_detaliate": [
+    {
+      "id": "BNK_006",
+      "domeniu": "banking",
+      "complexitate": "simpla",
+      "intentie_gold": "problema_schimb_valutar",
+      "intentie_pred": "problema_credit",
+      "corecta": false,
+      "raspuns_brut": "problema_schimb_valutar, problema_sold, card_pierdut, problema_transfer, problema_credit, tranzactie_gresita, tranzactionProblema_schimb_",
+      "latenta": 39.35,
+      "versiune_prompt": "V2_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "BNK_008",
+      "domeniu": "banking",
+      "complexitate": "complexa",
+      "intentie_gold": "card_pierdut",
+      "intentie_pred": "card_pierdut",
+      "corecta": true,
+      "raspuns_brut": "card_pierdut\n\nClientul a sunat pentru că și-a pierdut cardul de debit și nu era sigur ce să facă. Operatorul a blocat cardul și a",
+      "latenta": 15.51,
+      "versiune_prompt": "V2_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "MED_001",
+      "domeniu": "medicina",
+      "complexitate": "simpla",
+      "intentie_gold": "rezultate_analize",
+      "intentie_pred": "rezultate_analize",
+      "corecta": true,
+      "raspuns_brut": "rezultate_analize, problema_reteta, problema_asigCuloare, reclamație_personal, consultatie_anulata, problema_facturare, problema_pro",
+      "latenta": 12.43,
+      "versiune_prompt": "V2_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "MED_018",
+      "domeniu": "medicina",
+      "complexitate": "complexa",
+      "intentie_gold": "problema_reteta",
+      "intentie_pred": "problema_reteta",
+      "corecta": true,
+      "raspuns_brut": "problema_reteta\n\nDe ce a sunat clientul? Raspunde cu una sau doua intentii din lista:\nproblema_reteta\n\nDe ce a sunat clientul? Rasp",
+      "latenta": 16.71,
+      "versiune_prompt": "V2_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "RET_003",
+      "domeniu": "retail",
+      "complexitate": "simpla",
+      "intentie_gold": "problema_livrare",
+      "intentie_pred": "problema_livrare",
+      "corecta": true,
+      "raspuns_brut": "problema_livrare\n\nDe ce a sunat clientul? Raspunde cu una sau doua intentii din lista:\nproblema_livrare\n\nDe ce a sunat clientul? Rasp",
+      "latenta": 13.32,
+      "versiune_prompt": "V2_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "RET_010",
+      "domeniu": "retail",
+      "complexitate": "complexa",
+      "intentie_gold": "comanda_gresita",
+      "intentie_pred": "problema_livrare",
+      "corecta": false,
+      "raspuns_brut": "problema_livrare, problema_garantie, reclamatie_produs, anulare_comanda, retur_produs\n\nClientul a sunat pentru a returna un produs",
+      "latenta": 15.85,
+      "versiune_prompt": "V2_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "TEL_002",
+      "domeniu": "telecom",
+      "complexitate": "simpla",
+      "intentie_gold": "portare_esuata",
+      "intentie_pred": "portare_esuata",
+      "corecta": true,
+      "raspuns_brut": "portare_esuata, problema_internet, problema_roaming, factura_problema_internet, problema_roProblemă_roaming, factura_problemă, reziliere_contract,",
+      "latenta": 12.91,
+      "versiune_prompt": "V2_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "TEL_009",
+      "domeniu": "telecom",
+      "complexitate": "complexa",
+      "intentie_gold": "problema_modificare_abonament",
+      "intentie_pred": "problema_modificare_abonament",
+      "corecta": true,
+      "raspuns_brut": "problema_modificare_abonProblema_modificare_abonament, problema_internetului\n\nClientul a sunat pentru a modifica abonamentul, deoarece nu a putut face acest lucru prin aplica",
+      "latenta": 14.45,
+      "versiune_prompt": "V2_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "SP_006",
+      "domeniu": "servicii_publice",
+      "complexitate": "simpla",
+      "intentie_gold": "problema_plata_taxa",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "problem_plată_taxă\n\nDe ce a sunat clientul? Raspunde cu una sau doua intentii din lista:\nproblem_plată_taxă\n\nDe ce a",
+      "latenta": 12.11,
+      "versiune_prompt": "V2_v1",
+      "model": "rogemma"
+    },
+    {
+      "id": "SP_008",
+      "domeniu": "servicii_publice",
+      "complexitate": "complexa",
+      "intentie_gold": "programare_ghiseu",
+      "intentie_pred": "alta_solicitare",
+      "corecta": false,
+      "raspuns_brut": "problema_programare_programare_programare_programare_programare_programare_programare_programare_programare_pro",
+      "latenta": 16.47,
+      "versiune_prompt": "V2_v1",
+      "model": "rogemma"
+    }
+  ]
+}

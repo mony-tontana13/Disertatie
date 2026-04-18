@@ -169,8 +169,8 @@ def call_aya(prompt):
 
 
 MODELE_API = {
-    "GPT-4.1-mini": call_gpt,
     "Gemini-2.5-flash": call_gemini,
+    "GPT-4.1-mini": call_gpt,
     "command-r7b-12-2024": call_aya
 }
 
@@ -178,8 +178,8 @@ MODELE_API = {
 def ruleaza_evaluare_api(conversatii, get_prompt_fn, versiune, results_dir):
     """Ruleaza evaluarea pe toate modelele API disponibile."""
     disponibile = []
-    if OPENAI_API_KEY: disponibile.append("GPT-4.1-mini")
     if GEMINI_API_KEY: disponibile.append("Gemini-2.5-flash")
+    if OPENAI_API_KEY: disponibile.append("GPT-4.1-mini")
     if COHERE_API_KEY: disponibile.append("command-r7b-12-2024")
 
     if not disponibile:

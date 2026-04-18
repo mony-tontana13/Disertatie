@@ -1,34 +1,32 @@
 """
 Prompt V1 - Detectare Intentie - Modele API
-GPT-4.1-mini, Gemini-2.5-flash, Aya-Expanse-8b
+Zero-shot simplu — fara rol, fara lista de intentii, fara structurare.
+GPT-4.1-mini, Gemini-2.5-flash, command-r7b-12-2024
 
 Utilizare:
-    # Subset mic (10 conversatii)
     python3 intentie_api_V1.py
-
-    # Subset personalizat
+    python3 intentie_api_V1.py --varianta 2
     python3 intentie_api_V1.py --n_per_domeniu 4
-
-    # Tot setul
     python3 intentie_api_V1.py --tot_setul
+    python3 intentie_api_V1.py --varianta 2 --tot_setul
 """
 import json
 import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from prompt_engineering_API.intentii.utils_intentie_api import (
+from utils_intentie_api import (
     INTENTII_DOMENII, EXEMPLE_FEWSHOT_LUNGI,
     selecteaza_subset, incarca_toate_conversatiile,
     ruleaza_evaluare_api, calculeaza_si_afiseaza_api
 )
 
 VERSIUNE = "V1"
-RESULTS_DIR = "./rezultate_prompt_engineering"
+RESULTS_DIR = "./rezultate_prompt_engineering/intentii_api"
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 def get_prompt(dialog, domeniu):
-    """V1: Zero-shot simplu, fara structurare sau lista de intentii."""
+    """V1 varianta 1: Zero-shot — cerere simpla cu lista de clase la final."""
     return (
         "Analizeaza urmatoarea conversatie telefonica si identifica intentia clientului.\n\n"
         "Conversatie:\n" + dialog + "\n\n"
@@ -36,21 +34,28 @@ def get_prompt(dialog, domeniu):
     )
 
 def get_prompt2(dialog, domeniu):
+    """V1 varianta 2: Zero-shot — format de completare directa in 2-3 cuvinte."""
     return (
-        "Conversatie:\\n" + dialog + "\\n\\n"
+        "Conversatie:\n" + dialog + "\n\n"
         "Rezuma in 2-3 cuvinte ce a cerut clientul:"
     )
 
 def main():
     import argparse
     parser = argparse.ArgumentParser(description="Prompt V1 - Detectare Intentie - Modele API")
+    parser.add_argument("--varianta", type=int, default=1, choices=[1, 2],
+                        help="Varianta de prompt: 1 sau 2 (default: 1)")
     parser.add_argument("--n_per_domeniu", type=int, default=2,
                         help="Conversatii per domeniu pentru subset (default: 2 = 10 total)")
     parser.add_argument("--tot_setul", action="store_true",
                         help="Ruleaza pe toate cele 100 de conversatii")
     args = parser.parse_args()
 
-    print(f"\n=== PROMPT V1 — DETECTARE INTENTIE — MODELE API ===")
+    func_prompt = get_prompt if args.varianta == 1 else get_prompt2
+    sufix_varianta = f"_v{args.varianta}"
+    versiune_completa = f"V1{sufix_varianta}"
+
+    print(f"\n=== PROMPT V1 varianta {args.varianta} — DETECTARE INTENTIE — MODELE API ===")
 
     FOLDER_ADNOTAT = "./conversatii_adnotate_corectate"
 
@@ -65,10 +70,9 @@ def main():
 
     print(f"Total: {len(conversatii)} conversatii")
 
-    toate_rezultatele = ruleaza_evaluare_api(conversatii, get_prompt2, VERSIUNE, RESULTS_DIR)
-    toate_metrici = calculeaza_si_afiseaza_api(toate_rezultatele, VERSIUNE)
+    toate_rezultatele = ruleaza_evaluare_api(conversatii, func_prompt, versiune_completa, RESULTS_DIR)
+    toate_metrici = calculeaza_si_afiseaza_api(toate_rezultatele, versiune_completa)
 
-    # Tabel comparativ final
     print(f"\n{'='*75}")
     print("TABEL COMPARATIV MODELE API")
     print(f"{'='*75}")
@@ -76,10 +80,8 @@ def main():
     print(f"  {'-'*65}")
     for m in toate_metrici:
         print(f"  {m['model']:<22} {m['accuracy']:>10.2%} {m['f1']:>8.3f} {m['ttft_medie']:>9.3f}s {m['latenta_medie']:>9.3f}s")
-
-    # Salveaza rezultatele
-    output_file = os.path.join(RESULTS_DIR, f"intentie_api_V1_{descriere_set}.json")
-    raport_file = os.path.join(RESULTS_DIR, f"intentie_api_V1_{descriere_set}_raport.txt")
+    output_file = os.path.join(RESULTS_DIR, f"intentie_api_V1{sufix_varianta}_{descriere_set}.json")
+    raport_file = os.path.join(RESULTS_DIR, f"intentie_api_V1{sufix_varianta}_{descriere_set}_raport.txt")
 
     toate_rez_flat = []
     for rez_list in toate_rezultatele.values():
@@ -87,9 +89,8 @@ def main():
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump({
-            "versiune": VERSIUNE, "set_date": descriere_set,
-            "metrici": toate_metrici,
-            "rezultate_detaliate": toate_rez_flat
+            "versiune": versiune_completa, "set_date": descriere_set,
+            "metrici": toate_metrici, "rezultate_detaliate": toate_rez_flat
         }, f, ensure_ascii=False, indent=2)
 
     raport_complet = "\n".join(m.get("raport_text", "") for m in toate_metrici)

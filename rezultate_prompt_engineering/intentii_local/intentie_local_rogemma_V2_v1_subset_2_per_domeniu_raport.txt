@@ -1,0 +1,16 @@
+
+=== rogemma | Prompt V2_v1 | 10 conversatii ===
+  Accuracy:      60.00%
+  F1 Macro:      0.472
+  Latenta medie: 16.9s
+  Erori (4/10):
+    BNK_006 [simpla]: gold=problema_schimb_valutar pred=problema_credit
+    RET_010 [complexa]: gold=comanda_gresita pred=problema_livrare
+    SP_006 [simpla]: gold=problema_plata_taxa pred=alta_solicitare
+    SP_008 [complexa]: gold=programare_ghiseu pred=alta_solicitare
+  Per domeniu:
+    banking               : 50% (1/2)
+    medicina              : 100% (2/2)
+    retail                : 50% (1/2)
+    telecom               : 100% (2/2)
+    servicii_publice      : 0% (0/2)

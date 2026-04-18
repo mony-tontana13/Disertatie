@@ -1,0 +1,18 @@
+
+=== romistral | Prompt V2_v2 | 10 conversatii ===
+  Accuracy:      40.00%
+  F1 Macro:      0.250
+  Latenta medie: 10.4s
+  Erori (6/10):
+    BNK_008 [complexa]: gold=card_pierdut pred=card_blocat
+    MED_018 [complexa]: gold=problema_reteta pred=rezultate_analize
+    RET_010 [complexa]: gold=comanda_gresita pred=problema_livrare
+    TEL_002 [simpla]: gold=portare_esuata pred=problema_modificare_abonament
+    SP_006 [simpla]: gold=problema_plata_taxa pred=sesizare_problema
+    SP_008 [complexa]: gold=programare_ghiseu pred=sesizare_problema
+  Per domeniu:
+    banking               : 50% (1/2)
+    medicina              : 50% (1/2)
+    retail                : 50% (1/2)
+    telecom               : 50% (1/2)
+    servicii_publice      : 0% (0/2)

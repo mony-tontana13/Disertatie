@@ -2,31 +2,8 @@
 === GPT-4.1-mini | Prompt V1_v2 | 10 conversatii ===
   Accuracy:         0.00%
   F1 Macro:         0.000
-  TTFT medie:       0.712s
-  Latenta medie:    0.950s
-  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
-  Distributie pred: {'necunoscut': 9, 'pozitiv': 1}
-  Erori (10/10):
-    BNK_006 [simpla]: gold=neutru pred=necunoscut
-    BNK_008 [complexa]: gold=neutru pred=necunoscut
-    MED_001 [simpla]: gold=pozitiv pred=necunoscut
-    MED_018 [complexa]: gold=negativ pred=necunoscut
-    RET_003 [simpla]: gold=pozitiv pred=necunoscut
-    RET_010 [complexa]: gold=negativ pred=necunoscut
-    TEL_002 [simpla]: gold=pozitiv pred=necunoscut
-    TEL_009 [complexa]: gold=negativ pred=necunoscut
-    SP_006 [simpla]: gold=neutru pred=pozitiv
-    SP_008 [complexa]: gold=neutru pred=necunoscut
-  Per clasa:
-    pozitiv               : 0% (0/3)
-    neutru                : 0% (0/4)
-    negativ               : 0% (0/3)
-
-=== Gemini-2.5-flash | Prompt V1_v2 | 10 conversatii ===
-  Accuracy:         0.00%
-  F1 Macro:         0.000
-  TTFT medie:       0.708s
-  Latenta medie:    0.709s
+  TTFT medie:       0.677s
+  Latenta medie:    0.850s
   Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
   Distributie pred: {'necunoscut': 10}
   Erori (10/10):
@@ -45,11 +22,30 @@
     neutru                : 0% (0/4)
     negativ               : 0% (0/3)
 
+=== Gemini-2.5-flash | Prompt V1_v2 | 10 conversatii ===
+  Accuracy:         40.00%
+  F1 Macro:         0.367
+  TTFT medie:       6.769s
+  Latenta medie:    8.766s
+  Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
+  Distributie pred: {'necunoscut': 2, 'pozitiv': 7, 'negativ': 1}
+  Erori (6/10):
+    BNK_006 [simpla]: gold=neutru pred=necunoscut
+    BNK_008 [complexa]: gold=neutru pred=pozitiv
+    MED_018 [complexa]: gold=negativ pred=pozitiv
+    RET_010 [complexa]: gold=negativ pred=necunoscut
+    SP_006 [simpla]: gold=neutru pred=pozitiv
+    SP_008 [complexa]: gold=neutru pred=pozitiv
+  Per clasa:
+    pozitiv               : 100% (3/3)
+    neutru                : 0% (0/4)
+    negativ               : 33% (1/3)
+
 === command-r7b-12-2024 | Prompt V1_v2 | 10 conversatii ===
   Accuracy:         0.00%
   F1 Macro:         0.000
-  TTFT medie:       0.704s
-  Latenta medie:    0.704s
+  TTFT medie:       0.533s
+  Latenta medie:    0.533s
   Distributie gold: {'neutru': 4, 'pozitiv': 3, 'negativ': 3}
   Distributie pred: {'necunoscut': 10}
   Erori (10/10):

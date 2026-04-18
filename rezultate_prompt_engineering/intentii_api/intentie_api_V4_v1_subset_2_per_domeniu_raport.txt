@@ -1,0 +1,45 @@
+
+=== GPT-4.1-mini | Prompt V4_v1 | 10 conversatii ===
+  Accuracy:      70.00%
+  F1 Macro:      0.583
+  TTFT medie:    0.631s
+  Latenta medie: 0.725s
+  Erori (3/10):
+    BNK_008 [complexa]: gold=card_pierdut pred=card_blocat
+    SP_006 [simpla]: gold=problema_plata_taxa pred=sesizare_problema
+    SP_008 [complexa]: gold=programare_ghiseu pred=sesizare_problema
+  Per domeniu:
+    banking               : 50% (1/2)
+    medicina              : 100% (2/2)
+    retail                : 100% (2/2)
+    telecom               : 100% (2/2)
+    servicii_publice      : 0% (0/2)
+
+=== Gemini-2.5-flash | Prompt V4_v1 | 10 conversatii ===
+  Accuracy:      80.00%
+  F1 Macro:      0.667
+  TTFT medie:    9.247s
+  Latenta medie: 9.247s
+  Erori (2/10):
+    RET_003 [simpla]: gold=problema_livrare pred=comanda_intarziata
+    SP_008 [complexa]: gold=programare_ghiseu pred=acte_incomplete
+  Per domeniu:
+    banking               : 100% (2/2)
+    medicina              : 100% (2/2)
+    retail                : 50% (1/2)
+    telecom               : 100% (2/2)
+    servicii_publice      : 50% (1/2)
+
+=== command-r7b-12-2024 | Prompt V4_v1 | 10 conversatii ===
+  Accuracy:      90.00%
+  F1 Macro:      0.818
+  TTFT medie:    0.589s
+  Latenta medie: 0.589s
+  Erori (1/10):
+    SP_008 [complexa]: gold=programare_ghiseu pred=acte_incomplete
+  Per domeniu:
+    banking               : 100% (2/2)
+    medicina              : 100% (2/2)
+    retail                : 100% (2/2)
+    telecom               : 100% (2/2)
+    servicii_publice      : 50% (1/2)

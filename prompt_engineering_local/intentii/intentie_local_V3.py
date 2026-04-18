@@ -1,55 +1,31 @@
 """
 Prompt V3 - Detectare Intentie - Modele Locale
-Utilizeaza utils_intentie_local.py
+Zero-shot + Role + Constrained + Structured — sectiuni clare, reguli numerotate, ordine intentii.
 
 Utilizare:
-    # Subset mic (implicit 2 per domeniu = 10 total)
     python3 intentie_local_V3.py --model romistral
-
-    # Subset personalizat
+    python3 intentie_local_V3.py --model romistral --varianta 2
     python3 intentie_local_V3.py --model romistral --n_per_domeniu 4
-
-    # Tot setul de date
     python3 intentie_local_V3.py --model romistral --tot_setul
+    python3 intentie_local_V3.py --model romistral --varianta 2 --tot_setul
 """
 import json
 import os
 import sys
-import argparse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from prompt_engineering_local.intentii.utils_intentie_local import (
+from utils_intentie_local import (
     INTENTII_DOMENII, EXEMPLE_FEWSHOT,
     selecteaza_subset, incarca_toate_conversatiile,
     incarca_model, ruleaza_evaluare, calculeaza_si_afiseaza
 )
 
 VERSIUNE = "V3"
-RESULTS_DIR = "./rezultate_prompt_engineering"
+RESULTS_DIR = "./rezultate_prompt_engineering/intentii_local"
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
-
 def get_prompt(dialog, domeniu):
-    """V3: Structured + Constrained prompting (reguli detaliate, ordine intentii, cazuri ambigue)."""
-    intentii = INTENTII_DOMENII.get(domeniu, [])
-    intentii_str = ", ".join(intentii)
-    return (
-        "Esti un expert in analiza conversatiilor telefonice din domeniul " + domeniu + ".\n"
-        "Identifica intentia sau intentiile clientului din conversatia de mai jos.\n\n"
-        "REGULI STRICTE:\n"
-        "- Include DOAR ce a cerut sau intrebat clientul, nu actiunile operatorului\n"
-        "- Alege EXCLUSIV din lista de intentii furnizata, nu inventa etichete noi\n"
-        "- Daca clientul are doua intentii, listeaza-le in ordinea in care au aparut in conversatie\n"
-        "- PRIMA intentie din raspunsul tau trebuie sa fie cea principala, cu care a sunat clientul\n"
-        "- Daca nu gasesti o potrivire clara, alege cea mai apropiata intentie din lista\n\n"
-        "INTENTII DISPONIBILE: " + intentii_str + "\n\n"
-        "Conversatie:\n" + dialog + "\n\n"
-        "Raspunde DOAR cu una sau doua intentii din lista de mai sus, separate prin virgula.\n"
-        "Prima intentie trebuie sa fie cea principala:"
-    )
-
-def get_prompt2(dialog, domeniu):
-    """V3: Zero-shot + Role + Structured + Constrained — conversatie inainte de reguli."""
+    """V3 varianta 1: Role + Constrained + Structured — conversatie prima, reguli numerotate."""
     intentii = INTENTII_DOMENII.get(domeniu, [])
     intentii_str = ", ".join(intentii)
     return (
@@ -66,17 +42,42 @@ def get_prompt2(dialog, domeniu):
         "INTENTIE IDENTIFICATA:"
     )
 
+def get_prompt2(dialog, domeniu):
+    """V3 varianta 2: Role + Constrained + Structured — conversatie la final, reguli mai detaliate."""
+    intentii = INTENTII_DOMENII.get(domeniu, [])
+    intentii_str = ", ".join(intentii)
+    return (
+        "Esti un expert in clasificarea intentiilor pentru call-center-uri "
+        "din domeniul " + domeniu + ".\n\n"
+        "SARCINA: Identifica intentia sau intentiile clientului din conversatia de mai jos.\n\n"
+        "REGULI:\n"
+        "1. Include DOAR ce a cerut sau intrebat clientul — ignora actiunile operatorului\n"
+        "2. Alege EXCLUSIV din lista de intentii furnizata — nu inventa etichete noi\n"
+        "3. Returneaza MAXIM doua intentii, separate prin virgula\n"
+        "4. Prima intentie trebuie sa fie cea principala, cu care a sunat clientul\n"
+        "5. Daca intentia nu este exprimata explicit, deduce-o din contextul conversatiei\n"
+        "6. Daca nicio eticheta nu se potriveste exact, alege cea mai apropiata din lista\n\n"
+        "INTENTII DISPONIBILE: " + intentii_str + "\n\n"
+        "CONVERSATIE:\n" + dialog + "\n\n"
+        "INTENTIE IDENTIFICATA:"
+    )
 
 def main():
+    import argparse
     parser = argparse.ArgumentParser(description="Prompt V3 - Detectare Intentie - Modele Locale")
     parser.add_argument("--model", required=True, choices=["romistral", "rogemma"])
+    parser.add_argument("--varianta", type=int, default=1, choices=[1, 2],
+                        help="Varianta de prompt: 1 sau 2 (default: 1)")
     parser.add_argument("--n_per_domeniu", type=int, default=2,
                         help="Conversatii per domeniu pentru subset (default: 2 = 10 total)")
     parser.add_argument("--tot_setul", action="store_true",
                         help="Ruleaza pe toate cele 100 de conversatii")
     args = parser.parse_args()
 
-    print(f"\n=== PROMPT V3 — DETECTARE INTENTIE — MODELE LOCALE ===")
+    func_prompt = get_prompt if args.varianta == 1 else get_prompt2
+    sufix_varianta = f"_v{args.varianta}"
+
+    print(f"\n=== PROMPT V3 varianta {args.varianta} — DETECTARE INTENTIE — MODELE LOCALE ===")
     print(f"Model: {args.model}")
 
     FOLDER_ADNOTAT = "./conversatii_adnotate_corectate"
@@ -94,20 +95,28 @@ def main():
 
     tokenizer, model, device = incarca_model(args.model)
 
+    versiune_completa = f"V3{sufix_varianta}"
     rezultate = ruleaza_evaluare(
         conversatii, tokenizer, model, device,
-        get_prompt, VERSIUNE, args.model, RESULTS_DIR
+        func_prompt, versiune_completa, args.model, RESULTS_DIR
     )
-    metrici = calculeaza_si_afiseaza(rezultate, VERSIUNE, args.model)
+    metrici = calculeaza_si_afiseaza(rezultate, versiune_completa, args.model)
 
-    output_file = os.path.join(RESULTS_DIR, f"intentie_local_{args.model}_V3_{descriere_set}.json")
+    output_file = os.path.join(RESULTS_DIR, f"intentie_local_{args.model}_V3{sufix_varianta}_{descriere_set}.json")
+    raport_file = os.path.join(RESULTS_DIR, f"intentie_local_{args.model}_V3{sufix_varianta}_{descriere_set}_raport.txt")
+
     with open(output_file, "w", encoding="utf-8") as f:
-        json.dump({"model": args.model, "versiune": VERSIUNE, "set_date": descriere_set,
-                    "metrici": metrici, "rezultate_detaliate": rezultate},
-                  f, ensure_ascii=False, indent=2)
+        json.dump({
+            "model": args.model, "versiune": versiune_completa, "set_date": descriere_set,
+            "metrici": metrici, "rezultate_detaliate": rezultate
+        }, f, ensure_ascii=False, indent=2)
+
+    with open(raport_file, "w", encoding="utf-8") as f:
+        f.write(metrici.get("raport_text", ""))
+
     print(f"\nRezultate salvate in: {output_file}")
+    print(f"Raport text salvat in: {raport_file}")
 
 
 if __name__ == "__main__":
-    import argparse
     main()
