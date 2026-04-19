@@ -1,0 +1,35 @@
+
+=== rogemma | Prompt V2_v2 | 50 conversatii ===
+  Accuracy:      54.00%
+  F1 Macro:      0.423
+  Latenta medie: 14.6s
+  Erori (23/50):
+    BNK_002 [simpla]: gold=tranzactie_gresita pred=problema_credit
+    BNK_010 [complexa]: gold=tranzactie_gresita pred=problema_credit
+    BNK_020 [complexa]: gold=tranzactie_suspecta pred=problema_credit
+    BNK_008 [complexa]: gold=card_pierdut pred=card_blocat
+    BNK_015 [complexa]: gold=problema_sold pred=card_blocat
+    MED_005 [simpla]: gold=consultatie_anulata pred=problema_programare
+    MED_006 [simpla]: gold=problema_facturare pred=problema_asigurare
+    MED_008 [complexa]: gold=anulare_programare pred=consultatie_anulata
+    MED_015 [complexa]: gold=problema_programare pred=problema_reteta
+    MED_016 [complexa]: gold=anulare_programare pred=problema_facturare
+    RET_010 [complexa]: gold=comanda_gresita pred=problema_livrare
+    RET_014 [complexa]: gold=anulare_comanda pred=reclamatie_produs
+    RET_016 [complexa]: gold=retur_produs pred=comanda_gresita
+    RET_007 [complexa]: gold=comanda_intarziata pred=problema_livrare
+    TEL_004 [simpla]: gold=problema_roaming pred=problema_internet
+    TEL_006 [simpla]: gold=reziliere_contract pred=problema_internet
+    TEL_010 [complexa]: gold=portare_esuata pred=problema_roaming
+    TEL_008 [complexa]: gold=problema_semnal pred=problema_modificare_abonament
+    SP_001 [simpla]: gold=dosar_respins pred=problema_plata_taxa
+    SP_002 [simpla]: gold=contestatie_decizie pred=informatii_program
+    SP_007 [complexa]: gold=acte_incomplete pred=informatii_program
+    SP_018 [complexa]: gold=contestatie_decizie pred=problema_plata_taxa
+    SP_015 [complexa]: gold=acte_incomplete pred=problema_plata_taxa
+  Per domeniu:
+    banking               : 50% (5/10)
+    medicina              : 50% (5/10)
+    retail                : 60% (6/10)
+    telecom               : 60% (6/10)
+    servicii_publice      : 50% (5/10)

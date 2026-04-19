@@ -61,7 +61,7 @@ def main():
     parser.add_argument("--model", required=True, choices=["romistral", "rogemma"])
     parser.add_argument("--varianta", type=int, default=1, choices=[1, 2],
                         help="Varianta de prompt: 1 sau 2 (default: 1)")
-    parser.add_argument("--n_per_domeniu", type=int, default=2,
+    parser.add_argument("--n_per_domeniu", type=int, default=10,
                         help="Conversatii per domeniu pentru subset (default: 2 = 10 total)")
     parser.add_argument("--tot_setul", action="store_true",
                         help="Ruleaza pe toate cele 100 de conversatii")

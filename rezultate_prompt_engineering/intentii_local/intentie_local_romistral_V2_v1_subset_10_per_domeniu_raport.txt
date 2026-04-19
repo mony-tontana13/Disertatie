@@ -1,0 +1,42 @@
+
+=== romistral | Prompt V2_v1 | 50 conversatii ===
+  Accuracy:      40.00%
+  F1 Macro:      0.315
+  Latenta medie: 11.3s
+  Erori (30/50):
+    BNK_006 [simpla]: gold=problema_schimb_valutar pred=problema_credit
+    BNK_005 [simpla]: gold=problema_transfer pred=problema_credit
+    BNK_002 [simpla]: gold=tranzactie_gresita pred=alta_solicitare
+    BNK_010 [complexa]: gold=tranzactie_gresita pred=problema_credit
+    BNK_020 [complexa]: gold=tranzactie_suspecta pred=problema_credit
+    BNK_008 [complexa]: gold=card_pierdut pred=card_blocat
+    BNK_015 [complexa]: gold=problema_sold pred=card_blocat
+    MED_005 [simpla]: gold=consultatie_anulata pred=problema_programare
+    MED_004 [simpla]: gold=reclamatie_personal pred=rezultate_analize
+    MED_010 [complexa]: gold=problema_reteta pred=alta_solicitare
+    MED_019 [complexa]: gold=problema_asigurare pred=alta_solicitare
+    MED_015 [complexa]: gold=problema_programare pred=rezultate_analize
+    MED_016 [complexa]: gold=anulare_programare pred=problema_programare
+    RET_005 [simpla]: gold=reclamatie_produs pred=comanda_gresita
+    RET_016 [complexa]: gold=retur_produs pred=comanda_gresita
+    RET_011 [complexa]: gold=problema_livrare pred=produs_lipsa_stoc
+    RET_007 [complexa]: gold=comanda_intarziata pred=problema_livrare
+    TEL_002 [simpla]: gold=portare_esuata pred=problema_modificare_abonament
+    TEL_004 [simpla]: gold=problema_roaming pred=problema_modificare_abonament
+    TEL_010 [complexa]: gold=portare_esuata pred=alta_solicitare
+    TEL_012 [complexa]: gold=problema_roaming pred=problema_modificare_abonament
+    TEL_017 [complexa]: gold=problema_modificare_abonament pred=problema_internet
+    SP_004 [simpla]: gold=reclamatie_serviciu pred=sesizare_problema
+    SP_001 [simpla]: gold=dosar_respins pred=acte_incomplete
+    SP_002 [simpla]: gold=contestatie_decizie pred=sesizare_problema
+    SP_006 [simpla]: gold=problema_plata_taxa pred=sesizare_problema
+    SP_019 [complexa]: gold=informatii_program pred=sesizare_problema
+    SP_018 [complexa]: gold=contestatie_decizie pred=alta_solicitare
+    SP_014 [complexa]: gold=problema_plata_taxa pred=sesizare_problema
+    SP_015 [complexa]: gold=acte_incomplete pred=reclamatie_serviciu
+  Per domeniu:
+    banking               : 30% (3/10)
+    medicina              : 40% (4/10)
+    retail                : 60% (6/10)
+    telecom               : 50% (5/10)
+    servicii_publice      : 20% (2/10)
