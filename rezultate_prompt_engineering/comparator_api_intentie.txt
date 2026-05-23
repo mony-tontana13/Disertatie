@@ -1,0 +1,57 @@
+=== COMPARATOR PROMPT ENGINEERING — DETECTARE INTENTIE — MODELE API ===
+Set de date: tot_setul
+
+================================================================================
+  Model                  Versiune   Accuracy       F1       TTFT    Latenta
+  ----------------------------------------------------------------------
+  Gemini-2.5-flash       V1_v2         0.00%    0.000     3.761s     3.764s
+  GPT-4.1-mini           V1_v2         0.00%    0.000     0.554s     0.592s
+  command-r7b-12-2024    V1_v2         0.00%    0.000     0.677s     0.677s
+  Gemini-2.5-flash       V2_v1        68.00%    0.615     8.152s     8.152s
+  GPT-4.1-mini           V2_v1        73.00%    0.673     0.573s     0.638s
+  command-r7b-12-2024    V2_v1        51.00%    0.416     0.548s     0.548s
+  GPT-4.1-mini           V3_v1        69.00%    0.599     0.655s     0.753s
+  Gemini-2.5-flash       V3_v1        65.00%    0.532     8.126s     8.128s
+  command-r7b-12-2024    V3_v1        56.00%    0.455     0.527s     0.527s
+  GPT-4.1-mini           V4_v1        69.00%    0.602     0.562s     0.661s
+  Gemini-2.5-flash       V4_v1        63.00%    0.536     8.241s     8.245s
+  command-r7b-12-2024    V4_v1        70.00%    0.632     0.607s     0.607s
+
+================================================================================
+CEL MAI BUN PROMPT PER MODEL (dupa Accuracy)
+================================================================================
+  GPT-4.1-mini          : V2_v1 — Accuracy=73.00% | F1=0.673
+  Gemini-2.5-flash      : V2_v1 — Accuracy=68.00% | F1=0.615
+
+================================================================================
+CEL MAI BUN MODEL PER VERSIUNE (dupa Accuracy)
+================================================================================
+  V1_v2   : GPT-4.1-mini           — Accuracy=0.00% | F1=0.000
+  V2_v1   : GPT-4.1-mini           — Accuracy=73.00% | F1=0.673
+  V3_v1   : GPT-4.1-mini           — Accuracy=69.00% | F1=0.599
+  V4_v1   : GPT-4.1-mini           — Accuracy=69.00% | F1=0.602
+
+================================================================================
+ANALIZA ERORI PER DOMENIU — V4 (versiunea finala)
+================================================================================
+
+  GPT-4.1-mini:
+    banking               : 60%
+    medicina              : 75%
+    retail                : 75%
+    telecom               : 75%
+    servicii_publice      : 60%
+
+  Gemini-2.5-flash:
+    banking               : 60%
+    medicina              : 80%
+    retail                : 60%
+    telecom               : 60%
+    servicii_publice      : 55%
+
+  command-r7b-12-2024:
+    banking               : 70%
+    medicina              : 80%
+    retail                : 75%
+    telecom               : 75%
+    servicii_publice      : 50%

@@ -1,0 +1,46 @@
+{
+  "id": "20260504_193311",
+  "domeniu": "banking",
+  "timestamp": "2026-05-04T19:35:51.907929",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Buna ziua, ati sunat la serviciul clienti al bancii. Cu ce va pot ajuta astazi?"
+    },
+    {
+      "rol": "client",
+      "text": "ziua nisa blocat cardul"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud că aveți această problemă. Vă rog să-mi comunicați, vă rog, ultimele patru cifre ale cardului blocat pentru a verifica situația."
+    },
+    {
+      "rol": "client",
+      "text": "4 9 8 7"
+    },
+    {
+      "rol": "operator",
+      "text": "Am verificat situația cardului cu ultimele patru cifre 4987 și vă confirm că acesta este blocat din motive de securitate. Pentru deblocare, vă recomand să vizitați cea mai apropiată sucursală a băncii cu un act de identitate pentru a putea verifica și remedia problema în cel mai scurt timp. Alternativ, puteți solicita emiterea unui card nou, proces care durează în mod obișnuit 5-7 zile lucrătoare. Dacă doriți, vă pot ajuta să programați o vizită sau să inițiez solicitarea pentru un card nou. Vă mulțumim pentru înțelegere și ne cerem scuze pentru inconvenient!"
+    },
+    {
+      "rol": "client",
+      "text": "nu am timp să merg la sucursală nu puteți să-mi deblocați dumneavoastră"
+    },
+    {
+      "rol": "operator",
+      "text": "Va multumim ca ati contactat serviciul nostru. O zi buna!"
+    }
+  ],
+  "analiza": {
+    "intentie": "card_blocat",
+    "satisfactie": "negativ",
+    "rezumat": {
+      "tip": "LUNG",
+      "valoare": "Clientul a contactat serviciul clienți pentru că i-a fost blocat cardul și a solicitat deblocarea acestuia. Operatorul a explicat că blocarea a fost făcută din motive de securitate și a recomandat o vizită la sucursală pentru identificare și deblocare, sau emiterea unui card nou în 5-7 zile lucrătoare. Clientul a refuzat aceste opțiuni, menționând că nu are timp să meargă la sucursală și a cerut deblocarea de la distanță, însă operatorul nu a putut ajuta mai departe, concluzionând conversația fără rezolvare. Problema rămâne nerezolvată.",
+      "nr_cuvinte": 84,
+      "in_limite": true
+    },
+    "latenta_analiza": 7.748
+  }
+}

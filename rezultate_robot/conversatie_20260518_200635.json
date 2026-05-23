@@ -1,0 +1,85 @@
+{
+  "id": "20260518_200635",
+  "domeniu": "banking",
+  "timestamp": "2026-05-18T20:11:51.607766",
+  "dificultate": "medie",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți al băncii. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "bună ziua am găsit o tranzacție suspectă la mine în"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a vă putea asista, vă rog să îmi comunicați ultimele 4 cifre ale cardului dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "parcă erau trei doi unu patru"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru informație. Îmi puteți spune, vă rog, data tranzacției suspecte?"
+    },
+    {
+      "rol": "client",
+      "text": "acum câteva zile pe"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să-mi specificați data exactă a tranzacției suspecte, pentru a putea verifica corect situația."
+    },
+    {
+      "rol": "client",
+      "text": "eu v-am zis 15 mai dar"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru dată. Care este suma tranzacției suspecte?"
+    },
+    {
+      "rol": "client",
+      "text": "parcă șapte sute de lei"
+    },
+    {
+      "rol": "operator",
+      "text": "Am blocat temporar cardul pentru a preveni alte tranzacții neautorizate și am inițiat o investigație preliminară privind suma de 700 de lei de pe 15 mai. Rezolvarea completă a cazului necesită însă verificări suplimentare de la departamentul de securitate, care pot dura până la 5 zile lucrătoare. Vă asigur că vă vom contacta imediat ce avem un răspuns clar. Dacă între timp observați alte tranzacții suspecte, vă rog să ne anunțați."
+    },
+    {
+      "rol": "client",
+      "text": "ok am înțeles se poate face ceva mai repede"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg dorința dumneavoastră și vă asigur că vom trata cu maximă prioritate cazul, însă procedurile de securitate necesită acest timp pentru a vă proteja contul în mod corespunzător. Dacă doriți, pot verifica acum dacă există posibilitatea de urgentare, însă nu pot garanta un răspuns mai rapid. Mai pot să vă ajut cu altceva sau aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "mulțumesc dacă puteți urgenta"
+    },
+    {
+      "rol": "operator",
+      "text": "Am transmis solicitarea dumneavoastră de urgentare către departamentul de securitate și voi urmări personal cazul pentru a vă oferi un răspuns cât mai curând posibil. Vă rog să mă anunțați dacă observați alte tranzacții neobișnuite în acest timp. Mai pot să vă ajut cu altceva?"
+    },
+    {
+      "rol": "client",
+      "text": "nu mulțumesc frumos"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru înțelegere și pentru că ați apelat la noi. O zi frumoasă în continuare! Dacă vă mai pot fi de folos, nu ezitați să ne contactați."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "tranzactie_suspecta",
+    "satisfactie": "neutru",
+    "rezumat": "Clientul a semnalat o tranzacție suspectă de 700 lei, realizată pe 15 mai, iar operatorul a blocat temporar cardul și a inițiat o investigație. S-a promis urgentarea cazului, deși rezolvarea completă poate dura până la 5 zile lucrătoare. Clientul a fost rugat să anunțe orice alte tranzacții neobișnuite și a fost asigurat de suportul continuu al băncii."
+  }
+}

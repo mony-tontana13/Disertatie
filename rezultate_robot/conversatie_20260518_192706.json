@@ -1,0 +1,49 @@
+{
+  "id": "20260518_192706",
+  "domeniu": "banking",
+  "timestamp": "2026-05-18T19:29:45.043205",
+  "dificultate": "medie",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Buna ziua, ati sunat la serviciul clienti al bancii. Cu ce va pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "bună ziua am văzut o tranzacție suspectă în"
+    },
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Vă rog să-mi spuneți, vă rog, data la care a fost efectuată această tranzacție suspectă."
+    },
+    {
+      "rol": "client",
+      "text": "a fost ieri pe 17 mai"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru informație. Vă rog să-mi spuneți și suma tranzacției suspecte."
+    },
+    {
+      "rol": "client",
+      "text": "cred că 700 de lei a fost"
+    },
+    {
+      "rol": "operator",
+      "text": "Am blocat temporar cardul pentru a preveni alte tranzacții suspecte și am inițiat verificarea acestei tranzacții. În ceea ce privește solicitarea unei eventuale returnări a sumei, acest proces necesită o investigație suplimentară care poate dura până la 14 zile lucrătoare și este gestionată de departamentul specializat. Vă asigur că veți fi contactat imediat ce avem un răspuns. Dacă doriți, vă pot ajuta acum să vă emităm un card nou pentru a evita orice disconfort."
+    },
+    {
+      "rol": "client",
+      "text": "păi și eu trebuie să plătesc pentru cardul nou"
+    },
+    {
+      "rol": "operator",
+      "text": "Va multumim ca ati contactat serviciul nostru. O zi buna!"
+    }
+  ],
+  "analiza": {
+    "intentie": "tranzactie_suspecta",
+    "satisfactie": "negativ",
+    "rezumat": "Clientul a sesizat o tranzacție suspectă de 700 de lei, efectuată pe 17 mai, iar operatorul a blocat temporar cardul pentru a preveni alte activități neautorizate. A fost inițiată o anchetă care poate dura până la 14 zile lucrătoare și va fi gestionată de un departament specializat. Operatorul a oferit și opțiunea de a emite un card nou, însă nu a răspuns clar referitor la costurile aferente acestuia, iar convorbirea s-a încheiat fără soluționarea completă a întrebării clientului."
+  }
+}

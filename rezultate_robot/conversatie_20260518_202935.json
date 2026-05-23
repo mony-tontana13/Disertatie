@@ -1,0 +1,41 @@
+{
+  "id": "20260518_202935",
+  "domeniu": "retail",
+  "timestamp": "2026-05-18T20:31:04.207421",
+  "dificultate": "medie",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, serviciul clienți, vă ascult. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "bună ziua am comandat"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a vă putea ajuta, vă rog să îmi comunicați adresa de email asociată contului dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "dum dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să-mi explicați în detaliu care este motivul apelului dumneavoastră, pentru a vă putea asista corespunzător."
+    },
+    {
+      "rol": "client",
+      "text": "am comandat o cană de la"
+    },
+    {
+      "rol": "operator",
+      "text": "Solicitarea dumneavoastră depășește competențele sistemului automat. Vă voi transfera către un operator uman care vă poate ajuta. Vă rugăm să rămâneți în linie. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "alta_solicitare",
+    "satisfactie": null,
+    "rezumat": null
+  }
+}

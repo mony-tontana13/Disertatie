@@ -1,0 +1,65 @@
+{
+  "id": "20260518_190939",
+  "domeniu": "banking",
+  "timestamp": "2026-05-18T19:13:35.955886",
+  "dificultate": "simpla",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Buna ziua, ati sunat la serviciul clienti al bancii. Cu ce va pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "bună ziua am înregistrat o tranzacție suspectă și nu înțeleg de unde bună ziua am înregistrat o tranzacție suspectă și nu înțeleg de unde e"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să-mi spuneți data și suma tranzacției suspecte pentru a putea verifica situația."
+    },
+    {
+      "rol": "client",
+      "text": "data data este"
+    },
+    {
+      "rol": "operator",
+      "text": "Am blocat temporar contul pentru protectia dumneavoastra. Echipa de securitate va analiza tranzactiile suspecte in urmatoarele 2 ore. Veti fi contactat telefonic pentru confirmare. Daca nu recunoasteti tranzactia, aceasta va fi anulata si suma returnata in maxim 3 zile lucratoare."
+    },
+    {
+      "rol": "client",
+      "text": "doar stai că nici măcar nu v-am dat cardul doar stai că nici măcar nu v-am dat cardul"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg îngrijorarea dumneavoastră și vreau să vă asigur că măsura blocării contului a fost luată pentru siguranța fondurilor dumneavoastră. Pentru a preveni eventuale fraude, analizăm fiecare situație cu atenție. Dacă aveți alte întrebări, vă stau la dispoziție, altfel pot încheia apelul."
+    },
+    {
+      "rol": "client",
+      "text": "dar nu înțeleg ce se întâmplă nu v-am dat nici măcar dar nu înțeleg ce se întâmplă nu v-am dat nici măcar numerele de la"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg confuzia dumneavoastră și este foarte bine că ați sesizat situația; echipa noastră investighează acum tranzacția pentru a vă proteja contul. Dacă doriți, vă pot explica în detaliu pașii efectuați sau vă pot ajuta cu alte întrebări, altfel putem încheia apelul."
+    },
+    {
+      "rol": "client",
+      "text": "da da ok acuma"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru înțelegere. Echipa noastră va lua legătura cu dumneavoastră în cel mai scurt timp cu detalii suplimentare. Dacă mai aveți nevoie de ajutor, sunt aici să vă susțin."
+    },
+    {
+      "rol": "client",
+      "text": "line pa"
+    },
+    {
+      "rol": "operator",
+      "text": "Va multumim ca ati contactat serviciul nostru. O zi buna!"
+    }
+  ],
+  "analiza": {
+    "intentie": "tranzactie_suspecta",
+    "satisfactie": "negativ",
+    "rezumat": "Clientul a sesizat o tranzacție suspectă pe contul său și a contactat serviciul clienți al băncii pentru clarificări. Operatorul a solicitat detalii despre tranzacție, a blocat temporar contul pentru siguranță și a informat clientul că echipa de securitate va analiza situația în câteva ore. Clientul și-a exprimat confuzia și preocuparea, menționând că nu a oferit datele cardului. Operatorul a explicat măsurile de protecție și a asigurat suportul continuu, iar apelul s-a încheiat cu promisiunea unui contact ulterior din partea echipei bancare."
+  }
+}

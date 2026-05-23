@@ -1,63 +1,44 @@
-
 === COMPARATOR SATISFACTIE — MODELE API ===
 Set de date: tot_setul
 ================================================================================
 
   Model                  Versiune     Accuracy       F1       TTFT
   --------------------------------------------------------------
-  GPT-4.1-mini           V1_v1          72.00%    0.716     0.564s
-  Gemini-2.5-flash       V1_v1           0.00%    0.000     0.732s
-  command-r7b-12-2024    V1_v1          72.00%    0.605     0.513s
-  GPT-4.1-mini           V2_v1          65.00%    0.657     0.611s
-  Gemini-2.5-flash       V2_v1           0.00%    0.000     0.734s
-  command-r7b-12-2024    V2_v1          78.00%    0.798     0.510s
-  GPT-4.1-mini           V2_v2          90.00%    0.854     0.684s
-  Gemini-2.5-flash       V2_v2           0.00%    0.000     0.745s
-  command-r7b-12-2024    V2_v2          71.00%    0.701     0.513s
-  GPT-4.1-mini           V3_v1          77.00%    0.764     0.668s
-  Gemini-2.5-flash       V3_v1           0.00%    0.000     0.692s
-  command-r7b-12-2024    V3_v1          39.00%    0.260     0.728s
-  GPT-4.1-mini           V3_v2          83.00%    0.816     0.592s
-  Gemini-2.5-flash       V3_v2           0.00%    0.000     0.655s
-  command-r7b-12-2024    V3_v2          20.00%    0.202     0.744s
+  GPT-4.1-mini           V1_v1          74.00%    0.727     0.563s
+  Gemini-2.5-flash       V1_v1          80.00%    0.717     6.151s
+  command-r7b-12-2024    V1_v1          72.00%    0.593     0.410s
+  GPT-4.1-mini           V2_v1          70.00%    0.699     0.552s
+  Gemini-2.5-flash       V2_v1          78.00%    0.629     6.672s
+  command-r7b-12-2024    V2_v1          74.00%    0.779     0.431s
+  GPT-4.1-mini           V3_v2          83.00%    0.816     0.571s
+  Gemini-2.5-flash       V3_v2          78.00%    0.642     7.949s
+  command-r7b-12-2024    V3_v2          14.00%    0.124     0.595s
 
   Cel mai bun prompt per model (dupa F1):
-    GPT-4.1-mini          : V2_v2 — F1=0.854 | Acc=90.00%
-    Gemini-2.5-flash      : V1_v1 — F1=0.000 | Acc=0.00%
-    command-r7b-12-2024   : V2_v1 — F1=0.798 | Acc=78.00%
+    GPT-4.1-mini          : V3_v2 — F1=0.816 | Acc=83.00%
+    Gemini-2.5-flash      : V1_v1 — F1=0.717 | Acc=80.00%
+    command-r7b-12-2024   : V2_v1 — F1=0.779 | Acc=74.00%
 
   Accuracy per clasa:
   Model                  Versiune      pozitiv     neutru    negativ
   -------------------------------------------------------
-  GPT-4.1-mini           V1_v1            100%        68%        67%
-  Gemini-2.5-flash       V1_v1              0%         0%         0%
+  GPT-4.1-mini           V1_v1            100%        68%        70%
+  Gemini-2.5-flash       V1_v1            100%        40%        92%
   command-r7b-12-2024    V1_v1             60%        12%       100%
-  GPT-4.1-mini           V2_v1            100%        64%        57%
-  Gemini-2.5-flash       V2_v1              0%         0%         0%
-  command-r7b-12-2024    V2_v1             87%        96%        68%
-  GPT-4.1-mini           V2_v2            100%        64%        98%
-  Gemini-2.5-flash       V2_v2              0%         0%         0%
-  command-r7b-12-2024    V2_v2             53%       100%        63%
-  GPT-4.1-mini           V3_v1            100%        76%        72%
-  Gemini-2.5-flash       V3_v1              0%         0%         0%
-  command-r7b-12-2024    V3_v1              0%         0%        65%
+  GPT-4.1-mini           V2_v1            100%        68%        63%
+  Gemini-2.5-flash       V2_v1            100%        12%       100%
+  command-r7b-12-2024    V2_v1             87%       100%        60%
   GPT-4.1-mini           V3_v2            100%        80%        80%
-  Gemini-2.5-flash       V3_v2              0%         0%         0%
-  command-r7b-12-2024    V3_v2              7%         0%        32%
+  Gemini-2.5-flash       V3_v2            100%        16%        98%
+  command-r7b-12-2024    V3_v2              0%         0%        23%
 
   Distributie predictii (atentie la bias spre negativ):
-    GPT-4.1-mini           V1_v1: {'pozitiv': 23, 'neutru': 36, 'negativ': 40, 'necunoscut': 1}
-    Gemini-2.5-flash       V1_v1: {'necunoscut': 100}
-    command-r7b-12-2024    V1_v1: {'necunoscut': 7, 'pozitiv': 9, 'negativ': 81, 'neutru': 3}
-    GPT-4.1-mini           V2_v1: {'pozitiv': 24, 'neutru': 42, 'negativ': 34}
-    Gemini-2.5-flash       V2_v1: {'necunoscut': 100}
-    command-r7b-12-2024    V2_v1: {'pozitiv': 14, 'neutru': 45, 'negativ': 41}
-    GPT-4.1-mini           V2_v2: {'pozitiv': 21, 'neutru': 17, 'negativ': 62}
-    Gemini-2.5-flash       V2_v2: {'necunoscut': 100}
-    command-r7b-12-2024    V2_v2: {'neutru': 54, 'pozitiv': 8, 'negativ': 38}
-    GPT-4.1-mini           V3_v1: {'pozitiv': 21, 'neutru': 36, 'negativ': 43}
-    Gemini-2.5-flash       V3_v1: {'necunoscut': 100}
-    command-r7b-12-2024    V3_v1: {'necunoscut': 60, 'negativ': 40}
+    GPT-4.1-mini           V1_v1: {'pozitiv': 23, 'neutru': 35, 'negativ': 42}
+    Gemini-2.5-flash       V1_v1: {'pozitiv': 28, 'neutru': 14, 'negativ': 57, 'necunoscut': 1}
+    command-r7b-12-2024    V1_v1: {'necunoscut': 5, 'pozitiv': 10, 'negativ': 82, 'neutru': 3}
+    GPT-4.1-mini           V2_v1: {'pozitiv': 23, 'neutru': 39, 'negativ': 38}
+    Gemini-2.5-flash       V2_v1: {'pozitiv': 24, 'negativ': 73, 'neutru': 3}
+    command-r7b-12-2024    V2_v1: {'pozitiv': 13, 'neutru': 51, 'negativ': 36}
     GPT-4.1-mini           V3_v2: {'pozitiv': 20, 'neutru': 32, 'negativ': 48}
-    Gemini-2.5-flash       V3_v2: {'necunoscut': 100}
-    command-r7b-12-2024    V3_v2: {'necunoscut': 80, 'pozitiv': 1, 'negativ': 19}
+    Gemini-2.5-flash       V3_v2: {'pozitiv': 25, 'neutru': 4, 'negativ': 71}
+    command-r7b-12-2024    V3_v2: {'necunoscut': 85, 'negativ': 15}

@@ -1,0 +1,57 @@
+{
+  "id": "20260519_193756",
+  "domeniu": "retail",
+  "timestamp": "2026-05-19T19:40:47.415128",
+  "dificultate": "simpla",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, serviciul clienți, vă ascult. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "bună ziua, am comandat o cană albastră de la dumneavoastră și am primit un aroz; aș vrea să o returnez și să primesc pe cea bună."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să-mi spuneți numele complet, pentru a putea verifica detaliile comenzii dumneavoastră. Mulțumesc!"
+    },
+    {
+      "rol": "client",
+      "text": "antonia detaliu"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să-mi comunicați adresa de email asociată contului dumneavoastră, pentru a putea verifica informațiile comenzii în sistem. Mulțumesc pentru înțelegere!"
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia treisprezece arond gmail punct com"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc, doamnă Antonia; cu ce vă pot ajuta mai exact în legătură cu comanda dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "păi v-am zis ăă nu este ceea ce am comandat"
+    },
+    {
+      "rol": "operator",
+      "text": "Ca să pot verifica și remedia situația, am nevoie, vă rog, să îmi spuneți numărul comenzii dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "da sigur pa patru cinci șase șapte"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "comanda_gresita",
+    "satisfactie": "negativ",
+    "rezumat": "Clienta Antonia l-a contactat pe operatorul serviciului clienți pentru a reclama o comandă greșită: în loc de o cană albastră, a primit un aroz. Operatorul i-a solicitat numele complet, adresa de email și numărul comenzii pentru a verifica și rezolva problema, însă conversația s-a încheiat fără confirmarea unei soluții concrete. Clienta a furnizat toate informațiile solicitate, dar operatorul a mulțumit și a încheiat convorbirea prematur."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "20260518_193239",
+  "domeniu": "banking",
+  "timestamp": "2026-05-18T19:36:28.574852",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Buna ziua, ati sunat la serviciul clienti al bancii. Cu ce va pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "bună ziua, am găsit o tranzacție suspectă în aplicație, iar eu nu am făcut nicio tranzacție zilele astea"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația, vă rog să-mi spuneți, vă rog, data la care a apărut această tranzacție suspectă."
+    },
+    {
+      "rol": "client",
+      "text": "zilele trecute parcă era pe 13 mai"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru informație. Care a fost suma tranzacției suspecte?"
+    },
+    {
+      "rol": "client",
+      "text": "nu mai știu parcă"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să încercați să verificați suma în aplicație sau pe extrasul de cont și să-mi comunicați, pentru a putea continua investigarea."
+    },
+    {
+      "rol": "client",
+      "text": "v-am zis dar nu ați înțeles cinci sute de lei"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru clarificare. Voi înregistra cazul dumneavoastră pentru verificări suplimentare, însă investigarea acestei tranzacții poate dura până la 30 de zile lucrătoare. Vă asigur că vom reveni cu un răspuns detaliat în acest interval. Între timp, vă recomand să monitorizați contul și să ne contactați dacă apar alte situații asemănătoare."
+    },
+    {
+      "rol": "client",
+      "text": "păi și eu ce fac treizeci de zile foarte mult și ăștia"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg perfect că timpul de așteptare poate fi frustrant și vă asigur că facem tot posibilul să soluționăm rapid situația. Dacă doriți, vă pot oferi suport pentru întrebări suplimentare sau pentru blocarea temporară a cardului, pentru siguranța contului dumneavoastră. Cum doriți să procedăm?"
+    },
+    {
+      "rol": "client",
+      "text": "nu știu, închideți cardul atunci"
+    },
+    {
+      "rol": "operator",
+      "text": "Va multumim ca ati contactat serviciul nostru. O zi buna!"
+    }
+  ],
+  "analiza": {
+    "intentie": "tranzactie_suspecta",
+    "satisfactie": "negativ",
+    "rezumat": "Clientul a sesizat o tranzacție suspectă de 500 de lei, realizată pe 13 mai, pe care el afirmă că nu a efectuat-o. Operatorul a preluat cazul și a explicat că investigarea poate dura până la 30 de zile lucrătoare, recomandând monitorizarea contului. Clientul s-a arătat nemulțumit de durata investigației, iar operatorul a oferit opțiunea blocării temporare a cardului. În final, clientul a cerut închiderea cardului pentru siguranță. Operatorul a încheiat convorbirea mulțumind pentru contact."
+  }
+}

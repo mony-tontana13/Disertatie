@@ -1,0 +1,85 @@
+{
+  "id": "20260519_192851",
+  "domeniu": "retail",
+  "timestamp": "2026-05-19T19:34:41.917094",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, serviciul clienți, vă ascult. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "bună ziua am comandat o cană roz de la dumneavoastră și am primit una albastră"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog frumos să îmi spuneți numele complet pentru a putea verifica comanda dumneavoastră în sistem. Această informație ne ajută să vă oferim un suport cât mai rapid și corect."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să îmi spuneți adresa de email asociată contului dumneavoastră, pentru a putea verifica detaliile comenzii. Aceasta este necesară pentru a confirma identitatea și a vă oferi asistență corectă."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia 13 arond gmail punct com"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc, doamnă Dumitru; cu ce vă pot ajuta în legătură cu comanda dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "păi nu este ceea ce am comandat, adică eu am vrut una roz și am primit una albastră și acum nu vreau să rămân cu cea albastră"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să îmi comunicați, vă rog, numărul comenzii pentru a putea verifica detaliile și a rezolva situația."
+    },
+    {
+      "rol": "client",
+      "text": "a păi numai știu numărul comenzii la ce vă mai trebuie v-am dat deja numele și adresa de email"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg, doamnă Dumitru. Pentru a localiza comanda și a vă ajuta cât mai repede, am nevoie să încercăm să găsim numărul comenzii sau alte detalii precum data comenzii sau metoda de plată. Îmi puteți spune când ați plasat comanda, aproximativ?"
+    },
+    {
+      "rol": "client",
+      "text": "păi am dat comandă pe 18 mai adică ieri"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru informație! Îmi puteți spune, vă rog, dacă ați plătit comanda online sau la livrare?"
+    },
+    {
+      "rol": "client",
+      "text": "am plătit online"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru răspuns! Îmi puteți spune, vă rog, numele complet folosit la plasarea comenzii?"
+    },
+    {
+      "rol": "client",
+      "text": "același pe care vi l-am zis și la început antonia dumitru"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc, doamnă Dumitru. Pentru confirmare, vă rog să-mi spuneți numărul de telefon asociat comenzii, dacă vă este mai ușor."
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "comanda_gresita",
+    "satisfactie": "negativ",
+    "rezumat": "În cadrul conversației, clienta Antonia Dumitru a contactat serviciul clienți reclamând că a primit o cană albastră în loc de cea roz comandată. Operatorul a solicitat mai multe informații pentru identificarea comenzii, cum ar fi numele complet, adresa de email, data comenzii și metoda de plată. Clienta a furnizat datele parțial, însă nu a știut numărul comenzii. În final, operatorul a continuat procesul de verificare pentru a rezolva problema, mulțumind clientei pentru contact."
+  }
+}

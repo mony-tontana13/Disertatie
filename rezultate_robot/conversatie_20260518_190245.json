@@ -1,0 +1,41 @@
+{
+  "id": "20260518_190245",
+  "domeniu": "banking",
+  "timestamp": "2026-05-18T19:04:48.496484",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Buna ziua, ati sunat la serviciul clienti al bancii. Cu ce va pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "bună ziua bună ziua"
+    },
+    {
+      "rol": "operator",
+      "text": "Bună ziua! Vă rog să-mi spuneți, vă rog, mai exact cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am o tracție suspectă am o tracție suspectă în aplicație"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc că ne-ați informat despre tranzacția suspectă. Am înregistrat cazul dumneavoastră și va fi analizat de către departamentul specializat. Vă rog să aveți răbdare, procesul poate dura mai mult timp. Vom reveni cu un răspuns cât de curând este posibil. Dacă aveți alte întrebări, rămân la dispoziția dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "dar vreau să rezolv problema acum dar vreau să rezolv problema acuma"
+    },
+    {
+      "rol": "operator",
+      "text": "Va multumim ca ati contactat serviciul nostru. O zi buna!"
+    }
+  ],
+  "analiza": {
+    "intentie": "tranzactie_suspecta",
+    "satisfactie": "negativ",
+    "rezumat": "Clientul a contactat serviciul clienți al băncii sesizând o tranzacție suspectă în aplicație. Operatorul a înregistrat cazul și a informat că situația va fi analizată de departamentul specializat, menționând că procesul poate dura mai mult timp. Clientul și-a exprimat dorința de a rezolva problema imediat, însă operatorul a încheiat conversația mulțumindu-i și urându-i o zi bună, fără a putea oferi o soluție instantanee."
+  }
+}

@@ -1,0 +1,29 @@
+=== COMPARATOR PROMPT ENGINEERING — DETECTARE INTENTIE — MODELE LOCALE ===
+
+  Seturi de date folosite:
+    V1: tot_setul_tot
+    V2: v1_subset_10_per_domeniu
+    V3: subset_10_per_domeniu
+    V4: subset_10_per_domeniu
+=====================================================================================
+
+Model: ROMISTRAL
+  Versiune Set date                Acc. strict  Acc. fara ord       F1    Latenta     N
+  ----------------------------------------------------------------------------------
+  V1       tot_setul_tot                 0.00%          0.00%    0.000      14.0s   100
+  V2       v1_subset_10_per_domeniu       40.00%         60.00%    0.315      11.3s    50
+  V3       subset_10_per_domeniu        46.00%         66.00%    0.384      15.2s    50
+  V4       subset_10_per_domeniu        56.00%         78.00%    0.510      13.4s    50
+
+  Cel mai bun Accuracy strict:  V4 (56.00%)
+  Cel mai bun F1 Macro:         V4 (0.510)
+  Cel mai bun fara ordine:      V4 (78.00%)
+
+  Accuracy per domeniu:
+  Domeniu                        V1       V2       V3       V4
+  ----------------------------------------------------------
+  banking                        0%      30%      50%      60%
+  medicina                       0%      40%      30%      60%
+  retail                         0%      60%      70%      30%
+  telecom                        0%      50%      60%      80%
+  servicii_publice               0%      20%      20%      50%

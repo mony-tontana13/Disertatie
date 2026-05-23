@@ -1,0 +1,46 @@
+{
+  "id": "20260504_193649",
+  "domeniu": "banking",
+  "timestamp": "2026-05-04T19:39:00.509515",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Buna ziua, ati sunat la serviciul clienti al bancii. Cu ce va pot ajuta astazi?"
+    },
+    {
+      "rol": "client",
+      "text": "bună ziua mi s-a blocat cardul"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud că aveți probleme cu cardul. Vă rog să-mi comunicați numărul cardului pentru a putea verifica situația."
+    },
+    {
+      "rol": "client",
+      "text": "4 9 8 7 6 5 4 3 2 1 0 0"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru informații. Am verificat și cardul dumneavoastră este blocat din motive de securitate. Pentru deblocare, vă recomand să vizitați cea mai apropiată sucursală a băncii cu un act de identitate sau să solicitați deblocarea prin aplicația mobilă, unde procesul durează până la 24 de ore. Dacă doriți, vă pot programa o întâlnire la sucursală. Vă stăm la dispoziție pentru orice alte întrebări, vă mulțumim pentru înțelegere!"
+    },
+    {
+      "rol": "client",
+      "text": "vă rog programați o întâlnire la sucursală"
+    },
+    {
+      "rol": "operator",
+      "text": "Va multumim ca ati contactat serviciul nostru. O zi buna!"
+    }
+  ],
+  "analiza": {
+    "intentie": "card_blocat",
+    "satisfactie": "neutru",
+    "rezumat": {
+      "tip": "MEDIU",
+      "valoare": "Clientul a sesizat blocarea cardului. Operatorul a verificat situația, explicând că blocarea este din motive de securitate și a oferit opțiuni pentru deblocare: vizita la sucursală sau aplicația mobilă. Clientul a solicitat programare la sucursală, iar operatorul a confirmat aceasta.",
+      "nr_cuvinte": 40,
+      "in_limite": true
+    },
+    "latenta_analiza": 2.984
+  }
+}

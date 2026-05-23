@@ -1,0 +1,85 @@
+{
+  "id": "20260518_203456",
+  "domeniu": "retail",
+  "timestamp": "2026-05-18T20:41:08.994400",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, serviciul clienți, vă ascult. Cu ce vă pot ajuta?"
+    },
+    {
+      "rol": "client",
+      "text": "bună ziua am comandat o cană de la dumneavoastră dar nu am primit ceea ce am comandat"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să-mi comunicați numele complet pentru a vă putea verifica comanda în sistem. Acest lucru este necesar pentru a vă oferi un suport cât mai eficient."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să-mi furnizați adresa de email asociată contului dumneavoastră, pentru a putea verifica detaliile comenzii în sistem. Aceasta este necesară pentru a vă oferi un suport rapid și corect."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia treisprezece arond gmail punct com"
+    },
+    {
+      "rol": "operator",
+      "text": "Cu ce vă pot ajuta în legătură cu comanda dumneavoastră, doamnă Antonia?"
+    },
+    {
+      "rol": "client",
+      "text": "nu este ceea ce am primit cum v-am spus"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația, doamnă Antonia. Îmi puteți spune, vă rog, care este numărul comenzii dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "nu îl știu pe de rost, puteți să așteptați zece secunde să-l găsesc"
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur, vă aștept. Vă rog să-mi comunicați numărul comenzii când îl găsiți."
+    },
+    {
+      "rol": "client",
+      "text": "șapte sute treizeci și cinci 735"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru informații, doamnă Antonia. Am înregistrat cazul dumneavoastră și îl voi transmite departamentului responsabil pentru verificare. Din păcate, rezolvarea acestei situații poate dura până la câteva săptămâni, însă vă asigur că monitorizăm cazul cu atenție. Vă vom contacta imediat ce avem noutăți. Vă mulțumim pentru răbdare și înțelegere."
+    },
+    {
+      "rol": "client",
+      "text": "păi și ce pot să fac ăă returneze produsul și mi iau banii înapoi"
+    },
+    {
+      "rol": "operator",
+      "text": "Da, doamnă Antonia, aveți posibilitatea să returnați produsul și să primiți banii înapoi după ce evaluăm situația și confirmăm cazul. Vă voi trimite toate instrucțiunile necesare pentru retur pe adresa de email asociată comenzii. Mai pot să vă ajut cu altceva sau aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "păi și cam câte zile dura acest retur că aș vrea produsul corect"
+    },
+    {
+      "rol": "operator",
+      "text": "În mod obișnuit, procesul de retur și rambursare durează între 7 și 14 zile lucrătoare de la primirea produsului în depozit. Vom face tot posibilul să vă trimitem cât mai repede produsul corect după finalizarea returului. Mai pot să vă ajut cu ceva sau aveți alte întrebări?"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "comanda_gresita",
+    "satisfactie": "negativ",
+    "rezumat": "În conversație, doamna Antonia a semnalat că a primit un produs diferit față de cel comandat. Operatorul a verificat datele acesteia și a înregistrat cazul pentru evaluare, precizând că rezolvarea poate dura câteva săptămâni. Clienta a întrebat despre posibilitatea returnării produsului și rambursării banilor, iar operatorul a confirmat această opțiune, oferind detalii despre procesul de retur, care durează între 7 și 14 zile lucrătoare. Discuția s-a încheiat cu asigurarea că va primi produsul corect după finalizarea returului."
+  }
+}

@@ -15,7 +15,7 @@ RESULTS_DIR = "./rezultate_prompt_engineering/intentii_local"
 
 SET_DATE_PER_VERSIUNE = {
     "V1": "tot_setul_tot",
-    "V2": "tot_setul",
+    "V2": "v2_subset_10_per_domeniu",
     "V3": "subset_10_per_domeniu",
     "V4": "subset_10_per_domeniu",
 }

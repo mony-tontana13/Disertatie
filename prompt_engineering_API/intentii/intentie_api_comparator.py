@@ -10,8 +10,8 @@ import json
 import os
 import argparse
 
-RESULTS_DIR = "./rezultate_prompt_engineering"
-VERSIUNI = ["V1", "V2", "V3", "V4"]
+RESULTS_DIR = "./rezultate_prompt_engineering/intentii_api"
+VERSIUNI = ["V1_v2", "V2_v1", "V3_v1", "V4_v1"]
 MODELE = ["GPT-4.1-mini", "Gemini-2.5-flash", "Aya-Expanse-8b"]
 
 
@@ -72,7 +72,7 @@ def main():
     print(f"\n{'='*80}")
     print("ANALIZA ERORI PER DOMENIU — V4 (versiunea finala)")
     print(f"{'='*80}")
-    data_v4 = incarca_rezultate("V4", args.set_date)
+    data_v4 = incarca_rezultate("V4_v1", args.set_date)
     if data_v4:
         for m in data_v4.get("metrici", []):
             print(f"\n  {m['model']}:")
