@@ -25,17 +25,15 @@ os.makedirs(RESULTS_DIR, exist_ok=True)
 def get_prompt(dialog, satisfactie):
     """V1 varianta 1: Zero-shot — cerere simpla fara specificatii de tip."""
     return (
-        "Rezuma urmatoarea conversatie telefonica in limba romana.\n\n"
-        "Conversatie:\n" + dialog + "\n\n"
+        "Rezumă urmatoarea conversație telefonică în limba română.\n\n"
+        "Conversație:\n" + dialog + "\n\n"
         "Rezumat:"
     )
 def get_prompt2(dialog, satisfactie):
-    """V1 varianta 2: Zero-shot — cerere cu specificatie de lungime adaptata satisfactiei."""
-    tip_info = get_tip_rezumat(satisfactie)
+    """V1 varianta 2: Zero-shot — reformulare a sarcinii."""
     return (
-        "Rezuma urmatoarea conversatie telefonica in limba romana in " +
-        tip_info["propozitii"] + ".\n\n"
-        "Conversatie:\n" + dialog + "\n\n"
+        "Conversație:\n" + dialog + "\n\n"
+        "Citește conversația telefonică și scrie un rezumat în limba română.\n\n"
         "Rezumat:"
     )
 

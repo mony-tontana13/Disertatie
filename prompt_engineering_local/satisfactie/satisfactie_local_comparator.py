@@ -8,10 +8,14 @@ Utilizare:
 import json
 import os
 import argparse
-from sklearn.metrics import accuracy_score, f1_score
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+from sklearn.metrics import accuracy_score, f1_score, confusion_matrix
 from collections import Counter
 
 RESULTS_DIR = "./rezultate_prompt_engineering/satisfactie_local"
+GRAFICE_DIR = "./rezultate_prompt_engineering/grafice_satisfactie_local"
 VERSIUNI_VARIANTE = ["V1_v1", "V1_v2", "V2_v1", "V2_v2", "V3_v1", "V3_v2"]
 CLASE = ["pozitiv", "neutru", "negativ"]
 
@@ -36,11 +40,50 @@ def calculeaza_metrici(rezultate):
     return acc, f1, latenta, erori, len(rezultate)
 
 
+def genereaza_matrice_satisfactie_local(rezultate, model, versiune_varianta, target_dir):
+    """Genereaza matricea de confuzie pentru analiza satisfactiei (modele locale)."""
+    df = pd.DataFrame(rezultate)
+    if df.empty:
+        return
+
+    # Toate clasele posibile + clasa de fallback
+    etichete_valide = CLASE + ["necunoscut"]
+    
+    cm = confusion_matrix(df["satisfactie_gold"], df["satisfactie_pred"], labels=etichete_valide)
+    etichete_curate = [e.capitalize() for e in etichete_valide]
+    cm_df = pd.DataFrame(cm, index=etichete_curate, columns=etichete_curate)
+
+    plt.figure(figsize=(7, 5.5))
+    sns.set_theme(style="white")
+    sns.heatmap(
+        cm_df, annot=True, fmt="d", cmap="Blues", cbar=True,
+        linewidths=0.5, linecolor="#d3d3d3", annot_kws={"size": 12, "weight": "bold"}
+    )
+
+    plt.title(
+        f"Matrice de Confuzie Satisfacție — {model.upper()} ({versiune_varianta})",
+        fontsize=12, fontweight="bold", pad=15
+    )
+    plt.ylabel("Nivel Real (Ground Truth)", fontsize=11, fontweight="bold")
+    plt.xlabel("Nivel Prezistă (Predicted)", fontsize=11, fontweight="bold")
+    plt.xticks(fontsize=10)
+    plt.yticks(rotation=0, fontsize=10)
+    plt.tight_layout()
+
+    # Organizare in foldere: target_dir / MODEL
+    output_subdir = os.path.join(target_dir, model.lower())
+    os.makedirs(output_subdir, exist_ok=True)
+    
+    cale_salvare = os.path.join(output_subdir, f"matrice_satisfactie_{versiune_varianta}.png")
+    plt.savefig(cale_salvare, dpi=300)
+    plt.close()
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", choices=["romistral", "rogemma"])
     parser.add_argument("--toate_modelele", action="store_true")
-    parser.add_argument("--set_date", default="subset_2_per_domeniu")
+    parser.add_argument("--set_date", default="subset_10_per_domeniu")
     args = parser.parse_args()
 
     if not args.model and not args.toate_modelele:
@@ -69,6 +112,9 @@ def main():
             acc, f1, latenta, erori, n = calculeaza_metrici(rezultate)
             metrici_toate.append((vv, acc, f1, latenta, erori, n))
             print(f"  {vv:<12} {acc:>10.2%} {f1:>10.3f} {latenta:>9.1f}s {erori:>7}/{n:<3}")
+
+            # Generare automata matrice de confuzie
+            genereaza_matrice_satisfactie_local(rezultate, model, vv, GRAFICE_DIR)
 
         if metrici_toate:
             best_f1 = max(metrici_toate, key=lambda x: x[2])

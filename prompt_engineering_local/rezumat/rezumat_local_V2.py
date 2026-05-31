@@ -37,19 +37,16 @@ def get_prompt(dialog, satisfactie):
         "Rezumat " + tip_info["tip"] + ":"
     )
 def get_prompt2(dialog, satisfactie):
-    """V2 varianta 2: Role + Constrained — cerinte mai detaliate cu structura rezumatului."""
+    """V2 varianta 2: Role + Constrained — cerinte bazate pe flux cronologic."""
     tip_info = get_tip_rezumat(satisfactie)
     return (
         "Esti un expert in sumarizarea conversatiilor telefonice din call-center.\n"
         "Genereaza un rezumat de tip " + tip_info["tip"] + " al conversatiei de mai jos.\n\n"
-        "CERINTE DE FORMAT:\n"
+        "CERINTE:\n"
         "- Lungime: " + str(tip_info["min_cuv"]) + "-" + str(tip_info["max_cuv"]) + " cuvinte (" + tip_info["propozitii"] + ")\n"
-        "- Limba: romana\n"
-        "- Nu adauga informatii care nu apar in conversatie\n\n"
-        "STRUCTURA REZUMATULUI:\n"
-        "- Incepe cu motivul apelului clientului\n"
-        "- Continua cu actiunile intreprinse de operator\n"
-        "- Incheie cu rezultatul final al conversatiei\n\n"
+        "- Scrie in limba romana si nu adauga informatii care nu apar in conversatie\n"
+        "- Prezinta evenimentele in ordine cronologica"
+        "- Descrie mai intai motivul apelului clientului, apoi actiunile intreprinse de operator si, la final, rezultatul obtinut\n\n"
         "Conversatie:\n" + dialog + "\n\n"
         "Rezumat " + tip_info["tip"] + ":"
     )

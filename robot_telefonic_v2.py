@@ -509,9 +509,9 @@ def main():
         domeniu = args.domeniu
     else:
         vorbeste(
-            "Buna ziua! Ati sunat la serviciul de relatii cu clientii. "
-            "Va rog sa specificati domeniul: banking, medicina, retail, "
-            "telecomunicatii sau servicii publice."
+            "Bună ziua! Ați sunat la serviciul de relații cu clienții. "
+            "Vă rog să specificați domeniul: banking, medicină, retail, "
+            "telecomunicații sau servicii publice."
         )
         raspuns = asculta()
         domeniu = None

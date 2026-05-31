@@ -9,10 +9,23 @@ Utilizare:
 import json
 import os
 import argparse
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+from sklearn.metrics import confusion_matrix
 
 RESULTS_DIR = "./rezultate_prompt_engineering/intentii_api"
+GRAFICE_DIR = "./rezultate_prompt_engineering/grafice_intentii_api"
 VERSIUNI = ["V1_v2", "V2_v1", "V3_v1", "V4_v1"]
-MODELE = ["GPT-4.1-mini", "Gemini-2.5-flash", "Aya-Expanse-8b"]
+MODELE = ["GPT-4.1-mini", "Gemini-2.5-flash", "command-r7b-12-2024", "Aya-Expanse-8b"]
+
+INTENTII_DOMENII = {
+    "banking": ["problema_credit","tranzactie_gresita","card_blocat","tranzactie_suspecta","problema_transfer","problema_schimb_valutar","problema_sold","card_pierdut"],
+    "medicina": ["rezultate_analize","problema_reteta","problema_asigurare","reclamatie_personal","consultatie_anulata","problema_facturare","problema_programare","anulare_programare"],
+    "retail": ["produs_lipsa_stoc","comanda_gresita","problema_livrare","problema_garantie","reclamatie_produs","anulare_comanda","comanda_intarziata","retur_produs"],
+    "telecom": ["problema_modificare_abonament","portare_esuata","problema_internet","problema_roaming","factura_gresita","reziliere_contract","activare_esuata","problema_semnal"],
+    "servicii_publice": ["dosar_respins","contestatie_decizie","informatii_program","reclamatie_serviciu","sesizare_problema","problema_plata_taxa","acte_incomplete","programare_ghiseu"]
+}
 
 
 def incarca_rezultate(versiune, set_date):
@@ -22,6 +35,62 @@ def incarca_rezultate(versiune, set_date):
         with open(filepath, encoding="utf-8") as f:
             return json.load(f)
     return None
+
+
+def genereaza_matrice_confuzie_api(data_json, versiune, target_dir):
+    """
+    Extrage rezultatele detaliate per model dintr-un fisier de evaluare API 
+    si genereaza matricele de confuzie aferente fiecarui domeniu.
+    """
+    # Verificam daca fisierul are structura detaliata salvata
+    rezultate_toate = data_json.get("rezultate_detaliate", [])
+    if not rezultate_toate:
+        return
+
+    df_complet = pd.DataFrame(rezultate_toate)
+    
+    # Adaugam si eticheta de fallback in liste
+    liste_intentii = {domeniu: liste + ["alta_solicitare"] for domeniu, liste in INTENTII_DOMENII.items()}
+
+    # Pentru fiecare model gasit in rularea respectiva
+    for model in df_complet["model"].unique():
+        df_model = df_complet[df_complet["model"] == model]
+
+        for domeniu, etichete_valide in liste_intentii.items():
+            df_domeniu = df_model[df_model["domeniu"] == domeniu]
+            if df_domeniu.empty:
+                continue
+
+            # Calculul efectiv al matricei
+            cm = confusion_matrix(df_domeniu["intentie_gold"], df_domeniu["intentie_pred"], labels=etichete_valide)
+            etichete_curate = [e.replace("_", " ") for e in etichete_valide]
+            cm_df = pd.DataFrame(cm, index=etichete_curate, columns=etichete_curate)
+
+            # Design-ul graficului
+            plt.figure(figsize=(9, 7))
+            sns.set_theme(style="white")
+            sns.heatmap(
+                cm_df, annot=True, fmt="d", cmap="Purples", cbar=True,
+                linewidths=0.5, linecolor="#d3d3d3", annot_kws={"size": 11, "weight": "bold"}
+            )
+
+            plt.title(
+                f"Matrice de Confuzie — {model.upper()} ({versiune})\nDomeniul: {domeniu.replace('_', ' ').upper()}",
+                fontsize=12, fontweight="bold", pad=15
+            )
+            plt.ylabel("Intenție Reală (Ground Truth)", fontsize=11, fontweight="bold")
+            plt.xlabel("Intenție Prezistă (Predicted)", fontsize=11, fontweight="bold")
+            plt.xticks(rotation=45, ha="right", fontsize=9)
+            plt.yticks(rotation=0, fontsize=9)
+            plt.tight_layout()
+
+            # Organizare in foldere: grafice_intentii_api / MODEL / VERSIUNE
+            output_subdir = os.path.join(target_dir, model.replace("/", "_"), versiune)
+            os.makedirs(output_subdir, exist_ok=True)
+            
+            cale_salvare = os.path.join(output_subdir, f"matrice_{domeniu}.png")
+            plt.savefig(cale_salvare, dpi=300)
+            plt.close()
 
 
 def main():
@@ -43,6 +112,10 @@ def main():
         if data is None:
             print(f"  [Lipseste: {versiune}]")
             continue
+            
+        # --- GENERARE MATRICE CONFUIZIE PENTRU ACEASTA VERSIUNE ---
+        genereaza_matrice_confuzie_api(data, versiune, GRAFICE_DIR)
+        
         for m in data.get("metrici", []):
             key = (m["model"], versiune)
             toate_metrici[key] = m
