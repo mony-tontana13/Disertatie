@@ -43,7 +43,7 @@ ZEVO_STT_KEY    = "icvsilab2026"
 ZEVO_STT_DOMAIN = "ro-RO_general-2026.1"
 ZEVO_STT_SERVER = "wss://live-transcriber.zevo-tech.com:2053"
 ZEVO_TTS_SERVER = "wss://api-tts.zevo-tech.com:2083"
-ZEVO_TTS_VOICE  = "gia"
+ZEVO_TTS_VOICE  = "maria"
 
 DOMENIU_DEFAULT = os.environ.get("DOMENIU", "banking")
 

@@ -40,7 +40,7 @@ CONFIG = {
     "OPENAI_API_KEY": os.environ.get("OPENAI_API_KEY", ""),
     "MODEL": "gpt-4.1-mini",
     "TTS_API_KEY": "icvsilab2026",
-    "TTS_VOICE": "gia",
+    "TTS_VOICE": "maria",
     "STT_API_KEY": "icvsilab2026",
     "STT_DOMAIN": "ro-RO_general-2025.1",
     "RESULTS_DIR": "./rezultate_pipeline",
