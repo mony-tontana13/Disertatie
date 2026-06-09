@@ -1,11 +1,11 @@
 """
-Pipeline audio modele locale — STT + analiza cu RoMistral si RoGemma
-Fluxul: fisier audio -> zevo STT (o singura data) -> RoMistral + RoGemma
+Pipeline audio modele locale — STT o singura data + RoMistral si RoGemma secvential.
+Fluxul: fisiere audio -> Zevo STT (toate odata) -> RoMistral -> RoGemma
 
 Utilizare:
     python3 pipeline_audio_local.py --folder conversatii_subset_audio/
-    python3 pipeline_audio_local.py --fisier conversatie_BNK_006.mp3 --domeniu banking
-    python3 pipeline_audio_local.py --folder conversatii_subset_audio/ --model romistral
+    python3 pipeline_audio_local.py --fisier conversatie_BNK_006.wav --domeniu banking
+    python3 pipeline_audio_local.py --folder conversatii_subset_audio/ --model rogemma
 """
 
 import os
@@ -18,16 +18,19 @@ import ssl
 import argparse
 import unicodedata
 import tempfile
+import gc
 import torch
-import speech_recognition as sr
 from datetime import datetime
 from pathlib import Path
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, "/Users/antoniadumitru/Desktop/facultate/Disertatie/prompt_engineering_local/intentii")
+sys.path.insert(0, "/Users/antoniadumitru/Desktop/facultate/Disertatie/prompt_engineering_local/satisfactie")
+sys.path.insert(0, "/Users/antoniadumitru/Desktop/facultate/Disertatie/prompt_engineering_local/rezumat")
 from utils_intentie_local import INTENTII_DOMENII, extrage_intentie
 from utils_satisfactie_local import extrage_satisfactie
-from utils_rezumat_local import get_tip_rezumat
+
+# ─── CONFIGURARE ─────────────────────────────────────────────────────────────
 
 CONFIG = {
     "STT_API_KEY": "icvsilab2026",
@@ -72,56 +75,131 @@ def get_tip_rez(satisfactie):
 
 # ─── STT ─────────────────────────────────────────────────────────────────────
 
-async def speech_to_text_ws(audio_data, api_key, domain,
-                             sample_rate=16000, chunk_size=16000,
-                             server_uri="wss://live-transcriber.zevo-tech.com:2053"):
-    config_payload = {"config": {"key": api_key, "sample_rate": str(sample_rate), "domain": domain}}
+async def transcrie_audio_ws(audio_data, sample_rate=16000, chunk_size=4096):
+    config_msg = json.dumps({
+        "config": {
+            "key":         CONFIG["STT_API_KEY"],
+            "sample_rate": str(sample_rate),
+            "domain":      CONFIG["STT_DOMAIN"]
+        }
+    })
     ssl_ctx = ssl.create_default_context()
     ssl_ctx.check_hostname = False
-    ssl_ctx.verify_mode = ssl.CERT_NONE
-    async with websockets.connect(server_uri, ssl=ssl_ctx) as ws:
-        await ws.send(json.dumps(config_payload))
-        await ws.recv()
+    ssl_ctx.verify_mode    = ssl.CERT_NONE
+    sleep_per_chunk = chunk_size / (sample_rate * 2)
+    rezultate = []
+    partial_curent = ""
+
+    async with websockets.connect(CONFIG["STT_SERVER"], ssl=ssl_ctx) as ws:
+        await ws.send(config_msg)
+        await asyncio.wait_for(ws.recv(), timeout=30)
+
         offset = 0
         while offset < len(audio_data):
             chunk = audio_data[offset:offset + chunk_size]
             await ws.send(chunk)
-            response = await ws.recv()
-            if "message" in response:
+            result = await asyncio.wait_for(ws.recv(), timeout=60)
+            if "message" in result:
                 break
+            try:
+                parsed = json.loads(result)
+                if "text_pp" in parsed and parsed["text_pp"].strip():
+                    rezultate.append(parsed["text_pp"].strip())
+                    partial_curent = ""
+                elif "text" in parsed and parsed["text"].strip() and "partial" not in parsed:
+                    rezultate.append(parsed["text"].strip())
+                    partial_curent = ""
+                elif "partial" in parsed and parsed["partial"].strip():
+                    partial_curent = parsed["partial"].strip()
+            except Exception:
+                pass
             offset += chunk_size
+            await asyncio.sleep(sleep_per_chunk)
+
+        if partial_curent and partial_curent not in " ".join(rezultate):
+            rezultate.append(partial_curent)
+
         await ws.send('{"eof" : 1}')
-        return await ws.recv()
+        eof_resp = await asyncio.wait_for(ws.recv(), timeout=60)
+        try:
+            parsed = json.loads(eof_resp)
+            if "text_pp" in parsed and parsed["text_pp"].strip():
+                rezultate.append(parsed["text_pp"].strip())
+            elif "partial" in parsed and parsed["partial"].strip():
+                p = parsed["partial"].strip()
+                if p not in " ".join(rezultate):
+                    rezultate.append(p)
+        except Exception:
+            pass
+
+    return " ".join(rezultate)
+
 
 def transcrie_fisier(cale_fisier):
+    import wave
     cale_str = str(cale_fisier)
     fisier_tmp = None
+
     if cale_str.lower().endswith(".mp3"):
         fisier_tmp = tempfile.mktemp(suffix=".wav")
-        ret = os.system(f'ffmpeg -i "{cale_str}" -ar 16000 -ac 1 -sample_fmt s16 "{fisier_tmp}" -y -loglevel quiet')
+        ret = os.system(
+            f'ffmpeg -i "{cale_str}" -ar 16000 -ac 1 -sample_fmt s16 '
+            f'"{fisier_tmp}" -y -loglevel quiet'
+        )
         if ret != 0:
-            raise RuntimeError("Conversie MP3->WAV esuata. Instaleaza ffmpeg.")
+            raise RuntimeError("Conversie MP3->WAV esuata. Instaleaza ffmpeg: brew install ffmpeg")
         cale_de_citit = fisier_tmp
     else:
         cale_de_citit = cale_str
+
     try:
-        with sr.AudioFile(cale_de_citit) as source:
-            audio = sr.Recognizer().record(source)
-        wav_data = audio.get_wav_data()
+        with wave.open(cale_de_citit, "rb") as wf:
+            wav_data    = wf.readframes(wf.getnframes())
+            sample_rate = wf.getframerate()
+
         start = time.time()
-        result_json = asyncio.run(speech_to_text_ws(wav_data, CONFIG["STT_API_KEY"], CONFIG["STT_DOMAIN"]))
-        latenta = round(time.time() - start, 2)
-        result = json.loads(result_json)
-        text = result.get("text_pp", result.get("text", ""))
-        return text, latenta
+        text  = asyncio.run(transcrie_audio_ws(wav_data, sample_rate=sample_rate))
+        lat   = round(time.time() - start, 2)
+        return text, lat
     finally:
         if fisier_tmp and os.path.exists(fisier_tmp):
             os.remove(fisier_tmp)
 
+
+# ─── FAZA 1: STT PE TOATE FISIERELE ──────────────────────────────────────────
+
+def transcrie_toate(fisiere, domeniu_fallback=None):
+    """Transcrie toate fisierele audio si returneaza dict id->transcriere."""
+    print(f"\n{'='*60}")
+    print(f"FAZA 1 — Transcriere STT ({len(fisiere)} fisiere)")
+    print(f"{'='*60}")
+
+    transcrieri = {}
+    for i, cale in enumerate(fisiere, 1):
+        domeniu = detecteaza_domeniu(cale.name) or domeniu_fallback
+        if not domeniu:
+            print(f"  [{i}/{len(fisiere)}] SKIP {cale.name} — domeniu nedetectat")
+            continue
+
+        print(f"  [{i}/{len(fisiere)}] {cale.name} ({domeniu})...", end=" ", flush=True)
+        try:
+            text, lat = transcrie_fisier(cale)
+            if text.strip():
+                transcrieri[cale] = {"text": text, "latenta_stt": lat, "domeniu": domeniu}
+                print(f"OK ({lat}s) — {text[:60]}...")
+            else:
+                print(f"GOALA ({lat}s)")
+        except Exception as e:
+            print(f"EROARE — {e}")
+
+    print(f"\n  Transcrise cu succes: {len(transcrieri)}/{len(fisiere)}")
+    return transcrieri
+
+
 # ─── MODEL LOCAL ─────────────────────────────────────────────────────────────
 
 def incarca_model(nume_model):
-    print(f"\n  [MODEL] Incarcare {nume_model}...")
+    print(f"\n  Incarcare {MODELE_LOCALE[nume_model]}...")
     model_id = MODELE_LOCALE[nume_model]
     if torch.cuda.is_available():
         device = "cuda"
@@ -129,55 +207,109 @@ def incarca_model(nume_model):
         device = "mps"
     else:
         device = "cpu"
-    print(f"  [MODEL] Device: {device}")
+    print(f"  Device: {device}")
     tokenizer = AutoTokenizer.from_pretrained(model_id)
-    model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.float16).to(device)
+    model     = AutoModelForCausalLM.from_pretrained(
+        model_id, torch_dtype=torch.float16
+    ).to(device)
     model.eval()
-    print(f"  [MODEL] {nume_model} incarcat.")
+    print(f"  {nume_model} incarcat.")
     return tokenizer, model, device
 
-def genereaza(tokenizer, model, device, prompt, max_new_tokens=100):
+
+def elibereaza_model(model, device):
+    """Elibereaza memoria dupa terminarea unui model."""
+    del model
+    gc.collect()
+    if device == "mps":
+        torch.mps.empty_cache()
+    elif device == "cuda":
+        torch.cuda.empty_cache()
+    print("  Memorie eliberata.")
+
+
+def genereaza(tokenizer, model, device, prompt, max_new_tokens=100, timeout=120):
+    """Genereaza text cu timeout hard — opreste dupa `timeout` secunde."""
+    import signal
+
     inputs = tokenizer(prompt, return_tensors="pt").to(device)
-    start = time.time()
-    with torch.no_grad():
-        output = model.generate(
-            **inputs,
-            max_new_tokens=max_new_tokens,
-            do_sample=False,
-            temperature=1.0,
-            pad_token_id=tokenizer.eos_token_id
-        )
-    latenta = round(time.time() - start, 2)
-    text_generat = tokenizer.decode(output[0][inputs["input_ids"].shape[1]:], skip_special_tokens=True)
-    return text_generat.strip(), latenta
+
+    # Truncheaza promptul daca e prea lung (max 1024 tokens)
+    if inputs["input_ids"].shape[1] > 1024:
+        inputs = {k: v[:, -1024:] for k, v in inputs.items()}
+
+    rezultat = {"text": "", "latenta": 0}
+
+    def _genereaza():
+        start = time.time()
+        with torch.no_grad():
+            output = model.generate(
+                **inputs,
+                max_new_tokens=max_new_tokens,
+                do_sample=False,
+                temperature=1.0,
+                pad_token_id=tokenizer.eos_token_id,
+                repetition_penalty=1.3,
+            )
+        rezultat["latenta"] = round(time.time() - start, 2)
+        rezultat["text"] = tokenizer.decode(
+            output[0][inputs["input_ids"].shape[1]:], skip_special_tokens=True
+        ).strip()
+
+    # Timeout via threading
+    import threading
+    t = threading.Thread(target=_genereaza)
+    t.start()
+    t.join(timeout=timeout)
+
+    if t.is_alive():
+        print(f" [TIMEOUT {timeout}s]", end=" ", flush=True)
+        rezultat["text"] = ""
+        rezultat["latenta"] = timeout
+        # Nu putem opri thread-ul fortat pe MPS, dar macar continuam
+
+    return rezultat["text"], rezultat["latenta"]
+
 
 # ─── PROMPTURI ────────────────────────────────────────────────────────────────
 
-def prompt_intentie_v4(dialog, domeniu, intentii_domenii):
-    intentii = intentii_domenii.get(domeniu, [])
+def prompt_intentie_v4(dialog, domeniu):
+    intentii = INTENTII_DOMENII.get(domeniu, [])
     exemple_lungi = {
-        "banking": [("OPERATOR: Buna ziua.\nCLIENT: L-am pierdut cardul.\nOPERATOR: Inteleg.", "card_pierdut"),
-                    ("OPERATOR: Va ascult.\nCLIENT: De ce a crescut rata?\nOPERATOR: Verific.", "problema_credit")],
-        "medicina": [("OPERATOR: Buna ziua.\nCLIENT: Vreau rezultatele analizelor.\nOPERATOR: Va caut.", "rezultate_analize"),
-                     ("OPERATOR: Cu ce va ajut?\nCLIENT: Vreau sa anulez programarea.\nOPERATOR: Sigur.", "anulare_programare")],
-        "retail": [("OPERATOR: Buna ziua.\nCLIENT: Am primit produse gresite.\nOPERATOR: Imi pare rau.", "comanda_gresita"),
-                   ("OPERATOR: Cu ce va ajut?\nCLIENT: Pachetul nu a ajuns.\nOPERATOR: Verific.", "problema_livrare")],
-        "telecom": [("OPERATOR: Buna ziua.\nCLIENT: Portarea a fost respinsa.\nOPERATOR: Verific.", "portare_esuata"),
-                    ("OPERATOR: Cu ce va ajut?\nCLIENT: Nu pot schimba abonamentul.\nOPERATOR: Va ajut.", "problema_modificare_abonament")],
-        "servicii_publice": [("OPERATOR: Primaria.\nCLIENT: Dosarul meu a fost respins.\nOPERATOR: Caut.", "dosar_respins"),
-                             ("OPERATOR: Cu ce va ajut?\nCLIENT: Vreau o programare la ghiseu.\nOPERATOR: Va programez.", "programare_ghiseu")],
+        "banking": [
+            ("OPERATOR: Buna ziua.\nCLIENT: L-am pierdut cardul.\nOPERATOR: Inteleg.", "card_pierdut"),
+            ("OPERATOR: Va ascult.\nCLIENT: De ce a crescut rata?\nOPERATOR: Verific.", "problema_credit"),
+        ],
+        "medicina": [
+            ("OPERATOR: Buna ziua.\nCLIENT: Vreau rezultatele analizelor.\nOPERATOR: Va caut.", "rezultate_analize"),
+            ("OPERATOR: Cu ce va ajut?\nCLIENT: Vreau sa anulez programarea.\nOPERATOR: Sigur.", "anulare_programare"),
+        ],
+        "retail": [
+            ("OPERATOR: Buna ziua.\nCLIENT: Am primit produse gresite.\nOPERATOR: Imi pare rau.", "comanda_gresita"),
+            ("OPERATOR: Cu ce va ajut?\nCLIENT: Pachetul nu a ajuns.\nOPERATOR: Verific.", "problema_livrare"),
+        ],
+        "telecom": [
+            ("OPERATOR: Buna ziua.\nCLIENT: Portarea a fost respinsa.\nOPERATOR: Verific.", "portare_esuata"),
+            ("OPERATOR: Cu ce va ajut?\nCLIENT: Nu pot schimba abonamentul.\nOPERATOR: Va ajut.", "problema_modificare_abonament"),
+        ],
+        "servicii_publice": [
+            ("OPERATOR: Primaria.\nCLIENT: Dosarul meu a fost respins.\nOPERATOR: Caut.", "dosar_respins"),
+            ("OPERATOR: Cu ce va ajut?\nCLIENT: Vreau o programare la ghiseu.\nOPERATOR: Va programez.", "programare_ghiseu"),
+        ],
     }
     exemple = exemple_lungi.get(domeniu, [])
-    exemple_text = "".join("CONVERSATIE:\n"+d+"\nINTENTIE IDENTIFICATA: "+i+"\n\n" for d,i in exemple)
+    exemple_text = "".join(
+        f"CONVERSATIE:\n{d}\nINTENTIE IDENTIFICATA: {i}\n\n" for d, i in exemple
+    )
     return (
-        "Esti un expert in clasificarea intentiilor pentru call-center-uri din domeniul " + domeniu + ".\n\n"
-        "CONVERSATIE:\n" + dialog + "\n\n"
-        "SARCINA: Identifica intentia clientului.\n\n"
-        "REGULI:\n1. Include DOAR ce a cerut clientul\n"
-        "2. Alege EXCLUSIV din lista furnizata\n"
-        "3. Returneaza MAXIM doua intentii, separate prin virgula\n\n"
-        "INTENTII DISPONIBILE: " + ", ".join(intentii) + "\n\n"
-        "EXEMPLE:\n" + exemple_text + "INTENTIE IDENTIFICATA:"
+        f"Esti un expert in clasificarea intentiilor pentru call-center-uri din domeniul {domeniu}.\n\n"
+        f"CONVERSATIE:\n{dialog}\n\n"
+        f"SARCINA: Identifica intentia clientului.\n\n"
+        f"REGULI:\n1. Include DOAR ce a cerut clientul\n"
+        f"2. Alege EXCLUSIV din lista furnizata\n"
+        f"3. Returneaza MAXIM doua intentii, separate prin virgula\n\n"
+        f"INTENTII DISPONIBILE: {', '.join(intentii)}\n\n"
+        f"EXEMPLE:\n{exemple_text}INTENTIE IDENTIFICATA:"
     )
 
 def prompt_satisfactie_rogemma(dialog):
@@ -191,19 +323,21 @@ def prompt_satisfactie_rogemma(dialog):
         "  Expresii tipice: ok, am inteles, bine, la revedere fara caldura\n"
         "- negativ: clientul pleaca frustrat, chiar daca accepta situatia\n"
         "  Expresii tipice: ce sa fac, bine..., nu am de ales, ironie\n\n"
-        "Conversatie:\n" + dialog + "\n\n"
+        f"Conversatie:\n{dialog}\n\n"
         "Raspunde DOAR cu unul dintre cuvintele: pozitiv, neutru, negativ:"
     )
 
 def prompt_satisfactie_romistral(dialog):
     return (
-        "Analizeaza urmatoarea conversatie telefonica si determina nivelul de satisfactie al clientului.\n\n"
-        "Conversatie:\n" + dialog + "\n\n"
-        "Care este satisfactia clientului la finalul conversatiei? "
-        "Raspunde cu un singur cuvant: pozitiv, neutru sau negativ:"
+        "Analizeaza urmatoarea conversatie telefonica.\n\n"
+        f"Conversatie:\n{dialog}\n\n"
+        "Satisfactia clientului este pozitiv, neutru sau negativ?\n"
+        "Raspunde DOAR cu unul dintre aceste cuvinte exacte: pozitiv, neutru, negativ\n"
+        "Satisfactia este:"
     )
 
-def prompt_rezumat_v2(dialog, satisfactie):
+def prompt_rezumat_romistral(dialog, satisfactie):
+    """V2-1 — cel mai bun pentru RoMistral."""
     tip_info = get_tip_rez(satisfactie)
     return (
         "Esti un expert in sumarizarea conversatiilor telefonice din call-center.\n"
@@ -217,145 +351,204 @@ def prompt_rezumat_v2(dialog, satisfactie):
         "Rezumat " + tip_info["tip"] + ":"
     )
 
-# ─── ANALIZA CU MODEL LOCAL ───────────────────────────────────────────────────
+def prompt_rezumat_rogemma(dialog, satisfactie):
+    """V2-2 — cel mai bun pentru RoGemma."""
+    tip_info = get_tip_rez(satisfactie)
+    return (
+        "Esti un expert in sumarizarea conversatiilor telefonice din call-center.\n"
+        "Genereaza un rezumat de tip " + tip_info["tip"] + " al conversatiei de mai jos.\n\n"
+        "CERINTE DE FORMAT:\n"
+        "- Lungime: " + str(tip_info["min_cuv"]) + "-" + str(tip_info["max_cuv"]) + " cuvinte (" + tip_info["propozitii"] + ")\n"
+        "- Limba: romana\n"
+        "- Nu adauga informatii care nu apar in conversatie\n\n"
+        "STRUCTURA:\n"
+        "- Incepe cu motivul apelului clientului\n"
+        "- Continua cu actiunile intreprinse de operator\n"
+        "- Incheie cu rezultatul final al conversatiei\n\n"
+        "Conversatie:\n" + dialog + "\n\n"
+        "Rezumat " + tip_info["tip"] + ":"
+    )
 
-def analizeaza_cu_model_local(dialog, domeniu, nume_model,
-                               tokenizer, model, device, intentii_domenii):
-    # Intentie — V4-1 pentru ambele modele locale
-    prompt_i = prompt_intentie_v4(dialog, domeniu, intentii_domenii)
-    r_i, lat_i = genereaza(tokenizer, model, device, prompt_i, max_new_tokens=40)
-    intentie_pred = extrage_intentie(r_i, domeniu)
 
-    # Satisfactie — V2-2 pentru RoGemma, V1-1 pentru RoMistral
-    if "gemma" in nume_model.lower():
-        prompt_s = prompt_satisfactie_rogemma(dialog)
-    else:
-        prompt_s = prompt_satisfactie_romistral(dialog)
-    r_s, lat_s = genereaza(tokenizer, model, device, prompt_s, max_new_tokens=20)
-    satisfactie_pred = extrage_satisfactie(r_s)
+# ─── FAZA 2: ANALIZA CU UN MODEL LOCAL ───────────────────────────────────────
 
-    # Rezumat — V2-1 pentru ambele
-    tip_info = get_tip_rez(satisfactie_pred)
-    prompt_r = prompt_rezumat_v2(dialog, satisfactie_pred)
-    r_r, lat_r = genereaza(tokenizer, model, device, prompt_r, max_new_tokens=150)
-    nr_cuv = len(r_r.split())
-    in_limite = tip_info["min_cuv"] <= nr_cuv <= tip_info["max_cuv"]
+def truncheaza_dialog(text, max_cuvinte=300):
+    """Pastreaza primele si ultimele cuvinte pentru a nu pierde finalul conversatiei."""
+    cuvinte = text.split()
+    if len(cuvinte) <= max_cuvinte:
+        return text
+    jumatate = max_cuvinte // 2
+    return " ".join(cuvinte[:jumatate]) + " [...] " + " ".join(cuvinte[-jumatate:])
 
-    lat_tot = round(lat_i + lat_s + lat_r, 2)
-    print(f"    {nume_model:<15} I={intentie_pred:<30} S={satisfactie_pred:<10} "
-          f"R={tip_info['tip']}({nr_cuv}cuv) lat={lat_tot}s")
 
-    return {
-        "model": nume_model,
-        "intentie": {"valoare": intentie_pred, "raspuns_brut": r_i, "latenta": lat_i},
-        "satisfactie": {"valoare": satisfactie_pred, "raspuns_brut": r_s, "latenta": lat_s},
-        "rezumat": {"tip": tip_info["tip"], "valoare": r_r,
-                    "nr_cuvinte": nr_cuv, "in_limite": in_limite, "latenta": lat_r},
-        "latenta_totala": lat_tot
-    }
+def analizeaza_cu_model(transcrieri, nume_model, tokenizer, model, device):
+    """Ruleaza un model pe toate transcrierile si returneaza rezultatele."""
+    print(f"\n  Analiza cu {nume_model} pe {len(transcrieri)} conversatii...")
+    rezultate = {}
 
-# ─── PROCESARE FISIER ─────────────────────────────────────────────────────────
+    for cale, info in transcrieri.items():
+        dialog_complet = info["text"]
+        dialog  = truncheaza_dialog(dialog_complet, max_cuvinte=300)
+        domeniu = info["domeniu"]
+        print(f"    {Path(cale).stem}...", end=" ", flush=True)
 
-def proceseaza_fisier(cale_fisier, domeniu, modele_incarcate, intentii_domenii):
-    nume = Path(cale_fisier).stem
-    print(f"\n{'='*60}")
-    print(f"Fisier: {Path(cale_fisier).name} | Domeniu: {domeniu}")
-    print(f"{'='*60}")
+        # Intentie
+        r_i, lat_i   = genereaza(tokenizer, model, device,
+                                  prompt_intentie_v4(dialog, domeniu), max_new_tokens=40)
+        intentie_pred = extrage_intentie(r_i, domeniu)
 
-    rezultat = {
-        "id": nume, "domeniu": domeniu,
-        "fisier_audio": str(cale_fisier),
-        "timestamp": datetime.now().isoformat(),
-    }
+        # Satisfactie
+        prompt_s = (prompt_satisfactie_rogemma(dialog) if "gemma" in nume_model.lower()
+                    else prompt_satisfactie_romistral(dialog))
+        r_s, lat_s    = genereaza(tokenizer, model, device, prompt_s, max_new_tokens=20)
+        satisfactie_pred = extrage_satisfactie(r_s)
 
-    # STT — o singura data
-    print(f"  [STT] Transcriere...")
-    try:
-        text, lat_stt = transcrie_fisier(cale_fisier)
-        rezultat["transcriere"] = {"text": text, "latenta_stt": lat_stt}
-        print(f"  [STT] {lat_stt}s: {text[:100]}...")
-    except Exception as e:
-        print(f"  [EROARE STT]: {e}")
-        rezultat["eroare_stt"] = str(e)
-        return rezultat
+        # Rezumat — prompt diferit per model
+        tip_info = get_tip_rez(satisfactie_pred)
+        fn_rez   = prompt_rezumat_rogemma if "gemma" in nume_model.lower() else prompt_rezumat_romistral
+        r_r, lat_r = genereaza(tokenizer, model, device,
+                               fn_rez(dialog, satisfactie_pred),
+                               max_new_tokens=600)
+        nr_cuv       = len(r_r.split())
+        in_limite    = tip_info["min_cuv"] <= nr_cuv <= tip_info["max_cuv"]
+        lat_tot      = round(lat_i + lat_s + lat_r, 2)
 
-    if not text.strip():
-        print(f"  [ATENTIE] Transcriere goala.")
-        rezultat["eroare_stt"] = "Transcriere goala"
-        return rezultat
+        print(f"I={intentie_pred} S={satisfactie_pred} lat={lat_tot}s")
 
-    # Analiza cu fiecare model local
-    print(f"  [LLM] Analiza cu {len(modele_incarcate)} modele locale...")
-    rezultate_modele = []
-    for nume_model, (tokenizer, model, device) in modele_incarcate.items():
-        rez = analizeaza_cu_model_local(
-            text, domeniu, nume_model, tokenizer, model, device, intentii_domenii
-        )
-        rezultate_modele.append(rez)
+        rezultate[str(cale)] = {
+            "intentie":    {"valoare": intentie_pred, "raspuns_brut": r_i, "latenta": lat_i},
+            "satisfactie": {"valoare": satisfactie_pred, "raspuns_brut": r_s, "latenta": lat_s},
+            "rezumat":     {"tip": tip_info["tip"], "valoare": r_r,
+                            "nr_cuvinte": nr_cuv, "in_limite": in_limite, "latenta": lat_r},
+            "latenta_totala": lat_tot,
+        }
 
-    rezultat["rezultate_modele"] = rezultate_modele
-    return rezultat
+    return rezultate
+
+
+# ─── ASAMBLARE REZULTATE FINALE ───────────────────────────────────────────────
+
+def asambleaza_rezultate(transcrieri, rezultate_per_model):
+    """Combina transcrierile cu rezultatele per model intr-o structura finala."""
+    finale = []
+    for cale, info in transcrieri.items():
+        intrare = {
+            "id":           Path(cale).stem,
+            "domeniu":      info["domeniu"],
+            "fisier_audio": str(cale),
+            "transcriere":  {"text": info["text"], "latenta_stt": info["latenta_stt"]},
+            "rezultate_modele": {}
+        }
+        for model_key, rez_model in rezultate_per_model.items():
+            if str(cale) in rez_model:
+                intrare["rezultate_modele"][model_key] = rez_model[str(cale)]
+        finale.append(intrare)
+    return finale
+
 
 # ─── MAIN ─────────────────────────────────────────────────────────────────────
 
 def main():
-    parser = argparse.ArgumentParser(description="Pipeline audio modele locale")
+    parser = argparse.ArgumentParser(
+        description="Pipeline audio local: STT o data + RoMistral + RoGemma secvential"
+    )
     grup = parser.add_mutually_exclusive_group(required=True)
-    grup.add_argument("--fisier", help="Un singur fisier audio")
+    grup.add_argument("--fisier", help="Un singur fisier audio (.mp3 sau .wav)")
     grup.add_argument("--folder", help="Folder cu fisiere audio")
     parser.add_argument("--domeniu", choices=list(INTENTII_DOMENII.keys()),
-                        help="Domeniu fallback daca nu se detecteaza automat")
+                        help="Domeniu fallback daca nu se detecteaza din numele fisierului")
     parser.add_argument("--model", choices=["romistral", "rogemma"],
-                        help="Ruleaza doar un model (default: ambele)")
+                        help="Ruleaza doar un model (default: ambele, secvential)")
+    parser.add_argument("--skip_stt", action="store_true",
+                        help="Sare peste STT si foloseste cache-ul salvat anterior")
+    parser.add_argument("--cache_stt",
+                        default=None,
+                        help="Cale catre fisierul cache STT (default: rezultate_pipeline_audio/cache_stt.json)")
     args = parser.parse_args()
 
-    # Selecteaza modelele de rulat
     modele_de_rulat = [args.model] if args.model else ["romistral", "rogemma"]
 
-    # Incarca modelele o singura data
-    modele_incarcate = {}
-    for nume in modele_de_rulat:
+    # ── FAZA 1: STT sau incarcare din cache ──────────────────────────────────
+    if args.skip_stt:
+        cache_path = args.cache_stt or os.path.join(CONFIG["RESULTS_DIR"], "cache_stt.json")
+        print(f"\n[SKIP STT] Incarcare transcrieri din {cache_path}...")
+        with open(cache_path, encoding="utf-8") as f:
+            raw = json.load(f)
+        transcrieri = {Path(k): v for k, v in raw.items()}
+        print(f"  {len(transcrieri)} transcrieri incarcate.")
+    else:
+        fisiere = (
+            [Path(args.fisier)] if args.fisier
+            else sorted(Path(args.folder).glob("*.mp3")) + sorted(Path(args.folder).glob("*.wav"))
+        )
+        if not fisiere:
+            print("Niciun fisier audio gasit.")
+            return
+        transcrieri = transcrie_toate(fisiere, domeniu_fallback=args.domeniu)
+
+    if not transcrieri:
+        print("Nicio transcriere reusita. Oprire.")
+        return
+
+    # Salveaza transcrierile pe disk ca sa poata fi reluate fara STT
+    cache_stt = os.path.join(CONFIG["RESULTS_DIR"], "cache_stt.json")
+    with open(cache_stt, "w", encoding="utf-8") as f:
+        json.dump(
+            {str(k): v for k, v in transcrieri.items()},
+            f, ensure_ascii=False, indent=2
+        )
+    print(f"  Transcrieri salvate in: {cache_stt}")
+    print(f"  (Poti relua cu --skip_stt ca sa sari peste faza STT)")
+
+    # ── FAZA 2: Analiza cu fiecare model, secvential ─────────────────────────
+    rezultate_per_model = {}
+
+    for i, nume_model in enumerate(modele_de_rulat):
+        print(f"\n{'='*60}")
+        print(f"FAZA 2.{i+1} — Model: {nume_model.upper()}")
+        print(f"{'='*60}")
+
         try:
-            tokenizer, model, device = incarca_model(nume)
-            modele_incarcate[nume] = (tokenizer, model, device)
+            tokenizer, model, device = incarca_model(nume_model)
+            rez = analizeaza_cu_model(transcrieri, nume_model, tokenizer, model, device)
+            rezultate_per_model[nume_model] = rez
         except Exception as e:
-            print(f"  [EROARE] Nu s-a putut incarca {nume}: {e}")
+            print(f"  [EROARE] {e}")
+            rezultate_per_model[nume_model] = {}
+        finally:
+            # Elibereaza memoria inainte de urmatorul model
+            try:
+                elibereaza_model(model, device)
+            except Exception:
+                pass
 
-    if not modele_incarcate:
-        print("Niciun model incarcat.")
-        return
+    # ── Asamblare si salvare ──────────────────────────────────────────────────
+    rezultate_finale = asambleaza_rezultate(transcrieri, rezultate_per_model)
 
-    # Fisierele de procesat
-    fisiere = [Path(args.fisier)] if args.fisier else \
-              sorted(Path(args.folder).glob("*.mp3")) + sorted(Path(args.folder).glob("*.wav"))
-
-    if not fisiere:
-        print("Niciun fisier gasit.")
-        return
-
-    print(f"\nFisiere de procesat: {len(fisiere)}")
-    print(f"Modele: {', '.join(modele_incarcate.keys())}")
-
-    toate_rezultatele = []
-    for cale in fisiere:
-        domeniu = detecteaza_domeniu(cale.name) or args.domeniu
-        if not domeniu:
-            print(f"\n[SKIP] Domeniu nedetectat: {cale.name}")
-            continue
-        rezultat = proceseaza_fisier(cale, domeniu, modele_incarcate, INTENTII_DOMENII)
-        toate_rezultatele.append(rezultat)
-
-    # Salvare
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output = os.path.join(CONFIG["RESULTS_DIR"], f"rezultate_local_{timestamp}.json")
-    with open(output, "w", encoding="utf-8") as f:
+    timestamp   = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_file = os.path.join(CONFIG["RESULTS_DIR"], f"rezultate_local_{timestamp}.json")
+    with open(output_file, "w", encoding="utf-8") as f:
         json.dump({
-            "timestamp": timestamp,
-            "modele": list(modele_incarcate.keys()),
-            "nr_fisiere": len(fisiere),
-            "rezultate": toate_rezultatele
+            "timestamp":     timestamp,
+            "modele_rulate": modele_de_rulat,
+            "nr_transcrise": len(transcrieri),
+            "rezultate":     rezultate_finale,
         }, f, ensure_ascii=False, indent=2)
-    print(f"\nRezultate salvate in: {output}")
+
+    # ── Sumar ─────────────────────────────────────────────────────────────────
+    print(f"\n{'='*60}")
+    print(f"SUMAR FINAL")
+    print(f"{'='*60}")
+    for r in rezultate_finale:
+        print(f"\n  {r['id']} ({r['domeniu']}):")
+        for model_key, analiza in r.get("rezultate_modele", {}).items():
+            print(f"    {model_key.upper():<12} "
+                  f"I={analiza['intentie']['valoare']:<30} "
+                  f"S={analiza['satisfactie']['valoare']:<10} "
+                  f"R={analiza['rezumat']['tip']} "
+                  f"({'OK' if analiza['rezumat']['in_limite'] else 'OUT'})")
+    print(f"\n  Salvat in: {output_file}")
+
 
 if __name__ == "__main__":
     main()
