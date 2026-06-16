@@ -1,0 +1,122 @@
+{
+  "id": "20260613_130431",
+  "domeniu": "banking",
+  "timestamp": "2026-06-13T13:04:31.779752",
+  "dificultate": "simpla",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți al băncii Transilvania. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și ultimele 4 cifre ale cardului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "două doi patru șapte opt 2 2 4 7 8"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am făcut zilele trecute un transfer greșit și am trimis din greșeală cinci sute de lei pe un iban pe care nu-l cunosc pe un iban greșit și aș vrea să-l recuperez am făcut zilele trecute un transfer greșit și am trimis din greșeală 500 de lei pe un iban pe care nu-l cunosc pe un iban greșit și aș vrea să-l recuperez"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a putea verifica situația, aș avea nevoie să îmi spuneți, vă rog, data exactă a transferului."
+    },
+    {
+      "rol": "client",
+      "text": "12 iunie 2.026"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru informație. Îmi puteți spune, vă rog, IBAN-ul destinatarului către care a fost făcut transferul?"
+    },
+    {
+      "rol": "client",
+      "text": "păi nu știu adică am greșit doar ultimele două cifre cred ăă stați două secunde puteți să așteptați puțin până mă uit în aplicație păi nu știu adică am greșit doar ultimele 2 cifre cred ăă stați 2 secunde puteți să așteptați puțin până mă uit în aplicație"
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur, vă aștept. Luați timpul necesar și îmi transmiteți IBAN-ul complet când îl aveți la îndemână."
+    },
+    {
+      "rol": "client",
+      "text": "gata l-am găsit ro zero patru b s e a opt unu cinci patru unu trei trei unu nouă patru doi șapte zero doi șapte gata l-am găsit ro 0 4 b s e a 8 1 5 4 1 3 3 1 9 4 2 7 0 2 7"
+    },
+    {
+      "rol": "operator",
+      "text": "Am verificat transferul efectuat pe IBAN-ul RO04BSEA815413319427027 și, deoarece suma a fost trimisă pe un cont din altă bancă, vă pot iniția imediat o cerere de recuperare a fondurilor prin procedura de returnare transfer greșit. Vă rog să confirmați că doriți să procedez acum, iar dacă persoana care a primit banii este de acord sau contul este inactiv, suma va fi returnată rapid în contul dumneavoastră. Pot începe procesul acum pentru dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "da vă rog începeți dar cum adică dacă persoana vrea să păstreze banii deși ar trebui să-mi returneze cum vom proceda da vă rog începeți dar cum adică dacă persoana vrea să păstreze banii deși ar trebui să-mi returneze cum vom proceda"
+    },
+    {
+      "rol": "operator",
+      "text": "În această situație, dacă destinatarul refuză returnarea sumei, banca noastră va încerca să medieze situația și, dacă este necesar, vă putem îndruma să apelați la o soluție judiciară pentru recuperarea banilor. Demararea procedurii de returnare este primul pas important, iar eu pot să o inițiez acum, după care vă ținem la curent cu evoluția. Mai doriți să continui cu pornirea procesului? Pot să vă ajut cu altceva?"
+    },
+    {
+      "rol": "client",
+      "text": "da vă rog continui cu procesul respectiv vă mulțumesc din tot sufletul sper să se rezolve alte întrebări nu mai am mulțumesc mult de tot da vă rog continui cu procesul respectiv vă mulțumesc din tot sufletul sper să se rezolve alte întrebări nu mai am mulțumesc mult de tot"
+    },
+    {
+      "rol": "operator",
+      "text": "Am demarat procedura de returnare a sumei pentru transferul greșit, iar în cel mai scurt timp veți primi o actualizare cu privire la stadiul procesului. Îmi face plăcere să vă fiu de ajutor și sper să se soluționeze favorabil cât mai curând. Dacă aveți nevoie de alte informații sau asistență, sunt aici să vă sprijin."
+    },
+    {
+      "rol": "client",
+      "text": "e în regulă totul e ok pe moment mulțumesc mult de tot numai bine la revedere e în regulă totul e ok pe moment mulțumesc mult de tot numai bine la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "problema_transfer",
+    "satisfactie": "neutru",
+    "rezumat": "Clienta Dumitru Antonia a efectuat un transfer greșit de 500 de lei către un IBAN incorect și dorește recuperarea sumei. Operatorul a verificat detaliile și a început procedura de returnare prin cererea de recuperare a fondurilor. Clienta a fost informată că, dacă destinatarul refuză returnarea, banca va interveni în continuare."
+  },
+  "latente": {
+    "durata_totala": 471.02,
+    "stt": {
+      "valori": [
+        7.9,
+        9.57,
+        22.77,
+        13.52,
+        20.93,
+        28.05,
+        18.92,
+        20.2,
+        15.36
+      ],
+      "mediana": 18.92,
+      "medie": 17.47
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        3.4,
+        1.47,
+        1.41,
+        2.53,
+        1.81,
+        1.57,
+        0.0
+      ],
+      "mediana": 1.47,
+      "medie": 1.35
+    }
+  }
+}

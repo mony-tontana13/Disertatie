@@ -1,0 +1,92 @@
+{
+  "id": "20260615_180656",
+  "domeniu": "telecom",
+  "timestamp": "2026-06-15T18:06:56.412632",
+  "dificultate": "medie",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați contactat serviciul clienți al Telenet. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și numărul de telefon al abonamentului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "zero șapte doi zero șase unu nouă trei nouă nouă 0 7 2 0 6 1 9 3 9 9"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "păi am luat ieri o cartelă nouă și am încercat să o activez dar nu a mers mi-a dat eroare păi am luat ieri o cartelă 9 și am încercat să o activez dar nu a mers mi-a dat eroare"
+    },
+    {
+      "rol": "operator",
+      "text": "Am verificat situația cartelei dumneavoastră și vă pot activa acum serviciul de voce. Totuși, pentru activarea completă a datelor mobile este necesară o verificare suplimentară care poate dura până la 24 de ore și implică departamentul tehnic. Vă mulțumesc pentru răbdare, iar eu voi monitoriza personal progresul pentru a vă ține la curent. Dacă aveți alte întrebări, rămân la dispoziție."
+    },
+    {
+      "rol": "client",
+      "text": "nu mai am eu în regulă pot să aștept pe douăzeci și patru de ore mulțumesc foarte mult de ajutor nu mai am eu în regulă pot să aștept pe 24 de ore mulțumesc foarte mult de ajutor"
+    },
+    {
+      "rol": "operator",
+      "text": "Mă bucur că așteptarea nu vă creează probleme și vă mulțumesc pentru înțelegere. Voi reveni cu o actualizare imediat ce primesc vești despre situația cartelei dumneavoastră. Pot să vă ajut cu altceva în această perioadă?"
+    },
+    {
+      "rol": "client",
+      "text": "nu nu cred vă voiam doar să vă mai întreb deci pot să sun dar nu pot să folosesc datele mobile nu-i așa nu nu cred vă voiam doar să vă mai întreb deci pot să sun dar nu pot să folosesc datele mobile nu-i așa"
+    },
+    {
+      "rol": "operator",
+      "text": "Exact, apelurile vocale sunt active, iar accesul la datele mobile va fi disponibil după finalizarea verificărilor din partea tehnicienilor. Dacă aveți nevoie de alte informații sau doriți să discutăm altceva, sunt aici să vă ajut. Mai pot face ceva pentru dumneavoastră acum?"
+    },
+    {
+      "rol": "client",
+      "text": "nu nu mulțumesc e destul o zi bună la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "activare_esuata",
+    "satisfactie": "pozitiv",
+    "rezumat": "Clienta a contactat serviciul pentru activarea unei cartele noi; apelurile vocale au fost activate imediat, iar accesul la date mobile va fi activat după verificări suplimentare care pot dura până la 24 de ore."
+  },
+  "latente": {
+    "durata_totala": 267.11,
+    "stt": {
+      "valori": [
+        9.03,
+        13.5,
+        19.5,
+        15.08,
+        15.74,
+        12.01
+      ],
+      "mediana": 15.08,
+      "medie": 14.14
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        2.7,
+        1.79,
+        1.57,
+        0.0
+      ],
+      "mediana": 1.57,
+      "medie": 1.01
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "id": "20260615_193258",
+  "domeniu": "banking",
+  "timestamp": "2026-06-15T19:32:58.269270",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți al băncii Transilvania. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și ultimele 4 cifre ale cardului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "unu doi trei patru 1 2 3 4"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "ăă am primit un extras de cont și văd niște taxe pe care nu le a recunosc nu nimeni nu mi-a explicat nimic despre ele ăă am primit un extras de cont și văd niște taxe pe care nu le a recunosc nu nimeni nu mi-a explicat nimic despre ele"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația. Puteți, vă rog, să îmi spuneți data la care a apărut tranzacția suspectă?"
+    },
+    {
+      "rol": "client",
+      "text": "păi astăzi pe cincisprezece iunie păi astăzi pe 15 iunie"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru informație. Care este suma tranzacției suspecte de pe 15 iunie?"
+    },
+    {
+      "rol": "client",
+      "text": "păi șapte sute de lei către un site pe care nici nu-l știu păi 700 de lei către un site pe care nici nu-l știu"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg îngrijorarea dumneavoastră legată de această tranzacție. Pentru a putea investiga mai departe, vă recomand să depuneți o contestație privind tranzacția neautorizată, accesând secțiunea „Contestații” din aplicația bancară sau trimițând un email la adresa disputetx@bt.ro, menționând data și suma tranzacției. În același timp, vă sfătuiesc să blocați temporar cardul pentru siguranță, lucru pe care îl puteți face tot prin aplicație sau apelând serviciul nostru dedicat. Investigația poate dura până la 10 zile lucrătoare,"
+    },
+    {
+      "rol": "client",
+      "text": "zece zile păi eu am nevoie de banii ăștia acuma sunt singurii bani pe care îi am i am de la mama alții nu mai primesc toată lumea toată lumea 10 zile păi eu am nevoie de banii ăștia acuma sunt singurii bani pe care îi am i am de la mama alții nu mai primesc toată lumea toată lumea"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg perfect că situația dumneavoastră este urgentă și vă asigur că vom face tot posibilul să accelerăm procesul de soluționare. Între timp, dacă doriți, putem verifica împreună dacă există alte opțiuni temporare pentru accesarea unor fonduri sau puteți solicita un împrumut de urgență. Doriți să vă ajut cu aceste informații?"
+    },
+    {
+      "rol": "client",
+      "text": "da da vă rog da da vă rog"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă pot oferi detalii despre opțiunile noastre de împrumuturi rapide, cu aprobarea în câteva ore și sume flexibile, adaptate nevoilor dumneavoastră. De asemenea, puteți verifica dacă aveți solduri disponibile în alte conturi sau carduri care ar putea fi folosite pentru a acoperi urgent această sumă. Doriți să vă explic mai pe larg aceste variante?"
+    },
+    {
+      "rol": "client",
+      "text": "da da vă rog da da vă rog"
+    },
+    {
+      "rol": "operator",
+      "text": "Sigur, vă pot explica în detaliu împrumuturile rapide pe care le oferim: acestea au dobânzi competitive și perioade flexibile de rambursare, iar aprobarea se face în scurt timp după depunerea cererii. Totodată, dacă aveți un card de credit sau un cont curent cu overdraft, ar putea fi o soluție temporară pentru accesul la bani. Doriți să inițiem împreună o cerere de împrumut ori preferați să verificăm în primul rând alte conturi disponibile? Pot să vă mai ajut cu ceva?"
+    },
+    {
+      "rol": "client",
+      "text": "pe moment nu vreau să facem nimic m ați zăpăcit de cap o să lăsăm așa mulțumesc pentru informații este în regulă dar vreau să mă consult cu mama înainte ăă deci să mă aștept ca în zece zile să primesc banii înapoi pe moment nu vreau să facem nimic m ați zăpăcit de cap o să lăsăm așa mulțumesc pentru informații este în regulă dar vreau să mă consult cu mama înainte ăă deci să mă aștept ca în 10 zile să primesc banii înapoi"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg perfect, este bine să discutați cu mama înainte de a lua o decizie. Da, termenul de până la 10 zile lucrătoare este cel estimat pentru soluționarea contestației și restituirea sumelor, în cazul în care tranzacția este confirmată ca neautorizată. Pot să vă mai ofer alte detalii sau să vă ajut cu altceva în acest moment?"
+    },
+    {
+      "rol": "client",
+      "text": "nu mai am nevoie de niciun detaliu gata mulțumesc frumos văd eu ce fac la revedere nu mai am nevoie de niciun detaliu gata mulțumesc frumos văd eu ce fac la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "tranzactie_suspecta",
+    "satisfactie": "negativ",
+    "rezumat": "Clienta Dumitru Antonia a contactat serviciul clienți pentru a reclama tranzacții suspecte în valoare de 700 de lei apărute pe extrasul de cont din 15 iunie, tranzacții pe care nu le recunoaște. Operatorul a recomandat depunerea unei contestații prin aplicația bancară sau email, blocarea temporară a cardului și a explicat că investigația poate dura până la 10 zile lucrătoare. Clienta a exprimat gravitatea situației, explicând că are nevoie urgentă de bani, fiind singura sursă primită de la mama sa. Operatorul a oferit informații despre împrumuturi rapide și alte opțiuni pentru acces la fonduri temporare."
+  },
+  "latente": {
+    "durata_totala": 471.77,
+    "stt": {
+      "valori": [
+        7.47,
+        7.65,
+        15.76,
+        11.11,
+        10.85,
+        18.54,
+        7.62,
+        7.38,
+        29.12,
+        15.01
+      ],
+      "mediana": 11.11,
+      "medie": 13.05
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        1.76,
+        1.5,
+        3.01,
+        2.7,
+        1.82,
+        2.22,
+        1.74,
+        0.0
+      ],
+      "mediana": 1.76,
+      "medie": 1.48
+    }
+  }
+}

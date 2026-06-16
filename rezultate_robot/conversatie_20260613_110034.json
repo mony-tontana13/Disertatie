@@ -1,0 +1,73 @@
+{
+  "id": "20260613_110034",
+  "domeniu": "telecom",
+  "timestamp": "2026-06-13T11:00:34.362410",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați contactat serviciul clienți al Telenet. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "antonia dumitru antonia dumitru"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și numărul de telefon al abonamentului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "zero șapte doi zero șase unu nouă trei nouă nouă 0 7 2 0 6 1 9 3 9 9"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "păi am primit factura pentru luna aceasta și este mult mai mare decât mă așteptam și nu înțeleg de unde au apărut banii ăștia în plus cred că e ceva greșit cu suma asta putem verifica vă rog păi am primit factura pentru luna aceasta și este mult mai mare decât mă așteptam și nu înțeleg de unde au apărut banii ăștia în plus cred că e ceva greșit cu suma asta putem verifica vă rog"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a putea verifica situația, vă rog să-mi spuneți numărul facturii la care faceți referire."
+    },
+    {
+      "rol": "client",
+      "text": "b pe d doi patru trei doi b pe d 2 4 3 2"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru informație. Care este suma pe care o contestați pe această factură?"
+    },
+    {
+      "rol": "client",
+      "text": "păi abonamentul meu costă patruzeci și cinci de lei în mod normal iar acuma trebuie să plătesc șaptezeci și cinci și nu înțeleg de unde au venit acești treizeci de lei în plus păi abonamentul meu costă 45 de lei în mod normal iar acuma trebuie să plătesc 75 și nu înțeleg de unde au venit acești 30 de lei în plus"
+    },
+    {
+      "rol": "operator",
+      "text": "Am înregistrat reclamația dumneavoastră referitoare la diferența de preț pe factura curentă. Echipa noastră de specialiști va analiza situația, însă procesarea poate dura până la 15 zile lucrătoare. Vă asigur că primim cu atenție sesizarea și vom reveni cu un răspuns în cel mai scurt timp posibil. Între timp, vă recomand să păstrați factura pentru o eventuală clarificare ulterioară. Mulțumim pentru răbdare și înțelegere."
+    },
+    {
+      "rol": "client",
+      "text": "ok eu în regulă ăă voiam să vă mai întreb eu n-ar trebui să plătesc factura asta nu ar trebui să aștept răspunsul dumneavoastră și după aia să vedem ce facem și încă o întrebare care ar fi posibilele costuri de ce ar de ce ok eu în regulă ăă voiam să vă mai întreb eu n-ar trebui să plătesc factura asta nu ar trebui să aștept răspunsul dumneavoastră și după aia să vedem ce facem și încă o întrebare care ar fi posibilele costuri de ce ar de ce ar apărea"
+    },
+    {
+      "rol": "operator",
+      "text": "În mod normal, factura trebuie plătită în termenul stabilit pentru a evita eventualele penalități, dar dacă sesizarea este confirmată, vom corecta suma ulterior. Costurile în plus pot apărea din depășiri de trafic, servicii suplimentare activate sau taxe neprevăzute, toate acestea vor fi clarify în procesul de analiză. Pot să vă ajut cu alte detalii sau aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "nu nu este în regulă mulțumesc o zi bună la revedere nu nu este în regulă mulțumesc o zi bună la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "factura_gresita",
+    "satisfactie": "neutru",
+    "rezumat": "Clienta a sesizat o diferență neînțeleasă de 30 lei pe factura lunii curente, care este mult mai mare decât suma obișnuită. Operatorul a înregistrat reclamația și a informat că situația va fi analizată în maximum 15 zile lucrătoare. În timpul analizei, se recomandă plata facturii pentru a evita penalități, urmând corectarea ulterioară dacă sesizarea este justificată. Clienta a încheiat convorbirea mulțumind."
+  }
+}

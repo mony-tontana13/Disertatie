@@ -1,0 +1,102 @@
+{
+  "id": "20260615_181227",
+  "domeniu": "telecom",
+  "timestamp": "2026-06-15T18:12:27.826949",
+  "dificultate": "medie",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați contactat serviciul clienți al Telenet. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și numărul de telefon al abonamentului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "zero șapte doi zero șase unu nouă trei nouă nouă 0 7 2 0 6 1 9 3 9 9"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "decât câteva zile am semnat foarte slab acasă înainte mergea bine nu știu ce s-a întâmplat decât câteva zile am semnat foarte slab acasă înainte mergea bine nu știu ce s-a întâmplat"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg că aveți probleme cu semnalul acasă. Ați putea să îmi spuneți care este adresa sau zona în care întâmpinați această problemă?"
+    },
+    {
+      "rol": "client",
+      "text": "păi la mine acasă stau pe pădure trei șapte păi la mine acasă stau pe pădure 3 7"
+    },
+    {
+      "rol": "operator",
+      "text": "Am verificat din sistem condițiile pentru adresa dumneavoastră și observ o degradare a semnalului în zonă, posibil din cauza unor intervenții tehnice în curs. În acest moment, pot programa o verificare tehnică la distanță care ar putea îmbunătăți temporar calitatea semnalului, însă soluția completă necesită o intervenție pe teren de către echipa tehnică, care va fi programată în cel mai scurt timp posibil. Vă rog să aveți puțină răbdare până la finalizarea acestor lucrări, iar eu rămân disponibil să vă asist cu orice nelămuriri."
+    },
+    {
+      "rol": "client",
+      "text": "păi și cam cât durează această verificare tehnică păi și cam cât durează această verificare tehnică"
+    },
+    {
+      "rol": "operator",
+      "text": "Verificarea tehnică la distanță durează, în general, câteva minute și nu afectează utilizarea serviciului în timpul ei. Intervenția pe teren, însă, poate lua de la câteva ore până la câteva zile, în funcție de complexitatea problemei. Pot să vă ajut cu ceva în plus legat de serviciul dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "nu cred este perfect mulțumesc frumos că ați fost atât de prompt și ați rezolvat lucrurile sper să se rezolve și partea tehnică"
+    },
+    {
+      "rol": "operator",
+      "text": "Mă bucur că am putut să vă ofer informațiile necesare și vă asigur că echipa noastră face tot posibilul pentru a remedia situația cât mai rapid. Dacă mai apar alte neclarități sau aveți nevoie de sprijin suplimentar, sunt aici să vă ajut. Doriți să discutăm și alte aspecte legate de serviciul dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "nu mulțumesc vă doresc o zi bună în continuare la revedere nu mulțumesc vă doresc o zi bună în continuare la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "problema_semnal",
+    "satisfactie": "pozitiv",
+    "rezumat": "Clientul a raportat probleme cu semnalul acasă din cauza unor intervenții tehnice locale. Operatorul a programat o verificare tehnică la distanță și a informat despre o intervenție pe teren ce urmează a fi efectuată."
+  },
+  "latente": {
+    "durata_totala": 323.83,
+    "stt": {
+      "valori": [
+        7.08,
+        11.33,
+        13.3,
+        10.27,
+        12.98,
+        26.65,
+        12.17
+      ],
+      "mediana": 12.17,
+      "medie": 13.4
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        1.76,
+        6.82,
+        2.88,
+        1.69,
+        0.0
+      ],
+      "mediana": 1.69,
+      "medie": 1.88
+    }
+  }
+}

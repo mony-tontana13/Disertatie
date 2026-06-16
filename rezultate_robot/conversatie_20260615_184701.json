@@ -1,0 +1,112 @@
+{
+  "id": "20260615_184701",
+  "domeniu": "retail",
+  "timestamp": "2026-06-15T18:47:01.005980",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți E-shop. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia s"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și adresa de email asociată contului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia a treisprezece arond gmail punct com dumitru antonia a 13 arond gmail punct com"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am dat și o comandă la dumnea și pe site scria că livrarea e în trei zile dar nu a ajuns nimic nici până acuma am dat și o comandă la dumnea și pe site scria că livrarea e în 3 zile dar nu a ajuns nimic nici până acuma"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația dumneavoastră. Îmi puteți spune, vă rog, numărul comenzii pentru a verifica ce s-a întâmplat?"
+    },
+    {
+      "rol": "client",
+      "text": "ăă da este comanda unu trei patru cinci ăă da este comanda 1 3 4 5"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru informație. Am verificat comanda 1345 și observ că livrarea întâmpină o întârziere neprevăzută din cauza unor probleme logistice. Vă recomand să trimiteți un email la adresa suport@e-shop.ro cu numărul comenzii pentru o actualizare detaliată; veți primi un răspuns în maxim 48 de ore. Între timp, dacă doriți, pot să vă programez și o apelare din partea departamentului de logistică pentru o clarificare suplimentară. Cu siguranță vom face tot posibilul să rezolvăm cât mai curând această situație."
+    },
+    {
+      "rol": "client",
+      "text": "nu nu vreau să vorbesc la telefon cu ei dar nu puteți să trimiteți dumneavoastră cererea pe email de ce trebuie s o fac eu nu nu vreau să vorbesc la telefon cu ei dar nu puteți să trimiteți dumneavoastră cererea pe email de ce trebuie s o fac eu"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg perfect reticența dumneavoastră, însă din păcate, pentru protecția datelor personale și pentru a putea urmări solicitarea corect, este necesar ca cererea să fie trimisă direct de către dvs. Mă pot asista însă cu textul pentru email, dacă doriți. Mai pot să vă ajut cu altceva sau aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "e da mă rog vrăjeală nu nu mai am niciun altă întrebare o să trimit eu mailul că apare în doar eu trebuie să fac totul și văd ce zic în câte zile ați zis că ar trebui să fie să ajungă coletul la mine că eu chiar am nevoie de el urgent e da mă rog vrăjeală nu nu mai am niciun altă întrebare o să trimit eu mailul că apare în doar eu trebuie să fac totul și văd ce zic în câte zile ați zis că ar trebui să fie să ajungă coletul la mine că eu chiar am nevoie de el urgent"
+    },
+    {
+      "rol": "operator",
+      "text": "Livrarea ar fi trebuit să ajungă în maxim trei zile, dar, din păcate, întârzierile pot apărea în situații neașteptate. Vă asigur că facem tot posibilul să remediem problema cât mai rapid. Dacă mai aveți nevoie de informații sau vreți să vă ajut cu ceva în continuare, sunt aici."
+    },
+    {
+      "rol": "client",
+      "text": "eu am înțeles că trebuia să vină în trei zile zic de acum încolo cât timp o să mai dureze eu am înțeles că trebuia să vină în 3 zile zic de acum încolo cât timp o să mai dureze"
+    },
+    {
+      "rol": "operator",
+      "text": "În mod obișnuit, răspunsul la solicitarea dumneavoastră se primește în maxim 48 de ore, iar după confirmare, livrarea poate dura între 1 și 3 zile lucrătoare, în funcție de zona de livrare. Vă recomand să trimiteți emailul cât mai curând pentru a primi o estimare exactă și actualizată. Pot să vă ajut cu altceva sau mai aveți nelămuriri?"
+    },
+    {
+      "rol": "client",
+      "text": "nu e ok la revedere nu e ok la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "problema_livrare",
+    "satisfactie": "negativ",
+    "rezumat": "Clienta Dumitru Antonia a sunat pentru a reclama întârzierea livrării unei comenzi plasate pe site, care conform informațiilor inițiale ar fi trebuit să ajungă în trei zile. Operatorul a confirmat o întârziere neprevăzută din cauza unor probleme logistice și a recomandat trimiterea unui email către suport pentru actualizări. Clienta a refuzat să vorbească cu departamentul de logistică și a solicitat ca operatorul să trimită ea cererea, dar i s-a explicat că din motive de protecție a datelor trebuie să o facă personal. În final, clienta a acceptat să trimită singură emailul, exprimându-și nemulțumirea față de situație."
+  },
+  "latente": {
+    "durata_totala": 434.85,
+    "stt": {
+      "valori": [
+        10.59,
+        11.97,
+        19.25,
+        12.67,
+        18.77,
+        30.01,
+        13.47,
+        10.26
+      ],
+      "mediana": 13.47,
+      "medie": 15.87
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        2.09,
+        3.62,
+        2.18,
+        1.86,
+        2.83,
+        0.0
+      ],
+      "mediana": 2.09,
+      "medie": 1.57
+    }
+  }
+}

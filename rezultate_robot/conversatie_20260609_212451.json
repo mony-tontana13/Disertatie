@@ -1,0 +1,113 @@
+{
+  "id": "20260609_212451",
+  "domeniu": "banking",
+  "timestamp": "2026-06-09T21:24:51.652457",
+  "dificultate": "simpla",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți al băncii. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și ultimele 4 cifre ale cardului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "ăă opt patru cinci doi ăă 8 4 5 2"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am făcut o prostie m-a rugat mama să-i transmit niște bani mai exact trei sute de lei și din greșeală am pus alt iban și am trimis altcuiva cum pot să fac ca să repar prostia asta am făcut o prostie m-a rugat mama să-i transmit niște bani mai exact 300 de lei și din greșeală am pus alt iban și am trimis altcuiva cum pot să fac ca să repar prostia asta"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău să aud acest lucru. Pentru început, puteți să îmi spuneți data la care a fost făcut transferul?"
+    },
+    {
+      "rol": "client",
+      "text": "păi astăzi am am făcut a acum două ore e nouă iunie păi astăzi am am făcut a acum 2 ore e 9 iunie"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru informație. Vă rog să îmi spuneți IBAN-ul destinatarului greșit către care a fost trimisă suma."
+    },
+    {
+      "rol": "client",
+      "text": "păi nu îl știu pe de rost mă așteptați să-l caut sau cum facem nu puteți să găsiți pur și simplu tranzacția în cont în istoricul meu păi nu îl știu pe de rost mă așteptați să-l caut sau cum facem nu puteți să găsiți pur și simplu tranzacția în cont în istoricul meu"
+    },
+    {
+      "rol": "operator",
+      "text": "Pot verifica istoricul transferurilor efectuate pe data de 9 iunie pentru suma de 300 de lei, dar am nevoie să confirm suma transferată. Puteți să îmi reconfirmați suma exactă trimisă?"
+    },
+    {
+      "rol": "client",
+      "text": "da asta e trei sute de lei da asta e 300 de lei"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru confirmare. O singură clipă să verific tranzacțiile dumneavoastră și revin imediat cu informații."
+    },
+    {
+      "rol": "client",
+      "text": "da bine ok da bine ok"
+    },
+    {
+      "rol": "operator",
+      "text": "Am identificat transferul de 300 de lei efectuat pe 9 iunie. Aveți posibilitatea să verificați împreună cu mine dacă IBAN-ul găsit în tranzacție este cel greșit introdus?"
+    },
+    {
+      "rol": "client",
+      "text": "da sigur m-l spuneți dumneavoastră și vă confirm eu sau cum facem da sigur m-l spuneți dumneavoastră și vă confirm eu sau cum facem"
+    },
+    {
+      "rol": "operator",
+      "text": "IBAN-ul către care a fost trimisă suma este RO49AAAA1B31007593840000. Este corect acesta?"
+    },
+    {
+      "rol": "client",
+      "text": "da ăă către iban ul ăsta am trimis iban ul mamei e puțin diferit ultimele două cifre sunt diferite dar da către ăsta am trimis da ăă către iban ul ăsta am trimis iban ul mamei e puțin diferit ultimele 2 cifre sunt diferite dar da către ăsta am trimis"
+    },
+    {
+      "rol": "operator",
+      "text": "Putem iniția imediat o cerere de returnare a sumei către banca destinatară, dar pentru aceasta va trebui să contactați banca destinatară și să solicitați acordul de returnare, deoarece banii au fost deja virați pe un cont valid. Între timp, vă recomand să informați și persoana care deține acest IBAN greșit. Dacă doriți, pot trimite acum o solicitare către banca noastră pentru a demara procesul de returnare – confirmați, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "da porniți pe procesul de returnare eu nu am cum să vorbesc cu persoana respectivă pentru că nu o cunosc nu știu cine este dar o să fac cerere dacă este nevoie dar de ce trebuie să fac cerere și da porniți pe procesul de returnare eu nu am cum să vorbesc cu persoana respectivă pentru că nu o cunosc nu știu cine este dar o să fac cerere dacă este nevoie dar de ce trebuie să fac cerere și la banca"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația și vă asigur că demarăm procedura de returnare pentru a vă susține cât mai bine. Cererea este necesară pentru a legitima solicitarea dumneavoastră și pentru a respecta prevederile legale privind protecția datelor și tranzacțiilor financiare. Pot continua începând procesul acum; doriți să vă trimit și un formular de cerere pe e-mail? Mai pot să vă ajut cu altceva?"
+    },
+    {
+      "rol": "client",
+      "text": "a ok am înțeles bine păi în regulă atunci trimiteți mi pe email și o să demarez eu cererea pentru banca destinată și vedem unde ajunge mulțumesc frumos a ok am înțeles bine păi în regulă atunci trimiteți mi pe email și o să demarez eu cererea pentru banca destinată și vedem unde ajunge mulțumesc frumos"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă voi trimite imediat formularul pe adresa de e-mail înregistrată în sistem. Dacă întâmpinați dificultăți sau aveți nevoie de sprijin suplimentar în completarea cererii, sunt aici să vă ajut. Mai pot să vă fiu de folos cu altceva?"
+    },
+    {
+      "rol": "client",
+      "text": "nu pe moment nu mulțumesc frumos la revedere nu pe moment nu mulțumesc frumos la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "problema_transfer",
+    "satisfactie": "neutru",
+    "rezumat": "Clientul a sunat la serviciul clienți solicitând ajutor pentru returnarea unei sume de 300 lei trimisă din greșeală către un IBAN greșit. Operatorul a verificat detaliile transferului și a inițiat procedura de returnare, explicând necesitatea unei cereri oficiale. Clientul a acceptat să primească pe email formularul pentru a continua procesul."
+  }
+}

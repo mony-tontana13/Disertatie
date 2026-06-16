@@ -1,0 +1,142 @@
+{
+  "id": "20260613_135117",
+  "domeniu": "medicina",
+  "timestamp": "2026-06-13T13:51:17.163200",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la clinica Romed Plus. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "maria ion maria ion"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și data nașterii dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "7 mai 2.002"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am o programare mâine la ora zece la cardiologie dar nu mai pot să ajung și aș vrea să o reprogramez am o programare mâine la ora 10 la cardiologie dar nu mai pot să ajung și aș vrea să o reprogramez"
+    },
+    {
+      "rol": "operator",
+      "text": "În regulă, pentru a putea reprogrma consultația, îmi puteți confirma data programării existente?"
+    },
+    {
+      "rol": "client",
+      "text": "păi ieri pe paisprezece iunie două mii douăzeci și șase păi ieri pe 14 iunie 2.026"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru informație. Îmi puteți spune, vă rog, ora programării pe care doriți să o reprogramez?"
+    },
+    {
+      "rol": "client",
+      "text": "păi aveam la ora șaisprezece mâine doar că nu mai pot să ajung și de fapt scuze aveam la ora zece mâine și nu mai pot să mai ajung și aș vrea să o reprogramez pentru altă zi eventual după ora șaisprezece păi aveam la ora 16 mâine doar că nu mai pot să ajung și de fapt scuze aveam la ora 10 mâine și nu mai pot să mai ajung și aș vrea să o reprogramez pentru altă zi eventual după ora 16"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru precizări. Pentru a continua, vă rog să îmi spuneți care este specialitatea medicului la care aveți programarea."
+    },
+    {
+      "rol": "client",
+      "text": "v-am explicat și ăă când v-am spus de ce v-am sunat cardiologie v-am explicat și ăă când v-am spus de ce v-am sunat cardiologie"
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles, mulțumesc pentru clarificare. Pentru a putea verifica disponibilitatea, vă rog să-mi spuneți dacă doriți o programare în altă zi anume sau preferați să vă ofer eu cele mai apropiate date după ora 16.00?"
+    },
+    {
+      "rol": "client",
+      "text": "ăă dați mi dumneavoa cele mai apropiate opțiuni ăă dați mi dumneavoa cele mai apropiate opțiuni"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc, revin cu cele mai apropiate opțiuni după ora 16.00, dar mai întâi îmi confirmați, vă rog, numărul de telefon la care pot să vă contactez pentru a vă transmite detaliile?"
+    },
+    {
+      "rol": "client",
+      "text": "scuze zero șapte doi zero șase unu nouă trei nouă nouă scuze 0 7 2 0 6 1 9 3 9 9"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru numărul de telefon. Vă voi contacta în scurt timp cu opțiunile disponibile după ora 16:00. Mai pot să vă ajut cu altceva în acest moment?"
+    },
+    {
+      "rol": "client",
+      "text": "nu este în regulă mulțumesc frumos la revedere nu este în regulă mulțumesc frumos la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg că doriți să reprogramez consultația. Îmi puteți confirma, vă rog, dacă programarea inițială este pentru cardiologie mâine, 15 iunie?"
+    },
+    {
+      "rol": "client",
+      "text": "da am mai zis deja da am mai zis deja"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru confirmare. În acest moment, nu pot finaliza reprogamarea direct la telefon, însă vă voi trimite un SMS în următoarele 30 de minute cu cele mai apropiate intervale disponibile după ora 16:00. Vă rog să răspundeți la mesaj pentru a confirma noua programare. Dacă întâmpinați dificultăți, vă stau la dispoziție prin email la programari@romedplus.ro. Vă doresc o zi cât mai bună!"
+    },
+    {
+      "rol": "client",
+      "text": "mulțumesc la revedere mulțumesc la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "problema_programare",
+    "satisfactie": "neutru",
+    "rezumat": "Clienta Maria Ion a sunat pentru a reprogrma o consultație la cardiologie programată inițial pentru 15 iunie, ora 10:00, deoarece nu mai poate participa. A solicitat opțiuni pentru o nouă dată, preferabil după ora 16:00. Operatorul a luat datele de contact și i-a promis să revină cu cele mai apropiate opțiuni disponibile."
+  },
+  "latente": {
+    "durata_totala": 441.08,
+    "stt": {
+      "valori": [
+        8.07,
+        11.61,
+        15.34,
+        12.86,
+        27.55,
+        15.38,
+        13.31,
+        12.44,
+        10.91,
+        9.49,
+        9.25
+      ],
+      "mediana": 12.44,
+      "medie": 13.29
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        1.78,
+        1.74,
+        1.3,
+        1.92,
+        1.38,
+        1.36,
+        1.97,
+        4.51,
+        0.0
+      ],
+      "mediana": 1.38,
+      "medie": 1.45
+    }
+  }
+}

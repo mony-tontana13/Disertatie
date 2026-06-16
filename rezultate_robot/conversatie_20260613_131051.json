@@ -1,0 +1,112 @@
+{
+  "id": "20260613_131051",
+  "domeniu": "banking",
+  "timestamp": "2026-06-13T13:10:51.352869",
+  "dificultate": "medie",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți al băncii Transilvania. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "antonia dumitru"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și ultimele 4 cifre ale cardului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "șase unu șase șapte 6 1 6 7"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am înțeles astăzi să plătesc ca supermarket și mi-a zis că tranzacția a fost refuzată cred că mi s-a blocat cardul pentru că nu era nu e vorba despre fonduri insuficiente am înțeles astăzi să plătesc ca supermarket și mi-a zis că tranzacția a fost refuzată cred că mi s-a blocat cardul pentru că nu era nu e vorba despre fonduri insuficiente"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru neplăcerea creată. Pentru a putea verifica blocarea cardului, aveți posibilitatea să îmi spuneți dacă ați introdus codul PIN corect în timpul tranzacției?"
+    },
+    {
+      "rol": "client",
+      "text": "da am introdus pinul corect da am introdus pinul corect"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru confirmare. Ați putea să-mi spuneți care este tipul cardului (debit sau credit)?"
+    },
+    {
+      "rol": "client",
+      "text": "ăă este card de debit ăă este card de debit"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru informație. Mai am nevoie să știu data expirării cardului, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "octombrie două mii douăzeci și nouă octombrie 2.029"
+    },
+    {
+      "rol": "operator",
+      "text": "Am verificat situația cardului dumneavoastră și acesta nu este blocat la nivel de sistem, însă există o restricție temporară aplicată tranzacțiilor pentru acest tip de plată, ceea ce poate cauza refuzul. Pentru a elimina această restricție, este necesară o actualizare a setărilor, care va fi realizată în următoarele 2-3 zile lucrătoare de către departamentul tehnic. Între timp, vă recomand să încercați o metodă alternativă de plată sau să contactați magazinul pentru o posibilă autorizare suplimentară. Vă mulțumesc pentru înțelegere și răbdare."
+    },
+    {
+      "rol": "client",
+      "text": "păi și de ce a apărut această limitare că nu înțeleg și cum adică de două trei zile lucrătoare e prea mult eu ce fac în timpul ăla banca și nu am și doar pe card pot să plătesc păi și de ce a apărut această limitare că nu înțeleg și cum adică de 2 3 zile lucrătoare e prea mult eu ce fac în timpul ăla banca și nu am și doar pe card pot să plătesc"
+    },
+    {
+      "rol": "operator",
+      "text": "Această limitare poate apărea din motive de securitate, pentru a proteja cardul dumneavoastră împotriva unor tranzacții suspecte sau neautorizate. În perioada de actualizare, vă recomand să utilizați plata online sau alte metode disponibile, iar departamentul nostru tehnic lucrează să rezolve situația cât mai repede posibil. Pot să vă ajut cu indicații privind alte opțiuni de plată sau aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "da nu mai zic nimic aia ce să fac e în regulă nu mai am întrebări aștept să-mi spuneți când se rezolvă toată prostia asta o zi bună la revedere da nu mai zic nimic aia ce să fac e în regulă nu mai am întrebări aștept să-mi spuneți când se rezolvă toată prostia asta o zi bună la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "card_blocat",
+    "satisfactie": "negativ",
+    "rezumat": "Clienta Antonia Dumitru a sunat la serviciul clienți pentru a sesiza refuzul tranzacției cu cardul său de debit la supermarket, deși fondurile erau suficiente. Operatorul a verificat și a informat-o că cardul nu este blocat, însă există o restricție temporară aplicată tranzacțiilor de acest tip pentru motive de securitate. Această restricție va fi eliminată în 2-3 zile lucrătoare printr-o actualizare tehnică. Clienta a exprimat nemulțumirea față de durata așteptării, iar operatorul a recomandat utilizarea unor metode alternative de plată până la rezolvarea situației."
+  },
+  "latente": {
+    "durata_totala": 362.02,
+    "stt": {
+      "valori": [
+        9.7,
+        8.75,
+        21.27,
+        9.15,
+        7.95,
+        10.53,
+        22.64,
+        22.99
+      ],
+      "mediana": 10.53,
+      "medie": 14.12
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        1.74,
+        1.53,
+        1.8,
+        2.21,
+        1.3,
+        0.0
+      ],
+      "mediana": 1.53,
+      "medie": 1.07
+    }
+  }
+}

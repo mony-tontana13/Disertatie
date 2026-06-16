@@ -234,12 +234,15 @@ def call_llm(prompt, max_tokens=150):
 def extrage_intentie_llm(dialog, domeniu):
     intentii = INTENTII_DOMENII.get(domeniu, [])
     prompt = (
-        "Esti un sistem de analiza pentru un robot de call-center din domeniul " + domeniu + ".\n"
-        "Analizeaza conversatia si returneaza DOAR numele intentiei, nimic altceva.\n\n"
-        "INTENTII DISPONIBILE: " + ", ".join(intentii) + ", alta_solicitare\n\n"
-        "CONVERSATIE:\n" + dialog + "\n\n"
-        "Daca niciuna nu se potriveste, returneaza: alta_solicitare\n"
-        "INTENTIE:"
+        "Lucrezi ca analist de date intr-un call-center din domeniul " + domeniu + ". "
+        "Sarcina ta zilnica este sa identifici motivul pentru care clientii suna, "
+        "pe baza transcripturilor conversatiilor cu operatorii.\n\n"
+        "REGULI:\n"
+        "- Include DOAR ce a cerut sau intrebat clientul, nu actiunile operatorului\n"
+        "- Alege DOAR din lista de intentii de mai jos\n\n"
+        "INTENTII DISPONIBILE: " + ", ".join(intentii) + "\n\n"
+        "Conversatie:\n" + dialog + "\n\n"
+        "De ce a sunat clientul? Raspunde cu una sau doua intentii din lista:"
     )
     raspuns, _ = call_llm(prompt, max_tokens=20)
     return extrage_intentie(raspuns, domeniu)
@@ -310,32 +313,102 @@ def verifica_detalii_complete(dialog, intentie):
 
 # ─── ANALIZA FINALA ───────────────────────────────────────────────────────────
 
+def adauga_punctuatie(dialog):
+    prompt = (
+        "Adauga punctuatie si majuscule corecte la urmatorul dialog transcris automat. "
+        "Nu modifica cuvintele, doar adauga semne de punctuatie unde e necesar.\n\n"
+        "DIALOG:\n" + dialog + "\n\nDIALOG CU PUNCTUATIE:"
+    )
+    raspuns, _ = call_llm(prompt, max_tokens=800)
+    return raspuns.strip()
+
+
 def analiza_finala(dialog_complet, domeniu):
     print("\n  [ANALIZA] Rulare analiza finala...")
 
-    # Satisfactie
+    # Adauga punctuatie pentru analiza mai precisa
+    dialog_pentru_analiza = adauga_punctuatie(dialog_complet)
+
+    # ── SATISFACTIE ───────────────────────────────────────────────────────────
+    EXEMPLE_LUNGI = {
+        "pozitiv": (
+            "OPERATOR: Buna ziua, cu ce va pot ajuta?\nCLIENT: Am o problema cu cardul, l-am pierdut.\nOPERATOR: L-am blocat imediat si va trimitem unul nou in 3 zile.\nCLIENT: Multumesc mult, sunteti foarte promti!",
+            "pozitiv"
+        ),
+        "neutru": (
+            "OPERATOR: Buna ziua.\nCLIENT: Vreau sa stiu statusul comenzii mele.\nOPERATOR: Comanda e in drum spre dumneavoastra, ajunge maine.\nCLIENT: Ok, am inteles. La revedere.",
+            "neutru"
+        ),
+        "negativ": (
+            "OPERATOR: Buna ziua.\nCLIENT: Am sunat a treia oara pentru aceeasi problema.\nOPERATOR: Imi pare rau, investigam.\nCLIENT: Bine, ce sa fac...",
+            "negativ"
+        ),
+    }
+    exemple_text = ""
+    for clasa, (dialog_ex, satisfactie_ex) in EXEMPLE_LUNGI.items():
+        exemple_text += "CONVERSATIE:\n" + dialog_ex + "\nSATISFACTIE: " + satisfactie_ex + "\n\n"
+
     prompt_s = (
-        "Esti un expert in analiza satisfactiei clientilor.\n\n"
-        "CONVERSATIE:\n" + dialog_complet + "\n\n"
+        "Esti un expert in analiza satisfactiei clientilor in conversatii de call-center.\n\n"
+        "ATENTIE: Conversatia este o transcriere automata fara punctuatie. "
+        "Interpreteaza cu atentie frazele ambigue tinand cont de context.\n\n"
+        "CONVERSATIE:\n" + dialog_pentru_analiza + "\n\n"
+        "SARCINA: Pe baza conversatiei de mai sus, determina nivelul de satisfactie al clientului.\n\n"
         "DEFINITII:\n"
-        "- pozitiv: clientul pleaca multumit si o exprima clar\n"
-        "- neutru: problema rezolvata dar clientul nu exprima emotii\n"
-        "- negativ: clientul pleaca frustrat, chiar daca accepta situatia\n\n"
-        "Raspunde DOAR cu: pozitiv, neutru sau negativ:"
+        "- pozitiv: problema rezolvata complet, clientul multumit si o exprima clar\n"
+        "- neutru: problema rezolvata tehnic dar clientul nu prezinta nicio emotie,\n"
+        "- negativ: clientul exprima suparare sau frustrare, uneori aceasta suparare nu este excesiva, dar ea tot exista\n"
+        "  (ironie clara, resemnare, replici taioase, incheie brusc conversatia)\n\n"
+        "REGULI:\n"
+        "1. Un singur comentariu negativ urmat de acceptare NU inseamna automat negativ\n"
+        "2. Uita-te la TONUL GENERAL si REZULTATUL FINAL al conversatiei\n"
+        "3. Frustrarea implicita conteaza: bine inteleg, ce sa fac, remarci ironice\n"
+        # "4. Daca clientul incheie politicos DAR fara entuziasm sau apreciere explicita, este neutru\n"
+        # "5. Daca clientul exprima apreciere clara, entuziasm si vorbeste foarte frumos, este pozitiv\n"
+        # "6. Daca clientul exprima frustrare clara in timpul conversatiei si incheie resemnat, este negativ\n"
+        "7. Ignora complet dificultatea sau complexitatea problemei — conteaza doar emotia clientului\n\n"
+        "EXEMPLE (acorda atentie diferentei dintre neutru si negativ):\n" + exemple_text +
+        "SATISFACTIE IDENTIFICATA:"
     )
     raspuns_s, _ = call_llm(prompt_s, max_tokens=10)
     satisfactie = extrage_satisfactie(raspuns_s)
 
-    # Rezumat
+    # ── REZUMAT ───────────────────────────────────────────────────────────────
     tip_info = TIP_REZUMAT.get(satisfactie, TIP_REZUMAT["neutru"])
+    exemple_rez = {
+        "SCURT": (
+            "CLIENT: Am pierdut cardul, il vreau blocat.\nOPERATOR: L-am blocat, va trimitem altul in 3 zile.",
+            "Clientul a sunat pentru a bloca un card pierdut. Operatorul a blocat cardul si a initiat emiterea unuia nou."
+        ),
+        "MEDIU": (
+            "CLIENT: Comanda mea nu a sosit.\nOPERATOR: A fost o intarziere la curier. Va ajunge maine.\nCLIENT: Ok.",
+            "Clientul a reclamat o comanda nelivrata la termen. Operatorul a verificat situatia si a identificat o intarziere la curier. Comanda urmeaza sa fie livrata a doua zi. Clientul a acceptat solutia."
+        ),
+        "LUNG": (
+            "CLIENT: Am sunat de trei ori pentru aceeasi problema cu factura.\nOPERATOR: Imi pare rau, investigam.\nCLIENT: Bine, astept.",
+            "Clientul a contactat call-center-ul pentru a treia oara in legatura cu aceeasi problema de facturare nerezolvata. Clientul si-a exprimat nemultumirea fata de lipsa unei solutii. Operatorul a initiat o investigatie. Problema ramane deschisa."
+        ),
+    }
+    tip = tip_info["tip"]
+    dialog_ex, rezumat_ex = exemple_rez[tip]
     prompt_r = (
-        "Genereaza un rezumat de tip " + tip_info["tip"] + " al conversatiei.\n"
-        "Lungime: " + str(tip_info["min_cuv"]) + "-" + str(tip_info["max_cuv"]) + " cuvinte. Limba: romana.\n\n"
-        "CONVERSATIE:\n" + dialog_complet + "\n\nREZUMAT:"
+        "Esti un expert in sumarizarea conversatiilor telefonice din call-center.\n\n"
+        "ATENTIE: Conversatia este o transcriere automata fara punctuatie. "
+        "Interpreteaza cu atentie frazele ambigue tinand cont de context.\n\n"
+        "CONVERSATIE:\n" + dialog_pentru_analiza + "\n\n"
+        "SARCINA: Genereaza un rezumat de tip " + tip + ".\n\n"
+        "CERINTE:\n"
+        "- Lungime: " + str(tip_info["min_cuv"]) + "-" + str(tip_info["max_cuv"]) + " cuvinte (" + tip_info["propozitii"] + ")\n"
+        "- Limba: romana\n"
+        "- Mentioneaza problema principala si rezultatul final\n"
+        "- Nu adauga informatii care nu apar in conversatie\n\n"
+        "EXEMPLU:\nCONVERSATIE:\n" + dialog_ex + "\nREZUMAT " + tip + ":\n" + rezumat_ex + "\n\n"
+        "REZUMAT " + tip + ":"
     )
     rezumat, _ = call_llm(prompt_r, max_tokens=200)
 
     return satisfactie, rezumat
+
 
 # ─── CONVERSATIE PRINCIPALA ───────────────────────────────────────────────────
 

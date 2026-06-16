@@ -1,0 +1,112 @@
+{
+  "id": "20260613_133322",
+  "domeniu": "medicina",
+  "timestamp": "2026-06-13T13:33:22.296172",
+  "dificultate": "simpla",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la clinica Romed Plus. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și data nașterii dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "în treisprezece aprilie două mii unu în 13 aprilie 2.001"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "doctorul mi-a dat o rețetă săptămâna trecută dar farmacia zice că nu nu-mi poate da medicamentele din de pe rețetă ce pot să fac în această privință doctorul mi-a dat o rețetă săptămâna trecută dar farmacia zice că nu nu-mi poate da medicamentele din de pe rețetă ce pot să fac în această privință"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația dumneavoastră. Care este numele medicamentului de pe rețetă?"
+    },
+    {
+      "rol": "client",
+      "text": "norofeni expresforte norofeni expresforte"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să-mi spuneți data emiterii rețetei pentru a putea verifica informațiile."
+    },
+    {
+      "rol": "client",
+      "text": "opt iunie două mii douăzeci și șase 8 iunie 2.026"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru informații. O să verific situația rețetei dumneavoastră și revin în scurt timp cu detalii."
+    },
+    {
+      "rol": "client",
+      "text": "în re aștept în re aștept"
+    },
+    {
+      "rol": "operator",
+      "text": "Rețeta dumneavoastră pentru Norofeni Expresforte este încă în termen valabil, însă farmacia poate avea o problemă cu stocul medicamentului sau cu codul de pe rețetă. Vă recomand să mergeți la o altă farmacie în care acest medicament să fie disponibil sau să solicitați farmacistului să verifice codul de pe rețetă în sistem. Dacă problema persistă, vă pot ajuta să contactați medicul pentru o reemitere rapidă. Doresc să vă ajut cu o legătură directă către doctor, dacă doriți."
+    },
+    {
+      "rol": "client",
+      "text": "ă da dacă puteți ar fi perfect mulțumes mulțumesc foarte mult sunteți foarte prompt ă da dacă puteți ar fi perfect mulțumes mulțumesc foarte mult sunteți foarte prompt"
+    },
+    {
+      "rol": "operator",
+      "text": "Mă bucur că vă pot fi de ajutor. O să vă conectez cu secretariatul medicului pentru a programa o reemitere a rețetei cât mai curând posibil. Pot să vă mai sprijin cu altceva sau aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "nu este destul foarte mult mulțumesc pentru ajutor o zi bună la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "problema_reteta",
+    "satisfactie": "pozitiv",
+    "rezumat": "Clienta a sesizat dificultăți în obținerea medicamentului Norofeni Expresforte prescris, iar operatorul a recomandat verificarea în altă farmacie și a oferit suport pentru reemiterea rețetei prin contactarea medicului."
+  },
+  "latente": {
+    "durata_totala": 306.32,
+    "stt": {
+      "valori": [
+        13.77,
+        9.27,
+        25.09,
+        7.98,
+        9.65,
+        8.75,
+        13.38,
+        16.09
+      ],
+      "mediana": 13.38,
+      "medie": 13.0
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        1.65,
+        1.81,
+        1.28,
+        2.77,
+        1.39,
+        0.0
+      ],
+      "mediana": 1.39,
+      "medie": 1.11
+    }
+  }
+}

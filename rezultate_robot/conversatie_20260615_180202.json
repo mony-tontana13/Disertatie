@@ -1,0 +1,102 @@
+{
+  "id": "20260615_180202",
+  "domeniu": "retail",
+  "timestamp": "2026-06-15T18:02:02.068310",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți E-shop. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "domnul dumitru antonia domnul dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și adresa de email asociată contului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia arond gmail punct com dumitru antonia arond gmail punct com"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am cumpărat online de la dumnea geacă dar nu îmi vine bine la talie și aș vrea să returnez și să comand alta am cumpărat online de la dumnea geacă dar nu îmi vine bine la talie și aș vrea să returnez și să comand alta"
+    },
+    {
+      "rol": "operator",
+      "text": "În regulă, pentru a putea procesa returul, îmi puteți furniza numărul comenzii, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "patru cinci șase 4 5 6"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru informație. Care este motivul returului pentru această comandă?"
+    },
+    {
+      "rol": "client",
+      "text": "cum v-am zis geacă nu mi-e bună din cauza mărimii cum v-am zis geacă nu mi-e bună din cauza mărimii"
+    },
+    {
+      "rol": "operator",
+      "text": "Am înțeles situația și vă pot ajuta cu returul. Pentru început, vă recomand să completați formularul de retur disponibil pe site-ul nostru în secțiunea „Contul meu”, folosind numărul comenzii 456. După ce primim coletul, vom verifica starea produsului înainte de a procesa returnarea banilor sau schimbul pentru o altă mărime. Dacă doriți, vă pot trimite și un ghid pas cu pas pe email pentru a facilita procesul."
+    },
+    {
+      "rol": "client",
+      "text": "în da vă rog ar fi perfect în da vă rog ar fi perfect"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru confirmare, vă trimit imediat pe email ghidul detaliat pentru retur și schimb. Dacă aveți nevoie de asistență suplimentară în procesul de completare sau orice altă întrebare, sunt aici să vă ajut. Cum pot să vă mai fiu de folos?"
+    },
+    {
+      "rol": "client",
+      "text": "nu mai am întrebări mulțumesc mult de tot vă doresc o zi bună în continuare numai bine la revedere nu mai am întrebări mulțumesc mult de tot vă doresc o zi bună în continuare numai bine la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "retur_produs",
+    "satisfactie": "pozitiv",
+    "rezumat": "Clientul a solicitat retur pentru o geacă ce nu îi vine bine la talie. Operatorul a explicat procesul de retur și i-a trimis un ghid detaliat pe email."
+  },
+  "latente": {
+    "durata_totala": 268.48,
+    "stt": {
+      "valori": [
+        7.5,
+        11.27,
+        18.08,
+        7.14,
+        12.78,
+        8.15,
+        17.44
+      ],
+      "mediana": 11.27,
+      "medie": 11.77
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        6.79,
+        2.3,
+        2.73,
+        1.56,
+        0.0
+      ],
+      "mediana": 1.56,
+      "medie": 1.91
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "20260615_192500",
+  "domeniu": "banking",
+  "timestamp": "2026-06-15T19:25:00.128028",
+  "dificultate": "simpla",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți al băncii Transilvania. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "de dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și ultimele 4 cifre ale cardului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "unu doi trei patru 1 2 3 4"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "cardul meu nu mai funcționează de azi dimineață am încercat să plătesc și a fost refuzat"
+    },
+    {
+      "rol": "operator",
+      "text": "Îmi pare rău pentru inconvenientul creat. Ați putea confirma, vă rog, dacă cardul este blocat sau există altă problemă?"
+    },
+    {
+      "rol": "client",
+      "text": "păi e blocat da așa pare păi e blocat da așa pare"
+    },
+    {
+      "rol": "operator",
+      "text": "Am deblocat imediat cardul dumneavoastră, puteți să-l folosiți din nou în câteva minute. Pentru siguranță, vă recomand să încercați o tranzacție mică sau să introduceți codul PIN. Dacă întâmpinați alte probleme, sunt aici să vă ajut. Vă mulțumesc pentru răbdare!"
+    },
+    {
+      "rol": "client",
+      "text": "a ok nu mulțumesc la revedere a ok nu mulțumesc la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "card_blocat",
+    "satisfactie": "neutru",
+    "rezumat": "Clienta Dumitru Antonia a sesizat că cardul său nu mai funcționează și pare blocat. Operatorul a confirmat situația și a deblocat cardul imediat, recomandând efectuarea unei tranzacții mici pentru verificare. Clienta a mulțumit și a încheiat convorbirea. Problemă rezolvată prompt."
+  },
+  "latente": {
+    "durata_totala": 175.12,
+    "stt": {
+      "valori": [
+        12.26,
+        8.81,
+        15.65,
+        9.65,
+        11.58
+      ],
+      "mediana": 11.58,
+      "medie": 11.59
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        1.4,
+        2.39,
+        0.0
+      ],
+      "mediana": 0.0,
+      "medie": 0.76
+    }
+  }
+}

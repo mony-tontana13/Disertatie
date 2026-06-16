@@ -28,11 +28,11 @@ INTENTII_DOMENII = {
 }
 
 SALUT_DOMENII = {
-    "banking":          "Bună ziua, ați sunat la serviciul clienți al băncii.",
-    "medicina":         "Bună ziua, ați sunat la clinica noastră.",
-    "retail":           "Bună ziua, ați sunat la serviciul clienți.",
-    "telecom":          "Bună ziua, ați contactat serviciul clienți al operatorului.",
-    "servicii_publice": "Bună ziua, ați sunat la serviciile publice.",
+    "banking":          "Bună ziua, ați sunat la serviciul clienți al băncii Transilvania.",
+    "medicina":         "Bună ziua, ați sunat la clinica Romed Plus.",
+    "retail":           "Bună ziua, ați sunat la serviciul clienți E-shop.",
+    "telecom":          "Bună ziua, ați contactat serviciul clienți al Telenet.",
+    "servicii_publice": "Bună ziua, ați sunat la serviciile publice de asistența agricolă.",
 }
 
 # Replici predefinite de identificare — cerute in ordine, fara LLM
@@ -77,9 +77,9 @@ NUME_DOMENII = {
 }
 
 TIP_REZUMAT = {
-    "pozitiv": {"tip": "SCURT",  "min_cuv": 20, "max_cuv": 40},
-    "neutru":  {"tip": "MEDIU",  "min_cuv": 40, "max_cuv": 70},
-    "negativ": {"tip": "LUNG",   "min_cuv": 60, "max_cuv": 100},
+    "pozitiv": {"tip": "SCURT",  "min_cuv": 20, "max_cuv": 40,  "propozitii": "1-2 propozitii"},
+    "neutru":  {"tip": "MEDIU",  "min_cuv": 40, "max_cuv": 70,  "propozitii": "3-4 propozitii"},
+    "negativ": {"tip": "LUNG",   "min_cuv": 60, "max_cuv": 100, "propozitii": "5-7 propozitii"},
 }
 
 # ─── DIFICULTATE ALEATOARE ────────────────────────────────────────────────────
@@ -104,10 +104,11 @@ NIVELURI_DIFICULTATE = {
     "complexa": {
         "pondere": 0.45,
         "instructiune": (
-            "Problema clientului nu are o solutie imediata. "
-            "Poti doar inregistra cazul si oferi un termen lung de rezolvare. "
-            "Nu promite nimic concret ce nu poti livra acum. "
-            "Tonul tau este empatic dar limitele sunt clare si ferme."
+            "Problema clientului nu are o solutie imediata completa. "
+            "Insa ofera INTOTDEAUNA cel putin un pas concret pe care clientul il poate face acum "
+            "(ex: trimitere email, numar de referinta, departament de contact, termen clar). "
+            "Nu lasa clientul fara nicio actiune concreta. "
+            "Tonul tau este empatic dar limitele sunt explicate clar."
         ),
     },
 }

@@ -1,0 +1,122 @@
+{
+  "id": "20260615_183917",
+  "domeniu": "servicii_publice",
+  "timestamp": "2026-06-15T18:39:17.301711",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciile publice de asistența agricolă. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și numărul CNP sau al documentului de identitate, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "6 0 1 0 4 1 3 4 6 0 9 3"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am depus o cerere pentru ajutorul social pentru teren era acum o lună și am primit o respingere fără nicio explicație clară vreau să contest"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a putea verifica situația dosarului dumneavoastră, îmi puteți comunica, vă rog, numărul dosarului aferent cererii depuse?"
+    },
+    {
+      "rol": "client",
+      "text": "da dosarul este 7 8 9 3"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația și îmi pare rău pentru inconvenient. În acest moment, vă recomand să trimiteți o contestație scrisă către departamentul de asistență socială, menționând numărul dosarului 7893 și solicitând clarificări privind motivele respingerii. Puteți trimite contestația prin e-mail la adresa asistenta.sociala@serviciipublice.ro sau la sediul nostru, iar răspunsul poate dura până la 15 zile lucrătoare. Dacă doriți, vă pot ajuta să redactați contestația."
+    },
+    {
+      "rol": "client",
+      "text": "cincisprezece zile păi enorm cincisprezece zile eu am nevoie de banii ăia acuma 15 zile păi enorm 15 zile eu am nevoie de banii ăia acuma"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg perfect urgența situației dumneavoastră și frustrările pe care le aveți legate de timpul de așteptare. Din păcate, procesarea contestațiilor necesită verificări amănunțite pentru a asigura corectitudinea deciziei. Pot să vă orientez către un serviciu de urgență sau să verific dacă există vreo posibilitate de accelerare a procesului în cazul dumneavoastră; doriți acest lucru?"
+    },
+    {
+      "rol": "client",
+      "text": "da vă rog verificați dacă se poate grăbi că nu n-am timp și am nevoie de banii ăștia acuma da vă rog verificați dacă se poate grăbi că nu n-am timp și am nevoie de banii ăștia acuma"
+    },
+    {
+      "rol": "operator",
+      "text": "Am verificat, iar în cazuri speciale cu caracter urgent putem transmite cererea dumneavoastră către o prioritate internă, însă decizia finală depinde de departamentul de asistență socială. Vă rog să-mi confirmați dacă doriți să inițiez acest demers imediat pentru a vă sprijini cât mai repede posibil. Pot să vă ajut cu altceva sau aveți întrebări suplimentare?"
+    },
+    {
+      "rol": "client",
+      "text": "nu n-am nici întrebări suplimentare da vă rog frumos doar inițial ăla mai repede nu n-am nici întrebări suplimentare da vă rog frumos doar inițial ăla mai repede"
+    },
+    {
+      "rol": "operator",
+      "text": "Am început deja procedura de prioritizare a dosarului dumneavoastră și vă voi ține la curent imediat ce primim un răspuns din partea departamentului. Vă mulțumesc pentru răbdare și înțelegere în această perioadă dificilă. Pot să vă mai ajut cu ceva în acest moment?"
+    },
+    {
+      "rol": "client",
+      "text": "cam cât durează până îmi veți da un răspuns cam cât durează până îmi veți da un răspuns"
+    },
+    {
+      "rol": "operator",
+      "text": "De regulă, răspunsul prioritar poate veni în câteva zile lucrătoare, însă depinde și de volumul de solicitări pe care îl gestionează departamentul. Voi face tot posibilul să vă informez cât mai curând posibil. Mai pot să vă ajut cu altceva sau aveți nevoie de alte detalii?"
+    },
+    {
+      "rol": "client",
+      "text": "nu nu lăsați e destul sper să vă mișcați cât mai repede că chiar nu am timp de dumneavoastră o zi bună la revedere nu nu lăsați e destul sper să vă mișcați cât mai repede că chiar nu am timp de dumneavoastră o zi bună la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "dosar_respins",
+    "satisfactie": "neutru",
+    "rezumat": "Clienta a contactat serviciul public de asistență agricolă pentru a contesta respingerea cererii de ajutor social pentru teren, primind un răspuns fără explicații. Operatorul a recomandat trimiterea unei contestații scrise și a oferit posibilitatea de prioritizare a dosarului din cauza urgenței. A fost inițiată procedura de prioritizare, urmând a fi anunțată clienta despre răspuns."
+  },
+  "latente": {
+    "durata_totala": 464.6,
+    "stt": {
+      "valori": [
+        13.18,
+        21.08,
+        23.43,
+        14.91,
+        14.47,
+        13.67,
+        12.87,
+        10.29,
+        16.87
+      ],
+      "mediana": 14.47,
+      "medie": 15.64
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        2.6,
+        2.49,
+        1.91,
+        1.78,
+        1.87,
+        4.1,
+        0.0
+      ],
+      "mediana": 1.87,
+      "medie": 1.64
+    }
+  }
+}

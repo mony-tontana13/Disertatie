@@ -1,0 +1,102 @@
+{
+  "id": "20260613_132724",
+  "domeniu": "medicina",
+  "timestamp": "2026-06-13T13:27:24.608092",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la clinica Romed Plus. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și data nașterii dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "treisprezece aprilie două mii unu 13 aprilie 2.001"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am făcut ăă acum cinci zile niște analize de sânge și încă nu am primit niciun rezultat și aș vrea să știu dacă sunt gata am făcut ăă acum 5 zile niște analize de sânge și încă nu am primit niciun rezultat și aș vrea să știu dacă sunt gata"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a verifica rezultatele, îmi puteți spune data exactă a recoltării analizelor, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "șapte iunie două mii douăzeci și șapte șase 7 iunie 2.027 6"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru informație. Pentru a confirma, recoltarea s-a făcut pe 6 sau 7 iunie 2027?"
+    },
+    {
+      "rol": "client",
+      "text": "ăă s-a făcut pe data de șapte iunie două mii douăzeci și șase ăă s-a făcut pe data de 7 iunie 2.026"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru clarificare. Rezultatele analizelor efectuate pe 7 iunie 2026 ar fi trebuit să fie disponibile până acum, însă uneori pot apărea întârzieri în procesare. Vă recomand să trimiteți un email la departamentul Laborator, la adresa laborator@romedplus.ro, menționând numele și data recoltării, pentru a solicita o actualizare. Dacă doriți, pot trimite eu o solicitare internă pentru dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "da dacă ați putea să faceți asta ar fi minunat mulțumesc mult de tot da dacă ați putea să faceți asta ar fi minunat mulțumesc mult de tot"
+    },
+    {
+      "rol": "operator",
+      "text": "Voi transmite imediat solicitarea dumneavoastră către departamentul Laborator cu toate detaliile oferite. Vă voi anunța în momentul în care primesc un răspuns. Pot să vă ajut cu altceva sau aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "nu mai am alte întrebări mulțumesc foarte mult de ajutor și o zi bună în continuare numai bine la revedere nu mai am alte întrebări mulțumesc foarte mult de ajutor și o zi bună în continuare numai bine la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "rezultate_analize",
+    "satisfactie": "neutru",
+    "rezumat": "Clienta a sunat pentru a afla rezultatele analizelor de sânge recoltate pe 7 iunie 2026, neluate încă după cinci zile. Operatorul a explicat posibilitatea unor întârzieri și a oferit să trimită o solicitare internă către departamentul Laborator. Clienta a acceptat și a mulțumit pentru ajutor, fără alte întrebări."
+  },
+  "latente": {
+    "durata_totala": 274.15,
+    "stt": {
+      "valori": [
+        9.3,
+        9.47,
+        17.88,
+        12.59,
+        12.29,
+        12.03,
+        15.42
+      ],
+      "mediana": 12.29,
+      "medie": 12.71
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        7.34,
+        1.32,
+        2.14,
+        1.14,
+        0.0
+      ],
+      "mediana": 1.14,
+      "medie": 1.71
+    }
+  }
+}

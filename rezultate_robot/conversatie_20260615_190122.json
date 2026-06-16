@@ -1,0 +1,92 @@
+{
+  "id": "20260615_190122",
+  "domeniu": "medicina",
+  "timestamp": "2026-06-15T19:01:22.546157",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la clinica Romed Plus. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "antonia dumitru antonia dumitru"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și data nașterii dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "treisprezece aprilie două mii unu 13 aprilie 2.001"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "păi păi am făcut și eu niște analize acum patru zile și o să știu și eu dacă sunt gata că aștept de atunci și încă nu mi-a venit nimic păi păi am făcut și eu niște analize acum 4 zile și o să știu și eu dacă sunt gata că aștept de atunci și încă nu mi-a venit nimic"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a verifica rezultatele, mă puteți spune, vă rog, data exactă când ați făcut recoltarea analizelor?"
+    },
+    {
+      "rol": "client",
+      "text": "păi nu mai știu nu aveți dumneavoastră datele astea nu în conturi cred că pe treisprezece iunie le am făcut păi nu mai știu nu aveți dumneavoastră datele astea nu în conturi cred că pe 13 iunie le am făcut"
+    },
+    {
+      "rol": "operator",
+      "text": "Am verificat în sistem și nu apar încă rezultatele pentru analiza făcută pe 13 iunie, posibil să fie în procesare. Vă recomand să ne contactați din nou peste două zile pentru o actualizare, iar între timp puteți verifica și în contul dumneavoastră online dacă serviciul este disponibil. Dacă doriți, pot transmite o solicitare specială către departamentul de laborator pentru a accelera verificarea. Cum doriți să procedăm?"
+    },
+    {
+      "rol": "client",
+      "text": "ce durează atâta că sunt câteva analize nu-i nimic complicat eu am operație în două zile și am nevoie de aceste analize cum facem ce durează atâta că sunt câteva analize nu-i nimic complicat eu am operație în 2 zile și am nevoie de aceste analize cum facem"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația dumneavoastră și urgența analizelor înainte de operație. Voi transmite imediat o cerere de urgență către laborator pentru a prioritiza rezultatele, iar noi vă vom contacta imediat ce vor fi gata. Mai pot să vă ajut cu altceva sau aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "nu nu mai am nimic de zis nu nu mai am nimic de zis"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "rezultate_analize",
+    "satisfactie": "negativ",
+    "rezumat": "Clienta Antonia Dumitru a sunat pentru a verifica stadiul rezultatelor analizelor efectuate în data de 13 iunie, care erau întârziate după patru zile de așteptare. Operatorul a confirmat că rezultatele nu sunt încă disponibile și a recomandat să contacteze din nou în două zile sau să verifice online. Datorită urgenței, clienta a menționat că are o operație în două zile și are nevoie urgentă de analize. Operatorul a promis să transmită o cerere de urgență către laborator pentru a prioritiza rezultatele și a asigurat că va contacta clienta imediat ce vor fi gata. Clienta nu a mai avut alte întrebări."
+  },
+  "latente": {
+    "durata_totala": 261.06,
+    "stt": {
+      "valori": [
+        8.12,
+        10.5,
+        16.19,
+        18.65,
+        20.72,
+        9.33
+      ],
+      "mediana": 16.19,
+      "medie": 13.92
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        1.9,
+        3.33,
+        2.38,
+        0.0
+      ],
+      "mediana": 1.9,
+      "medie": 1.27
+    }
+  }
+}

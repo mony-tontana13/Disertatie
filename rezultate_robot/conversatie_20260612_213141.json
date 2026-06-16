@@ -1,0 +1,65 @@
+{
+  "id": "20260612_213141",
+  "domeniu": "retail",
+  "timestamp": "2026-06-12T21:31:41.173838",
+  "dificultate": "medie",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și adresa de email asociată contului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia arond gmail punct com dumitru antonia arond gmail punct com"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am comandat acum ce un cea de la dumneavoastră și încă nu a ajuns comanda ce s-a întâmplat cu ea am comandat acum ce un cea de la dumneavoastră și încă nu a ajuns comanda ce s-a întâmplat cu ea"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg că doriți informații despre comanda dvs. Mă puteți oferi numărul comenzii pentru a verifica statusul acesteia?"
+    },
+    {
+      "rol": "client",
+      "text": "da cum să nu rca doi doi patru cinci unu șapte da cum să nu rca 2 2 4 5 1 7"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru informații. Am verificat comanda cu numărul RCA224517 și vă pot confirma că a fost procesată, însă livrarea este întârziată din cauza unor probleme la curier, care nu depind de noi. Vă asigur că urmărim situația constant și vă vom contacta imediat ce avem un termen clar de livrare. În cazul în care doriți, pot iniția solicitarea unui punct de status suplimentar către departamentul responsabil. Vă mulțumim pentru răbdare și înțelegere."
+    },
+    {
+      "rol": "client",
+      "text": "am înțeles mulțumesc frumos da dacă se poate iniția solicitarea pentru status am înțeles mulțumesc frumos da dacă se poate iniția solicitarea pentru status"
+    },
+    {
+      "rol": "operator",
+      "text": "Cu plăcere! Am transmis deja solicitarea pentru un punct de status și vă vom informa cât de curând primim un răspuns. Pot să vă ajut cu altceva sau aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "nu nu este perfect în regulă mulțumesc frumos o zi bună la revedere nu nu este perfect în regulă mulțumesc frumos o zi bună la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "comanda_intarziata",
+    "satisfactie": "pozitiv",
+    "rezumat": "Clientul a sunat pentru a afla statusul comenzii întârziate. Operatorul a verificat și a inițiat o solicitare suplimentară, asigurând informarea clientului. Conversația s-a încheiat amiabil."
+  }
+}

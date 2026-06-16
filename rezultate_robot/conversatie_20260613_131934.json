@@ -1,0 +1,132 @@
+{
+  "id": "20260613_131934",
+  "domeniu": "banking",
+  "timestamp": "2026-06-13T13:19:34.610237",
+  "dificultate": "simpla",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți al băncii Transilvania. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "antonia dumitru antonia dumitru"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și ultimele 4 cifre ale cardului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "unu doi patru doi 1 2 4 2"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am primit un mesaj că rata mea la credit a crescut poate de luna trecută și nu înțeleg de ce am primit un mesaj că rata mea la credit a crescut poate de luna trecută și nu înțeleg de ce"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a putea verifica situația creditului dumneavoastră, vă rog să îmi comunicați numărul contractului de credit."
+    },
+    {
+      "rol": "client",
+      "text": "ăă patru cinci șase t u x ăă 4 5 6 t u x"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să verificați și să îmi transmiteți doar cifrele din numărul contractului, fără litere. Dacă nu aveți numărul la îndemână, mă puteți ajuta cu CNP-ul dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "ăă păi numerele sunt patru cinci șase ăă păi numerele sunt 4 5 6"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru clarificare. Atunci, vă rog să îmi comunicați CNP-ul dumneavoastră pentru a continua verificarea."
+    },
+    {
+      "rol": "client",
+      "text": "șase zero unu zero patru treisprezece patru șase patru șase zero zero 6 0 1 0 4 13 4 6 4 6 0 0"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să-mi transmiteți din nou CNP-ul, deoarece conține o cifră care nu este validă (treisprezece)."
+    },
+    {
+      "rol": "client",
+      "text": "șase zero unu zero patru unu trei patru șase patru șase zero zero 6 0 1 0 4 1 3 4 6 4 6 0 0"
+    },
+    {
+      "rol": "operator",
+      "text": "Am verificat situația creditului dumneavoastră și modificarea ratei se datorează recalculării dobânzii variabile în baza indicelui ROBOR, care a crescut recent. Pentru a ajusta suma exactă a ratei, vă propun să activați opțiunea de plată automată din contul curent, astfel rata va fi ajustată și debitată corect în fiecare lună. Dacă doriți, pot activa acum această facilitate pentru dumneavoastră, iar notificările vor veni regulat cu sumarul actualizat. Cum doriți să procedăm?"
+    },
+    {
+      "rol": "client",
+      "text": "da normal activat această ajutare a ratei păi și eu trebuie totuși să o plătesc acuma sau cum se aplică chestia asta cum se modifică că eu nu vreau să plătesc după ce s-a schimbat asta că eu nu știam de așa ceva da normal activat această ajutare a ratei păi și eu trebuie totuși să o plătesc acuma sau cum se aplică chestia asta cum se modifică că eu nu vreau să plătesc după ce s-a schimbat asta că eu nu știam de așa ceva"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg preocuparea dumneavoastră, plata trebuie efectuată lunar conform contractului, iar activarea plății automate asigură doar că suma corectă, inclusiv modificările dobânzii, este preluată automat, fără întârzieri. Această facilitate nu elimină obligația de plată, ci simplifică procesul și ajută la evitarea penalităților. Pot activa acum plata automată dacă doriți, iar dacă aveți nevoie, vă explic în detaliu cum se calculează rata; pot să vă ajut cu ceva anume legat de acest aspect?"
+    },
+    {
+      "rol": "client",
+      "text": "nu lăsați aia e plătesc așa da activați toată automată dar aș vrea totuși atunci când se schimbă rata la dobândă să mă anunțe din timp să nu mă trezesc că trebuie să plătesc și eu nu știu ce trebuie să plătesc nu lăsați aia e plătesc așa da activați toată automată dar aș vrea totuși atunci când se schimbă rata la dobândă să mă anunțe din timp să nu mă trezesc că trebuie să plătesc și eu nu știu ce trebuie să plătesc"
+    },
+    {
+      "rol": "operator",
+      "text": "Am activat opțiunea de plată automată pentru dumneavoastră și vă asigur că veți primi notificări înainte de fiecare modificare a ratei, astfel încât să fiți mereu informat despre suma de plată. Dacă doriți, pot verifica și alte detalii legate de credit sau serviciile noastre. Cum pot să vă mai ajut?"
+    },
+    {
+      "rol": "client",
+      "text": "nu mai am alte întrebări e destul la revedere nu mai am alte întrebări e destul la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "problema_credit",
+    "satisfactie": "neutru",
+    "rezumat": "Clienta a sesizat o creștere a ratei la credit fără o explicație clară. Operatorul a verificat și a explicat că majorarea se datorează recalculării dobânzii variabile, pe baza creșterii indicelui ROBOR. I s-a propus activarea plății automate pentru a ajusta corect rata, iar clienta a fost de acord, solicitând clarificări privind plata după modificare."
+  },
+  "latente": {
+    "durata_totala": 479.14,
+    "stt": {
+      "valori": [
+        7.14,
+        9.72,
+        14.38,
+        12.95,
+        8.25,
+        13.48,
+        16.44,
+        29.73,
+        33.43,
+        13.33
+      ],
+      "mediana": 13.48,
+      "medie": 15.88
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        1.27,
+        1.48,
+        1.46,
+        1.16,
+        2.93,
+        2.33,
+        1.51,
+        0.0
+      ],
+      "mediana": 1.46,
+      "medie": 1.21
+    }
+  }
+}

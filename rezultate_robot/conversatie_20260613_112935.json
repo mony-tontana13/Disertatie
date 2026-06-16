@@ -1,0 +1,97 @@
+{
+  "id": "20260613_112935",
+  "domeniu": "telecom",
+  "timestamp": "2026-06-13T11:29:35.119437",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați contactat serviciul clienți al Telenet. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "da dumitru antonia da dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și numărul de telefon al abonamentului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "sigur zero șapte doi zero șase unu nouă trei nouă nouă sigur 0 7 2 0 6 1 9 3 9 9"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "păi am o problemă cu semnalul de vreo câteva zile se tot întrerupe și nu prea pot lucra de acasă că e foarte instabil internetul păi am o problemă cu semnalul de vreo câteva zile se tot întrerupe și nu prea pot lucra de acasă că e foarte instabil internetul"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația legată de conexiunea internet. Aș putea să știu adresa exactă unde întâmpinați această problemă, pentru a verifica rețeaua din zonă?"
+    },
+    {
+      "rol": "client",
+      "text": "ăă da ce strada pe care s stau se numește pădurețu numărul treizeci și șapte ăă da ce strada pe care s stau se numește pădurețu numărul 37"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru informații. Am înregistrat problema de semnal la adresa dumneavoastră și o transmit departamentului tehnic pentru investigații suplimentare. Din păcate, acest tip de incident necesită o perioadă mai lungă pentru a fi remediat complet. Vă asigur că vom monitoriza situația și vă vom contacta când avem noutăți. Între timp, vă recomand să verificați echipamentele și să le reporniți, dacă nu ați făcut-o deja."
+    },
+    {
+      "rol": "client",
+      "text": "am repornit deja tot am testat am scos din priză am băgat din nou am pornit am închis și așa mai departe dar nu pot să stau fără internet pentru că eu lucrez de acasă nu se poate grăbi departamentul tehnic am repornit deja tot am testat am scos din priză am băgat din nou am pornit am închis și așa mai departe dar nu pot să stau fără internet pentru că eu lucrez de acasă nu se poate grăbi departamentul tehnic"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg perfect cât de important este să aveți o conexiune stabilă, mai ales când lucrați de acasă, și îmi pare rău pentru disconfortul creat. Voi marca situația dumneavoastră ca prioritară, pentru a urgenta intervenția colegilor tehnici, însă uneori timpul de rezolvare depinde de complexitatea problemei detectate. Pot verifica dacă există vreo soluție temporară alternativă sau pachete pentru lucrul remote, vă interesează?"
+    },
+    {
+      "rol": "client",
+      "text": "da normal da normal"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă pot oferi un pachet temporar cu internet mobil 4G/5G, care să vă susțină activitatea până la remedierea problemei. Dacă doriți, pot să vă trimit detalii despre costuri și cum puteți activa acest serviciu rapid. Vă pot fi de folos cu altceva sau mai aveți întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "păi stați puțin nu-mi dați acest pachet pe gratis că practic e vina dumneavoastră că eu nu am internet și trebuie să-mi iau un pachet nou mi s-ar părea normal să-mi l dați fără să mai plătesc păi stați puțin nu-mi dați acest pachet pe gratis că practic e vina dumneavoastră că eu nu am internet și trebuie să-mi iau un pachet nou mi s-ar părea normal să-mi l dați fără să mai plătesc"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg nemulțumirea dumneavoastră și apreciez răbdarea de care dați dovadă în această situație dificilă. Voi transmite solicitarea pentru o compensație sau oferirea temporară a pachetului gratuit către departamentul responsabil, dar decizia finală depinde de analiza internă. Pot să verific și alte opțiuni pentru a vă sprijini pe perioada aceasta, doriți să fac acest lucru?"
+    },
+    {
+      "rol": "client",
+      "text": "da bine hai spuneți mi ce alte opțiuni am da bine hai spuneți mi ce alte opțiuni am"
+    },
+    {
+      "rol": "operator",
+      "text": "Pe lângă pachetul mobil temporar, vă pot propune reducerea tarifară provizorie sau extinderea termenului pentru plata facturii, astfel încât să aveți un mic confort financiar până la remedierea problemei. De asemenea, putem programa o verificare tehnică suplimentară la domiciliu pentru a identifica punctual defectul. Doriți să vă ofer detalii despre aceste alternative sau să le activăm imediat? Pot ajuta cu altceva?"
+    },
+    {
+      "rol": "client",
+      "text": "da da vă rog activați aceste opțiuni și aștept și verificarea tehnică de acasă pentru că nu este chiar prima oară când mi se întâmplă da da vă rog activați aceste opțiuni și aștept și verificarea tehnică de acasă pentru că nu este chiar prima oară când mi se întâmplă"
+    },
+    {
+      "rol": "operator",
+      "text": "Am activat reducerea tarifară provizorie și am prelungit termenul pentru plata facturii, iar solicitarea pentru verificarea tehnică la domiciliu este programată cât mai curând posibil. Vă asigur că ne preocupăm să vă oferim o rezolvare eficientă, mai ales că problema persistă. Mai pot să vă ajut cu altceva sau aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "nu nu este ok mulțumesc la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "problema_internet",
+    "satisfactie": "neutru",
+    "rezumat": "Clienta Dumitru Antonia a raportat probleme cu semnalul instabil și internetul care se întrerupe, afectându-i munca de acasă. Operatorul a înregistrat problema și a transmis-o departamentului tehnic, menționând că remedierea poate dura. Pentru a ajuta, i s-a propus un pachet temporar de internet mobil 4G/5G până la rezolvarea situației."
+  }
+}

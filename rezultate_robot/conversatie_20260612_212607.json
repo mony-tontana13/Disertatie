@@ -1,0 +1,81 @@
+{
+  "id": "20260612_212607",
+  "domeniu": "servicii_publice",
+  "timestamp": "2026-06-12T21:26:07.289446",
+  "dificultate": "medie",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciile publice. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonio dumitru antonio"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și numărul CNP sau al documentului de identitate, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "cnp ul șase zero unu zero patru treisprezece patruzeci și șase zero zero nouăzeci și trei cnp ul 6 0 1 0 4 13 46 0 0 93"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am primit o decizie de respingere a dosarului de subvenție și nu înțeleg de ce aș vrea să o contest am primit o decizie de respingere a dosarului de subvenție și nu înțeleg de ce aș vrea să o contest"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a putea înregistra contestația, am nevoie să îmi comunicați numărul deciziei pe care doriți să o contestați. Îmi puteți transmite această informație?"
+    },
+    {
+      "rol": "client",
+      "text": "da da sigur patru cinci trei doi nouă doi unu cinci doi da da sigur 4 5 3 2 9 2 1 5 2"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă pot înregistra contestația pentru decizia nr. 453292152, însă evaluarea detaliată și soluționarea finală sunt realizate de departamentul specializat, ceea ce poate dura până la 30 de zile calendaristice. Pentru a accelera procesul, vă recomand să trimiteți documentele suplimentare pe care le considerați relevante la adresa de email indicată în decizie. Dacă doriți, vă pot furniza acum aceste informații de contact."
+    },
+    {
+      "rol": "client",
+      "text": "da vă rog dați mi și informațiile de contact dar spuneți mi și ce documente ar fi util să încarc pentru că eu nu știu da vă rog dați mi și informațiile de contact dar spuneți mi și ce documente ar fi util să încarc pentru că eu nu știu"
+    },
+    {
+      "rol": "operator",
+      "text": "Adresa de email pentru transmiterea documentelor este contestatii@serviciipublice.ro. Vă recomand să trimiteți copii ale actului de identitate, dovezi care susțin dreptul la subvenție (facturi, contracte) și orice alte documente care pot dovedi situația dumneavoastră financiară sau socială. Pot să vă ajut cu altceva sau aveți și alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "nu cred că este destul de clar mulțumesc frumos deci acuma totul ați trimis contestația și eu doar trebuie să mai trimit aceste documente și să aștept nu nu cred că este destul de clar mulțumesc frumos deci acuma totul ați trimis contestația și eu doar trebuie să mai trimit aceste documente și să aștept nu"
+    },
+    {
+      "rol": "operator",
+      "text": "Da, exact, am înregistrat contestația în sistem, iar acum este important să trimiteți documentele menționate pentru a susține cererea dumneavoastră. După ce le primiți și verifică departamentul responsabil, veți primi un răspuns în termenul stabilit. Pot să vă ajut cu alte detalii sau aveți ceva nelămurit?"
+    },
+    {
+      "rol": "client",
+      "text": "nu nu cred că e destul de clar mulțumesc frumos o zi bună"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg că situația poate părea complicată, vă stau la dispoziție în continuare dacă aveți nevoie de clarificări suplimentare. Sper să se rezolve cât mai curând pentru dumneavoastră. Pot să vă mai ajut cu ceva pentru moment?"
+    },
+    {
+      "rol": "client",
+      "text": "cum au zis nu e în regulă o zi bună la revedere cum au zis nu e în regulă o zi bună la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "contestatie_decizie",
+    "satisfactie": "negativ",
+    "rezumat": "Clientul Dumitru Antonio a contactat serviciile publice pentru a contesta o decizie de respingere a dosarului de subvenție, exprimând dificultăți în înțelegerea motivelor respingerii. Operatorul i-a înregistrat contestația, oferindu-i numărul deciziei și informându-l că soluționarea poate dura până la 30 de zile calendaristice. De asemenea, i-a indicat adresa de email pentru transmiterea documentelor justificative necesare, precum actul de identitate și dovezi financiare sau sociale. Clientul a confirmat înțelegerea procesului și a mulțumit, deși a rămas nesigur privind claritatea informațiilor primite."
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "20260615_192150",
+  "domeniu": "banking",
+  "timestamp": "2026-06-15T19:21:50.152966",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți al băncii Transilvania. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și ultimele 4 cifre ale cardului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "unu doi trei patru 1 2 3 4"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "da ăă am făcut ăă acum o oră o tranzacție un transfer greșit și am trimis 200 de lei pe un iban pe care nu-l cunosc e un iban greșit ăă și aș vrea să recuperez urgent"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a verifica tranzacția, vă rog să îmi spuneți data exactă sau aproximativă când a fost făcut transferul."
+    },
+    {
+      "rol": "client",
+      "text": "păi n ați auzit as deci cincisprezece iunie acum o oră deci la ora șase păi n ați auzit as deci 15 iunie acum o oră deci la ora 6"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația și îmi pare rău pentru inconvenient. În acest moment, pentru a încerca recuperarea fondurilor, vă recomand să trimiteți un e-mail urgent la departamentul de recuperări tranzacții la adresa recuperari@banca.ro, menționând detaliile transferului (data, ora, suma și IBAN-ul greșit). Vă rog să specificați și un număr de contact, astfel încât colegii să vă poată contacta cât mai rapid. Acest proces poate dura câteva zile, iar eu vă voi putea urmări stadiul solicitării dacă rețineți numărul de înregistrare pe care vi-l vor comunica."
+    },
+    {
+      "rol": "client",
+      "text": "păi stai puțin discut cu dumneavoastră acuma nu pot să rezolv nimic eu trebuie să apelez la altcineva și cam câte zile că a zis câteva zile dar vreau să știu exact cam cât ar dura păi stai puțin discut cu dumneavoastră acuma nu pot să rezolv nimic eu trebuie să apelez la altcineva și cam câte zile că a zis câteva zile dar vreau să știu exact cam cât ar dura"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg că doriți o soluție rapidă și regret că nu se poate interveni imediat prin acest canal. De obicei, procesul de verificare și eventuală recuperare poate dura între 3 și 7 zile lucrătoare, în funcție de complexitatea cazului. Pot să vă ajut cu alte informații sau aveți alte întrebări legate de acest subiect?"
+    },
+    {
+      "rol": "client",
+      "text": "voiam să vă întreb ca de obicei banii se returnați sau se pierd voiam să vă întreb ca de obicei banii se returnați sau se pierd"
+    },
+    {
+      "rol": "operator",
+      "text": "De obicei, dacă transferul a fost efectuat către un IBAN inexistent sau eronat, sumele pot fi returnate, însă în cazuri de IBAN valid, dar greșit, recuperarea depinde de cooperarea beneficiarului. Fiecare situație este diferită și depinde de răspunsul celorlalte părți implicate în tranzacție. Mai pot oferi detalii suplimentare sau aveți alte întrebări legate de contul dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "deci stați puțin nu depinde doar de dumneavoastră sperăm să rezolvăm cât mai repede împreună deci stați puțin nu depinde doar de dumneavoastră sperăm să rezolvăm cât mai repede împreună"
+    },
+    {
+      "rol": "operator",
+      "text": "Exact, recuperarea depinde și de colaborarea cu beneficiarul și cu celelalte instituții implicate, iar noi suntem aici să vă susținem pe tot parcursul procesului. Vom face tot posibilul să vă oferim suport și să urmărim cazul până la o rezolvare favorabilă. Doriți să vă ajut cu altceva sau aveți întrebări suplimentare?"
+    },
+    {
+      "rol": "client",
+      "text": "o ok da bine în regulă nu nu mai aveți cu ce să mă ajutați mulțumesc vă doresc o zi bună la revedere o ok da bine în regulă nu nu mai aveți cu ce să mă ajutați mulțumesc vă doresc o zi bună la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "tranzactie_gresita",
+    "satisfactie": "negativ",
+    "rezumat": "Clienta Dumitru Antonia a sunat pentru a raporta un transfer greșit de 200 de lei făcut acum o oră către un IBAN necunoscut. Operatorul a explicat că recuperarea fondurilor nu se poate face imediat prin telefon și a recomandat trimiterea unui e-mail la departamentul de recuperări, menționând detaliile tranzacției. A fost informat că procesul poate dura între 3 și 7 zile lucrătoare, în funcție de complexitatea cazului. Clienta a întrebat dacă banii vor fi returnați, iar operatorul a precizat că recuperarea depinde de validitatea IBAN-ului și cooperarea părților implicate. Problema rămâne deschisă în așteptarea reacției departamentului specializat."
+  },
+  "latente": {
+    "durata_totala": 424.37,
+    "stt": {
+      "valori": [
+        7.65,
+        7.65,
+        29.24,
+        15.87,
+        21.74,
+        15.17,
+        14.76,
+        18.75
+      ],
+      "mediana": 15.87,
+      "medie": 16.35
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        2.16,
+        2.77,
+        1.57,
+        1.58,
+        1.27,
+        0.0
+      ],
+      "mediana": 1.57,
+      "medie": 1.17
+    }
+  }
+}

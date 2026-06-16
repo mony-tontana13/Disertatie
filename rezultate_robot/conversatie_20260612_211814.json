@@ -1,0 +1,105 @@
+{
+  "id": "20260612_211814",
+  "domeniu": "telecom",
+  "timestamp": "2026-06-12T21:18:14.774728",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați contactat serviciul clienți al operatorului. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonie dumitru antonie"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și numărul de telefon al abonamentului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "zero șapte doi zero șase unu trei nouă nouă 0 7 2 0 6 1 3 9 9"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "ăă sunt plecat în concediu și sunt în italia de vreo două zile și nu pot să folosesc internetul intru pe crom și degeaba nu se încarcă nimic ăă sunt plecat în concediu și sunt în italia de vreo 2 zile și nu pot să folosesc internetul intru pe crom și degeaba nu se încarcă nimic"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația cu internetul, dar pentru a verifica problema am nevoie să știu adresa exactă de unde încercați să vă conectați în Italia. Îmi puteți spune, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "păi eu sunt îmi milanu acuma trebuie să vă dau strada pe care sunt că nu o știu mă plimb acuma păi eu sunt îmi milanu acuma trebuie să vă dau strada pe care sunt că nu o știu mă plimb acuma"
+    },
+    {
+      "rol": "operator",
+      "text": "În regulă, vă rog să îmi spuneți cel puțin orașul și zona unde vă aflați acum, ca să pot încerca să identific adresa aproximativă."
+    },
+    {
+      "rol": "client",
+      "text": "suntem milano în zona de centru lângă domo suntem milano în zona de centru lângă domo"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru informații. Mă puteți ajuta cu numărul străzii sau un reper mai precis în apropiere?"
+    },
+    {
+      "rol": "client",
+      "text": "nu nu pot să înțeleg la ce este util așa ceva v-am zis sunt lângă catedrala domo din milano strada cred că se numește un berto nu nu pot să înțeleg la ce este util așa ceva v-am zis sunt lângă catedrala domo din milano strada cred că se numește un berto"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru clarificare. Îmi puteți confirma, vă rog, dacă adresa exactă este pe strada Umberto, lângă Catedrala Duomo din Milano?"
+    },
+    {
+      "rol": "client",
+      "text": "da da v-am zis de trei ori de ce trebuie să mă repet ce legătură aia asta cu problema mea da da v-am zis de 3 ori de ce trebuie să mă repet ce legătură aia asta cu problema mea"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg că situația este neplăcută și îmi pare rău pentru disconfortul creat. Din păcate, în cazul de față, problema de conectare pe teritoriul Italiei nu poate fi soluționată imediat. Am înregistrat situația dumneavoastră și vă asigur că va fi analizată, dar termenul de rezolvare poate fi mai îndelungat. Vă mulțumesc pentru răbdare și vă stau la dispoziție pentru orice alte întrebări."
+    },
+    {
+      "rol": "client",
+      "text": "puteți măcar să-mi spuneți dacă pot să vorbesc cu un operator uman sau e vreo setare la mine în telefon care e care poate rezolva asta puteți măcar să-mi spuneți dacă pot să vorbesc cu un operator uman sau e vreo setare la mine în telefon care e care poate rezolva asta"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg perfect nevoia unui ajutor mai detaliat și vă informez că puteți solicita să vorbiți cu un operator uman pentru asistență suplimentară. De asemenea, vă recomand să verificați dacă roaming-ul de date este activat și dacă aveți selectată rețeaua mobilă corespunzătoare în setările telefonului. Pot să vă ajut să faceți aceste verificări sau aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "da vă rog ajutați mă să fac aceste verificări da vă rog ajutați mă să fac aceste verificări"
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur, vă rog să accesați setările telefonului, apoi secțiunea „Rețele mobile” sau „Conexiuni”. Verificați dacă opțiunea „Roaming date” este activă și selectați manual o rețea mobilă disponibilă în zona dumneavoastră din Milano. Dacă doriți, vă pot ghida pas cu pas. Pot să vă ajut cu altceva?"
+    },
+    {
+      "rol": "client",
+      "text": "hai că am găsit până la urmă da uite acum pare că îmi intră și notificările de pe whatsapp bine că am rezolvat hai că am găsit până la urmă da uite acum pare că îmi intră și notificările de pe whatsapp bine că am rezolvat"
+    },
+    {
+      "rol": "operator",
+      "text": "Mă bucur să aud că ați reușit să primiți notificările, asta înseamnă că setările sunt corecte. Dacă apar alte dificultăți sau aveți nevoie de sprijin suplimentar, sunt aici să vă ajut. Pot să vă ofer altceva în acest moment?"
+    },
+    {
+      "rol": "client",
+      "text": "nu e în regulă lăsa nu înțeleg de ce ne-am am pierdut atât de mult timp cu chestia inițială dar mă rog bine că s-a rezolvat mulțumesc frumos la revedere nu e în regulă lăsa nu înțeleg de ce ne-am am pierdut atât de mult timp cu chestia inițială dar mă rog bine că s-a rezolvat mulțumesc frumos la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "problema_internet",
+    "satisfactie": "neutru",
+    "rezumat": "Clientul, aflat în concediu la Milano, a reclamat că nu avea acces la internetul mobil. Operatorul a solicitat detalii despre locație pentru diagnosticare, dar clientul a fost reticent. După ce i s-a explicat importanța verificării roaming-ului, clientul a reușit să activeze setările corect, iar problema s-a rezolvat. Dialogul a fost uneori tensionat, dar la final a fost mulțumit."
+  }
+}

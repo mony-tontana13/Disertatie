@@ -14,6 +14,8 @@ import base64
 import ssl
 import time
 import websockets
+import numpy as np
+from datetime import datetime
 
 from quart import Quart, request, Response
 
@@ -309,7 +311,11 @@ async def handle_twilio_ws():
     robot_vorbeste = True
     processing = False
     stream_sid = None
-    silence_timeout = 1.3
+
+    # ── Masurare latente ──────────────────────────────────────────────────────
+    latente_stt = []
+    latente_llm = []
+    timp_start_conversatie = time.time()
 
     print("[WS] Conexiune noua primita.")
 
@@ -317,31 +323,26 @@ async def handle_twilio_ws():
         nonlocal robot_vorbeste, audio_buffer
         robot_vorbeste = True
         audio_buffer.clear()
-        
+
         print(f"  [DEBUG] Generez TTS pentru: '{text_replica[:20]}...'")
         audio_payload = await tts_to_mulaw(text_replica)
-        
+
         if audio_payload and stream_sid:
             try:
-                # 1. Trimitem audio propriu-zis
                 await websocket.send(json.dumps({
                     "event": "media",
                     "streamSid": stream_sid,
                     "media": {"payload": base64.b64encode(audio_payload).decode()}
                 }))
-                
-                # 2. Trimitem MARK-ul corect (fără cheia "media" înăuntru!)
                 await websocket.send(json.dumps({
                     "event": "mark",
                     "streamSid": stream_sid,
                     "mark": {"name": "robot_done"}
                 }))
                 print("  [DEBUG] Pachetul MARK a fost trimis către Twilio.")
-                
             except Exception as e:
                 print(f"[WS SEND EROARE]: {e}")
         else:
-            # Dacă TTS-ul a eșuat sau nu avem pachete, deschidem microfonul forțat ca să nu blocăm apelul
             print("  [DEBUG] TTS gol sau lipsă stream_sid. Deschid microfonul forțat.")
             robot_vorbeste = False
 
@@ -352,11 +353,22 @@ async def handle_twilio_ws():
         audio_buffer.clear()
 
         print(f"  [STT] Pauza detectata. {len(chunks)} chunks la Zevo...")
+
+        # ── Latenta STT ───────────────────────────────────────────────────────
+        start_stt = time.time()
         text_client = await zevo_stt_transcrie(chunks)
-        print(f"  [CLIENT] {text_client}")
+        lat_stt = round(time.time() - start_stt, 2)
+        latente_stt.append(lat_stt)
+        print(f"  [CLIENT] {text_client} (STT: {lat_stt}s)")
 
         if text_client and text_client.strip() and stare:
+
+            # ── Latenta LLM ───────────────────────────────────────────────────
+            start_llm = time.time()
             replica, incheie = proceseaza_replica_client(stare, text_client)
+            lat_llm = round(time.time() - start_llm, 2)
+            latente_llm.append(lat_llm)
+            print(f"  [LLM] Latenta: {lat_llm}s")
 
             if replica:
                 print(f"  [ROBOT] {replica}")
@@ -365,20 +377,71 @@ async def handle_twilio_ws():
             if incheie:
                 if stare.intentie:
                     try:
+                        print(f"\n  [ANALIZA] Rulare analiza finala...")
                         satisfactie, rezumat = analiza_finala(
                             stare.get_dialog(), stare.domeniu
                         )
                         print(f"\n  [ANALIZA] {stare.intentie} | {satisfactie}")
                         print(f"  [REZUMAT] {rezumat[:100]}...")
+
+                        # ── Calcul statistici latente ─────────────────────────
+                        def mediana(lst):
+                            if not lst: return 0
+                            s = sorted(lst)
+                            return round(s[len(s) // 2], 2)
+
+                        def medie(lst):
+                            return round(sum(lst) / len(lst), 2) if lst else 0
+
+                        os.makedirs("./rezultate_robot", exist_ok=True)
+                        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                        output = {
+                            "id": timestamp,
+                            "domeniu": stare.domeniu,
+                            "timestamp": datetime.now().isoformat(),
+                            "dificultate": stare.dificultate,
+                            "conversatie": stare.replici,
+                            "analiza": {
+                                "intentie": stare.intentie,
+                                "satisfactie": satisfactie,
+                                "rezumat": rezumat
+                            },
+                            "latente": {
+                                "durata_totala": round(time.time() - timp_start_conversatie, 2),
+                                "stt": {
+                                    "valori": latente_stt,
+                                    "mediana": mediana(latente_stt),
+                                    "medie": medie(latente_stt),
+                                },
+                                "llm": {
+                                    "valori": latente_llm,
+                                    "mediana": mediana(latente_llm),
+                                    "medie": medie(latente_llm),
+                                }
+                            }
+                        }
+                        cale = f"./rezultate_robot/conversatie_{timestamp}.json"
+                        with open(cale, "w", encoding="utf-8") as f:
+                            json.dump(output, f, ensure_ascii=False, indent=2)
+                        print(f"  [SALVAT] {cale}")
+                        print(f"  [LATENTE] STT mediana={mediana(latente_stt)}s medie={medie(latente_stt)}s")
+                        print(f"  [LATENTE] LLM mediana={mediana(latente_llm)}s medie={medie(latente_llm)}s")
+                        print(f"  [LATENTE] Durata totala={round(time.time() - timp_start_conversatie, 2)}s")
+
                     except Exception as e:
                         print(f"  [ANALIZA EROARE] {e}")
+
+                for _ in range(100):  # max 10 secunde
+                    if not robot_vorbeste:
+                        break
+                    await asyncio.sleep(0.1)
                 return True
 
         processing = False
         last_audio_time[0] = time.time()
         return False
 
-    stop_event = asyncio.Event() # CORECTAT: E mare obligatoriu
+    stop_event = asyncio.Event()
     last_audio_time = [time.time()]
 
     async def citeste_mesaje():
@@ -409,18 +472,18 @@ async def handle_twilio_ws():
                     if not robot_vorbeste and not processing:
                         payload = data.get("media", {}).get("payload", "")
                         if payload:
-                            audio_buffer.append(base64.b64decode(payload))
-                            # Print discret la fiecare ~1 secunda de stream
-                            if len(audio_buffer) % 50 == 0:
-                                print(f"  [DEBUG] Colectez audio... Buffer curent: {len(audio_buffer)} chunks")
-                            last_audio_time[0] = time.time()
+                            chunk = base64.b64decode(payload)
+                            pcm = audioop.ulaw2lin(chunk, 2)
+                            rms = audioop.rms(pcm, 2)
+                            audio_buffer.append(chunk)
+                            if rms > 200:
+                                last_audio_time[0] = time.time()
 
                 elif event == "mark":
                     mark_name = data.get("mark", {}).get("name")
                     if mark_name == "robot_done":
                         print("  [SYSTEM] Robot terminat. Microfon deschis.")
                         robot_vorbeste = False
-                        # CORECTAT: Nu mai stergem bufferul aici ca sa nu pierdem frame-urile clientului
                         last_audio_time[0] = time.time()
 
                 elif event == "stop":
@@ -434,29 +497,29 @@ async def handle_twilio_ws():
     async def detecteaza_silence():
         nonlocal robot_vorbeste, processing
         print("  [DEBUG] Task-ul de detectare silence a pornit.")
-        
+
         while not stop_event.is_set():
             await asyncio.sleep(0.1)
-            
-            # 1. Siguranță: Dacă robotul pare blocat de mai mult de 8 secunde, deschidem microfonul
-            timp_de_la_ultimul_pachet = time.time() - last_audio_time[0]
-            if robot_vorbeste and timp_de_la_ultimul_pachet > 8.0:
-                print("  [DEBUG] Siguranță activată: Robotul a terminat. Deschid microfonul.")
-                robot_vorbeste = False
-                audio_buffer.clear()
 
-            # 2. Logica de trimitere la STT
             if audio_buffer and not robot_vorbeste and not processing:
                 timp_scurs = time.time() - last_audio_time[0]
-                
-                # REPARATIE: Mărim silence_timeout la 1.5 secunde (să apuci să respiri între cuvinte)
-                # REPARATIE: Mărim limita de chunks de la 250 la 750 (~15 secunde de vorbire continuă maximă)
-                if timp_scurs > 1.5 or len(audio_buffer) > 750:
-                    print(f"  [DEBUG] Declanșez STT! Motiv: timp_scurs={timp_scurs:.2f}s, chunks={len(audio_buffer)}")
-                    incheie = await proceseaza_silence()
-                    if incheie:
-                        stop_event.set()
-                        break
+
+                if timp_scurs > 2.0 or len(audio_buffer) > 850:
+                    mulaw_concat = b"".join(audio_buffer)
+                    pcm = audioop.ulaw2lin(mulaw_concat, 2)
+                    rms_mediu = audioop.rms(pcm, 2)
+
+                    if rms_mediu < 100:
+                        audio_buffer.clear()
+                        last_audio_time[0] = time.time()
+                    else:
+                        print(f"  [DEBUG] Declanșez STT! Motiv: timp_scurs={timp_scurs:.2f}s, chunks={len(audio_buffer)}, rms={rms_mediu}")
+                        if stop_event.is_set():
+                            break
+                        incheie = await proceseaza_silence()
+                        if incheie:
+                            stop_event.set()
+                            break
 
     try:
         await asyncio.gather(citeste_mesaje(), detecteaza_silence())

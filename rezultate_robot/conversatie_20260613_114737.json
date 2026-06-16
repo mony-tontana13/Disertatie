@@ -1,0 +1,112 @@
+{
+  "id": "20260613_114737",
+  "domeniu": "servicii_publice",
+  "timestamp": "2026-06-13T11:47:37.732492",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciile publice de asistența agricolă. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și numărul CNP sau al documentului de identitate, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "șase zero unu zero trei zero trei patruzeci și șase zero zero zero zero 6 0 1 0 3 0 3 46 0 0 0 0"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "păi ăă am încărcat acum niște documente acum ceva ce timp niște documente pe de care aveam nevoie și acuma mi se spune că ăă îmi lipsește unu aș vrea să știu ce îmi lipsește păi ăă am încărcat acum niște documente acum ceva ce timp niște documente pe de care aveam nevoie și acuma mi se spune că ăă îmi lipsește 1 aș vrea să știu ce îmi lipsește"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a verifica ce document vă lipsește, mă puteți oferi, vă rog, numărul dosarului dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "da sigur numărul dosarului e doi opt patru șapte a da sigur numărul dosarului e 2 8 4 7 a"
+    },
+    {
+      "rol": "operator",
+      "text": "Am înregistrat cazul dumneavoastră cu numărul dosarului 2847 și verificăm documentele depuse. Procesarea situației este în curs și poate dura până la câteva săptămâni, în funcție de volumele de lucru. Vom lua legătura cu dumneavoastră în momentul în care există clarificări sau informații suplimentare. Vă mulțumim pentru răbdare și înțelegere."
+    },
+    {
+      "rol": "client",
+      "text": "nu nu puteți să vă uitați acuma și să-mi spuneți ce-mi lipsește sau pot să verific în alt mod să mă duc în sucursalele dumneavoastră cum aș putea să procedez"
+    },
+    {
+      "rol": "operator",
+      "text": "Momentan, sistemul nu oferă acces direct pentru verificarea documentelor lipsă, însă puteți vizita oricare dintre sucursalele noastre, unde un coleg vă va oferi asistență imediată. Dacă doriți, vă pot indica adresa celei mai apropiate unități sau alte modalități de contact. Pot să vă ajut cu astfel de informații?"
+    },
+    {
+      "rol": "client",
+      "text": "nu nu este în regulă le știu deja aș mai avea o cerere puteți să-mi faceți o programare la un ghișeu nu nu este în regulă le știu deja aș mai avea o cerere puteți să-mi faceți o programare la un ghișeu"
+    },
+    {
+      "rol": "operator",
+      "text": "Pot să vă ajut cu programarea, vă rog să-mi spuneți data și intervalul orar preferat pentru vizită. De asemenea, dacă doriți, pot verifica disponibilitatea pentru dumneavoastră. Mai pot să vă ajut cu altceva sau aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "nu vă rog să-mi faceți o programare mâine după ora patru dacă se poate nu vă rog să-mi faceți o programare mâine după ora 4 dacă se poate"
+    },
+    {
+      "rol": "operator",
+      "text": "Am verificat și în intervalul după ora 16:00 de mâine sunt disponibile locuri la ghișeu. V-am programat atunci, iar în scurt timp veți primi confirmarea prin SMS. Mai pot să vă ajut cu ceva legat de această programare sau altceva?"
+    },
+    {
+      "rol": "client",
+      "text": "nu e ok mulțumesc o zi bună la revedere nu e ok mulțumesc o zi bună la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "acte_incomplete",
+    "satisfactie": "neutru",
+    "rezumat": "Clienta a solicitat informații privind un document lipsă din dosarul său depus. Operatorul a preluat numărul dosarului și a explicat că verificarea documentelor poate dura câteva săptămâni, recomandând vizita la sucursală pentru asistență imediată. Clienta a cerut apoi o programare după ora 16 în ziua următoare, iar operatorul a început verificarea disponibilității."
+  },
+  "latente": {
+    "durata_totala": 417.54,
+    "stt": {
+      "valori": [
+        8.08,
+        16.71,
+        25.54,
+        12.8,
+        26.29,
+        20.48,
+        14.91,
+        13.17
+      ],
+      "mediana": 16.71,
+      "medie": 17.25
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        31.48,
+        1.98,
+        1.17,
+        2.28,
+        0.97,
+        0.0
+      ],
+      "mediana": 1.17,
+      "medie": 4.74
+    }
+  }
+}
