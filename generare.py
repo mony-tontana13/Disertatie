@@ -162,7 +162,7 @@ def build_prompt(domeniu_info, complexitate, satisfactie, intentie_primara, tip_
     return f"""Genereaza o conversatie telefonica in limba romana intre un client si un operator uman de la {domeniu_info["descriere"]}.
 
 CERINTE OBLIGATORII:
-- Operatorul incepe prin a declara numele sau si banca la care a sunat clientul si sa intrebe cu ce poate ajuta.
+- Operatorul incepe prin a declara numele sau si compania la care a sunat clientul si sa intrebe cu ce poate ajuta.
 - Evita replicile care sa denote incantare excesiva sau sa para false. 
 - Limbajul trebuie sa fie PROFESIONAL si NATURAL — ca intr-un call-center real. 
   Operatorul vorbeste clar, politicos, vorbeste la persoana a doua plural, foloseste formule de politete adecvate.

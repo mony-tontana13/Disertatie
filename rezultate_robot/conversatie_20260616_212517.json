@@ -1,0 +1,116 @@
+{
+  "id": "20260616_212517",
+  "domeniu": "banking",
+  "timestamp": "2026-06-16T21:25:17.463355",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți al băncii Transilvania. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "domnul dumitru antonia domnul dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și ultimele 4 cifre ale cardului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "opt nouă trei patru 8 9 3 4"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am vrut să-i transmit mamei mele două sute de lei și din greșeală am greșit iban ul și am transmis câțiva am vrut să-i transmit mamei mele 200 de lei și din greșeală am greșit iban ul și am transmis câțiva"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația. Îmi puteți spune, vă rog, data exactă când ați efectuat transferul?"
+    },
+    {
+      "rol": "client",
+      "text": "e la ora paisprezece deci cincisprezece iunie e la ora 14 deci 15 iunie"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru informație. Care este suma exactă pe care ați transmis-o greșit?"
+    },
+    {
+      "rol": "client",
+      "text": "două sute de lei 200 de lei"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să îmi comunicați IBAN-ul destinatarului către care a fost realizat transferul greșit."
+    },
+    {
+      "rol": "client",
+      "text": "ro patru cinci șase șapte opt nouă unu doi trei patru cinci șase șapte ro 4 5 6 7 8 9 1 2 3 4 5 6 7"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă recomand să trimiteți cât mai curând o cerere scrisă prin email către departamentul nostru de recuperări frauduloase, la adresa recuperari@bancatransilvania.ro, menționând detaliile transferului și IBAN-ul greșit. Este important să includeți și numărul de referință al tranzacției, pe care îl găsiți în extrasul de cont. Echipa noastră va analiza solicitarea, însă vă informez că acest proces poate dura până la 14 zile lucrătoare. În acest interval, vă stau la dispoziție pentru orice alte întrebări legate de situația dumneavoastră."
+    },
+    {
+      "rol": "client",
+      "text": "bine mulțumesc din suflet la revedere bine mulțumesc din suflet la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "problema_transfer",
+    "satisfactie": "necunoscut",
+    "rezumat": "Clientul a raportat un transfer greșit de 200 de lei către un IBAN eronat, efectuat pe 15 iunie la ora 14:00. Operatorul i-a recomandat să trimită o cerere scrisă prin email către departamentul de recuperări frauduloase, menționând detaliile tranzacției. Procesul de recuperare poate dura până la 14 zile lucrătoare. Clientul a mulțumit și a încheiat apelul."
+  },
+  "latente": {
+    "durata_totala": 271.32,
+    "stt": {
+      "valori": [
+        7.78,
+        7.52,
+        18.17,
+        13.13,
+        8.05,
+        18.61,
+        10.89
+      ],
+      "mediana": 10.89,
+      "medie": 12.02
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        6.95,
+        1.95,
+        1.75,
+        3.46,
+        0.0
+      ],
+      "mediana": 1.75,
+      "medie": 2.02
+    },
+    "tts": {
+      "valori": [
+        4.87,
+        4.05,
+        3.56,
+        4.38,
+        3.91,
+        3.57,
+        15.75,
+        3.57
+      ],
+      "mediana": 4.05,
+      "medie": 5.46
+    }
+  }
+}

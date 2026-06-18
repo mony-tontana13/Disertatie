@@ -1,0 +1,92 @@
+{
+  "id": "20260616_211707",
+  "domeniu": "banking",
+  "timestamp": "2026-06-16T21:17:07.122995",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți al băncii Transilvania. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și ultimele 4 cifre ale cardului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "unu doi trei patru 1 2 3 4"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am vrut să fac astăzi o tranzacție doar că cardul nu mergea și îmi zicea că este blocat ce s-a întâmplat am vrut să fac astăzi o tranzacție doar că cardul nu mergea și îmi zicea că este blocat ce s-a întâmplat"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația, doamnă Dumitru. Aș putea să vă verific rapid datele, vă rog să îmi confirmați ultima tranzacție efectuată cu acest card?"
+    },
+    {
+      "rol": "client",
+      "text": "păi păi am avut o tranzacție la mega image de treizeci de lei păi păi am avut o tranzacție la mega image de 30 de lei"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru informații. Cardul a fost blocat automat din motive de securitate, cel mai probabil din cauza unor încercări repetate eșuate de autorizare. Pentru a putea continua, vă recomand să contactați direct departamentul de suport carduri la numărul 0264 555 555, unde colegii pot verifica și debloca cardul în maxim 24 de ore. Între timp, puteți folosi aplicația noastră mobilă pentru verificarea soldului sau efectuarea unor plăți online. Dacă doriți, vă pot trimite un email cu aceste detalii."
+    },
+    {
+      "rol": "client",
+      "text": "da da vă rog mulțumes da da vă rog mulțumes"
+    },
+    {
+      "rol": "operator",
+      "text": "Am trimis acum emailul cu toate informațiile necesare. Dacă mai aveți nevoie de ajutor sau nelămuriri legate de card, rămân la dispoziția dumneavoastră. Pot să vă ajut cu altceva?"
+    },
+    {
+      "rol": "client",
+      "text": "nu mulțumesc la revedere nu mulțumesc la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "card_blocat",
+    "satisfactie": "neutru",
+    "rezumat": "Clienta a raportat că nu a putut efectua o tranzacție deoarece cardul era blocat. Operatorul a explicat că blocarea a fost cauzată de încercări repetate eșuate de autorizare și a recomandat contactarea departamentului de suport carduri pentru deblocare. A fost trimis un email cu detalii și alternative de utilizare a cardului. Clienta a mulțumit și a încheiat convorbirea."
+  },
+  "latente": {
+    "durata_totala": 206.25,
+    "stt": {
+      "valori": [
+        3.78,
+        4.07,
+        8.26,
+        4.92,
+        3.52,
+        3.63
+      ],
+      "mediana": 4.07,
+      "medie": 4.7
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        3.91,
+        4.89,
+        1.93,
+        0.0
+      ],
+      "mediana": 1.93,
+      "medie": 1.79
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "id": "20260616_213046",
+  "domeniu": "banking",
+  "timestamp": "2026-06-16T21:30:46.248396",
+  "dificultate": "simpla",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți al băncii Transilvania. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și ultimele 4 cifre ale cardului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "pa patru opt nouă trei pa 4 8 9 3"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am vrut să fac un trafer bancar da am greșit iban ul și în loc să trimit mamei mele i am trimis altcuiva am vrut să fac un trafer bancar da am greșit iban ul și în loc să trimit mamei mele i am trimis altcuiva"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația, îmi puteți spune, vă rog, data exactă când a fost realizat transferul?"
+    },
+    {
+      "rol": "client",
+      "text": "paisprezece iunie două mii douăzeci și șase 14 iunie 2.026"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru informație. Care a fost suma transferată, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "patruzeci de lei 40 de lei"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a putea verifica situația, vă rog să îmi comunicați IBAN-ul destinatarului către care a fost efectuat transferul incorect."
+    },
+    {
+      "rol": "client",
+      "text": "ro cinci șase șapte opt nouă zece unu doi trei patru cinci șase ro 5 6 7 8 9 10 1 2 3 4 5 6"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru detalii. Aș dori să confirm dacă ați menționat corect ultimele cifre ale IBAN-ului, deoarece trebuie să fie format doar din cifre și litere, fără cuvinte numerice în interior. Îmi puteți transmite, vă rog, IBAN-ul complet exact așa cum apare în documentul dvs.?"
+    },
+    {
+      "rol": "client",
+      "text": "n l nouă unu a b n a zero patru unu șapte unu șase patru trei zero zero n l 9 1 a b n a 0 4 1 7 1 6 4 3 0 0"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru clarificare. Vă pot ajuta să inițiem o solicitare de blocare și returnare a sumei transferate către banca destinatară. Pentru aceasta, vă rog să confirmați că doriți să demarăm procedura de recuperare imediat. Aceasta durează în general până la 3 zile lucrătoare, iar noi vă vom ține la curent cu fiecare pas. Pot continua?"
+    },
+    {
+      "rol": "client",
+      "text": "da vă rog da vă rog"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru confirmare, încep imediat procedura de recuperare a sumei. Veți primi notificări privind stadiul solicitării pe numărul de telefon înregistrat. Pot să vă ajut și cu altceva sau aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "nu mai am întrebări mulțumesc din tot sufletul ați fost de mare ajutor la revedere nu mai am întrebări mulțumesc din tot sufletul ați fost de mare ajutor la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "problema_transfer",
+    "satisfactie": "pozitiv",
+    "rezumat": "Clienta a efectuat un transfer greșit către un IBAN eronat și a solicitat recuperarea sumei. Operatorul a demarat procedura de blocare și returnare a banilor, urmând să o informeze pe clientă."
+  },
+  "latente": {
+    "durata_totala": 316.76,
+    "stt": {
+      "valori": [
+        3.43,
+        3.97,
+        6.58,
+        3.95,
+        3.23,
+        7.68,
+        8.06,
+        2.81,
+        5.71
+      ],
+      "mediana": 3.97,
+      "medie": 5.05
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        2.19,
+        1.79,
+        1.47,
+        35.14,
+        3.31,
+        1.25,
+        0.0
+      ],
+      "mediana": 1.47,
+      "medie": 5.02
+    },
+    "tts": {
+      "valori": [
+        5.02,
+        3.84,
+        3.51,
+        3.56,
+        3.71,
+        4.2,
+        10.45,
+        10.66,
+        7.64,
+        3.73
+      ],
+      "mediana": 4.2,
+      "medie": 5.63
+    }
+  }
+}

@@ -103,7 +103,6 @@ async def zevo_stt_transcrie(audio_chunks_mulaw):
     ssl_ctx.verify_mode = ssl.CERT_NONE
 
     chunk_size = 4096
-    sleep_per_chunk = chunk_size / (16000 * 2)
     rezultate = []
     partial_curent = ""
 
@@ -132,7 +131,6 @@ async def zevo_stt_transcrie(audio_chunks_mulaw):
                 except Exception:
                     pass
                 offset += chunk_size
-                await asyncio.sleep(sleep_per_chunk)
 
             if partial_curent and partial_curent not in " ".join(rezultate):
                 rezultate.append(partial_curent)
@@ -315,6 +313,7 @@ async def handle_twilio_ws():
     # ── Masurare latente ──────────────────────────────────────────────────────
     latente_stt = []
     latente_llm = []
+    latente_tts = []
     timp_start_conversatie = time.time()
 
     print("[WS] Conexiune noua primita.")
@@ -325,7 +324,11 @@ async def handle_twilio_ws():
         audio_buffer.clear()
 
         print(f"  [DEBUG] Generez TTS pentru: '{text_replica[:20]}...'")
+        start_tts = time.time()
         audio_payload = await tts_to_mulaw(text_replica)
+        lat_tts = round(time.time() - start_tts, 2)
+        latente_tts.append(lat_tts)
+        print(f"  [TTS] Latenta: {lat_tts}s")
 
         if audio_payload and stream_sid:
             try:
@@ -417,6 +420,11 @@ async def handle_twilio_ws():
                                     "valori": latente_llm,
                                     "mediana": mediana(latente_llm),
                                     "medie": medie(latente_llm),
+                                },
+                                "tts": {
+                                    "valori": latente_tts,
+                                    "mediana": mediana(latente_tts),
+                                    "medie": medie(latente_tts),
                                 }
                             }
                         }
@@ -426,6 +434,7 @@ async def handle_twilio_ws():
                         print(f"  [SALVAT] {cale}")
                         print(f"  [LATENTE] STT mediana={mediana(latente_stt)}s medie={medie(latente_stt)}s")
                         print(f"  [LATENTE] LLM mediana={mediana(latente_llm)}s medie={medie(latente_llm)}s")
+                        print(f"  [LATENTE] TTS mediana={mediana(latente_tts)}s medie={medie(latente_tts)}s")
                         print(f"  [LATENTE] Durata totala={round(time.time() - timp_start_conversatie, 2)}s")
 
                     except Exception as e:
