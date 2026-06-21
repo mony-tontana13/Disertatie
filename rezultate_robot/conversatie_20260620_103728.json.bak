@@ -1,0 +1,135 @@
+{
+  "id": "20260620_103728",
+  "domeniu": "banking",
+  "timestamp": "2026-06-20T10:37:28.531646",
+  "dificultate": "medie",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți al băncii Transilvania. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia",
+      "text_original_brut": "dumitru antonia dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și ultimele 4 cifre ale cardului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "3 1 0 5",
+      "text_original_brut": "trei unu zero cinci 3 1 0 5"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am vrut de dimineață să fac o tranzacție la mega și ăă îmi zicea că ar respins și nu înțeleg de ce",
+      "text_original_brut": "am vrut de dimineață să fac o tranzacție la mega și ăă îmi zicea că ar respins și nu înțeleg de ce am vrut de dimineață să fac o tranzacție la mega și ăă îmi zicea că ar respins și nu înțeleg de ce"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a putea investiga problema, mă puteți spune, vă rog, ce sumă ați încercat să transferați?"
+    },
+    {
+      "rol": "client",
+      "text": "pe cred că era 150 de lei aproximativ",
+      "text_original_brut": "pe cred că era o sută cincizeci de lei aproximativ pe cred că era 150 de lei aproximativ"
+    },
+    {
+      "rol": "operator",
+      "text": "În regulă, pentru a continua verificările, mă puteți confirma data exactă a tranzacției?"
+    },
+    {
+      "rol": "client",
+      "text": "ăă da astăzi 20 iunie",
+      "text_original_brut": "ăă da astăzi douăzeci iunie ăă da astăzi 20 iunie"
+    },
+    {
+      "rol": "operator",
+      "text": "Am verificat tranzacția din data de 20 iunie pentru suma de 150 lei și vă confirm că plata a fost respinsă din cauza unor limite temporare impuse pe card pentru tranzacții contactless. Pot să ridic acum această limită, astfel încât să puteți efectua plăți similare imediat. Pentru o analiză mai detaliată privind motivul exact al respingerii și eventualele alte restricții, este nevoie de o verificare suplimentară care poate dura până la 48 de ore și implică departamentul de securitate. Vă mulțumesc pentru răbdare și înțelegere."
+    },
+    {
+      "rol": "client",
+      "text": "super vă mulțumesc din tot sufletul că ați rezolvat problema asta este perfect acuma",
+      "text_original_brut": "super vă mulțumesc din tot sufletul că ați rezolvat problema asta este perfect acuma super vă mulțumesc din tot sufletul că ați rezolvat problema asta este perfect acuma"
+    },
+    {
+      "rol": "operator",
+      "text": "Mă bucur că am putut să vă ajut și că situația s-a rezolvat rapid. Dacă aveți nevoie de alte informații sau asistență, sunt aici să vă sprijin. Pot face ceva în plus pentru dumneavoastră?"
+    },
+    {
+      "rol": "client",
+      "text": "mulțumesc frumos totul e ok acuma o zi bună numai bine mulțumesc din suflet",
+      "text_original_brut": "mulțumesc frumos totul e ok acuma o zi bună numai bine mulțumesc din suflet mulțumesc frumos totul e ok acuma o zi bună numai bine mulțumesc din suflet"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru cuvintele frumoase și vă doresc o zi plină de reușite. Dacă pe viitor aveți întrebări sau nelămuriri, nu ezitați să ne contactați. Mai pot să vă ajut cu ceva acum?"
+    },
+    {
+      "rol": "client",
+      "text": "nu nu este suficient mulțumesc frumos la revedere",
+      "text_original_brut": "nu nu este suficient mulțumesc frumos la revedere nu nu este suficient mulțumesc frumos la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "tranzactie_gresita",
+    "satisfactie": "pozitiv",
+    "rezumat": "Clienta a sesizat respingerea unei plăți contactless la Mega pentru 150 lei; operatorul a ridicat limita temporară, iar plata a putut fi realizată cu succes."
+  },
+  "latente": {
+    "durata_totala": 298.62,
+    "stt": {
+      "valori": [
+        3.38,
+        3.54,
+        8.05,
+        4.35,
+        4.08,
+        6.95,
+        6.3,
+        5.14
+      ],
+      "mediana": 5.14,
+      "medie": 5.22
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        1.88,
+        1.35,
+        2.93,
+        1.85,
+        1.78,
+        0.0
+      ],
+      "mediana": 1.78,
+      "medie": 1.22
+    },
+    "tts": {
+      "valori": [
+        4.41,
+        3.71,
+        3.39,
+        3.48,
+        3.85,
+        15.26,
+        6.69,
+        6.32,
+        3.34
+      ],
+      "mediana": 3.85,
+      "medie": 5.61
+    }
+  }
+}

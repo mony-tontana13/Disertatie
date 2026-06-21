@@ -1,0 +1,135 @@
+{
+  "id": "20260621_132910",
+  "domeniu": "retail",
+  "timestamp": "2026-06-21T13:29:10.932332",
+  "dificultate": "medie",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți E-shop. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia",
+      "text_original_brut": "dumitru antonia dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și adresa de email asociată contului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonie 13 arond gmail punct com",
+      "text_original_brut": "dumitru antonie treisprezece arond gmail punct com dumitru antonie 13 arond gmail punct com"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am cu comandat acum 2 săptămâni de la dumneavoastră un laptop și scria pe site că livrat câteva zile lucrătoare în 3 4 și nu mi-a ajuns nici acuma",
+      "text_original_brut": "am cu comandat acum două săptămâni de la dumneavoastră un laptop și scria pe site că livrat câteva zile lucrătoare în trei patru și nu mi-a ajuns nici acuma am cu comandat acum 2 săptămâni de la dumneavoastră un laptop și scria pe site că livrat câteva zile lucrătoare în 3 4 și nu mi-a ajuns nici acuma"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a putea verifica situația comenzii dumneavoastră, vă rog să îmi spuneți numărul comenzii."
+    },
+    {
+      "rol": "client",
+      "text": "ăă parcă pa 5 8 3",
+      "text_original_brut": "ăă parcă pa cinci opt trei ăă parcă pa 5 8 3"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru informații. Am verificat comanda PA583 și vă pot confirma că laptopul a fost expediat, însă livrarea întârzie din cauza unor probleme logistice externe, care nu depind de noi. În acest moment, estimăm că pachetul va ajunge în următoarele 3-5 zile lucrătoare. Vom monitoriza situația și vă vom contacta imediat ce avem detalii suplimentare. Vă mulțumim pentru răbdare și înțelegere."
+    },
+    {
+      "rol": "client",
+      "text": "da eu am nevoie de el la finalul săptămânii acestea adică în 2 zile nu pot să mai aștept încă 3 5 zile lucrătoare eu până vine trebuie să-l am cel pe care l-am acuma s-a stricat și am nevoie de un nou urgent",
+      "text_original_brut": "da eu am nevoie de el la finalul săptămânii acestea adică în două zile nu pot să mai aștept încă trei cinci zile lucrătoare eu până vine trebuie să-l am cel pe care l-am acuma s-a stricat și am nevoie de un nou urgent da eu am nevoie de el la finalul săptămânii acestea adică în 2 zile nu pot să mai aștept încă 3 5 zile lucrătoare eu până vine trebuie să-l am cel pe care l-am acuma s-a stricat și am nevoie de un nou urgent"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg perfect situația dificilă în care vă aflați și importanța urgentării comenzii. Pentru a vă sprijini, pot verifica posibilitatea unei livrări cu prioritate sau să vă ofer informații despre returnarea gratuită în cazul în care primiți comanda prea târziu. Doriți să procedez astfel sau pot ajuta cu altceva?"
+    },
+    {
+      "rol": "client",
+      "text": "păi returnare clar nu vreau dar dacă se poate prioritiza da clar",
+      "text_original_brut": "păi returnare clar nu vreau dar dacă se poate prioritiza da clar păi returnare clar nu vreau dar dacă se poate prioritiza da clar"
+    },
+    {
+      "rol": "operator",
+      "text": "Am transmis cererea de prioritizare către departamentul de logistică și vă anunț imediat ce primesc un răspuns referitor la posibilitatea livrării mai rapide. Între timp, vă stau la dispoziție pentru orice alte întrebări sau nelămuriri aveți. Cum pot să vă ajut mai departe?"
+    },
+    {
+      "rol": "client",
+      "text": "nu nu mai aveți cu ce să mă ajutați aștept un răspuns de la dumneavoastră cât mai repede sper și să luați în calcul ce v-am spus că chiar nu mai am timp și am nevoie de el urgent mulțumesc",
+      "text_original_brut": "nu nu mai aveți cu ce să mă ajutați aștept un răspuns de la dumneavoastră cât mai repede sper și să luați în calcul ce v-am spus că chiar nu mai am timp și am nevoie de el urgent mulțumesc nu nu mai aveți cu ce să mă ajutați aștept un răspuns de la dumneavoastră cât mai repede sper și să luați în calcul ce v-am spus că chiar nu mai am timp și am nevoie de el urgent mulțumesc"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru înțelegere și vă asigur că facem tot posibilul să vă oferim o soluție rapidă. Vă voi contacta imediat ce primesc vești de la departamentul de logistică. Dacă vă mai pot ajuta cu altceva până atunci, vă stau la dispoziție."
+    },
+    {
+      "rol": "client",
+      "text": "nu nu e în regulă mulțumesc la revedere",
+      "text_original_brut": "nu nu e în regulă mulțumesc la revedere nu nu e în regulă mulțumesc la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "comanda_intarziata",
+    "satisfactie": "negativ",
+    "rezumat": "Clienta Antonia Dumitru a sunat pentru a reclama întârzierea livrării unui laptop comandat acum două săptămâni, care conform site-ului trebuia să ajungă în 3-4 zile lucrătoare. Operatorul a verificat comanda PA583 și a comunicat că întârzierea este cauzată de probleme logistice externe, estimând o livrare în 3-5 zile lucrătoare. Clienta a subliniat necesitatea urgentă a produsului, deoarece laptopul actual s-a stricat și are nevoie de unul nou în cel mult două zile. Operatorul a transmis cererea de prioritizare către departamentul de logistică și a oferit asistență pentru alte întrebări, iar clienta a încheiat convorbirea așteptând un răspuns rapid."
+  },
+  "latente": {
+    "durata_totala": 313.05,
+    "stt": {
+      "valori": [
+        3.44,
+        5.57,
+        9.44,
+        4.97,
+        11.84,
+        6.64,
+        11.65,
+        4.45
+      ],
+      "mediana": 6.64,
+      "medie": 7.25
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        2.93,
+        2.87,
+        1.29,
+        1.12,
+        1.49,
+        0.0
+      ],
+      "mediana": 1.29,
+      "medie": 1.21
+    },
+    "tts": {
+      "valori": [
+        4.35,
+        3.92,
+        3.44,
+        3.7,
+        13.23,
+        8.61,
+        8.03,
+        7.78,
+        3.98
+      ],
+      "mediana": 4.35,
+      "medie": 6.34
+    }
+  }
+}

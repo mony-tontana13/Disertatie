@@ -1,0 +1,146 @@
+{
+  "id": "20260620_102604",
+  "domeniu": "banking",
+  "timestamp": "2026-06-20T10:26:04.109781",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți al băncii Transilvania. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia",
+      "text_original_brut": "dumitru antonia dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și ultimele 4 cifre ale cardului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "2 5 0 5",
+      "text_original_brut": "doi cinci zero cinci 2 5 0 5"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am vrut să-i fac un transfer mamei de 300 de lei și ăă am introdus iban ul greșit i am trimis altcuiva și nu știu cum să iau banii înapoi",
+      "text_original_brut": "am vrut să-i fac un transfer mamei de trei sute de lei și ăă am introdus iban ul greșit i am trimis altcuiva și nu știu cum să iau banii înapoi am vrut să-i fac un transfer mamei de 300 de lei și ăă am introdus iban ul greșit i am trimis altcuiva și nu știu cum să iau banii înapoi"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația. Îmi puteți spune, vă rog, data la care ați făcut transferul?"
+    },
+    {
+      "rol": "client",
+      "text": "astăzi 20 iunie",
+      "text_original_brut": "astăzi douăzeci iunie astăzi 20 iunie"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru informație. Care este suma exactă transferată, vă rog?"
+    },
+    {
+      "rol": "client",
+      "text": "trei sute de lei 300 de lei"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă rog să îmi furnizați, pentru a continua verificările, IBAN-ul destinatarului către care a fost trimis transferul."
+    },
+    {
+      "rol": "client",
+      "text": "ăă bine puteți să așteptați 2 secunde să-l găsesc",
+      "text_original_brut": "ăă bine puteți să așteptați două secunde să-l găsesc ăă bine puteți să așteptați 2 secunde să-l găsesc"
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur, aștept să îmi spuneți IBAN-ul destinatarului când îl aveți pregătit."
+    },
+    {
+      "rol": "client",
+      "text": "gata l-am găsit r o 9 0 r 4 8 8 7 6 9 7 1 8 1 8 1 4 7 6 3",
+      "text_original_brut": "gata l-am găsit r o nouă zero r patru opt opt șapte șase nouă șapte unu opt unu opt unu patru șapte șase trei gata l-am găsit r o 9 0 r 4 8 8 7 6 9 7 1 8 1 8 1 4 7 6 3"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru informații. În acest caz, vă recomand să trimiteți cât mai curând o cerere scrisă prin email către departamentul nostru de recuperare fonduri, la adresa recuperare@transilvania.ro, menționând detaliile tranzacției și solicitând returnarea sumei. De asemenea, vă pot oferi un număr de referință pentru cazul dumneavoastră, ca să urmăriți procesul – îl primiți dacă doriți. Vă atrag atenția că recuperarea banilor depinde și de cooperarea beneficiarului greșit, iar procesul poate dura câteva zile lucrătoare. Dacă doriți, vă"
+    },
+    {
+      "rol": "client",
+      "text": "mulțumesc în regulă puteți să-mi trimit vă rog emailul pe cererea pe email",
+      "text_original_brut": "mulțumesc în regulă puteți să-mi trimit vă rog emailul pe cererea pe email mulțumesc în regulă puteți să-mi trimit vă rog emailul pe cererea pe email"
+    },
+    {
+      "rol": "operator",
+      "text": "Desigur, vă trimit acum un model de email pe care să îl folosiți pentru solicitare, îl puteți copia și adapta:  \n„Subiect: Cerere recuperare fonduri - transfer greșit  \nStimate departament recuperare fonduri,  \nVă rog să inițiați procesul de returnare pentru suma de 300 lei, transferată în data de 20 iunie către IBAN greșit: RO90R4887697181814763. Datele mele sunt: Dumitru Antonia. Aștept confirmarea dumneavoastră.  \nVă mulțumesc.”  \nAveți nevoie de altceva în legătură cu acest subiect?"
+    },
+    {
+      "rol": "client",
+      "text": "nu nu am nevoie de nimic mulțumesc frumos o zi bună la revedere",
+      "text_original_brut": "nu nu am nevoie de nimic mulțumesc frumos o zi bună la revedere nu nu am nevoie de nimic mulțumesc frumos o zi bună la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "problema_transfer",
+    "satisfactie": "neutru",
+    "rezumat": "Clienta a efectuat un transfer de 300 lei către IBAN greșit și solicită recuperarea banilor. Operatorul i-a recomandat să trimită o cerere scrisă prin email departamentului de recuperare fonduri și i-a oferit un model de mesaj pentru solicitare. A fost menționat că procesul depinde de cooperarea destinatarului și poate dura câteva zile lucrătoare."
+  },
+  "latente": {
+    "durata_totala": 328.45,
+    "stt": {
+      "valori": [
+        3.34,
+        3.49,
+        9.35,
+        3.98,
+        3.36,
+        4.36,
+        12.34,
+        8.58,
+        5.78
+      ],
+      "mediana": 4.36,
+      "medie": 6.06
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        3.68,
+        1.66,
+        1.87,
+        1.43,
+        2.27,
+        1.87,
+        0.0
+      ],
+      "mediana": 1.66,
+      "medie": 1.42
+    },
+    "tts": {
+      "valori": [
+        4.43,
+        3.9,
+        3.71,
+        3.92,
+        3.57,
+        3.87,
+        3.44,
+        16.75,
+        19.31,
+        3.63
+      ],
+      "mediana": 3.9,
+      "medie": 6.65
+    }
+  }
+}

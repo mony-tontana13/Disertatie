@@ -470,7 +470,7 @@ def main():
 
     # ── FAZA 1: STT sau incarcare din cache ──────────────────────────────────
     if args.skip_stt:
-        cache_path = args.cache_stt or os.path.join(CONFIG["RESULTS_DIR"], "cache_stt.json")
+        cache_path = args.cache_stt or os.path.join(CONFIG["RESULTS_DIR"], "cache_stt_punctuatie.json")
         print(f"\n[SKIP STT] Incarcare transcrieri din {cache_path}...")
         with open(cache_path, encoding="utf-8") as f:
             raw = json.load(f)

@@ -47,7 +47,7 @@ ZEVO_STT_SERVER = "wss://live-transcriber.zevo-tech.com:2053"
 ZEVO_TTS_SERVER = "wss://api-tts.zevo-tech.com:2083"
 ZEVO_TTS_VOICE  = "maria"
 
-DOMENIU_DEFAULT = os.environ.get("DOMENIU", "banking")
+DOMENIU_DEFAULT = os.environ.get("DOMENIU", "retail")
 
 app = Quart(__name__)
 client_gpt = OpenAI(api_key=OPENAI_API_KEY)

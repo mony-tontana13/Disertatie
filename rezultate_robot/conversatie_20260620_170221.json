@@ -1,0 +1,97 @@
+{
+  "id": "20260620_170221",
+  "domeniu": "banking",
+  "timestamp": "2026-06-20T17:02:21.214977",
+  "dificultate": "medie",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți al băncii Transilvania. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia",
+      "text_original_brut": "dumitru antonia dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și ultimele 4 cifre ale cardului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "1 2 4 5"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "ăă am o problemă cu cardul de credit s-a blocat și nu pot să-l folosesc nicăieri",
+      "text_original_brut": "ăă am o problemă cu cardul de credit s-a blocat și nu pot să-l folosesc nicăieri ăă am o problemă cu cardul de credit s-a blocat și nu pot să-l folosesc nicăieri"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg situația dumneavoastră. Ați putea să-mi confirmați, vă rog, data expirării cardului?"
+    },
+    {
+      "rol": "client",
+      "text": "ăă unde decembrie două mii douăzeci și șapte ăă unde decembrie 2.027"
+    },
+    {
+      "rol": "operator",
+      "text": "Am deblocat temporar cardul dumneavoastră de credit, astfel încât să îl puteți folosi imediat. Totuși, pentru a preveni blocarea viitoare, este necesară o verificare suplimentară de securitate, care durează până la 48 de ore și este gestionată de departamentul specializat. Dacă apar alte dificultăți, vă stau la dispoziție pentru asistență. Vă mulțumesc pentru răbdare și înțelegere!"
+    },
+    {
+      "rol": "client",
+      "text": "și eu mulțumesc numai am nevoie de nimic mulțumesc mult de tot pentru promptitudine vă doresc o zi bună la revedere",
+      "text_original_brut": "și eu mulțumesc numai am nevoie de nimic mulțumesc mult de tot pentru promptitudine vă doresc o zi bună la revedere și eu mulțumesc numai am nevoie de nimic mulțumesc mult de tot pentru promptitudine vă doresc o zi bună la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "card_blocat",
+    "satisfactie": "pozitiv",
+    "rezumat": "Clientul a raportat blocarea cardului de credit, iar operatorul a efectuat deblocarea temporară și a informat despre o verificare suplimentară de securitate ce poate dura până la 48 de ore."
+  },
+  "latente": {
+    "durata_totala": 160.32,
+    "stt": {
+      "valori": [
+        3.61,
+        3.84,
+        5.76,
+        5.18,
+        8.77
+      ],
+      "mediana": 5.18,
+      "medie": 5.43
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        2.51,
+        2.38,
+        0.0
+      ],
+      "mediana": 0.0,
+      "medie": 0.98
+    },
+    "tts": {
+      "valori": [
+        4.59,
+        4.34,
+        3.36,
+        4.41,
+        14.03,
+        4.91
+      ],
+      "mediana": 4.59,
+      "medie": 5.94
+    }
+  }
+}

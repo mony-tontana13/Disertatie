@@ -1,0 +1,135 @@
+{
+  "id": "20260620_172456",
+  "domeniu": "retail",
+  "timestamp": "2026-06-20T17:24:56.103610",
+  "dificultate": "complexa",
+  "conversatie": [
+    {
+      "rol": "operator",
+      "text": "Bună ziua, ați sunat la serviciul clienți E-shop. Vă rog să îmi spuneți numele complet."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia",
+      "text_original_brut": "dumitru antonia dumitru antonia"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc. Și adresa de email asociată contului dumneavoastră, vă rog."
+    },
+    {
+      "rol": "client",
+      "text": "dumitru antonia 13 arond gmail punct com",
+      "text_original_brut": "dumitru antonia treisprezece arond gmail punct com dumitru antonia 13 arond gmail punct com"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumesc pentru identificare. Cu ce vă pot ajuta astăzi?"
+    },
+    {
+      "rol": "client",
+      "text": "am comandat un laptop de la dumneavoastră acum 2 săptămâni aproximativ și trebuia să ajungă acum 3 zile și încă nu a ajuns și n-am primit niciun mesaj de la curier nimic",
+      "text_original_brut": "am comandat un laptop de la dumneavoastră acum două săptămâni aproximativ și trebuia să ajungă acum trei zile și încă nu a ajuns și n-am primit niciun mesaj de la curier nimic am comandat un laptop de la dumneavoastră acum 2 săptămâni aproximativ și trebuia să ajungă acum 3 zile și încă nu a ajuns și n-am primit niciun mesaj de la curier nimic"
+    },
+    {
+      "rol": "operator",
+      "text": "Pentru a verifica statusul comenzii, îmi puteți comunica, vă rog, numărul acesteia?"
+    },
+    {
+      "rol": "client",
+      "text": "ăă da sigur 6 8 3 4",
+      "text_original_brut": "ăă da sigur șase opt trei patru ăă da sigur 6 8 3 4"
+    },
+    {
+      "rol": "operator",
+      "text": "Mulțumesc pentru informații. În acest moment, am inițiat o verificare a stadiului livrării comenzii dumneavoastră și am transmis solicitarea către departamentul curierat. Vă recomand să verificați și folderul de spam al emailului, întrucât pot ajunge acolo notificările de la curier. Dacă în următoarele 48 de ore nu primiți nicio informație, vă rog să ne contactați din nou pentru a prelua cazul cu prioritate. Sunt aici să vă ajut pe parcurs!"
+    },
+    {
+      "rol": "client",
+      "text": "m-am uitat în spam și nu am niciun email de la curier ăă deci acuma ce fac aștept să mă contactați în următoarele 2 zile cum cum vine asta",
+      "text_original_brut": "m-am uitat în spam și nu am niciun email de la curier ăă deci acuma ce fac aștept să mă contactați în următoarele două zile cum cum vine asta m-am uitat în spam și nu am niciun email de la curier ăă deci acuma ce fac aștept să mă contactați în următoarele 2 zile cum cum vine asta"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg că situația este neplăcută și vă asigur că voi face tot posibilul să vă ofer o soluție rapidă. În acest moment, departamentul curierat verifică detaliile pentru a localiza coletul, iar dacă apare vreo noutate, vom lua legătura cu dumneavoastră imediat. Între timp, pot să urmăresc eu personal cazul și să vă țin la curent, doriți acest lucru sau preferați să ne sunați dacă nu primiți niciun răspuns?"
+    },
+    {
+      "rol": "client",
+      "text": "aș prefera să urmăriți toată comanda pentru că eu am nevoie de laptop vinerea asta neapărat și deja m ați întârziat cu această livrare întârziată am nevoie de el urgent",
+      "text_original_brut": "aș prefera să urmăriți toată comanda pentru că eu am nevoie de laptop vinerea asta neapărat și deja m ați întârziat cu această livrare întârziată am nevoie de el urgent aș prefera să urmăriți toată comanda pentru că eu am nevoie de laptop vinerea asta neapărat și deja m ați întârziat cu această livrare întârziată am nevoie de el urgent"
+    },
+    {
+      "rol": "operator",
+      "text": "Înțeleg perfect cât de important este pentru dumneavoastră să primiți laptopul la timp și voi urmări personal situația pentru a vă oferi actualizări cât mai rapide. Dacă apar informații noi sau dacă întâmpinăm dificultăți, vă voi contacta imediat pentru a găsi o soluție alternativă. Pot să vă ajut cu altceva sau aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "nu nu chiar nu numai am nimic de zi vă rog doar să prioritizați cumva comanda că deja a întârziat și v-am spus am urgentă nevoie de acest laptop mi s-a stricat cel pe care îl am și am nevoie de unul nou să nu pot lucra deci vă rog din tot sufletul faceți ceva în privința asta",
+      "text_original_brut": "nu nu chiar nu numai am nimic de zi vă rog doar să prioritizați cumva comanda că deja a întârziat și v-am spus am urgentă nevoie de acest laptop mi s-a stricat cel pe care îl am și am nevoie de unul nou să nu pot lucra deci vă rog din tot sufletul faceți ceva în priv nu nu chiar nu numai am nimic de zi vă rog doar să prioritizați cumva comanda că deja a întârziat și v-am spus am urgentă nevoie de acest laptop mi s-a stricat cel pe care îl am și am nevoie de unul nou să nu pot lucra deci vă rog din tot sufletul faceți ceva în privința asta"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă asigur că voi face tot posibilul să prioritizez livrarea comenzii dumneavoastră și să accelerez procesul cât de mult se poate. Înțeleg situația dificilă în care vă aflați și mă voi implica personal pentru a găsi o soluție cât mai rapidă. Pot să mai verific ceva pentru dumneavoastră sau aveți alte întrebări?"
+    },
+    {
+      "rol": "client",
+      "text": "nu nu mai am întrebări mulțumesc o zi bună la revedere",
+      "text_original_brut": "nu nu mai am întrebări mulțumesc o zi bună la revedere nu nu mai am întrebări mulțumesc o zi bună la revedere"
+    },
+    {
+      "rol": "operator",
+      "text": "Vă mulțumim că ați contactat serviciul nostru. O zi bună!"
+    }
+  ],
+  "analiza": {
+    "intentie": "problema_livrare",
+    "satisfactie": "negativ",
+    "rezumat": "Clienta Dumitru Antonia a apelat serviciul clienți pentru a reclama întârzierea livrării unui laptop comandat acum aproximativ două săptămâni, cu termen de sosire depășit cu trei zile. Ea nu a primit nicio notificare de la curier, inclusiv în folderul spam. Operatorul a inițiat o verificare a comenzii și a contactat departamentul de curierat. Clienta și-a exprimat urgența de a primi laptopul până vineri și a cerut ca operatorul să urmărească personal situația. Operatorul a confirmat că va monitoriza cazul și va ține clienta informată cu privire la evoluție."
+  },
+  "latente": {
+    "durata_totala": 357.68,
+    "stt": {
+      "valori": [
+        3.41,
+        5.61,
+        9.65,
+        5.16,
+        10.57,
+        11.43,
+        12.38,
+        5.51
+      ],
+      "mediana": 9.65,
+      "medie": 7.96
+    },
+    "llm": {
+      "valori": [
+        0.0,
+        0.0,
+        2.2,
+        2.85,
+        5.92,
+        5.04,
+        1.27,
+        0.0
+      ],
+      "mediana": 2.2,
+      "medie": 2.16
+    },
+    "tts": {
+      "valori": [
+        4.41,
+        3.83,
+        3.44,
+        3.82,
+        12.62,
+        11.78,
+        9.32,
+        9.13,
+        3.51
+      ],
+      "mediana": 4.41,
+      "medie": 6.87
+    }
+  }
+}
